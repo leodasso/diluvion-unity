@@ -1,0 +1,5437 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd0377646789f5a4889617ae1210bd0d, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  CurrentPluginConfig: Release
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{04171C6C-4947-4E63-8EF8-55092FF4B8A4}'
+    m_lastTimePsrt1: -1751609446
+    m_lastTimePart2: -1999270957
+    List: []
+  - PhysicalPath: Events\Music.wwu
+    ParentPhysicalPath: 
+    Guid: '{258D0E4A-F682-4B1E-978F-4EE70C642F64}'
+    m_lastTimePsrt1: -1752080307
+    m_lastTimePart2: -1999270957
+    List:
+    - Name: Play_Captain_Log_Chimes
+      Path: Music\MUS+Stingers\Play_Captain_Log_Chimes
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: MUS+Stingers
+        ObjectType: 4
+      - ElementName: Play_Captain_Log_Chimes
+        ObjectType: 3
+      ID: 1239536427
+      Guid: 327a50b6f7860a48bbdb7cdcc70cfc54
+      maxAttenuation: 0
+    - Name: Play_Captains_Log_Select_Waypoint
+      Path: Music\MUS+Stingers\Play_Captains_Log_Select_Waypoint
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: MUS+Stingers
+        ObjectType: 4
+      - ElementName: Play_Captains_Log_Select_Waypoint
+        ObjectType: 3
+      ID: -2023877979
+      Guid: 45953574e752834ebd7dc2df4e33d6b9
+      maxAttenuation: 0
+    - Name: Play_Ingame_Music
+      Path: Music\Play_Ingame_Music
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Play_Ingame_Music
+        ObjectType: 3
+      ID: 347845317
+      Guid: a40f247e318de64484b52d09b1d4e93a
+      maxAttenuation: 0
+    - Name: Play_MUS_Dock_Available
+      Path: Music\MUS+Stingers\Play_MUS_Dock_Available
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: MUS+Stingers
+        ObjectType: 4
+      - ElementName: Play_MUS_Dock_Available
+        ObjectType: 3
+      ID: -1490506581
+      Guid: b0cc87c3654f0f4eb23309886a678736
+      maxAttenuation: 25
+    - Name: Play_MUS_Forge_Upgrade
+      Path: Music\MUS+Stingers\Play_MUS_Forge_Upgrade
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: MUS+Stingers
+        ObjectType: 4
+      - ElementName: Play_MUS_Forge_Upgrade
+        ObjectType: 3
+      ID: 1659545190
+      Guid: 58c8973a3d33574881738d86c3b73169
+      maxAttenuation: 0
+    - Name: Play_MUS_Menu_Accept
+      Path: Music\MUS+Stingers\Play_MUS_Menu_Accept
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: MUS+Stingers
+        ObjectType: 4
+      - ElementName: Play_MUS_Menu_Accept
+        ObjectType: 3
+      ID: 1638585238
+      Guid: 44fbb99cf77bee4e970e50a41ac3b1f2
+      maxAttenuation: 0
+    - Name: Play_MUS_Menu_Decline
+      Path: Music\MUS+Stingers\Play_MUS_Menu_Decline
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: MUS+Stingers
+        ObjectType: 4
+      - ElementName: Play_MUS_Menu_Decline
+        ObjectType: 3
+      ID: -170125120
+      Guid: 66c34abd04224f41a3485c373d2d04b3
+      maxAttenuation: 0
+    - Name: Play_MUS_New_Game
+      Path: Music\MUS+Stingers\Play_MUS_New_Game
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: MUS+Stingers
+        ObjectType: 4
+      - ElementName: Play_MUS_New_Game
+        ObjectType: 3
+      ID: 375989
+      Guid: f861f2ce6438784f9f732dba21c603cf
+      maxAttenuation: 0
+    - Name: Play_MUS_New_Heading_Stinger
+      Path: Music\MUS+Stingers\Play_MUS_New_Heading_Stinger
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: MUS+Stingers
+        ObjectType: 4
+      - ElementName: Play_MUS_New_Heading_Stinger
+        ObjectType: 3
+      ID: 1695999372
+      Guid: 9ee894645cfd104ab5b839e49eb66b68
+      maxAttenuation: 0
+    - Name: Play_MUS_New_Landmark_Found
+      Path: Music\MUS+Stingers\Play_MUS_New_Landmark_Found
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: MUS+Stingers
+        ObjectType: 4
+      - ElementName: Play_MUS_New_Landmark_Found
+        ObjectType: 3
+      ID: 1105411862
+      Guid: 28f4394737790646ad0c1e04ed75f55a
+      maxAttenuation: 0
+    - Name: Play_MUS_New_Objective_Stinger
+      Path: Music\MUS+Stingers\Play_MUS_New_Objective_Stinger
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: MUS+Stingers
+        ObjectType: 4
+      - ElementName: Play_MUS_New_Objective_Stinger
+        ObjectType: 3
+      ID: 2109576555
+      Guid: 6da0c20eb14edf41bbc7a66a05b22f58
+      maxAttenuation: 0
+    - Name: Play_MUS_New_Quest
+      Path: Music\MUS+Stingers\Play_MUS_New_Quest
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: MUS+Stingers
+        ObjectType: 4
+      - ElementName: Play_MUS_New_Quest
+        ObjectType: 3
+      ID: -1755884409
+      Guid: 8b3e8025d24d544cb7b481ad0dba86a1
+      maxAttenuation: 0
+    - Name: Play_MUS_Officer_Upgrade
+      Path: Music\MUS+Stingers\Play_MUS_Officer_Upgrade
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: MUS+Stingers
+        ObjectType: 4
+      - ElementName: Play_MUS_Officer_Upgrade
+        ObjectType: 3
+      ID: -987095215
+      Guid: 88def67d9cf79c478959e8ddc190ef23
+      maxAttenuation: 0
+    - Name: Play_MUS_Tutorial_Message
+      Path: Music\MUS+Stingers\Play_MUS_Tutorial_Message
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: MUS+Stingers
+        ObjectType: 4
+      - ElementName: Play_MUS_Tutorial_Message
+        ObjectType: 3
+      ID: -1866914332
+      Guid: a761cb0eded2cc4aa23c02dbac4c2e32
+      maxAttenuation: 0
+    - Name: Play_MUS_Upgrade
+      Path: Music\MUS+Stingers\Play_MUS_Upgrade
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: MUS+Stingers
+        ObjectType: 4
+      - ElementName: Play_MUS_Upgrade
+        ObjectType: 3
+      ID: -1199930702
+      Guid: 914b6371bd431f40b0c9ea851d755a58
+      maxAttenuation: 0
+    - Name: Play_MUS_Upgrade_Ship
+      Path: Music\MUS+Stingers\Play_MUS_Upgrade_Ship
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: MUS+Stingers
+        ObjectType: 4
+      - ElementName: Play_MUS_Upgrade_Ship
+        ObjectType: 3
+      ID: 882606971
+      Guid: 736c0bbad2bde648bdd543c196d46ec1
+      maxAttenuation: 0
+    - Name: Play_OneShot
+      Path: Music\Play_OneShot
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Play_OneShot
+        ObjectType: 3
+      ID: -153197518
+      Guid: 88edb90f2932b34e8f48a5334c16a9ea
+      maxAttenuation: 0
+    - Name: Play_Stinger_Hired
+      Path: Music\MUS+Stingers\Play_Stinger_Hired
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: MUS+Stingers
+        ObjectType: 4
+      - ElementName: Play_Stinger_Hired
+        ObjectType: 3
+      ID: -233414209
+      Guid: ab6ba1266af71547ae1054889e9f6124
+      maxAttenuation: 0
+    - Name: Play_Stinger_Hired_Officer
+      Path: Music\MUS+Stingers\Play_Stinger_Hired_Officer
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: MUS+Stingers
+        ObjectType: 4
+      - ElementName: Play_Stinger_Hired_Officer
+        ObjectType: 3
+      ID: -1850440220
+      Guid: e59763f739d6db48b6276f62cea205d1
+      maxAttenuation: 0
+    - Name: Play_Stinger_Puchased
+      Path: Music\MUS+Stingers\Play_Stinger_Puchased
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: MUS+Stingers
+        ObjectType: 4
+      - ElementName: Play_Stinger_Puchased
+        ObjectType: 3
+      ID: 679686144
+      Guid: b1b55ee28fb0934b845e2268a441bf23
+      maxAttenuation: 100
+    - Name: Stop_Ingame_Music
+      Path: Music\Stop_Ingame_Music
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Stop_Ingame_Music
+        ObjectType: 3
+      ID: 733894047
+      Guid: caba5b7066e10c45b527b6645281e6b2
+      maxAttenuation: 0
+    - Name: Stop_OneShot
+      Path: Music\Stop_OneShot
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Stop_OneShot
+        ObjectType: 3
+      ID: -223459980
+      Guid: 63cf20e7977ead4b9ea0e3236c7c4099
+      maxAttenuation: 0
+  - PhysicalPath: Events\SFX.wwu
+    ParentPhysicalPath: 
+    Guid: '{B02FCEDF-544E-4271-8FD3-59B4A0CF8C0D}'
+    m_lastTimePsrt1: -1642179230
+    m_lastTimePart2: -1999270957
+    List:
+    - Name: Adventures_BeginAdventure
+      Path: SFX\UI\Adventures_BeginAdventure
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Adventures_BeginAdventure
+        ObjectType: 3
+      ID: -1602449660
+      Guid: eb807ac143742743a85184df751f7f89
+      maxAttenuation: 0
+    - Name: Adventures_DoorClose
+      Path: SFX\UI\Adventures_DoorClose
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Adventures_DoorClose
+        ObjectType: 3
+      ID: -5020201
+      Guid: c9d6acae79576f44b46307965de8aa9a
+      maxAttenuation: 0
+    - Name: Adventures_Failed
+      Path: SFX\UI\Adventures_Failed
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Adventures_Failed
+        ObjectType: 3
+      ID: 824673398
+      Guid: 47e0cc0b78b6094d9ee3aa5d4549f6e5
+      maxAttenuation: 0
+    - Name: Adventures_Sucess
+      Path: SFX\UI\Adventures_Sucess
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Adventures_Sucess
+        ObjectType: 3
+      ID: 1096790047
+      Guid: 508d9def41228544b0c839c37946802f
+      maxAttenuation: 0
+    - Name: Adventures_UsedKeyItem
+      Path: SFX\UI\Adventures_UsedKeyItem
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Adventures_UsedKeyItem
+        ObjectType: 3
+      ID: 735289650
+      Guid: 8d2b45795c7ec8448eb9ec5594dc6c41
+      maxAttenuation: 0
+    - Name: CapLog_CloseLog
+      Path: SFX\UI\CapLog_CloseLog
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: CapLog_CloseLog
+        ObjectType: 3
+      ID: -637284964
+      Guid: a5104c36b45030499272d3dc8174870a
+      maxAttenuation: 0
+    - Name: CapLog_HoverZone
+      Path: SFX\UI\CapLog_HoverZone
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: CapLog_HoverZone
+        ObjectType: 3
+      ID: -1066166026
+      Guid: 6b5138f4ebfad14c8685198a37629606
+      maxAttenuation: 0
+    - Name: CapLog_OpenLog
+      Path: SFX\UI\CapLog_OpenLog
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: CapLog_OpenLog
+        ObjectType: 3
+      ID: -1768230464
+      Guid: 0b7d6015f019bc439100bfb313202430
+      maxAttenuation: 0
+    - Name: CapLog_SelectZone
+      Path: SFX\UI\CapLog_SelectZone
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: CapLog_SelectZone
+        ObjectType: 3
+      ID: -776274228
+      Guid: 47cccdf73697794fb35f267199a06f3a
+      maxAttenuation: 0
+    - Name: Crew_Attack_Mouse_Over
+      Path: SFX\Hazard_Combat_Engine\Crew_Attack_Mouse_Over
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Crew_Attack_Mouse_Over
+        ObjectType: 3
+      ID: 1095884070
+      Guid: 0a566ae19c2713448dc981fbaae8f285
+      maxAttenuation: 0
+    - Name: Play_Abandoned_Ambience
+      Path: SFX\Indoor_Ambiences\Play_Abandoned_Ambience
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Indoor_Ambiences
+        ObjectType: 4
+      - ElementName: Play_Abandoned_Ambience
+        ObjectType: 3
+      ID: 2023618597
+      Guid: bc3bdac11ca6b342ac462e58918f23d5
+      maxAttenuation: 0
+    - Name: Play_Add_CrewMate_ToRoom
+      Path: SFX\UI\Play_Add_CrewMate_ToRoom
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Add_CrewMate_ToRoom
+        ObjectType: 3
+      ID: -1982021985
+      Guid: 4d6ceaae98b19649a3d426f9f1b48bb7
+      maxAttenuation: 0
+    - Name: Play_Airtanks_Filled
+      Path: SFX\Player_SHIP\Play_Airtanks_Filled
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Player_SHIP
+        ObjectType: 4
+      - ElementName: Play_Airtanks_Filled
+        ObjectType: 3
+      ID: 2121730036
+      Guid: 8eb8aed5d7a6b542a7e9b20843d0c005
+      maxAttenuation: 0
+    - Name: Play_Ancient_High_Tech_Ambience
+      Path: SFX\Indoor_Ambiences\Play_Ancient_High_Tech_Ambience
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Indoor_Ambiences
+        ObjectType: 4
+      - ElementName: Play_Ancient_High_Tech_Ambience
+        ObjectType: 3
+      ID: -484108837
+      Guid: c1db6f9d3b403b41bc61649383e970be
+      maxAttenuation: 0
+    - Name: Play_Angler_Colony_2DRoom_Ambience
+      Path: SFX\Angler\Play_Angler_Colony_2DRoom_Ambience
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Angler
+        ObjectType: 4
+      - ElementName: Play_Angler_Colony_2DRoom_Ambience
+        ObjectType: 3
+      ID: 970615695
+      Guid: 1992d819067c2f4290696e5ee65f987c
+      maxAttenuation: 0
+    - Name: Play_Angler_Colony_JawClosing_Closing
+      Path: SFX\Angler\Play_Angler_Colony_JawClosing_Closing
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Angler
+        ObjectType: 4
+      - ElementName: Play_Angler_Colony_JawClosing_Closing
+        ObjectType: 3
+      ID: 1785703344
+      Guid: b522b7ec2490014c8414a4f7fdc97fc6
+      maxAttenuation: 400
+    - Name: Play_Angler_Colony_JawClosing_Groan
+      Path: SFX\Angler\Play_Angler_Colony_JawClosing_Groan
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Angler
+        ObjectType: 4
+      - ElementName: Play_Angler_Colony_JawClosing_Groan
+        ObjectType: 3
+      ID: 1097380770
+      Guid: a008f0510ea7ab4586850aaa034dcff5
+      maxAttenuation: 400
+    - Name: Play_Angler_Colony_JawClosing_Snap
+      Path: SFX\Angler\Play_Angler_Colony_JawClosing_Snap
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Angler
+        ObjectType: 4
+      - ElementName: Play_Angler_Colony_JawClosing_Snap
+        ObjectType: 3
+      ID: 1134578147
+      Guid: b33602c96f514b4b9838b9c8bae27640
+      maxAttenuation: 400
+    - Name: Play_Angry_Crab_INTRO
+      Path: SFX\Hazard_Combat_Engine\Hazards\Angry Crab\Play_Angry_Crab_INTRO
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Angry Crab
+        ObjectType: 4
+      - ElementName: Play_Angry_Crab_INTRO
+        ObjectType: 3
+      ID: -696217215
+      Guid: e9e028f19d415b40b3cd343fea1ea73a
+      maxAttenuation: 0
+    - Name: Play_Angry_Crab_MISS
+      Path: SFX\Hazard_Combat_Engine\Hazards\Angry Crab\Play_Angry_Crab_MISS
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Angry Crab
+        ObjectType: 4
+      - ElementName: Play_Angry_Crab_MISS
+        ObjectType: 3
+      ID: 2087159649
+      Guid: def6a1c9ad8cac4b9815a4ea3c3fae3a
+      maxAttenuation: 0
+    - Name: PLay_Arachnid_Logo
+      Path: SFX\UI\PLay_Arachnid_Logo
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: PLay_Arachnid_Logo
+        ObjectType: 3
+      ID: 1377794876
+      Guid: d9d3bafc5fe8454d8713b70c86fb1f7a
+      maxAttenuation: 0
+    - Name: Play_Ark_Beacon_Pickup
+      Path: SFX\____UNCLASSIFIED____\ARK\Play_Ark_Beacon_Pickup
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: ARK
+        ObjectType: 4
+      - ElementName: Play_Ark_Beacon_Pickup
+        ObjectType: 3
+      ID: -169179680
+      Guid: acd892d38738794fb770ba7c55f7ffe6
+      maxAttenuation: 800
+    - Name: Play_Ark_Boss_Powerup
+      Path: SFX\____UNCLASSIFIED____\ARK\Play_Ark_Boss_Powerup
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: ARK
+        ObjectType: 4
+      - ElementName: Play_Ark_Boss_Powerup
+        ObjectType: 3
+      ID: -1180112677
+      Guid: f5e8229fe9bf3540ba15149524348d34
+      maxAttenuation: 800
+    - Name: Play_Ark_Engine_Loop
+      Path: SFX\____UNCLASSIFIED____\ARK\Play_Ark_Engine_Loop
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: ARK
+        ObjectType: 4
+      - ElementName: Play_Ark_Engine_Loop
+        ObjectType: 3
+      ID: 247188840
+      Guid: 1a7c706bb4c4a543b9a5d70d4e9031ad
+      maxAttenuation: 300
+    - Name: Play_Attack_Success
+      Path: SFX\Hazard_Combat_Engine\Play_Attack_Success
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Play_Attack_Success
+        ObjectType: 3
+      ID: -545917314
+      Guid: 4bdca40d48836841976579d4346ddabc
+      maxAttenuation: 0
+    - Name: Play_Ballast_Ascending
+      Path: SFX\Ballast\Play_Ballast_Ascending
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Ballast
+        ObjectType: 4
+      - ElementName: Play_Ballast_Ascending
+        ObjectType: 3
+      ID: -1703006512
+      Guid: 61125d11665b7741876ee435fed7d50c
+      maxAttenuation: 100
+    - Name: Play_Ballast_Diving
+      Path: SFX\Ballast\Play_Ballast_Diving
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Ballast
+        ObjectType: 4
+      - ElementName: Play_Ballast_Diving
+        ObjectType: 3
+      ID: -1047355875
+      Guid: 1b7f3ef081dd024aa1b6d35125dd24f0
+      maxAttenuation: 100
+    - Name: Play_Bolt_Drone_Loop
+      Path: SFX\Bolt_fire\Play_Bolt_Drone_Loop
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Bolt_fire
+        ObjectType: 4
+      - ElementName: Play_Bolt_Drone_Loop
+        ObjectType: 3
+      ID: -1727068595
+      Guid: 2be70513a3204f41bbab9d502f019454
+      maxAttenuation: 200
+    - Name: Play_Bolt_Heavy_Loop
+      Path: SFX\Bolt_fire\Play_Bolt_Heavy_Loop
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Bolt_fire
+        ObjectType: 4
+      - ElementName: Play_Bolt_Heavy_Loop
+        ObjectType: 3
+      ID: 2124234192
+      Guid: 5bde4b68ba480543a206f192dc349262
+      maxAttenuation: 200
+    - Name: Play_Bolt_Light_Loop
+      Path: SFX\Bolt_fire\Play_Bolt_Light_Loop
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Bolt_fire
+        ObjectType: 4
+      - ElementName: Play_Bolt_Light_Loop
+        ObjectType: 3
+      ID: -1396048181
+      Guid: 979cb866bb52604ca16a587d047d645e
+      maxAttenuation: 200
+    - Name: Play_Bolt_Medium_Loop
+      Path: SFX\Bolt_fire\Play_Bolt_Medium_Loop
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Bolt_fire
+        ObjectType: 4
+      - ElementName: Play_Bolt_Medium_Loop
+        ObjectType: 3
+      ID: -957762528
+      Guid: 3aafc9fd3cb6054796ea5ff323b8e0ae
+      maxAttenuation: 200
+    - Name: Play_Bolt_SuperHeavy_Loop
+      Path: SFX\Bolt_fire\Play_Bolt_SuperHeavy_Loop
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Bolt_fire
+        ObjectType: 4
+      - ElementName: Play_Bolt_SuperHeavy_Loop
+        ObjectType: 3
+      ID: -1888062419
+      Guid: 8d5083003bd8064aa14e00d246376bff
+      maxAttenuation: 200
+    - Name: Play_Bolt_SuperLight_Loop
+      Path: SFX\Bolt_fire\Play_Bolt_SuperLight_Loop
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Bolt_fire
+        ObjectType: 4
+      - ElementName: Play_Bolt_SuperLight_Loop
+        ObjectType: 3
+      ID: 524121454
+      Guid: a793cf3ef7fd4d48ad3313982c0e081a
+      maxAttenuation: 200
+    - Name: Play_Brawler_Pirate_HIT
+      Path: SFX\Hazard_Combat_Engine\Hazards\Brawler_Pirate\Play_Brawler_Pirate_HIT
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Brawler_Pirate
+        ObjectType: 4
+      - ElementName: Play_Brawler_Pirate_HIT
+        ObjectType: 3
+      ID: -1102748349
+      Guid: a5f18b7ca940db4b924224c0cbb17adb
+      maxAttenuation: 0
+    - Name: Play_Brawler_Pirate_INTRO
+      Path: SFX\Hazard_Combat_Engine\Hazards\Brawler_Pirate\Play_Brawler_Pirate_INTRO
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Brawler_Pirate
+        ObjectType: 4
+      - ElementName: Play_Brawler_Pirate_INTRO
+        ObjectType: 3
+      ID: 869161010
+      Guid: 3274085626a82542ba48fc5627a14872
+      maxAttenuation: 0
+    - Name: Play_Brawler_Pirate_MISS
+      Path: SFX\Hazard_Combat_Engine\Hazards\Brawler_Pirate\Play_Brawler_Pirate_MISS
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Brawler_Pirate
+        ObjectType: 4
+      - ElementName: Play_Brawler_Pirate_MISS
+        ObjectType: 3
+      ID: -2095008324
+      Guid: 5237b871477d8c4fb1912c60ef0da6a9
+      maxAttenuation: 0
+    - Name: Play_Burner_Ambience
+      Path: SFX\Indoor_Ambiences\Play_Burner_Ambience
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Indoor_Ambiences
+        ObjectType: 4
+      - ElementName: Play_Burner_Ambience
+        ObjectType: 3
+      ID: -1803225181
+      Guid: 9acb1ba4e679d44dac56377471b4e2da
+      maxAttenuation: 0
+    - Name: Play_Canon_Crab_HIT
+      Path: SFX\Hazard_Combat_Engine\Hazards\Canon Crab\Play_Canon_Crab_HIT
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Canon Crab
+        ObjectType: 4
+      - ElementName: Play_Canon_Crab_HIT
+        ObjectType: 3
+      ID: 762467950
+      Guid: e5761a532de5d641a0cc2709c582a6c1
+      maxAttenuation: 0
+    - Name: Play_Canon_Crab_INTRO
+      Path: SFX\Hazard_Combat_Engine\Hazards\Canon Crab\Play_Canon_Crab_INTRO
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Canon Crab
+        ObjectType: 4
+      - ElementName: Play_Canon_Crab_INTRO
+        ObjectType: 3
+      ID: 818596523
+      Guid: a3d8f9e1f8faf24fb106bcc4d10f5757
+      maxAttenuation: 0
+    - Name: Play_Canon_Crab_MISS
+      Path: SFX\Hazard_Combat_Engine\Hazards\Canon Crab\Play_Canon_Crab_MISS
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Canon Crab
+        ObjectType: 4
+      - ElementName: Play_Canon_Crab_MISS
+        ObjectType: 3
+      ID: -1027956509
+      Guid: f5db4cb6e07b4d4fa5ca9eb912c478ce
+      maxAttenuation: 0
+    - Name: Play_Captain_Chime
+      Path: SFX\UI\Play_Captain_Chime
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Captain_Chime
+        ObjectType: 3
+      ID: 125080615
+      Guid: d25640a0380f3c41b25995db0f2d6d0c
+      maxAttenuation: 0
+    - Name: Play_Captain_Time_Upgrade
+      Path: SFX\____UNCLASSIFIED____\Play_Captain_Time_Upgrade
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: Play_Captain_Time_Upgrade
+        ObjectType: 3
+      ID: -1441421081
+      Guid: 2d001f4b04ab334998115540ff6cec99
+      maxAttenuation: 0
+    - Name: Play_Cargo_Bay_Ambience
+      Path: SFX\Indoor_Ambiences\Play_Cargo_Bay_Ambience
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Indoor_Ambiences
+        ObjectType: 4
+      - ElementName: Play_Cargo_Bay_Ambience
+        ObjectType: 3
+      ID: -1477863114
+      Guid: 6b4a4698a8541a4ebc981efa857b2de3
+      maxAttenuation: 0
+    - Name: Play_Character_StopTalk
+      Path: SFX\VOICES\Play_Character_StopTalk
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: VOICES
+        ObjectType: 4
+      - ElementName: Play_Character_StopTalk
+        ObjectType: 3
+      ID: -1218282268
+      Guid: ca2de50e71c86d49a99deac731dc1db2
+      maxAttenuation: 0
+    - Name: Play_Character_Talk
+      Path: SFX\VOICES\Play_Character_Talk
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: VOICES
+        ObjectType: 4
+      - ElementName: Play_Character_Talk
+        ObjectType: 3
+      ID: 1276949100
+      Guid: eb83a85698c744478a495155859a7bce
+      maxAttenuation: 0
+    - Name: Play_Chatter
+      Path: SFX\UI\Play_Chatter
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Chatter
+        ObjectType: 3
+      ID: -883158511
+      Guid: 2dd96338e1b6bb4d8ba41bff151b9fc3
+      maxAttenuation: 100
+    - Name: Play_Chatter_Empty
+      Path: SFX\UI\Play_Chatter_Empty
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Chatter_Empty
+        ObjectType: 3
+      ID: -457923465
+      Guid: 8a8df45f588b124dbe16a082ff29c84e
+      maxAttenuation: 0
+    - Name: Play_Chatter_Message
+      Path: SFX\UI\Play_Chatter_Message
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Chatter_Message
+        ObjectType: 3
+      ID: 1705481057
+      Guid: 6efe3ab5f0d28540aef43cadab9ef490
+      maxAttenuation: 0
+    - Name: Play_Click_Generic_Accept
+      Path: SFX\UI\Play_Click_Generic_Accept
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Click_Generic_Accept
+        ObjectType: 3
+      ID: -943841929
+      Guid: f69e845f83d10849baf0f2736f63f4fc
+      maxAttenuation: 0
+    - Name: Play_Click_Generic_Refuse
+      Path: SFX\UI\Play_Click_Generic_Refuse
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Click_Generic_Refuse
+        ObjectType: 3
+      ID: 2054808635
+      Guid: c5422c482b150841b547d3aa28a28244
+      maxAttenuation: 0
+    - Name: Play_Click_Refuse
+      Path: SFX\UI\Play_Click_Refuse
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Click_Refuse
+        ObjectType: 3
+      ID: -654278475
+      Guid: 300e1e4143c9644c8c0aebed01005ad5
+      maxAttenuation: 0
+    - Name: Play_ClickTangible
+      Path: SFX\UI\Play_ClickTangible
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_ClickTangible
+        ObjectType: 3
+      ID: 1634489322
+      Guid: 6536746ca8119e478e70bb4f910db65e
+      maxAttenuation: 100
+    - Name: Play_Compass_Toggle_OFF
+      Path: SFX\Player_SHIP\Play_Compass_Toggle_OFF
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Player_SHIP
+        ObjectType: 4
+      - ElementName: Play_Compass_Toggle_OFF
+        ObjectType: 3
+      ID: 1683398035
+      Guid: 27942bfd6fb4704982fa53921eadd697
+      maxAttenuation: 0
+    - Name: Play_Compass_Toggle_ON
+      Path: SFX\Player_SHIP\Play_Compass_Toggle_ON
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Player_SHIP
+        ObjectType: 4
+      - ElementName: Play_Compass_Toggle_ON
+        ObjectType: 3
+      ID: -1129138337
+      Guid: b85ce75af8f2bd4682df64f175c4495d
+      maxAttenuation: 0
+    - Name: Play_Construct_Base
+      Path: SFX\____UNCLASSIFIED____\Play_Construct_Base
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: Play_Construct_Base
+        ObjectType: 3
+      ID: -716195145
+      Guid: 1f5958f78f6b3043b8c1456f2e4a81b3
+      maxAttenuation: 400
+    - Name: Play_Contact_Hostile
+      Path: SFX\UI\Play_Contact_Hostile
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Contact_Hostile
+        ObjectType: 3
+      ID: 834945453
+      Guid: c9cd4e91791a174e8ed297bb6f48f900
+      maxAttenuation: 400
+    - Name: Play_Contact_Neutral
+      Path: SFX\UI\Play_Contact_Neutral
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Contact_Neutral
+        ObjectType: 3
+      ID: 280258430
+      Guid: a96c3d3b45fb2d41ac1564c5249062b2
+      maxAttenuation: 400
+    - Name: Play_Contact_Torpedo
+      Path: SFX\UI\Play_Contact_Torpedo
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Contact_Torpedo
+        ObjectType: 3
+      ID: 1883721178
+      Guid: 11dc12b6d786d347a1f1f9a4e2010550
+      maxAttenuation: 0
+    - Name: Play_Contact_Torpedo_Light
+      Path: SFX\UI\Play_Contact_Torpedo_Light
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Contact_Torpedo_Light
+        ObjectType: 3
+      ID: 1164951455
+      Guid: 9f364b1ab8d8c74e9c8a2edbfcf89634
+      maxAttenuation: 0
+    - Name: Play_Conversation_Button_Press
+      Path: SFX\UI\Play_Conversation_Button_Press
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Conversation_Button_Press
+        ObjectType: 3
+      ID: 1275879894
+      Guid: 7c13bcfd48a49b4a907d99b50d49a423
+      maxAttenuation: 0
+    - Name: Play_Conversation_Mouse_Over
+      Path: SFX\UI\Play_Conversation_Mouse_Over
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Conversation_Mouse_Over
+        ObjectType: 3
+      ID: -1529752364
+      Guid: 10d7f741bb463848a84f4ba53f067bca
+      maxAttenuation: 0
+    - Name: Play_Conversation_Text
+      Path: SFX\UI\Play_Conversation_Text
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Conversation_Text
+        ObjectType: 3
+      ID: -938797897
+      Guid: c710fe8ab0f67244b69439e78f264019
+      maxAttenuation: 0
+    - Name: Play_Conversation_Text_Solo
+      Path: SFX\UI\Play_Conversation_Text_Solo
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Conversation_Text_Solo
+        ObjectType: 3
+      ID: -1762079421
+      Guid: 3c7a6c37cc2130418513bf9e9569b0ba
+      maxAttenuation: 0
+    - Name: Play_Crew_Turn
+      Path: SFX\Hazard_Combat_Engine\Play_Crew_Turn
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Play_Crew_Turn
+        ObjectType: 3
+      ID: 458524553
+      Guid: 1cdb196a198d7c4eba2ff75befbb5a76
+      maxAttenuation: 0
+    - Name: Play_Crew_Upgrade
+      Path: SFX\____UNCLASSIFIED____\Play_Crew_Upgrade
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: Play_Crew_Upgrade
+        ObjectType: 3
+      ID: -2038695928
+      Guid: 492756ec6ad68b4685a320cb2e40710b
+      maxAttenuation: 0
+    - Name: Play_Crit_Explosion
+      Path: SFX\Weapons_All\Play_Crit_Explosion
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Weapons_All
+        ObjectType: 4
+      - ElementName: Play_Crit_Explosion
+        ObjectType: 3
+      ID: -2037795966
+      Guid: 0a5d420abe56244ea9ae238f02c4bb12
+      maxAttenuation: 400
+    - Name: Play_Critical_Health
+      Path: SFX\Player_SHIP\Play_Critical_Health
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Player_SHIP
+        ObjectType: 4
+      - ElementName: Play_Critical_Health
+        ObjectType: 3
+      ID: -847022170
+      Guid: 5225fb179d82ef4d87a4378337843925
+      maxAttenuation: 100
+    - Name: Play_Curious_Rat_HIT
+      Path: SFX\Hazard_Combat_Engine\Hazards\Curious_Rat\Play_Curious_Rat_HIT
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Curious_Rat
+        ObjectType: 4
+      - ElementName: Play_Curious_Rat_HIT
+        ObjectType: 3
+      ID: -288611350
+      Guid: 713d07228935d74ca2904860cd3c06a8
+      maxAttenuation: 0
+    - Name: Play_Curious_Rat_INTRO
+      Path: SFX\Hazard_Combat_Engine\Hazards\Curious_Rat\Play_Curious_Rat_INTRO
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Curious_Rat
+        ObjectType: 4
+      - ElementName: Play_Curious_Rat_INTRO
+        ObjectType: 3
+      ID: 2092198663
+      Guid: 775b323ce0eada42a367a9427966b537
+      maxAttenuation: 0
+    - Name: Play_Curious_Rat_MISS
+      Path: SFX\Hazard_Combat_Engine\Hazards\Curious_Rat\Play_Curious_Rat_MISS
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Curious_Rat
+        ObjectType: 4
+      - ElementName: Play_Curious_Rat_MISS
+        ObjectType: 3
+      ID: 508529479
+      Guid: 629cfaab2689404081c45ce243ba6253
+      maxAttenuation: 0
+    - Name: Play_Current_Loop
+      Path: SFX\____UNCLASSIFIED____\Play_Current_Loop
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: Play_Current_Loop
+        ObjectType: 3
+      ID: -411296038
+      Guid: 15ce106205b3b940b1339bcc86cbb466
+      maxAttenuation: 100
+    - Name: Play_Cursed_Amulet_HIT
+      Path: SFX\Hazard_Combat_Engine\Hazards\Cursed_Amulet\Play_Cursed_Amulet_HIT
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Cursed_Amulet
+        ObjectType: 4
+      - ElementName: Play_Cursed_Amulet_HIT
+        ObjectType: 3
+      ID: 1250564399
+      Guid: 02f72256fc7b9e46a2f67bd53167339c
+      maxAttenuation: 0
+    - Name: Play_Cursed_Amulet_INTRO
+      Path: SFX\Hazard_Combat_Engine\Hazards\Cursed_Amulet\Play_Cursed_Amulet_INTRO
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Cursed_Amulet
+        ObjectType: 4
+      - ElementName: Play_Cursed_Amulet_INTRO
+        ObjectType: 3
+      ID: -297452066
+      Guid: fab9935798192448a053020534496ee5
+      maxAttenuation: 0
+    - Name: Play_Cursed_Amulet_MISS
+      Path: SFX\Hazard_Combat_Engine\Hazards\Cursed_Amulet\Play_Cursed_Amulet_MISS
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Cursed_Amulet
+        ObjectType: 4
+      - ElementName: Play_Cursed_Amulet_MISS
+        ObjectType: 3
+      ID: -1873208320
+      Guid: 0b49726ecdedbc44bbd4f37f2dd9169f
+      maxAttenuation: 0
+    - Name: Play_DamageHit
+      Path: SFX\Player_SHIP\Play_DamageHit
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Player_SHIP
+        ObjectType: 4
+      - ElementName: Play_DamageHit
+        ObjectType: 3
+      ID: 882399980
+      Guid: 9dd06c264fbc404e9fd9e6c0e7d4a37d
+      maxAttenuation: 100
+    - Name: Play_Depth_Crack
+      Path: SFX\Player_SHIP\Play_Depth_Crack
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Player_SHIP
+        ObjectType: 4
+      - ElementName: Play_Depth_Crack
+        ObjectType: 3
+      ID: 137313394
+      Guid: 5d103ad181a16f45b4326e97ec4f5148
+      maxAttenuation: 100
+    - Name: Play_Depth_Creak
+      Path: SFX\Player_SHIP\Play_Depth_Creak
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Player_SHIP
+        ObjectType: 4
+      - ElementName: Play_Depth_Creak
+        ObjectType: 3
+      ID: 507112572
+      Guid: 1f08afc702b1bc49b1964cfff984f600
+      maxAttenuation: 100
+    - Name: Play_DepthAlarm
+      Path: SFX\UI\Play_DepthAlarm
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_DepthAlarm
+        ObjectType: 3
+      ID: -1150082612
+      Guid: c07512280a16484c88e53186cc9d8be7
+      maxAttenuation: 100
+    - Name: Play_Dialog_Page_Turn
+      Path: SFX\UI\Play_Dialog_Page_Turn
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Dialog_Page_Turn
+        ObjectType: 3
+      ID: 431912582
+      Guid: b385aa3f6f6c98479f1ae9e6e37d0334
+      maxAttenuation: 0
+    - Name: Play_Dialog_Popup
+      Path: SFX\UI\Play_Dialog_Popup
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Dialog_Popup
+        ObjectType: 3
+      ID: 1598464529
+      Guid: 77ef56e52bf9344c91bcdd2adfb1b977
+      maxAttenuation: 100
+    - Name: Play_Dialogue_Start
+      Path: SFX\UI\Play_Dialogue_Start
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Dialogue_Start
+        ObjectType: 3
+      ID: -1566155983
+      Guid: 1d1016bbfc4b9c4f9f6146c62c0b1679
+      maxAttenuation: 100
+    - Name: Play_Dig_Excavation_Ambience
+      Path: SFX\Indoor_Ambiences\Play_Dig_Excavation_Ambience
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Indoor_Ambiences
+        ObjectType: 4
+      - ElementName: Play_Dig_Excavation_Ambience
+        ObjectType: 3
+      ID: -1031186078
+      Guid: b3fb4035ba70ab4dbb2b2084e4da6698
+      maxAttenuation: 0
+    - Name: Play_Dismantle_Upgrade
+      Path: SFX\____UNCLASSIFIED____\Play_Dismantle_Upgrade
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: Play_Dismantle_Upgrade
+        ObjectType: 3
+      ID: 194502614
+      Guid: 4262965a1ed6274da64e8ffc1b746315
+      maxAttenuation: 0
+    - Name: Play_Dock_Complete
+      Path: SFX\Indoor_Ambiences\Play_Dock_Complete
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Indoor_Ambiences
+        ObjectType: 4
+      - ElementName: Play_Dock_Complete
+        ObjectType: 3
+      ID: 228960803
+      Guid: 7f599527649d114b8f78a1e090f462a0
+      maxAttenuation: 0
+    - Name: Play_DockRelease
+      Path: SFX\Player_SHIP\Play_DockRelease
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Player_SHIP
+        ObjectType: 4
+      - ElementName: Play_DockRelease
+        ObjectType: 3
+      ID: -1880230402
+      Guid: 8dd009a6f7154f4eb484ac155a2df1a8
+      maxAttenuation: 100
+    - Name: Play_Documents_Check_HIT
+      Path: SFX\Hazard_Combat_Engine\Hazards\Documents Check\Play_Documents_Check_HIT
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Documents Check
+        ObjectType: 4
+      - ElementName: Play_Documents_Check_HIT
+        ObjectType: 3
+      ID: -1907515409
+      Guid: 7ac015c7fcf6f24e92b5841701ccb51b
+      maxAttenuation: 0
+    - Name: Play_Documents_Check_INTRO
+      Path: SFX\Hazard_Combat_Engine\Hazards\Documents Check\Play_Documents_Check_INTRO
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Documents Check
+        ObjectType: 4
+      - ElementName: Play_Documents_Check_INTRO
+        ObjectType: 3
+      ID: 201463710
+      Guid: d377d431b4b6604cb1a3810d17b2aae7
+      maxAttenuation: 0
+    - Name: Play_Documents_Check_MISS
+      Path: SFX\Hazard_Combat_Engine\Hazards\Documents Check\Play_Documents_Check_MISS
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Documents Check
+        ObjectType: 4
+      - ElementName: Play_Documents_Check_MISS
+        ObjectType: 3
+      ID: -47825728
+      Guid: 41ac7442ab25214e87fff425b766af06
+      maxAttenuation: 0
+    - Name: Play_Door_Open
+      Path: SFX\Salvage_Engine\Play_Door_Open
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Salvage_Engine
+        ObjectType: 4
+      - ElementName: Play_Door_Open
+        ObjectType: 3
+      ID: 1660008929
+      Guid: c6dc3d2c36aa4f4d8456321721db38d8
+      maxAttenuation: 0
+    - Name: Play_Drone_Attack
+      Path: SFX\Drone\Play_Drone_Attack
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Drone
+        ObjectType: 4
+      - ElementName: Play_Drone_Attack
+        ObjectType: 3
+      ID: -2010655833
+      Guid: 2d0e54c5ed9259409cea60cdd72ac63b
+      maxAttenuation: 400
+    - Name: Play_Drone_Damaged
+      Path: SFX\Drone\Play_Drone_Damaged
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Drone
+        ObjectType: 4
+      - ElementName: Play_Drone_Damaged
+        ObjectType: 3
+      ID: 1795444748
+      Guid: 558bcbf7b7a7eb44b0b20cca6596f955
+      maxAttenuation: 400
+    - Name: Play_Drone_Destroyed
+      Path: SFX\Drone\Play_Drone_Destroyed
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Drone
+        ObjectType: 4
+      - ElementName: Play_Drone_Destroyed
+        ObjectType: 3
+      ID: -1378481988
+      Guid: 20efc5e2359bd2469a12607c88cfc1a9
+      maxAttenuation: 400
+    - Name: Play_Drone_Detect_Player
+      Path: SFX\Drone\Play_Drone_Detect_Player
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Drone
+        ObjectType: 4
+      - ElementName: Play_Drone_Detect_Player
+        ObjectType: 3
+      ID: 1938186490
+      Guid: d2015ed113cc574782aad4a3cd65c369
+      maxAttenuation: 400
+    - Name: Play_Drone_Larvae_HIT
+      Path: SFX\Hazard_Combat_Engine\Hazards\Drone_Larvae\Play_Drone_Larvae_HIT
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Drone_Larvae
+        ObjectType: 4
+      - ElementName: Play_Drone_Larvae_HIT
+        ObjectType: 3
+      ID: 785348910
+      Guid: 8413ce0ed6ac5346bb92eb71b1e6bf18
+      maxAttenuation: 0
+    - Name: Play_Drone_Larvae_INTRO
+      Path: SFX\Hazard_Combat_Engine\Hazards\Drone_Larvae\Play_Drone_Larvae_INTRO
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Drone_Larvae
+        ObjectType: 4
+      - ElementName: Play_Drone_Larvae_INTRO
+        ObjectType: 3
+      ID: 1745769835
+      Guid: 50d4685ad24a7049b52ef6f5631c7af1
+      maxAttenuation: 0
+    - Name: Play_Drone_Larvae_MISS
+      Path: SFX\Hazard_Combat_Engine\Hazards\Drone_Larvae\Play_Drone_Larvae_MISS
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Drone_Larvae
+        ObjectType: 4
+      - ElementName: Play_Drone_Larvae_MISS
+        ObjectType: 3
+      ID: -1470503005
+      Guid: 6bc3b56dbd06004c8cd9ef4b34b4b321
+      maxAttenuation: 0
+    - Name: Play_Dweller_Engine_Loop
+      Path: SFX\Engines\Play_Dweller_Engine_Loop
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Engines
+        ObjectType: 4
+      - ElementName: Play_Dweller_Engine_Loop
+        ObjectType: 3
+      ID: 1303068061
+      Guid: 16e17c2b7448e3428d052f37cdca2bbb
+      maxAttenuation: 100
+    - Name: Play_Dweller_Overdrive
+      Path: SFX\Engines\Play_Dweller_Overdrive
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Engines
+        ObjectType: 4
+      - ElementName: Play_Dweller_Overdrive
+        ObjectType: 3
+      ID: 1849322196
+      Guid: 97102d1135851446ba176f419980e325
+      maxAttenuation: 100
+    - Name: Play_Elite_Squad_HIT
+      Path: SFX\Hazard_Combat_Engine\Hazards\Elite Squad\Play_Elite_Squad_HIT
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Elite Squad
+        ObjectType: 4
+      - ElementName: Play_Elite_Squad_HIT
+        ObjectType: 3
+      ID: 557110686
+      Guid: ceb79c5e31c53240952e8e6df75d0bf6
+      maxAttenuation: 0
+    - Name: Play_Elite_Squad_INTRO
+      Path: SFX\Hazard_Combat_Engine\Hazards\Elite Squad\Play_Elite_Squad_INTRO
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Elite Squad
+        ObjectType: 4
+      - ElementName: Play_Elite_Squad_INTRO
+        ObjectType: 3
+      ID: 360215483
+      Guid: 55aa86e0624a5444ad0cb77bfa6af8dc
+      maxAttenuation: 0
+    - Name: Play_Elite_Squad_MISS
+      Path: SFX\Hazard_Combat_Engine\Hazards\Elite Squad\Play_Elite_Squad_MISS
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Elite Squad
+        ObjectType: 4
+      - ElementName: Play_Elite_Squad_MISS
+        ObjectType: 3
+      ID: -1377145773
+      Guid: 034364afd4b86b48a57b46cbd3d33b7b
+      maxAttenuation: 0
+    - Name: Play_Emblem_Set
+      Path: SFX\____UNCLASSIFIED____\Play_Emblem_Set
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: Play_Emblem_Set
+        ObjectType: 3
+      ID: 124481473
+      Guid: 9d61829bc0a5d34eb364db70e39addad
+      maxAttenuation: 100
+    - Name: Play_Engine_Room_Ambience
+      Path: SFX\Indoor_Ambiences\Play_Engine_Room_Ambience
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Indoor_Ambiences
+        ObjectType: 4
+      - ElementName: Play_Engine_Room_Ambience
+        ObjectType: 3
+      ID: 1726730133
+      Guid: 606149956bb2894987e9b1465fbabffb
+      maxAttenuation: 0
+    - Name: Play_Faulty_Reactor_HIT
+      Path: SFX\Hazard_Combat_Engine\Hazards\Faulty_Reactor\Play_Faulty_Reactor_HIT
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Faulty_Reactor
+        ObjectType: 4
+      - ElementName: Play_Faulty_Reactor_HIT
+        ObjectType: 3
+      ID: -95384966
+      Guid: c290d39171b4ba4cbf793e90d036b4f5
+      maxAttenuation: 0
+    - Name: Play_Faulty_Reactor_INTRO
+      Path: SFX\Hazard_Combat_Engine\Hazards\Faulty_Reactor\Play_Faulty_Reactor_INTRO
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Faulty_Reactor
+        ObjectType: 4
+      - ElementName: Play_Faulty_Reactor_INTRO
+        ObjectType: 3
+      ID: -476963337
+      Guid: 3ef2936804168d45ae13b404c983c925
+      maxAttenuation: 0
+    - Name: Play_Faulty_Reactor_MISS
+      Path: SFX\Hazard_Combat_Engine\Hazards\Faulty_Reactor\Play_Faulty_Reactor_MISS
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Faulty_Reactor
+        ObjectType: 4
+      - ElementName: Play_Faulty_Reactor_MISS
+        ObjectType: 3
+      ID: -820143017
+      Guid: 209288fa94f23347a2884c4e0dac4818
+      maxAttenuation: 0
+    - Name: Play_Female_01_Scream
+      Path: SFX\VOICES\Play_Female_01_Scream
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: VOICES
+        ObjectType: 4
+      - ElementName: Play_Female_01_Scream
+        ObjectType: 3
+      ID: 1509851896
+      Guid: 01cee78d42c8154aa243a77d64cd123b
+      maxAttenuation: 0
+    - Name: Play_Female_01_Sigh
+      Path: SFX\VOICES\Play_Female_01_Sigh
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: VOICES
+        ObjectType: 4
+      - ElementName: Play_Female_01_Sigh
+        ObjectType: 3
+      ID: 606601670
+      Guid: 582a7d087f66584b923b7068a935db6b
+      maxAttenuation: 0
+    - Name: Play_Female_01_Surprise
+      Path: SFX\VOICES\Play_Female_01_Surprise
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: VOICES
+        ObjectType: 4
+      - ElementName: Play_Female_01_Surprise
+        ObjectType: 3
+      ID: 929892562
+      Guid: d444766b3845ff4b84471f3d31804aba
+      maxAttenuation: 0
+    - Name: Play_FinalBoss_ArcWeapon
+      Path: SFX\____UNCLASSIFIED____\ARK\Play_FinalBoss_ArcWeapon
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: ARK
+        ObjectType: 4
+      - ElementName: Play_FinalBoss_ArcWeapon
+        ObjectType: 3
+      ID: -1362369288
+      Guid: 00d8d39deb65e84da5048392b4d9d426
+      maxAttenuation: 100
+    - Name: Play_FinalBoss_Discovered
+      Path: SFX\____UNCLASSIFIED____\ARK\Play_FinalBoss_Discovered
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: ARK
+        ObjectType: 4
+      - ElementName: Play_FinalBoss_Discovered
+        ObjectType: 3
+      ID: 829298510
+      Guid: 7b30898513a0f5428090e198b9ac20dd
+      maxAttenuation: 800
+    - Name: Play_FinalBoss_StageTwo
+      Path: SFX\____UNCLASSIFIED____\ARK\Play_FinalBoss_StageTwo
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: ARK
+        ObjectType: 4
+      - ElementName: Play_FinalBoss_StageTwo
+        ObjectType: 3
+      ID: -1500595448
+      Guid: 59c173055bf8bf43a73b8be276ff54ae
+      maxAttenuation: 800
+    - Name: Play_FinalBoss_ThornTorpedoes_Fire
+      Path: SFX\____UNCLASSIFIED____\ARK\Play_FinalBoss_ThornTorpedoes_Fire
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: ARK
+        ObjectType: 4
+      - ElementName: Play_FinalBoss_ThornTorpedoes_Fire
+        ObjectType: 3
+      ID: 784435699
+      Guid: a06ee5d2a88ee849b2a3c9bbc48f8262
+      maxAttenuation: 400
+    - Name: Play_FinalBoss_ThornTorpedoes_Loop
+      Path: SFX\____UNCLASSIFIED____\ARK\Play_FinalBoss_ThornTorpedoes_Loop
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: ARK
+        ObjectType: 4
+      - ElementName: Play_FinalBoss_ThornTorpedoes_Loop
+        ObjectType: 3
+      ID: -682496231
+      Guid: 83a2c38f48516d4088f4a959119a8408
+      maxAttenuation: 400
+    - Name: Play_Fire_Bolt_Drone
+      Path: SFX\Bolt_fire\Play_Fire_Bolt_Drone
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Bolt_fire
+        ObjectType: 4
+      - ElementName: Play_Fire_Bolt_Drone
+        ObjectType: 3
+      ID: 575853851
+      Guid: 61043e7b32b08e49b2b5865be6de91a8
+      maxAttenuation: 400
+    - Name: Play_Fire_Bolt_Heavy
+      Path: SFX\Bolt_fire\Play_Fire_Bolt_Heavy
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Bolt_fire
+        ObjectType: 4
+      - ElementName: Play_Fire_Bolt_Heavy
+        ObjectType: 3
+      ID: 161658992
+      Guid: 3d90c596c6106c4497f2bd7a08e29bc7
+      maxAttenuation: 400
+    - Name: Play_Fire_Bolt_Light
+      Path: SFX\Bolt_fire\Play_Fire_Bolt_Light
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Bolt_fire
+        ObjectType: 4
+      - ElementName: Play_Fire_Bolt_Light
+        ObjectType: 3
+      ID: 718825477
+      Guid: fdda7bd192d0194c86cd52b34e7e81c8
+      maxAttenuation: 400
+    - Name: Play_Fire_Bolt_Medium
+      Path: SFX\Bolt_fire\Play_Fire_Bolt_Medium
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Bolt_fire
+        ObjectType: 4
+      - ElementName: Play_Fire_Bolt_Medium
+        ObjectType: 3
+      ID: -1304253854
+      Guid: a721e9476f5b1641b406e5dde4ca1e4e
+      maxAttenuation: 400
+    - Name: Play_Fire_Bolt_SuperHeavy
+      Path: SFX\Bolt_fire\Play_Fire_Bolt_SuperHeavy
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Bolt_fire
+        ObjectType: 4
+      - ElementName: Play_Fire_Bolt_SuperHeavy
+        ObjectType: 3
+      ID: -360640263
+      Guid: 43cde6f8f2ecd440963178f9a3f01597
+      maxAttenuation: 400
+    - Name: Play_Fire_Bolt_SuperLight
+      Path: SFX\Bolt_fire\Play_Fire_Bolt_SuperLight
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Bolt_fire
+        ObjectType: 4
+      - ElementName: Play_Fire_Bolt_SuperLight
+        ObjectType: 3
+      ID: -211460008
+      Guid: 2f1b8abca5cc054a93361da779b32052
+      maxAttenuation: 400
+    - Name: Play_Flak_Explosion
+      Path: SFX\Weapons_All\Play_Flak_Explosion
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Weapons_All
+        ObjectType: 4
+      - ElementName: Play_Flak_Explosion
+        ObjectType: 3
+      ID: 2137794092
+      Guid: bac421d462d6ea499c768a5cb42c61d6
+      maxAttenuation: 100
+    - Name: Play_Footstep_Dots
+      Path: SFX\Salvage_Engine\Play_Footstep_Dots
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Salvage_Engine
+        ObjectType: 4
+      - ElementName: Play_Footstep_Dots
+        ObjectType: 3
+      ID: 812377247
+      Guid: 850e3109a1ecf04cb0ff33215ff5f4d0
+      maxAttenuation: 0
+    - Name: Play_Gargantuclaw_HIT
+      Path: SFX\Hazard_Combat_Engine\Hazards\Gargantuclaw\Play_Gargantuclaw_HIT
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Gargantuclaw
+        ObjectType: 4
+      - ElementName: Play_Gargantuclaw_HIT
+        ObjectType: 3
+      ID: -1147969744
+      Guid: a1f7a2f2146584418685859c9b395465
+      maxAttenuation: 0
+    - Name: Play_Gargantuclaw_INTRO
+      Path: SFX\Hazard_Combat_Engine\Hazards\Gargantuclaw\Play_Gargantuclaw_INTRO
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Gargantuclaw
+        ObjectType: 4
+      - ElementName: Play_Gargantuclaw_INTRO
+        ObjectType: 3
+      ID: 554946617
+      Guid: 1d784ad2a64c5c4b9068668127032ebe
+      maxAttenuation: 0
+    - Name: Play_Gargantuclaw_MISS
+      Path: SFX\Hazard_Combat_Engine\Hazards\Gargantuclaw\Play_Gargantuclaw_MISS
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Gargantuclaw
+        ObjectType: 4
+      - ElementName: Play_Gargantuclaw_MISS
+        ObjectType: 3
+      ID: 1860456921
+      Guid: 5bf5b8847666dd468572f9c22dab8636
+      maxAttenuation: 0
+    - Name: Play_GiantGlacier_RockFall
+      Path: SFX\____UNCLASSIFIED____\Play_GiantGlacier_RockFall
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: Play_GiantGlacier_RockFall
+        ObjectType: 3
+      ID: -848094925
+      Guid: 93bec544fffda84bba9dec61ddc7886e
+      maxAttenuation: 400
+    - Name: Play_Grappling_Hook_Fire
+      Path: SFX\Player_SHIP\Play_Grappling_Hook_Fire
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Player_SHIP
+        ObjectType: 4
+      - ElementName: Play_Grappling_Hook_Fire
+        ObjectType: 3
+      ID: -172174213
+      Guid: 07b3c08487f92441a6a6cea21e7f8490
+      maxAttenuation: 100
+    - Name: Play_Hazard_Encounter_Alarm
+      Path: SFX\Hazard_Combat_Engine\Play_Hazard_Encounter_Alarm
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Play_Hazard_Encounter_Alarm
+        ObjectType: 3
+      ID: 1472159702
+      Guid: a675283d5ee46a469cca757b0dbdb71c
+      maxAttenuation: 0
+    - Name: Play_Hazard_Turn
+      Path: SFX\Hazard_Combat_Engine\Play_Hazard_Turn
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Play_Hazard_Turn
+        ObjectType: 3
+      ID: 329560576
+      Guid: 2582ca96af2dea44bf055d45435a58ff
+      maxAttenuation: 0
+    - Name: Play_Hollow_Metal_Clang
+      Path: SFX\____UNCLASSIFIED____\Play_Hollow_Metal_Clang
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: Play_Hollow_Metal_Clang
+        ObjectType: 3
+      ID: -2089867163
+      Guid: 5d6f762fc6534747b06647c466752084
+      maxAttenuation: 100
+    - Name: Play_Huge_Royal_Engine_Loop
+      Path: SFX\Engines\Play_Huge_Royal_Engine_Loop
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Engines
+        ObjectType: 4
+      - ElementName: Play_Huge_Royal_Engine_Loop
+        ObjectType: 3
+      ID: -1457949255
+      Guid: b437a2181b8a9b43955dd8c20f6eeb0e
+      maxAttenuation: 100
+    - Name: Play_Hull_Breach_HIT
+      Path: SFX\Hazard_Combat_Engine\Hazards\Hull_Breach\Play_Hull_Breach_HIT
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Hull_Breach
+        ObjectType: 4
+      - ElementName: Play_Hull_Breach_HIT
+        ObjectType: 3
+      ID: -825855281
+      Guid: f22f89c7d5dca24aa2ee13356e8f4d08
+      maxAttenuation: 0
+    - Name: Play_Hull_Breach_INTRO
+      Path: SFX\Hazard_Combat_Engine\Hazards\Hull_Breach\Play_Hull_Breach_INTRO
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Hull_Breach
+        ObjectType: 4
+      - ElementName: Play_Hull_Breach_INTRO
+        ObjectType: 3
+      ID: -1211174530
+      Guid: 7b17927f9ea9f94f93500975e41f6af2
+      maxAttenuation: 0
+    - Name: Play_Hull_Breach_MISS
+      Path: SFX\Hazard_Combat_Engine\Hazards\Hull_Breach\Play_Hull_Breach_MISS
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Hull_Breach
+        ObjectType: 4
+      - ElementName: Play_Hull_Breach_MISS
+        ObjectType: 3
+      ID: 1532637984
+      Guid: be2dbc530200cc4a8f56cc1f4b2db4b8
+      maxAttenuation: 0
+    - Name: Play_Hungry_Rat_HIT
+      Path: SFX\Hazard_Combat_Engine\Hazards\Hungry_Rat\Play_Hungry_Rat_HIT
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Hungry_Rat
+        ObjectType: 4
+      - ElementName: Play_Hungry_Rat_HIT
+        ObjectType: 3
+      ID: -201261697
+      Guid: a41d1b5f1ae37041ab5140834d88a34f
+      maxAttenuation: 0
+    - Name: Play_Hungry_Rat_INTRO
+      Path: SFX\Hazard_Combat_Engine\Hazards\Hungry_Rat\Play_Hungry_Rat_INTRO
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Hungry_Rat
+        ObjectType: 4
+      - ElementName: Play_Hungry_Rat_INTRO
+        ObjectType: 3
+      ID: 859066830
+      Guid: 014edbde29306d45830d75483ff00644
+      maxAttenuation: 0
+    - Name: Play_Hungry_Rat_MISS
+      Path: SFX\Hazard_Combat_Engine\Hazards\Hungry_Rat\Play_Hungry_Rat_MISS
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Hungry_Rat
+        ObjectType: 4
+      - ElementName: Play_Hungry_Rat_MISS
+        ObjectType: 3
+      ID: -1491052720
+      Guid: 72a49e82ee5a174598ae6c3ff4685b3f
+      maxAttenuation: 0
+    - Name: Play_Icer_Engine_Loop
+      Path: SFX\Engines\Play_Icer_Engine_Loop
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Engines
+        ObjectType: 4
+      - ElementName: Play_Icer_Engine_Loop
+        ObjectType: 3
+      ID: 1859013157
+      Guid: 32a6b39486f922469e6e279961a6398b
+      maxAttenuation: 100
+    - Name: Play_Icer_Overdrive
+      Path: SFX\Engines\Play_Icer_Overdrive
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Engines
+        ObjectType: 4
+      - ElementName: Play_Icer_Overdrive
+        ObjectType: 3
+      ID: -1108032276
+      Guid: cc05b4c769edeb48950607a3367139f5
+      maxAttenuation: 100
+    - Name: Play_Indoor_Alarm
+      Path: SFX\____UNCLASSIFIED____\Play_Indoor_Alarm
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: Play_Indoor_Alarm
+        ObjectType: 3
+      ID: 1737916369
+      Guid: 22755f5eff27194aa53eea1f6af79bbe
+      maxAttenuation: 0
+    - Name: Play_Intro_Logos
+      Path: SFX\UI\Play_Intro_Logos
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Intro_Logos
+        ObjectType: 3
+      ID: 1154430321
+      Guid: c72a7b0b41f41e44b7eb0c6289e0de13
+      maxAttenuation: 0
+    - Name: Play_Inventory_Tabs
+      Path: SFX\UI\Play_Inventory_Tabs
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Inventory_Tabs
+        ObjectType: 3
+      ID: -1408321251
+      Guid: 9490ca98a4e5e0478130bdb83b36ca40
+      maxAttenuation: 0
+    - Name: Play_Large_Chomp_Mine_Chomp
+      Path: SFX\Chomp_Mines\Play_Large_Chomp_Mine_Chomp
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Chomp_Mines
+        ObjectType: 4
+      - ElementName: Play_Large_Chomp_Mine_Chomp
+        ObjectType: 3
+      ID: -929341633
+      Guid: a91b7b0a4a30ac4b986f7ae75bf12097
+      maxAttenuation: 200
+    - Name: Play_Large_Chomp_Mine_Detect_Player
+      Path: SFX\Chomp_Mines\Play_Large_Chomp_Mine_Detect_Player
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Chomp_Mines
+        ObjectType: 4
+      - ElementName: Play_Large_Chomp_Mine_Detect_Player
+        ObjectType: 3
+      ID: 33404427
+      Guid: 9c0b6a676ed1674282ac3a702bdb8941
+      maxAttenuation: 200
+    - Name: Play_Large_Chomp_Mine_Open
+      Path: SFX\Chomp_Mines\Play_Large_Chomp_Mine_Open
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Chomp_Mines
+        ObjectType: 4
+      - ElementName: Play_Large_Chomp_Mine_Open
+        ObjectType: 3
+      ID: -657133828
+      Guid: e653f9c9367b7a41b59999165e667cf2
+      maxAttenuation: 200
+    - Name: Play_Large_City_Station_Ambience
+      Path: SFX\Indoor_Ambiences\Play_Large_City_Station_Ambience
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Indoor_Ambiences
+        ObjectType: 4
+      - ElementName: Play_Large_City_Station_Ambience
+        ObjectType: 3
+      ID: -998774935
+      Guid: ceac610555404a40ba1cf4983e725669
+      maxAttenuation: 0
+    - Name: Play_Large_Explosion_Clean
+      Path: SFX\____UNCLASSIFIED____\Play_Large_Explosion_Clean
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: Play_Large_Explosion_Clean
+        ObjectType: 3
+      ID: 1097298737
+      Guid: e9f79bb6e6f129438d34de67b415da84
+      maxAttenuation: 400
+    - Name: Play_Leaky_Furnace_HIT
+      Path: SFX\Hazard_Combat_Engine\Hazards\Leaky_Furnace\Play_Leaky_Furnace_HIT
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Leaky_Furnace
+        ObjectType: 4
+      - ElementName: Play_Leaky_Furnace_HIT
+        ObjectType: 3
+      ID: -251085789
+      Guid: 3ce4b35d660807478b656abb1cfc104d
+      maxAttenuation: 0
+    - Name: Play_Leaky_Furnace_INTRO
+      Path: SFX\Hazard_Combat_Engine\Hazards\Leaky_Furnace\Play_Leaky_Furnace_INTRO
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Leaky_Furnace
+        ObjectType: 4
+      - ElementName: Play_Leaky_Furnace_INTRO
+        ObjectType: 3
+      ID: -887925486
+      Guid: 4253703ea9cb0c4c86fce500cdcf2a5c
+      maxAttenuation: 0
+    - Name: Play_Leaky_Furnace_MISS
+      Path: SFX\Hazard_Combat_Engine\Hazards\Leaky_Furnace\Play_Leaky_Furnace_MISS
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Leaky_Furnace
+        ObjectType: 4
+      - ElementName: Play_Leaky_Furnace_MISS
+        ObjectType: 3
+      ID: 1327292700
+      Guid: 0b4db0a9c836254a94273049ea7f6feb
+      maxAttenuation: 0
+    - Name: Play_Lever_Pull
+      Path: SFX\Salvage_Engine\Play_Lever_Pull
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Salvage_Engine
+        ObjectType: 4
+      - ElementName: Play_Lever_Pull
+        ObjectType: 3
+      ID: 1404912156
+      Guid: 1a772d9637950441a6e90bd8217b31f9
+      maxAttenuation: 0
+    - Name: Play_Lootbox_Open
+      Path: SFX\____UNCLASSIFIED____\Play_Lootbox_Open
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: Play_Lootbox_Open
+        ObjectType: 3
+      ID: 18246926
+      Guid: 5141599ff26bd046bcb2072d5c2a187b
+      maxAttenuation: 0
+    - Name: Play_Low_Health
+      Path: SFX\Player_SHIP\Play_Low_Health
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Player_SHIP
+        ObjectType: 4
+      - ElementName: Play_Low_Health
+        ObjectType: 3
+      ID: 833469641
+      Guid: 16f8a7e404e666459317d1fca28c1ab3
+      maxAttenuation: 100
+    - Name: Play_Male_01_Scream
+      Path: SFX\VOICES\Play_Male_01_Scream
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: VOICES
+        ObjectType: 4
+      - ElementName: Play_Male_01_Scream
+        ObjectType: 3
+      ID: -421699085
+      Guid: d2516a352a76e94487905eb96388f32b
+      maxAttenuation: 0
+    - Name: Play_Male_01_Sigh
+      Path: SFX\VOICES\Play_Male_01_Sigh
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: VOICES
+        ObjectType: 4
+      - ElementName: Play_Male_01_Sigh
+        ObjectType: 3
+      ID: -1148431819
+      Guid: 9a93a5a6aa6e3e448a1c681b86880204
+      maxAttenuation: 0
+    - Name: Play_Male_01_Surprise
+      Path: SFX\VOICES\Play_Male_01_Surprise
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: VOICES
+        ObjectType: 4
+      - ElementName: Play_Male_01_Surprise
+        ObjectType: 3
+      ID: 129169257
+      Guid: a0cd41295b5ada45bfb25a08a682ab40
+      maxAttenuation: 0
+    - Name: Play_Massive_Door
+      Path: SFX\Salvage_Engine\Play_Massive_Door
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Salvage_Engine
+        ObjectType: 4
+      - ElementName: Play_Massive_Door
+        ObjectType: 3
+      ID: 324250623
+      Guid: 9a2ba004bb906d4ab68069eb62ce24a7
+      maxAttenuation: 0
+    - Name: Play_Medium_City_Station_Ambience
+      Path: SFX\Indoor_Ambiences\Play_Medium_City_Station_Ambience
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Indoor_Ambiences
+        ObjectType: 4
+      - ElementName: Play_Medium_City_Station_Ambience
+        ObjectType: 3
+      ID: 1536314541
+      Guid: 06c7fc60d33d5b45a10ff7af1ec489a3
+      maxAttenuation: 0
+    - Name: Play_Monstrous_Rat_HIT
+      Path: SFX\Hazard_Combat_Engine\Hazards\Monstrous_Rat\Play_Monstrous_Rat_HIT
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Monstrous_Rat
+        ObjectType: 4
+      - ElementName: Play_Monstrous_Rat_HIT
+        ObjectType: 3
+      ID: -1181279826
+      Guid: 1db5b0d72788eb49995846ec43d6df97
+      maxAttenuation: 0
+    - Name: Play_Monstrous_Rat_INTRO
+      Path: SFX\Hazard_Combat_Engine\Hazards\Monstrous_Rat\Play_Monstrous_Rat_INTRO
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Monstrous_Rat
+        ObjectType: 4
+      - ElementName: Play_Monstrous_Rat_INTRO
+        ObjectType: 3
+      ID: -1217648149
+      Guid: cde56eb9fa0e3347be481d5bff8548ba
+      maxAttenuation: 0
+    - Name: Play_Monstrous_Rat_MISS
+      Path: SFX\Hazard_Combat_Engine\Hazards\Monstrous_Rat\Play_Monstrous_Rat_MISS
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Monstrous_Rat
+        ObjectType: 4
+      - ElementName: Play_Monstrous_Rat_MISS
+        ObjectType: 3
+      ID: -1600417501
+      Guid: eddb393e932a2f4a938c8b6398120818
+      maxAttenuation: 0
+    - Name: Play_MUS_Enemy_Destroyed
+      Path: SFX\____UNCLASSIFIED____\Play_MUS_Enemy_Destroyed
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: Play_MUS_Enemy_Destroyed
+        ObjectType: 3
+      ID: 1143376570
+      Guid: 2269250282bc3441ae1bc5b7d0d100a3
+      maxAttenuation: 0
+    - Name: Play_Nature_Park_Ambience
+      Path: SFX\Indoor_Ambiences\Play_Nature_Park_Ambience
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Indoor_Ambiences
+        ObjectType: 4
+      - ElementName: Play_Nature_Park_Ambience
+        ObjectType: 3
+      ID: 1279890593
+      Guid: 12d15d6cae29714d866657b5001f6c25
+      maxAttenuation: 0
+    - Name: Play_New_Item
+      Path: SFX\Indoor_Ambiences\Play_New_Item
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Indoor_Ambiences
+        ObjectType: 4
+      - ElementName: Play_New_Item
+        ObjectType: 3
+      ID: 354270874
+      Guid: 6d0a972d57b41b418aec8da3b08f498a
+      maxAttenuation: 0
+    - Name: Play_Open_Generic
+      Path: SFX\UI\Play_Open_Generic
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Open_Generic
+        ObjectType: 3
+      ID: 1467330764
+      Guid: b38bfd62cef4d64a9c7c3d403d789181
+      maxAttenuation: 0
+    - Name: Play_Open_Medium
+      Path: SFX\UI\Play_Open_Medium
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Open_Medium
+        ObjectType: 3
+      ID: -195423524
+      Guid: c083a08b331cce489038c1a33534b881
+      maxAttenuation: 0
+    - Name: Play_Open_Small
+      Path: SFX\UI\Play_Open_Small
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Open_Small
+        ObjectType: 3
+      ID: -185193266
+      Guid: cc20884d13edc24a99d9186020677536
+      maxAttenuation: 0
+    - Name: Play_Open_Text_Log
+      Path: SFX\UI\Play_Open_Text_Log
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Open_Text_Log
+        ObjectType: 3
+      ID: -1235102265
+      Guid: 5325d7ab934664479904646a90c54bcd
+      maxAttenuation: 0
+    - Name: Play_Pause_Screen_Lightbulb
+      Path: SFX\UI\Play_Pause_Screen_Lightbulb
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Pause_Screen_Lightbulb
+        ObjectType: 3
+      ID: 1622064951
+      Guid: 7e7af9a1d4af2240a5cf5fa11c21f2f7
+      maxAttenuation: 0
+    - Name: Play_Pirate_Cutlass_HIT
+      Path: SFX\Hazard_Combat_Engine\Hazards\Pirate_Cutlass\Play_Pirate_Cutlass_HIT
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Pirate_Cutlass
+        ObjectType: 4
+      - ElementName: Play_Pirate_Cutlass_HIT
+        ObjectType: 3
+      ID: 33817729
+      Guid: 24377aba2587884dbc26f5e54f933cfb
+      maxAttenuation: 0
+    - Name: Play_Pirate_Cutlass_INTRO
+      Path: SFX\Hazard_Combat_Engine\Hazards\Pirate_Cutlass\Play_Pirate_Cutlass_INTRO
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Pirate_Cutlass
+        ObjectType: 4
+      - ElementName: Play_Pirate_Cutlass_INTRO
+        ObjectType: 3
+      ID: -1144622940
+      Guid: c0789518842c4d4b9b73de6f73d9b845
+      maxAttenuation: 0
+    - Name: Play_Pirate_Cutlass_MISS
+      Path: SFX\Hazard_Combat_Engine\Hazards\Pirate_Cutlass\Play_Pirate_Cutlass_MISS
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Pirate_Cutlass
+        ObjectType: 4
+      - ElementName: Play_Pirate_Cutlass_MISS
+        ObjectType: 3
+      ID: -479234482
+      Guid: 02343935af2b3247b091f583c34d0f86
+      maxAttenuation: 0
+    - Name: Play_Pirate_Spearman_HIT
+      Path: SFX\Hazard_Combat_Engine\Hazards\Pirate_Spearman\Play_Pirate_Spearman_HIT
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Pirate_Spearman
+        ObjectType: 4
+      - ElementName: Play_Pirate_Spearman_HIT
+        ObjectType: 3
+      ID: -275787537
+      Guid: 0f84b6c0c407b4449c1db68dc9db7d44
+      maxAttenuation: 0
+    - Name: Play_Pirate_Spearman_INTRO
+      Path: SFX\Hazard_Combat_Engine\Hazards\Pirate_Spearman\Play_Pirate_Spearman_INTRO
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Pirate_Spearman
+        ObjectType: 4
+      - ElementName: Play_Pirate_Spearman_INTRO
+        ObjectType: 3
+      ID: -578670434
+      Guid: 97559520bfbc06449ec10699f5c61fd6
+      maxAttenuation: 0
+    - Name: Play_Pirate_Spearman_MISS
+      Path: SFX\Hazard_Combat_Engine\Hazards\Pirate_Spearman\Play_Pirate_Spearman_MISS
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Pirate_Spearman
+        ObjectType: 4
+      - ElementName: Play_Pirate_Spearman_MISS
+        ObjectType: 3
+      ID: 408510400
+      Guid: 0f438149c523204f9636f7ab002778cb
+      maxAttenuation: 0
+    - Name: Play_Player_Damaged
+      Path: SFX\Weapons_All\Play_Player_Damaged
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Weapons_All
+        ObjectType: 4
+      - ElementName: Play_Player_Damaged
+        ObjectType: 3
+      ID: -1992980011
+      Guid: 34d014ab5445e141a42613fffecc3c7a
+      maxAttenuation: 400
+    - Name: Play_Quest_Complete
+      Path: SFX\UI\Play_Quest_Complete
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Quest_Complete
+        ObjectType: 3
+      ID: 2012464318
+      Guid: 58dee22c41df7d4e8d48b0735bfb1ac4
+      maxAttenuation: 0
+    - Name: Play_Random_Encounter_Ambience
+      Path: SFX\Indoor_Ambiences\Play_Random_Encounter_Ambience
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Indoor_Ambiences
+        ObjectType: 4
+      - ElementName: Play_Random_Encounter_Ambience
+        ObjectType: 3
+      ID: 1106360744
+      Guid: d0df39c5c745204a8dc0330d9095a29e
+      maxAttenuation: 0
+    - Name: Play_Repaired
+      Path: SFX\Player_SHIP\Play_Repaired
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Player_SHIP
+        ObjectType: 4
+      - ElementName: Play_Repaired
+        ObjectType: 3
+      ID: 981666398
+      Guid: 99b5a4929000b240a84ba345fbf1289a
+      maxAttenuation: 0
+    - Name: Play_Room_Appearance
+      Path: SFX\Salvage_Engine\Play_Room_Appearance
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Salvage_Engine
+        ObjectType: 4
+      - ElementName: Play_Room_Appearance
+        ObjectType: 3
+      ID: 1987762316
+      Guid: 9acdc88a26d7324dbbd90918de8474ce
+      maxAttenuation: 0
+    - Name: Play_Royal_Engine_Loop
+      Path: SFX\Engines\Play_Royal_Engine_Loop
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Engines
+        ObjectType: 4
+      - ElementName: Play_Royal_Engine_Loop
+        ObjectType: 3
+      ID: -79248619
+      Guid: cbb443ad3d64b249b2ad11b1bc8eed37
+      maxAttenuation: 100
+    - Name: Play_Royal_Fencer_HIT
+      Path: SFX\Hazard_Combat_Engine\Hazards\Royal_Fencer\Play_Royal_Fencer_HIT
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Royal_Fencer
+        ObjectType: 4
+      - ElementName: Play_Royal_Fencer_HIT
+        ObjectType: 3
+      ID: 1894712735
+      Guid: eca555e2a78c0b4ab2824b0e817cdb92
+      maxAttenuation: 0
+    - Name: Play_Royal_Fencer_INTRO
+      Path: SFX\Hazard_Combat_Engine\Hazards\Royal_Fencer\Play_Royal_Fencer_INTRO
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Royal_Fencer
+        ObjectType: 4
+      - ElementName: Play_Royal_Fencer_INTRO
+        ObjectType: 3
+      ID: -252462866
+      Guid: b7e23ed5c17d1b44ab4270be0c39ab18
+      maxAttenuation: 0
+    - Name: Play_Royal_Fencer_MISS
+      Path: SFX\Hazard_Combat_Engine\Hazards\Royal_Fencer\Play_Royal_Fencer_MISS
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Royal_Fencer
+        ObjectType: 4
+      - ElementName: Play_Royal_Fencer_MISS
+        ObjectType: 3
+      ID: 1868450800
+      Guid: 72e4f45126e7424d95d9151867f5c176
+      maxAttenuation: 0
+    - Name: Play_Royal_Overdrive
+      Path: SFX\Engines\Play_Royal_Overdrive
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Engines
+        ObjectType: 4
+      - ElementName: Play_Royal_Overdrive
+        ObjectType: 3
+      ID: -163255396
+      Guid: 6762ece494fd1a42bc624e5e6e827b09
+      maxAttenuation: 100
+    - Name: Play_Royal_Patrolmen_HIT
+      Path: SFX\Hazard_Combat_Engine\Hazards\Royal_Patrolmen\Play_Royal_Patrolmen_HIT
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Royal_Patrolmen
+        ObjectType: 4
+      - ElementName: Play_Royal_Patrolmen_HIT
+        ObjectType: 3
+      ID: 1437922138
+      Guid: ecdccf79ffaeb244ba9b7dd2e6e35fc8
+      maxAttenuation: 0
+    - Name: Play_Royal_Patrolmen_INTRO
+      Path: SFX\Hazard_Combat_Engine\Hazards\Royal_Patrolmen\Play_Royal_Patrolmen_INTRO
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Royal_Patrolmen
+        ObjectType: 4
+      - ElementName: Play_Royal_Patrolmen_INTRO
+        ObjectType: 3
+      ID: 192745431
+      Guid: 27a52275fe2a8744a9e33da34a26d100
+      maxAttenuation: 0
+    - Name: Play_Royal_Patrolmen_MISS
+      Path: SFX\Hazard_Combat_Engine\Hazards\Royal_Patrolmen\Play_Royal_Patrolmen_MISS
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Royal_Patrolmen
+        ObjectType: 4
+      - ElementName: Play_Royal_Patrolmen_MISS
+        ObjectType: 3
+      ID: -1909541705
+      Guid: 769cc91b80686b49ab72153f1cb59ae9
+      maxAttenuation: 0
+    - Name: Play_Saved_Game
+      Path: SFX\UI\Play_Saved_Game
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Saved_Game
+        ObjectType: 3
+      ID: -1235007396
+      Guid: f402a885f9172e46ad18df77315e10a0
+      maxAttenuation: 0
+    - Name: Play_Select_Attack_Endurance
+      Path: SFX\Hazard_Combat_Engine\Play_Select_Attack_Endurance
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Play_Select_Attack_Endurance
+        ObjectType: 3
+      ID: 1877866447
+      Guid: 4c29e95fbb69884dae1d8b9b4d470bf0
+      maxAttenuation: 0
+    - Name: Play_Select_Attack_Intelligence
+      Path: SFX\Hazard_Combat_Engine\Play_Select_Attack_Intelligence
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Play_Select_Attack_Intelligence
+        ObjectType: 3
+      ID: 990515233
+      Guid: f11310b6cdbd4a469f5190db8b358967
+      maxAttenuation: 0
+    - Name: Play_Select_Attack_Perception
+      Path: SFX\Hazard_Combat_Engine\Play_Select_Attack_Perception
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Play_Select_Attack_Perception
+        ObjectType: 3
+      ID: -541495355
+      Guid: ecc7c588b9c4f54ba632a9ff9e9cd02d
+      maxAttenuation: 0
+    - Name: Play_Select_Attack_Strength
+      Path: SFX\Hazard_Combat_Engine\Play_Select_Attack_Strength
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Play_Select_Attack_Strength
+        ObjectType: 3
+      ID: 716997591
+      Guid: 69b77c41223d644cb4258213f5ae78a8
+      maxAttenuation: 0
+    - Name: Play_Sentry_Alerted
+      Path: SFX\____UNCLASSIFIED____\ARK\Play_Sentry_Alerted
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: ARK
+        ObjectType: 4
+      - ElementName: Play_Sentry_Alerted
+        ObjectType: 3
+      ID: 973339531
+      Guid: e3c34b5c2089d04b8f93732b96d23bb9
+      maxAttenuation: 300
+    - Name: Play_SFX_New_Landmark_Found
+      Path: SFX\UI\Play_SFX_New_Landmark_Found
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_SFX_New_Landmark_Found
+        ObjectType: 3
+      ID: 1846521322
+      Guid: 29cea75b2611e94f95cd65657c66d307
+      maxAttenuation: 0
+    - Name: Play_Shadowy_Figure_HIT
+      Path: SFX\Hazard_Combat_Engine\Hazards\Shadowy_Figure\Play_Shadowy_Figure_HIT
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Shadowy_Figure
+        ObjectType: 4
+      - ElementName: Play_Shadowy_Figure_HIT
+        ObjectType: 3
+      ID: 1556690328
+      Guid: 9ce265f6c6a55b4f8447e11eb8a41d8e
+      maxAttenuation: 0
+    - Name: Play_Shadowy_Figure_INTRO
+      Path: SFX\Hazard_Combat_Engine\Hazards\Shadowy_Figure\Play_Shadowy_Figure_INTRO
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Shadowy_Figure
+        ObjectType: 4
+      - ElementName: Play_Shadowy_Figure_INTRO
+        ObjectType: 3
+      ID: -1099693647
+      Guid: b2ccceb83baba1439f26e41c17132304
+      maxAttenuation: 0
+    - Name: Play_Shadowy_Figure_MISS
+      Path: SFX\Hazard_Combat_Engine\Hazards\Shadowy_Figure\Play_Shadowy_Figure_MISS
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Shadowy_Figure
+        ObjectType: 4
+      - ElementName: Play_Shadowy_Figure_MISS
+        ObjectType: 3
+      ID: 2124719473
+      Guid: f0aa2542a4d98344991353aef2be01c3
+      maxAttenuation: 0
+    - Name: Play_Ship_Change
+      Path: SFX\Player_SHIP\Play_Ship_Change
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Player_SHIP
+        ObjectType: 4
+      - ElementName: Play_Ship_Change
+        ObjectType: 3
+      ID: -92672909
+      Guid: 1c887fc84596d246a903eaebf045b32c
+      maxAttenuation: 0
+    - Name: Play_Ship_DockingHook_ReelingIn
+      Path: SFX\____UNCLASSIFIED____\Play_Ship_DockingHook_ReelingIn
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: Play_Ship_DockingHook_ReelingIn
+        ObjectType: 3
+      ID: 689461339
+      Guid: 63efa3b042bf664998d3016651650558
+      maxAttenuation: 100
+    - Name: Play_Ship_Movement
+      Path: SFX\____UNCLASSIFIED____\Play_Ship_Movement
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: Play_Ship_Movement
+        ObjectType: 3
+      ID: -1276930764
+      Guid: 32b0c66677de1a48a91c6f4ca8e4d9f7
+      maxAttenuation: 100
+    - Name: Play_ShipOnMetal_Impact
+      Path: SFX\Player_SHIP\Play_ShipOnMetal_Impact
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Player_SHIP
+        ObjectType: 4
+      - ElementName: Play_ShipOnMetal_Impact
+        ObjectType: 3
+      ID: 1322256745
+      Guid: 74bff8933e88bc4a84072cb377697034
+      maxAttenuation: 100
+    - Name: Play_ShipOnRock_Impact
+      Path: SFX\Player_SHIP\Play_ShipOnRock_Impact
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Player_SHIP
+        ObjectType: 4
+      - ElementName: Play_ShipOnRock_Impact
+        ObjectType: 3
+      ID: -500043503
+      Guid: c7c116da7c13d24d88aedc8dec0a0152
+      maxAttenuation: 100
+    - Name: Play_ShipScrape
+      Path: SFX\Player_SHIP\Play_ShipScrape
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Player_SHIP
+        ObjectType: 4
+      - ElementName: Play_ShipScrape
+        ObjectType: 3
+      ID: -1439815644
+      Guid: 59edafc0054aa748b9afb8176badc520
+      maxAttenuation: 100
+    - Name: Play_Short_Explosion
+      Path: SFX\____UNCLASSIFIED____\Play_Short_Explosion
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: Play_Short_Explosion
+        ObjectType: 3
+      ID: -1721587864
+      Guid: 5ac89e9ab5d6814194b1a6fee9c62699
+      maxAttenuation: 400
+    - Name: Play_Sleeping_Pirate_HIT
+      Path: SFX\Hazard_Combat_Engine\Hazards\Sleeping_Pirate\Play_Sleeping_Pirate_HIT
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Sleeping_Pirate
+        ObjectType: 4
+      - ElementName: Play_Sleeping_Pirate_HIT
+        ObjectType: 3
+      ID: -1353845167
+      Guid: 5371c0c8211c4d44931cfc8442f8621a
+      maxAttenuation: 0
+    - Name: Play_Sleeping_Pirate_INTRO
+      Path: SFX\Hazard_Combat_Engine\Hazards\Sleeping_Pirate\Play_Sleeping_Pirate_INTRO
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Sleeping_Pirate
+        ObjectType: 4
+      - ElementName: Play_Sleeping_Pirate_INTRO
+        ObjectType: 3
+      ID: -310540268
+      Guid: 47966ad46dd0c94cab4fb3936414b5dc
+      maxAttenuation: 0
+    - Name: Play_Sleeping_Pirate_MISS
+      Path: SFX\Hazard_Combat_Engine\Hazards\Sleeping_Pirate\Play_Sleeping_Pirate_MISS
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Sleeping_Pirate
+        ObjectType: 4
+      - ElementName: Play_Sleeping_Pirate_MISS
+        ObjectType: 3
+      ID: 2086347998
+      Guid: 092a6f88a3abf649826e2033a0dab6b3
+      maxAttenuation: 0
+    - Name: Play_Small_Chomp_Mine_Chomp
+      Path: SFX\Chomp_Mines\Play_Small_Chomp_Mine_Chomp
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Chomp_Mines
+        ObjectType: 4
+      - ElementName: Play_Small_Chomp_Mine_Chomp
+        ObjectType: 3
+      ID: -428554493
+      Guid: 4755e59070d9a442afbe09012f7d424f
+      maxAttenuation: 150
+    - Name: Play_Small_Chomp_Mine_Detect_Player
+      Path: SFX\Chomp_Mines\Play_Small_Chomp_Mine_Detect_Player
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Chomp_Mines
+        ObjectType: 4
+      - ElementName: Play_Small_Chomp_Mine_Detect_Player
+        ObjectType: 3
+      ID: -1852012753
+      Guid: bd6165a6079db74192bf5359fa20a5f8
+      maxAttenuation: 150
+    - Name: Play_Small_Chomp_Mine_Open
+      Path: SFX\Chomp_Mines\Play_Small_Chomp_Mine_Open
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Chomp_Mines
+        ObjectType: 4
+      - ElementName: Play_Small_Chomp_Mine_Open
+        ObjectType: 3
+      ID: 1548696128
+      Guid: 75510b57d77cf74caf60d97ea331e971
+      maxAttenuation: 150
+    - Name: Play_Small_Drone_Attack
+      Path: SFX\Small_Drone\Play_Small_Drone_Attack
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Small_Drone
+        ObjectType: 4
+      - ElementName: Play_Small_Drone_Attack
+        ObjectType: 3
+      ID: 191092767
+      Guid: e22fa5e93d97c540bfa55a0406726f32
+      maxAttenuation: 400
+    - Name: Play_Small_Drone_Damaged
+      Path: SFX\Small_Drone\Play_Small_Drone_Damaged
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Small_Drone
+        ObjectType: 4
+      - ElementName: Play_Small_Drone_Damaged
+        ObjectType: 3
+      ID: 1015904756
+      Guid: 816e9220b7089d41bc7d96f2e389d3c0
+      maxAttenuation: 400
+    - Name: Play_Small_Drone_Destroyed
+      Path: SFX\Small_Drone\Play_Small_Drone_Destroyed
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Small_Drone
+        ObjectType: 4
+      - ElementName: Play_Small_Drone_Destroyed
+        ObjectType: 3
+      ID: 161464404
+      Guid: 7a08a2f2ddaab541bba4947ab34e6286
+      maxAttenuation: 400
+    - Name: Play_Small_Drone_Player_Detected
+      Path: SFX\Small_Drone\Play_Small_Drone_Player_Detected
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Small_Drone
+        ObjectType: 4
+      - ElementName: Play_Small_Drone_Player_Detected
+        ObjectType: 3
+      ID: 861542841
+      Guid: 83eb38abff0ee6489274fa254505f65a
+      maxAttenuation: 400
+    - Name: Play_Small_Station_Bar_Ambience
+      Path: SFX\Indoor_Ambiences\Play_Small_Station_Bar_Ambience
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Indoor_Ambiences
+        ObjectType: 4
+      - ElementName: Play_Small_Station_Bar_Ambience
+        ObjectType: 3
+      ID: -1497957377
+      Guid: 680d17876aa6cb449efae6094e3cf19b
+      maxAttenuation: 0
+    - Name: Play_SmallThornDeath
+      Path: SFX\____UNCLASSIFIED____\ARK\Play_SmallThornDeath
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: ARK
+        ObjectType: 4
+      - ElementName: Play_SmallThornDeath
+        ObjectType: 3
+      ID: -920587520
+      Guid: 0a245e9757627049a8070f3607594dff
+      maxAttenuation: 300
+    - Name: Play_Sonar_Charge
+      Path: SFX\Sonar\Play_Sonar_Charge
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Sonar
+        ObjectType: 4
+      - ElementName: Play_Sonar_Charge
+        ObjectType: 3
+      ID: -2009503546
+      Guid: 40897da3d06d844aa3bf135cb29f831f
+      maxAttenuation: 0
+    - Name: Play_Sonar_Echo
+      Path: SFX\Sonar\Play_Sonar_Echo
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Sonar
+        ObjectType: 4
+      - ElementName: Play_Sonar_Echo
+        ObjectType: 3
+      ID: 2108697025
+      Guid: eeb5d20180196544b5d5d233191b6c20
+      maxAttenuation: 0
+    - Name: Play_Sonar_Friendly_Contact
+      Path: SFX\Sonar\Play_Sonar_Friendly_Contact
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Sonar
+        ObjectType: 4
+      - ElementName: Play_Sonar_Friendly_Contact
+        ObjectType: 3
+      ID: -80475278
+      Guid: b95d03899e3ca646b45f06df28132745
+      maxAttenuation: 400
+    - Name: Play_Sonar_Hostile_Contact
+      Path: SFX\Sonar\Play_Sonar_Hostile_Contact
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Sonar
+        ObjectType: 4
+      - ElementName: Play_Sonar_Hostile_Contact
+        ObjectType: 3
+      ID: 1801592669
+      Guid: f4ab07039893834a9f365407cc0c6e45
+      maxAttenuation: 400
+    - Name: Play_Sonar_Neutral_Contact
+      Path: SFX\Sonar\Play_Sonar_Neutral_Contact
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Sonar
+        ObjectType: 4
+      - ElementName: Play_Sonar_Neutral_Contact
+        ObjectType: 3
+      ID: 138478130
+      Guid: ed03579e31a457479f5e810d449ae665
+      maxAttenuation: 400
+    - Name: Play_Sonar_Ping
+      Path: SFX\Sonar\Play_Sonar_Ping
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Sonar
+        ObjectType: 4
+      - ElementName: Play_Sonar_Ping
+        ObjectType: 3
+      ID: 242220030
+      Guid: 3c00dc65e2fa584895be51ecb8337464
+      maxAttenuation: 0
+    - Name: Play_Sonar_PlayerDetected
+      Path: SFX\Sonar\Play_Sonar_PlayerDetected
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Sonar
+        ObjectType: 4
+      - ElementName: Play_Sonar_PlayerDetected
+        ObjectType: 3
+      ID: -730549777
+      Guid: 991329a365783541ac883e65bb8fd62c
+      maxAttenuation: 400
+    - Name: Play_Sonar_Primary_Quest_Contact
+      Path: SFX\Sonar\Play_Sonar_Primary_Quest_Contact
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Sonar
+        ObjectType: 4
+      - ElementName: Play_Sonar_Primary_Quest_Contact
+        ObjectType: 3
+      ID: 2068528702
+      Guid: 29dc766542d62e4faa82e520bcce99a8
+      maxAttenuation: 400
+    - Name: Play_Sonar_Pulse
+      Path: SFX\Player_SHIP\Play_Sonar_Pulse
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Player_SHIP
+        ObjectType: 4
+      - ElementName: Play_Sonar_Pulse
+        ObjectType: 3
+      ID: -1011167215
+      Guid: 82f2d99f8770fd43b39613d2e0cf9b07
+      maxAttenuation: 100
+    - Name: Play_Sonar_Secondary_Quest_Contact
+      Path: SFX\Sonar\Play_Sonar_Secondary_Quest_Contact
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Sonar
+        ObjectType: 4
+      - ElementName: Play_Sonar_Secondary_Quest_Contact
+        ObjectType: 3
+      ID: 2127367302
+      Guid: 954af205c857654ab79ab2b111b9a120
+      maxAttenuation: 400
+    - Name: Play_Sonar_Unable
+      Path: SFX\Sonar\Play_Sonar_Unable
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Sonar
+        ObjectType: 4
+      - ElementName: Play_Sonar_Unable
+        ObjectType: 3
+      ID: 1614329083
+      Guid: 0388492d8d9a184aabeae2e70d8916ea
+      maxAttenuation: 0
+    - Name: Play_Speed_Adjust_Lower
+      Path: SFX\Player_SHIP\Play_Speed_Adjust_Lower
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Player_SHIP
+        ObjectType: 4
+      - ElementName: Play_Speed_Adjust_Lower
+        ObjectType: 3
+      ID: -1229847699
+      Guid: 0a3a4ae3c585da48968baf3788b96c3c
+      maxAttenuation: 0
+    - Name: Play_Speed_Adjust_Raise
+      Path: SFX\Player_SHIP\Play_Speed_Adjust_Raise
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Player_SHIP
+        ObjectType: 4
+      - ElementName: Play_Speed_Adjust_Raise
+        ObjectType: 3
+      ID: -1356697094
+      Guid: 7f3ff4d31226db478dde4c97729554af
+      maxAttenuation: 0
+    - Name: Play_Station_Activated
+      Path: SFX\UI\Play_Station_Activated
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Station_Activated
+        ObjectType: 3
+      ID: 1759693470
+      Guid: 56ff927ab525b24dbc58670cbe8ee070
+      maxAttenuation: 0
+    - Name: Play_Station_Deactivated
+      Path: SFX\UI\Play_Station_Deactivated
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Station_Deactivated
+        ObjectType: 3
+      ID: -204716247
+      Guid: 78ef4bc7cce77643b781c60108f17024
+      maxAttenuation: 0
+    - Name: Play_Stinger_Buy
+      Path: SFX\UI\Play_Stinger_Buy
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Stinger_Buy
+        ObjectType: 3
+      ID: 869690717
+      Guid: 1e781deac320ff4082d6f6a9f3141443
+      maxAttenuation: 0
+    - Name: Play_Stinger_EnemyDestroyed
+      Path: SFX\____UNCLASSIFIED____\Play_Stinger_EnemyDestroyed
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: Play_Stinger_EnemyDestroyed
+        ObjectType: 3
+      ID: 132436378
+      Guid: 21fb2636443cc042aae2e9a62f5011dc
+      maxAttenuation: 0
+    - Name: Play_Stinger_PlayerDestroyed
+      Path: SFX\____UNCLASSIFIED____\Play_Stinger_PlayerDestroyed
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: Play_Stinger_PlayerDestroyed
+        ObjectType: 3
+      ID: -321128523
+      Guid: 41ef11951cbadb47a6b174cc9fde150f
+      maxAttenuation: 0
+    - Name: Play_Stinger_Sell
+      Path: SFX\UI\Play_Stinger_Sell
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Stinger_Sell
+        ObjectType: 3
+      ID: 1166820947
+      Guid: f9711e0932746d4d8c197fa69e9c6719
+      maxAttenuation: 0
+    - Name: Play_Stinger_Take
+      Path: SFX\UI\Play_Stinger_Take
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Stinger_Take
+        ObjectType: 3
+      ID: -1971132874
+      Guid: 70d2496f6416c744952c6e9adb0decbd
+      maxAttenuation: 0
+    - Name: Play_Stinger_Take_All
+      Path: SFX\UI\Play_Stinger_Take_All
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Stinger_Take_All
+        ObjectType: 3
+      ID: 2075224406
+      Guid: 874212ec3ea9df4ca01523980491d19b
+      maxAttenuation: 0
+    - Name: Play_Swarmer_Awakening
+      Path: SFX\Swarmer\Play_Swarmer_Awakening
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Swarmer
+        ObjectType: 4
+      - ElementName: Play_Swarmer_Awakening
+        ObjectType: 3
+      ID: -1762809691
+      Guid: cc99bdafc54c8d458c4b715a6026a762
+      maxAttenuation: 300
+    - Name: Play_Swarmer_Death
+      Path: SFX\Swarmer\Play_Swarmer_Death
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Swarmer
+        ObjectType: 4
+      - ElementName: Play_Swarmer_Death
+        ObjectType: 3
+      ID: 2002576820
+      Guid: 8f282bc1b62ab541ac33b1608279c7a3
+      maxAttenuation: 300
+    - Name: Play_Swarmer_Engine
+      Path: SFX\Swarmer\Play_Swarmer_Engine
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Swarmer
+        ObjectType: 4
+      - ElementName: Play_Swarmer_Engine
+        ObjectType: 3
+      ID: -245190460
+      Guid: 7d9314f37b4f164499c98d405c9dce8e
+      maxAttenuation: 300
+    - Name: Play_Talking
+      Path: SFX\UI\Play_Talking
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Talking
+        ObjectType: 3
+      ID: 1581144632
+      Guid: fbea8c8636bc894a960f4bfa6021a2d2
+      maxAttenuation: 100
+    - Name: Play_Test_Beep
+      Path: SFX\UI\Play_Test_Beep
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Test_Beep
+        ObjectType: 3
+      ID: 27511013
+      Guid: fbef655ab9f9324395261f27e27fa87b
+      maxAttenuation: 100
+    - Name: Play_ThornBirth
+      Path: SFX\____UNCLASSIFIED____\ARK\Play_ThornBirth
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: ARK
+        ObjectType: 4
+      - ElementName: Play_ThornBirth
+        ObjectType: 3
+      ID: -1982686240
+      Guid: 698733df97d0474bb59d92d9349b822f
+      maxAttenuation: 800
+    - Name: Play_ThornDeath
+      Path: SFX\____UNCLASSIFIED____\ARK\Play_ThornDeath
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: ARK
+        ObjectType: 4
+      - ElementName: Play_ThornDeath
+        ObjectType: 3
+      ID: -1579008395
+      Guid: bb85b685dfa3854f9b888a4c51b13b74
+      maxAttenuation: 800
+    - Name: Play_Tick
+      Path: SFX\UI\Play_Tick
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Tick
+        ObjectType: 3
+      ID: -702825743
+      Guid: eb1a779e8989e940b6683dba52dbd4b6
+      maxAttenuation: 0
+    - Name: Play_Torpedo_Drive
+      Path: SFX\Weapons_All\Play_Torpedo_Drive
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Weapons_All
+        ObjectType: 4
+      - ElementName: Play_Torpedo_Drive
+        ObjectType: 3
+      ID: -1837684202
+      Guid: c24efdcd5a3c434181e4dd6cf0096863
+      maxAttenuation: 400
+    - Name: Play_Torpedo_Dud
+      Path: SFX\Weapons_All\Play_Torpedo_Dud
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Weapons_All
+        ObjectType: 4
+      - ElementName: Play_Torpedo_Dud
+        ObjectType: 3
+      ID: 1111146965
+      Guid: a7d2a47a85d1f74d8e3d0ee511fb72ef
+      maxAttenuation: 400
+    - Name: Play_Torpedo_Fire
+      Path: SFX\Weapons_All\Play_Torpedo_Fire
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Weapons_All
+        ObjectType: 4
+      - ElementName: Play_Torpedo_Fire
+        ObjectType: 3
+      ID: 745441030
+      Guid: bcbe268c66294044b2812adb5c9b90c1
+      maxAttenuation: 400
+    - Name: Play_Torpedo_Lock
+      Path: SFX\UI\Play_Torpedo_Lock
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Torpedo_Lock
+        ObjectType: 3
+      ID: -1652529453
+      Guid: 96c4760688e6d5479acb4c35906b42b3
+      maxAttenuation: 0
+    - Name: Play_Treasure_Trap_HIT
+      Path: SFX\Hazard_Combat_Engine\Hazards\Treasure_Trap\Play_Treasure_Trap_HIT
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Treasure_Trap
+        ObjectType: 4
+      - ElementName: Play_Treasure_Trap_HIT
+        ObjectType: 3
+      ID: 2115680639
+      Guid: 95039e6bac33214089e407c68e85b5e5
+      maxAttenuation: 0
+    - Name: Play_Treasure_Trap_INTRO
+      Path: SFX\Hazard_Combat_Engine\Hazards\Treasure_Trap\Play_Treasure_Trap_INTRO
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Treasure_Trap
+        ObjectType: 4
+      - ElementName: Play_Treasure_Trap_INTRO
+        ObjectType: 3
+      ID: -1822790194
+      Guid: cf5caa9335fe9345a2a0809cf7cc52c7
+      maxAttenuation: 0
+    - Name: Play_Treasure_Trap_MISS
+      Path: SFX\Hazard_Combat_Engine\Hazards\Treasure_Trap\Play_Treasure_Trap_MISS
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Treasure_Trap
+        ObjectType: 4
+      - ElementName: Play_Treasure_Trap_MISS
+        ObjectType: 3
+      ID: 228805456
+      Guid: 04c61bb9c289a34d85679b6892a02f65
+      maxAttenuation: 0
+    - Name: Play_Turn_Creak
+      Path: SFX\Player_SHIP\Play_Turn_Creak
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Player_SHIP
+        ObjectType: 4
+      - ElementName: Play_Turn_Creak
+        ObjectType: 3
+      ID: 1474306046
+      Guid: 85022ba804e3214fbc43bb6e84e7f377
+      maxAttenuation: 100
+    - Name: Play_Tutorial_Start
+      Path: SFX\UI\Play_Tutorial_Start
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Tutorial_Start
+        ObjectType: 3
+      ID: -225498243
+      Guid: e4cec053733e9a41aadde89ae9445227
+      maxAttenuation: 100
+    - Name: Play_Tutorial_Success
+      Path: SFX\UI\Play_Tutorial_Success
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Tutorial_Success
+        ObjectType: 3
+      ID: 108108296
+      Guid: 20000bf3e54e3d47990b13dedb0d07f2
+      maxAttenuation: 0
+    - Name: Play_UI_Button_HoverOver
+      Path: SFX\UI\Play_UI_Button_HoverOver
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_UI_Button_HoverOver
+        ObjectType: 3
+      ID: 1322073074
+      Guid: 6efd4928ff38d642a0e6fc9e95ec61eb
+      maxAttenuation: 0
+    - Name: Play_UI_Close_Map
+      Path: SFX\UI\Play_UI_Close_Map
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_UI_Close_Map
+        ObjectType: 3
+      ID: -820212554
+      Guid: 58068c109dba5d459e40522f35468c95
+      maxAttenuation: 0
+    - Name: Play_UI_Generic_Click
+      Path: SFX\UI\Play_UI_Generic_Click
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_UI_Generic_Click
+        ObjectType: 3
+      ID: 49475123
+      Guid: dd5678d074daaa4bbd7a1f50517157e7
+      maxAttenuation: 0
+    - Name: Play_UI_Open_Map
+      Path: SFX\UI\Play_UI_Open_Map
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_UI_Open_Map
+        ObjectType: 3
+      ID: 277219180
+      Guid: 20c493c55f1b774b8cc491ad39ebfbd4
+      maxAttenuation: 0
+    - Name: Play_UI_Take_All
+      Path: SFX\UI\Play_UI_Take_All
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_UI_Take_All
+        ObjectType: 3
+      ID: -36605182
+      Guid: c70b156c81a58245a96640515d8e58cc
+      maxAttenuation: 0
+    - Name: Play_Urgent
+      Path: SFX\UI\Play_Urgent
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Urgent
+        ObjectType: 3
+      ID: 2128578085
+      Guid: 2a629112afbeac48a328be8ade89e782
+      maxAttenuation: 100
+    - Name: Play_Urgent_Empty
+      Path: SFX\UI\Play_Urgent_Empty
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Urgent_Empty
+        ObjectType: 3
+      ID: 298546059
+      Guid: 07aeb5c6648ea644a70f4c76b4762dcd
+      maxAttenuation: 0
+    - Name: Play_Urgent_Message
+      Path: SFX\UI\Play_Urgent_Message
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Urgent_Message
+        ObjectType: 3
+      ID: 1517841357
+      Guid: fbf4e89b7712b0419175952aa0b17c05
+      maxAttenuation: 0
+    - Name: Play_Use_Hazard_Item
+      Path: SFX\Hazard_Combat_Engine\Play_Use_Hazard_Item
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Play_Use_Hazard_Item
+        ObjectType: 3
+      ID: -367842880
+      Guid: 89f69fca1b1f6c43b18c8d9abe61ae81
+      maxAttenuation: 0
+    - Name: Play_Water_Ambience_Loop
+      Path: SFX\____UNCLASSIFIED____\Play_Water_Ambience_Loop
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: Play_Water_Ambience_Loop
+        ObjectType: 3
+      ID: 730668603
+      Guid: 6e3b0af77a5f744681fd1233657a5362
+      maxAttenuation: 400
+    - Name: Play_WEA_Bolts_Impact_Destructable
+      Path: SFX\Weapons_All\Play_WEA_Bolts_Impact_Destructable
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Weapons_All
+        ObjectType: 4
+      - ElementName: Play_WEA_Bolts_Impact_Destructable
+        ObjectType: 3
+      ID: 1248157084
+      Guid: 50fbeff20b47c64b9f1872ff8bb0ec84
+      maxAttenuation: 400
+    - Name: Play_WEA_Bolts_Impact_Indestructible
+      Path: SFX\Weapons_All\Play_WEA_Bolts_Impact_Indestructible
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Weapons_All
+        ObjectType: 4
+      - ElementName: Play_WEA_Bolts_Impact_Indestructible
+        ObjectType: 3
+      ID: -243467075
+      Guid: 01e13b2167f5704fa81dec5fd20fd7fb
+      maxAttenuation: 400
+    - Name: Play_Weapon_CantFire
+      Path: SFX\UI\Play_Weapon_CantFire
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Weapon_CantFire
+        ObjectType: 3
+      ID: 791858967
+      Guid: 239af2779f4e60409cecec79759459a5
+      maxAttenuation: 0
+    - Name: Play_WeaponSwap_Bolt
+      Path: SFX\UI\Play_WeaponSwap_Bolt
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_WeaponSwap_Bolt
+        ObjectType: 3
+      ID: 213479327
+      Guid: 43e7de4dcad1ac49984e9d6bc9117ccb
+      maxAttenuation: 0
+    - Name: Play_WeaponSwap_Torpedo
+      Path: SFX\UI\Play_WeaponSwap_Torpedo
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_WeaponSwap_Torpedo
+        ObjectType: 3
+      ID: -1050938973
+      Guid: b9b1724dab606f43b0ee5c2bd60666bc
+      maxAttenuation: 0
+    - Name: Play_Whoosh_Enter_2DView
+      Path: SFX\UI\Play_Whoosh_Enter_2DView
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Whoosh_Enter_2DView
+        ObjectType: 3
+      ID: 375948063
+      Guid: 07757abdac163146b8f3302b8578ee48
+      maxAttenuation: 0
+    - Name: Play_Whoosh_Exit_2DView
+      Path: SFX\UI\Play_Whoosh_Exit_2DView
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Whoosh_Exit_2DView
+        ObjectType: 3
+      ID: -1187139681
+      Guid: aa56f9d60129cc4096e8c9fdad6ab1ed
+      maxAttenuation: 0
+    - Name: Play_Whoosh_GoInTown_Transition
+      Path: SFX\UI\Play_Whoosh_GoInTown_Transition
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Whoosh_GoInTown_Transition
+        ObjectType: 3
+      ID: -1609257978
+      Guid: 5d3028002536a44cb59359244cb6c104
+      maxAttenuation: 0
+    - Name: Play_Window_Whoosh_In
+      Path: SFX\UI\Play_Window_Whoosh_In
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Window_Whoosh_In
+        ObjectType: 3
+      ID: 1416916827
+      Guid: 7c54b45e216b8849b39e93e63cac63f6
+      maxAttenuation: 0
+    - Name: Play_Window_Whoosh_Out
+      Path: SFX\UI\Play_Window_Whoosh_Out
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Window_Whoosh_Out
+        ObjectType: 3
+      ID: 926686710
+      Guid: fa26c27ab3a05f4c8779d63e17188cb5
+      maxAttenuation: 0
+    - Name: Play_YamatoCrab_Awakening
+      Path: SFX\Yamato\Play_YamatoCrab_Awakening
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Yamato
+        ObjectType: 4
+      - ElementName: Play_YamatoCrab_Awakening
+        ObjectType: 3
+      ID: -1463767643
+      Guid: 0481aea8503bfa4b9b181780eaf74a84
+      maxAttenuation: 400
+    - Name: Play_YamatoCrab_Creaking_Groaning
+      Path: SFX\Yamato\Play_YamatoCrab_Creaking_Groaning
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Yamato
+        ObjectType: 4
+      - ElementName: Play_YamatoCrab_Creaking_Groaning
+        ObjectType: 3
+      ID: -798883660
+      Guid: 6db3b8b01726c74c8a9cf1a0f68bf268
+      maxAttenuation: 400
+    - Name: Play_YamatoCrab_Death
+      Path: SFX\Yamato\Play_YamatoCrab_Death
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Yamato
+        ObjectType: 4
+      - ElementName: Play_YamatoCrab_Death
+        ObjectType: 3
+      ID: -455501132
+      Guid: b1c3ed98e5ca33419b91a927ce8a1e50
+      maxAttenuation: 400
+    - Name: Play_YamatoCrab_Footsteps
+      Path: SFX\Yamato\Play_YamatoCrab_Footsteps
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Yamato
+        ObjectType: 4
+      - ElementName: Play_YamatoCrab_Footsteps
+        ObjectType: 3
+      ID: -547162225
+      Guid: 67cf17d8067f734194da96b683ff66d3
+      maxAttenuation: 400
+    - Name: Play_Zone_Province_Transition
+      Path: SFX\UI\Play_Zone_Province_Transition
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Zone_Province_Transition
+        ObjectType: 3
+      ID: 848926871
+      Guid: 74683e2dbcc6cc45b450f96c7e7429de
+      maxAttenuation: 0
+    - Name: PlayAngry_Crab_HIT
+      Path: SFX\Hazard_Combat_Engine\Hazards\Angry Crab\PlayAngry_Crab_HIT
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Hazard_Combat_Engine
+        ObjectType: 4
+      - ElementName: Hazards
+        ObjectType: 4
+      - ElementName: Angry Crab
+        ObjectType: 4
+      - ElementName: PlayAngry_Crab_HIT
+        ObjectType: 3
+      ID: -1970276979
+      Guid: 41d5a84889aa4b439f0c505bd2cd04fd
+      maxAttenuation: 0
+    - Name: Stop_Abandoned_Ambience
+      Path: SFX\Indoor_Ambiences\Stop_Abandoned_Ambience
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Indoor_Ambiences
+        ObjectType: 4
+      - ElementName: Stop_Abandoned_Ambience
+        ObjectType: 3
+      ID: 2095245035
+      Guid: 1c20054da88b64489e1f0a8d9fbea3f5
+      maxAttenuation: 0
+    - Name: Stop_Ancient_High_Tech_Ambience
+      Path: SFX\Indoor_Ambiences\Stop_Ancient_High_Tech_Ambience
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Indoor_Ambiences
+        ObjectType: 4
+      - ElementName: Stop_Ancient_High_Tech_Ambience
+        ObjectType: 3
+      ID: 241784461
+      Guid: 638898550146ff4394126c32f6d084c0
+      maxAttenuation: 0
+    - Name: Stop_Angler_Colony_2DRoom_Ambience
+      Path: SFX\Indoor_Ambiences\Stop_Angler_Colony_2DRoom_Ambience
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Indoor_Ambiences
+        ObjectType: 4
+      - ElementName: Stop_Angler_Colony_2DRoom_Ambience
+        ObjectType: 3
+      ID: -1742161395
+      Guid: 28e65c5c024c934c87b7f3f50b3535dd
+      maxAttenuation: 0
+    - Name: Stop_Ark_Engine_Loop
+      Path: SFX\____UNCLASSIFIED____\ARK\Stop_Ark_Engine_Loop
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: ARK
+        ObjectType: 4
+      - ElementName: Stop_Ark_Engine_Loop
+        ObjectType: 3
+      ID: 130012590
+      Guid: e6a1ff25a6518849adf1a3105062875f
+      maxAttenuation: 0
+    - Name: Stop_Ballast_Ascending
+      Path: SFX\Ballast\Stop_Ballast_Ascending
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Ballast
+        ObjectType: 4
+      - ElementName: Stop_Ballast_Ascending
+        ObjectType: 3
+      ID: -555767278
+      Guid: 2d574e1f42851f48b60fe04737a05d94
+      maxAttenuation: 0
+    - Name: Stop_Ballast_Diving
+      Path: SFX\Ballast\Stop_Ballast_Diving
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Ballast
+        ObjectType: 4
+      - ElementName: Stop_Ballast_Diving
+        ObjectType: 3
+      ID: 1641952203
+      Guid: f99668db72758144a8048505b8a0635f
+      maxAttenuation: 0
+    - Name: Stop_Bolt_BubbleLoop
+      Path: SFX\Bolt_fire\Stop_Bolt_BubbleLoop
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Bolt_fire
+        ObjectType: 4
+      - ElementName: Stop_Bolt_BubbleLoop
+        ObjectType: 3
+      ID: 974267696
+      Guid: dc5fb1eddb87bd4eaee58106e9a3a57a
+      maxAttenuation: 0
+    - Name: Stop_Burner_Ambience
+      Path: SFX\Indoor_Ambiences\Stop_Burner_Ambience
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Indoor_Ambiences
+        ObjectType: 4
+      - ElementName: Stop_Burner_Ambience
+        ObjectType: 3
+      ID: -1024535907
+      Guid: 10843019ebfceb40a4baf257f9d2a8a4
+      maxAttenuation: 0
+    - Name: Stop_Cargo_Bay_Ambience
+      Path: SFX\Indoor_Ambiences\Stop_Cargo_Bay_Ambience
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Indoor_Ambiences
+        ObjectType: 4
+      - ElementName: Stop_Cargo_Bay_Ambience
+        ObjectType: 3
+      ID: -450256916
+      Guid: d61d93b48431d945886b001bf8cd5893
+      maxAttenuation: 0
+    - Name: Stop_Critical_Health
+      Path: SFX\____UNCLASSIFIED____\Stop_Critical_Health
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: Stop_Critical_Health
+        ObjectType: 3
+      ID: -122587736
+      Guid: 546907ae6ecccf4bb7546062aa6f1c50
+      maxAttenuation: 0
+    - Name: Stop_Current_Loop
+      Path: SFX\____UNCLASSIFIED____\Stop_Current_Loop
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: Stop_Current_Loop
+        ObjectType: 3
+      ID: -1861069756
+      Guid: e505e8905f12f945aac5ff048d05a6d7
+      maxAttenuation: 100
+    - Name: Stop_Depth_Creak
+      Path: SFX\Player_SHIP\Stop_Depth_Creak
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Player_SHIP
+        ObjectType: 4
+      - ElementName: Stop_Depth_Creak
+        ObjectType: 3
+      ID: -1203048562
+      Guid: f2d6b17a0bde47469d1e6aa733764c67
+      maxAttenuation: 0
+    - Name: Stop_DepthAlarm
+      Path: SFX\UI\Stop_DepthAlarm
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Stop_DepthAlarm
+        ObjectType: 3
+      ID: 1012288710
+      Guid: 7bdf12f93277104da44d5cc154dd058f
+      maxAttenuation: 0
+    - Name: Stop_Dig_Excavation_Ambience
+      Path: SFX\Indoor_Ambiences\Stop_Dig_Excavation_Ambience
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Indoor_Ambiences
+        ObjectType: 4
+      - ElementName: Stop_Dig_Excavation_Ambience
+        ObjectType: 3
+      ID: -1428008332
+      Guid: 866e4457c96a0640aea92fc91b81c4b4
+      maxAttenuation: 0
+    - Name: Stop_Drone_Cannon_Loop
+      Path: SFX\____UNCLASSIFIED____\Stop_Drone_Cannon_Loop
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: Stop_Drone_Cannon_Loop
+        ObjectType: 3
+      ID: 389726687
+      Guid: 146c6de14fe01e45a3bfba694a0292c2
+      maxAttenuation: 0
+    - Name: Stop_Dweller_Engine_Loop
+      Path: SFX\Engines\Stop_Dweller_Engine_Loop
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Engines
+        ObjectType: 4
+      - ElementName: Stop_Dweller_Engine_Loop
+        ObjectType: 3
+      ID: 1320759795
+      Guid: 2300fe2357e5ac49a5979d4fce7bda41
+      maxAttenuation: 0
+    - Name: Stop_Dweller_Overdrive
+      Path: SFX\Engines\Stop_Dweller_Overdrive
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Engines
+        ObjectType: 4
+      - ElementName: Stop_Dweller_Overdrive
+        ObjectType: 3
+      ID: 2020936998
+      Guid: e37ea8201196fe488e2b8269b1dbd75b
+      maxAttenuation: 100
+    - Name: Stop_Engine_Room_Ambience
+      Path: SFX\Indoor_Ambiences\Stop_Engine_Room_Ambience
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Indoor_Ambiences
+        ObjectType: 4
+      - ElementName: Stop_Engine_Room_Ambience
+        ObjectType: 3
+      ID: -1869031761
+      Guid: 7e865a3fe2c2e546bc328074f20444db
+      maxAttenuation: 0
+    - Name: Stop_FinalBoss_ThornTorpedoes_Loop
+      Path: SFX\____UNCLASSIFIED____\ARK\Stop_FinalBoss_ThornTorpedoes_Loop
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: ARK
+        ObjectType: 4
+      - ElementName: Stop_FinalBoss_ThornTorpedoes_Loop
+        ObjectType: 3
+      ID: -732202497
+      Guid: ee7c134bef6b42469c3c7499dbfa3d6f
+      maxAttenuation: 0
+    - Name: Stop_Huge_Royal_Engine_Loop
+      Path: SFX\Engines\Stop_Huge_Royal_Engine_Loop
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Engines
+        ObjectType: 4
+      - ElementName: Stop_Huge_Royal_Engine_Loop
+        ObjectType: 3
+      ID: 171176747
+      Guid: 7a05e7214935da43a7f90970d4cd37a5
+      maxAttenuation: 0
+    - Name: Stop_Icer_Engine_Loop
+      Path: SFX\Engines\Stop_Icer_Engine_Loop
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Engines
+        ObjectType: 4
+      - ElementName: Stop_Icer_Engine_Loop
+        ObjectType: 3
+      ID: -1443999641
+      Guid: 232e849a0686754e90692b985daac2df
+      maxAttenuation: 0
+    - Name: Stop_Icer_Overdrive
+      Path: SFX\Engines\Stop_Icer_Overdrive
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Engines
+        ObjectType: 4
+      - ElementName: Stop_Icer_Overdrive
+        ObjectType: 3
+      ID: -1773682494
+      Guid: 7a7e9a92207c994d8bb7795c21edcdff
+      maxAttenuation: 100
+    - Name: Stop_Indoor_Alarm
+      Path: SFX\____UNCLASSIFIED____\Stop_Indoor_Alarm
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: Stop_Indoor_Alarm
+        ObjectType: 3
+      ID: 400816591
+      Guid: a26664d3ae1a5f4492afe7224962b615
+      maxAttenuation: 0
+    - Name: Stop_Large_Chomp_Mine
+      Path: SFX\Chomp_Mines\Stop_Large_Chomp_Mine
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Chomp_Mines
+        ObjectType: 4
+      - ElementName: Stop_Large_Chomp_Mine
+        ObjectType: 3
+      ID: 1704808803
+      Guid: 671fc3e3c29e5040adb091f1531d039a
+      maxAttenuation: 0
+    - Name: Stop_Large_City_Station_Ambience
+      Path: SFX\Indoor_Ambiences\Stop_Large_City_Station_Ambience
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Indoor_Ambiences
+        ObjectType: 4
+      - ElementName: Stop_Large_City_Station_Ambience
+        ObjectType: 3
+      ID: 1132928435
+      Guid: b3cb45794cd4d44c9dc18a3bfd252fbd
+      maxAttenuation: 0
+    - Name: Stop_Medium_City_Station_Ambience
+      Path: SFX\Indoor_Ambiences\Stop_Medium_City_Station_Ambience
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Indoor_Ambiences
+        ObjectType: 4
+      - ElementName: Stop_Medium_City_Station_Ambience
+        ObjectType: 3
+      ID: 1118943123
+      Guid: 1bcc8a88c1592642907a3497a269be86
+      maxAttenuation: 0
+    - Name: Stop_Nature_Park_Ambience
+      Path: SFX\Indoor_Ambiences\Stop_Nature_Park_Ambience
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Indoor_Ambiences
+        ObjectType: 4
+      - ElementName: Stop_Nature_Park_Ambience
+        ObjectType: 3
+      ID: 1537923507
+      Guid: 9bdb53fa3cd6f347826a6ddab996c733
+      maxAttenuation: 0
+    - Name: Stop_Pause_Screen_Lightbulb
+      Path: SFX\UI\Stop_Pause_Screen_Lightbulb
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Stop_Pause_Screen_Lightbulb
+        ObjectType: 3
+      ID: -2136905291
+      Guid: fefdd324c7e43c40a07028de82a9fc64
+      maxAttenuation: 0
+    - Name: Stop_Random_Encounter_Ambience
+      Path: SFX\Indoor_Ambiences\Stop_Random_Encounter_Ambience
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Indoor_Ambiences
+        ObjectType: 4
+      - ElementName: Stop_Random_Encounter_Ambience
+        ObjectType: 3
+      ID: -1952222042
+      Guid: 485732dd4ee93a4582cc4f0b3a6a1886
+      maxAttenuation: 0
+    - Name: Stop_Royal_Engine_Loop
+      Path: SFX\Engines\Stop_Royal_Engine_Loop
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Engines
+        ObjectType: 4
+      - ElementName: Stop_Royal_Engine_Loop
+        ObjectType: 3
+      ID: 760781771
+      Guid: 69a9bacd84b489459b0215f5f945cfe9
+      maxAttenuation: 0
+    - Name: Stop_Royal_Overdrive
+      Path: SFX\Engines\Stop_Royal_Overdrive
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Engines
+        ObjectType: 4
+      - ElementName: Stop_Royal_Overdrive
+        ObjectType: 3
+      ID: -1531331218
+      Guid: a95009a08c19b24f91de70734281044b
+      maxAttenuation: 100
+    - Name: Stop_Ship_DockingHook_ReelingIn
+      Path: SFX\____UNCLASSIFIED____\Stop_Ship_DockingHook_ReelingIn
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: Stop_Ship_DockingHook_ReelingIn
+        ObjectType: 3
+      ID: 1974620373
+      Guid: 966deffb866b7249850f3a332fc02205
+      maxAttenuation: 0
+    - Name: Stop_Ship_Movement
+      Path: SFX\____UNCLASSIFIED____\Stop_Ship_Movement
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: Stop_Ship_Movement
+        ObjectType: 3
+      ID: -2061935798
+      Guid: 4e1278b930687640a0b4be441f777d1b
+      maxAttenuation: 0
+    - Name: Stop_ShipScrape
+      Path: SFX\Player_SHIP\Stop_ShipScrape
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Player_SHIP
+        ObjectType: 4
+      - ElementName: Stop_ShipScrape
+        ObjectType: 3
+      ID: -840707846
+      Guid: 546b83626baab649aa8a6d0289b27096
+      maxAttenuation: 0
+    - Name: Stop_Small_Chomp_Mine
+      Path: SFX\Chomp_Mines\Stop_Small_Chomp_Mine
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Chomp_Mines
+        ObjectType: 4
+      - ElementName: Stop_Small_Chomp_Mine
+        ObjectType: 3
+      ID: -1702196117
+      Guid: 9d34b28fd13e694b9275d232125996d9
+      maxAttenuation: 0
+    - Name: Stop_Small_Station_Bar_Ambience
+      Path: SFX\Indoor_Ambiences\Stop_Small_Station_Bar_Ambience
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Indoor_Ambiences
+        ObjectType: 4
+      - ElementName: Stop_Small_Station_Bar_Ambience
+        ObjectType: 3
+      ID: 159204285
+      Guid: 9fecca43017b4a4880c81a4535dc3c2c
+      maxAttenuation: 0
+    - Name: Stop_Sonar_Charge
+      Path: SFX\Sonar\Stop_Sonar_Charge
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Sonar
+        ObjectType: 4
+      - ElementName: Stop_Sonar_Charge
+        ObjectType: 3
+      ID: 733342916
+      Guid: 0ecddbb38cc02343b4f8f05e6c389bd0
+      maxAttenuation: 0
+    - Name: Stop_Swarmer_Engine
+      Path: SFX\Swarmer\Stop_Swarmer_Engine
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Swarmer
+        ObjectType: 4
+      - ElementName: Stop_Swarmer_Engine
+        ObjectType: 3
+      ID: -928017398
+      Guid: 92b642be1ac3f74b9a3ef805967f0e43
+      maxAttenuation: 0
+    - Name: Stop_Torpedo_Drive
+      Path: SFX\Weapons_All\Stop_Torpedo_Drive
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Weapons_All
+        ObjectType: 4
+      - ElementName: Stop_Torpedo_Drive
+        ObjectType: 3
+      ID: 1956323832
+      Guid: ff4f58299531a94c935e591853dd901e
+      maxAttenuation: 0
+    - Name: Stop_Turning_Loop
+      Path: SFX\Player_SHIP\Stop_Turning_Loop
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Player_SHIP
+        ObjectType: 4
+      - ElementName: Stop_Turning_Loop
+        ObjectType: 3
+      ID: -1433840280
+      Guid: dcbd621b46cfc44a8429971915e9c7d5
+      maxAttenuation: 0
+    - Name: Stop_Water_Ambience_Loop
+      Path: SFX\____UNCLASSIFIED____\Stop_Water_Ambience_Loop
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: Stop_Water_Ambience_Loop
+        ObjectType: 3
+      ID: 1980380361
+      Guid: 509fd45e1402494794e4b7017a2e644b
+      maxAttenuation: 0
+    - Name: Stop_YamatoCrab_Creaking_Groaning
+      Path: SFX\Yamato\Stop_YamatoCrab_Creaking_Groaning
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: Yamato
+        ObjectType: 4
+      - ElementName: Stop_YamatoCrab_Creaking_Groaning
+        ObjectType: 3
+      ID: 677214910
+      Guid: ba53c02443e575478de1b35243d0a951
+      maxAttenuation: 0
+    - Name: Trigger_EnemyDestroyed
+      Path: SFX\____UNCLASSIFIED____\Trigger_EnemyDestroyed
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: ____UNCLASSIFIED____
+        ObjectType: 4
+      - ElementName: Trigger_EnemyDestroyed
+        ObjectType: 3
+      ID: -1946025981
+      Guid: 82ed35688dfd0d418613aeeada68af24
+      maxAttenuation: 0
+    - Name: UI_WorldMap_Close
+      Path: SFX\UI\UI_WorldMap_Close
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: UI_WorldMap_Close
+        ObjectType: 3
+      ID: -723082099
+      Guid: bc40d4d8df94fc48b8afc8687f43c5aa
+      maxAttenuation: 0
+    - Name: UI_WorldMap_Open
+      Path: SFX\UI\UI_WorldMap_Open
+      PathAndIcons:
+      - ElementName: SFX
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: UI_WorldMap_Open
+        ObjectType: 3
+      ID: 373372231
+      Guid: 39242c9143c2c64ebdc9ab4339db2b80
+      maxAttenuation: 0
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{86C48017-2F18-496D-A64A-F00A05D81644}'
+    m_lastTimePsrt1: -288144361
+    m_lastTimePart2: -1999270956
+    List:
+    - Name: Reverb
+      Path: Default Work Unit\Master Audio Bus\Reverb
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Reverb
+        ObjectType: 1
+      ID: 348963605
+      Guid: 4b4b34bfb18e0147a604d2497da25da8
+    - Name: Under_Watta
+      Path: Default Work Unit\Master Audio Bus\Under_Watta
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Under_Watta
+        ObjectType: 1
+      ID: 699185289
+      Guid: 2a3ba18ed0dd764787bb290f634677e3
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{7DEDE62D-20CD-40F8-AF25-629142AF72D4}'
+    m_lastTimePsrt1: -319269596
+    m_lastTimePart2: -1999270950
+    List:
+    - Name: Ingame_Music
+      Path: Default Work Unit\Ingame_Music
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ingame_Music
+        ObjectType: 9
+      ID: -1681041046
+      Guid: f15c114725f5e640a52591bac9f9a758
+      values:
+      - Abyss_ChapelOfTheDeep_Interior
+      - Abyss_Crevasse_Edge_Interior
+      - Abyss_Endless_Corridor
+      - Abyss_Exploration
+      - Abyss_HavelocksWorkshop_Interior
+      - Abyss_The_Lighthouse_Interior
+      - Ark_Arena
+      - Ark_Surface
+      - Ascension
+      - Combat
+      - Combat_Ark_Resentment
+      - Combat_End
+      - Combat_Morgans_Tear
+      - Combat_Naglfar_Epic
+      - Combat_Naglfar_Heavy
+      - Combat_Naglfar_Light
+      - Combat_Yamato
+      - Explorable
+      - Fjords_Floatsam
+      - Fjords_IcerHut_Interior
+      - Fjords_IcerTown_DiveBar
+      - Fjords_IcerTown_Normal_Interior
+      - Fjords_Luminous_Ice
+      - Fjords_Terrors_In_The_Trenches
+      - Fjords_Tonnesburg_EngineerGuild
+      - Fjords_Tonnesburg_Normal_Interior
+      - Menu_Captains_Log
+      - Menu_Credits
+      - Menu_DeathScreen
+      - Menu_Legends
+      - Menu_LoadingScreen
+      - Menu_Main
+      - Menu_Options
+      - Menu_Pause
+      - Menu_Settings
+      - Misc_Full_Speed_Ahead
+      - Misc_Home_Base0
+      - Misc_Home_Base1
+      - Misc_Home_Base2
+      - Misc_Home_Base3
+      - Misc_Ominous_Heavy
+      - Misc_Ominous_Light
+      - Misc_Save_Gregory
+      - None
+      - Royal_AdventurersGuild_Interior
+      - Royal_Birchton_Interior
+      - Royal_FountainOfHonor_Interior
+      - Royal_Kuberi_AudienceChamber_Interior
+      - Royal_Kuberi_Explore
+      - Royal_KuberiCity_Interior
+      - Royal_Open_Waters
+      - Royal_Spirios_BanquetHall
+      - Royal_Spirios_Charles_Interior
+      - Royal_Spirios_Explore
+      - Royal_Spirios_Megacity
+      - Royal_Spirios_Shipyard_Interior
+      - Royal_Spirios_Town
+      - Royal_Town_Small
+      ValueIcons:
+      - ElementName: Abyss_ChapelOfTheDeep_Interior
+        ObjectType: 8
+      - ElementName: Abyss_Crevasse_Edge_Interior
+        ObjectType: 8
+      - ElementName: Abyss_Endless_Corridor
+        ObjectType: 8
+      - ElementName: Abyss_Exploration
+        ObjectType: 8
+      - ElementName: Abyss_HavelocksWorkshop_Interior
+        ObjectType: 8
+      - ElementName: Abyss_The_Lighthouse_Interior
+        ObjectType: 8
+      - ElementName: Ark_Arena
+        ObjectType: 8
+      - ElementName: Ark_Surface
+        ObjectType: 8
+      - ElementName: Ascension
+        ObjectType: 8
+      - ElementName: Combat
+        ObjectType: 8
+      - ElementName: Combat_Ark_Resentment
+        ObjectType: 8
+      - ElementName: Combat_End
+        ObjectType: 8
+      - ElementName: Combat_Morgans_Tear
+        ObjectType: 8
+      - ElementName: Combat_Naglfar_Epic
+        ObjectType: 8
+      - ElementName: Combat_Naglfar_Heavy
+        ObjectType: 8
+      - ElementName: Combat_Naglfar_Light
+        ObjectType: 8
+      - ElementName: Combat_Yamato
+        ObjectType: 8
+      - ElementName: Explorable
+        ObjectType: 8
+      - ElementName: Fjords_Floatsam
+        ObjectType: 8
+      - ElementName: Fjords_IcerHut_Interior
+        ObjectType: 8
+      - ElementName: Fjords_IcerTown_DiveBar
+        ObjectType: 8
+      - ElementName: Fjords_IcerTown_Normal_Interior
+        ObjectType: 8
+      - ElementName: Fjords_Luminous_Ice
+        ObjectType: 8
+      - ElementName: Fjords_Terrors_In_The_Trenches
+        ObjectType: 8
+      - ElementName: Fjords_Tonnesburg_EngineerGuild
+        ObjectType: 8
+      - ElementName: Fjords_Tonnesburg_Normal_Interior
+        ObjectType: 8
+      - ElementName: Menu_Captains_Log
+        ObjectType: 8
+      - ElementName: Menu_Credits
+        ObjectType: 8
+      - ElementName: Menu_DeathScreen
+        ObjectType: 8
+      - ElementName: Menu_Legends
+        ObjectType: 8
+      - ElementName: Menu_LoadingScreen
+        ObjectType: 8
+      - ElementName: Menu_Main
+        ObjectType: 8
+      - ElementName: Menu_Options
+        ObjectType: 8
+      - ElementName: Menu_Pause
+        ObjectType: 8
+      - ElementName: Menu_Settings
+        ObjectType: 8
+      - ElementName: Misc_Full_Speed_Ahead
+        ObjectType: 8
+      - ElementName: Misc_Home_Base0
+        ObjectType: 8
+      - ElementName: Misc_Home_Base1
+        ObjectType: 8
+      - ElementName: Misc_Home_Base2
+        ObjectType: 8
+      - ElementName: Misc_Home_Base3
+        ObjectType: 8
+      - ElementName: Misc_Ominous_Heavy
+        ObjectType: 8
+      - ElementName: Misc_Ominous_Light
+        ObjectType: 8
+      - ElementName: Misc_Save_Gregory
+        ObjectType: 8
+      - ElementName: None
+        ObjectType: 8
+      - ElementName: Royal_AdventurersGuild_Interior
+        ObjectType: 8
+      - ElementName: Royal_Birchton_Interior
+        ObjectType: 8
+      - ElementName: Royal_FountainOfHonor_Interior
+        ObjectType: 8
+      - ElementName: Royal_Kuberi_AudienceChamber_Interior
+        ObjectType: 8
+      - ElementName: Royal_Kuberi_Explore
+        ObjectType: 8
+      - ElementName: Royal_KuberiCity_Interior
+        ObjectType: 8
+      - ElementName: Royal_Open_Waters
+        ObjectType: 8
+      - ElementName: Royal_Spirios_BanquetHall
+        ObjectType: 8
+      - ElementName: Royal_Spirios_Charles_Interior
+        ObjectType: 8
+      - ElementName: Royal_Spirios_Explore
+        ObjectType: 8
+      - ElementName: Royal_Spirios_Megacity
+        ObjectType: 8
+      - ElementName: Royal_Spirios_Shipyard_Interior
+        ObjectType: 8
+      - ElementName: Royal_Spirios_Town
+        ObjectType: 8
+      - ElementName: Royal_Town_Small
+        ObjectType: 8
+      valueIDs: 6e6448fdbba554160b7165358938eeebeeed1255898928367712c4f18b3cf1b4baa2444bbdf6c2a4b2e7208c9f8520ac06dceb0caf1e1592e5ff33af6c52c9b043e8e363757b7fc3d7bb09a4173d01ee714567a7a40cd002660a390a0a8b7192c843173e649d955a13226b367f65ac1f0b52f5476f15365e818ff99b10feb957ff06a16677b95781400e5ddde177c0254963bbbd4863bbbd4b63bbbd4a63bbbd08c2f0f8cd0a97859b74741edb3ba32ce678e9d5b3b74f7da5dd112ab754056b0d921873efce56ed9ce633b35aa059c83c2d1682c4576442b444e2da80b4dd64f7b2a098ad1ea7e4
+      ValueGuids:
+      - bytes: 3d79754e6c2e1f40a302b1a19960d41b
+      - bytes: a082ba29c62bf94fb71254e8885453ac
+      - bytes: a82f4d908d47db4caf6496fb78270019
+      - bytes: ff77ef367558b74e91d53637981977e3
+      - bytes: ad00c4a4d58a5145820c7250bf337c00
+      - bytes: 551728ab910b5a41945d343af6f7733e
+      - bytes: 3f6c5b23fe66f0488edb0d15a522c0b1
+      - bytes: f1b647f7416e9d4596cbf00ff5e812a0
+      - bytes: c60453745402684a9ae7ce71dc4006d9
+      - bytes: 989f623dbe4f2747a48e462bf833c5ee
+      - bytes: 4267ed9bd4eee945b0da3ca4bcdc66a1
+      - bytes: e610ec882c331247bce93db74bf7172e
+      - bytes: ae99414342778f48aeaf698420fb84b2
+      - bytes: 08a299fd1b16374895915dfd0a113758
+      - bytes: 71cc31428dd31b49b6e3df1fe4d8186c
+      - bytes: 611ed19366d94544b5bea6741a3765b0
+      - bytes: abf44d8a1982654cb035529f60e55630
+      - bytes: 69e0269cb3d3d14093125e239d4b3e86
+      - bytes: 43662d6eddeb034db8fe5a1819e9350e
+      - bytes: 0f588f36bdeca541827378e23ba526e2
+      - bytes: 4ffc8437c425e941a2956d80a151f626
+      - bytes: 985519c3fc060043be52a6e833e517fa
+      - bytes: be6af845207a014c87406c4f240dfcda
+      - bytes: 93bd13b3536da041b32588b04898f9ec
+      - bytes: 146f837cf4e70844b0058fa84cef1e2d
+      - bytes: 268d29b31d379242b39d98a6a6c1c468
+      - bytes: 690e6c57a5c02c4cb1f850dc9b3a4f66
+      - bytes: 061baa9b79279d4883c8a6aacd551e47
+      - bytes: 878a9074f2b0704e8c4453f877f3edbb
+      - bytes: 185ac7f67b57c4498623cf5e0228336c
+      - bytes: 7e23c8564918c54f8b6563e6571d3a24
+      - bytes: 13a297f8669778408f454e39623c4d03
+      - bytes: 5b344845481e0b41a888226929fb8910
+      - bytes: 94ddb9074aa8b64bb0fdbef5e9b164e0
+      - bytes: a92e4ce5125a49429bc0b32a4100d444
+      - bytes: 3f572f52451d7a48914cc50231903de3
+      - bytes: 37564ecc06dc79459084d255a561213d
+      - bytes: fb2fb7a8aebb1f49afda6be61b2085bb
+      - bytes: 38e00ea6d01ce74e9cd5f393835dbc97
+      - bytes: 0161df07d9362c499672655f80ac1ef6
+      - bytes: 6e9ceb3dfb95234b83c3bfaf9b60096e
+      - bytes: 7cde7a76353bde45a0c1be37d21162b2
+      - bytes: 4d93fda8f480b7488a2712626299c607
+      - bytes: 5af081c9c003454fb5b709fc80401911
+      - bytes: 918c410a5bdeb04a88411bce2f6d7525
+      - bytes: 6fbbd3ccc79d9e49b58efccb21d22e56
+      - bytes: eb7a9cce12139044b0f315dcbe4dbc8c
+      - bytes: d79267cefe588441b7e47cda60f359ce
+      - bytes: d032bba31d9ac744a2d2907da119e2a4
+      - bytes: edd8534c5a32c147861e7aafe4f36e60
+      - bytes: d8672beebd63f748854f6b1c84733a2f
+      - bytes: e3106597c69a28439556edd9e7e09349
+      - bytes: dbb6a99fb35b3742ada23e49deaf4753
+      - bytes: f68acc5d8113f541b44448ff91ef1ef3
+      - bytes: 46000e0aca1d4e49be88dc0a27159a44
+      - bytes: e279c33d6d3ea34388505a3c500ff882
+      - bytes: 3fbc5a264f326d4ba1ab92ea31061995
+      - bytes: 6d6576f40df46747b1a99c02bdae2cfa
+    - Name: OneTime
+      Path: Default Work Unit\OneTime
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: OneTime
+        ObjectType: 9
+      ID: 838308516
+      Guid: 4b11a066fc621449960af269f2a7a089
+      values:
+      - A_Friends_Farewell
+      - FisrtTime_Diluvion_Theme_Normal
+      - None
+      - Welcome_to_the_Royals
+      ValueIcons:
+      - ElementName: A_Friends_Farewell
+        ObjectType: 8
+      - ElementName: FisrtTime_Diluvion_Theme_Normal
+        ObjectType: 8
+      - ElementName: None
+        ObjectType: 8
+      - ElementName: Welcome_to_the_Royals
+        ObjectType: 8
+      valueIDs: 1f79339cd19d0010db3ba32cf0b33840
+      ValueGuids:
+      - bytes: 8ec75bccc374564987bed2b275f520c9
+      - bytes: 6d0649d1b091104598b55baaab14d0e1
+      - bytes: d323c0b7250644429cea7b42b61f8c2a
+      - bytes: de8cfe17eb21db4788d2be598fb0e0bc
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{35734EF3-5C3A-4427-B316-0D0599ABF471}'
+    m_lastTimePsrt1: -321924575
+    m_lastTimePart2: -1999270950
+    List:
+    - Name: Adventure_Difficulty
+      Path: Default Work Unit\Adventure_Difficulty
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Adventure_Difficulty
+        ObjectType: 11
+      ID: -1016174015
+      Guid: 090ca481c519ef40bd6ca88c8777dd65
+      values:
+      - Cleared
+      - Heavy
+      - Medium
+      - Neutral_Abyss
+      - Neutral_Coast
+      - Neutral_Fjords
+      - Small
+      ValueIcons:
+      - ElementName: Cleared
+        ObjectType: 10
+      - ElementName: Heavy
+        ObjectType: 10
+      - ElementName: Medium
+        ObjectType: 10
+      - ElementName: Neutral_Abyss
+        ObjectType: 10
+      - ElementName: Neutral_Coast
+        ObjectType: 10
+      - ElementName: Neutral_Fjords
+        ObjectType: 10
+      - ElementName: Small
+        ObjectType: 10
+      valueIDs: 4b17d192767bdea2b08bd2a9b72e4ae501c564d7350dc45e1a41136e
+      ValueGuids:
+      - bytes: cc6c5e914d6c534b924c18edaf69222e
+      - bytes: 75d68a4801e2894a9bf020dbc2d6d1bc
+      - bytes: b3de6186844a0d44b84a183f3223f5b7
+      - bytes: 98c6ee3c1e961d488b7a1f1a9d5edb17
+      - bytes: 95513b40f9a7f4489f3523400d35039d
+      - bytes: 1d03c5034f58de44a86860c480bdaa0d
+      - bytes: 977a85abe0cbec49a47b61a0b8657371
+    - Name: Bolts
+      Path: Default Work Unit\Bolts
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Bolts
+        ObjectType: 11
+      ID: -1754809621
+      Guid: ecb9c9b3a98bce48a7baea832706a725
+      values:
+      - Drone
+      - Heavy
+      - Light
+      - Medium
+      - Super_Heavy
+      - Super_Light
+      ValueIcons:
+      - ElementName: Drone
+        ObjectType: 10
+      - ElementName: Heavy
+        ObjectType: 10
+      - ElementName: Light
+        ObjectType: 10
+      - ElementName: Medium
+        ObjectType: 10
+      - ElementName: Super_Heavy
+        ObjectType: 10
+      - ElementName: Super_Light
+        ObjectType: 10
+      valueIDs: b19e4ea3767bdea223f05c73b08bd2a9befb3ffdbb9104ae
+      ValueGuids:
+      - bytes: b8ab6471d458884a8581ae478af47da7
+      - bytes: 1b631ded4eefca49b14598a0fc3a294a
+      - bytes: 59080897cceb71419a9bea9498c59169
+      - bytes: 317cdfaa973e964499567b32702fc6aa
+      - bytes: d7aa7c801623d042a155191153c7f724
+      - bytes: 57437dd9b50dcc42b3493342765ff927
+    - Name: Combat_Fight_State
+      Path: Default Work Unit\Combat_Fight_State
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Combat_Fight_State
+        ObjectType: 11
+      ID: 1933514836
+      Guid: 3cec01ea218cca428045981b78183bf6
+      values:
+      - In_Range
+      - Out_Range
+      ValueIcons:
+      - ElementName: In_Range
+        ObjectType: 10
+      - ElementName: Out_Range
+        ObjectType: 10
+      valueIDs: 3aa15087cd60e560
+      ValueGuids:
+      - bytes: 393202020b12924ca956a00976d1c7de
+      - bytes: ee9139d218e7104698181681c2be107a
+    - Name: Combat_Health
+      Path: Default Work Unit\Combat_Health
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Combat_Health
+        ObjectType: 11
+      ID: 384966186
+      Guid: 6670868baddff847853483c436b0e59f
+      values:
+      - Low_Health_Loop
+      - Low_Health_Trans
+      - Normal
+      ValueIcons:
+      - ElementName: Low_Health_Loop
+        ObjectType: 10
+      - ElementName: Low_Health_Trans
+        ObjectType: 10
+      - ElementName: Normal
+        ObjectType: 10
+      valueIDs: e3aad2e0fd6eec3998c42745
+      ValueGuids:
+      - bytes: da2ddb038812e84a9ede69ce313a50ef
+      - bytes: 6125b7c2533a654797c88f2663dc9727
+      - bytes: 3cba43504beab54ea2982b596c9184c7
+    - Name: Combat_Result
+      Path: Default Work Unit\Combat_Result
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Combat_Result
+        ObjectType: 11
+      ID: -557769109
+      Guid: f8de3ac2f0ca744ea092991289bd6dc6
+      values:
+      - Neutral
+      - Victory
+      ValueIcons:
+      - ElementName: Neutral
+        ObjectType: 10
+      - ElementName: Victory
+        ObjectType: 10
+      valueIDs: 6ab6f827413aeda1
+      ValueGuids:
+      - bytes: 56546eebcd77a84389cb02377939f92a
+      - bytes: cba0cfa07f8fdb4b9f4407652d089e5e
+    - Name: Combat_State
+      Path: Default Work Unit\Combat_State
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Combat_State
+        ObjectType: 11
+      ID: 1238077023
+      Guid: 807d465996b5a94a8f77d164e0d637db
+      values:
+      - Captain_Time
+      - Fight
+      - Prebattle
+      - SideView
+      ValueIcons:
+      - ElementName: Captain_Time
+        ObjectType: 10
+      - ElementName: Fight
+        ObjectType: 10
+      - ElementName: Prebattle
+        ObjectType: 10
+      - ElementName: SideView
+        ObjectType: 10
+      valueIDs: 8922316e6500a41ec658deb08f815435
+      ValueGuids:
+      - bytes: 05508a95bbc95f469cee83f2b85500cd
+      - bytes: 6722fff008bf7e42acfffa8dc1411b89
+      - bytes: a7170a128c205649a8d25b583c90daa4
+      - bytes: 421edf73b2e90349811a3aa74342c8ab
+    - Name: Combat_Zone_Type
+      Path: Default Work Unit\Combat_Zone_Type
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Combat_Zone_Type
+        ObjectType: 11
+      ID: -374440279
+      Guid: 2b763d0836fa274981658df3b68512d6
+      values:
+      - Creature
+      - Ship
+      ValueIcons:
+      - ElementName: Creature
+        ObjectType: 10
+      - ElementName: Ship
+        ObjectType: 10
+      valueIDs: 1a03a39ee742fc10
+      ValueGuids:
+      - bytes: 7612f9e64330cc4baa6ea5939eda4c68
+      - bytes: 4c8274635c063349ae03a707996ec9ad
+    - Name: Music
+      Path: Default Work Unit\Music
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 11
+      ID: -303024426
+      Guid: 4a9c215949b15c4ea8649f7fcc76ae31
+      values:
+      - Loop
+      - OneShot
+      ValueIcons:
+      - ElementName: Loop
+        ObjectType: 10
+      - ElementName: OneShot
+        ObjectType: 10
+      valueIDs: 37ea2f290f891a51
+      ValueGuids:
+      - bytes: 2a50bd88f291b545b23f321a2d43ed54
+      - bytes: 4fe5b6d79d069f4c8905e6ef14754c10
+    - Name: Voice_Gender
+      Path: Default Work Unit\Voice_Gender
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voice_Gender
+        ObjectType: 11
+      ID: 1520455939
+      Guid: 698b573c580b5d4aada2f0fb5633ecdd
+      values:
+      - Female
+      - Male
+      ValueIcons:
+      - ElementName: Female
+        ObjectType: 10
+      - ElementName: Male
+        ObjectType: 10
+      valueIDs: d51c65837ee276b9
+      ValueGuids:
+      - bytes: 2c819c675428b74d8bf6a0924e54d63e
+      - bytes: 88fd73f713789c45816c22c47ec129d4
+    - Name: Voice_Profile
+      Path: Default Work Unit\Voice_Profile
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voice_Profile
+        ObjectType: 11
+      ID: -1545176005
+      Guid: 18ddf59d97addb438db8f69078b471c0
+      values:
+      - Energetic
+      - Naive
+      - Old
+      - Sassy
+      - Somber
+      ValueIcons:
+      - ElementName: Energetic
+        ObjectType: 10
+      - ElementName: Naive
+        ObjectType: 10
+      - ElementName: Old
+        ObjectType: 10
+      - ElementName: Sassy
+        ObjectType: 10
+      - ElementName: Somber
+        ObjectType: 10
+      valueIDs: 5b4b7ce8546038cf1093793d4c41aca497a6ee90
+      ValueGuids:
+      - bytes: 14441913540f384baebaf0d0f4bb5d33
+      - bytes: c2cc81aac3f65149aaedee10bdad855c
+      - bytes: 6d2f4203ad563f4c846a76eb84b93f5c
+      - bytes: 6abc7a4f7c779f4ab8f6aa95324e005b
+      - bytes: 3b0aa9a60c96a14c9e151ad6b4ef3820
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{204EA337-CF27-4AFE-B45C-7A6AE5244D4A}'
+    m_lastTimePsrt1: 325307055
+    m_lastTimePart2: -1999270949
+    List:
+    - Name: Music
+      Path: Default Work Unit\Music
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 7
+      ID: -303024426
+      Guid: b07a7c7cdb52b8448fc4fe42a0fa4438
+    - Name: SFX
+      Path: Default Work Unit\SFX
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 7
+      ID: 393239870
+      Guid: 704636ced30caf4ba818cf5d3b674bf0
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{83E4BB01-AF01-4C98-B14E-C1381AC5DE5B}'
+    m_lastTimePsrt1: -1751609446
+    m_lastTimePart2: -1999270957
+    List:
+    - Name: Abyss_Depth
+      Path: Default Work Unit\Environment\Abyss_Depth
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Environment
+        ObjectType: 4
+      - ElementName: Abyss_Depth
+        ObjectType: 13
+      ID: 391297961
+      Guid: e5de83fd22803c4abadf7ff783b6352e
+    - Name: Ark_Battle_Orchestra
+      Path: Default Work Unit\Environment\Ark_Battle\Ark_Battle_Orchestra
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Environment
+        ObjectType: 4
+      - ElementName: Ark_Battle
+        ObjectType: 4
+      - ElementName: Ark_Battle_Orchestra
+        ObjectType: 13
+      ID: -759063768
+      Guid: aa7438569125954b8b7a1955a0b81d0c
+    - Name: Ark_Battle_Perc_Layer
+      Path: Default Work Unit\Environment\Ark_Battle\Ark_Battle_Perc_Layer
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Environment
+        ObjectType: 4
+      - ElementName: Ark_Battle
+        ObjectType: 4
+      - ElementName: Ark_Battle_Perc_Layer
+        ObjectType: 13
+      ID: -1464584671
+      Guid: a27293af1deae346bbc618d8c708cf52
+    - Name: Ark_Proximity
+      Path: Default Work Unit\Environment\Ark_Battle\Ark_Proximity
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Environment
+        ObjectType: 4
+      - ElementName: Ark_Battle
+        ObjectType: 4
+      - ElementName: Ark_Proximity
+        ObjectType: 13
+      ID: -1676337291
+      Guid: 5782e765f38a8e48850e064844a86e60
+    - Name: Combat_Intensity
+      Path: Default Work Unit\Combat_Intensity
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Combat_Intensity
+        ObjectType: 13
+      ID: -245525517
+      Guid: a8c76eb1bcf86841bae071605d4725c0
+    - Name: DopplerParam
+      Path: Default Work Unit\Ship\DopplerParam
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ship
+        ObjectType: 4
+      - ElementName: DopplerParam
+        ObjectType: 13
+      ID: -1466557898
+      Guid: f4f3ad081eadbb49bd2e359d9067e261
+    - Name: EC_Endless_Corridor_Movement
+      Path: Default Work Unit\Environment\Endless_Corridor\EC_Endless_Corridor_Movement
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Environment
+        ObjectType: 4
+      - ElementName: Endless_Corridor
+        ObjectType: 4
+      - ElementName: EC_Endless_Corridor_Movement
+        ObjectType: 13
+      ID: -13614745
+      Guid: ec53cd2ade01184e931bca6c4c35e979
+    - Name: Health_Percentage
+      Path: Default Work Unit\Ship\Health_Percentage
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ship
+        ObjectType: 4
+      - ElementName: Health_Percentage
+        ObjectType: 13
+      ID: -1354316618
+      Guid: 64137469a6a34346b35935651ba7e5c0
+    - Name: Master_Volume
+      Path: Default Work Unit\UI\Master_Volume
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Master_Volume
+        ObjectType: 13
+      ID: -115298416
+      Guid: 8fafd9e57039da478b85c307db581b27
+    - Name: Music_Volume
+      Path: Default Work Unit\UI\Music_Volume
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Music_Volume
+        ObjectType: 13
+      ID: 1006694123
+      Guid: 1f7bcb866a26124ca3662386e091ffee
+    - Name: Ping_Power
+      Path: Default Work Unit\Ship\Ping_Power
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ship
+        ObjectType: 4
+      - ElementName: Ping_Power
+        ObjectType: 13
+      ID: 380977455
+      Guid: e5937227adc9bd4e8d1a59110ac646af
+    - Name: SFX_Volume
+      Path: Default Work Unit\UI\SFX_Volume
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: SFX_Volume
+        ObjectType: 13
+      ID: 1564184899
+      Guid: 37235d1bdeda06439fc3179d3617f15f
+    - Name: Ship_Speed
+      Path: Default Work Unit\Ship\Ship_Speed
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ship
+        ObjectType: 4
+      - ElementName: Ship_Speed
+        ObjectType: 13
+      ID: 919421835
+      Guid: 7eb12634a272344986d5e64ab4e34a72
+    - Name: Ship_Throttle
+      Path: Default Work Unit\Ship\Ship_Throttle
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ship
+        ObjectType: 4
+      - ElementName: Ship_Throttle
+        ObjectType: 13
+      ID: 30909174
+      Guid: f3133e5341a9fe459f0e16161a21e513
+    - Name: Ship_Turn
+      Path: Default Work Unit\Ship\Ship_Turn
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ship
+        ObjectType: 4
+      - ElementName: Ship_Turn
+        ObjectType: 13
+      ID: 1048119495
+      Guid: 41245434fe65e04e91182469b60e5a8e
+    - Name: Sonar_Charge
+      Path: Default Work Unit\Ship\Sonar_Charge
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ship
+        ObjectType: 4
+      - ElementName: Sonar_Charge
+        ObjectType: 13
+      ID: -1235125747
+      Guid: d9168459c2fe6a4a86b5239e3e7c8bd5
+  - PhysicalPath: Game Parameters\Factory SoundSeed Air Game Syncs.wwu
+    ParentPhysicalPath: 
+    Guid: '{3B167755-FB42-458B-98BF-96F557AFB3B9}'
+    m_lastTimePsrt1: -1751609446
+    m_lastTimePart2: -1999270957
+    List:
+    - Name: SS_Air_Fear
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Fear
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Fear
+        ObjectType: 13
+      ID: 1351367891
+      Guid: 59062ef746431c4ea1b1dab46a05101e
+    - Name: SS_Air_Freefall
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Freefall
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Freefall
+        ObjectType: 13
+      ID: -1292209176
+      Guid: 37fe2d2f9e4f944d83d853cca39781ad
+    - Name: SS_Air_Fury
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Fury
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Fury
+        ObjectType: 13
+      ID: 1029930033
+      Guid: dc79aea23acaba4696529986c322a87b
+    - Name: SS_Air_Month
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Month
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Month
+        ObjectType: 13
+      ID: -1646418679
+      Guid: 45b4e209a3c47f44b3ca818a1d925ef7
+    - Name: SS_Air_Presence
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Presence
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Presence
+        ObjectType: 13
+      ID: -447042342
+      Guid: 1a81b7e32f7b0f49b44f5fe51b468041
+    - Name: SS_Air_RPM
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_RPM
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_RPM
+        ObjectType: 13
+      ID: 822163944
+      Guid: ab9048a3d5b92645a64d5290c43ef2dc
+    - Name: SS_Air_Size
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Size
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Size
+        ObjectType: 13
+      ID: -1220270574
+      Guid: efeb291393a12e47a38c64668b494879
+    - Name: SS_Air_Storm
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Storm
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Storm
+        ObjectType: 13
+      ID: -579304704
+      Guid: db8c3fe9d1063747acaf7cd44bbed783
+    - Name: SS_Air_TimeOfDay
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_TimeOfDay
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_TimeOfDay
+        ObjectType: 13
+      ID: -1091570167
+      Guid: 2ca76f537e8c8b4cae03ef34fdadc314
+    - Name: SS_Air_Turbulence
+      Path: Factory SoundSeed Air Game Syncs\SS_Air_Turbulence
+      PathAndIcons:
+      - ElementName: Factory SoundSeed Air Game Syncs
+        ObjectType: 12
+      - ElementName: SS_Air_Turbulence
+        ObjectType: 13
+      ID: -134719478
+      Guid: 197ba8edaa73a0409f192073606db710
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    Guid: '{5185C08F-0996-41BC-AB46-2DB2DCE9EB8D}'
+    m_lastTimePsrt1: 327704362
+    m_lastTimePart2: -1999270949
+    List:
+    - Name: FinishedOneshot
+      Path: Default Work Unit\FinishedOneshot
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: FinishedOneshot
+        ObjectType: 14
+      ID: -1681234175
+      Guid: 692e887699c1384e975b5d6e73d3d9fa
+    - Name: LowHealth
+      Path: Default Work Unit\LowHealth
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LowHealth
+        ObjectType: 14
+      ID: 1017222595
+      Guid: 4d9a150f6252a3459c43c98e78878695
+    - Name: ShipCombat_Enemy_Destroyed
+      Path: Default Work Unit\ShipCombat_Enemy_Destroyed
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ShipCombat_Enemy_Destroyed
+        ObjectType: 14
+      ID: 480155958
+      Guid: be5bddc35e84244c9416eaa2c16c275c
+  ExpandedItems:
+  - /Diluvion
+  m_lastPopulateTimePsrt1: 0
+  m_lastPopulateTimePart2: 0
+  autoPopulateEnabled: 1
+  basePath: Audio\GeneratedSoundBanks
+  language: English(US)
+  defaultPoolSize: 4096
+  lowerPoolSize: 2048
+  streamingPoolSize: 1024
+  preparePoolSize: 0
+  memoryCutoffThreshold: 0.95
+  callbackManagerBufferSize: 4
