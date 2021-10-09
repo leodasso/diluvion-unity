@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1d3b84946941074b872fce3f8c95abd, type: 3}
+  m_Name: ach_millionaire
+  m_EditorClassIdentifier: Assembly-CSharp::SpiderAchivementObject
+  statID: stat_millionaire
+  niceName: Millionaire
+  description: Get 1,000,000 gold in your inventory
+  progress: 0
+  goal: 1000000
+  completed: 0
+  saveCheck: {fileID: 11400000, guid: 6f6f4ba2592908f488892d5da025567c, type: 2}

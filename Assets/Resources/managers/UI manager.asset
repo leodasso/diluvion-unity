@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7581f069b8090e04ca3eb25b0faac054, type: 3}
+  m_Name: UI manager
+  m_EditorClassIdentifier: 
+  DUI: {fileID: 109338, guid: e7203ec2ca5375a409fd689a1b9fac9d, type: 2}
+  defaultRefResolution: {x: 1280, y: 720}
+  allPanelInstances:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  panelsWithCompatibility:
+  - {fileID: 0}
+  dialoguePanel: {fileID: 11430000, guid: bbeffa32eb1c7494c97e9ff64040acdb, type: 2}
+  dialogHistory: {fileID: 11414918, guid: a2d25d46224d1dd4fbc6c56260867a73, type: 2}
+  hirePanel: {fileID: 11459300, guid: 85742658582cef041b617473320a60f5, type: 2}
+  generalCrewSelect: {fileID: 114963639739458252, guid: 1f47de9441b0d854f8e2b59f14f805f2,
+    type: 2}
+  standaloneCrewSelect: {fileID: 114125512290211676, guid: 4711efabd5b47734daf975e2e2103d49,
+    type: 2}
+  boardingPartyPanel: {fileID: 114019470010691078, guid: e167c226ad521704e9fef1376be1be55,
+    type: 2}
+  officerLevelUpPanel: {fileID: 114322610651715472, guid: 11911053432b07e40bee987f3f833cf4,
+    type: 2}
+  characterBubbles: {fileID: 11489196, guid: 2caeb0a3340fae542b4da77b15d7033e, type: 2}
+  crewOverview: {fileID: 114007386487280714, guid: c29a43e9eaf4d534c95a53435fc117e9,
+    type: 2}
+  chatterPanel: {fileID: 11464756, guid: 0af6030a8f8d9bb4298bfd4875e78574, type: 2}
+  tradePanel: {fileID: 11483302, guid: 0d85ac3ee76936d4db1157d74df65cde, type: 2}
+  itemDescription: {fileID: 11469760, guid: c8e2142d6d081954b836fc0c820ab492, type: 2}
+  newItemPanel: {fileID: 11443100, guid: 9d01455fa090eaf44bc1e5071c91d35c, type: 2}
+  itemTakenPopup: {fileID: 11483498, guid: 58b9d5a20cbbebe4e9ea6c2947fcf93e, type: 2}
+  moneyPanel: {fileID: 11427780, guid: 30346ec55a5b4b1408ff411a5b690007, type: 2}
+  qtySelectPanel: {fileID: 11408708, guid: f62230b3ff208ee40906838269589253, type: 2}
+  itemExchangePanel: {fileID: 114507469437936514, guid: 5b3d3af1d2b4b784790b9fc5f6fbf03e,
+    type: 2}
+  forgeMenu: {fileID: 114185149442257736, guid: bd1b4d9fd68183345bb34295ce7844f1,
+    type: 2}
+  lootPanel: {fileID: 114979628375361790, guid: b449df4c17d91a14bb5371977da2b36d,
+    type: 2}
+  importantItemLayout: {fileID: 114154228162941454, guid: 99572d5ac1f2d5e4aa17240a623e686c,
+    type: 2}
+  importantItemPanel: {fileID: 114157840657303836, guid: 89d5fa5cf7f8d684c808f7476ebed801,
+    type: 2}
+  interiorWP: {fileID: 11455960, guid: 27d94e41ca5f1bc42ba5d05f6ed2546f, type: 2}
+  mainWaypoint: {fileID: 114637999314053956, guid: 213c1cb61ae31b548baef8e3ca0fb011,
+    type: 2}
+  questUpdateLog: {fileID: 114145501523563762, guid: 365acdc0f48ec214698ddbff8f41e8f4,
+    type: 2}
+  questShower: {fileID: 11474488, guid: b5a46e526177aa041a289f6a32460402, type: 2}
+  sonarContact: {fileID: 114739176305953230, guid: 776f4cacf2e6ebc4e94df79aad1e8cf4,
+    type: 2}
+  depthMeter: {fileID: 11407424, guid: 7e86829f4852b4746bf911b2a1e1f322, type: 2}
+  weaponSwapPanel: {fileID: 114300230874734330, guid: 086b0f6371bcef6478d5df048a636467,
+    type: 2}
+  crushDepthOverlay: {fileID: 114754442667313730, guid: 94353dc22311b7f48861539ab1e06e5d,
+    type: 2}
+  damageOverlay: {fileID: 114428425055915752, guid: 04a1b2c21421972499bac4bc0dd6b2e9,
+    type: 2}
+  dockPanel: {fileID: 114607706679845600, guid: ab8d4bef335ab1c40b23811194571bb5,
+    type: 2}
+  resourcesPanel: {fileID: 11484322, guid: 4b56312feac15a94e80716b430577ac9, type: 2}
+  captainTime: {fileID: 0}
+  airPanel: {fileID: 114929286295940440, guid: 3d54d3c6486e0cc429d8883b4e1dc117, type: 2}
+  tensionPanel: {fileID: 0}
+  throttlePanel: {fileID: 11457960, guid: b15b18c4d7b3e8b4d95a7a6b47c8b5b4, type: 2}
+  basicReticule: {fileID: 11419062, guid: 8ba3d6be8ec589a498d5b41442097a62, type: 2}
+  HPPanel: {fileID: 114147372675756610, guid: c0c041054f882a549993f11af4bcfc2b, type: 2}
+  battlePanel: {fileID: 114355492296994070, guid: 163d741ff01246e4c89042e1b05ac3a3,
+    type: 2}
+  stationDetails: {fileID: 11475970, guid: 5124e83a1166d4a40950afbf6299269f, type: 2}
+  stationPreview: {fileID: 0}
+  stationHeader: {fileID: 11467968, guid: 71336c2ac62ae3549874596ce5ee8030, type: 2}
+  interiorTitle: {fileID: 11465412, guid: 52d6f0b7f569e7f4a8adf612bec6dccb, type: 2}
+  forgeSlotInfo: {fileID: 114621319121830888, guid: cd9035a0a4c8354489d5c25c952fd5dd,
+    type: 2}
+  shipyard: {fileID: 11488726, guid: bf492122bdb15294e8b62187b07c5b67, type: 2}
+  shipComparison: {fileID: 11454966, guid: 23421b2e005292044b92b0e63d8b5e77, type: 2}
+  shipFullPanel: {fileID: 11460526, guid: b45b7118cdcd5bc40bed9b1d7d32dde9, type: 2}
+  shipHeader: {fileID: 11420614, guid: 6613466a98fcaa148969da5cfd6740aa, type: 2}
+  shipStats: {fileID: 11433120, guid: b5d7a986c5adbdb4a9584fd3e265f03a, type: 2}
+  cartographerPanel: {fileID: 11400144, guid: e427bb37a559c34418374b721c14dde7, type: 2}
+  popup: {fileID: 11469992, guid: 9e7320d0e49134449acc2f409d9faccd, type: 2}
+  saveGamePanel: {fileID: 114168203742716298, guid: 7b55df3a3c127c440a14137f9fb8eeaf,
+    type: 2}
+  notifier: {fileID: 114410615380908058, guid: a1ad9ecc9c118c64db9ed6955989c747, type: 2}
+  captainsTools: {fileID: 11444620, guid: 5b09000a43b03224aa9e55bad2a3d066, type: 2}
+  airTradePanel: {fileID: 114559685957539494, guid: 3e9760ac338a5e6438e9ddd5d50550f8,
+    type: 2}
+  gameOver: {fileID: 11488554, guid: a5cee31d298d666428543674abaa79fe, type: 2}
+  pauseMenu: {fileID: 11441466, guid: a474e59e1bb5ed548928967ca129858a, type: 2}
+  qualitySettings: {fileID: 11459606, guid: b42dc901d18eb6f448314bb2df9c0126, type: 2}
+  loadGamePanel: {fileID: 114402466359807302, guid: 39b42daa7bd7212429391d5118e350b0,
+    type: 2}
+  gameSaved: {fileID: 114670670765193692, guid: daa55fa48b3efe24c864579be18fabeb,
+    type: 2}
+  worldMap: {fileID: 11416164, guid: 0f4a331eead281445807e9ad2b55061e, type: 2}
+  endCredits: {fileID: 0}
+  debugWindow: {fileID: 11405800, guid: eda0a69e560b40c47bb4d00a367b6aac, type: 2}
+  areaName: {fileID: 11450100, guid: 974bf35327a7a1d4ca7559e5c5923938, type: 2}
+  shipSelectPanel: {fileID: 11420478, guid: a58b16c10bffb434195bd87fa73ee08c, type: 2}
+  tutorialPanel: {fileID: 114723320372675674, guid: 441876e0789475a4e88d2dc2ec05532c,
+    type: 2}

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32aabd5c55471784e8604d81a7fa8f26, type: 3}
+  m_Name: defaultCaptain
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  description: This is a captain
+  baseFactions: []
+  nonFactionRelations: []
+  patience: 4.5
+  bravery: 0
+  shipSteer: 2.11
+  weaponCrew: 0
+  defaultFight: {fileID: 0}
+  defaultFlee: {fileID: 0}
+  defaultMission: {fileID: 0}
+  reactions:
+  - targetContext: 0
+    reactionContext: 1
+    actionType: 2
+    overrideMission: {fileID: 0}
+    priorityMultiplier: 1
+    actions: []
+    responses:
+    - {fileID: 0}
+  designNotes: This is a captain

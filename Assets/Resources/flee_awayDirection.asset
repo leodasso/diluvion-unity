@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a686a47eee2fa44cb0a34b5d86e4d5e, type: 3}
+  m_Name: flee_awayDirection
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.6,"type":"NodeCanvas.BehaviourTrees.BehaviourTree","comments":"run
+    away from my opressor","translation":{"x":-2883.0,"y":-3662.0},"zoomFactor":0.7500097,"nodes":[{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":4978.979,"y":5025.958},"_comment":"","$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"2"},{"_action":{"valueA":{"_name":"defaultThrottle","_targetVariableID":"e3d04e06-7b6b-4459-99c1-483f10a8fb89"},"valueB":{"_value":{"throttle":"overdrive","priorityModel":1}},"$type":"NodeCanvas.Tasks.Actions.SetVariable`1[[Diluvion.AI.ThrottleRequest,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"_position":{"x":4451.966,"y":5238.378},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"3"},{"_action":{"target":{"_name":"targetTransform"},"relativeDirection":{"_value":{"z":-1.0}},"distancetoMove":{"_value":100.0},"worldPoint":{"_name":"navTarget"},"getClosestWP":{"_value":true},"$type":"Diluvion.AI.SetRelativeDirectionTo"},"_position":{"x":4789.752,"y":5238.326},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"8"},{"_nodeColor":{"r":0.7019608,"g":1.0,"b":0.4980392,"a":1.0},"_position":{"x":5253.334,"y":5254.668},"$type":"NodeCanvas.BehaviourTrees.Selector","$id":"15"},{"_condition":{"timeout":{"_value":15.0},"$type":"NodeCanvas.Tasks.Conditions.Timeout"},"_position":{"x":5073.686,"y":5350.014},"_comment":"flees
+    for 15 seconds or until we get to our place","$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"16"},{"dynamic":true,"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":5378.734,"y":5388.794},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"19"},{"dynamic":true,"_nodeColor":{"r":0.7019608,"g":1.0,"b":0.4980392,"a":1.0},"_position":{"x":4989.98,"y":5535.144},"_comment":"InLOS
+    - InRange / OutLOS - OutRange","$type":"NodeCanvas.BehaviourTrees.Selector","$id":"20"},{"dynamic":true,"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":4882.801,"y":5612.852},"_comment":"Fire
+    if within LOS and RANGE","$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"21"},{"_condition":{"conditions":[{"targetTrans":{"_name":"targetTransform"},"currentTopTarget":{"_value":{"friends":[]},"_name":"currentTopTarget","_targetVariableID":"603dbda1-66a0-4cea-a809-15ff7ec6d6d8"},"_isDisabled":true,"$type":"Diluvion.AI.ValidTarget"},{"LOSTarget":{"_name":"targetTransform"},"layerMask":{"_value":{"value":2049}},"saveDistanceAs":{"_name":""},"$type":"NodeCanvas.Tasks.Conditions.CheckLOS"},{"checkTarget":{"_name":"targetTransform"},"distance":{"_value":10.0,"_name":"shortAttackRange"},"lastCheckedDistance":{"_value":10.0},"$type":"NodeCanvas.Tasks.Conditions.CheckDistanceToGameObject"}],"$type":"NodeCanvas.Framework.ConditionList"},"_position":{"x":4668.182,"y":5724.041},"_comment":"TODO:
+    Need to check Range too","$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"22"},{"_action":{"actions":[{"target":{"_name":"targetTransform"},"accuracy":{"_name":"st_accuracyPercentage"},"weaponsToFire":{"_value":[2,3]},"weaponSystems":{"_value":[],"_name":"weapons"},"$type":"Diluvion.AI.AIAim"},{"weaponsToFire":{"_value":[2,3]},"targetDistance":{},"reloadMultiplier":{"_name":"st_firingSpeedMultiplier"},"weaponSystems":{"_value":[],"_name":"weapons"},"fireMode":{"_value":true},"aimPatience":{"_value":5.0},"$type":"Diluvion.AI.AIFire"},{"target":{"_name":"targetTransform"},"$type":"Diluvion.AI.AISetFiredUpon"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5031.146,"y":5724.59},"_comment":"Aim
+    and Fire","$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"38"},{"_action":{"weaponsToFire":{"_value":[2,3]},"targetDistance":{},"reloadMultiplier":{},"weaponSystems":{"_value":[],"_name":"weapons"},"fireMode":{},"aimPatience":{"_value":1.0},"$type":"Diluvion.AI.AIFire"},"_position":{"x":5097.588,"y":5636.037},"_comment":"Out
+    of Range","$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"59"},{"_subTree":{"_value":4},"_position":{"x":5492.714,"y":5461.595},"$type":"NodeCanvas.BehaviourTrees.SubTree","$id":"69"},{"_condition":{"targetTrans":{"_name":"targetTransform"},"currentTopTarget":{"_value":{"friends":[]},"_name":"currentTopTarget","_targetVariableID":"603dbda1-66a0-4cea-a809-15ff7ec6d6d8"},"_invert":true,"$type":"Diluvion.AI.ValidTarget"},"_position":{"x":6025.361,"y":5164.903},"$type":"NodeCanvas.BehaviourTrees.ConditionNode"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"8"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"15"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"15"},"_targetNode":{"$ref":"16"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"15"},"_targetNode":{"$ref":"19"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"19"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"19"},"_targetNode":{"$ref":"69"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"21"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"20"},"_targetNode":{"$ref":"59"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"21"},"_targetNode":{"$ref":"22"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"21"},"_targetNode":{"$ref":"38"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"primeNode":{"$ref":"2"},"canvasGroups":[{"name":"Stat
+    Setup","rect":{"xMin":4446.303,"yMin":5188.669,"xMax":4975.544,"yMax":5315.006}},{"name":"Fire
+    while disengaging","rect":{"xMin":4657.027,"yMin":5479.496,"xMax":5435.766,"yMax":5854.335}},{"name":"Movement","rect":{"xMin":5480.688,"yMin":5425.017,"xMax":5619.258,"yMax":5546.264}}],"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
+  _objectReferences:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 29e4b46321801ce4499f6281e33e6147, type: 2}
+  - {fileID: 11400000, guid: bccc0ae13d4d865469972d28de2cceb9, type: 2}
+  - {fileID: 11400000, guid: 105e190bff137e7438c878d874ee8652, type: 2}
+  - {fileID: 11400000, guid: 5a1f33314aa195b498a6bede2993c986, type: 2}
+  _deserializationFailed: 0
+  repeat: 1
+  updateInterval: 0

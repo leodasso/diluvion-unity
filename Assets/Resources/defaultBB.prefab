@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1975600538642972}
+  m_IsPrefabParent: 1
+--- !u!1 &1975600538642972
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4519068547041324}
+  - component: {fileID: 114889309377770836}
+  m_Layer: 0
+  m_Name: defaultBB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4519068547041324
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1975600538642972}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -426.93665, y: -1447.1127, z: -1205.2638}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114889309377770836
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1975600538642972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98a6db0b653f764eac834f85857a9dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _serializedBlackboard: '{"_variables":{"wayPointDirection":{"_name":"wayPointDirection","_id":"1974d376-d0b1-40ea-afd3-650cc31a0c51","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3,
+    UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"avoidVector":{"_name":"avoidVector","_id":"d394d4eb-5651-4890-9830-e3ff1a3ff408","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3,
+    UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"wanderTargets":{"_value":[],"_name":"wanderTargets","_id":"b89aa3c0-1edf-4228-934f-4ec84d117fdc","$type":"NodeCanvas.Framework.Variable`1[[System.Collections.Generic.List`1[[Diluvion.Sonar.SonarStats,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+    Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"currentWaypoint":{"_name":"currentWaypoint","_id":"c6e786a8-fd81-4133-8d01-e07673626f31","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3,
+    UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"currentRoute":{"_name":"currentRoute","_id":"677a678b-4671-44c5-848e-a0fa8a0d3f36","$type":"NodeCanvas.Framework.Variable`1[[Diluvion.Route,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"crashDistance":{"_value":999999.0,"_name":"crashDistance","_id":"8ad41de6-b922-4a87-a0ef-8e803772b68f","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"targetDistance":{"_name":"targetDistance","_id":"af8f8157-47ff-4734-8505-7ba07623d3a2","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"targetFlatDistance":{"_name":"targetFlatDistance","_id":"66b87534-9f15-4973-8b94-10016b3fc234","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"targetUpDot":{"_name":"targetUpDot","_id":"d568e1d4-68f2-4a62-a523-b3c5550ed02f","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"shipMomentum":{"_name":"shipMomentum","_id":"d259d006-f8f9-4ec3-9978-b35faef9e536","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"overShoot":{"_name":"overShoot","_id":"49881980-7e1f-4474-84ab-b672d4f72a5a","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"forwardSpeed":{"_name":"forwardSpeed","_id":"eb7b7822-0436-48b5-ac54-099c215f24f8","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"Captain":{"_name":"Captain","_id":"b4de6586-7266-4ea3-840a-418733d3bc4a","$type":"NodeCanvas.Framework.Variable`1[[Diluvion.AI.Captain,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"interestTags":{"_value":[],"_name":"interestTags","_id":"2feac008-7504-4eee-a2c6-1adffe2feeeb","$type":"NodeCanvas.Framework.Variable`1[[System.Collections.Generic.List`1[[Diluvion.Sonar.Signature,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+    Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"sonarTarget":{"_name":"sonarTarget","_id":"9001c63e-308f-47da-8551-d80c09ec1471","$type":"NodeCanvas.Framework.Variable`1[[Diluvion.Sonar.SonarStats,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"currentAction":{"_name":"currentAction","_id":"4c22e77a-5dd9-462d-89b6-780102ef5cdc","$type":"NodeCanvas.Framework.Variable`1[[Diluvion.AI.AIAction,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"missionSubTree":{"_name":"missionSubTree","_id":"233ae66b-8477-45fa-9595-8fadcdaae5e1","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.BehaviourTrees.BehaviourTree,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"defaultMission":{"_name":"defaultMission","_id":"053913a1-da11-4cf4-b004-a9f6d13a7270","$type":"NodeCanvas.Framework.Variable`1[[NodeCanvas.BehaviourTrees.BehaviourTree,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"lastPinger":{"_value":{"friends":[]},"_name":"lastPinger","_id":"d54ca3d0-232a-4454-9eb3-c7e326b49adc","$type":"NodeCanvas.Framework.Variable`1[[Diluvion.AI.ContextTarget,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"lastPingContext":{"_name":"lastPingContext","_id":"1456348d-fa04-473c-b703-d3f57064741e","$type":"NodeCanvas.Framework.Variable`1[[Diluvion.AI.TargetContext,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"defaultThrottle":{"_value":{},"_name":"defaultThrottle","_id":"e3d04e06-7b6b-4459-99c1-483f10a8fb89","$type":"NodeCanvas.Framework.Variable`1[[Diluvion.AI.ThrottleRequest,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"ReactionContext":{"_value":{"friends":[]},"_name":"ReactionContext","_id":"1a085cc7-0354-4740-9946-e262eb984de5","$type":"NodeCanvas.Framework.Variable`1[[Diluvion.AI.ContextTarget,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"TargetContext":{"_name":"TargetContext","_id":"25ebd581-b8ef-46e3-a8ba-a79e19eba7bc","$type":"NodeCanvas.Framework.Variable`1[[Diluvion.AI.TargetContext,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"contextTargets":{"_value":[],"_name":"contextTargets","_id":"46666793-06aa-46dc-9915-c23d52bcece2","$type":"NodeCanvas.Framework.Variable`1[[System.Collections.Generic.List`1[[Diluvion.AI.ContextTarget,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]], mscorlib,
+    Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"TopTarget":{"_name":"TopTarget","_id":"d1fe19bc-c8cf-4bd9-9908-d50c25811ddc","$type":"NodeCanvas.Framework.Variable`1[[Diluvion.AI.ContextTarget,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"currentTopTarget":{"_name":"currentTopTarget","_id":"603dbda1-66a0-4cea-a809-15ff7ec6d6d8","$type":"NodeCanvas.Framework.Variable`1[[Diluvion.AI.ContextTarget,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"st_firingSpeedMultiplier":{"_name":"st_firingSpeedMultiplier","_id":"e785d681-719b-4a9f-822d-c2c1bdbc2b27","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"st_accuracyPercentage":{"_name":"st_accuracyPercentage","_id":"35633ada-4dff-4966-98cc-8d5489b75f1c","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"st_steeringOffsetPercentage":{"_name":"st_steeringOffsetPercentage","_id":"18088a83-6ac2-4730-a57f-73db796b64fe","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"st_decisionWaitTime":{"_name":"st_decisionWaitTime","_id":"0de99af0-6a04-4241-9ad0-1345098b44e1","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"st_attackRangePercent":{"_name":"st_attackRangePercent","_id":"4fc3d7f7-c5a0-4b0b-9989-dec9a0462d10","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"evadeType":{"_value":"Nothing","_name":"evadeType","_id":"a0fad3c2-70a7-47f2-b72b-b6990100c87a","$type":"NodeCanvas.Framework.Variable`1[[Avoiding,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"progress":{"_name":"progress","_id":"0dd92bd2-efb7-4199-b585-413c9a9d1d62","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"forwardDot":{"_name":"forwardDot","_id":"3a6572b7-e234-4d55-ad4c-7a1bb4fb6ee3","$type":"NodeCanvas.Framework.Variable`1[[System.Single,
+    mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]"},"tetherPoint":{"_name":"tetherPoint","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3,
+    UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"tetherDirection":{"_name":"tetherDirection","$type":"NodeCanvas.Framework.Variable`1[[UnityEngine.Vector3,
+    UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"}}}'
+  _objectReferences: []
