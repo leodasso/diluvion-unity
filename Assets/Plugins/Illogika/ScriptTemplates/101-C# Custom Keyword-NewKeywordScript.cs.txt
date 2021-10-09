@@ -1,0 +1,45 @@
+using UnityEngine;
+using System.Linq;
+using System.Collections;
+using HeavyDutyInspector;
+using Object = UnityEngine.Object;
+
+[System.Serializable]
+public class #SCRIPTNAME# : Keyword {
+
+	public #SCRIPTNAME#() : base()
+	{
+	}
+
+	private #SCRIPTNAME#(string key) : base(key)
+	{
+	}
+
+	public static implicit operator string (#SCRIPTNAME# word)
+	{
+		return word._key.Split('/').Last();
+	}
+
+	public static implicit operator #SCRIPTNAME# (string key)
+	{
+		return new #SCRIPTNAME# (key);
+	}
+}
+
+public class #SCRIPTNAME#s : System.Object
+{
+
+	private static KeywordsConfig _config;
+	public static KeywordsConfig Config
+	{
+		get
+		{
+			if (_config == null)
+			{
+				_config = Resources.Load("Config/#SCRIPTNAME#sConfig") as KeywordsConfig;
+			}
+			return _config;
+		}
+	}
+}
+

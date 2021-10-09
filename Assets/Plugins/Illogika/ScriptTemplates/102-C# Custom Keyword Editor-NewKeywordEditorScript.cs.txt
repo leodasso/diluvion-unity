@@ -1,0 +1,39 @@
+using UnityEngine;
+using UnityEditor;
+using System.Linq;
+using System.IO;
+using System.Collections;
+using System.Collections.Generic;
+using HeavyDutyInspector;
+using Object = UnityEngine.Object;
+
+[CustomPropertyDrawer(typeof(#SCRIPTNAME#))]
+public class #SCRIPTNAME#Drawer : BaseKeywordDrawer
+{
+
+	public #SCRIPTNAME#Drawer()
+	{
+		scriptableConfig = #SCRIPTNAME#s.Config;
+		config = scriptableConfig.keyWordCategories;
+
+		base.Init();
+	}
+}
+
+public static class Create#SCRIPTNAME#s
+{
+	[MenuItem("Assets/ScriptableObjects/Create New #SCRIPTNAME#s")]
+	public static void Create#SCRIPTNAME#sConfig()
+	{
+		KeywordsConfig config = ScriptableObject.CreateInstance<KeywordsConfig>();
+
+		if(!System.IO.Directory.Exists(System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(), "Assets/Resources/Config/")))
+			System.IO.Directory.CreateDirectory(System.IO.Path.Combine(System.IO.Directory.GetCurrentDirectory(), "Assets/Resources/Config/"));
+		
+		AssetDatabase.CreateAsset(config, "Assets/Resources/Config/#SCRIPTNAME#sConfig.asset");
+		AssetDatabase.SaveAssets();
+		
+		EditorUtility.FocusProjectWindow();
+  		Selection.activeObject = config;
+	}
+}

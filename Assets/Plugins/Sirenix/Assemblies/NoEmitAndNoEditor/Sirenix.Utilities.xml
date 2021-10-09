@@ -1,0 +1,2884 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sirenix.Utilities</name>
+    </assembly>
+    <members>
+        <member name="T:Sirenix.Utilities.ColorExtensions">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ColorExtensions.Lerp(UnityEngine.Color[],System.Single)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ColorExtensions.Lerp(UnityEngine.Color[],System.Single,System.Func{System.Single,System.Single})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ColorExtensions.MoveTowards(UnityEngine.Color,UnityEngine.Color,System.Single)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ColorExtensions.TryParseString(System.String,UnityEngine.Color@)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ColorExtensions.ToCSharpColor(UnityEngine.Color)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ColorExtensions.Pow(UnityEngine.Color,System.Single)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ColorExtensions.NormalizeRGB(UnityEngine.Color)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.DelegateExtensions">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.DelegateExtensions.Memoize``1(System.Func{``0})">
+            <summary>
+            Memoizes the specified func - returns the memoized version
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.DelegateExtensions.Memoize``2(System.Func{``0,``1})">
+            <summary>
+            Memoizes the specified func - returns the memoized version
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.DirectoryInfoExtensions">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.DirectoryInfoExtensions.IsSubDirectoryOf(System.IO.DirectoryInfo,System.IO.DirectoryInfo)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.DirectoryInfoExtensions.FindParentDirectoryWithName(System.IO.DirectoryInfo,System.String)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.GarbageFreeIterators">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GarbageFreeIterators.GFIterator``1(System.Collections.Generic.List{``0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GarbageFreeIterators.GFIterator``2(System.Collections.Generic.Dictionary{``0,``1})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GarbageFreeIterators.GFValueIterator``2(System.Collections.Generic.Dictionary{``0,``1})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GarbageFreeIterators.GFIterator``1(System.Collections.Generic.HashSet{``0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.GarbageFreeIterators.ListIterator`1">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GarbageFreeIterators.ListIterator`1.#ctor(System.Collections.Generic.List{`0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GarbageFreeIterators.ListIterator`1.GetEnumerator">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.GarbageFreeIterators.ListIterator`1.Current">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GarbageFreeIterators.ListIterator`1.MoveNext">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GarbageFreeIterators.ListIterator`1.Dispose">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.GarbageFreeIterators.HashsetIterator`1">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GarbageFreeIterators.HashsetIterator`1.#ctor(System.Collections.Generic.HashSet{`0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GarbageFreeIterators.HashsetIterator`1.GetEnumerator">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.GarbageFreeIterators.HashsetIterator`1.Current">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GarbageFreeIterators.HashsetIterator`1.MoveNext">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GarbageFreeIterators.HashsetIterator`1.Dispose">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.GarbageFreeIterators.DictionaryIterator`2">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GarbageFreeIterators.DictionaryIterator`2.#ctor(System.Collections.Generic.Dictionary{`0,`1})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GarbageFreeIterators.DictionaryIterator`2.GetEnumerator">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.GarbageFreeIterators.DictionaryIterator`2.Current">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GarbageFreeIterators.DictionaryIterator`2.MoveNext">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GarbageFreeIterators.DictionaryIterator`2.Dispose">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.GarbageFreeIterators.DictionaryValueIterator`2">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GarbageFreeIterators.DictionaryValueIterator`2.#ctor(System.Collections.Generic.Dictionary{`0,`1})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GarbageFreeIterators.DictionaryValueIterator`2.GetEnumerator">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.GarbageFreeIterators.DictionaryValueIterator`2.Current">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GarbageFreeIterators.DictionaryValueIterator`2.MoveNext">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GarbageFreeIterators.DictionaryValueIterator`2.Dispose">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.LinqExtensions">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.Examine``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0,System.Int32})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.Convert``1(System.Collections.IEnumerable,System.Func{System.Object,``0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.ToHashSet``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.ToImmutableList``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.Prepend``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.Prepend``1(System.Collections.Generic.IEnumerable{``0},``0)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.Prepend``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.PrependIf``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Func{``0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.PrependIf``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,``0)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.PrependIf``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.PrependIf``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Boolean},System.Func{``0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.PrependIf``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Boolean},``0)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.PrependIf``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Boolean},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.PrependIf``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Collections.Generic.IEnumerable{``0},System.Boolean},System.Func{``0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.PrependIf``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Collections.Generic.IEnumerable{``0},System.Boolean},``0)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.PrependIf``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Collections.Generic.IEnumerable{``0},System.Boolean},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.Append``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.Append``1(System.Collections.Generic.IEnumerable{``0},``0)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.Append``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.AppendIf``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Func{``0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.AppendIf``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,``0)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.AppendIf``1(System.Collections.Generic.IEnumerable{``0},System.Boolean,System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.AppendIf``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Boolean},System.Func{``0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.AppendIf``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Boolean},``0)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.AppendIf``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Boolean},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.FilterCast``1(System.Collections.IEnumerable)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.AddRange``1(System.Collections.Generic.HashSet{``0},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.IsNullOrEmpty``1(System.Collections.Generic.IList{``0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.LinqExtensions.Populate``1(System.Collections.Generic.IList{``0},``0)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.MemberInfoExtensions">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberInfoExtensions.IsDefined``1(System.Reflection.MemberInfo,System.Boolean)">
+            <summary>
+            Returns true if the attribute whose type is specified by the generic argument is defined on this member
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberInfoExtensions.IsDefined``1(System.Reflection.MemberInfo)">
+            <summary>
+            Returns true if the attribute whose type is specified by the generic argument is defined on this member
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberInfoExtensions.GetAttribute``1(System.Reflection.MemberInfo,System.Boolean)">
+            <summary>
+            Returns the first found custom attribute of type T on this member
+            Returns null if none was found
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberInfoExtensions.GetAttribute``1(System.Reflection.MemberInfo)">
+            <summary>
+            Returns the first found non-inherited custom attribute of type T on this member
+            Returns null if none was found
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberInfoExtensions.GetAttributes``1(System.Reflection.MemberInfo)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberInfoExtensions.GetAttributes``1(System.Reflection.MemberInfo,System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberInfoExtensions.GetAttributes(System.Reflection.MemberInfo)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberInfoExtensions.GetAttributes(System.Reflection.MemberInfo,System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberInfoExtensions.GetNiceName(System.Reflection.MemberInfo)">
+            <summary>
+            If this member is a method, returns the full method name (name + params) otherwise the member name paskal splitted
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberInfoExtensions.IsStatic(System.Reflection.MemberInfo)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.CachedMemberInfoLookup">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.CachedMemberInfoLookup.GetMembers(System.Type)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.CachedMemberInfoLookup.#ctor(System.Func{System.Reflection.MemberInfo,System.Boolean})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.CachedMemberInfoLookup.GetPrivateMemberAlias(System.Reflection.MemberInfo)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.MethodInfoExtensions">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MethodInfoExtensions.GetFullName(System.Reflection.MethodBase,System.String)">
+            <summary>
+            Returns the specified method's full name "methodName(argType1 arg1, argType2 arg2, etc)"
+            Uses the specified gauntlet to replaces type names, ex: "int" instead of "Int32"
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MethodInfoExtensions.GetParamsNames(System.Reflection.MethodBase)">
+            <summary>
+            Returns a string representing the passed method parameters names. Ex "int num, float damage, Transform target"
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MethodInfoExtensions.GetFullName(System.Reflection.MethodBase)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MethodInfoExtensions.IsExtensionMethod(System.Reflection.MethodBase)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.Operator">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.Operator.Equality">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.Operator.Inequality">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.Operator.Addition">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.Operator.Subtraction">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.Operator.LessThan">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.Operator.GreaterThan">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.Operator.LessThanOrEqual">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.Operator.GreaterThanOrEqual">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.PropertyInfoExtensions">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.PropertyInfoExtensions.IsAutoProperty(System.Reflection.PropertyInfo)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.StringExtensions">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.StringExtensions.ToTitleCase(System.String)">
+            <summary>
+            Eg MY_INT_VALUE => MyIntValue
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.StringExtensions.Contains(System.String,System.String,System.StringComparison)">
+            <summary>
+            Returns whether or not the specified string is contained with this string
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.StringExtensions.SplitPascalCase(System.String)">
+            <summary>
+            Ex: "thisIsCamelCase" -> "This Is Camel Case"
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.StringExtensions.IsNullOrWhitespace(System.String)">
+            <summary>
+            Returns true if this string is null, empty, or contains only whitespace.
+            </summary>
+            <param name="str">The string to check.</param>
+            <returns><c>true</c> if this string is null, empty, or contains only whitespace; otherwise, <c>false</c>.</returns>
+        </member>
+        <member name="T:Sirenix.Utilities.TypeExtensions">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.TypeExtensions.TypeNameAlternatives">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.IsCastableTo(System.Type,System.Type,System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetCastMethodDelegate(System.Type,System.Type,System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetCastMethodDelegate``2(System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetCastMethod(System.Type,System.Type,System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetEqualityComparerDelegate``1">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetContainedType(System.Reflection.MemberInfo)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.HasCustomAttribute``1(System.Reflection.MemberInfo)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.HasCustomAttribute``1(System.Reflection.MemberInfo,System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.HasCustomAttribute``1(System.Reflection.MemberInfo,``0@)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.HasCustomAttribute``1(System.Reflection.MemberInfo,System.Boolean,``0@)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.HasCustomAttribute(System.Reflection.MemberInfo,System.Type,System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.HasCustomAttribute(System.Reflection.MemberInfo,System.Type,System.Boolean,System.Attribute@)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetAttribute``1(System.Type,System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.ImplementsOrInherits(System.Type,System.Type)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.ImplementsOpenGenericInterface(System.Type,System.Type)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.ImplementsOpenGenericClass(System.Type,System.Type)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetArgumentsOfInheritedOpenGenericClass(System.Type,System.Type)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetArgumentsOfInheritedOpenGenericInterface(System.Type,System.Type)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetOperatorMethod(System.Type,Sirenix.Utilities.Operator)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetAllMembers(System.Type,System.Reflection.BindingFlags)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetAllMembers``1(System.Type,System.Reflection.BindingFlags)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetGenericBaseType(System.Type,System.Type)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetGenericBaseType(System.Type,System.Type,System.Int32@)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetBaseTypes(System.Type,System.Boolean)">
+            <summary>
+            Returns a lazy enumerable of all the base types of this type including interfaces and classes
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetBaseClasses(System.Type,System.Boolean)">
+            <summary>
+            Returns a lazy enumerable of all the base classes of this type
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.TypeNameGauntlet(System.Type)">
+            <summary>
+            Used to filter out unwanted type names. Ex "int" instead of "Int32"
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetNiceName(System.Type)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetNiceFullName(System.Type)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetCompilableNiceName(System.Type)">
+            <summary>
+            Gets the name of the compilable nice.
+            </summary>
+            <param name="type">The type.</param>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetCompilableNiceFullName(System.Type)">
+            <summary>
+            Gets the full name of the compilable nice.
+            </summary>
+            <param name="type">The type.</param>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetCustomAttribute``1(System.Type,System.Boolean)">
+            <summary>
+            Returns the first found custom attribute of type T on this type
+            Returns null if none was found
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetCustomAttribute``1(System.Type)">
+            <summary>
+            Returns the first found non-inherited custom attribute of type T on this type
+            Returns null if none was found
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetCustomAttributes``1(System.Type)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetCustomAttributes``1(System.Type,System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.IsDefined``1(System.Type)">
+            <summary>
+            Returns true if the attribute whose type is specified by the generic argument is defined on this type
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.IsDefined``1(System.Type,System.Boolean)">
+            <summary>
+            Returns true if the attribute whose type is specified by the generic argument is defined on this type
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.InheritsFrom``1(System.Type)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.InheritsFrom(System.Type,System.Type)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetInheritanceDistance(System.Type,System.Type)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.HasParamaters(System.Reflection.MethodInfo,System.Collections.Generic.IList{System.Type},System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetReturnType(System.Reflection.MemberInfo)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetMemberValue(System.Reflection.MemberInfo,System.Object)">
+            <summary>
+            Gets the value contained in a given <see cref="T:System.Reflection.MemberInfo"/>. Currently only <see cref="T:System.Reflection.FieldInfo"/> and <see cref="T:System.Reflection.PropertyInfo"/> is supported.
+            </summary>
+            <param name="member">The <see cref="T:System.Reflection.MemberInfo"/> to get the value of.</param>
+            <param name="obj">The instance to get the value from.</param>
+            <returns>The value contained in the given <see cref="T:System.Reflection.MemberInfo"/>.</returns>
+            <exception cref="T:System.ArgumentException">Can't get the value of the given <see cref="T:System.Reflection.MemberInfo"/> type.</exception>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.SetMemberValue(System.Reflection.MemberInfo,System.Object,System.Object)">
+            <summary>
+            Sets the value of a given MemberInfo. Currently only <see cref="T:System.Reflection.FieldInfo"/> and <see cref="T:System.Reflection.PropertyInfo"/> is supported.
+            </summary>
+            <param name="member">The <see cref="T:System.Reflection.MemberInfo"/> to set the value of.</param>
+            <param name="obj">The object to set the value on.</param>
+            <param name="value">The value to set.</param>
+            <exception cref="T:System.ArgumentException">
+            Property has no setter
+            or
+            Can't set the value of the given <see cref="T:System.Reflection.MemberInfo"/> type.
+            </exception>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.TryInferGenericParameters(System.Type,System.Type[]@,System.Type[])">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.AreGenericConstraintsSatisfiedBy(System.Type,System.Type[])">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetGenericConstraintsString(System.Type,System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GetGenericParameterConstraintsString(System.Type,System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.GenericArgumentsContainsTypes(System.Type,System.Type[])">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.IsFullyConstructedGenericType(System.Type)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.TypeExtensions.IsNullableType(System.Type)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.UnityExtensions">
+            <summary>
+            Extends various Unity classes.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.UnityExtensions.IsUnityNull(UnityEngine.Object)">
+            <summary>
+            Determines whether a Unity object is null or "fake null",
+            without ever calling Unity's own equality operators.
+            This method is useful for checking if a Unity object is
+            null, destroyed or missing at times when it is not allowed
+            to call Unity's own equality operators, for example when
+            not running on the main thread.
+            </summary>
+            <param name="obj">The Unity object to check.</param>
+            <returns>True if the object is null, missing or destroyed; otherwise false.</returns>
+        </member>
+        <member name="T:Sirenix.Utilities.AssemblyTypeFlags">
+            <summary>
+            AssemblyTypeFlags is a bitmask used to filter types and assemblies related to Unity.
+            </summary>
+            <seealso cref="T:Sirenix.Utilities.AssemblyUtilities"/>
+        </member>
+        <member name="F:Sirenix.Utilities.AssemblyTypeFlags.None">
+            <summary>
+            Excludes all types.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.AssemblyTypeFlags.UserTypes">
+            <summary>
+            UserTypes includes all custom user scripts that are not located in an editor or plugin folder.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.AssemblyTypeFlags.PluginTypes">
+            <summary>
+            PluginTypes includes all types located in the plugins folder and are not located in an editor folder.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.AssemblyTypeFlags.UnityTypes">
+            <summary>
+            UnityTypes includes all types depended on UnityEngine and from UnityEngine, except editor, plugin and user types.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.AssemblyTypeFlags.UserEditorTypes">
+            <summary>
+            UserEditorTypes includes all custom user scripts that are located in an editor folder but not in a plugins folder.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.AssemblyTypeFlags.PluginEditorTypes">
+            <summary>
+            PluginEditorTypes includes all editor types located in the plugins folder.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.AssemblyTypeFlags.UnityEditorTypes">
+            <summary>
+            UnityEditorTypes includes all editor types that are not user editor types nor plugin editor types.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.AssemblyTypeFlags.OtherTypes">
+            <summary>
+            OtherTypes include all other types that are not dependend on UnityEngine or UnityEditor.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.AssemblyTypeFlags.CustomTypes">
+            <summary>
+            CustomTypes include: UserTypes, UserEditorTypes, PluginTypes and PluginEditorTypes.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.AssemblyTypeFlags.GameTypes">
+            <summary>
+            GameTypes include: UserTypes, PluginTypes, UnityTypes and OtherTypes.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.AssemblyTypeFlags.EditorTypes">
+            <summary>
+            EditorTypes include: UserEditorTypes, PluginEditorTypes and UnityEditorTypes.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.AssemblyTypeFlags.All">
+            <summary>
+            All include: UserTypes, PluginTypes, UnityTypes, UserEditorTypes, PluginEditorTypes, UnityEditorTypes and OtherTypes.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.AssemblyUtilities">
+            <summary>
+            TODO: Document.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.AssemblyUtilities.Reload">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.AssemblyUtilities.GetAllAssemblies">
+            <summary>
+            Gets an <see cref="T:Sirenix.Utilities.ImmutableList"/> of all assemblies in the current <see cref="T:System.AppDomain"/>.
+            </summary>
+            <returns>An <see cref="T:Sirenix.Utilities.ImmutableList"/> of all assemblies in the current <see cref="T:System.AppDomain"/>.</returns>
+        </member>
+        <member name="M:Sirenix.Utilities.AssemblyUtilities.GetAssemblyTypeFlag(System.Reflection.Assembly)">
+            <summary>
+            Gets the <see cref="T:Sirenix.Utilities.AssemblyTypeFlags"/> for a given assembly.
+            </summary>
+            <param name="assembly">The assembly.</param>
+            <returns>The <see cref="T:Sirenix.Utilities.AssemblyTypeFlags"/> for a given assembly.</returns>
+            <exception cref="T:System.NullReferenceException"><paramref name="assembly"/> is null.</exception>
+        </member>
+        <member name="M:Sirenix.Utilities.AssemblyUtilities.GetType(System.String)">
+            <summary>
+            Gets the type.
+            </summary>
+            <param name="fullName">The full name of the type without any assembly information.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sirenix.Utilities.AssemblyUtilities.IsDependentOn(System.Reflection.Assembly,System.Reflection.Assembly)">
+            <summary>
+            Determines whether an assembly is depended on another assembly.
+            </summary>
+            <param name="assembly">The assembly.</param>
+            <param name="otherAssembly">The other assembly.</param>
+            <returns>
+              <c>true</c> if <paramref name="assembly"/> has a reference in <paramref name="otherAssembly"/> or <paramref name="assembly"/> is the same as <paramref name="otherAssembly"/>.
+            </returns>
+            <exception cref="T:System.NullReferenceException"><paramref name="assembly"/> is null.</exception>
+            <exception cref="T:System.NullReferenceException"><paramref name="otherAssembly"/> is null.</exception>
+        </member>
+        <member name="M:Sirenix.Utilities.AssemblyUtilities.IsDynamic(System.Reflection.Assembly)">
+            <summary>
+            Determines whether the assembly module is a of type <see cref="T:System.Reflection.Emit.ModuleBuilder"/>.
+            </summary>
+            <param name="assembly">The assembly.</param>
+            <returns>
+              <c>true</c> if the specified assembly of type <see cref="T:System.Reflection.Emit.ModuleBuilder"/>; otherwise, <c>false</c>.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">assembly</exception>
+        </member>
+        <member name="M:Sirenix.Utilities.AssemblyUtilities.GetAssemblyDirectory(System.Reflection.Assembly)">
+            <summary>
+            Gets the full file path to a given assembly.
+            </summary>
+            <param name="assembly">The assembly.</param>
+            <returns>The full file path to a given assembly, or <c>Null</c> if no file path was found.</returns>
+            <exception cref="T:System.NullReferenceException"><paramref name="assembly"/> is Null.</exception>
+        </member>
+        <member name="M:Sirenix.Utilities.AssemblyUtilities.GetAssemblyFilePath(System.Reflection.Assembly)">
+            <summary>
+            Gets the full directory path to a given assembly.
+            </summary>
+            <param name="assembly">The assembly.</param>
+            <returns>The full directory path in which a given assembly is located, or <c>Null</c> if no file path was found.</returns>
+            <exception cref="T:System.NullReferenceException"><paramref name="assembly"/> is Null.</exception>
+        </member>
+        <member name="M:Sirenix.Utilities.AssemblyUtilities.GetTypes(Sirenix.Utilities.AssemblyTypeFlags)">
+            <summary>
+            Get types from the current AppDomain with a specified <see cref="T:Sirenix.Utilities.AssemblyTypeFlags"/> filter.
+            </summary>
+            <param name="assemblyTypeFlags">The <see cref="T:Sirenix.Utilities.AssemblyTypeFlags"/> filters.</param>
+            <returns>Types from the current AppDomain with the specified <see cref="T:Sirenix.Utilities.AssemblyTypeFlags"/> filters.</returns>
+        </member>
+        <member name="T:Sirenix.Utilities.ICache`1">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.ICache`1.Value">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.ICache`1.IsFree">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ICache`1.Release">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.Cache`1">
+            <summary>
+            Provides an easy way of claiming and freeing cached values of any non-abstract reference type with a public parameterless constructor.
+            <para />
+            Cached types which implement the <see cref="T:Sirenix.Utilities.ICacheNotificationReceiver"/> interface will receive notifications when they are claimed and freed.
+            </summary>
+            <typeparam name="T">The type which is cached.</typeparam>
+            <seealso cref="T:System.IDisposable" />
+        </member>
+        <member name="P:Sirenix.Utilities.Cache`1.MaxCacheSize">
+            <summary>
+            Gets or sets the maximum size of the cache. This value can never go beneath 1.
+            </summary>
+            <value>
+            The maximum size of the cache.
+            </value>
+        </member>
+        <member name="P:Sirenix.Utilities.Cache`1.Value">
+            <summary>
+            Gets the cached value.
+            </summary>
+            <value>
+            The cached value.
+            </value>
+            <exception cref="T:System.InvalidOperationException">Cannot access a cache while it is freed.</exception>
+        </member>
+        <member name="P:Sirenix.Utilities.Cache`1.Sirenix#Utilities#ICache{T}#IsFree">
+            <summary>
+            Gets a value indicating whether this cached value is free.
+            </summary>
+            <value>
+              <c>true</c> if this cached value is free; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Sirenix.Utilities.Cache`1.Claim">
+            <summary>
+            Claims a cached value of type <see cref="!:T"/>.
+            </summary>
+            <returns>A cached value of type <see cref="!:T"/>.</returns>
+        </member>
+        <member name="M:Sirenix.Utilities.Cache`1.Release(Sirenix.Utilities.Cache{`0})">
+            <summary>
+            Releases a cached value.
+            </summary>
+            <param name="cache">The cached value to release.</param>
+            <exception cref="T:System.ArgumentNullException">The cached value to release is null.</exception>
+        </member>
+        <member name="M:Sirenix.Utilities.Cache`1.op_Implicit(Sirenix.Utilities.Cache{`0})~`0">
+            <summary>
+            Performs an implicit conversion from <see cref="T:Sirenix.Utilities.Cache`1"/> to <see cref="!:T"/>.
+            </summary>
+            <param name="cache">The cache to convert.</param>
+            <returns>
+            The result of the conversion.
+            </returns>
+        </member>
+        <member name="M:Sirenix.Utilities.Cache`1.Sirenix#Utilities#ICache{T}#Release">
+            <summary>
+            Releases this cached value.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.Cache`1.System#IDisposable#Dispose">
+            <summary>
+            Releases this cached value.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.DeepReflection">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.DeepReflection.CreateWeakStaticValueGetter(System.Type,System.Type,System.String,System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.DeepReflection.CreateWeakInstanceValueGetter(System.Type,System.Type,System.String,System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.DeepReflection.CreateWeakInstanceValueSetter(System.Type,System.Type,System.String,System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.DeepReflection.CreateWeakInstanceValueGetter``1(System.Type,System.String,System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.DeepReflection.CreateValueGetter``1(System.Type,System.String,System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.DeepReflection.CreateValueGetter``2(System.String,System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.DoubleLookupDictionary`3">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.DoubleLookupDictionary`3.Item(`0)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.DoubleLookupDictionary`3.InnerCount(`0)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.DoubleLookupDictionary`3.TotalInnerCount(`0)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.DoubleLookupDictionary`3.ContainsKeys(`0,`1)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.DoubleLookupDictionary`3.TryGetInnerValue(`0,`1,`2@)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.DoubleLookupDictionary`3.AddInner(`0,`1,`2)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.DoubleLookupDictionary`3.RemoveInner(`0,`1)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.DoubleLookupDictionary`3.RemoveWhere(System.Func{`2,System.Boolean})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.DrawUnityEditorInGlobalConfigWindowAttribute">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.EditorGlobalConfigAttribute">
+            <summary>
+            Refactoring incoming!
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.EditorGlobalConfigAttribute.ShowInEditorWindow">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.EditorGlobalConfigAttribute.MenuItemPath">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.EditorGlobalConfigAttribute.EditorWindowTitle">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.EditorGlobalConfigAttribute.#ctor(System.String,System.String,System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.EditorGlobalConfigAttribute.OpenWindow(UnityEngine.Object)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.EditorGlobalConfigAttribute.OpenWindow``1(System.String,UnityEngine.Object)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.WeakValueGetter">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.WeakValueSetter">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.WeakValueGetter`1">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.WeakValueSetter`1">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.ValueGetter`2">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.ValueSetter`2">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.EmitUtilities">
+            <summary>
+            Provides utilities for using the <see cref="N:System.Reflection.Emit"/> namespace.
+            <para />
+            This class is due for refactoring. Use at your own peril.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.EmitUtilities.CanEmit">
+            <summary>
+            Gets a value indicating whether emitting is supported on the current platform.
+            </summary>
+            <value>
+              <c>true</c> if the current platform can emit; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Sirenix.Utilities.EmitUtilities.CreateStaticFieldGetter``1(System.Reflection.FieldInfo)">
+            <summary>
+            Creates a delegate which gets the value of a field. If emitting is not supported on the current platform, the delegate will use reflection to get the value.
+            </summary>
+            <typeparam name="FieldType">The type of the field to get a value from.</typeparam>
+            <param name="fieldInfo">The <see cref="T:System.Reflection.FieldInfo"/> instance describing the field to create a getter for.</param>
+            <returns>A delegate which gets the value of the given field.</returns>
+            <exception cref="T:System.ArgumentNullException">The fieldInfo parameter is null.</exception>
+        </member>
+        <member name="M:Sirenix.Utilities.EmitUtilities.CreateWeakStaticFieldGetter(System.Reflection.FieldInfo)">
+            <summary>
+            Creates a delegate which gets the value of a field. If emitting is not supported on the current platform, the delegate will use reflection to get the value.
+            </summary>
+            <param name="fieldInfo">The <see cref="T:System.Reflection.FieldInfo"/> instance describing the field to create a getter for.</param>
+            <returns>A delegate which gets the value of the given field.</returns>
+            <exception cref="T:System.ArgumentNullException">The fieldInfo parameter is null.</exception>
+        </member>
+        <member name="M:Sirenix.Utilities.EmitUtilities.CreateStaticFieldSetter``1(System.Reflection.FieldInfo)">
+            <summary>
+            Creates a delegate which sets the value of a field. If emitting is not supported on the current platform, the delegate will use reflection to set the value.
+            </summary>
+            <typeparam name="FieldType">The type of the field to set a value to.</typeparam>
+            <param name="fieldInfo">The <see cref="T:System.Reflection.FieldInfo"/> instance describing the field to create a setter for.</param>
+            <returns>A delegate which sets the value of the given field.</returns>
+            <exception cref="T:System.ArgumentNullException">The fieldInfo parameter is null.</exception>
+        </member>
+        <member name="M:Sirenix.Utilities.EmitUtilities.CreateWeakStaticFieldSetter(System.Reflection.FieldInfo)">
+            <summary>
+            Creates a delegate which sets the value of a field. If emitting is not supported on the current platform, the delegate will use reflection to set the value.
+            </summary>
+            <param name="fieldInfo">The <see cref="T:System.Reflection.FieldInfo"/> instance describing the field to create a setter for.</param>
+            <returns>A delegate which sets the value of the given field.</returns>
+            <exception cref="T:System.ArgumentNullException">The fieldInfo parameter is null.</exception>
+        </member>
+        <member name="M:Sirenix.Utilities.EmitUtilities.CreateInstanceFieldGetter``2(System.Reflection.FieldInfo)">
+            <summary>
+            Creates a delegate which gets the value of a field. If emitting is not supported on the current platform, the delegate will use reflection to get the value.
+            </summary>
+            <typeparam name="InstanceType">The type of the instance to get a value from.</typeparam>
+            <typeparam name="FieldType">The type of the field to get a value from.</typeparam>
+            <param name="fieldInfo">The <see cref="T:System.Reflection.FieldInfo"/> instance describing the field to create a getter for.</param>
+            <returns>A delegate which gets the value of the given field.</returns>
+            <exception cref="T:System.ArgumentNullException">The fieldInfo parameter is null.</exception>
+        </member>
+        <member name="M:Sirenix.Utilities.EmitUtilities.CreateWeakInstanceFieldGetter``1(System.Type,System.Reflection.FieldInfo)">
+            <summary>
+            Creates a delegate which gets the value of a field from a weakly typed instance of a given type. If emitting is not supported on the current platform, the delegate will use reflection to get the value.
+            </summary>
+            <typeparam name="FieldType">The type of the field to get a value from.</typeparam>
+            <param name="instanceType">The <see cref="T:System.Type"/> of the instance to get a value from.</param>
+            <param name="fieldInfo">The <see cref="T:System.Reflection.FieldInfo"/> instance describing the field to create a getter for.</param>
+            <returns>A delegate which gets the value of the given field.</returns>
+            <exception cref="T:System.ArgumentNullException">The fieldInfo parameter is null.</exception>
+        </member>
+        <member name="M:Sirenix.Utilities.EmitUtilities.CreateWeakInstanceFieldGetter(System.Type,System.Reflection.FieldInfo)">
+            <summary>
+            Creates a delegate which gets the weakly typed value of a field from a weakly typed instance of a given type. If emitting is not supported on the current platform, the delegate will use reflection to get the value.
+            </summary>
+            <param name="instanceType">The <see cref="T:System.Type"/> of the instance to get a value from.</param>
+            <param name="fieldInfo">The <see cref="T:System.Reflection.FieldInfo"/> instance describing the field to create a getter for.</param>
+            <returns>A delegate which gets the value of the given field.</returns>
+            <exception cref="T:System.ArgumentNullException">The fieldInfo parameter is null.</exception>
+        </member>
+        <member name="M:Sirenix.Utilities.EmitUtilities.CreateInstanceFieldSetter``2(System.Reflection.FieldInfo)">
+            <summary>
+            Creates a delegate which sets the value of a field. If emitting is not supported on the current platform, the delegate will use reflection to set the value.
+            </summary>
+            <typeparam name="InstanceType">The type of the instance to set a value on.</typeparam>
+            <typeparam name="FieldType">The type of the field to set a value to.</typeparam>
+            <param name="fieldInfo">The <see cref="T:System.Reflection.FieldInfo"/> instance describing the field to create a setter for.</param>
+            <returns>A delegate which sets the value of the given field.</returns>
+            <exception cref="T:System.ArgumentNullException">The fieldInfo parameter is null.</exception>
+        </member>
+        <member name="M:Sirenix.Utilities.EmitUtilities.CreateWeakInstanceFieldSetter``1(System.Type,System.Reflection.FieldInfo)">
+            <summary>
+            Creates a delegate which sets the value of a field on a weakly typed instance of a given type. If emitting is not supported on the current platform, the delegate will use reflection to set the value.
+            </summary>
+            <typeparam name="FieldType">The type of the field to set a value to.</typeparam>
+            <param name="instanceType">Type of the instance.</param>
+            <param name="fieldInfo">The <see cref="T:System.Reflection.FieldInfo" /> instance describing the field to create a setter for.</param>
+            <returns>
+            A delegate which sets the value of the given field.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">The fieldInfo parameter is null.</exception>
+            <exception cref="T:System.ArgumentException">Field cannot be static.</exception>
+        </member>
+        <member name="M:Sirenix.Utilities.EmitUtilities.CreateWeakInstanceFieldSetter(System.Type,System.Reflection.FieldInfo)">
+            <summary>
+            Creates a delegate which sets the weakly typed value of a field on a weakly typed instance of a given type. If emitting is not supported on the current platform, the delegate will use reflection to set the value.
+            </summary>
+            <param name="instanceType">Type of the instance.</param>
+            <param name="fieldInfo">The <see cref="T:System.Reflection.FieldInfo" /> instance describing the field to create a setter for.</param>
+            <returns>
+            A delegate which sets the value of the given field.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">The fieldInfo parameter is null.</exception>
+            <exception cref="T:System.ArgumentException">Field cannot be static.</exception>
+        </member>
+        <member name="M:Sirenix.Utilities.EmitUtilities.CreateWeakInstancePropertyGetter(System.Type,System.Reflection.PropertyInfo)">
+            <summary>
+            Creates a delegate which gets the weakly typed value of a field from a weakly typed instance of a given type. If emitting is not supported on the current platform, the delegate will use reflection to get the value.
+            </summary>
+            <param name="instanceType">The <see cref="T:System.Type"/> of the instance to get a value from.</param>
+            <param name="propertyInfo">The <see cref="T:System.Reflection.FieldInfo"/> instance describing the field to create a getter for.</param>
+            <returns>A delegate which gets the value of the given field.</returns>
+            <exception cref="T:System.ArgumentNullException">The fieldInfo parameter is null.</exception>
+        </member>
+        <member name="M:Sirenix.Utilities.EmitUtilities.CreateWeakInstancePropertySetter(System.Type,System.Reflection.PropertyInfo)">
+            <summary>
+            Creates a delegate which sets the weakly typed value of a property on a weakly typed instance of a given type. If emitting is not supported on the current platform, the delegate will use reflection to set the value.
+            </summary>
+            <param name="instanceType">Type of the instance.</param>
+            <param name="propertyInfo">The <see cref="T:System.Reflection.PropertyInfo" /> instance describing the property to create a setter for.</param>
+            <returns>
+            A delegate which sets the value of the given field.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">The fieldInfo parameter is null.</exception>
+            <exception cref="T:System.ArgumentException">Property cannot be static.</exception>
+        </member>
+        <member name="M:Sirenix.Utilities.EmitUtilities.CreateStaticPropertySetter``1(System.Reflection.PropertyInfo)">
+            <summary>
+            Creates a delegate which sets the value of a property. If emitting is not supported on the current platform, the delegate will use reflection to set the value.
+            </summary>
+            <typeparam name="PropType">The type of the property to set a value to.</typeparam>
+            <param name="propInfo">The <see cref="T:System.Reflection.PropertyInfo"/> instance describing the property to create a setter for.</param>
+            <returns>A delegate which sets the value of the given property.</returns>
+            <exception cref="T:System.ArgumentNullException">The propInfo parameter is null.</exception>
+        </member>
+        <member name="M:Sirenix.Utilities.EmitUtilities.CreateStaticPropertyGetter``1(System.Reflection.PropertyInfo)">
+            <summary>
+            Creates a delegate which gets the value of a property. If emitting is not supported on the current platform, the delegate will use reflection to get the value.
+            </summary>
+            <typeparam name="PropType">The type of the property to get a value from.</typeparam>
+            <param name="propInfo">The <see cref="T:System.Reflection.PropertyInfo"/> instance describing the property to create a getter for.</param>
+            <returns>A delegate which gets the value of the given property.</returns>
+            <exception cref="T:System.ArgumentNullException">The propInfo parameter is null.</exception>
+        </member>
+        <member name="M:Sirenix.Utilities.EmitUtilities.CreateInstancePropertySetter``2(System.Reflection.PropertyInfo)">
+            <summary>
+            Creates a delegate which sets the value of a property. If emitting is not supported on the current platform, the delegate will use reflection to set the value.
+            </summary>
+            <typeparam name="InstanceType">The type of the instance to set a value on.</typeparam>
+            <typeparam name="PropType">The type of the property to set a value to.</typeparam>
+            <param name="propInfo">The <see cref="T:System.Reflection.PropertyInfo"/> instance describing the property to create a setter for.</param>
+            <returns>A delegate which sets the value of the given property.</returns>
+            <exception cref="T:System.ArgumentNullException">The propInfo parameter is null.</exception>
+        </member>
+        <member name="M:Sirenix.Utilities.EmitUtilities.CreateInstancePropertyGetter``2(System.Reflection.PropertyInfo)">
+            <summary>
+            Creates a delegate which gets the value of a property. If emitting is not supported on the current platform, the delegate will use reflection to get the value.
+            </summary>
+            <typeparam name="InstanceType">The type of the instance to get a value from.</typeparam>
+            <typeparam name="PropType">The type of the property to get a value from.</typeparam>
+            <param name="propInfo">The <see cref="T:System.Reflection.PropertyInfo"/> instance describing the property to create a getter for.</param>
+            <returns>A delegate which gets the value of the given property.</returns>
+            <exception cref="T:System.ArgumentNullException">The propInfo parameter is null.</exception>
+        </member>
+        <member name="M:Sirenix.Utilities.EmitUtilities.CreateMethodReturner``2(System.Reflection.MethodInfo)">
+            <summary>
+            Creates a fast delegate method which calls a given parameterless instance method and returns the result.
+            </summary>
+            <typeparam name="InstanceType">The type of the class which the method is on.</typeparam>
+            <typeparam name="ReturnType">The type which is returned by the given method info.</typeparam>
+            <param name="methodInfo">The method info instance which is used.</param>
+            <returns>A delegate which calls the method and returns the result, except it's hundreds of times faster than MethodInfo.Invoke.</returns>
+        </member>
+        <member name="M:Sirenix.Utilities.EmitUtilities.CreateStaticMethodCaller(System.Reflection.MethodInfo)">
+            <summary>
+            Creates a fast delegate method which calls a given parameterless static method.
+            </summary>
+            <param name="methodInfo">The method info instance which is used.</param>
+            <returns>A delegate which calls the method and returns the result, except it's hundreds of times faster than MethodInfo.Invoke.</returns>
+        </member>
+        <member name="M:Sirenix.Utilities.EmitUtilities.CreateWeakInstanceMethodCaller``1(System.Reflection.MethodInfo)">
+            <summary>
+            Creates a fast delegate method which calls a given parameterless weakly typed instance method.
+            </summary>
+            <param name="methodInfo">The method info instance which is used.</param>
+            <returns>A delegate which calls the method and returns the result, except it's hundreds of times faster than MethodInfo.Invoke.</returns>
+        </member>
+        <member name="M:Sirenix.Utilities.EmitUtilities.CreateWeakInstanceMethodCaller(System.Reflection.MethodInfo)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.EmitUtilities.CreateWeakInstanceMethodCaller``2(System.Reflection.MethodInfo)">
+            <summary>
+            Creates a fast delegate method which calls a given weakly typed instance method with one argument and returns a value.
+            </summary>
+            <typeparam name="TResult">The type of the result.</typeparam>
+            <typeparam name="TArg1">The type of the first argument.</typeparam>
+            <param name="methodInfo">The method info instance which is used.</param>
+            <returns>
+            A delegate which calls the method and returns the result, except it's hundreds of times faster than MethodInfo.Invoke.
+            </returns>
+            <exception cref="T:System.ArgumentNullException">methodInfo</exception>
+            <exception cref="T:System.ArgumentException">
+            Given method ' + methodInfo.Name + ' is static when it has to be an instance method.
+            or
+            Given method ' + methodInfo.Name + ' must return type  + typeof(TResult) + .
+            or
+            Given method ' + methodInfo.Name + ' must have exactly one parameter.
+            or
+            The first parameter of the method ' + methodInfo.Name + ' must be of type  + typeof(TArg1) + .
+            </exception>
+        </member>
+        <member name="M:Sirenix.Utilities.EmitUtilities.CreateWeakInstanceMethodCallerFunc``1(System.Reflection.MethodInfo)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.EmitUtilities.CreateInstanceMethodCaller``1(System.Reflection.MethodInfo)">
+            <summary>
+            Creates a fast delegate method which calls a given parameterless instance method.
+            </summary>
+            <typeparam name="InstanceType">The type of the class which the method is on.</typeparam>
+            <param name="methodInfo">The method info instance which is used.</param>
+            <returns>A delegate which calls the method and returns the result, except it's hundreds of times faster than MethodInfo.Invoke.</returns>
+        </member>
+        <member name="M:Sirenix.Utilities.EmitUtilities.CreateInstanceMethodCaller``2(System.Reflection.MethodInfo)">
+            <summary>
+            Creates a fast delegate method which calls a given instance method with a given argument.
+            </summary>
+            <typeparam name="InstanceType">The type of the class which the method is on.</typeparam>
+            <typeparam name="Arg1">The type of the argument with which to call the method.</typeparam>
+            <param name="methodInfo">The method info instance which is used.</param>
+            <returns>A delegate which calls the method and returns the result, except it's hundreds of times faster than MethodInfo.Invoke.</returns>
+        </member>
+        <member name="T:Sirenix.Utilities.Flags">
+            <summary>
+            This class encapsulates common <see cref="T:System.Reflection.BindingFlags"/> combinations.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.Flags.AnyVisibility">
+            <summary>
+            Search criteria encompassing all public and non-public members, including base members.
+            Note that you also need to specify either the Instance or Static flag.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.Flags.InstancePublic">
+            <summary>
+            Search criteria encompassing all public instance members, including base members.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.Flags.InstancePrivate">
+            <summary>
+            Search criteria encompassing all non-public instance members, including base members.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.Flags.InstanceAnyVisibility">
+            <summary>
+            Search criteria encompassing all public and non-public instance members, including base members.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.Flags.StaticPublic">
+            <summary>
+            Search criteria encompassing all public static members, including base members.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.Flags.StaticPrivate">
+            <summary>
+            Search criteria encompassing all non-public static members, including base members.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.Flags.StaticAnyVisibility">
+            <summary>
+            Search criteria encompassing all public and non-public static members, including base members.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.Flags.InstancePublicDeclaredOnly">
+            <summary>
+            Search criteria encompassing all public instance members, excluding base members.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.Flags.InstancePrivateDeclaredOnly">
+            <summary>
+            Search criteria encompassing all non-public instance members, excluding base members.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.Flags.InstanceAnyDeclaredOnly">
+            <summary>
+            Search criteria encompassing all public and non-public instance members, excluding base members.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.Flags.StaticPublicDeclaredOnly">
+            <summary>
+            Search criteria encompassing all public static members, excluding base members.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.Flags.StaticPrivateDeclaredOnly">
+            <summary>
+            Search criteria encompassing all non-public static members, excluding base members.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.Flags.StaticAnyDeclaredOnly">
+            <summary>
+            Search criteria encompassing all public and non-public static members, excluding base members.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.Flags.StaticInstanceAnyVisibility">
+            <summary>
+            Search criteria encompassing all members, including base and static members.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.Flags.AllMembers">
+            <summary>
+            Search criteria encompassing all members (public and non-public, instance and static), including base members.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.GlobalConfig`1">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.GlobalConfig`1.HasInstanceLoaded">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.GlobalConfig`1.Instance">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GlobalConfig`1.LoadInstanceIfAssetExists">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GlobalConfig`1.OpenInEditor">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GlobalConfig`1.GetSearchTerm">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.GlobalConfigAttribute">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.GlobalConfigAttribute.FullPath">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.GlobalConfigAttribute.AssetPath">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.GlobalConfigAttribute.ResourcesPath">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.GlobalConfigAttribute.IsInResourcesFolder">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GlobalConfigAttribute.#ctor">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GlobalConfigAttribute.#ctor(System.String)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.GUILayoutOptions">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.GUILayoutOptions.EmptyGUIOptions">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.GUILayoutOptions.GUILayoutOptionsInstance">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GUILayoutOptions.GUILayoutOptionsInstance.op_Implicit(Sirenix.Utilities.GUILayoutOptions.GUILayoutOptionsInstance)~UnityEngine.GUILayoutOption[]">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.GUILayoutOptions.GUILayoutOptionsInstance.Width(System.Single)">
+            <summary>
+            Widthes the specified width.
+            </summary>
+            <param name="width">The width.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sirenix.Utilities.GUILayoutOptions.GUILayoutOptionsInstance.Height(System.Single)">
+            <summary>
+            Heights the specified height.
+            </summary>
+            <param name="height">The height.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sirenix.Utilities.GUILayoutOptions.GUILayoutOptionsInstance.MaxHeight(System.Single)">
+            <summary>
+            Maximums the height.
+            </summary>
+            <param name="height">The height.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sirenix.Utilities.GUILayoutOptions.GUILayoutOptionsInstance.MaxWidth(System.Single)">
+            <summary>
+            Maximums the width.
+            </summary>
+            <param name="width">The width.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sirenix.Utilities.GUILayoutOptions.GUILayoutOptionsInstance.MinHeight(System.Single)">
+            <summary>
+            Minimums the height.
+            </summary>
+            <param name="height">The height.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sirenix.Utilities.GUILayoutOptions.GUILayoutOptionsInstance.MinWidth(System.Single)">
+            <summary>
+            Minimums the width.
+            </summary>
+            <param name="width">The width.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sirenix.Utilities.GUILayoutOptions.GUILayoutOptionsInstance.ExpandHeight(System.Boolean)">
+            <summary>
+            Expands the height.
+            </summary>
+            <param name="expand">if set to <c>true</c> [expand].</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sirenix.Utilities.GUILayoutOptions.GUILayoutOptionsInstance.ExpandWidth(System.Boolean)">
+            <summary>
+            Expands the width.
+            </summary>
+            <param name="expand">if set to <c>true</c> [expand].</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sirenix.Utilities.GUILayoutOptions.GUILayoutOptionsInstance.Equals(Sirenix.Utilities.GUILayoutOptions.GUILayoutOptionsInstance)">
+            <summary>
+            Equalses the specified other.
+            </summary>
+            <param name="other">The other.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sirenix.Utilities.GUILayoutOptions.GUILayoutOptionsInstance.GetHashCode">
+            <summary>
+            Returns a hash code for this instance.
+            </summary>
+            <returns>
+            A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.
+            </returns>
+        </member>
+        <member name="M:Sirenix.Utilities.GUILayoutOptions.Width(System.Single)">
+            <summary>
+            Widthes the specified width.
+            </summary>
+            <param name="width">The width.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sirenix.Utilities.GUILayoutOptions.Height(System.Single)">
+            <summary>
+            Heights the specified height.
+            </summary>
+            <param name="height">The height.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sirenix.Utilities.GUILayoutOptions.MaxHeight(System.Single)">
+            <summary>
+            Maximums the height.
+            </summary>
+            <param name="height">The height.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sirenix.Utilities.GUILayoutOptions.MaxWidth(System.Single)">
+            <summary>
+            Maximums the width.
+            </summary>
+            <param name="width">The width.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sirenix.Utilities.GUILayoutOptions.MinWidth(System.Single)">
+            <summary>
+            Minimums the width.
+            </summary>
+            <param name="width">The width.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sirenix.Utilities.GUILayoutOptions.MinHeight(System.Single)">
+            <summary>
+            Minimums the height.
+            </summary>
+            <param name="height">The height.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sirenix.Utilities.GUILayoutOptions.ExpandHeight(System.Boolean)">
+            <summary>
+            Expands the height.
+            </summary>
+            <param name="expand">if set to <c>true</c> [expand].</param>
+            <returns></returns>
+        </member>
+        <member name="M:Sirenix.Utilities.GUILayoutOptions.ExpandWidth(System.Boolean)">
+            <summary>
+            Expands the width.
+            </summary>
+            <param name="expand">if set to <c>true</c> [expand].</param>
+            <returns></returns>
+        </member>
+        <member name="T:Sirenix.Utilities.ICacheNotificationReceiver">
+            <summary>
+            Provides notification callbacks for values that are cached using the <see cref="T:Sirenix.Utilities.Cache`1"/> class.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ICacheNotificationReceiver.OnFreed">
+            <summary>
+            Called when the cached value is freed.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ICacheNotificationReceiver.OnClaimed">
+            <summary>
+            Called when the cached value is claimed.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.ImmutableHashSet`1">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ImmutableHashSet`1.#ctor(System.Collections.Generic.HashSet{`0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ImmutableHashSet`1.Contains(`0)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ImmutableHashSet`1.GetEnumerator">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.IImmutableList">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.IImmutableList`1">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.IImmutableList`1.Item(System.Int32)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.ImmutableList">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ImmutableList.#ctor(System.Collections.IList)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.ImmutableList.Count">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.ImmutableList.IsFixedSize">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.ImmutableList.IsReadOnly">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.ImmutableList.IsSynchronized">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.ImmutableList.SyncRoot">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.ImmutableList.Item(System.Int32)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ImmutableList.Contains(System.Object)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ImmutableList.CopyTo(System.Object[],System.Int32)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ImmutableList.CopyTo(System.Array,System.Int32)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ImmutableList.GetEnumerator">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ImmutableList.IndexOf(System.Object)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.ImmutableList`1">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ImmutableList`1.#ctor(System.Collections.Generic.IList{`0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.ImmutableList`1.Count">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.ImmutableList`1.IsReadOnly">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.ImmutableList`1.Item(System.Int32)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ImmutableList`1.Contains(`0)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ImmutableList`1.CopyTo(`0[],System.Int32)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ImmutableList`1.GetEnumerator">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ImmutableList`1.IndexOf(`0)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.ImmutableList`2">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ImmutableList`2.#ctor(`0)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.ImmutableList`2.Count">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.ImmutableList`2.IsReadOnly">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.ImmutableList`2.Item(System.Int32)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ImmutableList`2.Contains(`1)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ImmutableList`2.CopyTo(`1[],System.Int32)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ImmutableList`2.GetEnumerator">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ImmutableList`2.IndexOf(`1)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.ListExtensions">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ListExtensions.SetLength``1(System.Collections.Generic.IList{``0}@,System.Int32)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ListExtensions.SetLength``1(System.Collections.Generic.IList{``0}@,System.Int32,System.Func{``0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ListExtensions.SetLength``1(System.Collections.Generic.IList{``0},System.Int32)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ListExtensions.SetLength``1(System.Collections.Generic.IList{``0},System.Int32,System.Func{``0})">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.ISearchable">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.ISearchable.GetSearchTerm">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.MathUtilities">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.PointDistanceToLine(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.Hermite(System.Single,System.Single,System.Single)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.StackHermite(System.Single,System.Single,System.Single,System.Int32)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.Overlap(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.Fract(System.Single)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.Fract(UnityEngine.Vector2)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.Fract(UnityEngine.Vector3)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.SoftEndingHermite01(System.Single,System.Single)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.BounceEaseInFastOut(System.Single)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.WrappedIndexDistance(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.Hermite01(System.Single)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.StackHermite01(System.Single,System.Int32)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.LerpNoClamp(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.LerpNoClamp(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.LerpNoClamp(System.Single,System.Single,System.Single)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.Bounce(System.Single)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.EaseInElastic(System.Single,System.Single,System.Single)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.MessurePointLineDistance(UnityEngine.Vector2[],System.Int32,System.Int32)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.MessurePointLineDistance(UnityEngine.Vector3[],System.Int32,System.Int32)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.Pow(UnityEngine.Vector3,System.Single)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.Abs(UnityEngine.Vector3)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.Sign(UnityEngine.Vector3,UnityEngine.Vector3)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.EaseOutElastic(System.Single,System.Single,System.Single)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.EaseInOut(System.Single)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.Clamp(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.Clamp(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.TransformBounds(UnityEngine.Transform,UnityEngine.Bounds)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.InverseTransformBounds(UnityEngine.Transform,UnityEngine.Bounds)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.GetCorners(UnityEngine.Bounds,System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.ComputeByteArrayHash(System.Byte[])">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.InterpolatePoints(UnityEngine.Vector3[],System.Single)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.LineIntersectsLine(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2@)">
+            <summary>
+            Checks if two given lines intersect with one another and returns the intersection point (if
+            any) in an out parameter.
+            Source: http://stackoverflow.com/questions/3746274/line-intersection-with-aabb-rectangle.
+            Edited to implement Cohen-Sutherland type pruning for efficiency.
+            </summary>
+            <param name="a1">Starting point of line a.</param>
+            <param name="a2">Ending point of line a.</param>
+            <param name="b1">Starting point of line b.</param>
+            <param name="b2">Ending point of line b.</param>
+            <param name="intersection">
+            The out parameter which contains the intersection point if there was any.
+            </param>
+            <returns>True if the two lines intersect, otherwise false.</returns>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.InfiniteLineIntersect(UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2,UnityEngine.Vector2)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.LineDistToPlane(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.RayDistToPlane(UnityEngine.Ray,UnityEngine.Plane)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.RotatePoint(UnityEngine.Vector2,System.Single)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.RotatePoint(UnityEngine.Vector2,UnityEngine.Vector2,System.Single)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.SmoothStep(System.Single,System.Single,System.Single)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.LinearStep(System.Single,System.Single,System.Single)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.Wrap(System.Double,System.Double,System.Double)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.Wrap(System.Single,System.Single,System.Single)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MathUtilities.Wrap(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.MemberFinderExtensions">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinderExtensions.FindMember(System.Type)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.MemberFinder">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.#ctor">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.#ctor(System.Type)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.Start``1">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.Start(System.Type)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.HasNoParameters">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.IsDeclaredOnly">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.HasParameters(System.Type)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.HasParameters(System.Type,System.Type)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.HasParameters(System.Type,System.Type,System.Type)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.HasParameters(System.Type,System.Type,System.Type,System.Type)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.HasParameters``1">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.HasParameters``2">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.HasParameters``3">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.HasParameters``4">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.HasReturnType(System.Type,System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.HasReturnType``1(System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.IsFieldOrProperty">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.IsStatic">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.IsInstance">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.IsNamed(System.String)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.IsProperty">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.IsMethod">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.IsField">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.IsPublic">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.IsNonPublic">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.ReturnsVoid">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.GetMember``1">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.GetMember``1(System.String@)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.HasMember``1">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.HasMember">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.GetMember(System.String@)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.TryGetMember``1(``0@,System.String@)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.TryGetMember(System.Reflection.MemberInfo@,System.String@)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.MemberFinder.TryGetMembers(System.Reflection.MemberInfo[]@,System.String@)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.PersistentAssemblyAttribute">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.PrivateMemberAliasFieldInfo">
+            <summary>
+            Provides a methods of representing imaginary fields which are unique to serialization.
+            <para />
+            In this case, what we're representing is the private members of parent classes.
+            <para />
+            We aggregate the FieldInfo associated with this member and return a managled form of the name.
+            The name that we return is "parentname+fieldname".
+            </summary>
+            <seealso cref="T:System.Reflection.FieldInfo" />
+        </member>
+        <member name="F:Sirenix.Utilities.PrivateMemberAliasFieldInfo.FAKE_NAME_SEPARATOR_STRING">
+            <summary>
+            The fake name separator string.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.PrivateMemberAliasFieldInfo.#ctor(System.Reflection.FieldInfo,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Sirenix.Utilities.PrivateMemberAliasFieldInfo"/> class.
+            </summary>
+            <param name="field">The field to alias.</param>
+            <param name="namePrefix">The name prefix to use.</param>
+        </member>
+        <member name="M:Sirenix.Utilities.PrivateMemberAliasFieldInfo.#ctor(System.Reflection.FieldInfo,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Sirenix.Utilities.PrivateMemberAliasFieldInfo"/> class.
+            </summary>
+            <param name="field">The field to alias.</param>
+            <param name="namePrefix">The name prefix to use.</param>
+            <param name="separatorString">The separator string to use.</param>
+        </member>
+        <member name="P:Sirenix.Utilities.PrivateMemberAliasFieldInfo.AliasedField">
+            <summary>
+            Gets the aliased field.
+            </summary>
+            <value>
+            The aliased field.
+            </value>
+        </member>
+        <member name="P:Sirenix.Utilities.PrivateMemberAliasFieldInfo.Module">
+            <summary>
+            Gets the module in which the type that declares the member represented by the current <see cref="T:System.Reflection.MemberInfo" /> is defined.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.PrivateMemberAliasFieldInfo.MetadataToken">
+            <summary>
+            Gets a value that identifies a metadata element.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.PrivateMemberAliasFieldInfo.Name">
+            <summary>
+            Gets the name of the current member.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.PrivateMemberAliasFieldInfo.DeclaringType">
+            <summary>
+            Gets the class that declares this member.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.PrivateMemberAliasFieldInfo.ReflectedType">
+            <summary>
+            Gets the class object that was used to obtain this instance of MemberInfo.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.PrivateMemberAliasFieldInfo.FieldType">
+            <summary>
+            Gets the type of the field.
+            </summary>
+            <value>
+            The type of the field.
+            </value>
+        </member>
+        <member name="P:Sirenix.Utilities.PrivateMemberAliasFieldInfo.FieldHandle">
+            <summary>
+            Gets a RuntimeFieldHandle, which is a handle to the internal metadata representation of a field.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.PrivateMemberAliasFieldInfo.Attributes">
+            <summary>
+            Gets the attributes.
+            </summary>
+            <value>
+            The attributes.
+            </value>
+        </member>
+        <member name="M:Sirenix.Utilities.PrivateMemberAliasFieldInfo.GetCustomAttributes(System.Boolean)">
+            <summary>
+            When overridden in a derived class, returns an array of all custom attributes applied to this member.
+            </summary>
+            <param name="inherit">True to search this member's inheritance chain to find the attributes; otherwise, false. This parameter is ignored for properties and events; see Remarks.</param>
+            <returns>
+            An array that contains all the custom attributes applied to this member, or an array with zero elements if no attributes are defined.
+            </returns>
+        </member>
+        <member name="M:Sirenix.Utilities.PrivateMemberAliasFieldInfo.GetCustomAttributes(System.Type,System.Boolean)">
+            <summary>
+            When overridden in a derived class, returns an array of custom attributes applied to this member and identified by <see cref="T:System.Type" />.
+            </summary>
+            <param name="attributeType">The type of attribute to search for. Only attributes that are assignable to this type are returned.</param>
+            <param name="inherit">True to search this member's inheritance chain to find the attributes; otherwise, false. This parameter is ignored for properties and events; see Remarks.</param>
+            <returns>
+            An array of custom attributes applied to this member, or an array with zero elements if no attributes assignable to <paramref name="attributeType" /> have been applied.
+            </returns>
+        </member>
+        <member name="M:Sirenix.Utilities.PrivateMemberAliasFieldInfo.IsDefined(System.Type,System.Boolean)">
+            <summary>
+            When overridden in a derived class, indicates whether one or more attributes of the specified type or of its derived types is applied to this member.
+            </summary>
+            <param name="attributeType">The type of custom attribute to search for. The search includes derived types.</param>
+            <param name="inherit">True to search this member's inheritance chain to find the attributes; otherwise, false. This parameter is ignored for properties and events; see Remarks.</param>
+            <returns>
+            True if one or more instances of <paramref name="attributeType" /> or any of its derived types is applied to this member; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:Sirenix.Utilities.PrivateMemberAliasFieldInfo.GetValue(System.Object)">
+            <summary>
+            Gets the value of the field.
+            </summary>
+            <param name="obj">The object instance to get the value from.</param>
+            <returns>The value of the field.</returns>
+        </member>
+        <member name="M:Sirenix.Utilities.PrivateMemberAliasFieldInfo.SetValue(System.Object,System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Globalization.CultureInfo)">
+            <summary>
+            When overridden in a derived class, sets the value of the field supported by the given object.
+            </summary>
+            <param name="obj">The object whose field value will be set.</param>
+            <param name="value">The value to assign to the field.</param>
+            <param name="invokeAttr">A field of Binder that specifies the type of binding that is desired (for example, Binder.CreateInstance or Binder.ExactBinding).</param>
+            <param name="binder">A set of properties that enables the binding, coercion of argument types, and invocation of members through reflection. If <paramref name="binder" /> is null, then Binder.DefaultBinding is used.</param>
+            <param name="culture">The software preferences of a particular culture.</param>
+        </member>
+        <member name="T:Sirenix.Utilities.PrivateMemberAliasPropertyInfo">
+            <summary>
+            Provides a methods of representing imaginary properties which are unique to serialization.
+            <para />
+            In this case, what we're representing is the private members of parent classes.
+            <para />
+            We aggregate the PropertyInfo associated with this member and return a managled form of the name.
+            The name that we return is "parentname+propertyName".
+            </summary>
+            <seealso cref="T:System.Reflection.FieldInfo" />
+        </member>
+        <member name="F:Sirenix.Utilities.PrivateMemberAliasPropertyInfo.FakeNameSeparatorString">
+            <summary>
+            The fake name separator string.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.PrivateMemberAliasPropertyInfo.#ctor(System.Reflection.PropertyInfo,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Sirenix.Utilities.PrivateMemberAliasPropertyInfo"/> class.
+            </summary>
+            <param name="prop">The property to alias.</param>
+            <param name="namePrefix">The name prefix to use.</param>
+        </member>
+        <member name="M:Sirenix.Utilities.PrivateMemberAliasPropertyInfo.#ctor(System.Reflection.PropertyInfo,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Sirenix.Utilities.PrivateMemberAliasPropertyInfo"/> class.
+            </summary>
+            <param name="prop">The property to alias.</param>
+            <param name="namePrefix">The name prefix to use.</param>
+            <param name="separatorString">The separator string to use.</param>
+        </member>
+        <member name="P:Sirenix.Utilities.PrivateMemberAliasPropertyInfo.AliasedProperty">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.PrivateMemberAliasPropertyInfo.Module">
+            <summary>
+            Gets the module in which the type that declares the member represented by the current <see cref="T:System.Reflection.MemberInfo" /> is defined.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.PrivateMemberAliasPropertyInfo.MetadataToken">
+            <summary>
+            Gets a value that identifies a metadata element.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.PrivateMemberAliasPropertyInfo.Name">
+            <summary>
+            Gets the name of the current member.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.PrivateMemberAliasPropertyInfo.DeclaringType">
+            <summary>
+            Gets the class that declares this member.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.PrivateMemberAliasPropertyInfo.ReflectedType">
+            <summary>
+            Gets the class object that was used to obtain this instance of MemberInfo.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.PrivateMemberAliasPropertyInfo.PropertyType">
+            <summary>
+            Gets the type of the property.
+            </summary>
+            <value>
+            The type of the property.
+            </value>
+        </member>
+        <member name="P:Sirenix.Utilities.PrivateMemberAliasPropertyInfo.Attributes">
+            <summary>
+            Gets the attributes.
+            </summary>
+            <value>
+            The attributes.
+            </value>
+        </member>
+        <member name="P:Sirenix.Utilities.PrivateMemberAliasPropertyInfo.CanRead">
+            <summary>
+            Gets a value indicating whether this instance can read.
+            </summary>
+            <value>
+              <c>true</c> if this instance can read; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Sirenix.Utilities.PrivateMemberAliasPropertyInfo.CanWrite">
+            <summary>
+            Gets a value indicating whether this instance can write.
+            </summary>
+            <value>
+              <c>true</c> if this instance can write; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Sirenix.Utilities.PrivateMemberAliasPropertyInfo.GetCustomAttributes(System.Boolean)">
+            <summary>
+            When overridden in a derived class, returns an array of all custom attributes applied to this member.
+            </summary>
+            <param name="inherit">True to search this member's inheritance chain to find the attributes; otherwise, false. This parameter is ignored for properties and events; see Remarks.</param>
+            <returns>
+            An array that contains all the custom attributes applied to this member, or an array with zero elements if no attributes are defined.
+            </returns>
+        </member>
+        <member name="M:Sirenix.Utilities.PrivateMemberAliasPropertyInfo.GetCustomAttributes(System.Type,System.Boolean)">
+            <summary>
+            When overridden in a derived class, returns an array of custom attributes applied to this member and identified by <see cref="T:System.Type" />.
+            </summary>
+            <param name="attributeType">The type of attribute to search for. Only attributes that are assignable to this type are returned.</param>
+            <param name="inherit">True to search this member's inheritance chain to find the attributes; otherwise, false. This parameter is ignored for properties and events; see Remarks.</param>
+            <returns>
+            An array of custom attributes applied to this member, or an array with zero elements if no attributes assignable to <paramref name="attributeType" /> have been applied.
+            </returns>
+        </member>
+        <member name="M:Sirenix.Utilities.PrivateMemberAliasPropertyInfo.IsDefined(System.Type,System.Boolean)">
+            <summary>
+            When overridden in a derived class, indicates whether one or more attributes of the specified type or of its derived types is applied to this member.
+            </summary>
+            <param name="attributeType">The type of custom attribute to search for. The search includes derived types.</param>
+            <param name="inherit">True to search this member's inheritance chain to find the attributes; otherwise, false. This parameter is ignored for properties and events; see Remarks.</param>
+            <returns>
+            True if one or more instances of <paramref name="attributeType" /> or any of its derived types is applied to this member; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:Sirenix.Utilities.PrivateMemberAliasPropertyInfo.GetAccessors(System.Boolean)">
+            <summary>
+            Returns an array whose elements reflect the public and, if specified, non-public get, set, and other accessors of the property reflected by the current instance.
+            </summary>
+            <param name="nonPublic">Indicates whether non-public methods should be returned in the MethodInfo array. true if non-public methods are to be included; otherwise, false.</param>
+            <returns>
+            An array of <see cref="T:System.Reflection.MethodInfo" /> objects whose elements reflect the get, set, and other accessors of the property reflected by the current instance. If <paramref name="nonPublic" /> is true, this array contains public and non-public get, set, and other accessors. If <paramref name="nonPublic" /> is false, this array contains only public get, set, and other accessors. If no accessors with the specified visibility are found, this method returns an array with zero (0) elements.
+            </returns>
+        </member>
+        <member name="M:Sirenix.Utilities.PrivateMemberAliasPropertyInfo.GetGetMethod(System.Boolean)">
+            <summary>
+            When overridden in a derived class, returns the public or non-public get accessor for this property.
+            </summary>
+            <param name="nonPublic">Indicates whether a non-public get accessor should be returned. true if a non-public accessor is to be returned; otherwise, false.</param>
+            <returns>
+            A MethodInfo object representing the get accessor for this property, if <paramref name="nonPublic" /> is true. Returns null if <paramref name="nonPublic" /> is false and the get accessor is non-public, or if <paramref name="nonPublic" /> is true but no get accessors exist.
+            </returns>
+        </member>
+        <member name="M:Sirenix.Utilities.PrivateMemberAliasPropertyInfo.GetIndexParameters">
+            <summary>
+            Gets the index parameters of the property.
+            </summary>
+            <returns>The index parameters of the property.</returns>
+        </member>
+        <member name="M:Sirenix.Utilities.PrivateMemberAliasPropertyInfo.GetSetMethod(System.Boolean)">
+            <summary>
+            When overridden in a derived class, returns the set accessor for this property.
+            </summary>
+            <param name="nonPublic">Indicates whether the accessor should be returned if it is non-public. true if a non-public accessor is to be returned; otherwise, false.</param>
+            <returns>
+            Value Condition A <see cref="T:System.Reflection.MethodInfo" /> object representing the Set method for this property. The set accessor is public.-or- <paramref name="nonPublic" /> is true and the set accessor is non-public. null<paramref name="nonPublic" /> is true, but the property is read-only.-or- <paramref name="nonPublic" /> is false and the set accessor is non-public.-or- There is no set accessor.
+            </returns>
+        </member>
+        <member name="M:Sirenix.Utilities.PrivateMemberAliasPropertyInfo.GetValue(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)">
+            <summary>
+            Gets the value of the property on the given instance.
+            </summary>
+            <param name="obj">The object to invoke the getter on.</param>
+            <param name="invokeAttr">The <see cref="T:System.Reflection.BindingFlags"/> to invoke with.</param>
+            <param name="binder">The binder to use.</param>
+            <param name="index">The indices to use.</param>
+            <param name="culture">The culture to use.</param>
+            <returns>The value of the property on the given instance.</returns>
+        </member>
+        <member name="M:Sirenix.Utilities.PrivateMemberAliasPropertyInfo.SetValue(System.Object,System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)">
+            <summary>
+            Sets the value of the property on the given instance.
+            </summary>
+            <param name="obj">The object to set the value on.</param>
+            <param name="value">The value to set.</param>
+            <param name="invokeAttr">The <see cref="T:System.Reflection.BindingFlags"/> to invoke with.</param>
+            <param name="binder">The binder to use.</param>
+            <param name="index">The indices to use.</param>
+            <param name="culture">The culture to use.</param>
+        </member>
+        <member name="T:Sirenix.Utilities.SirenixAssetPaths">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.SirenixAssetPaths.OdinPath">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.SirenixAssetPaths.SirenixAssetsPath">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.SirenixAssetPaths.SirenixPluginPath">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.SirenixAssetPaths.SirenixAssembliesPath">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.SirenixAssetPaths.OdinResourcesPath">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.SirenixAssetPaths.OdinGeneratedEditorsPath">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.SirenixAssetPaths.OdinGeneratedEditorsAssemblyName">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.SirenixAssetPaths.OdinEditorConfigsPath">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.SirenixAssetPaths.OdinResourcesConfigsPath">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.SirenixEditorConfigAttribute">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.SirenixEditorConfigAttribute.#ctor(System.String,System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.SirenixEditorConfigAttribute.#ctor(System.String,System.String,System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.SirenixGlobalConfigAttribute">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.SirenixGlobalConfigAttribute.#ctor(System.String,System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.SirenixGlobalConfigAttribute.#ctor(System.String,System.String,System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="P:Sirenix.Utilities.SirenixGlobalConfigAttribute.EditorWindowTitle">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.UnityVersion">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.UnityVersion.IsVersionOrGreater(System.Int32,System.Int32)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.UnityVersion.Major">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="F:Sirenix.Utilities.UnityVersion.Minor">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="T:Sirenix.Utilities.Unsafe.UnsafeUtilities">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.Unsafe.UnsafeUtilities.StructArrayFromBytes``1(System.Byte[],System.Int32)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.Unsafe.UnsafeUtilities.StructArrayFromBytes``1(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.Unsafe.UnsafeUtilities.StructArrayToBytes``1(``0[])">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.Unsafe.UnsafeUtilities.StructArrayToBytes``1(``0[],System.Byte[]@,System.Int32)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.Unsafe.UnsafeUtilities.StringFromBytes(System.Byte[],System.Int32,System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.Unsafe.UnsafeUtilities.StringToBytes(System.Byte[],System.String,System.Boolean)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+        <member name="M:Sirenix.Utilities.Unsafe.UnsafeUtilities.MemoryCopy(System.Object,System.Object,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Not yet documented.
+            </summary>
+        </member>
+    </members>
+</doc>

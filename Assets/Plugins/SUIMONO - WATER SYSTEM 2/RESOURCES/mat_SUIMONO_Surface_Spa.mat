@@ -1,0 +1,648 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: mat_SUIMONO_Surface_Spa
+  m_Shader: {fileID: 4800000, guid: 5af3fd41baf694e4db80b54ea540749f, type: 3}
+  m_ShaderKeywords: SUIMONO_CAUST_ON SUIMONO_DYNREFL_ON SUIMONO_REFL_OFF SUIMONO_TRANS_ON
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ReflectionTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _HeightTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 51323bc64857e644fac7400eb7305b36, type: 3}
+          m_Scale: {x: 3.8933578, y: 4.8135676}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _NormalTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 48e29dc2e9488474081bc20a42a364b9, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _HeightTexD
+        second:
+          m_Texture: {fileID: 2800000, guid: 5068c41d8b2d8474a855de152aea3721, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _NormalTexD
+        second:
+          m_Texture: {fileID: 2800000, guid: 5af41a104448f0b4b916b73fd5153291, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _HeightTexR
+        second:
+          m_Texture: {fileID: 2800000, guid: 17e80c508914f384083dc7e9d438652f, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _NormalTexR
+        second:
+          m_Texture: {fileID: 2800000, guid: fb77700eb10ac344db495df815b29823, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _CubeTex
+        second:
+          m_Texture: {fileID: 8900000, guid: 0798eb71b162550498ee7bfa4ea658c0, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _FoamTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 14c55ed649175884784db6c178f4e654, type: 3}
+          m_Scale: {x: 0.5061365, y: 0.6257638}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _WaveTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 9e0b039b60bba5c4ea73849d69af386a, type: 3}
+          m_Scale: {x: 0, y: 0}
+          m_Offset: {x: -0, y: -0}
+      data:
+        first:
+          name: _WaveLargeTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 48e29dc2e9488474081bc20a42a364b9, type: 3}
+          m_Scale: {x: 5.25, y: 5.25}
+          m_Offset: {x: 0, y: 1}
+      data:
+        first:
+          name: _Surface1
+        second:
+          m_Texture: {fileID: 2800000, guid: 51323bc64857e644fac7400eb7305b36, type: 3}
+          m_Scale: {x: 4.62, y: 4.62}
+          m_Offset: {x: 0, y: 0.038000003}
+      data:
+        first:
+          name: _Surface2
+        second:
+          m_Texture: {fileID: 2800000, guid: 51323bc64857e644fac7400eb7305b36, type: 3}
+          m_Scale: {x: 5.25, y: 5.25}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _WaveRamp
+        second:
+          m_Texture: {fileID: 2800000, guid: 7d47d30a7e6fff544a72f826670ef31b, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DepthRamp
+        second:
+          m_Texture: {fileID: 2800000, guid: aa1f666bea9a5b2409ff3dcfc008a57c, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BlurRamp
+        second:
+          m_Texture: {fileID: 2800000, guid: e607ea0d8431dc64c8f345a02a1028e9, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _FoamRamp
+        second:
+          m_Texture: {fileID: 2800000, guid: 01757909dcbf805408fe7867004a31a3, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _FlowMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _WaveMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Ramp2D
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _FoamOverlay
+        second:
+          m_Texture: {fileID: 2800000, guid: dd5f830482b013a43b967ea68de614d7, type: 3}
+          m_Scale: {x: 0.781425, y: 0.781425}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _CubeMobile
+        second:
+          m_Texture: {fileID: 8900000, guid: c27d2f9a7fe1df7448a59cd7e8306390, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _CubeBDRF
+        second:
+          m_Texture: {fileID: 8900000, guid: 01c62ce94e46dcf4ea217e771c6da1b2, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _OceanBlendTex
+        second:
+          m_Texture: {fileID: 2800000, guid: e18972d51c4910d499b05f09d48dc145, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _testTransTex
+        second:
+          m_Texture: {fileID: 8400000, guid: 4cbb053dd78893346b31535310230dc4, type: 2}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MaskTex
+        second:
+          m_Texture: {fileID: 2800000, guid: e18972d51c4910d499b05f09d48dc145, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _RimPower
+        second: 1
+      data:
+        first:
+          name: _ReflDist
+        second: 200
+      data:
+        first:
+          name: _ReflBlend
+        second: 0.015
+      data:
+        first:
+          name: _NormalStrength
+        second: 1
+      data:
+        first:
+          name: _RefractStrength
+        second: 0.773
+      data:
+        first:
+          name: _EdgeFade
+        second: 29.8
+      data:
+        first:
+          name: _EdgeFoamFade
+        second: 154.50003
+      data:
+        first:
+          name: _DepthFade
+        second: 89.4553
+      data:
+        first:
+          name: _RefractFade
+        second: 1
+      data:
+        first:
+          name: _CausticsFade
+        second: 61.878002
+      data:
+        first:
+          name: _shorelineScale
+        second: 0.1
+      data:
+        first:
+          name: _shorelineFrequency
+        second: 0.987
+      data:
+        first:
+          name: _shorelineSpeed
+        second: 4.27
+      data:
+        first:
+          name: _shorelineHeight
+        second: 0.24
+      data:
+        first:
+          name: _Tess
+        second: 0.001
+      data:
+        first:
+          name: _minDist
+        second: -180
+      data:
+        first:
+          name: _maxDist
+        second: 116
+      data:
+        first:
+          name: _suimono_uvx
+        second: 0
+      data:
+        first:
+          name: _suimono_uvy
+        second: 0
+      data:
+        first:
+          name: _foamScale
+        second: 8.950002
+      data:
+        first:
+          name: _ShallowFoamAmt
+        second: 2
+      data:
+        first:
+          name: _HeightFoamAmt
+        second: 0.597
+      data:
+        first:
+          name: _HeightFoamHeight
+        second: 0.703
+      data:
+        first:
+          name: _HeightFoamSpread
+        second: 0.796
+      data:
+        first:
+          name: _ShallowFade
+        second: 277.6653
+      data:
+        first:
+          name: _Displacement
+        second: 1
+      data:
+        first:
+          name: _MaskAmt
+        second: 8
+      data:
+        first:
+          name: _WaveHeight
+        second: 0.63
+      data:
+        first:
+          name: _DetailHeight
+        second: 1.63
+      data:
+        first:
+          name: _WaveShoreHeight
+        second: 0
+      data:
+        first:
+          name: _WaveScale
+        second: 0.605
+      data:
+        first:
+          name: _CenterHeight
+        second: 1
+      data:
+        first:
+          name: _MaxVariance
+        second: 8.299999
+      data:
+        first:
+          name: _RefrStrength
+        second: 0
+      data:
+        first:
+          name: _RefrSpeed
+        second: 15.2
+      data:
+        first:
+          name: _RefrScale
+        second: 2.25
+      data:
+        first:
+          name: _SpecScatterWidth
+        second: 0.1
+      data:
+        first:
+          name: _SpecScatterAmt
+        second: 0.5
+      data:
+        first:
+          name: _ReflBlur
+        second: 0.01
+      data:
+        first:
+          name: _DepthAmt
+        second: 45
+      data:
+        first:
+          name: _BlurSpread
+        second: 0
+      data:
+        first:
+          name: _FoamHeight
+        second: 0
+      data:
+        first:
+          name: _HeightFoamAmount
+        second: 0
+      data:
+        first:
+          name: _FoamSpread
+        second: 0.85
+      data:
+        first:
+          name: _EdgeBlend
+        second: 1
+      data:
+        first:
+          name: _EdgeSpread
+        second: 0.02
+      data:
+        first:
+          name: _BumpStrength
+        second: 0.084
+      data:
+        first:
+          name: _ReflectStrength
+        second: 1
+      data:
+        first:
+          name: _MasterScale
+        second: 2.25
+      data:
+        first:
+          name: _UnderReflDist
+        second: -4.28
+      data:
+        first:
+          name: _FlowScale
+        second: 6.0895004
+      data:
+        first:
+          name: _TideAmount
+        second: 0.3
+      data:
+        first:
+          name: _TideSpread
+        second: 0.513
+      data:
+        first:
+          name: _castshadowEnabled
+        second: 1
+      data:
+        first:
+          name: _castshadowStrength
+        second: 1
+      data:
+        first:
+          name: _castshadowFade
+        second: 1
+      data:
+        first:
+          name: _AnimSpeed
+        second: 1
+      data:
+        first:
+          name: _ShoreAmt
+        second: -3.5
+      data:
+        first:
+          name: _suimono_uv2x
+        second: 0
+      data:
+        first:
+          name: _suimono_uv2y
+        second: 0
+      data:
+        first:
+          name: _suimono_uv3x
+        second: 0
+      data:
+        first:
+          name: _suimono_uv3y
+        second: 0
+      data:
+        first:
+          name: _suimono_uv4x
+        second: 0
+      data:
+        first:
+          name: _suimono_uv4y
+        second: 0
+      data:
+        first:
+          name: _suimono_uv5x
+        second: 0
+      data:
+        first:
+          name: _suimono_uv5y
+        second: 0
+      data:
+        first:
+          name: _suimono_uv6x
+        second: 0
+      data:
+        first:
+          name: _suimono_uv6y
+        second: 0
+      data:
+        first:
+          name: _suimono_uv7x
+        second: 0
+      data:
+        first:
+          name: _suimono_uv7y
+        second: 0
+      data:
+        first:
+          name: _suimono_uv8x
+        second: 1
+      data:
+        first:
+          name: _suimono_uv8y
+        second: 1
+      data:
+        first:
+          name: _suimono_DeepWaveHeight
+        second: 0.945
+      data:
+        first:
+          name: _suimono_DetailHeight
+        second: 1.63
+      data:
+        first:
+          name: _suimono_detScale
+        second: 0.19
+      data:
+        first:
+          name: _useDynamicReflections
+        second: 1
+      data:
+        first:
+          name: _reflecTerm
+        second: 0
+      data:
+        first:
+          name: _temp
+        second: 1
+      data:
+        first:
+          name: _ShoreAmtDk
+        second: 1
+      data:
+        first:
+          name: _UnderFogDist
+        second: -0.054
+      data:
+        first:
+          name: _FoamFade
+        second: 1
+      data:
+        first:
+          name: normalShore
+        second: 1
+      data:
+        first:
+          name: _HeightFoamFade
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _TintColor
+        second: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+      data:
+        first:
+          name: _SpecularColor
+        second: {r: 0.53, g: 0.709, b: 0.743, a: 0.161}
+      data:
+        first:
+          name: _DynReflColor
+        second: {r: 1, g: 1, b: 1, a: 0.5}
+      data:
+        first:
+          name: _BlendColor
+        second: {r: 0, g: 1, b: 0.959, a: 0.22}
+      data:
+        first:
+          name: _OverlayColor
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ReflectionColor
+        second: {r: 1, g: 1, b: 1, a: 0.376}
+      data:
+        first:
+          name: _SSSColor
+        second: {r: 0, g: 0.324, b: 0.015, a: 0.239}
+      data:
+        first:
+          name: _FoamColor
+        second: {r: 0.912, g: 0.874, b: 0.791, a: 1}
+      data:
+        first:
+          name: _CausticsColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _UnderwaterColor
+        second: {r: 0.034, g: 0.102, b: 0.154, a: 0.404}
+      data:
+        first:
+          name: _DepthColor
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _shallowColor
+        second: {r: 0.208, g: 0.402, b: 0.441, a: 0.784}
+      data:
+        first:
+          name: _depthColor
+        second: {r: 0.061, g: 0.144, b: 0.213, a: 1}
+      data:
+        first:
+          name: _HighColor
+        second: {r: 0, g: 0, b: 0, a: 0.9}
+      data:
+        first:
+          name: _LowColor
+        second: {r: 0.34, g: 0.26, b: 0.18, a: 0.15}
+      data:
+        first:
+          name: _SpecColorH
+        second: {r: 1, g: 0.48, b: 0, a: 1}
+      data:
+        first:
+          name: _SpecColorL
+        second: {r: 1, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _DepthColorR
+        second: {r: 1, g: 1, b: 1, a: 0}
+      data:
+        first:
+          name: _DepthColorG
+        second: {r: 1, g: 1, b: 1, a: 0}
+      data:
+        first:
+          name: _DepthColorB
+        second: {r: 1, g: 0.44, b: 0, a: 1}
+      data:
+        first:
+          name: _EdgeColor
+        second: {r: 0.73, g: 1, b: 0.94, a: 0}
+      data:
+        first:
+          name: _UnderColor
+        second: {r: 1, g: 0.62, b: 0.17, a: 1}
+      data:
+        first:
+          name: _TideColor
+        second: {r: 0.24, g: 0.34, b: 0.32, a: 0}
+      data:
+        first:
+          name: _castshadowColor
+        second: {r: 0, g: 1, b: 0.79, a: 0.18}
+      data:
+        first:
+          name: _TintColor1
+        second: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+      data:
+        first:
+          name: _TintColor2
+        second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
