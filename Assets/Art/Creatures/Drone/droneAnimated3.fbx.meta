@@ -1,0 +1,936 @@
+fileFormatVersion: 2
+guid: 231c17b717df44142bb141c043b8db4d
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: drone_body
+    100002: drone_leArm
+    100004: drone_leArm2
+    100006: drone_leBall1
+    100008: drone_leBall2
+    100010: drone_leEye_big
+    100012: drone_leEye_small
+    100014: drone_leHand
+    100016: drone_leWing_finger1_sec1
+    100018: drone_leWing_finger1_sec2
+    100020: drone_leWing_finger1_sec2 1
+    100022: drone_leWing_finger1_sec3
+    100024: drone_leWing_finger1_sec3 1
+    100026: drone_leWing_finger2_sec1
+    100028: drone_leWing_finger2_sec2
+    100030: drone_leWing_finger2_sec2 1
+    100032: drone_leWing_finger2_sec3
+    100034: drone_leWing_finger2_sec3 1
+    100036: drone_leWing_finger3_sec1
+    100038: drone_leWing_finger3_sec2
+    100040: drone_leWing_finger3_sec2 1
+    100042: drone_leWing_finger4_sec1
+    100044: drone_leWing_finger4_sec2
+    100046: drone_leWing_finger4_sec2 1
+    100048: drone_leWing_finger5_sec1
+    100050: drone_leWing_finger5_sec2
+    100052: drone_leWing_finger5_sec2 1
+    100054: drone_leWing_finger5_sec3
+    100056: drone_leWing_finger5_sec3 1
+    100058: drone_leWing_flap
+    100060: drone_leWing_flap 1
+    100062: drone_lWing_pivot
+    100064: drone_rArm
+    100066: drone_rArm2
+    100068: drone_rBall1
+    100070: drone_rBall2
+    100072: drone_rEye_big
+    100074: drone_rEye_small
+    100076: drone_rHand
+    100078: drone_rWing_finger1_sec1
+    100080: drone_rWing_finger2_sec1
+    100082: drone_rWing_finger3_sec1
+    100084: drone_rWing_finger4_sec1
+    100086: drone_rWing_finger5_sec1
+    100088: drone_rWing_pivot1
+    100090: drone_windshield
+    100092: //RootNode
+    100094: droneBones
+    100096: droneWingFlapGroup
+    100098: group3
+    100100: innerTopBootyPlate
+    100102: joint8
+    100104: joint8 1
+    100106: l_Claw
+    100108: l_ClawEnd
+    100110: l_Elbow
+    100112: l_innerBootyPlate
+    100114: l_middleWing1
+    100116: l_outerBootyPlate
+    100118: l_pinky_middlewing
+    100120: l_pinkymiddleWingEnd
+    100122: l_ringIndexMiddleWing
+    100124: l_ringIndexMiddleWingEnd
+    100126: l_ringMiddleWing
+    100128: l_ringMiddleWingEnd
+    100130: l_Shoulder
+    100132: l_thumbMiddleWingMetaTarsal
+    100134: l_thumbMiddleWingMetaTarsalEnd
+    100136: l_thumbMiddleWingTarsal
+    100138: l_trapeziusPlate
+    100140: l_wingIndex1
+    100142: l_wingIndex2
+    100144: l_wingIndexEnd1
+    100146: l_wingIndexEnd2
+    100148: l_wingMiddle1
+    100150: l_wingMiddle2
+    100152: l_wingMiddleEnd
+    100154: l_wingPinky1
+    100156: l_wingPinky2
+    100158: l_wingPinky3
+    100160: l_wingPinkyEnd
+    100162: l_wingRing1
+    100164: l_wingRing2
+    100166: l_wingRingEnd
+    100168: l_wingShoulder
+    100170: l_wingThumb1
+    100172: l_wingThumb2
+    100174: l_wingThumb3
+    100176: l_wingThumbEnd
+    100178: l_wingWrist
+    100180: outerTopBootyPlate
+    100182: r_Claw
+    100184: r_ClawEnd
+    100186: r_Elbow
+    100188: r_innerBootyPlate
+    100190: r_outerBootyPlate
+    100192: r_pinky_middlewing
+    100194: r_pinkymiddleWingEnd
+    100196: r_ringIndexMiddleWing
+    100198: r_ringIndexMiddleWingEnd
+    100200: r_ringMiddleWing
+    100202: r_ringMiddleWingEnd
+    100204: r_Shoulder
+    100206: r_thumbMiddleWingMetaTarsal
+    100208: r_thumbMiddleWingMetaTarsalEnd
+    100210: r_thumbMiddleWingTarsal
+    100212: r_trapeziusPlate
+    100214: r_wingIndex
+    100216: r_wingIndex2
+    100218: r_wingIndexEnd1
+    100220: r_wingIndexEnd2
+    100222: r_wingMiddle
+    100224: r_wingMiddle2
+    100226: r_wingMiddleEnd
+    100228: r_wingPinky
+    100230: r_wingPinky2
+    100232: r_wingPinky3
+    100234: r_wingPinkyEnd
+    100236: r_wingRing
+    100238: r_wingRing2
+    100240: r_wingRingEnd
+    100242: r_wingShoulder
+    100244: r_wingThumb1
+    100246: r_wingThumb2
+    100248: r_wingThumb3
+    100250: r_wingThumbEnd
+    100252: r_wingWrist
+    100254: root
+    100256: spine1
+    100258: spine2
+    100260: spine3
+    100262: spineEnd
+    100264: topTrapeziusPlate
+    100266: drone_rWing_pivot2
+    400000: drone_body
+    400002: drone_leArm
+    400004: drone_leArm2
+    400006: drone_leBall1
+    400008: drone_leBall2
+    400010: drone_leEye_big
+    400012: drone_leEye_small
+    400014: drone_leHand
+    400016: drone_leWing_finger1_sec1
+    400018: drone_leWing_finger1_sec2
+    400020: drone_leWing_finger1_sec2 1
+    400022: drone_leWing_finger1_sec3
+    400024: drone_leWing_finger1_sec3 1
+    400026: drone_leWing_finger2_sec1
+    400028: drone_leWing_finger2_sec2
+    400030: drone_leWing_finger2_sec2 1
+    400032: drone_leWing_finger2_sec3
+    400034: drone_leWing_finger2_sec3 1
+    400036: drone_leWing_finger3_sec1
+    400038: drone_leWing_finger3_sec2
+    400040: drone_leWing_finger3_sec2 1
+    400042: drone_leWing_finger4_sec1
+    400044: drone_leWing_finger4_sec2
+    400046: drone_leWing_finger4_sec2 1
+    400048: drone_leWing_finger5_sec1
+    400050: drone_leWing_finger5_sec2
+    400052: drone_leWing_finger5_sec2 1
+    400054: drone_leWing_finger5_sec3
+    400056: drone_leWing_finger5_sec3 1
+    400058: drone_leWing_flap
+    400060: drone_leWing_flap 1
+    400062: drone_lWing_pivot
+    400064: drone_rArm
+    400066: drone_rArm2
+    400068: drone_rBall1
+    400070: drone_rBall2
+    400072: drone_rEye_big
+    400074: drone_rEye_small
+    400076: drone_rHand
+    400078: drone_rWing_finger1_sec1
+    400080: drone_rWing_finger2_sec1
+    400082: drone_rWing_finger3_sec1
+    400084: drone_rWing_finger4_sec1
+    400086: drone_rWing_finger5_sec1
+    400088: drone_rWing_pivot1
+    400090: drone_windshield
+    400092: //RootNode
+    400094: droneBones
+    400096: droneWingFlapGroup
+    400098: group3
+    400100: innerTopBootyPlate
+    400102: joint8
+    400104: joint8 1
+    400106: l_Claw
+    400108: l_ClawEnd
+    400110: l_Elbow
+    400112: l_innerBootyPlate
+    400114: l_middleWing1
+    400116: l_outerBootyPlate
+    400118: l_pinky_middlewing
+    400120: l_pinkymiddleWingEnd
+    400122: l_ringIndexMiddleWing
+    400124: l_ringIndexMiddleWingEnd
+    400126: l_ringMiddleWing
+    400128: l_ringMiddleWingEnd
+    400130: l_Shoulder
+    400132: l_thumbMiddleWingMetaTarsal
+    400134: l_thumbMiddleWingMetaTarsalEnd
+    400136: l_thumbMiddleWingTarsal
+    400138: l_trapeziusPlate
+    400140: l_wingIndex1
+    400142: l_wingIndex2
+    400144: l_wingIndexEnd1
+    400146: l_wingIndexEnd2
+    400148: l_wingMiddle1
+    400150: l_wingMiddle2
+    400152: l_wingMiddleEnd
+    400154: l_wingPinky1
+    400156: l_wingPinky2
+    400158: l_wingPinky3
+    400160: l_wingPinkyEnd
+    400162: l_wingRing1
+    400164: l_wingRing2
+    400166: l_wingRingEnd
+    400168: l_wingShoulder
+    400170: l_wingThumb1
+    400172: l_wingThumb2
+    400174: l_wingThumb3
+    400176: l_wingThumbEnd
+    400178: l_wingWrist
+    400180: outerTopBootyPlate
+    400182: r_Claw
+    400184: r_ClawEnd
+    400186: r_Elbow
+    400188: r_innerBootyPlate
+    400190: r_outerBootyPlate
+    400192: r_pinky_middlewing
+    400194: r_pinkymiddleWingEnd
+    400196: r_ringIndexMiddleWing
+    400198: r_ringIndexMiddleWingEnd
+    400200: r_ringMiddleWing
+    400202: r_ringMiddleWingEnd
+    400204: r_Shoulder
+    400206: r_thumbMiddleWingMetaTarsal
+    400208: r_thumbMiddleWingMetaTarsalEnd
+    400210: r_thumbMiddleWingTarsal
+    400212: r_trapeziusPlate
+    400214: r_wingIndex
+    400216: r_wingIndex2
+    400218: r_wingIndexEnd1
+    400220: r_wingIndexEnd2
+    400222: r_wingMiddle
+    400224: r_wingMiddle2
+    400226: r_wingMiddleEnd
+    400228: r_wingPinky
+    400230: r_wingPinky2
+    400232: r_wingPinky3
+    400234: r_wingPinkyEnd
+    400236: r_wingRing
+    400238: r_wingRing2
+    400240: r_wingRingEnd
+    400242: r_wingShoulder
+    400244: r_wingThumb1
+    400246: r_wingThumb2
+    400248: r_wingThumb3
+    400250: r_wingThumbEnd
+    400252: r_wingWrist
+    400254: root
+    400256: spine1
+    400258: spine2
+    400260: spine3
+    400262: spineEnd
+    400264: topTrapeziusPlate
+    400266: drone_rWing_pivot2
+    4300000: drone_body
+    4300002: drone_leArm
+    4300004: drone_leBall1
+    4300006: drone_leArm2
+    4300008: drone_leBall2
+    4300010: drone_leHand
+    4300012: drone_rArm
+    4300014: drone_rBall1
+    4300016: drone_rArm2
+    4300018: drone_rBall2
+    4300020: drone_rHand
+    4300022: drone_windshield
+    4300024: drone_leEye_big
+    4300026: drone_leEye_small
+    4300028: drone_rEye_big
+    4300030: drone_rEye_small
+    4300032: drone_lWing_pivot
+    4300034: drone_leWing_finger1_sec1
+    4300036: drone_leWing_finger1_sec2
+    4300038: drone_leWing_finger1_sec3
+    4300040: drone_leWing_finger2_sec1
+    4300042: drone_leWing_finger2_sec2
+    4300044: drone_leWing_finger2_sec3
+    4300046: drone_leWing_finger3_sec1
+    4300048: drone_leWing_finger3_sec2
+    4300050: drone_leWing_finger4_sec1
+    4300052: drone_leWing_finger4_sec2
+    4300054: drone_leWing_finger5_sec1
+    4300056: drone_leWing_finger5_sec2
+    4300058: drone_leWing_finger5_sec3
+    4300060: drone_leWing_flap
+    4300062: drone_rWing_pivot1
+    4300064: drone_rWing_finger1_sec1
+    4300066: drone_leWing_finger1_sec2
+    4300068: drone_leWing_finger1_sec3
+    4300070: drone_rWing_finger2_sec1
+    4300072: drone_leWing_finger2_sec2
+    4300074: drone_leWing_finger2_sec3
+    4300076: drone_rWing_finger3_sec1
+    4300078: drone_leWing_finger3_sec2
+    4300080: drone_rWing_finger4_sec1
+    4300082: drone_leWing_finger4_sec2
+    4300084: drone_rWing_finger5_sec1
+    4300086: drone_leWing_finger5_sec2
+    4300088: drone_leWing_finger5_sec3
+    4300090: drone_leWing_flap
+    4300092: drone_rWing_pivot2
+    7400000: drone_swim
+    7400002: drone_swim //// root
+    7400004: drone_swim //// spine1
+    7400006: drone_swim //// spine2
+    7400008: drone_swim //// spine3
+    7400010: drone_swim //// spineEnd
+    7400012: drone_swim //// r_Shoulder
+    7400014: drone_swim //// r_Elbow
+    7400016: drone_swim //// r_Claw
+    7400018: drone_swim //// r_ClawEnd
+    7400020: drone_swim //// l_Shoulder
+    7400022: drone_swim //// l_Elbow
+    7400024: drone_swim //// l_Claw
+    7400026: drone_swim //// l_ClawEnd
+    7400028: drone_swim //// l_wingShoulder
+    7400030: drone_swim //// l_wingWrist
+    7400032: drone_swim //// l_wingThumb1
+    7400034: drone_swim //// l_wingThumb2
+    7400036: drone_swim //// l_wingThumb3
+    7400038: drone_swim //// l_wingThumbEnd
+    7400040: drone_swim //// l_wingIndex1
+    7400042: drone_swim //// l_wingIndex2
+    7400044: drone_swim //// l_wingIndexEnd1
+    7400046: drone_swim //// joint8
+    7400048: drone_swim //// l_wingIndexEnd2
+    7400050: drone_swim //// l_wingMiddle1
+    7400052: drone_swim //// l_wingMiddle2
+    7400054: drone_swim //// l_wingMiddleEnd
+    7400056: drone_swim //// l_wingRing1
+    7400058: drone_swim //// l_wingRing2
+    7400060: drone_swim //// l_wingRingEnd
+    7400062: drone_swim //// l_wingPinky1
+    7400064: drone_swim //// l_wingPinky2
+    7400066: drone_swim //// l_wingPinky3
+    7400068: drone_swim //// l_wingPinkyEnd
+    7400070: drone_swim //// l_pinky_middlewing
+    7400072: drone_swim //// l_middleWing1
+    7400074: drone_swim //// l_pinkymiddleWingEnd
+    7400076: drone_swim //// l_ringMiddleWing
+    7400078: drone_swim //// l_ringMiddleWingEnd
+    7400080: drone_swim //// l_ringIndexMiddleWing
+    7400082: drone_swim //// l_ringIndexMiddleWingEnd
+    7400084: drone_swim //// l_thumbMiddleWingTarsal
+    7400086: drone_swim //// l_thumbMiddleWingMetaTarsal
+    7400088: drone_swim //// l_thumbMiddleWingMetaTarsalEnd
+    7400090: drone_swim //// r_wingShoulder
+    7400092: drone_swim //// r_wingWrist
+    7400094: drone_swim //// r_wingThumb1
+    7400096: drone_swim //// r_wingThumb2
+    7400098: drone_swim //// r_wingThumb3
+    7400100: drone_swim //// r_wingThumbEnd
+    7400102: drone_swim //// r_wingIndex
+    7400104: drone_swim //// r_wingIndex2
+    7400106: drone_swim //// r_wingIndexEnd1
+    7400108: drone_swim //// joint8 1
+    7400110: drone_swim //// r_wingIndexEnd2
+    7400112: drone_swim //// r_wingMiddle
+    7400114: drone_swim //// r_wingMiddle2
+    7400116: drone_swim //// r_wingMiddleEnd
+    7400118: drone_swim //// r_wingRing
+    7400120: drone_swim //// r_wingRing2
+    7400122: drone_swim //// r_wingRingEnd
+    7400124: drone_swim //// r_wingPinky
+    7400126: drone_swim //// r_wingPinky2
+    7400128: drone_swim //// r_wingPinky3
+    7400130: drone_swim //// r_wingPinkyEnd
+    7400132: drone_swim //// r_pinky_middlewing
+    7400134: drone_swim //// r_pinkymiddleWingEnd
+    7400136: drone_swim //// r_ringMiddleWing
+    7400138: drone_swim //// r_ringMiddleWingEnd
+    7400140: drone_swim //// r_ringIndexMiddleWing
+    7400142: drone_swim //// r_ringIndexMiddleWingEnd
+    7400144: drone_swim //// r_thumbMiddleWingTarsal
+    7400146: drone_swim //// r_thumbMiddleWingMetaTarsal
+    7400148: drone_swim //// r_thumbMiddleWingMetaTarsalEnd
+    7400150: drone_swim //// topTrapeziusPlate
+    7400152: drone_swim //// r_trapeziusPlate
+    7400154: drone_swim //// l_trapeziusPlate
+    7400156: drone_swim //// r_outerBootyPlate
+    7400158: drone_swim //// r_innerBootyPlate
+    7400160: drone_swim //// innerTopBootyPlate
+    7400162: drone_swim //// outerTopBootyPlate
+    7400164: drone_swim //// l_innerBootyPlate
+    7400166: drone_swim //// l_outerBootyPlate
+    9500000: //RootNode
+    11100000: //RootNode
+    11100002: drone_body
+    11100004: drone_leArm
+    11100006: drone_leArm2
+    11100008: drone_leBall1
+    11100010: drone_leBall2
+    11100012: drone_leEye_big
+    11100014: drone_leEye_small
+    11100016: drone_leHand
+    11100018: drone_leWing_finger1_sec1
+    11100020: drone_leWing_finger1_sec2
+    11100022: drone_leWing_finger1_sec2 1
+    11100024: drone_leWing_finger1_sec3
+    11100026: drone_leWing_finger1_sec3 1
+    11100028: drone_leWing_finger2_sec1
+    11100030: drone_leWing_finger2_sec2
+    11100032: drone_leWing_finger2_sec2 1
+    11100034: drone_leWing_finger2_sec3
+    11100036: drone_leWing_finger2_sec3 1
+    11100038: drone_leWing_finger3_sec1
+    11100040: drone_leWing_finger3_sec2
+    11100042: drone_leWing_finger3_sec2 1
+    11100044: drone_leWing_finger4_sec1
+    11100046: drone_leWing_finger4_sec2
+    11100048: drone_leWing_finger4_sec2 1
+    11100050: drone_leWing_finger5_sec1
+    11100052: drone_leWing_finger5_sec2
+    11100054: drone_leWing_finger5_sec2 1
+    11100056: drone_leWing_finger5_sec3
+    11100058: drone_leWing_finger5_sec3 1
+    11100060: drone_leWing_flap
+    11100062: drone_leWing_flap 1
+    11100064: drone_lWing_pivot
+    11100066: drone_rArm
+    11100068: drone_rArm2
+    11100070: drone_rBall1
+    11100072: drone_rBall2
+    11100074: drone_rEye_big
+    11100076: drone_rEye_small
+    11100078: drone_rHand
+    11100080: drone_rWing_finger1_sec1
+    11100082: drone_rWing_finger2_sec1
+    11100084: drone_rWing_finger3_sec1
+    11100086: drone_rWing_finger4_sec1
+    11100088: drone_rWing_finger5_sec1
+    11100090: drone_rWing_pivot2
+    11100092: drone_windshield
+    11100094: droneBones
+    11100096: innerTopBootyPlate
+    11100098: joint8
+    11100100: joint8 1
+    11100102: l_Claw
+    11100104: l_ClawEnd
+    11100106: l_Elbow
+    11100108: l_innerBootyPlate
+    11100110: l_middleWing1
+    11100112: l_outerBootyPlate
+    11100114: l_pinky_middlewing
+    11100116: l_pinkymiddleWingEnd
+    11100118: l_ringIndexMiddleWing
+    11100120: l_ringIndexMiddleWingEnd
+    11100122: l_ringMiddleWing
+    11100124: l_ringMiddleWingEnd
+    11100126: l_Shoulder
+    11100128: l_thumbMiddleWingMetaTarsal
+    11100130: l_thumbMiddleWingMetaTarsalEnd
+    11100132: l_thumbMiddleWingTarsal
+    11100134: l_trapeziusPlate
+    11100136: l_wingIndex1
+    11100138: l_wingIndex2
+    11100140: l_wingIndexEnd1
+    11100142: l_wingIndexEnd2
+    11100144: l_wingMiddle1
+    11100146: l_wingMiddle2
+    11100148: l_wingMiddleEnd
+    11100150: l_wingPinky1
+    11100152: l_wingPinky2
+    11100154: l_wingPinky3
+    11100156: l_wingPinkyEnd
+    11100158: l_wingRing1
+    11100160: l_wingRing2
+    11100162: l_wingRingEnd
+    11100164: l_wingShoulder
+    11100166: l_wingThumb1
+    11100168: l_wingThumb2
+    11100170: l_wingThumb3
+    11100172: l_wingThumbEnd
+    11100174: l_wingWrist
+    11100176: outerTopBootyPlate
+    11100178: r_Claw
+    11100180: r_ClawEnd
+    11100182: r_Elbow
+    11100184: r_innerBootyPlate
+    11100186: r_outerBootyPlate
+    11100188: r_pinky_middlewing
+    11100190: r_pinkymiddleWingEnd
+    11100192: r_ringIndexMiddleWing
+    11100194: r_ringIndexMiddleWingEnd
+    11100196: r_ringMiddleWing
+    11100198: r_ringMiddleWingEnd
+    11100200: r_Shoulder
+    11100202: r_thumbMiddleWingMetaTarsal
+    11100204: r_thumbMiddleWingMetaTarsalEnd
+    11100206: r_thumbMiddleWingTarsal
+    11100208: r_trapeziusPlate
+    11100210: r_wingIndex
+    11100212: r_wingIndex2
+    11100214: r_wingIndexEnd1
+    11100216: r_wingIndexEnd2
+    11100218: r_wingMiddle
+    11100220: r_wingMiddle2
+    11100222: r_wingMiddleEnd
+    11100224: r_wingPinky
+    11100226: r_wingPinky2
+    11100228: r_wingPinky3
+    11100230: r_wingPinkyEnd
+    11100232: r_wingRing
+    11100234: r_wingRing2
+    11100236: r_wingRingEnd
+    11100238: r_wingShoulder
+    11100240: r_wingThumb1
+    11100242: r_wingThumb2
+    11100244: r_wingThumb3
+    11100246: r_wingThumbEnd
+    11100248: r_wingWrist
+    11100250: root
+    11100252: spine1
+    11100254: spine2
+    11100256: spine3
+    11100258: spineEnd
+    11100260: topTrapeziusPlate
+    13700000: drone_body
+    13700002: drone_leArm
+    13700004: drone_leArm2
+    13700006: drone_leBall1
+    13700008: drone_leBall2
+    13700010: drone_leEye_big
+    13700012: drone_leEye_small
+    13700014: drone_leHand
+    13700016: drone_leWing_finger1_sec1
+    13700018: drone_leWing_finger1_sec2
+    13700020: drone_leWing_finger1_sec2 1
+    13700022: drone_leWing_finger1_sec3
+    13700024: drone_leWing_finger1_sec3 1
+    13700026: drone_leWing_finger2_sec1
+    13700028: drone_leWing_finger2_sec2
+    13700030: drone_leWing_finger2_sec2 1
+    13700032: drone_leWing_finger2_sec3
+    13700034: drone_leWing_finger2_sec3 1
+    13700036: drone_leWing_finger3_sec1
+    13700038: drone_leWing_finger3_sec2
+    13700040: drone_leWing_finger3_sec2 1
+    13700042: drone_leWing_finger4_sec1
+    13700044: drone_leWing_finger4_sec2
+    13700046: drone_leWing_finger4_sec2 1
+    13700048: drone_leWing_finger5_sec1
+    13700050: drone_leWing_finger5_sec2
+    13700052: drone_leWing_finger5_sec2 1
+    13700054: drone_leWing_finger5_sec3
+    13700056: drone_leWing_finger5_sec3 1
+    13700058: drone_leWing_flap
+    13700060: drone_leWing_flap 1
+    13700062: drone_lWing_pivot
+    13700064: drone_rArm
+    13700066: drone_rArm2
+    13700068: drone_rBall1
+    13700070: drone_rBall2
+    13700072: drone_rEye_big
+    13700074: drone_rEye_small
+    13700076: drone_rHand
+    13700078: drone_rWing_finger1_sec1
+    13700080: drone_rWing_finger2_sec1
+    13700082: drone_rWing_finger3_sec1
+    13700084: drone_rWing_finger4_sec1
+    13700086: drone_rWing_finger5_sec1
+    13700088: drone_rWing_pivot1
+    13700090: drone_windshield
+    13700092: drone_rWing_pivot2
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 2
+    bakeSimulation: 0
+    optimizeGameObjects: 1
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths:
+    - droneBones/root/spine1/spine2/l_wingShoulder
+    - droneBones/root/spine1/spine2/r_wingShoulder
+    clipAnimations:
+    - serializedVersion: 16
+      name: drone_swim
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: drone_body
+        weight: 1
+      - path: drone_body/drone_leArm
+        weight: 1
+      - path: drone_body/drone_leArm/drone_leBall1
+        weight: 1
+      - path: drone_body/drone_leArm/drone_leBall1/drone_leArm2
+        weight: 1
+      - path: drone_body/drone_leArm/drone_leBall1/drone_leArm2/drone_leBall2
+        weight: 1
+      - path: drone_body/drone_leArm/drone_leBall1/drone_leArm2/drone_leBall2/drone_leHand
+        weight: 1
+      - path: drone_body/drone_rArm
+        weight: 1
+      - path: drone_body/drone_rArm/drone_rBall1
+        weight: 1
+      - path: drone_body/drone_rArm/drone_rBall1/drone_rArm2
+        weight: 1
+      - path: drone_body/drone_rArm/drone_rBall1/drone_rArm2/drone_rBall2
+        weight: 1
+      - path: drone_body/drone_rArm/drone_rBall1/drone_rArm2/drone_rBall2/drone_rHand
+        weight: 1
+      - path: drone_body/drone_windshield
+        weight: 1
+      - path: drone_body/drone_leEye_big
+        weight: 1
+      - path: drone_body/drone_leEye_small
+        weight: 1
+      - path: drone_body/drone_rEye_big
+        weight: 1
+      - path: drone_body/drone_rEye_small
+        weight: 1
+      - path: drone_body/drone_lWing_pivot
+        weight: 1
+      - path: drone_body/drone_lWing_pivot/drone_leWing_finger1_sec1
+        weight: 1
+      - path: drone_body/drone_lWing_pivot/drone_leWing_finger1_sec1/drone_leWing_finger1_sec2
+        weight: 1
+      - path: drone_body/drone_lWing_pivot/drone_leWing_finger1_sec1/drone_leWing_finger1_sec2/drone_leWing_finger1_sec3
+        weight: 1
+      - path: drone_body/drone_lWing_pivot/drone_leWing_finger2_sec1
+        weight: 1
+      - path: drone_body/drone_lWing_pivot/drone_leWing_finger2_sec1/drone_leWing_finger2_sec2
+        weight: 1
+      - path: drone_body/drone_lWing_pivot/drone_leWing_finger2_sec1/drone_leWing_finger2_sec3
+        weight: 1
+      - path: drone_body/drone_lWing_pivot/drone_leWing_finger3_sec1
+        weight: 1
+      - path: drone_body/drone_lWing_pivot/drone_leWing_finger3_sec1/drone_leWing_finger3_sec2
+        weight: 1
+      - path: drone_body/drone_lWing_pivot/drone_leWing_finger4_sec1
+        weight: 1
+      - path: drone_body/drone_lWing_pivot/drone_leWing_finger4_sec1/drone_leWing_finger4_sec2
+        weight: 1
+      - path: drone_body/drone_lWing_pivot/drone_leWing_finger5_sec1
+        weight: 1
+      - path: drone_body/drone_lWing_pivot/drone_leWing_finger5_sec1/drone_leWing_finger5_sec2
+        weight: 1
+      - path: drone_body/drone_lWing_pivot/drone_leWing_finger5_sec1/drone_leWing_finger5_sec2/drone_leWing_finger5_sec3
+        weight: 1
+      - path: drone_body/drone_lWing_pivot/drone_leWing_flap
+        weight: 1
+      - path: drone_body/drone_rWing_pivot2
+        weight: 1
+      - path: drone_body/drone_rWing_pivot2/drone_rWing_finger1_sec1
+        weight: 1
+      - path: drone_body/drone_rWing_pivot2/drone_rWing_finger1_sec1/drone_leWing_finger1_sec2
+          1
+        weight: 1
+      - path: drone_body/drone_rWing_pivot2/drone_rWing_finger1_sec1/drone_leWing_finger1_sec2
+          1/drone_leWing_finger1_sec3 1
+        weight: 1
+      - path: drone_body/drone_rWing_pivot2/drone_rWing_finger2_sec1
+        weight: 1
+      - path: drone_body/drone_rWing_pivot2/drone_rWing_finger2_sec1/drone_leWing_finger2_sec2
+          1
+        weight: 1
+      - path: drone_body/drone_rWing_pivot2/drone_rWing_finger2_sec1/drone_leWing_finger2_sec3
+          1
+        weight: 1
+      - path: drone_body/drone_rWing_pivot2/drone_rWing_finger3_sec1
+        weight: 1
+      - path: drone_body/drone_rWing_pivot2/drone_rWing_finger3_sec1/drone_leWing_finger3_sec2
+          1
+        weight: 1
+      - path: drone_body/drone_rWing_pivot2/drone_rWing_finger4_sec1
+        weight: 1
+      - path: drone_body/drone_rWing_pivot2/drone_rWing_finger4_sec1/drone_leWing_finger4_sec2
+          1
+        weight: 1
+      - path: drone_body/drone_rWing_pivot2/drone_rWing_finger5_sec1
+        weight: 1
+      - path: drone_body/drone_rWing_pivot2/drone_rWing_finger5_sec1/drone_leWing_finger5_sec2
+          1
+        weight: 1
+      - path: drone_body/drone_rWing_pivot2/drone_rWing_finger5_sec1/drone_leWing_finger5_sec2
+          1/drone_leWing_finger5_sec3 1
+        weight: 1
+      - path: drone_body/drone_rWing_pivot2/drone_leWing_flap 1
+        weight: 1
+      - path: droneBones
+        weight: 1
+      - path: droneBones/root
+        weight: 1
+      - path: droneBones/root/spine1
+        weight: 1
+      - path: droneBones/root/spine1/spine2
+        weight: 1
+      - path: droneBones/root/spine1/spine2/spine3
+        weight: 1
+      - path: droneBones/root/spine1/spine2/spine3/spineEnd
+        weight: 1
+      - path: droneBones/root/spine1/spine2/spine3/r_Shoulder
+        weight: 1
+      - path: droneBones/root/spine1/spine2/spine3/r_Shoulder/r_Elbow
+        weight: 1
+      - path: droneBones/root/spine1/spine2/spine3/r_Shoulder/r_Elbow/r_Claw
+        weight: 1
+      - path: droneBones/root/spine1/spine2/spine3/r_Shoulder/r_Elbow/r_Claw/r_ClawEnd
+        weight: 1
+      - path: droneBones/root/spine1/spine2/spine3/l_Shoulder
+        weight: 1
+      - path: droneBones/root/spine1/spine2/spine3/l_Shoulder/l_Elbow
+        weight: 1
+      - path: droneBones/root/spine1/spine2/spine3/l_Shoulder/l_Elbow/l_Claw
+        weight: 1
+      - path: droneBones/root/spine1/spine2/spine3/l_Shoulder/l_Elbow/l_Claw/l_ClawEnd
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_wingThumb1
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_wingThumb1/l_wingThumb2
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_wingThumb1/l_wingThumb2/l_wingThumb3
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_wingThumb1/l_wingThumb2/l_wingThumb3/l_wingThumbEnd
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_wingIndex1
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_wingIndex1/l_wingIndex2
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_wingIndex1/l_wingIndex2/l_wingIndexEnd1
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_wingIndex1/l_wingIndex2/l_wingIndexEnd1/joint8
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_wingIndex1/l_wingIndex2/l_wingIndexEnd2
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_wingMiddle1
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_wingMiddle1/l_wingMiddle2
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_wingMiddle1/l_wingMiddle2/l_wingMiddleEnd
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_wingRing1
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_wingRing1/l_wingRing2
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_wingRing1/l_wingRing2/l_wingRingEnd
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_wingPinky1
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_wingPinky1/l_wingPinky2
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_wingPinky1/l_wingPinky2/l_wingPinky3
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_wingPinky1/l_wingPinky2/l_wingPinky3/l_wingPinkyEnd
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_pinky_middlewing
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_pinky_middlewing/l_middleWing1
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_pinky_middlewing/l_middleWing1/l_pinkymiddleWingEnd
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_ringMiddleWing
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_ringMiddleWing/l_ringMiddleWingEnd
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_ringIndexMiddleWing
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_ringIndexMiddleWing/l_ringIndexMiddleWingEnd
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_thumbMiddleWingTarsal
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_thumbMiddleWingTarsal/l_thumbMiddleWingMetaTarsal
+        weight: 1
+      - path: droneBones/root/spine1/spine2/l_wingShoulder/l_wingWrist/l_thumbMiddleWingTarsal/l_thumbMiddleWingMetaTarsal/l_thumbMiddleWingMetaTarsalEnd
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_wingThumb1
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_wingThumb1/r_wingThumb2
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_wingThumb1/r_wingThumb2/r_wingThumb3
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_wingThumb1/r_wingThumb2/r_wingThumb3/r_wingThumbEnd
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_wingIndex
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_wingIndex/r_wingIndex2
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_wingIndex/r_wingIndex2/r_wingIndexEnd1
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_wingIndex/r_wingIndex2/r_wingIndexEnd1/joint8
+          1
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_wingIndex/r_wingIndex2/r_wingIndexEnd2
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_wingMiddle
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_wingMiddle/r_wingMiddle2
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_wingMiddle/r_wingMiddle2/r_wingMiddleEnd
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_wingRing
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_wingRing/r_wingRing2
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_wingRing/r_wingRing2/r_wingRingEnd
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_wingPinky
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_wingPinky/r_wingPinky2
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_wingPinky/r_wingPinky2/r_wingPinky3
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_wingPinky/r_wingPinky2/r_wingPinky3/r_wingPinkyEnd
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_pinky_middlewing
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_pinky_middlewing/r_pinkymiddleWingEnd
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_ringMiddleWing
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_ringMiddleWing/r_ringMiddleWingEnd
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_ringIndexMiddleWing
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_ringIndexMiddleWing/r_ringIndexMiddleWingEnd
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_thumbMiddleWingTarsal
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_thumbMiddleWingTarsal/r_thumbMiddleWingMetaTarsal
+        weight: 1
+      - path: droneBones/root/spine1/spine2/r_wingShoulder/r_wingWrist/r_thumbMiddleWingTarsal/r_thumbMiddleWingMetaTarsal/r_thumbMiddleWingMetaTarsalEnd
+        weight: 1
+      - path: droneBones/root/spine1/topTrapeziusPlate
+        weight: 1
+      - path: droneBones/root/spine1/r_trapeziusPlate
+        weight: 1
+      - path: droneBones/root/spine1/l_trapeziusPlate
+        weight: 1
+      - path: droneBones/root/r_outerBootyPlate
+        weight: 1
+      - path: droneBones/root/r_innerBootyPlate
+        weight: 1
+      - path: droneBones/root/innerTopBootyPlate
+        weight: 1
+      - path: droneBones/root/outerTopBootyPlate
+        weight: 1
+      - path: droneBones/root/l_innerBootyPlate
+        weight: 1
+      - path: droneBones/root/l_outerBootyPlate
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 0
+    normalImportMode: 0
+    tangentImportMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: root
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

@@ -1,0 +1,359 @@
+fileFormatVersion: 2
+guid: be6c7b7d4c9fb5e469bc4c1db76ab19c
+timeCreated: 1467244325
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: angler_1
+    100004: angler_2
+    100006: angler_3
+    100008: angler_4
+    100010: angler_5
+    100012: angler_6
+    100014: angler_7
+    100016: angler_8
+    100018: angler_main
+    100020: Angler_model
+    100022: angler_root
+    100024: head
+    100026: head_root
+    100028: jaw
+    100030: jaw_end
+    100032: lure
+    100034: lure_end
+    100036: Rig
+    100038: Rig_andBones
+    100040: root
+    100042: root_ctrl
+    100044: root_grp
+    100046: tail_1
+    100048: tail_2
+    100050: tail_3
+    100052: tail_end
+    100054: tail_root
+    100056: tongue
+    400000: //RootNode
+    400002: angler_1
+    400004: angler_2
+    400006: angler_3
+    400008: angler_4
+    400010: angler_5
+    400012: angler_6
+    400014: angler_7
+    400016: angler_8
+    400018: angler_main
+    400020: Angler_model
+    400022: angler_root
+    400024: head
+    400026: head_root
+    400028: jaw
+    400030: jaw_end
+    400032: lure
+    400034: lure_end
+    400036: Rig
+    400038: Rig_andBones
+    400040: root
+    400042: root_ctrl
+    400044: root_grp
+    400046: tail_1
+    400048: tail_2
+    400050: tail_3
+    400052: tail_end
+    400054: tail_root
+    400056: tongue
+    2300000: //RootNode
+    2300002: angler_main
+    3300000: //RootNode
+    3300002: angler_main
+    4300000: angler_main
+    7400000: angler_bite
+    7400002: angler_idle
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: angler_main
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 0
+    optimizeGameObjects: 0
+    motionNodeName: Rig_andBones
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 0
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: angler_bite
+      takeName: Take 001
+      firstFrame: 1300
+      lastFrame: 1800
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.29115987
+        functionName: PlayAudio
+        data: 
+        objectReferenceParameter: {fileID: 163876, guid: 972f7c2842f4bf746a6ee1628e24eae1,
+          type: 2}
+        floatParameter: 0
+        intParameter: 2
+        messageOptions: 0
+      - time: 0.3303547
+        functionName: PlayAudio
+        data: 
+        objectReferenceParameter: {fileID: 163876, guid: 972f7c2842f4bf746a6ee1628e24eae1,
+          type: 2}
+        floatParameter: 0
+        intParameter: 1
+        messageOptions: 0
+      - time: 0.33043477
+        functionName: Mouth
+        data: 
+        objectReferenceParameter: {fileID: 163876, guid: 972f7c2842f4bf746a6ee1628e24eae1,
+          type: 2}
+        floatParameter: 0
+        intParameter: 1
+        messageOptions: 0
+      - time: 0.38501224
+        functionName: PlayAudio
+        data: 
+        objectReferenceParameter: {fileID: 163876, guid: 972f7c2842f4bf746a6ee1628e24eae1,
+          type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.38860103
+        functionName: Mouth
+        data: 
+        objectReferenceParameter: {fileID: 163876, guid: 972f7c2842f4bf746a6ee1628e24eae1,
+          type: 2}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Angler_model
+        weight: 1
+      - path: Angler_model/angler_main
+        weight: 1
+      - path: Rig_andBones
+        weight: 1
+      - path: Rig_andBones/Rig
+        weight: 1
+      - path: Rig_andBones/Rig/root_grp
+        weight: 1
+      - path: Rig_andBones/Rig/root_grp/root_ctrl
+        weight: 1
+      - path: Rig_andBones/root
+        weight: 1
+      - path: Rig_andBones/root/head_root
+        weight: 1
+      - path: Rig_andBones/root/head_root/head
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/angler_root
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/angler_root/angler_1
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/angler_root/angler_1/angler_2
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/angler_root/angler_1/angler_2/angler_3
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/angler_root/angler_1/angler_2/angler_3/angler_4
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/angler_root/angler_1/angler_2/angler_3/angler_4/angler_5
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/angler_root/angler_1/angler_2/angler_3/angler_4/angler_5/angler_6
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/angler_root/angler_1/angler_2/angler_3/angler_4/angler_5/angler_6/angler_7
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/angler_root/angler_1/angler_2/angler_3/angler_4/angler_5/angler_6/angler_7/angler_8
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/angler_root/angler_1/angler_2/angler_3/angler_4/angler_5/angler_6/angler_7/angler_8/lure
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/angler_root/angler_1/angler_2/angler_3/angler_4/angler_5/angler_6/angler_7/angler_8/lure/lure_end
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/jaw
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/jaw/jaw_end
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/jaw/tongue
+        weight: 1
+      - path: Rig_andBones/root/tail_root
+        weight: 1
+      - path: Rig_andBones/root/tail_root/tail_1
+        weight: 1
+      - path: Rig_andBones/root/tail_root/tail_1/tail_2
+        weight: 1
+      - path: Rig_andBones/root/tail_root/tail_1/tail_2/tail_3
+        weight: 1
+      - path: Rig_andBones/root/tail_root/tail_1/tail_2/tail_3/tail_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: angler_idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 1200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0
+        functionName: Mouth
+        data: 
+        objectReferenceParameter: {fileID: 100000, guid: be6c7b7d4c9fb5e469bc4c1db76ab19c,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Angler_model
+        weight: 1
+      - path: Angler_model/angler_main
+        weight: 1
+      - path: Rig_andBones
+        weight: 1
+      - path: Rig_andBones/Rig
+        weight: 1
+      - path: Rig_andBones/Rig/root_grp
+        weight: 1
+      - path: Rig_andBones/Rig/root_grp/root_ctrl
+        weight: 1
+      - path: Rig_andBones/root
+        weight: 1
+      - path: Rig_andBones/root/head_root
+        weight: 1
+      - path: Rig_andBones/root/head_root/head
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/angler_root
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/angler_root/angler_1
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/angler_root/angler_1/angler_2
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/angler_root/angler_1/angler_2/angler_3
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/angler_root/angler_1/angler_2/angler_3/angler_4
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/angler_root/angler_1/angler_2/angler_3/angler_4/angler_5
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/angler_root/angler_1/angler_2/angler_3/angler_4/angler_5/angler_6
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/angler_root/angler_1/angler_2/angler_3/angler_4/angler_5/angler_6/angler_7
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/angler_root/angler_1/angler_2/angler_3/angler_4/angler_5/angler_6/angler_7/angler_8
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/angler_root/angler_1/angler_2/angler_3/angler_4/angler_5/angler_6/angler_7/angler_8/lure
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/angler_root/angler_1/angler_2/angler_3/angler_4/angler_5/angler_6/angler_7/angler_8/lure/lure_end
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/jaw
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/jaw/jaw_end
+        weight: 1
+      - path: Rig_andBones/root/head_root/head/jaw/tongue
+        weight: 1
+      - path: Rig_andBones/root/tail_root
+        weight: 1
+      - path: Rig_andBones/root/tail_root/tail_1
+        weight: 1
+      - path: Rig_andBones/root/tail_root/tail_1/tail_2
+        weight: 1
+      - path: Rig_andBones/root/tail_root/tail_1/tail_2/tail_3
+        weight: 1
+      - path: Rig_andBones/root/tail_root/tail_1/tail_2/tail_3/tail_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1000
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 1
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: root
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

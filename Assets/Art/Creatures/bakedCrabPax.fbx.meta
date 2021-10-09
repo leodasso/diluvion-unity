@@ -1,0 +1,928 @@
+fileFormatVersion: 2
+guid: a16ee55aca59a2e4d8663776b11c6e7e
+timeCreated: 1440454174
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: bodyControl
+    100004: bodyControlGrp
+    100006: Bonegroup
+    100008: controlHandle
+    100010: controlHandle 1
+    100012: controlHandle 2
+    100014: controlHandle 3
+    100016: controlHandle 4
+    100018: controlHandle 5
+    100020: controlHandle 6
+    100022: controlHandle1
+    100024: controlHandle1 1
+    100026: controlHandle1 2
+    100028: controlHandle1 3
+    100030: controlHandle1 4
+    100032: controlHandle1 5
+    100034: controlHandle1 6
+    100036: controlsAndBones
+    100038: crab_backTurret_body
+    100040: crab_backTurret_guns
+    100042: crab_frontTurret1_body
+    100044: crab_frontTurret1_guns
+    100046: crab_frontTurret2_body
+    100048: crab_frontTurret2_guns
+    100050: crab_leDish1
+    100052: crab_leDish2
+    100054: crab_leTurret001
+    100056: crab_leTurret002
+    100058: crab_leTurret003
+    100060: crab_leTurret004
+    100062: crab_leTurret005
+    100064: crab_leTurret006
+    100066: crab_leTurret007
+    100068: crab_leTurret008
+    100070: crab_leTurret009
+    100072: crab_leTurret010
+    100074: crab_leTurret011
+    100076: crab_leTurret012
+    100078: crab_leTurret013
+    100080: crab_leTurret014
+    100082: crab_leTurret015
+    100084: crab_leTurret016
+    100086: crab_rDish1
+    100088: crab_rDish2
+    100090: crab_rTurret001
+    100092: crab_rTurret0014
+    100094: crab_rTurret0015
+    100096: crab_rTurret002
+    100098: crab_rTurret003
+    100100: crab_rTurret004
+    100102: crab_rTurret005
+    100104: crab_rTurret006
+    100106: crab_rTurret007
+    100108: crab_rTurret008
+    100110: crab_rTurret009
+    100112: crab_rTurret010
+    100114: crab_rTurret011
+    100116: crab_rTurret012
+    100118: crab_rTurret013
+    100120: crab_rTurret016
+    100122: crab_rudder
+    100124: crab_shipBody
+    100126: crabMasterControl
+    100128: group1
+    100130: head6
+    100132: l_antennae_1
+    100134: l_antennae_end
+    100136: l_back_leg_1
+    100138: l_back_leg_2
+    100140: l_back_leg_3
+    100142: l_backLeg3
+    100144: l_backLeg4
+    100146: l_backLeg5
+    100148: l_backLeg6
+    100150: l_backLeg7
+    100152: l_backLeg8
+    100154: l_backLeg9
+    100156: l_backLegFootIK_ctrl
+    100158: l_backLegIK
+    100160: l_backLegIK_ctrl
+    100162: l_backLegIK_ctrlGrp
+    100164: l_claw_1
+    100166: l_claw_1_ctrl
+    100168: l_claw_1_ctrlGrp
+    100170: l_claw_2
+    100172: l_claw_2_ctrl
+    100174: l_claw_2_ctrlGrp
+    100176: l_claw_3
+    100178: l_claw_3_ctrl
+    100180: l_claw_3_ctrlGrp
+    100182: l_claw_4
+    100184: l_claw_4_ctrl
+    100186: l_claw_4_ctrlGrp
+    100188: l_claw_thumb
+    100190: l_eye_1
+    100192: l_eye_end
+    100194: l_foreIK
+    100196: l_front_leg_1
+    100198: l_front_leg_2
+    100200: l_front_leg_3
+    100202: l_front_leg_4
+    100204: l_front_leg_end
+    100206: l_midBack_leg_1
+    100208: l_midBack_leg_2
+    100210: l_midBack_leg_3
+    100212: l_midBack_leg_4
+    100214: l_midBack_leg_4 1
+    100216: l_midBack_leg_end
+    100218: l_midBack_leg_end 1
+    100220: l_midBackIK
+    100222: l_midForeIK
+    100224: l_midFront_leg_1
+    100226: l_midFront_leg_2
+    100228: l_midFront_leg_3
+    100230: l_midFront_leg_4
+    100232: l_midFront_leg_end
+    100234: l_mouth_1
+    100236: l_mouth_end
+    100238: l_whisker_1
+    100240: l_whisker_end
+    100242: meshAndIK
+    100244: pCylinder225
+    100246: polySurface1
+    100248: r_antennae_1
+    100250: r_antennae_end
+    100252: r_back_leg_1
+    100254: r_back_leg_2
+    100256: r_back_leg_3
+    100258: r_backIK
+    100260: r_claw_1
+    100262: r_claw_1_ctrl
+    100264: r_claw_1_ctrlGrp
+    100266: r_claw_2
+    100268: r_claw_2_ctrl
+    100270: r_claw_2_ctrlGrp
+    100272: r_claw_2_ctrlGrp 1
+    100274: r_claw_3
+    100276: r_claw_3_ctrl
+    100278: r_claw_4
+    100280: r_claw_4_ctrl
+    100282: r_claw_4_ctrlGrp
+    100284: r_claw_thumb
+    100286: r_eye_1
+    100288: r_eye_end
+    100290: r_foreIK
+    100292: r_front_leg_1
+    100294: r_front_leg_2
+    100296: r_front_leg_3
+    100298: r_front_leg_4
+    100300: r_front_leg_end
+    100302: r_midBack_leg_1
+    100304: r_midBack_leg_2
+    100306: r_midBack_leg_3
+    100308: r_midBack_leg_4
+    100310: r_midBack_leg_4 1
+    100312: r_midBack_leg_end
+    100314: r_midBack_leg_end 1
+    100316: r_midBackIK
+    100318: r_midForeIK
+    100320: r_midFront_leg_1
+    100322: r_midFront_leg_2
+    100324: r_midFront_leg_3
+    100326: r_midFront_leg_4
+    100328: r_midFront_leg_end
+    100330: r_mouth_1
+    100332: r_mouth_end
+    100334: r_whisker_1
+    100336: r_whisker_end
+    400000: //RootNode
+    400002: bodyControl
+    400004: bodyControlGrp
+    400006: Bonegroup
+    400008: controlHandle
+    400010: controlHandle 1
+    400012: controlHandle 2
+    400014: controlHandle 3
+    400016: controlHandle 4
+    400018: controlHandle 5
+    400020: controlHandle 6
+    400022: controlHandle1
+    400024: controlHandle1 1
+    400026: controlHandle1 2
+    400028: controlHandle1 3
+    400030: controlHandle1 4
+    400032: controlHandle1 5
+    400034: controlHandle1 6
+    400036: controlsAndBones
+    400038: crab_backTurret_body
+    400040: crab_backTurret_guns
+    400042: crab_frontTurret1_body
+    400044: crab_frontTurret1_guns
+    400046: crab_frontTurret2_body
+    400048: crab_frontTurret2_guns
+    400050: crab_leDish1
+    400052: crab_leDish2
+    400054: crab_leTurret001
+    400056: crab_leTurret002
+    400058: crab_leTurret003
+    400060: crab_leTurret004
+    400062: crab_leTurret005
+    400064: crab_leTurret006
+    400066: crab_leTurret007
+    400068: crab_leTurret008
+    400070: crab_leTurret009
+    400072: crab_leTurret010
+    400074: crab_leTurret011
+    400076: crab_leTurret012
+    400078: crab_leTurret013
+    400080: crab_leTurret014
+    400082: crab_leTurret015
+    400084: crab_leTurret016
+    400086: crab_rDish1
+    400088: crab_rDish2
+    400090: crab_rTurret001
+    400092: crab_rTurret0014
+    400094: crab_rTurret0015
+    400096: crab_rTurret002
+    400098: crab_rTurret003
+    400100: crab_rTurret004
+    400102: crab_rTurret005
+    400104: crab_rTurret006
+    400106: crab_rTurret007
+    400108: crab_rTurret008
+    400110: crab_rTurret009
+    400112: crab_rTurret010
+    400114: crab_rTurret011
+    400116: crab_rTurret012
+    400118: crab_rTurret013
+    400120: crab_rTurret016
+    400122: crab_rudder
+    400124: crab_shipBody
+    400126: crabMasterControl
+    400128: group1
+    400130: head6
+    400132: l_antennae_1
+    400134: l_antennae_end
+    400136: l_back_leg_1
+    400138: l_back_leg_2
+    400140: l_back_leg_3
+    400142: l_backLeg3
+    400144: l_backLeg4
+    400146: l_backLeg5
+    400148: l_backLeg6
+    400150: l_backLeg7
+    400152: l_backLeg8
+    400154: l_backLeg9
+    400156: l_backLegFootIK_ctrl
+    400158: l_backLegIK
+    400160: l_backLegIK_ctrl
+    400162: l_backLegIK_ctrlGrp
+    400164: l_claw_1
+    400166: l_claw_1_ctrl
+    400168: l_claw_1_ctrlGrp
+    400170: l_claw_2
+    400172: l_claw_2_ctrl
+    400174: l_claw_2_ctrlGrp
+    400176: l_claw_3
+    400178: l_claw_3_ctrl
+    400180: l_claw_3_ctrlGrp
+    400182: l_claw_4
+    400184: l_claw_4_ctrl
+    400186: l_claw_4_ctrlGrp
+    400188: l_claw_thumb
+    400190: l_eye_1
+    400192: l_eye_end
+    400194: l_foreIK
+    400196: l_front_leg_1
+    400198: l_front_leg_2
+    400200: l_front_leg_3
+    400202: l_front_leg_4
+    400204: l_front_leg_end
+    400206: l_midBack_leg_1
+    400208: l_midBack_leg_2
+    400210: l_midBack_leg_3
+    400212: l_midBack_leg_4
+    400214: l_midBack_leg_4 1
+    400216: l_midBack_leg_end
+    400218: l_midBack_leg_end 1
+    400220: l_midBackIK
+    400222: l_midForeIK
+    400224: l_midFront_leg_1
+    400226: l_midFront_leg_2
+    400228: l_midFront_leg_3
+    400230: l_midFront_leg_4
+    400232: l_midFront_leg_end
+    400234: l_mouth_1
+    400236: l_mouth_end
+    400238: l_whisker_1
+    400240: l_whisker_end
+    400242: meshAndIK
+    400244: pCylinder225
+    400246: polySurface1
+    400248: r_antennae_1
+    400250: r_antennae_end
+    400252: r_back_leg_1
+    400254: r_back_leg_2
+    400256: r_back_leg_3
+    400258: r_backIK
+    400260: r_claw_1
+    400262: r_claw_1_ctrl
+    400264: r_claw_1_ctrlGrp
+    400266: r_claw_2
+    400268: r_claw_2_ctrl
+    400270: r_claw_2_ctrlGrp
+    400272: r_claw_2_ctrlGrp 1
+    400274: r_claw_3
+    400276: r_claw_3_ctrl
+    400278: r_claw_4
+    400280: r_claw_4_ctrl
+    400282: r_claw_4_ctrlGrp
+    400284: r_claw_thumb
+    400286: r_eye_1
+    400288: r_eye_end
+    400290: r_foreIK
+    400292: r_front_leg_1
+    400294: r_front_leg_2
+    400296: r_front_leg_3
+    400298: r_front_leg_4
+    400300: r_front_leg_end
+    400302: r_midBack_leg_1
+    400304: r_midBack_leg_2
+    400306: r_midBack_leg_3
+    400308: r_midBack_leg_4
+    400310: r_midBack_leg_4 1
+    400312: r_midBack_leg_end
+    400314: r_midBack_leg_end 1
+    400316: r_midBackIK
+    400318: r_midForeIK
+    400320: r_midFront_leg_1
+    400322: r_midFront_leg_2
+    400324: r_midFront_leg_3
+    400326: r_midFront_leg_4
+    400328: r_midFront_leg_end
+    400330: r_mouth_1
+    400332: r_mouth_end
+    400334: r_whisker_1
+    400336: r_whisker_end
+    2300000: crab_backTurret_body
+    2300002: crab_backTurret_guns
+    2300004: crab_frontTurret1_body
+    2300006: crab_frontTurret1_guns
+    2300008: crab_frontTurret2_body
+    2300010: crab_frontTurret2_guns
+    2300012: crab_leDish1
+    2300014: crab_leDish2
+    2300016: crab_leTurret001
+    2300018: crab_leTurret002
+    2300020: crab_leTurret003
+    2300022: crab_leTurret004
+    2300024: crab_leTurret005
+    2300026: crab_leTurret006
+    2300028: crab_leTurret007
+    2300030: crab_leTurret008
+    2300032: crab_leTurret009
+    2300034: crab_leTurret010
+    2300036: crab_leTurret011
+    2300038: crab_leTurret012
+    2300040: crab_leTurret013
+    2300042: crab_leTurret014
+    2300044: crab_leTurret015
+    2300046: crab_leTurret016
+    2300048: crab_rDish1
+    2300050: crab_rDish2
+    2300052: crab_rTurret001
+    2300054: crab_rTurret0014
+    2300056: crab_rTurret0015
+    2300058: crab_rTurret002
+    2300060: crab_rTurret003
+    2300062: crab_rTurret004
+    2300064: crab_rTurret005
+    2300066: crab_rTurret006
+    2300068: crab_rTurret007
+    2300070: crab_rTurret008
+    2300072: crab_rTurret009
+    2300074: crab_rTurret010
+    2300076: crab_rTurret011
+    2300078: crab_rTurret012
+    2300080: crab_rTurret013
+    2300082: crab_rTurret016
+    2300084: crab_rudder
+    2300086: crab_shipBody
+    2300088: pCylinder225
+    2300090: polySurface1
+    3300000: crab_backTurret_body
+    3300002: crab_backTurret_guns
+    3300004: crab_frontTurret1_body
+    3300006: crab_frontTurret1_guns
+    3300008: crab_frontTurret2_body
+    3300010: crab_frontTurret2_guns
+    3300012: crab_leDish1
+    3300014: crab_leDish2
+    3300016: crab_leTurret001
+    3300018: crab_leTurret002
+    3300020: crab_leTurret003
+    3300022: crab_leTurret004
+    3300024: crab_leTurret005
+    3300026: crab_leTurret006
+    3300028: crab_leTurret007
+    3300030: crab_leTurret008
+    3300032: crab_leTurret009
+    3300034: crab_leTurret010
+    3300036: crab_leTurret011
+    3300038: crab_leTurret012
+    3300040: crab_leTurret013
+    3300042: crab_leTurret014
+    3300044: crab_leTurret015
+    3300046: crab_leTurret016
+    3300048: crab_rDish1
+    3300050: crab_rDish2
+    3300052: crab_rTurret001
+    3300054: crab_rTurret0014
+    3300056: crab_rTurret0015
+    3300058: crab_rTurret002
+    3300060: crab_rTurret003
+    3300062: crab_rTurret004
+    3300064: crab_rTurret005
+    3300066: crab_rTurret006
+    3300068: crab_rTurret007
+    3300070: crab_rTurret008
+    3300072: crab_rTurret009
+    3300074: crab_rTurret010
+    3300076: crab_rTurret011
+    3300078: crab_rTurret012
+    3300080: crab_rTurret013
+    3300082: crab_rTurret016
+    3300084: crab_rudder
+    3300086: crab_shipBody
+    3300088: pCylinder225
+    3300090: polySurface1
+    4300000: polySurface1
+    4300002: crab_shipBody
+    4300004: crab_rudder
+    4300006: crab_backTurret_body
+    4300008: crab_backTurret_guns
+    4300010: crab_frontTurret1_body
+    4300012: crab_frontTurret1_guns
+    4300014: crab_frontTurret2_body
+    4300016: crab_frontTurret2_guns
+    4300018: crab_rDish1
+    4300020: crab_rDish2
+    4300022: crab_leDish2
+    4300024: crab_leDish1
+    4300026: crab_rTurret001
+    4300028: crab_rTurret012
+    4300030: pCylinder225
+    4300032: crab_rTurret0015
+    4300034: crab_rTurret011
+    4300036: crab_leTurret011
+    4300038: crab_rTurret010
+    4300040: crab_leTurret010
+    4300042: crab_rTurret004
+    4300044: crab_rTurret003
+    4300046: crab_rTurret002
+    4300048: crab_leTurret004
+    4300050: crab_leTurret003
+    4300052: crab_leTurret002
+    4300054: crab_rTurret016
+    4300056: crab_leTurret012
+    4300058: crab_leTurret016
+    4300060: crab_rTurret0014
+    4300062: crab_rTurret013
+    4300064: crab_leTurret013
+    4300066: crab_leTurret014
+    4300068: crab_leTurret015
+    4300070: crab_leTurret001
+    4300072: crab_leTurret008
+    4300074: crab_leTurret009
+    4300076: crab_leTurret005
+    4300078: crab_leTurret006
+    4300080: crab_leTurret007
+    4300082: crab_rTurret007
+    4300084: crab_rTurret005
+    4300086: crab_rTurret009
+    4300088: crab_rTurret008
+    4300090: crab_rTurret006
+    7400000: walk
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: polySurface1
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 1
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 0
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths:
+    - controlsAndBones/crabMasterControl
+    clipAnimations:
+    - serializedVersion: 16
+      name: walk
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 3300
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: meshAndIK
+        weight: 1
+      - path: meshAndIK/r_backIK
+        weight: 1
+      - path: meshAndIK/r_midBackIK
+        weight: 1
+      - path: meshAndIK/r_midForeIK
+        weight: 1
+      - path: meshAndIK/r_foreIK
+        weight: 1
+      - path: meshAndIK/l_foreIK
+        weight: 1
+      - path: meshAndIK/l_midForeIK
+        weight: 1
+      - path: meshAndIK/l_midBackIK
+        weight: 1
+      - path: meshAndIK/l_backLegIK
+        weight: 1
+      - path: meshAndIK/polySurface1
+        weight: 1
+      - path: controlsAndBones
+        weight: 1
+      - path: controlsAndBones/crabMasterControl
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/l_backLegIK_ctrlGrp
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/l_backLegIK_ctrlGrp/l_backLegIK_ctrl
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/l_backLegIK_ctrlGrp/l_backLegIK_ctrl/l_backLegFootIK_ctrl
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/l_backLeg3
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/l_backLeg3/controlHandle
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/l_backLeg3/controlHandle/controlHandle1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/l_backLeg4
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/l_backLeg4/controlHandle 1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/l_backLeg4/controlHandle 1/controlHandle1
+          1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/l_backLeg5
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/l_backLeg5/controlHandle 2
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/l_backLeg5/controlHandle 2/controlHandle1
+          2
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/l_backLeg6
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/l_backLeg6/controlHandle 3
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/l_backLeg6/controlHandle 3/controlHandle1
+          3
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/l_backLeg7
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/l_backLeg7/controlHandle 4
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/l_backLeg7/controlHandle 4/controlHandle1
+          4
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/l_backLeg8
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/l_backLeg8/controlHandle 5
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/l_backLeg8/controlHandle 5/group1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/l_backLeg8/controlHandle 5/group1/controlHandle1
+          6
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/l_backLeg9
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/l_backLeg9/controlHandle 6
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/l_backLeg9/controlHandle 6/controlHandle1
+          5
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/bodyControl
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/bodyControl/l_claw_1_ctrlGrp
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/bodyControl/l_claw_1_ctrlGrp/l_claw_1_ctrl
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/bodyControl/l_claw_1_ctrlGrp/l_claw_1_ctrl/l_claw_2_ctrlGrp
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/bodyControl/l_claw_1_ctrlGrp/l_claw_1_ctrl/l_claw_2_ctrlGrp/l_claw_2_ctrl
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/bodyControl/l_claw_1_ctrlGrp/l_claw_1_ctrl/l_claw_2_ctrlGrp/l_claw_2_ctrl/l_claw_3_ctrlGrp
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/bodyControl/l_claw_1_ctrlGrp/l_claw_1_ctrl/l_claw_2_ctrlGrp/l_claw_2_ctrl/l_claw_3_ctrlGrp/l_claw_3_ctrl
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/bodyControl/l_claw_1_ctrlGrp/l_claw_1_ctrl/l_claw_2_ctrlGrp/l_claw_2_ctrl/l_claw_3_ctrlGrp/l_claw_3_ctrl/l_claw_4_ctrlGrp
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/bodyControl/l_claw_1_ctrlGrp/l_claw_1_ctrl/l_claw_2_ctrlGrp/l_claw_2_ctrl/l_claw_3_ctrlGrp/l_claw_3_ctrl/l_claw_4_ctrlGrp/l_claw_4_ctrl
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/bodyControl/r_claw_1_ctrlGrp
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/bodyControl/r_claw_1_ctrlGrp/r_claw_1_ctrl
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/bodyControl/r_claw_1_ctrlGrp/r_claw_1_ctrl/r_claw_2_ctrlGrp
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/bodyControl/r_claw_1_ctrlGrp/r_claw_1_ctrl/r_claw_2_ctrlGrp/r_claw_2_ctrl
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/bodyControl/r_claw_1_ctrlGrp/r_claw_1_ctrl/r_claw_2_ctrlGrp/r_claw_2_ctrl/r_claw_2_ctrlGrp
+          1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/bodyControl/r_claw_1_ctrlGrp/r_claw_1_ctrl/r_claw_2_ctrlGrp/r_claw_2_ctrl/r_claw_2_ctrlGrp
+          1/r_claw_3_ctrl
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/bodyControl/r_claw_1_ctrlGrp/r_claw_1_ctrl/r_claw_2_ctrlGrp/r_claw_2_ctrl/r_claw_2_ctrlGrp
+          1/r_claw_3_ctrl/r_claw_4_ctrlGrp
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/bodyControl/r_claw_1_ctrlGrp/r_claw_1_ctrl/r_claw_2_ctrlGrp/r_claw_2_ctrl/r_claw_2_ctrlGrp
+          1/r_claw_3_ctrl/r_claw_4_ctrlGrp/r_claw_4_ctrl
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_midFront_leg_1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_midFront_leg_1/l_midFront_leg_2
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_midFront_leg_1/l_midFront_leg_2/l_midFront_leg_3
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_midFront_leg_1/l_midFront_leg_2/l_midFront_leg_3/l_midFront_leg_4
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_midFront_leg_1/l_midFront_leg_2/l_midFront_leg_3/l_midFront_leg_4/l_midFront_leg_end
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_front_leg_1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_front_leg_1/l_front_leg_2
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_front_leg_1/l_front_leg_2/l_front_leg_3
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_front_leg_1/l_front_leg_2/l_front_leg_3/l_front_leg_4
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_front_leg_1/l_front_leg_2/l_front_leg_3/l_front_leg_4/l_front_leg_end
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_midBack_leg_1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_midBack_leg_1/l_midBack_leg_2
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_midBack_leg_1/l_midBack_leg_2/l_midBack_leg_3
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_midBack_leg_1/l_midBack_leg_2/l_midBack_leg_3/l_midBack_leg_4
+          1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_midBack_leg_1/l_midBack_leg_2/l_midBack_leg_3/l_midBack_leg_4
+          1/l_midBack_leg_end 1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_back_leg_1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_back_leg_1/l_back_leg_2
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_back_leg_1/l_back_leg_2/l_back_leg_3
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_back_leg_1/l_back_leg_2/l_back_leg_3/l_midBack_leg_4
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_back_leg_1/l_back_leg_2/l_back_leg_3/l_midBack_leg_4/l_midBack_leg_end
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_claw_1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_claw_1/l_claw_2
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_claw_1/l_claw_2/l_claw_3
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_claw_1/l_claw_2/l_claw_3/l_claw_4
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_claw_1/l_claw_2/l_claw_3/l_claw_4/l_claw_thumb
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_mouth_1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_mouth_1/l_mouth_end
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_whisker_1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_whisker_1/l_whisker_end
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_eye_1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_eye_1/l_eye_end
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_antennae_1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/l_antennae_1/l_antennae_end
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_front_leg_1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_front_leg_1/r_front_leg_2
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_front_leg_1/r_front_leg_2/r_front_leg_3
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_front_leg_1/r_front_leg_2/r_front_leg_3/r_front_leg_4
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_front_leg_1/r_front_leg_2/r_front_leg_3/r_front_leg_4/r_front_leg_end
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_midFront_leg_1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_midFront_leg_1/r_midFront_leg_2
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_midFront_leg_1/r_midFront_leg_2/r_midFront_leg_3
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_midFront_leg_1/r_midFront_leg_2/r_midFront_leg_3/r_midFront_leg_4
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_midFront_leg_1/r_midFront_leg_2/r_midFront_leg_3/r_midFront_leg_4/r_midFront_leg_end
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_midBack_leg_1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_midBack_leg_1/r_midBack_leg_2
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_midBack_leg_1/r_midBack_leg_2/r_midBack_leg_3
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_midBack_leg_1/r_midBack_leg_2/r_midBack_leg_3/r_midBack_leg_4
+          1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_midBack_leg_1/r_midBack_leg_2/r_midBack_leg_3/r_midBack_leg_4
+          1/r_midBack_leg_end 1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_back_leg_1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_back_leg_1/r_back_leg_2
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_back_leg_1/r_back_leg_2/r_back_leg_3
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_back_leg_1/r_back_leg_2/r_back_leg_3/r_midBack_leg_4
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_back_leg_1/r_back_leg_2/r_back_leg_3/r_midBack_leg_4/r_midBack_leg_end
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_claw_1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_claw_1/r_claw_2
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_claw_1/r_claw_2/r_claw_3
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_claw_1/r_claw_2/r_claw_3/r_claw_4
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_claw_1/r_claw_2/r_claw_3/r_claw_4/r_claw_thumb
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_mouth_1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_mouth_1/r_mouth_end
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_whisker_1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_whisker_1/r_whisker_end
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_eye_1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_eye_1/r_eye_end
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_antennae_1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/r_antennae_1/r_antennae_end
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_rudder
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_backTurret_body
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_backTurret_body/crab_backTurret_guns
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_frontTurret1_body
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_frontTurret1_body/crab_frontTurret1_guns
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_frontTurret2_body
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_frontTurret2_body/crab_frontTurret2_guns
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_rDish1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_rDish2
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_leDish2
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_leDish1
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_rTurret001
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_rTurret012
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/pCylinder225
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_rTurret0015
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_rTurret011
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_leTurret011
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_rTurret010
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_leTurret010
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_rTurret004
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_rTurret003
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_rTurret002
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_leTurret004
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_leTurret003
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_leTurret002
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_rTurret016
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_leTurret012
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_leTurret016
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_rTurret0014
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_rTurret013
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_leTurret013
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_leTurret014
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_leTurret015
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_leTurret001
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_leTurret008
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_leTurret009
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_leTurret005
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_leTurret006
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_leTurret007
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_rTurret007
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_rTurret005
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_rTurret009
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_rTurret008
+        weight: 1
+      - path: controlsAndBones/crabMasterControl/bodyControlGrp/Bonegroup/head6/crab_shipBody/crab_rTurret006
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

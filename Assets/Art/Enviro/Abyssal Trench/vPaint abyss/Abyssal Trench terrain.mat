@@ -1,0 +1,236 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Abyssal Trench terrain
+  m_Shader: {fileID: 4800000, guid: e3b5f1999e4c8394d8270680fab7b6f1, type: 3}
+  m_ShaderKeywords: _DETAIL_MULX2 _NORMALMAP
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailNormalMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 421dd1466e13ff6488660c5ed2ead7da, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ParallaxMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _OcclusionMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _EmissionMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailMask
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailAlbedoMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 63dc2667d403c0d4fba8d05263cdcdff, type: 3}
+          m_Scale: {x: 60, y: 60}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MetallicGlossMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Texture1
+        second:
+          m_Texture: {fileID: 2800000, guid: bc240daf92746b440b56f74b8123bb5e, type: 3}
+          m_Scale: {x: 80, y: 80}
+          m_Offset: {x: 14.71, y: 0}
+      data:
+        first:
+          name: _Texture2
+        second:
+          m_Texture: {fileID: 2800000, guid: bb1b9d0aa8abea64aa22e67f47c70832, type: 3}
+          m_Scale: {x: 25, y: 25}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Texture3
+        second:
+          m_Texture: {fileID: 2800000, guid: b768ac09aa046eb4d9c6b6f42872abb0, type: 3}
+          m_Scale: {x: 25, y: 25}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Texture1_Normal
+        second:
+          m_Texture: {fileID: 2800000, guid: 0611bd06f24108c40b3aea7670588d43, type: 3}
+          m_Scale: {x: 25, y: 25}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Texture2_Normal
+        second:
+          m_Texture: {fileID: 2800000, guid: 2982051f03b174445bda5ad7938773b2, type: 3}
+          m_Scale: {x: 25, y: 25}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Texture3_Normal
+        second:
+          m_Texture: {fileID: 2800000, guid: 4f9ad0ae7a0915f4ab8394f56f5727c1, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Heightmaps
+        second:
+          m_Texture: {fileID: 2800000, guid: c8061063afdb2f8488e7b6d0eeadd220, type: 3}
+          m_Scale: {x: 80, y: 80}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Illum1
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Illum2
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Illum3
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _SrcBlend
+        second: 1
+      data:
+        first:
+          name: _DstBlend
+        second: 0
+      data:
+        first:
+          name: _Cutoff
+        second: 0.5
+      data:
+        first:
+          name: _Parallax
+        second: 0.02
+      data:
+        first:
+          name: _ZWrite
+        second: 1
+      data:
+        first:
+          name: _Glossiness
+        second: 0
+      data:
+        first:
+          name: _BumpScale
+        second: 1
+      data:
+        first:
+          name: _OcclusionStrength
+        second: 1
+      data:
+        first:
+          name: _DetailNormalMapScale
+        second: 1
+      data:
+        first:
+          name: _UVSec
+        second: 0
+      data:
+        first:
+          name: _Mode
+        second: 0
+      data:
+        first:
+          name: _Metallic
+        second: 0
+      data:
+        first:
+          name: _Spec1
+        second: 0.305
+      data:
+        first:
+          name: _Gloss1
+        second: 0.732
+      data:
+        first:
+          name: _Spec2
+        second: 0.5
+      data:
+        first:
+          name: _Gloss2
+        second: 0.5
+      data:
+        first:
+          name: _Spec3
+        second: 0.5
+      data:
+        first:
+          name: _Gloss3
+        second: 0.5
+    m_Colors:
+      data:
+        first:
+          name: _EmissionColor
+        second: {r: 0, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _Color
+        second: {r: 0.44852942, g: 0.44852942, b: 0.44852942, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 0.5, g: 0.5, b: 0.5, a: 1}

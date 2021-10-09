@@ -1,0 +1,485 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: OceanCurrentBoss
+  m_Shader: {fileID: 200, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    RenderType: Transparent
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 6ae86ba6e72fb5a43b392b2c54264c80, type: 3}
+          m_Scale: {x: 3, y: 1}
+          m_Offset: {x: -168.49606, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _NormalMap
+        second:
+          m_Texture: {fileID: 2800000, guid: c9b0d2e393338ba45acb66c61e2c2f37, type: 3}
+          m_Scale: {x: 11, y: 1}
+          m_Offset: {x: 10.463398, y: 0}
+      data:
+        first:
+          name: _DetailNormalMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Cube
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ParallaxMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _OcclusionMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _EmissionMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailMask
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailAlbedoMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MetallicGlossMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MaskTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DiffuseMapSpecA
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _NormalTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ReflectionTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _HeightTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _HeightTexD
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _NormalTexD
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _HeightTexR
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _NormalTexR
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _CubeTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _FoamTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _WaveTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Reflection
+        second: 0.5
+      data:
+        first:
+          name: _SrcBlend
+        second: 1
+      data:
+        first:
+          name: _DstBlend
+        second: 10
+      data:
+        first:
+          name: _Cutoff
+        second: 0.5
+      data:
+        first:
+          name: _Shininess
+        second: 1.5
+      data:
+        first:
+          name: PixelSnap
+        second: 0
+      data:
+        first:
+          name: _Parallax
+        second: 0.02
+      data:
+        first:
+          name: _ZWrite
+        second: 0
+      data:
+        first:
+          name: _Glossiness
+        second: 0.819
+      data:
+        first:
+          name: _BumpScale
+        second: 1
+      data:
+        first:
+          name: _OcclusionStrength
+        second: 1
+      data:
+        first:
+          name: _DetailNormalMapScale
+        second: 1
+      data:
+        first:
+          name: _UVSec
+        second: 0
+      data:
+        first:
+          name: _Mode
+        second: 3
+      data:
+        first:
+          name: _Metallic
+        second: 0
+      data:
+        first:
+          name: _InvFade
+        second: 3
+      data:
+        first:
+          name: _EmissionGain
+        second: 0
+      data:
+        first:
+          name: _Alpha
+        second: 1
+      data:
+        first:
+          name: _Refraction
+        second: 0.031
+      data:
+        first:
+          name: _Transparency
+        second: 0.532
+      data:
+        first:
+          name: _SpecularIntensity
+        second: 0.671
+      data:
+        first:
+          name: _NormalIntensity
+        second: 1
+      data:
+        first:
+          name: _Gloss
+        second: 0.5
+      data:
+        first:
+          name: _FrezPow
+        second: 0.25
+      data:
+        first:
+          name: _FrezFalloff
+        second: 4
+      data:
+        first:
+          name: _EdgeAlpha
+        second: 1
+      data:
+        first:
+          name: _Metalics
+        second: 0.5
+      data:
+        first:
+          name: _OffsetX
+        second: 0
+      data:
+        first:
+          name: _OffsetY
+        second: 0
+      data:
+        first:
+          name: _DistanceX
+        second: 0
+      data:
+        first:
+          name: _DistanceY
+        second: 0
+      data:
+        first:
+          name: _WaveTimeX
+        second: 0
+      data:
+        first:
+          name: _WaveTimeY
+        second: 0
+      data:
+        first:
+          name: _NormalStrength
+        second: 0.5
+      data:
+        first:
+          name: _RefractStrength
+        second: 0.5
+      data:
+        first:
+          name: _EdgeFade
+        second: 1
+      data:
+        first:
+          name: _EdgeFoamFade
+        second: 1
+      data:
+        first:
+          name: _DepthFade
+        second: 1
+      data:
+        first:
+          name: _RefractFade
+        second: 1
+      data:
+        first:
+          name: _CausticsFade
+        second: 1
+      data:
+        first:
+          name: _shorelineScale
+        second: 1
+      data:
+        first:
+          name: _shorelineFrequency
+        second: 1
+      data:
+        first:
+          name: _shorelineSpeed
+        second: 1
+      data:
+        first:
+          name: _shorelineHeight
+        second: 1
+      data:
+        first:
+          name: _Tess
+        second: 4
+      data:
+        first:
+          name: _minDist
+        second: 10
+      data:
+        first:
+          name: _maxDist
+        second: 25
+      data:
+        first:
+          name: _suimono_uvx
+        second: 0
+      data:
+        first:
+          name: _suimono_uvy
+        second: 0
+      data:
+        first:
+          name: _foamScale
+        second: 1
+      data:
+        first:
+          name: _ShallowFoamAmt
+        second: 1
+      data:
+        first:
+          name: _HeightFoamAmt
+        second: 1
+      data:
+        first:
+          name: _HeightFoamHeight
+        second: 1
+      data:
+        first:
+          name: _HeightFoamSpread
+        second: 1
+      data:
+        first:
+          name: _ShallowFade
+        second: 1
+      data:
+        first:
+          name: _Distortion
+        second: 0
+      data:
+        first:
+          name: _ColorLevel
+        second: 0
+      data:
+        first:
+          name: _EdgeSize
+        second: 0
+      data:
+        first:
+          name: _ColorB
+        second: 0
+      data:
+        first:
+          name: _Size
+        second: 0
+    m_Colors:
+      data:
+        first:
+          name: _EmissionColor
+        second: {r: 0, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _SpecularColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _TintColor
+        second: {r: 0.13738105, g: 0.35325745, b: 0.5661765, a: 0.153}
+      data:
+        first:
+          name: _DiffuseColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _GlassColor
+        second: {r: 0, g: 1, b: 0.5862067, a: 1}
+      data:
+        first:
+          name: _BlendColor
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _OverlayColor
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ReflectionColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _SSSColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _FoamColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _CausticsColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _UnderwaterColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _shallowColor
+        second: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
+      data:
+        first:
+          name: _depthColor
+        second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
