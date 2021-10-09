@@ -1,0 +1,773 @@
+{
+    "version": 2.6,
+    "type": "NodeCanvas.BehaviourTrees.BehaviourTree",
+    "name": "BehaviourTree",
+    "translation": {
+        "x": -2546.0,
+        "y": -2537.0
+    },
+    "zoomFactor": 0.6088816,
+    "nodes": [
+        {
+            "_nodeColor": {
+                "r": 0.7490196,
+                "g": 0.4980392,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "_position": {
+                "x": 4954.979,
+                "y": 4616.514
+            },
+            "$type": "NodeCanvas.BehaviourTrees.Sequencer",
+            "$id": "2"
+        },
+        {
+            "_action": {
+                "destination": {
+                    "_name": "navTarget",
+                    "_targetVariableID": "fc5ecd24-2df5-49c6-9fe7-32a9600a66b9"
+                },
+                "startWaypoint": {
+                    "_name": "waypointTarget",
+                    "_targetVariableID": "c6e786a8-fd81-4133-8d01-e07673626f31"
+                },
+                "newRoute": {
+                    "_name": "currentRoute",
+                    "_targetVariableID": "677a678b-4671-44c5-848e-a0fa8a0d3f36"
+                },
+                "$type": "Diluvion.AI.SetRoute"
+            },
+            "_position": {
+                "x": 4830.573,
+                "y": 4703.629
+            },
+            "$type": "NodeCanvas.BehaviourTrees.ActionNode",
+            "$id": "3"
+        },
+        {
+            "repeaterMode": "RepeatUntil",
+            "repeatTimes": {
+                "_value": 1
+            },
+            "_position": {
+                "x": 5030.449,
+                "y": 4678.94
+            },
+            "$type": "NodeCanvas.BehaviourTrees.Repeater",
+            "$id": "8"
+        },
+        {
+            "_nodeColor": {
+                "r": 0.7490196,
+                "g": 0.4980392,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "_position": {
+                "x": 5030.534,
+                "y": 4735.62
+            },
+            "$type": "NodeCanvas.BehaviourTrees.Sequencer",
+            "$id": "10"
+        },
+        {
+            "_nodeColor": {
+                "r": 0.7490196,
+                "g": 0.4980392,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "_position": {
+                "x": 5082.91,
+                "y": 4915.314
+            },
+            "_comment": "Returns true when we have arrived, running otherwise.",
+            "$type": "NodeCanvas.BehaviourTrees.Sequencer",
+            "$id": "11"
+        },
+        {
+            "dynamic": true,
+            "_nodeColor": {
+                "r": 0.7019608,
+                "g": 1.0,
+                "b": 0.4980392,
+                "a": 1.0
+            },
+            "_position": {
+                "x": 4958.657,
+                "y": 4971.151
+            },
+            "_comment": "if we arrived",
+            "$type": "NodeCanvas.BehaviourTrees.Selector",
+            "$id": "12"
+        },
+        {
+            "_condition": {
+                "myRoute": {
+                    "_name": "currentRoute",
+                    "_targetVariableID": "677a678b-4671-44c5-848e-a0fa8a0d3f36"
+                },
+                "targetWP": {
+                    "_name": "waypointTarget",
+                    "_targetVariableID": "c6e786a8-fd81-4133-8d01-e07673626f31"
+                },
+                "checkDistance": {
+                    "_value": 5.0
+                },
+                "passedWPpercentage": {
+                    "_value": 0.9
+                },
+                "$type": "Diluvion.AI.ArrivedAtPoint"
+            },
+            "_position": {
+                "x": 4841.581,
+                "y": 5043.61
+            },
+            "_comment": "we havent arrived",
+            "$type": "NodeCanvas.BehaviourTrees.ConditionNode",
+            "$id": "13"
+        },
+        {
+            "dynamic": true,
+            "_nodeColor": {
+                "r": 0.7490196,
+                "g": 0.4980392,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "_position": {
+                "x": 5066.349,
+                "y": 5046.941
+            },
+            "_comment": "Set direction and throttle, otherwise steer",
+            "$type": "NodeCanvas.BehaviourTrees.Sequencer",
+            "$id": "19"
+        },
+        {
+            "_position": {
+                "x": 4849.612,
+                "y": 5140.627
+            },
+            "_name": "Set Direction to target point",
+            "$type": "NodeCanvas.BehaviourTrees.Optional",
+            "$id": "20"
+        },
+        {
+            "_action": {
+                "targetPos": {
+                    "_name": "waypointTarget",
+                    "_targetVariableID": "c6e786a8-fd81-4133-8d01-e07673626f31"
+                },
+                "direction": {
+                    "_name": "moveDirection",
+                    "_targetVariableID": "1974d376-d0b1-40ea-afd3-650cc31a0c51"
+                },
+                "$type": "NodeCanvas.Tasks.Actions.DirectionTo"
+            },
+            "_position": {
+                "x": 4852.133,
+                "y": 5177.273
+            },
+            "_comment": "sets the current direction vector",
+            "$type": "NodeCanvas.BehaviourTrees.ActionNode",
+            "$id": "21"
+        },
+        {
+            "dynamic": true,
+            "_nodeColor": {
+                "r": 0.7019608,
+                "g": 1.0,
+                "b": 0.4980392,
+                "a": 1.0
+            },
+            "_position": {
+                "x": 5112.196,
+                "y": 5304.2
+            },
+            "_comment": "Set preferred throttle",
+            "$type": "NodeCanvas.BehaviourTrees.Selector",
+            "$id": "25"
+        },
+        {
+            "dynamic": true,
+            "_nodeColor": {
+                "r": 0.7490196,
+                "g": 0.4980392,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "_position": {
+                "x": 4896.954,
+                "y": 5381.574
+            },
+            "_comment": "Collision throttle",
+            "$type": "NodeCanvas.BehaviourTrees.Sequencer",
+            "$id": "26"
+        },
+        {
+            "_condition": {
+                "checkDirection": {
+                    "_name": "moveDirection",
+                    "_targetVariableID": "1974d376-d0b1-40ea-afd3-650cc31a0c51"
+                },
+                "avoidVector": {
+                    "_name": "avoidVector",
+                    "_targetVariableID": "d394d4eb-5651-4890-9830-e3ff1a3ff408"
+                },
+                "crashDistance": {
+                    "_name": "crashDistance",
+                    "_targetVariableID": "8ad41de6-b922-4a87-a0ef-8e803772b68f"
+                },
+                "currentAvoidStatus": {
+                    "_value": "Nothing"
+                },
+                "_invert": true,
+                "$type": "Diluvion.AI.ShipAvoider"
+            },
+            "_position": {
+                "x": 4836.491,
+                "y": 5470.459
+            },
+            "_comment": "if we detect a collision",
+            "$type": "NodeCanvas.BehaviourTrees.ConditionNode",
+            "$id": "27"
+        },
+        {
+            "_action": {
+                "throttle": {
+                    "_value": "slow"
+                },
+                "request": {
+                    "_value": {
+                        "throttle": "slow"
+                    }
+                },
+                "$type": "Diluvion.AI.PerformThrottle"
+            },
+            "_position": {
+                "x": 4908.058,
+                "y": 5610.818
+            },
+            "_comment": "Set slow throttle",
+            "$type": "NodeCanvas.BehaviourTrees.ActionNode",
+            "$id": "33"
+        },
+        {
+            "dynamic": true,
+            "_nodeColor": {
+                "r": 0.7490196,
+                "g": 0.4980392,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "_position": {
+                "x": 5060.607,
+                "y": 5446.95
+            },
+            "_comment": "Arriving Throttle",
+            "$type": "NodeCanvas.BehaviourTrees.Sequencer",
+            "$id": "38"
+        },
+        {
+            "_condition": {
+                "checkTarget": {
+                    "_name": "waypointTarget",
+                    "_targetVariableID": "c6e786a8-fd81-4133-8d01-e07673626f31"
+                },
+                "distance": {
+                    "_value": 15.0
+                },
+                "$type": "NodeCanvas.Tasks.Conditions.CheckDistanceToGameObject"
+            },
+            "_position": {
+                "x": 4976.913,
+                "y": 5532.28
+            },
+            "_comment": "if we are closing in on the detination",
+            "$type": "NodeCanvas.BehaviourTrees.ConditionNode",
+            "$id": "39"
+        },
+        {
+            "_action": {
+                "throttle": {
+                    "_value": "half"
+                },
+                "request": {
+                    "_value": {
+                        "throttle": "half"
+                    }
+                },
+                "$type": "Diluvion.AI.PerformThrottle"
+            },
+            "_position": {
+                "x": 5231.343,
+                "y": 5534.445
+            },
+            "_comment": "set Half throttle",
+            "$type": "NodeCanvas.BehaviourTrees.ActionNode",
+            "$id": "43"
+        },
+        {
+            "_action": {
+                "throttle": {
+                    "_value": "full"
+                },
+                "request": {
+                    "_value": {
+
+                    }
+                },
+                "$type": "Diluvion.AI.PerformThrottle"
+            },
+            "_position": {
+                "x": 5272.389,
+                "y": 5392.13
+            },
+            "_comment": "Otherwise set max throttle",
+            "$type": "NodeCanvas.BehaviourTrees.ActionNode",
+            "$id": "48"
+        },
+        {
+            "_action": {
+                "direction": {
+                    "_name": "moveDirection",
+                    "_targetVariableID": "1974d376-d0b1-40ea-afd3-650cc31a0c51"
+                },
+                "avoidVector": {
+                    "_name": "avoidVector",
+                    "_targetVariableID": "d394d4eb-5651-4890-9830-e3ff1a3ff408"
+                },
+                "$type": "Diluvion.AI.AISteerAction"
+            },
+            "_position": {
+                "x": 5184.797,
+                "y": 5129.286
+            },
+            "_comment": "Go To point",
+            "$type": "NodeCanvas.BehaviourTrees.ActionNode",
+            "$id": "53"
+        },
+        {
+            "_action": {
+                "throttle": {
+                    "_value": "stop"
+                },
+                "request": {
+                    "_value": {
+                        "throttle": "stop"
+                    }
+                },
+                "$type": "Diluvion.AI.PerformThrottle"
+            },
+            "_position": {
+                "x": 5210.201,
+                "y": 4958.195
+            },
+            "_comment": "Arrived, Set null throttle",
+            "$type": "NodeCanvas.BehaviourTrees.ActionNode",
+            "$id": "57"
+        },
+        {
+            "_action": {
+                "routeMode": {
+
+                },
+                "routeToAdvance": {
+                    "_name": "currentRoute",
+                    "_targetVariableID": "677a678b-4671-44c5-848e-a0fa8a0d3f36"
+                },
+                "newWaypoint": {
+                    "_name": "waypointTarget",
+                    "_targetVariableID": "c6e786a8-fd81-4133-8d01-e07673626f31"
+                },
+                "$type": "Diluvion.AI.AdvanceRoute"
+            },
+            "_position": {
+                "x": 5145.78,
+                "y": 4781.726
+            },
+            "$type": "NodeCanvas.BehaviourTrees.ActionNode",
+            "$id": "62"
+        },
+        {
+            "_nodeColor": {
+                "r": 0.7490196,
+                "g": 0.4980392,
+                "b": 1.0,
+                "a": 1.0
+            },
+            "_position": {
+                "x": 4391.06,
+                "y": 4515.165
+            },
+            "$type": "NodeCanvas.BehaviourTrees.Sequencer",
+            "$id": "67"
+        },
+        {
+            "_position": {
+                "x": 4283.666,
+                "y": 4573.237
+            },
+            "$type": "NodeCanvas.BehaviourTrees.Inverter",
+            "$id": "68"
+        },
+        {
+            "_condition": {
+                "targetList": {
+                    "_name": "wanderTargets",
+                    "_targetVariableID": "b89aa3c0-1edf-4228-934f-4ec84d117fdc"
+                },
+                "$type": "NodeCanvas.Tasks.Conditions.ListIsEmpty"
+            },
+            "_position": {
+                "x": 4245.0,
+                "y": 4609.237
+            },
+            "$type": "NodeCanvas.BehaviourTrees.ConditionalEvaluator",
+            "$id": "69"
+        },
+        {
+            "_action": {
+                "ignoreTerrain": true,
+                "signaturesToLookFor": {
+                    "_value": [
+                        1
+                    ]
+                },
+                "range": {
+                    "_value": 99999.0
+                },
+                "foundSonars": {
+                    "_value": [],
+                    "_name": "wanderTargets",
+                    "_targetVariableID": "b89aa3c0-1edf-4228-934f-4ec84d117fdc"
+                },
+                "$type": "Diluvion.AI.GetSonarWithTags"
+            },
+            "_position": {
+                "x": 4249.293,
+                "y": 4669.987
+            },
+            "$type": "NodeCanvas.BehaviourTrees.ActionNode",
+            "$id": "72"
+        },
+        {
+            "_action": {
+                "actions": [
+                    {
+                        "targetList": {
+                            "_value": [],
+                            "_name": "wanderTargets",
+                            "_targetVariableID": "b89aa3c0-1edf-4228-934f-4ec84d117fdc"
+                        },
+                        "minTimesUntilRepick": {
+                            "_value": 2
+                        },
+                        "currentList": [],
+                        "removedList": [],
+                        "selected": {
+                            "_name": "_wanderTarget"
+                        },
+                        "$type": "NodeCanvas.Tasks.Actions.SetRandomTargetFromList`1[[Diluvion.Sonar.SonarStats, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+                    },
+                    {
+                        "inputComponent": {
+                            "_name": "_wanderTarget"
+                        },
+                        "output": {
+                            "_name": "navTarget",
+                            "_targetVariableID": "fc5ecd24-2df5-49c6-9fe7-32a9600a66b9"
+                        },
+                        "$type": "Diluvion.AI.GetComponentFromComponent`1[[UnityEngine.Transform, UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"
+                    }
+                ],
+                "$type": "NodeCanvas.Framework.ActionList"
+            },
+            "_position": {
+                "x": 4292.612,
+                "y": 4737.45
+            },
+            "$type": "NodeCanvas.BehaviourTrees.ActionNode",
+            "$id": "79"
+        }
+    ],
+    "connections": [
+        {
+            "_sourceNode": {
+                "$ref": "2"
+            },
+            "_targetNode": {
+                "$ref": "3"
+            },
+            "$type": "NodeCanvas.BehaviourTrees.BTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "2"
+            },
+            "_targetNode": {
+                "$ref": "8"
+            },
+            "$type": "NodeCanvas.BehaviourTrees.BTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "8"
+            },
+            "_targetNode": {
+                "$ref": "10"
+            },
+            "$type": "NodeCanvas.BehaviourTrees.BTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "10"
+            },
+            "_targetNode": {
+                "$ref": "11"
+            },
+            "$type": "NodeCanvas.BehaviourTrees.BTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "10"
+            },
+            "_targetNode": {
+                "$ref": "62"
+            },
+            "$type": "NodeCanvas.BehaviourTrees.BTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "11"
+            },
+            "_targetNode": {
+                "$ref": "12"
+            },
+            "$type": "NodeCanvas.BehaviourTrees.BTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "11"
+            },
+            "_targetNode": {
+                "$ref": "57"
+            },
+            "$type": "NodeCanvas.BehaviourTrees.BTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "12"
+            },
+            "_targetNode": {
+                "$ref": "13"
+            },
+            "$type": "NodeCanvas.BehaviourTrees.BTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "12"
+            },
+            "_targetNode": {
+                "$ref": "19"
+            },
+            "$type": "NodeCanvas.BehaviourTrees.BTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "19"
+            },
+            "_targetNode": {
+                "$ref": "20"
+            },
+            "$type": "NodeCanvas.BehaviourTrees.BTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "19"
+            },
+            "_targetNode": {
+                "$ref": "25"
+            },
+            "$type": "NodeCanvas.BehaviourTrees.BTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "19"
+            },
+            "_targetNode": {
+                "$ref": "53"
+            },
+            "$type": "NodeCanvas.BehaviourTrees.BTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "20"
+            },
+            "_targetNode": {
+                "$ref": "21"
+            },
+            "$type": "NodeCanvas.BehaviourTrees.BTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "25"
+            },
+            "_targetNode": {
+                "$ref": "26"
+            },
+            "$type": "NodeCanvas.BehaviourTrees.BTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "25"
+            },
+            "_targetNode": {
+                "$ref": "38"
+            },
+            "$type": "NodeCanvas.BehaviourTrees.BTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "25"
+            },
+            "_targetNode": {
+                "$ref": "48"
+            },
+            "$type": "NodeCanvas.BehaviourTrees.BTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "26"
+            },
+            "_targetNode": {
+                "$ref": "27"
+            },
+            "$type": "NodeCanvas.BehaviourTrees.BTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "26"
+            },
+            "_targetNode": {
+                "$ref": "33"
+            },
+            "$type": "NodeCanvas.BehaviourTrees.BTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "38"
+            },
+            "_targetNode": {
+                "$ref": "39"
+            },
+            "$type": "NodeCanvas.BehaviourTrees.BTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "38"
+            },
+            "_targetNode": {
+                "$ref": "43"
+            },
+            "$type": "NodeCanvas.BehaviourTrees.BTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "67"
+            },
+            "_targetNode": {
+                "$ref": "68"
+            },
+            "$type": "NodeCanvas.BehaviourTrees.BTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "67"
+            },
+            "_targetNode": {
+                "$ref": "79"
+            },
+            "$type": "NodeCanvas.BehaviourTrees.BTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "68"
+            },
+            "_targetNode": {
+                "$ref": "69"
+            },
+            "$type": "NodeCanvas.BehaviourTrees.BTConnection"
+        },
+        {
+            "_sourceNode": {
+                "$ref": "69"
+            },
+            "_targetNode": {
+                "$ref": "72"
+            },
+            "$type": "NodeCanvas.BehaviourTrees.BTConnection"
+        }
+    ],
+    "primeNode": {
+        "$ref": "2"
+    },
+    "canvasGroups": [
+        {
+            "name": "Move towards waypoint (waypointTarget)",
+            "rect": {
+                "xMin": 4823.055,
+                "yMin": 4877.443,
+                "xMax": 5412.854,
+                "yMax": 5704.959
+            }
+        },
+        {
+            "name": "Choose a NavTarget",
+            "rect": {
+                "xMin": 4239.023,
+                "yMin": 4468.523,
+                "xMax": 4583.179,
+                "yMax": 4847.142
+            }
+        },
+        {
+            "name": "Create and Advance the Path (navTarget)",
+            "rect": {
+                "xMin": 4824.018,
+                "yMin": 4572.798,
+                "xMax": 5263.771,
+                "yMax": 4851.011
+            }
+        },
+        {
+            "name": "Throttle Choice",
+            "rect": {
+                "xMin": 4826.223,
+                "yMin": 5273.255,
+                "xMax": 5401.187,
+                "yMax": 5692.728
+            }
+        },
+        {
+            "name": "Pathfind to navTarget",
+            "rect": {
+                "xMin": 4821.561,
+                "yMin": 4534.608,
+                "xMax": 5423.392,
+                "yMax": 5716.459
+            }
+        }
+    ],
+    "localBlackboard": {
+        "_name": "Local Blackboard",
+        "_variables": {
+
+        }
+    },
+    "derivedData": {
+        "repeat": true,
+        "$type": "NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"
+    }
+}
