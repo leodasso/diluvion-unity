@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a769fd867a2e94087365d81c754761, type: 3}
+  m_Name: item_int buff
+  m_EditorClassIdentifier: 
+  weight: 3
+  tags:
+  - {fileID: 11400000, guid: 7eb60f4a3d628794c9f198c4a871a150, type: 2}
+  - {fileID: 11400000, guid: bc47b89aa95e70a45b315f0ddf5fa34c, type: 2}
+  - {fileID: 11400000, guid: 33cc22134f619d24b8e87b878322b643, type: 2}
+  locKey: intBuff
+  niceName: Mind Pendant
+  description: Permanently increase <b>intelligence</b> of a crewmember by 1.
+  myColor: {r: 1, g: 0.80689657, b: 0, a: 1}
+  goldValue: 2000
+  size: 1
+  keyItem: 1
+  useable: 1
+  icon: {fileID: 21300084, guid: ed6c3d8af1a646f4eb5349bb23559f13, type: 3}
+  showDescription: 1
+  popupOnAcquire: 0
+  onAcquirePopup: {fileID: 0}
+  onAcquire:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  lowQty: 1
+  timesToWarn: 1
+  selectSailor: {fileID: 11400000, guid: 958bb7c119a0e514c92b3dd4a09775a1, type: 2}
+  statBuffedTitle: {fileID: 11400000, guid: b591a6377cf6f4749abde6de683c77ee, type: 2}
+  statBuffedDescription: {fileID: 11400000, guid: e1b1fca521fa7dd47872555432cf6bb5,
+    type: 2}
+  buffs: 1
+  statToBuff: {fileID: 11400000, guid: 27074db8b6073e54e8a998414105432a, type: 2}

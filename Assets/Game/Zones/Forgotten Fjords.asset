@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe5dc1cff92b9e84592f54a013f601d1, type: 3}
+  m_Name: Forgotten Fjords
+  m_EditorClassIdentifier: 
+  shallowestDepth: -200
+  scenes:
+  - forgotten_fjords
+  buildOnlyScenes: []
+  zoneName: {fileID: 11400000, guid: 7ae5faea4720386429865823d801b656, type: 2}
+  neutralExplorableTrack: 1
+  onZoneDiscovered:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  zone: 0
+  mapPrefab: {fileID: 182950, guid: dc4bb4705c054824db6e7282a6220ea9, type: 2}

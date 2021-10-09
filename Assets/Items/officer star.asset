@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b601fe6a3de39d48a4a70cde01a1418, type: 3}
+  m_Name: officer star
+  m_EditorClassIdentifier: 
+  weight: 1
+  tags:
+  - {fileID: 11400000, guid: 33cc22134f619d24b8e87b878322b643, type: 2}
+  - {fileID: 11400000, guid: 7eb60f4a3d628794c9f198c4a871a150, type: 2}
+  locKey: officer star
+  niceName: Officer's Star
+  description: A high honor among submarine officers. This star represents an officer's
+    ability to command sailors; as such, gaining a star means the officer's station
+    will be able to hold one more sailor.
+  myColor: {r: 1, g: 1, b: 1, a: 1}
+  goldValue: 2500
+  size: 1
+  keyItem: 1
+  useable: 1
+  icon: {fileID: 21300058, guid: 889336e5715a8cc4cb1f35ac86cb0e53, type: 3}
+  showDescription: 1
+  popupOnAcquire: 0
+  onAcquirePopup: {fileID: 0}
+  onAcquire:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  lowQty: 1
+  timesToWarn: 1
+  chooseOfficer: {fileID: 11400000, guid: 6f17128ec82f6904bbea4b1078c93d56, type: 2}
+  leveledUpTitle: {fileID: 11400000, guid: 4542fc0e34393604aab5872a0979e8be, type: 2}
+  leveledUpDescription: {fileID: 11400000, guid: 7fb842478c62ed945b295d85c1a7690e,
+    type: 2}

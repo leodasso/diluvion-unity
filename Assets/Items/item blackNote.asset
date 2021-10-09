@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf1dbcb00069fef4cb8133840537e736, type: 3}
+  m_Name: item blackNote
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  locKey: item black note
+  niceName: Black Note
+  description: What could this be?
+  myColor: {r: 1, g: 1, b: 1, a: 1}
+  goldValue: 4000
+  size: 1
+  keyItem: 1
+  useable: 0
+  icon: {fileID: 21300058, guid: ed6c3d8af1a646f4eb5349bb23559f13, type: 3}
+  showDescription: 1
+  popupOnAcquire: 0
+  onAcquirePopup: {fileID: 0}
+  onAcquire:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 185cbe9a16fdd734d80a19b2c1428761, type: 2}
+        m_MethodName: ProgressObjective
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 245d910f9185d81448a1431e16ed8bd6,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: Quests.DQuest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  lowQty: 1
+  timesToWarn: 1

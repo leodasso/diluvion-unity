@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bd7e1194b8e0434ca2c93fa94ed49d3, type: 3}
+  m_Name: kit pressure resist 200
+  m_EditorClassIdentifier: 
+  weight: 1
+  tags: []
+  locKey: kit pressure resist 200
+  niceName: Depth Upgrade
+  description: When added to a ship, increases the maximum depth by [d].
+  myColor: {r: 1, g: 1, b: 1, a: 1}
+  goldValue: 2000
+  size: 1
+  keyItem: 1
+  useable: 0
+  icon: {fileID: 21300060, guid: 4dd9d86c58367184fb17ecafe4cdf84b, type: 3}
+  showDescription: 0
+  popupOnAcquire: 0
+  onAcquirePopup: {fileID: 0}
+  onAcquire:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  lowQty: 1
+  timesToWarn: 1
+  synthesisMaterials:
+  - item: {fileID: 11400000, guid: 5376614784780ca459df33ea0a5c79c8, type: 2}
+    qty: 50
+  - item: {fileID: 11400000, guid: 3eb56a8acb33fa947ad0aa008dbe1bfe, type: 2}
+    qty: 25
+  - item: {fileID: 11400000, guid: 8b58d57b452a67243a7cf854c8c1c06c, type: 2}
+    qty: 15
+  canDismantle: 1
+  visuals: {fileID: 1636982612329376, guid: 19be804f1ef6b0d439daf0d50f302568, type: 2}
+  previewSprite: {fileID: 21300010, guid: e199a4ddb5fb79f44947a51df5451213, type: 3}
+  onePerShip: 0
+  extraDepth: 250
+  cantDismantlePopup: {fileID: 11400000, guid: a7f233958b592d346b9bb5576f1312d7, type: 2}

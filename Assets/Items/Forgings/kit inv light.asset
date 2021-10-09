@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db83420178d963940ba29f440cf3bcbf, type: 3}
+  m_Name: kit inv light
+  m_EditorClassIdentifier: 
+  weight: 1
+  tags: []
+  locKey: kit inv light
+  niceName: Inventory Upgrade
+  description: Increases inventory by [s] slots.
+  myColor: {r: 1, g: 1, b: 1, a: 1}
+  goldValue: 0
+  size: 1
+  keyItem: 1
+  useable: 0
+  icon: {fileID: 0}
+  showDescription: 0
+  popupOnAcquire: 0
+  onAcquirePopup: {fileID: 0}
+  onAcquire:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  lowQty: 1
+  timesToWarn: 1
+  synthesisMaterials:
+  - item: {fileID: 11400000, guid: d1e5271038de8934e9923b1b26791186, type: 2}
+    qty: 15
+  - item: {fileID: 11400000, guid: 52ecad3d9d5ecdc4cb8f46aece5cd232, type: 2}
+    qty: 2
+  - item: {fileID: 11400000, guid: 5376614784780ca459df33ea0a5c79c8, type: 2}
+    qty: 25
+  canDismantle: 1
+  visuals: {fileID: 1668068781819940, guid: a5c84f06d48858b49bf91d57ed016caf, type: 2}
+  previewSprite: {fileID: 21300006, guid: e199a4ddb5fb79f44947a51df5451213, type: 3}
+  onePerShip: 0
+  additionalSlots: 6

@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 719faf354077daf4a96a086704568d9e, type: 3}
+  m_Name: deep's protection
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  locKey: deeps_protection
+  niceName: Deep's Protection
+  description: A lofty name for something pumping out this much radiation. This upgrade
+    will keep a ship safe from Deep's Resentment, a hull-eating algae that inhabits
+    the Abyss.
+  myColor: {r: 1, g: 1, b: 1, a: 1}
+  goldValue: 0
+  size: 1
+  keyItem: 1
+  useable: 0
+  icon: {fileID: 0}
+  showDescription: 0
+  popupOnAcquire: 0
+  onAcquirePopup: {fileID: 0}
+  onAcquire:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  lowQty: 1
+  timesToWarn: 1
+  synthesisMaterials:
+  - item: {fileID: 11400000, guid: 51d02361312039545aac9f5b99c82928, type: 2}
+    qty: 10
+  canDismantle: 0
+  visuals: {fileID: 1636982612329376, guid: 19be804f1ef6b0d439daf0d50f302568, type: 2}
+  previewSprite: {fileID: 21300010, guid: e199a4ddb5fb79f44947a51df5451213, type: 3}
+  onePerShip: 1
+  mods: []
+  attachments:
+  - {fileID: 1997574816706298, guid: 284091877692ffd4cafa101f53c438de, type: 2}

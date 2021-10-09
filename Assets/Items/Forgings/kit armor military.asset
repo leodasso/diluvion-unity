@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb59f8b1ca19ac1428abf266285c86e7, type: 3}
+  m_Name: kit armor military
+  m_EditorClassIdentifier: 
+  weight: 1
+  tags:
+  - {fileID: 11400000, guid: 7eb60f4a3d628794c9f198c4a871a150, type: 2}
+  - {fileID: 11400000, guid: 1a3ae9573918ced4aa37a1a76305b581, type: 2}
+  locKey: kit armor heavy
+  niceName: Heavy Armor Upgrade
+  description: When applied to ship, increases max HP by [HP].
+  myColor: {r: 1, g: 1, b: 1, a: 1}
+  goldValue: 20000
+  size: 1
+  keyItem: 1
+  useable: 0
+  icon: {fileID: 0}
+  showDescription: 0
+  popupOnAcquire: 0
+  onAcquirePopup: {fileID: 0}
+  onAcquire:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  lowQty: 1
+  timesToWarn: 1
+  synthesisMaterials:
+  - item: {fileID: 11400000, guid: d1e5271038de8934e9923b1b26791186, type: 2}
+    qty: 150
+  - item: {fileID: 11400000, guid: 3eb56a8acb33fa947ad0aa008dbe1bfe, type: 2}
+    qty: 60
+  - item: {fileID: 11400000, guid: 73a391a504c33734c8eea199efb66c53, type: 2}
+    qty: 10
+  canDismantle: 1
+  visuals: {fileID: 1162901059591582, guid: bdc5f93fc36617e4bb6c8153facaac48, type: 2}
+  previewSprite: {fileID: 21300002, guid: e199a4ddb5fb79f44947a51df5451213, type: 3}
+  onePerShip: 0
+  HP: 16

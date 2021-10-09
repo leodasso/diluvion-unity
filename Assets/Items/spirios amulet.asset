@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf1dbcb00069fef4cb8133840537e736, type: 3}
+  m_Name: spirios amulet
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  locKey: item sp token
+  niceName: Spirios Amulet
+  description: 'A sign of respect among House Spirios. '
+  myColor: {r: 1, g: 1, b: 1, a: 1}
+  goldValue: 0
+  size: 1
+  keyItem: 1
+  useable: 0
+  icon: {fileID: 21300036, guid: 889336e5715a8cc4cb1f35ac86cb0e53, type: 3}
+  showDescription: 1
+  popupOnAcquire: 0
+  onAcquirePopup: {fileID: 0}
+  onAcquire:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: a83d21eb82785c04d9206a2ff79ce595, type: 2}
+        m_MethodName: ProgressObjective
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 5cb9a4ca5629dd344b008d4b50f7faa0,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: Quests.DQuest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  lowQty: 1
+  timesToWarn: 1

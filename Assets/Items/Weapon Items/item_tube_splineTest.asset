@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56c2e9e2438e0e842933211f2fd8ef0b, type: 3}
+  m_Name: item_tube_splineTest
+  m_EditorClassIdentifier: 
+  weight: 1
+  tags:
+  - {fileID: 11400000, guid: bc47b89aa95e70a45b315f0ddf5fa34c, type: 2}
+  - {fileID: 11400000, guid: a19c3b1064458a74599d872073c4a5f0, type: 2}
+  locKey: item tube angler
+  niceName: Angler
+  description: The standard launch mechanism for torpedoes.
+  myColor: {r: 1, g: 1, b: 1, a: 1}
+  goldValue: 100
+  size: 1
+  keyItem: 1
+  useable: 0
+  icon: {fileID: 21300096, guid: ed6c3d8af1a646f4eb5349bb23559f13, type: 3}
+  showDescription: 1
+  popupOnAcquire: 0
+  onAcquirePopup: {fileID: 0}
+  onAcquire:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  lowQty: 1
+  timesToWarn: 1
+  weaponIcon: {fileID: 21300352, guid: e043c51bfdc50fd42953c4b84b15bfc1, type: 3}
+  weapon: {fileID: 114993268161082204, guid: abc536059052ad241a7a9b34a0c65873, type: 2}
+  danger: 55
