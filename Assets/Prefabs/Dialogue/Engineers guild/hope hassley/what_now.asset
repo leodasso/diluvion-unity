@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: what_now
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 11400000, guid: 416bac5cb5b4b2b428cb2340a4e72bf7, type: 2}
+  triggeringQuestStatus: 0
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst:
+  - {fileID: 11400000, guid: 230b7940d990ddb478d10adcd9b1c196, type: 2}
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: what now
+  previewText: 'Player: What now?
+
+    Me: If you''re looking for more work, the <b>drill site</b> is always in need
+    of capable crews. Take this letter to Director Armostrong. @In return, I do hope
+    that we have an understanding about how embarrassing it would be should anyone
+    else hear about my grandson''s little indiscretion.'
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: What now?
+  speeches:
+  - locKey: dialog/hope hassley_Female__what now_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: If you're looking for more work, the <b>drill site</b> is always in need
+      of capable crews. I have written a letter of introduction to Director Armstrong
+      explaining your situation. @In return, I do hope that we have an understanding
+      about how embarrassing it would be should anyone else hear about my grandson's
+      little indiscretion.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 11400000, guid: 8b6237cdfa42f944abba5fdeae80b97d, type: 2}
+  postConvoActions:
+  - {fileID: 11400000, guid: 2fda74293ead2a9439776134d014df5e, type: 2}
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/hope hassley_Female__what now

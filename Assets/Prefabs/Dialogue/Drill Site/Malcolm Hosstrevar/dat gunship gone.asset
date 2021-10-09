@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: dat gunship gone
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 11400000, guid: ffeb66ffa18321c46854249558c2e08e, type: 2}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 11400000, guid: d9a5c789ca7eb1442b3f69eadc51f12f,
+    type: 2}
+  triggeringObjectiveStatus: 0
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: no more gunship
+  previewText: 'Player: That gunship won''t be giving you any more trouble.
+
+
+    Me: Good. I''m sick of these blasted Royals thinking they own the sea. @ Mankinds
+    time trapped in this icy hell will be over once and for all if we ever get through
+    this asshole of a glacier.'
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: That gunship won't be giving you any more trouble.
+  speeches:
+  - locKey: 
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Good. I'm sick of these blasted Royals thinking they own the sea. @ Mankinds
+      time trapped in this icy hell will be over once and for all if we ever get through
+      this asshole of a glacier.
+    animTool:
+      animationType: 0
+      animTag: 
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions:
+  - {fileID: 11400000, guid: 721ac97f9b750cf48b7576511ac908a4, type: 2}
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: ffeb66ffa18321c46854249558c2e08e, type: 2}
+        m_MethodName: CompleteQuest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: 

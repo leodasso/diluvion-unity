@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b624c9e0327790447b6e0c246081b78d, type: 3}
+  m_Name: items spoils tank
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  rollBool: 0
+  containedTypes:
+  - m_Name: DItem
+    m_AssemblyQualifiedName: Loot.DItem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - m_Name: DItemStatBuff
+    m_AssemblyQualifiedName: Loot.DItemStatBuff, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  lastRolledObject: {fileID: 11400000, guid: db5c488c06e07eb4da0932d88f2a67e7, type: 2}
+  entryToAdd: {fileID: 0}
+  tableEntries:
+  - {fileID: 11400000, guid: 3eb56a8acb33fa947ad0aa008dbe1bfe, type: 2}
+  - {fileID: 11400000, guid: db5c488c06e07eb4da0932d88f2a67e7, type: 2}
+  - {fileID: 11400000, guid: 28868c582ae5e6148a815ac42f484b49, type: 2}
+  - {fileID: 11400000, guid: 5376614784780ca459df33ea0a5c79c8, type: 2}
+  - {fileID: 11400000, guid: 73a391a504c33734c8eea199efb66c53, type: 2}
+  - {fileID: 11400000, guid: 6740b6ef69c9d3041a917fe8c5b67a7d, type: 2}
+  - {fileID: 11400000, guid: 053fe3c6a9ca086479a7fdafb1fa7765, type: 2}
+  rollTable:
+  - entry: {fileID: 11400000, guid: 3eb56a8acb33fa947ad0aa008dbe1bfe, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 73a391a504c33734c8eea199efb66c53, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 6740b6ef69c9d3041a917fe8c5b67a7d, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: db5c488c06e07eb4da0932d88f2a67e7, type: 2}
+    tableBonus: 50
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 28868c582ae5e6148a815ac42f484b49, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 5376614784780ca459df33ea0a5c79c8, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 053fe3c6a9ca086479a7fdafb1fa7765, type: 2}
+    tableBonus: 100
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  _lastRoll: 29
+  _totalWeight: 199
+  _currentWeight: 69
+  minDanger: 0
+  minValue: 3
+  typeList:
+  - toggled: 0
+    type:
+      m_Name: DItem
+      m_AssemblyQualifiedName: Loot.DItem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - toggled: 0
+    type:
+      m_Name: DItemStatBuff
+      m_AssemblyQualifiedName: Loot.DItemStatBuff, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

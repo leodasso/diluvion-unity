@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be297dffa14689940a6bb3fdb704b7cc, type: 3}
+  m_Name: player sonar module
+  m_EditorClassIdentifier: 
+  moduleName: {fileID: 11400000, guid: 1c8bfe880647ff04c9622440f3df71c1, type: 2}
+  installsStation: 1
+  stationPrefab: {fileID: 11451334, guid: cd7978fad0646ef40b2d0b1168894e63, type: 2}
+  shipMods:
+  - {fileID: 11400000, guid: b3579fcbe4824ff4290ae9e0c8a492c7, type: 2}
+  inputName: ping
+  dangerValue: 10
+  UI: {fileID: 11463164, guid: 55ac2013057a43a43acea995795cc501, type: 2}
+  pingPrefab: {fileID: 100000, guid: 5ea6909e18ab8d84eb5b15617f099e80, type: 2}
+  pingEffect: {fileID: 119450, guid: fc5e34d2ea0fae546846a1f7955d92ba, type: 2}
+  createsPingedEffects: 1
+  friendlyEffect: {fileID: 1165822140652156, guid: 5ba8e9a33cfe22042bedc0f7654254e7,
+    type: 2}
+  neutralEffect: {fileID: 119450, guid: fc5e34d2ea0fae546846a1f7955d92ba, type: 2}
+  hostileEffect: {fileID: 1675653561550732, guid: a6d1fc79047f0ae409bc32ea539a410a,
+    type: 2}
+  pingsQuestObjectives: 1
+  mainObjective: {fileID: 1527112650952268, guid: 0055ad859a1bfab4fb3fda901f2a09b7,
+    type: 2}
+  objective: {fileID: 1609470534053588, guid: 3f1258f961c9e4c4ba20a6cd98c467ff, type: 2}
+  playsEchoSound: 1
+  pingRange: 300
+  chargeSpeed: 1
+  maxCharge: 3
+  pingPower: 5
+  pingExpansionSpeed: 60

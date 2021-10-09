@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32aabd5c55471784e8604d81a7fa8f26, type: 3}
+  m_Name: IdleAI
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  description: "I will  until: \n \nI found or, was attacked or, heard an SOS or,
+    was hailed or, heard a Ping by a -1 i will , \n \n"
+  baseFactions: []
+  nonFactionRelations: []
+  patience: -5
+  bravery: 8
+  shipSteer: 0
+  weaponCrew: -9
+  defaultFight: {fileID: 11400000, guid: f2a8692a081f93d44800ce72aa25eed3, type: 2}
+  defaultFlee: {fileID: 11400000, guid: f2a8692a081f93d44800ce72aa25eed3, type: 2}
+  defaultMission: {fileID: 11400000, guid: f2a8692a081f93d44800ce72aa25eed3, type: 2}
+  reactions:
+  - targetContext: -1
+    reactionContext: -1
+    actionType: 0
+    overrideMission: {fileID: 0}
+    distanceImportance: 0
+    priorityMultiplier: 5555
+    actions: []
+    responses: []
+  designNotes: Long distance torpedo kiter

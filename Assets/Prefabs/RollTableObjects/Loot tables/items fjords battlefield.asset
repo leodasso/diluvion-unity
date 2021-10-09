@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b624c9e0327790447b6e0c246081b78d, type: 3}
+  m_Name: items fjords battlefield
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  rollBool: 0
+  containedTypes:
+  - m_Name: DItem
+    m_AssemblyQualifiedName: Loot.DItem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - m_Name: DItemStatBuff
+    m_AssemblyQualifiedName: Loot.DItemStatBuff, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - m_Name: DItemRepair
+    m_AssemblyQualifiedName: Loot.DItemRepair, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  lastRolledObject: {fileID: 11400000, guid: fb15aa187d20673449ccf940f44c312a, type: 2}
+  entryToAdd: {fileID: 0}
+  tableEntries:
+  - {fileID: 11400000, guid: 764362c5eb51c5d4cacb9a4c0dd87f88, type: 2}
+  - {fileID: 11400000, guid: 7a7268bc075241d4abd24a2443bd71ec, type: 2}
+  - {fileID: 11400000, guid: 3eb56a8acb33fa947ad0aa008dbe1bfe, type: 2}
+  - {fileID: 11400000, guid: 9ceebc6373384b240a819715613a6adf, type: 2}
+  - {fileID: 11400000, guid: 84d15b76a12fbc24880d3999d516c438, type: 2}
+  - {fileID: 11400000, guid: 09d6524da70d5e04690a1f89d9bbd62c, type: 2}
+  - {fileID: 11400000, guid: f71634a4bf50d6e4085ce70285ddd2ce, type: 2}
+  - {fileID: 11400000, guid: d1e5271038de8934e9923b1b26791186, type: 2}
+  - {fileID: 11400000, guid: a684c29195ce59a4b8cd4b0d5e8f8373, type: 2}
+  - {fileID: 11400000, guid: 73a391a504c33734c8eea199efb66c53, type: 2}
+  - {fileID: 11400000, guid: 6740b6ef69c9d3041a917fe8c5b67a7d, type: 2}
+  - {fileID: 11400000, guid: a74a416e7a288e345aa22d96240c7a5c, type: 2}
+  - {fileID: 11400000, guid: 1feb914e436ab174bb96a338c2925196, type: 2}
+  - {fileID: 11400000, guid: 5376614784780ca459df33ea0a5c79c8, type: 2}
+  - {fileID: 11400000, guid: 839a42c8559ccf343bdbcfd053aaaed7, type: 2}
+  - {fileID: 11400000, guid: ef31b40505a0c52428c4a832efdfa407, type: 2}
+  - {fileID: 11400000, guid: fb15aa187d20673449ccf940f44c312a, type: 2}
+  rollTable:
+  - entry: {fileID: 11400000, guid: 764362c5eb51c5d4cacb9a4c0dd87f88, type: 2}
+    tableBonus: 10
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 7a7268bc075241d4abd24a2443bd71ec, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 3eb56a8acb33fa947ad0aa008dbe1bfe, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 9ceebc6373384b240a819715613a6adf, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 5
+    totalResourcesSpent: 500
+  - entry: {fileID: 11400000, guid: 84d15b76a12fbc24880d3999d516c438, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 16
+    totalResourcesSpent: 160
+  - entry: {fileID: 11400000, guid: 09d6524da70d5e04690a1f89d9bbd62c, type: 2}
+    tableBonus: 5
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 1
+    totalResourcesSpent: 500
+  - entry: {fileID: 11400000, guid: f71634a4bf50d6e4085ce70285ddd2ce, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 16
+    totalResourcesSpent: 240
+  - entry: {fileID: 11400000, guid: d1e5271038de8934e9923b1b26791186, type: 2}
+    tableBonus: 30
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 35
+    totalResourcesSpent: 175
+  - entry: {fileID: 11400000, guid: a684c29195ce59a4b8cd4b0d5e8f8373, type: 2}
+    tableBonus: 13
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 13
+    totalResourcesSpent: 1560
+  - entry: {fileID: 11400000, guid: 73a391a504c33734c8eea199efb66c53, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 6740b6ef69c9d3041a917fe8c5b67a7d, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: a74a416e7a288e345aa22d96240c7a5c, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 1feb914e436ab174bb96a338c2925196, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 7
+    totalResourcesSpent: 105
+  - entry: {fileID: 11400000, guid: 5376614784780ca459df33ea0a5c79c8, type: 2}
+    tableBonus: 15
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 15
+    totalResourcesSpent: 45
+  - entry: {fileID: 11400000, guid: 839a42c8559ccf343bdbcfd053aaaed7, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 4
+    totalResourcesSpent: 600
+  - entry: {fileID: 11400000, guid: ef31b40505a0c52428c4a832efdfa407, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: fb15aa187d20673449ccf940f44c312a, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  _lastRoll: 190
+  _totalWeight: 195
+  _currentWeight: 195
+  minDanger: 0
+  minValue: 3
+  typeList:
+  - toggled: 0
+    type:
+      m_Name: DItem
+      m_AssemblyQualifiedName: Loot.DItem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - toggled: 0
+    type:
+      m_Name: DItemStatBuff
+      m_AssemblyQualifiedName: Loot.DItemStatBuff, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - toggled: 0
+    type:
+      m_Name: DItemRepair
+      m_AssemblyQualifiedName: Loot.DItemRepair, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

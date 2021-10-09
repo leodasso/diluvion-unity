@@ -1,0 +1,169 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b624c9e0327790447b6e0c246081b78d, type: 3}
+  m_Name: Explorables S Coast city ruins
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  rollBool: 0
+  containedTypes:
+  - m_Name: SpawnableEntry
+    m_AssemblyQualifiedName: Diluvion.Roll.SpawnableEntry, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - m_Name: ExplorableEntry
+    m_AssemblyQualifiedName: Diluvion.Roll.ExplorableEntry, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - m_Name: ShipBuild
+    m_AssemblyQualifiedName: Diluvion.AI.ShipBuild, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  lastRolledObject: {fileID: 0}
+  entryToAdd: {fileID: 0}
+  tableEntries:
+  - {fileID: 11400000, guid: 61d23ad4f1a7a5e4da818cef0dfe2de9, type: 2}
+  - {fileID: 11400000, guid: 787e1aff70212b3478011f0ff5736066, type: 2}
+  - {fileID: 11400000, guid: 627418d19fb035749bcd68f2de6dfc90, type: 2}
+  - {fileID: 11400000, guid: a1c57ec2f5bc4d3408a97d95c019a95b, type: 2}
+  - {fileID: 11400000, guid: 3a8e3708c12d96b4cb8f30fb10c1b03a, type: 2}
+  - {fileID: 11400000, guid: 5eeb31b67056b5e43883cea0fdbf6246, type: 2}
+  - {fileID: 11400000, guid: c0aa29dd731b6d241bd11265b16b6d0e, type: 2}
+  - {fileID: 11400000, guid: 3aecf98c8a9904b418d598c4cb6380de, type: 2}
+  - {fileID: 11400000, guid: 3a7438b9e6d757148963f7ea6bd823a6, type: 2}
+  - {fileID: 11400000, guid: 12805fc3646972049ad1cd505aa63157, type: 2}
+  - {fileID: 11400000, guid: 8f0df4af965161e49a2cffb76c8df493, type: 2}
+  - {fileID: 11400000, guid: a333d2df45f0bed418074bac29f58240, type: 2}
+  - {fileID: 11400000, guid: bfbb63806a9f0044cb3d5e8b726c7d41, type: 2}
+  - {fileID: 11400000, guid: 89176ca5b2a60fb419f171ba9642a999, type: 2}
+  - {fileID: 11400000, guid: ac181f4705efb8a4381b4ce4eed72e47, type: 2}
+  - {fileID: 11400000, guid: 66d5aee18835661499179d1afcc4db0a, type: 2}
+  rollTable:
+  - entry: {fileID: 11400000, guid: 61d23ad4f1a7a5e4da818cef0dfe2de9, type: 2}
+    tableBonus: 30
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 673
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 787e1aff70212b3478011f0ff5736066, type: 2}
+    tableBonus: 15
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 383
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 627418d19fb035749bcd68f2de6dfc90, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 151
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: a1c57ec2f5bc4d3408a97d95c019a95b, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 161
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 3a8e3708c12d96b4cb8f30fb10c1b03a, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 49
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 5eeb31b67056b5e43883cea0fdbf6246, type: 2}
+    tableBonus: 15
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 319
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: c0aa29dd731b6d241bd11265b16b6d0e, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 164
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 3aecf98c8a9904b418d598c4cb6380de, type: 2}
+    tableBonus: 15
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 144
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 3a7438b9e6d757148963f7ea6bd823a6, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 22
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 12805fc3646972049ad1cd505aa63157, type: 2}
+    tableBonus: 15
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 57
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 8f0df4af965161e49a2cffb76c8df493, type: 2}
+    tableBonus: 15
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 41
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: a333d2df45f0bed418074bac29f58240, type: 2}
+    tableBonus: 15
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 24
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: bfbb63806a9f0044cb3d5e8b726c7d41, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 89176ca5b2a60fb419f171ba9642a999, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: ac181f4705efb8a4381b4ce4eed72e47, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 66d5aee18835661499179d1afcc4db0a, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  _lastRoll: 170
+  _totalWeight: 246
+  _currentWeight: 186
+  minDanger: 0
+  minValue: 0
+  typeList:
+  - toggled: 0
+    type:
+      m_Name: SpawnableEntry
+      m_AssemblyQualifiedName: Diluvion.Roll.SpawnableEntry, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - toggled: 0
+    type:
+      m_Name: ExplorableEntry
+      m_AssemblyQualifiedName: Diluvion.Roll.ExplorableEntry, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - toggled: 0
+    type:
+      m_Name: ShipBuild
+      m_AssemblyQualifiedName: Diluvion.AI.ShipBuild, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

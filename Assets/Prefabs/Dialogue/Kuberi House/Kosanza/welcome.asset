@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: welcome
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: welcome
+  previewText: 
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: My lady...
+  speeches:
+  - locKey: dialog/Kosanza_Female__welcome_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Welcome. My brothers said you would be visiting soon, Son of Morgen. @We
+      hear some outlandish tales from our trading vessels about your Tear and how
+      she sails these waters without a crew. All false, I can tell you that.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kosanza_Female__welcome_sp_1_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: Do you know who took the Tear?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kosanza_Female__welcome_sp_2
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: The gods do not tell me. They will reveal it when they see fit.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kosanza_Female__welcome_sp_3_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: The Dweller Gods?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kosanza_Female__welcome_sp_4
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "Ha! I don\u2019t commune with the Dweller Gods. The beings I speak with
+      are far older and more powerful. Now tell me why you\u2019ve come."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kosanza_Female__welcome_sp_5_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: We need a lotus flower.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kosanza_Female__welcome_sp_6
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "The lotus has power over those hovering on the edge of limbo, yes. But
+      its flowers are precious - do you really expect me to give it to just anyone?
+      @I will only give a flower to outsiders if they possess a warrior\u2019s spirit."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kosanza_Female__welcome_sp_7_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: How do we prove that?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kosanza_Female__welcome_sp_8
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Simple. My <i>Naglfar</i>, the most powerful ship in my fleet, was stolen
+      away from me. @I want her back. @You may have seen the Naglfar already, as she's
+      so large she becomes part of the scenery. @Disable her so my ships can move
+      in to capture the vessel, and you will have your flower. Now leave. I grow bored
+      of you.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Kosanza_Female__welcome

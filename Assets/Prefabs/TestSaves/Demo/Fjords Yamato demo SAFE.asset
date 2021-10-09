@@ -1,0 +1,574 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f04696a747881544af249b08b4318cf, type: 3}
+  m_Name: Fjords Yamato demo SAFE
+  m_EditorClassIdentifier: 
+  importInventory: {fileID: 0}
+  importCrew: {fileID: 0}
+  importBridges: []
+  importButton: 0
+  saveD:
+    saveFileName: Fjords Yamato demo SAFE
+    playerName: Smith
+    savedCheckPoint: demo checkpoint
+    savedZones: 00000000
+    homeBaseLevel: 0
+    crewSaveData:
+    - crewName: Jay Treadwasser
+      generatedName: []
+      stats:
+      - 2
+      - 1
+      - 1
+      - 3
+      gender: 0
+      perkName: 
+      stationName: st_helm
+      controllerName: jay controller
+      dialogueName: Jay Treadwasser
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 0
+    - crewName: Jack
+      generatedName: []
+      stats:
+      - 1
+      - 1
+      - 1
+      - 1
+      gender: 0
+      perkName: 
+      stationName: st_helm
+      controllerName: royal sailor
+      dialogueName: Jack
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 5
+    - crewName: Kat Smith
+      generatedName: []
+      stats:
+      - 2
+      - 1
+      - 3
+      - 1
+      gender: 1
+      perkName: 
+      stationName: st_bolt
+      controllerName: Kat controller
+      dialogueName: Kat
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 0
+    - crewName: Gregory Hudson
+      generatedName: []
+      stats:
+      - 1
+      - 2
+      - 3
+      - 1
+      gender: 0
+      perkName: 
+      stationName: st_sonar
+      controllerName: gregory controller
+      dialogueName: Gregory
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 0
+    - crewName: 
+      generatedName:
+      - Kelli
+      - Jenkins
+      stats:
+      - 1
+      - 1
+      - 2
+      - 1
+      gender: 1
+      perkName: 
+      stationName: st_sonar
+      controllerName: youngFemaleIcer animator
+      dialogueName: generic_desperate_sailor
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 551
+    - crewName: 
+      generatedName:
+      - Robert
+      - Kim
+      stats:
+      - 1
+      - 1
+      - 1
+      - 1
+      gender: 0
+      perkName: 
+      stationName: st_helm
+      controllerName: Royal Jacob Male Controller
+      dialogueName: generic_Meek_Sailor
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 620
+    - crewName: 
+      generatedName:
+      - Gil
+      - Zeitmacher
+      stats:
+      - 1
+      - 1
+      - 1
+      - 1
+      gender: 0
+      perkName: 
+      stationName: st_bolt
+      controllerName: Royal Jacob Male Controller
+      dialogueName: generic_Meek_Sailor
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 559
+    - crewName: 
+      generatedName:
+      - Greg
+      - Zeitmacher
+      stats:
+      - 1
+      - 1
+      - 1
+      - 1
+      gender: 0
+      perkName: 
+      stationName: st_helm
+      controllerName: Male Icer animator
+      dialogueName: generic_Angry_Sailor
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 642
+    shipInventory:
+      locKey: Iron Minnow Inventory
+      invStrings:
+      - item air tank
+      - item air tank
+      - item air tank
+      - item air tank
+      - item air tank
+      - item air tank
+      - item air tank
+      - item air tank
+      - item air tank
+      - item air tank
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item map Fjords
+      - item air tank
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item crowbar
+      - item food
+      - item food
+      - item food
+      - item crowbar
+      - item food
+      - item food
+      - item food
+      - item crowbar
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item serpent emblem
+      - item reinforced plates
+      - item reinforced plates
+      - item reinforced plates
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item reinforced plates
+      - item reinforced plates
+      - item crowbar
+      - item reinforced plates
+      - item reinforced plates
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item reinforced plates
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item reinforced plates
+      - item reinforced plates
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item reinforced plates
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item reinforced plates
+      - item_repair kit
+      - item crowbar
+      - item crowbar
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item crowbar
+      - item reinforced plates
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item reinforced plates
+      - item crowbar
+      - item reinforced plates
+      - item reinforced plates
+      - item reinforced plates
+      - item crowbar
+      - item crowbar
+      - item food
+      - item food
+      - item food
+      - item crowbar
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_repair kit
+      - item crowbar
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item key
+      - item crowbar
+      - item morse radio
+      - item blackberry
+      - item blackberry
+      - item blackberry
+      - item blackberry
+      - item engine parts
+      - item engine parts
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_books
+      - item engine parts
+      - item engine parts
+      - item engine parts
+      - item engine parts
+      - item engine parts
+      - item crowbar
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item_books
+      - item engine parts
+      - item engine parts
+      - item_fishFossil
+      - item_fishFossil
+      - item engine parts
+      - item_royal_dinars
+      - item_royal_dinars
+      gold: 9773
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    savedInventories:
+    - locKey: Hidden Safe
+      invStrings: []
+      gold: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: Elegant Barrel
+      invStrings: []
+      gold: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: Brass Chest
+      invStrings: []
+      gold: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    itemsAcquired: []
+    savedQuests:
+    - locKey: letter of introduction
+      complete: 0
+      hidden: 1
+      contitionStatus: 00
+    - locKey: talkAlison
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: hireGreg
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: level2
+      complete: 0
+      hidden: 1
+      contitionStatus: 00
+    - locKey: dockToSocom
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: findDaybreak
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: iceCityPirate
+      complete: 0
+      hidden: 1
+      contitionStatus: 00
+    - locKey: hireKat
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: theDiveBar
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: aboutHassley
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: firstSailor
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: sos
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: getToTonnesburg
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: talkToHassley
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: items for hassley
+      complete: 1
+      hidden: 0
+      contitionStatus: 0000000000
+    - locKey: gettingPlates
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: morseRadio
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: engineParts
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    unsavedQuests: []
+    displayedQuestLocKey: 
+    indexOfShipBeingUsed: 0
+    savedShips:
+    - currentShipType: ship_ironMinnow
+      healthUpgrades: 0
+      depthUpgrades: 0
+      currentHealth: 15
+      appliedEmblemItem: item serpent emblem
+      testDepth: 0
+      knownLandmarks: []
+    captainTimeUpgrades: 0
+    knownLandmarks:
+    - lm_tykkdam
+    - lm_tonnesburg
+    - lm_frozenGiant
+    - lm_giantsseat
+    - lm_reinfjord
+    - lm_stavKirke
+    - lm_glassielberg
+    - lm_socomFjords
+    - lm_dragonsTongue
+    - lm_daybreak
+    tutorialsDone: 0
+    tutorialsCompleted:
+    - skip
+    debugSave: 0
+    resourceItemNames:
+    - item_scrapMetal
+    - item_air tank
+    - item food
+    - item air tank
+    bakeToFile: 0
+  readOnly: 1

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5c01d22a57858d4c8a64a65141c3c86, type: 3}
+  m_Name: ex sinking ice
+  m_EditorClassIdentifier: 
+  weight: 3
+  tags:
+  - {fileID: 11400000, guid: 227dcec2530bf1042b3eb2558f25efa1, type: 2}
+  - {fileID: 11400000, guid: 5bee1ff4e28ddca49b9f3fbfa16fe1af, type: 2}
+  - {fileID: 11400000, guid: bc47b89aa95e70a45b315f0ddf5fa34c, type: 2}
+  slotSize: 1.603
+  prefab: {fileID: 112336, guid: 5a38eb2c5c5c9bc4b841198ad912623f, type: 2}
+  resourceCost:
+    value: 0
+    danger: 0
+    hazardDanger: 0
+  ignoreSpawnerRotation: 1
+  positionSearches:
+  - {fileID: 11400000, guid: 467b40efa4959ec4e970d21ec6a4e81b, type: 2}
+  curves: {fileID: 11400000, guid: ea79cfae8ec147f4d89f4f0325e28158, type: 2}
+  goldValueMultiplier: 1
+  dangerMultiplier: 1

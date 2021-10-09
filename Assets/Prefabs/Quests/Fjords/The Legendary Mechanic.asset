@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a17f73243c12d7418fa26f028879ef8, type: 3}
+  m_Name: The Legendary Mechanic
+  m_EditorClassIdentifier: 
+  locKey: legendaryMechanic
+  sequential: 1
+  title: The Legendary Mechanic
+  description: Daniel Eritan tells you of a mechanic in Tonnesburg with the skill
+    to fortify your sub for deep diving.
+  prereqsToStart: []
+  objectiveCs:
+  - objective: {fileID: 11400000, guid: 2bc199f853e5f8c4cbacc54582249633, type: 2}
+    overrideName: 1
+    newName: Navigate to the Tonnesfjord Gate
+  - objective: {fileID: 11400000, guid: 2caf8334f6033454dbf4ff6d03dad6fd, type: 2}
+    overrideName: 1
+    newName: Navigate to the Tonnesfjord Gate
+  - objective: {fileID: 11400000, guid: 29607b9ee0177f64dbc75de91ee1ba58, type: 2}
+    overrideName: 1
+    newName: Navigate to the drill city, Tonnesburg
+  - objective: {fileID: 11400000, guid: 1b45beb41db8ba24abf1151723540a82, type: 2}
+    overrideName: 1
+    newName: Speak to Hassley

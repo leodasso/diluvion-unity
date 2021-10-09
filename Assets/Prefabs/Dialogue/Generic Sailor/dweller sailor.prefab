@@ -1,0 +1,1408 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: dweller sailor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -119.531876, y: -366.96475, z: 26.911282}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5bc224e94d4bd743b48051ef9224ff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullPortrait: {fileID: 0}
+  chatterPortrait: {fileID: 0}
+  gender: 1
+  dialogues:
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: dialog/dweller sailor_Female__hire me
+    titleText: hire me
+    question: Want to join up?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: You're lookin' t' get t' th' Endless Corridor? I'd better come with an'
+        make sure you don' upset th' Deep.
+      locKey: dialog/dweller sailor_Female__hire me_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 1
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 1
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 0
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 1
+    hideUntilPrevRead: 0
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: dialog/dweller sailor_Female__adventure
+    titleText: adventure
+    question: Welcome aboard.
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Th' Endless Corridor's a sacred place. Y' can't just swim in there an'
+        expect things t' go well.
+      locKey: dialog/dweller sailor_Female__adventure_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 1
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: dockToSocom
+      questStatus: 2
+      secondaryStatus: 1
+      questStatus2: 1
+      helpString: '''dockToSocom'' must be NotStarted or InProgress for this to be
+        available.'
+    dialogueTriggers: []
+    locKey: dialog/dweller sailor_Female__excitement
+    titleText: excitement
+    question: '...?'
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "Y\u2019know the best thing \u2018bout being in th\u2019 Fjords? @There\u2019s
+        none of the dirt grade muck that passes for food in th\u2019 Abyss."
+      locKey: dialog/dweller sailor_Female__excitement_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 2
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 1
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: level2
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''level2'' must be Complete for this to be available.'
+    - questLocKey: talkArmstrong
+      questStatus: 2
+      secondaryStatus: 1
+      questStatus2: 1
+      helpString: '''talkArmstrong'' must be NotStarted or InProgress for this to
+        be available.'
+    dialogueTriggers: []
+    locKey: dialog/dweller sailor_Female__bigger better
+    titleText: bigger better
+    question: How about this new ship?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Nice bucket you picked up. @Don' see many proper adventurin' ships where
+        I'm from, 'cept when they're on their way to th' Endless Corridor.
+      locKey: dialog/dweller sailor_Female__bigger better_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 3
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: theCollapse
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''theCollapse'' must be Complete for this to be available.'
+    - questLocKey: passport
+      questStatus: 2
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''passport'' must be NotStarted for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/dweller sailor_Female__sucks man
+    titleText: sucks man
+    question: '...?'
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: I don' get it, Captain. Why'd they risk their lives an' disturbin' the
+        Deep?
+      locKey: dialog/dweller sailor_Female__sucks man_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 4
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: passport
+      questStatus: 1
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''passport'' must be InProgress for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/dweller sailor_Female__I'd trust a shark not t'eat bait more than
+      I'd trust them Royals.
+    titleText: I'd trust a shark not t'eat bait more than I'd trust them Royals.
+    question: 
+    speeches: []
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 1
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 1
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 5
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: passport
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''passport'' must be Complete for this to be available.'
+    - questLocKey: fountainOfHonour
+      questStatus: 2
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''fountainOfHonour'' must be NotStarted for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/dweller sailor_Female__size of crab
+    titleText: size of crab
+    question: Quite a battle, eh?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: We got used t'dealing with crabs in the Abyss. @Darn things cluster round
+        th' steam vents.
+      locKey: dialog/dweller sailor_Female__size of crab_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 6
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: passport
+      questStatus: 1
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''passport'' must be InProgress for this to be available.'
+    dialogueTriggers: []
+    locKey: "dialog/dweller sailor_Female__We\u2019re finally leaving the Fjords?
+      Took you long enough..."
+    titleText: "We\u2019re finally leaving the Fjords? Took you long enough..."
+    question: Ready for the Sunken Coast?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: I don' like them Royals. @Think they're better n' us with their fancy
+        subs an' looted treasures.
+      locKey: "dialog/dweller sailor_Female__We\u2019re finally leaving the Fjords?
+        Took you long enough..._sp_0"
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 7
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: "dialog/dweller sailor_Female__I\u2019ll get straight t\u2019work patchin\u2019
+      things up. You look after Gregory."
+    titleText: "I\u2019ll get straight t\u2019work patchin\u2019 things up. You look
+      after Gregory."
+    question: 
+    speeches: []
+    text: 
+    textTriggers: tear1Dead
+    showWhen: 2
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 1
+    showChatter: 1
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 8
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: newEars
+      questStatus: 1
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''newEars'' must be InProgress for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/dweller sailor_Female__to the left
+    titleText: to the left
+    question: '...?'
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "May th\u2019 Deep guide Gregory back t\u2019 th\u2019 Dark Waters."
+      locKey: dialog/dweller sailor_Female__to the left_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 9
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: bounty1
+      questStatus: 1
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''bounty1'' must be InProgress for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/dweller sailor_Female__It's about time.
+    titleText: It's about time.
+    question: Ready for some bounties?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: A good, honest day's work's as much as anyone can hope for.
+      locKey: dialog/dweller sailor_Female__It's about time._sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 10
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 1
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: meetingCharles
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''meetingCharles'' must be Complete for this to be available.'
+    - questLocKey: level3sub
+      questStatus: 2
+      secondaryStatus: 1
+      questStatus2: 1
+      helpString: '''level3sub'' must be NotStarted or InProgress for this to be available.'
+    dialogueTriggers: []
+    locKey: "dialog/dweller sailor_Female__Good riddance t' those stuck up, whiney...
+      ahem, don\u2019 mind me."
+    titleText: "Good riddance t' those stuck up, whiney... ahem, don\u2019 mind me."
+    question: 
+    speeches: []
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 1
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 11
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: crippleNaglfar
+      questStatus: 1
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''crippleNaglfar'' must be InProgress for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/dweller sailor_Female__kuberi
+    titleText: kuberi
+    question: How was Kuberi?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "\u2018S all green in there. It don\u2019t feel right."
+      locKey: dialog/dweller sailor_Female__kuberi_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 12
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: crippleNaglfar
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''crippleNaglfar'' must be Complete for this to be available.'
+    - questLocKey: level3sub
+      questStatus: 2
+      secondaryStatus: 1
+      questStatus2: 1
+      helpString: '''level3sub'' must be NotStarted or InProgress for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/dweller sailor_Female__more money than sense.
+    titleText: more money than sense.
+    question: How about that <i>Naglfar</i>?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "T\u2019make somethin\u2019 like the <i>Naglfar</i>... I\u2019d say th\u2019
+        Royals got more money than sense, but everyone knew that already."
+      locKey: dialog/dweller sailor_Female__more money than sense._sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 13
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 1
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: level3sub
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''level3sub'' must be Complete for this to be available.'
+    - questLocKey: findSteelHammer
+      questStatus: 2
+      secondaryStatus: 1
+      questStatus2: 1
+      helpString: '''findSteelHammer'' must be NotStarted or InProgress for this to
+        be available.'
+    dialogueTriggers: []
+    locKey: dialog/dweller sailor_Female__abyss
+    titleText: abyss
+    question: Ready for the Abyss?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Back t' th' Abyss, then. Everyone ends up there in th' end, anyhow.
+      locKey: dialog/dweller sailor_Female__abyss_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 14
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 1
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: findCrevasseEdge
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''findCrevasseEdge'' must be Complete for this to be available.'
+    - questLocKey: findMiras
+      questStatus: 2
+      secondaryStatus: 1
+      questStatus2: 1
+      helpString: '''findMiras'' must be NotStarted or InProgress for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/dweller sailor_Female__crevasse edge
+    titleText: crevasse edge
+    question: Are there any other cities?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: What d' you mean 'where's th' other cities'? @The Abyss ain't your thrivin'
+        centre of commerce, y'know.
+      locKey: dialog/dweller sailor_Female__crevasse edge_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 15
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: dialog/dweller sailor_Female__Is no one else going to say anything about
+      that suspicious-looking cave?
+    titleText: Is no one else going to say anything about that suspicious-looking
+      cave?
+    question: 
+    speeches: []
+    text: 
+    textTriggers: strangeLure
+    showWhen: 2
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 1
+    showChatter: 1
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 16
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: findMiras
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''findMiras'' must be Complete for this to be available.'
+    - questLocKey: chapelOfDeep
+      questStatus: 2
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''chapelOfDeep'' must be NotStarted for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/dweller sailor_Female__miras
+    titleText: miras
+    question: What do you think about Miras?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Th' priests guide us with their knowin' and the word of th' Gods. Any
+        ship's luck to have 'em on board.
+      locKey: dialog/dweller sailor_Female__miras_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 17
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: dialog/dweller sailor_Female__We're in real trouble, Captain. Deep told
+      us never come lookin' for this place....
+    titleText: We're in real trouble, Captain. Deep told us never come lookin' for
+      this place....
+    question: 
+    speeches: []
+    text: 
+    textTriggers: skalle
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 1
+    showChatter: 1
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 77
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 18
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: dialog/dweller sailor_Female__paradise
+    titleText: paradise
+    question: '...'
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: I never saw anythin' so beautiful b'fore... the Deep must've sent us to
+        paradise...
+      locKey: dialog/dweller sailor_Female__paradise_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: ending
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 1
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 19
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  conversations:
+  - {fileID: 11400000, guid: 125aa2d511bdc3c448c316d91498f31e, type: 2}
+  - {fileID: 11400000, guid: 7b562886d1593e74a9387b273999324b, type: 2}
+  - {fileID: 11400000, guid: 36aee92be5c149e4da1f722f1c4292fe, type: 2}
+  - {fileID: 11400000, guid: ba570d037ecada44cbeab0ba66784c8b, type: 2}
+  - {fileID: 11400000, guid: 91581e37687bad44f9611d65639c41cb, type: 2}
+  - {fileID: 11400000, guid: 21fc0352f08b7ad468aa1f7a2c27d09f, type: 2}
+  - {fileID: 11400000, guid: 25fcbe68e3a66624f8d552fc4bea6329, type: 2}
+  - {fileID: 11400000, guid: e42e3e59422088345aa03d0e5c773ab3, type: 2}
+  - {fileID: 11400000, guid: 40ef33eff54871d468c1081c6d3732e5, type: 2}
+  - {fileID: 11400000, guid: 2da3bb09ede18d048a6c89a06602c41e, type: 2}
+  - {fileID: 11400000, guid: cb821ff10ec325248909f29bac55b1f4, type: 2}
+  - {fileID: 11400000, guid: 2bfbc7622a9c4124ca2ee6e05ae131cb, type: 2}
+  - {fileID: 11400000, guid: 4d4e7d99352cc134cbc57c23fde3e78f, type: 2}
+  - {fileID: 11400000, guid: dafa2e863d4e0bf45b87887c2bee3fc5, type: 2}
+  - {fileID: 11400000, guid: b3f293ed767849f41a9a555da45fcba3, type: 2}
+  - {fileID: 11400000, guid: d51bb0147ca52e4439efef9b48b61251, type: 2}
+  - {fileID: 11400000, guid: ab1580b859c6d6943b5d5ea6d294f80b, type: 2}
+  - {fileID: 11400000, guid: 1473ad4945d9fe14db3728bba90b78da, type: 2}
+  - {fileID: 11400000, guid: 5c3a05d085a518245b9a6ac717492e0b, type: 2}
+  - {fileID: 11400000, guid: 25519be10cd7f7f4ca6a5f2451c464b8, type: 2}
+  myCrew: {fileID: 0}
+  locKey: dialog/dweller sailor_Female_
+  selectable: 0
+  omitFromLoc: 0
+  lockLocKeys: 1
+  validDialogues: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1

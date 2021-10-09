@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2147c636f952b34c873c5fdf4b7a8c3, type: 3}
+  m_Name: tank angry crab
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  testLevel: 1
+  previewHp: 4
+  previewDanger: 10
+  displayName: Angry Crab
+  minMaxLevel: {x: 1, y: 7}
+  baseDanger: 10
+  firstTurn: 4
+  turnInterval: 3
+  minMaxHp: {x: 4, y: 13}
+  sprite: {fileID: 21300028, guid: 69fda1af55cbd08459f4f58585776d1e, type: 3}
+  reward: {fileID: 11400000, guid: ea1bb17d249210946b7188585bbb9558, type: 2}
+  attackSubjectOnly: 0
+  onNewSubject: 
+  introduction: "An angry crab aggressively crawls out from behind some panels.\r"
+  attack: "[haz] snips at the support beams!\r"
+  attackAction: {fileID: 11400000, guid: 797f02f19fdbc2d4a8af86e3af6374ad, type: 2}
+  defeat: '[haz] Scurries off!'
+  reactions:
+  - {fileID: 11400000, guid: 2a3184ad9fc12e44d999e1d666176c7e, type: 2}
+  - {fileID: 11400000, guid: 75159b385f30d99488173793a1b674eb, type: 2}
+  - {fileID: 11400000, guid: 486b27034c75aae40a3191a2b37fe6fb, type: 2}
+  - {fileID: 11400000, guid: 43facf718cfda814c8321770e86bee66, type: 2}
+  reactionsDescription: "\n[char] attempts to out-pace [haz]...\nDefense against Endurance:
+    [0.5 - 3.5] \n\n pass: [no loc]...and succeeds!\n fail: [no loc]...but [haz] is
+    too quick!\n[char] throws a stone to distract the [haz]...\n\n[char] lunges at
+    [haz] with a wrench...\nDefense against Strength: [0.5 - 3.5] \n\n pass: [no loc]...and
+    hits a weak spot!\n fail: [no loc]...but is countered with a giant claw!\n[char]
+    observes the pattern of [haz]'s attack...\nDefense against Perception: [0.5 -
+    3.5] \n\n pass: [no loc]... and manages to parry [haz]'s swing!\n fail: [no loc]...
+    but mistimes their step and is hurt by the [haz]'s blow!"
+  introSound: Play_Angry_Crab_INTRO
+  hitSound: Play_Angry_Crab_HIT
+  missSound: Play_Angry_Crab_MISS

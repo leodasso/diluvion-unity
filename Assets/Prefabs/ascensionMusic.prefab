@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &139574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 445936}
+  - 114: {fileID: 11403088}
+  - 114: {fileID: 11485186}
+  - 135: {fileID: 13520494}
+  - 114: {fileID: 11487054}
+  - 114: {fileID: 11492400}
+  m_Layer: 16
+  m_Name: ascensionMusic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &445936
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139574}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 84, y: 3408, z: 0}
+  m_LocalScale: {x: 1032.1039, y: 1032.104, z: 1032.104}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11403088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67496452ecfa7c04cbbedfe50e744e49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: 
+  useOtherObject: 0
+  groupGuid: f15c114725f5e640a52591bac9f9a758
+  valueGuid: c60453745402684a9ae7ce71dc4006d9
+  groupID: -1681041046
+  valueID: 1262789306
+--- !u!114 &11485186
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37a2955a019363245ac79811f4def334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventToCall: {fileID: 0}
+  eventToTrigger:
+    priority: 45
+    triggerTimes: 0
+    akGroup: 
+    akEvent: 
+    akGroupInt: 0
+    akEventInt: 0
+  dontChangeState: 0
+  setRtpc: 0
+  revertRTPC: 0
+  rtpcsToSet: []
+  oneShot: 0
+  onlyRemoveOnDisable: 0
+--- !u!114 &11487054
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d892f9be17b88143a1936e1beb7cf4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11492400
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2fd02593bffed46b043ea83cfd5b20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myAtmosphere:
+    fogColor: {r: 0.75735295, g: 0.75735295, b: 0.75735295, a: 1}
+    ambientLightColor: {r: 0.14613971, g: 0.26876274, b: 0.3897059, a: 1}
+    directionalLightColor: {r: 1, g: 0.9046653, b: 0.85294116, a: 1}
+    fogDist: {x: 10, y: 500}
+    bloomIntensity: 0.3
+    directionalLightIntensity: 1
+  transitionTime: 0.5
+  priority: -500
+--- !u!135 &13520494
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 139574}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 15
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 139574}
+  m_IsPrefabParent: 1

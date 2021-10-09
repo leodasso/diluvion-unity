@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: lucky_charm
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 11400000, guid: 8b6237cdfa42f944abba5fdeae80b97d, type: 2}
+  triggeringQuestStatus: 0
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: lucky charm
+  previewText: "Player: Did many people come here after the drill site icefall?\n\nMe:
+    Oh, it\u2019s you again, Captain. @I\u2019ve got me a fair few injured crewmen,
+    and they weren\u2019t even that close when the ice came down. You must \u2018ave
+    some lucky charm on you!"
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: Did many people come here after the drill site icefall?
+  speeches:
+  - locKey: dialog/guesthouse owner_Female__lucky charm_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "Oh, it\u2019s you again, Captain. @I\u2019ve got me a fair few injured
+      crewmen, and they weren\u2019t even that close when the ice came down. You must
+      \u2018ave some lucky charm on you!"
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/guesthouse owner_Female__lucky charm

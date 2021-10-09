@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: What_are_these_thing____
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 11400000, guid: 6ef24c25a1951e04ebefb1b6f5ecd3d9, type: 2}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 1
+  chatterShowsOnce: 1
+  titleText: What are these thing...?
+  previewText: "Chatter: What are these thing...?\nPlayer: Ready to go hunting?\n\nMe:
+    Always! I never hunted anything from the Abyss before!@ .... @What are these things,
+    exactly?\nJay Treadwasser: This is no joking matter, Kat. I\u2019ve seen what
+    these things have done to people\u2026 They\u2019re not of this world. @ Be on
+    alert."
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: Ready to go hunting?
+  speeches:
+  - locKey: dialog/Kat_Female__What are these thing...?_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Always! I never hunted anything from the Abyss before!@ .... @What are these
+      things, exactly?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kat_Female__What are these thing...?_sp_1_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: "This is no joking matter, Kat. I\u2019ve seen what these things have done
+      to people\u2026 They\u2019re not of this world. @ Be on alert."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Kat_Female__What are these thing...?

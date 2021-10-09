@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: stay_wit_me
+  m_EditorClassIdentifier: 
+  active: 0
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 1
+  chatterShowsOnce: 1
+  titleText: title here pls
+  previewText: 'Chatter: title here pls
+
+    Player: Can I convince you to stay on the crew?
+
+
+    Me: As much as quest to find the ultimate treasure sounds like something I''d
+    be in to, no. No, you really can''t, mate.'
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: Can I convince you to stay on the crew?
+  speeches:
+  - locKey: dialog/Hal Whistleweight_Male__title here pls_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: As much as quest to find the ultimate treasure sounds like something I'd
+      be in to, no. No, you really can't, mate.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Hal Whistleweight_Male__title here pls

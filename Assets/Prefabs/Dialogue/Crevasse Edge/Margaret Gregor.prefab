@@ -1,0 +1,344 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: Margaret Gregor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -119.531876, y: -366.96475, z: 26.911282}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5bc224e94d4bd743b48051ef9224ff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullPortrait: {fileID: 21300008, guid: 493729dc9c1098e48885d30a2ea75543, type: 3}
+  chatterPortrait: {fileID: 0}
+  gender: 1
+  dialogues:
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: dialog/Margaret Gregor_Female__ivans a good boy
+    titleText: ivans a good boy
+    question: '[Eavesdrop]'
+    speeches:
+    - subject: {fileID: 11400000, guid: 1e64e41284dcb1b4e90534cca122c233, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: You knew Ivan would be back?
+      locKey: dialog/Margaret Gregor_Female__ivans a good boy_sp_0_Kat Smith(Female)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "\u2018Course I did. @Ivan\u2019s a good boy, always sendin\u2019 us back
+        money an\u2019 food packages. The Deep\u2019s been good t\u2019 me, to bless
+        me with such a kind \u2018earted son."
+      locKey: dialog/Margaret Gregor_Female__ivans a good boy_sp_1
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11427280, guid: 91a3e4868d3b1c749b25c6e91f848ddd, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "Aye, that Ivan\u2019s def\u2019nitely blessed by Lun. @Th\u2019 moment
+        \u2018e were born, a host of <i>Lun\u2019s eyes</i> swarm right past our portholes."
+      locKey: dialog/Margaret Gregor_Female__ivans a good boy_sp_2_Nancy Gregor(Female)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11400000, guid: 1e64e41284dcb1b4e90534cca122c233, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "Lun\u2019s eyes?"
+      locKey: dialog/Margaret Gregor_Female__ivans a good boy_sp_3_Kat Smith(Female)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11430560, guid: ae100bcb18e4cb140a380e2a966792fc, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "Do you recall the creatures that attacked <b>Clifftop Gardens</b>? @
+        Well, there are other types here that all seem to work together, and one looks
+        like a giant eye with a tail.@ Um... I don\u2019t think my crew is interested
+        in my birth though, mother..."
+      locKey: dialog/Margaret Gregor_Female__ivans a good boy_sp_4_Ivan Gregor(Male)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "Oh, so you\u2019re all embarrassed by your own family now you learned
+        that fancy talk?@ You\u2019re not gonna put your immortal soul on th\u2019
+        line by disrespectin\u2019 us, are you?"
+      locKey: dialog/Margaret Gregor_Female__ivans a good boy_sp_5
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11430560, guid: ae100bcb18e4cb140a380e2a966792fc, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: No, mother...
+      locKey: dialog/Margaret Gregor_Female__ivans a good boy_sp_6_Ivan Gregor(Male)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "Din\u2019 think so! @Now, where did I put those baby photos?"
+      locKey: dialog/Margaret Gregor_Female__ivans a good boy_sp_7
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11430560, guid: ae100bcb18e4cb140a380e2a966792fc, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Ugh...
+      locKey: dialog/Margaret Gregor_Female__ivans a good boy_sp_8_Ivan Gregor(Male)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 2
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 0
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 1
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: dialog/Margaret Gregor_Female__luns eyes
+    titleText: luns eyes
+    question: "Why do you call the creatures <i>Lun\u2019s eyes</i>?"
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "You don\u2019t know th\u2019 tale? Well, when man sinned and Deep flooded
+        th\u2019 land, Lun created them to watch humanity for her, so\u2019s she could
+        guide us back to the righteous path and redeem us in Deep\u2019s eyes."
+      locKey: dialog/Margaret Gregor_Female__luns eyes_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 2
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 1
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 1
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: dialog/Margaret Gregor_Female__keep mlad safe
+    titleText: keep mlad safe
+    question: "So you\u2019re Ivan\u2019s mother?"
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "Ooh, you must be \u2018is Captain! Well aren\u2019t you a dear, keepin\u2019
+        my lad safe. @Deep bless you in your journeys!"
+      locKey: dialog/Margaret Gregor_Female__keep mlad safe_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 2
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 2
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  conversations:
+  - {fileID: 11400000, guid: 28cddbdf2b6fc5749a339435f8c883e0, type: 2}
+  - {fileID: 11400000, guid: 54070f9983e56c840bd35f520d3bc60f, type: 2}
+  - {fileID: 11400000, guid: 89024d58bc1a82341b77c849b1fb3c03, type: 2}
+  myCrew: {fileID: 0}
+  locKey: dialog/Margaret Gregor_Female_
+  selectable: 0
+  omitFromLoc: 0
+  lockLocKeys: 1
+  validDialogues: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a4a8c24289c5ae468bc34d82bb5d11e, type: 3}
+  m_Name: Lionfish Trader
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags:
+  - {fileID: 11400000, guid: 6d4cf5e8361e47b4e9e25e21acbde006, type: 2}
+  - {fileID: 11400000, guid: 1a3ae9573918ced4aa37a1a76305b581, type: 2}
+  prefab: {fileID: 146310, guid: 70b8267ab618c8d419a573b5b7717092, type: 2}
+  resourceCost:
+    value: 0
+    danger: 0
+  positionSearches: []
+  chassis: {fileID: 11400000, guid: 1d59093fd5939204f8680bb2bd25dbf1, type: 2}
+  shipBuildSettings:
+    sonarName: Lionfish Trader
+    dockable: 1
+    cull: 1
+    ignoreCurrents: 0
+    inventoryGenerator: {fileID: 11400000, guid: a44eac4740015ea4c9aed3213864635b,
+      type: 2}
+    toSetAsChild: []
+    newSignatures: []
+    crippledModels: []
+    destroyedObjects: []
+    loadout: {fileID: 11400000, guid: 54b0e8e3b1383a9479d4b77dcd7de343, type: 2}
+    personality: {fileID: 11400000, guid: 5306000fe955a6b4993f59fe98d66424, type: 2}
+    interior: {fileID: 0}
+    shipEmblem: {fileID: 0}
+    newFactions:
+    - {fileID: 11400000, guid: a247b553f54acac42b843a2fa3e26ace, type: 2}
+    - {fileID: 11400000, guid: c6e79a172c2da6440a81724f1db96541, type: 2}
+    newRelations: []
+    newReactions: []

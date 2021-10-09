@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2147c636f952b34c873c5fdf4b7a8c3, type: 3}
+  m_Name: lich amulet
+  m_EditorClassIdentifier: 
+  weight: 3
+  tags:
+  - {fileID: 11400000, guid: eb7d752002d322348aa84129c27fb5dc, type: 2}
+  - {fileID: 11400000, guid: c44fe841f21f92c468543f8eb9a079dd, type: 2}
+  - {fileID: 11400000, guid: 33cc22134f619d24b8e87b878322b643, type: 2}
+  - {fileID: 11400000, guid: 51adaa1d0d0c5d040bd3358449cb3c4f, type: 2}
+  testLevel: 10
+  previewHp: 5
+  previewDanger: 317
+  displayName: Cursed Amulet
+  minMaxLevel: {x: 1, y: 8}
+  baseDanger: 20
+  firstTurn: 1
+  turnInterval: 3
+  minMaxHp: {x: 1, y: 5}
+  sprite: {fileID: 21300032, guid: 69fda1af55cbd08459f4f58585776d1e, type: 3}
+  reward: {fileID: 11400000, guid: 76dc4912a92f6b94781a01428ae2bbc1, type: 2}
+  attackSubjectOnly: 1
+  onNewSubject: '[haz], still glowing angrily, jumps over to [subject] and entangles
+    them!'
+  introduction: Your party finds an amulet on a suspiciously mummified skeleton. [subject],
+    attracted to the ancient amulet, suddenly draws back in horror as it latches tightly
+    to them.
+  attack: '[haz] injects [subject] with a strange glowing fluid; they begin to shrivel
+    up as their eyes roll back.'
+  attackAction: {fileID: 11400000, guid: 45bf0f95472a2b84cb8275ff8a1652f0, type: 2}
+  defeat: "Your party manages to disable [haz]. It makes an awful mechanical howl
+    as it falls to the floor...\r"
+  reactions:
+  - {fileID: 11400000, guid: 4372dfcbc7cead542aabea2d44d328e5, type: 2}
+  - {fileID: 11400000, guid: a5bd3835fa7258440b7a8c3f59f77584, type: 2}
+  - {fileID: 11400000, guid: 923fdf8d9a4e720408eda4677d56cd7c, type: 2}
+  - {fileID: 11400000, guid: bf3f465eae494fa49a0c580ea8064b42, type: 2}
+  reactionsDescription: "\n[char] sees gems on the floor that might fit into the side
+    of [haz]...\nDefense against Perception: [0.5 - 5] \n\n pass: no loc\n fail: no
+    loc\n[char] attempts to slip out of [haz]'s grip...\nDefense against Endurance:
+    [0.5 - 5] \n\n pass: no loc\n fail: no loc\n[char] attempts to tear the amulet
+    off their wrist...\nDefense against Strength: [0.5 - 5] \n\n pass: no loc\n fail:
+    no loc\n[char] takes a deep breath and tries to uncouple the clasp on the side..\nDefense
+    against Intelligence: [0.5 - 5] \n\n pass: no loc\n fail: no loc"
+  introSound: Play_Cursed_Amulet_INTRO
+  hitSound: Play_Cursed_Amulet_HIT
+  missSound: Play_Cursed_Amulet_MISS

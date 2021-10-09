@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5941e9ff4f32cb4a8da7eec23b3e049, type: 3}
+  m_Name: fjords socom lm inv
+  m_EditorClassIdentifier: 
+  merchant: 0
+  unlimitedSize: 0
+  saves: 1
+  playerShipInventory: 0
+  allowedItems: []
+  restrictedPurchase: 0
+  sellPercentage: 0.9
+  buyPercentage: 0.5
+  restockTime: 30
+  goldPerRestock: 100
+  maxGold: 5000
+  createRandomOnAwake: 0
+  possibleItems: []
+  goldValueOfGeneration: 500
+  maxSize: 3
+  minRarity: 0.2
+  maxRarity: 0.5
+  startingItems:
+  - item: {fileID: 11400000, guid: 2d41d0d53c5da7442a8faf10e591a01c, type: 2}
+    qty: 1
+  - item: {fileID: 11400000, guid: 7a7268bc075241d4abd24a2443bd71ec, type: 2}
+    qty: 1
+  - item: {fileID: 11400000, guid: 9c751e2d947eb07428176171e69b3d8c, type: 2}
+    qty: 1

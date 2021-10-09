@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: you_look_familiar
+  m_EditorClassIdentifier: 
+  active: 0
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: you look familiar
+  previewText: 'Player: [listen in]
+
+
+    Me: Hey, mate. You look awful familiar.
+
+    Jay Treadwasser: I''m sorry, I don''t believe we''ve met before. @Welcome to the
+    ship.
+
+    Me: Hang on a sec... aren''t you the guy who did the signing in Tonnesburg not
+    too long ago?
+
+    Jay Treadwasser: What? No, not at all. @I can''t read.
+
+    Me: Mate... @I saw you with a book 2 minutes ago...
+
+    Jay Treadwasser: I like the pretty pictures. They do wonders for the soul.
+
+    Me: Whatever, mate. I don''t actually care what you do in your free time.
+
+    Jay Treadwasser: Pretty pictures... what am I saying?!'
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: '[listen in]'
+  speeches:
+  - locKey: dialog/Hal Whistleweight_Male__you look familiar_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Hey, mate. You look awful familiar.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Hal Whistleweight_Male__you look familiar_sp_1_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: I'm sorry, I don't believe we've met before. @Welcome to the ship.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Hal Whistleweight_Male__you look familiar_sp_2
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Hang on a sec... aren't you the guy who did the signing in Tonnesburg not
+      too long ago?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Hal Whistleweight_Male__you look familiar_sp_3_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: What? No, not at all. @I can't read.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Hal Whistleweight_Male__you look familiar_sp_4
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Mate... @I saw you with a book 2 minutes ago...
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Hal Whistleweight_Male__you look familiar_sp_5_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: I like the pretty pictures. They do wonders for the soul.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Hal Whistleweight_Male__you look familiar_sp_6
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Whatever, mate. I don't actually care what you do in your free time.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Hal Whistleweight_Male__you look familiar_sp_7_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: Pretty pictures... what am I saying?!
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Hal Whistleweight_Male__you look familiar

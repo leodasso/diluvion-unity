@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32aabd5c55471784e8604d81a7fa8f26, type: 3}
+  m_Name: Naglfar
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  description: "I will wander between towns until: \n \nI was attacked by a Enemy,
+    Friend, Interesting, UnInteresting i will circle around target and attack until
+    dead, \n \nI found or, heard an SOS or, was hailed or, heard a Ping by a Enemy
+    i will circle around target and attack until dead, \n \nI heard an SOS by a Friend,
+    Interesting i will investigate the place   , \n \n"
+  baseFactions: []
+  nonFactionRelations: []
+  patience: -5.6
+  bravery: 10
+  shipSteer: 0.4
+  weaponCrew: 4
+  defaultFight: {fileID: 11400000, guid: dfe1c537f6cead147b21f28fa62eb50d, type: 2}
+  defaultFlee: {fileID: 11400000, guid: dfe1c537f6cead147b21f28fa62eb50d, type: 2}
+  defaultMission: {fileID: 11400000, guid: 86efa00c2d009e94f82378c44fedade5, type: 2}
+  reactions:
+  - targetContext: 23
+    reactionContext: 1
+    actionType: 3
+    overrideMission: {fileID: 0}
+    distanceImportance: 0
+    priorityMultiplier: 12
+    actions: []
+    responses: []
+  - targetContext: 1
+    reactionContext: 30
+    actionType: 3
+    overrideMission: {fileID: 0}
+    distanceImportance: 0
+    priorityMultiplier: 10
+    actions: []
+    responses: []
+  - targetContext: 6
+    reactionContext: 16
+    actionType: 2
+    overrideMission: {fileID: 11400000, guid: 4dc2543695e993f4d9f99c5a5fcb8d3d, type: 2}
+    distanceImportance: 0
+    priorityMultiplier: 2
+    actions: []
+    responses: []
+  designNotes: Morgen's Tear Captain

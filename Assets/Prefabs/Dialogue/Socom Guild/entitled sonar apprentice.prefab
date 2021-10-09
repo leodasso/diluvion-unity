@@ -1,0 +1,198 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: entitled sonar apprentice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -119.531876, y: -366.96475, z: 26.911282}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5bc224e94d4bd743b48051ef9224ff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullPortrait: {fileID: 0}
+  chatterPortrait: {fileID: 21300018, guid: 8d40c07ce2a11834b9a467d5aa5dd95c, type: 3}
+  gender: 0
+  dialogues:
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: dialog/entitled sonar apprentice_Male__back in your capsule
+    titleText: back in your capsule
+    question: '...?'
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Did we say you could get out of your capsule? Were our instructions too
+        basic for you, fishbait?
+      locKey: dialog/entitled sonar apprentice_Male__back in your capsule_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11455608, guid: e2105ac4c024b51409c9e0de71771b4b, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Well... I...
+      locKey: dialog/entitled sonar apprentice_Male__back in your capsule_sp_1_Gregory
+        Hudson(Male)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: ' I have literally no idea what Farsteer sees in you. You''re going to
+        turn your ass around, swim back to the capsule, and stay there until Alison
+        says you can leave.'
+      locKey: dialog/entitled sonar apprentice_Male__back in your capsule_sp_2
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11455608, guid: e2105ac4c024b51409c9e0de71771b4b, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: I... I can't...
+      locKey: dialog/entitled sonar apprentice_Male__back in your capsule_sp_3_Gregory
+        Hudson(Male)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: What do you mean, you can't? How dumb are you?
+      locKey: dialog/entitled sonar apprentice_Male__back in your capsule_sp_4
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11455608, guid: e2105ac4c024b51409c9e0de71771b4b, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: There was an icefall.
+      locKey: dialog/entitled sonar apprentice_Male__back in your capsule_sp_5_Gregory
+        Hudson(Male)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Wait... an icefall?@ In the tunnel? @But...@ it was meant to be a joke,
+        ok? We were going to go back for you. @Really, we were!
+      locKey: dialog/entitled sonar apprentice_Male__back in your capsule_sp_6
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 2
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 0
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  conversations:
+  - {fileID: 11400000, guid: 47a3e098ee04e0d49b22cc3b974d6fa5, type: 2}
+  myCrew: {fileID: 0}
+  locKey: dialog/entitled sonar apprentice_Male_
+  selectable: 0
+  omitFromLoc: 0
+  lockLocKeys: 1
+  validDialogues: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Name
+      value: blank 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1

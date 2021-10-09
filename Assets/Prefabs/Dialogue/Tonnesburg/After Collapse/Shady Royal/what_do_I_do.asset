@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: what_do_I_do
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 11400000, guid: 03584cb43c9144c44acce70e4a9bdb00, type: 2}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst:
+  - {fileID: 11400000, guid: ac5600ce32b8b374c88027e1334fd70a, type: 2}
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: what do I do
+  previewText: 'Player: What do I have to do to get the passport?
+
+
+    Me: All you have to do is head over to the <b>City of Ice</b> and dive down to
+    the bottom!  We''ve hidden <b>a passport in an ancient shipwreck</b>; grab it
+    and go! @Easy, no?
+
+    Kat Smith: Captain, hey! Did you hear the guy in the top hat? I am so, so excited!
+    @We are so gonna be the first ones to the Endless Corridor!
+
+    Jay Treadwasser: ...'
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: What do I have to do to get the passport?
+  speeches:
+  - locKey: dialog/Shady Royal_Male__what do I do_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: All you have to do is head over to the <b>City of Ice</b> and dive down
+      to the bottom!  We've hidden <b>a passport in an ancient shipwreck</b>; grab
+      it and go! @Easy, no?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Shady Royal_Male__what do I do_sp_1_Kat Smith(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bb2d21ac0264df4b8249bcf945fc57f, type: 2}
+    text: Captain, hey! Did you hear the guy in the top hat? I am so, so excited!
+      @We are so gonna be the first ones to the Endless Corridor!
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Shady Royal_Male__what do I do_sp_2_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: '...'
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Shady Royal_Male__what do I do

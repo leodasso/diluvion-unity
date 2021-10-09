@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: upgrade my sub
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 1
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst:
+  - {fileID: 11400000, guid: 686d94d98ac06064c89f67641b6104b2, type: 2}
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: hassley the forger
+  previewText: 'Player: ...Can you upgrade my sub?
+
+    Me: Why yes I can!'
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: '...Can you upgrade my sub?'
+  speeches:
+  - locKey: dialog/john hassley_Male__hassley the forger_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Why yes I can!
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions:
+  - {fileID: 11400000, guid: 1e4933097c3b1c7448a0c9e2d4ea24d4, type: 2}
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/john hassley_Male__hassley the forger

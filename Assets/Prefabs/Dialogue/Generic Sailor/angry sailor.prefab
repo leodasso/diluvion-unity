@@ -1,0 +1,1318 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: angry sailor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -119.531876, y: -366.96475, z: 26.911282}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5bc224e94d4bd743b48051ef9224ff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullPortrait: {fileID: 0}
+  chatterPortrait: {fileID: 0}
+  gender: 0
+  dialogues:
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: dialog/angry sailor_Male__hire me
+    titleText: hire me
+    question: Want to join up?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: What? Me work for you? @... yeah, ok.
+      locKey: dialog/angry sailor_Male__hire me_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 1
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 1
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 0
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 1
+    hideUntilPrevRead: 0
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: dialog/angry sailor_Male__adventure
+    titleText: adventure
+    question: Welcome aboard.
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "This ship\u2019s such a scrap heap. When are we getting a real vessel?"
+      locKey: dialog/angry sailor_Male__adventure_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 1
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: dockToSocom
+      questStatus: 2
+      secondaryStatus: 1
+      questStatus2: 1
+      helpString: '''dockToSocom'' must be NotStarted or InProgress for this to be
+        available.'
+    dialogueTriggers: []
+    locKey: dialog/angry sailor_Male__excitement
+    titleText: excitement
+    question: You alright?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: I hate the sea, I hate enclosed spaces, and most of all I hate other people.
+        @Someone pass the grog.
+      locKey: dialog/angry sailor_Male__excitement_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 2
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 1
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: level2
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''level2'' must be Complete for this to be available.'
+    - questLocKey: talkArmstrong
+      questStatus: 2
+      secondaryStatus: 1
+      questStatus2: 1
+      helpString: '''talkArmstrong'' must be NotStarted or InProgress for this to
+        be available.'
+    dialogueTriggers: []
+    locKey: dialog/angry sailor_Male__bigger better
+    titleText: bigger better
+    question: What do you think of the new ship?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "This... this is the upgrade? @I\u2019ve worked on refuse subs that are
+        more luxurious than this..."
+      locKey: dialog/angry sailor_Male__bigger better_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 3
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: theCollapse
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''theCollapse'' must be Complete for this to be available.'
+    - questLocKey: passport
+      questStatus: 2
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''passport'' must be NotStarted for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/angry sailor_Male__morons
+    titleText: morons
+    question: '...'
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "Those bloody morons never learn. @You\u2019d think the most intelligent
+        people in the ocean would have more sense than to drill through a highly unstable
+        ice sheet."
+      locKey: dialog/angry sailor_Male__morons_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 4
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: passport
+      questStatus: 1
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''passport'' must be InProgress for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/angry sailor_Male__Go to the Endless Corridor? Have you lost it?
+      What do you mean that was the plan all along?!
+    titleText: Go to the Endless Corridor? Have you lost it? What do you mean that
+      was the plan all along?!
+    question: 
+    speeches: []
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 5
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: passport
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''passport'' must be Complete for this to be available.'
+    - questLocKey: fountainOfHonour
+      questStatus: 2
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''fountainOfHonour'' must be NotStarted for this to be available.'
+    dialogueTriggers: []
+    locKey: "dialog/angry sailor_Male__They\u2019ve got no right to throw a monster
+      like that at us!"
+    titleText: "They\u2019ve got no right to throw a monster like that at us!"
+    question: 
+    speeches: []
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 1
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 6
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: passport
+      questStatus: 1
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''passport'' must be InProgress for this to be available.'
+    dialogueTriggers: []
+    locKey: "dialog/angry sailor_Male__We\u2019re finally leaving the Fjords? Took
+      you long enough..."
+    titleText: "We\u2019re finally leaving the Fjords? Took you long enough..."
+    question: Ready for the Sunken Coast?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "I can\u2019t wait to go to the Sunken Coast \u2013 I hear they have a
+        magnificent freshwater fountain there!"
+      locKey: "dialog/angry sailor_Male__We\u2019re finally leaving the Fjords? Took
+        you long enough..._sp_0"
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 7
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: "dialog/angry sailor_Male__We\u2019re running away? Hey! We almost had
+      it cornered!"
+    titleText: "We\u2019re running away? Hey! We almost had it cornered!"
+    question: 
+    speeches: []
+    text: 
+    textTriggers: tear1Dead
+    showWhen: 2
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 1
+    showChatter: 1
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 8
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: newEars
+      questStatus: 1
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''newEars'' must be InProgress for this to be available.'
+    dialogueTriggers: []
+    locKey: "dialog/angry sailor_Male__I\u2019m going to hunt that ship down and destroy
+      it! Who\u2019s with me!"
+    titleText: "I\u2019m going to hunt that ship down and destroy it! Who\u2019s with
+      me!"
+    question: 
+    speeches: []
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 1
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 9
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: bounty1
+      questStatus: 1
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''bounty1'' must be InProgress for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/angry sailor_Male__It's about time.
+    titleText: It's about time.
+    question: Ready for some bounties?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "This is pure crap! We already proved ourselves, and now they\u2019re
+        sending us on errands?!"
+      locKey: dialog/angry sailor_Male__It's about time._sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 1
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 10
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 1
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: meetingCharles
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''meetingCharles'' must be Complete for this to be available.'
+    - questLocKey: level3sub
+      questStatus: 2
+      secondaryStatus: 1
+      questStatus2: 1
+      helpString: '''level3sub'' must be NotStarted or InProgress for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/angry sailor_Male__good riddance
+    titleText: good riddance
+    question: '...'
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "Good riddance. That Spirios lot are corrupt, spineless cowards. @Who
+        needs \u2018em?"
+      locKey: dialog/angry sailor_Male__good riddance_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 11
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: crippleNaglfar
+      questStatus: 1
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''crippleNaglfar'' must be InProgress for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/angry sailor_Male__kuberi
+    titleText: kuberi
+    question: '...You alright?'
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Plants... I hate plants. @That Kuberi courtyard left me sneezing like
+        a faulty engine.
+      locKey: dialog/angry sailor_Male__kuberi_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 12
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: crippleNaglfar
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''crippleNaglfar'' must be Complete for this to be available.'
+    - questLocKey: level3sub
+      questStatus: 2
+      secondaryStatus: 1
+      questStatus2: 1
+      helpString: '''level3sub'' must be NotStarted or InProgress for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/angry sailor_Male__Good sailing
+    titleText: Good sailing
+    question: That was a close call.
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "Who the hell\u2019d make something that\u2019s weakness is small ships?"
+      locKey: dialog/angry sailor_Male__Good sailing_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 13
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 1
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: level3sub
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''level3sub'' must be Complete for this to be available.'
+    - questLocKey: findSteelHammer
+      questStatus: 2
+      secondaryStatus: 1
+      questStatus2: 1
+      helpString: '''findSteelHammer'' must be NotStarted or InProgress for this to
+        be available.'
+    dialogueTriggers: []
+    locKey: dialog/angry sailor_Male__Fetch this, fetch that, get an upgrade. When
+      do we get a holiday?
+    titleText: Fetch this, fetch that, get an upgrade. When do we get a holiday?
+    question: 
+    speeches: []
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 1
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 14
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: findCrevasseEdge
+      questStatus: 1
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''findCrevasseEdge'' must be InProgress for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/angry sailor_Male__Point me in the direction of the bar.
+    titleText: Point me in the direction of the bar.
+    question: 
+    speeches: []
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 1
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 15
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: findMiras
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''findMiras'' must be Complete for this to be available.'
+    - questLocKey: chapelOfDeep
+      questStatus: 2
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''chapelOfDeep'' must be NotStarted for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/angry sailor_Male__miras
+    titleText: miras
+    question: What do you think about Miras?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "That priest fellow doesn't half like the sound of his own voice. @We
+        have two choices \u2013 ear plugs or duct tape."
+      locKey: dialog/angry sailor_Male__miras_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 16
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: dialog/angry sailor_Male__nothing
+    titleText: nothing
+    question: '...'
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "Well great. What a perfect waste of time this was. We got here, and found
+        there was nothing \u2013 can we go back now?"
+      locKey: dialog/angry sailor_Male__nothing_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: skalle
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 1
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 1
+    expired: 0
+    expireTime: 48
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 17
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: dialog/angry sailor_Male__Someone's spiked my damn mead again!
+    titleText: Someone's spiked my damn mead again!
+    question: 
+    speeches: []
+    text: 
+    textTriggers: ending
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 1
+    showChatter: 1
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 18
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  conversations:
+  - {fileID: 11400000, guid: ac81eb4a781ebeb4d99fade48cbb0839, type: 2}
+  - {fileID: 11400000, guid: bfa82f860c1132143a2167aa1362e2b4, type: 2}
+  - {fileID: 11400000, guid: 45a75765d10122c44bf35da89812223d, type: 2}
+  - {fileID: 11400000, guid: b5cee416fbe3bce42b8ec70165ce643f, type: 2}
+  - {fileID: 11400000, guid: 3412e8312d674764999cb5e874d94a47, type: 2}
+  - {fileID: 11400000, guid: 2af7b1a87831d634e81301d6d92220ce, type: 2}
+  - {fileID: 11400000, guid: 9389823a6440ae347ac85d72ac59f4ed, type: 2}
+  - {fileID: 11400000, guid: c9d7a77a0d933e049942c6ae4f8d24ce, type: 2}
+  - {fileID: 11400000, guid: 063ac4823a2b76c478f8671d81e31e1b, type: 2}
+  - {fileID: 11400000, guid: cbb26d40b2813a948a94b4a9bbcd192c, type: 2}
+  - {fileID: 11400000, guid: 8d41eeff44b03c94faf7ee631364ada0, type: 2}
+  - {fileID: 11400000, guid: 2e6a4ac580cf20145a6ddb045687d74e, type: 2}
+  - {fileID: 11400000, guid: ad11063b1b1f7c34a967ffa8278e88c7, type: 2}
+  - {fileID: 11400000, guid: 63c44621289778d478be733df9761229, type: 2}
+  - {fileID: 11400000, guid: 2a3c5d4ec5e3ebc49983250970148574, type: 2}
+  - {fileID: 11400000, guid: 87c65a10b80c6b2459015768982933a1, type: 2}
+  - {fileID: 11400000, guid: fc7b1fcc8d42c7343b8fa7336090c116, type: 2}
+  - {fileID: 11400000, guid: ca95439b69789da43900d3e49678cacd, type: 2}
+  - {fileID: 11400000, guid: e66fb131d59b38447927d396d21d2648, type: 2}
+  myCrew: {fileID: 0}
+  locKey: dialog/angry sailor_Male_
+  selectable: 0
+  omitFromLoc: 0
+  lockLocKeys: 1
+  validDialogues: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1

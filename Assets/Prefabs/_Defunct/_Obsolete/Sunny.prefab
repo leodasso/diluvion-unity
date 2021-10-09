@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: Sunny
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -119.531876, y: -366.96475, z: 26.911282}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5bc224e94d4bd743b48051ef9224ff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullPortrait: {fileID: 0}
+  chatterPortrait: {fileID: 0}
+  dialogues:
+  - subject: {fileID: 0}
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: 
+    titleText: M'lady.
+    question: 
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: '...You have a ship, right?  Look, I can''t say why but I need someone
+        to steal a submarine from the pirates.  Grand theft submarine, if you will.  What,
+        why would you take such a crazy job?  If you steal it, you keep it. I just
+        can''t have it in the hands of the pirates.<quest>(Grand Theft Submarine)'
+    text: 
+    textTriggers: 
+    showWhen: 2
+    urgent: 1
+    triggerOnly: 0
+    showChatter: 1
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+  - subject: {fileID: 0}
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: 
+    titleText: Hi.
+    question: 
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Just because we don't get many visitors doesn't mean I want to talk to
+        you.  Why don't you just talk to the merchant like everyone else does.
+    text: 
+    textTriggers: 
+    showWhen: 2
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 1
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+  - subject: {fileID: 0}
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: 
+    titleText: Hey, i...
+    question: 
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: I have nothing else to say.  Go away.  Shoo.
+    text: 
+    textTriggers: 
+    showWhen: 2
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 1
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+  - subject: {fileID: 0}
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: 
+    titleText: title here pls
+    question: 
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Searching for contacts...
+    text: 
+    textTriggers: 
+    showWhen: 2
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 1
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+  myCrew: {fileID: 0}
+  validDialogues: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1

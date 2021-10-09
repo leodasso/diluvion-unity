@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b624c9e0327790447b6e0c246081b78d, type: 3}
+  m_Name: table playerChaser captains
+  m_EditorClassIdentifier: 
+  weight: 1
+  tags: []
+  rollBool: 0
+  containedTypes:
+  - m_Name: Captain
+    m_AssemblyQualifiedName: Diluvion.AI.Captain, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  lastRolledObject: {fileID: 0}
+  entryToAdd: {fileID: 0}
+  tableEntries:
+  - {fileID: 11400000, guid: 414046553cc7f4e4a9d956df9b60c5c1, type: 2}
+  - {fileID: 11400000, guid: 79913eaf57fefa0408790af8ecd0013b, type: 2}
+  rollTable:
+  - entry: {fileID: 11400000, guid: 414046553cc7f4e4a9d956df9b60c5c1, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 79913eaf57fefa0408790af8ecd0013b, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  _lastRoll: 9
+  _totalWeight: 20
+  _currentWeight: 10
+  minDanger: 6
+  minValue: 0
+  typeList:
+  - toggled: 0
+    type:
+      m_Name: Captain
+      m_AssemblyQualifiedName: Diluvion.AI.Captain, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

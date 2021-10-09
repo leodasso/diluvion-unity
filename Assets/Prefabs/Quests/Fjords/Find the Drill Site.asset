@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a17f73243c12d7418fa26f028879ef8, type: 3}
+  m_Name: Find the Drill Site
+  m_EditorClassIdentifier: 
+  locKey: findingDrillSite
+  sequential: 1
+  title: Drilling the Ice
+  description: 
+  startAnotherQuest: 0
+  questToStart: {fileID: 0}
+  onQuestComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  prereqsToStart: []
+  objectiveCs:
+  - objective: {fileID: 11400000, guid: bb2941b3e0e140843a24550fba05bd56, type: 2}
+    overrideName: 1
+    newName: Speak to the drill site director
+  - objective: {fileID: 11400000, guid: 0848cdbbeac10ff4a8e7c4631573cdd6, type: 2}
+    overrideName: 1
+    newName: Help the drill site engineers
+  - objective: {fileID: 11400000, guid: 0a96d3b743ee613418279d0527b0a604, type: 2}
+    overrideName: 1
+    newName: Report to the director
+  - objective: {fileID: 11400000, guid: 2bc199f853e5f8c4cbacc54582249633, type: 2}
+    overrideName: 0
+    newName: 
+  - objective: {fileID: 11400000, guid: 469bed55253aedf47b56c28ae755ecb0, type: 2}
+    overrideName: 1
+    newName: Regroup at tonnesburg

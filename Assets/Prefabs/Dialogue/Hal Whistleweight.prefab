@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 400000}
+  - component: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: Hal Whistleweight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -119.531876, y: -366.96475, z: 26.911282}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5bc224e94d4bd743b48051ef9224ff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gender: 0
+  locKey: dialog/Hal Whistleweight_Male_
+  omitFromLoc: 0
+  lockLocKeys: 0
+  conversations:
+  - {fileID: 11400000, guid: 41eaf686d82bb39428d94a87666168c8, type: 2}
+  - {fileID: 11400000, guid: 31ee05ce59a2fc347a894c694438a6fd, type: 2}
+  - {fileID: 11400000, guid: eaa77a33129634c49b3a1551f3c7649d, type: 2}
+  - {fileID: 11400000, guid: f97ebd86412f93442b619e06677fe287, type: 2}
+  - {fileID: 11400000, guid: 2c9a7e0f052486e488dcb75def2763bf, type: 2}
+  - {fileID: 11400000, guid: aedf741816890664d800a83bcde8fc1e, type: 2}
+  - {fileID: 11400000, guid: 8588a2cb878e91448866b1c3b017cf73, type: 2}
+  - {fileID: 11400000, guid: 9f222ef2277daec4cadd4d7672179e13, type: 2}
+  - {fileID: 11400000, guid: 44ba5f317a167fe4fb1414469982bad0, type: 2}
+  - {fileID: 11400000, guid: b4ec73e2ca497f74380596ce76632bae, type: 2}
+  - {fileID: 11400000, guid: 8b8d8ceeb39ac1b4bb510c3f0ddbd7dd, type: 2}
+  - {fileID: 11400000, guid: f57581adeb29c47418b8f4064966beed, type: 2}
+  - {fileID: 11400000, guid: e809a66b63783f84d870bdef0449d3cd, type: 2}
+  manualAdded: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1

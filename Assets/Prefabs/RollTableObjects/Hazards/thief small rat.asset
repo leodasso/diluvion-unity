@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2147c636f952b34c873c5fdf4b7a8c3, type: 3}
+  m_Name: thief small rat
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  testLevel: 4
+  previewHp: 2
+  previewDanger: 32
+  displayName: Clumsy Rat
+  minMaxLevel: {x: 1, y: 4}
+  baseDanger: 6
+  firstTurn: 1
+  turnInterval: 3
+  minMaxHp: {x: 1, y: 2}
+  sprite: {fileID: 21300026, guid: 69fda1af55cbd08459f4f58585776d1e, type: 3}
+  reward: {fileID: 11400000, guid: 897a1b9957d631c41858f36d22cd31ce, type: 2}
+  attackSubjectOnly: 0
+  onNewSubject: 
+  introduction: A clumsy, filthy rat appears.
+  attack: '[haz] clumsily runs up and steals some gold from your party.'
+  attackAction: {fileID: 11400000, guid: cc071fe03cd43bc48850fa8cfa580a2b, type: 2}
+  defeat: '[haz], terrified, sneaks through a small crevasse.'
+  reactions:
+  - {fileID: 11400000, guid: ea17d259797cb6d4f99cec89b36bcdb7, type: 2}
+  - {fileID: 11400000, guid: 5da60bd41c9a6f74f8c389ff16124658, type: 2}
+  - {fileID: 11400000, guid: 7358238298c0eff4987ca291c270fa32, type: 2}
+  - {fileID: 11400000, guid: 846fcaf07a5e1674390dbfb721358075, type: 2}
+  - {fileID: 11400000, guid: 6b0aa3dc698e05542b07e396b35c7bbb, type: 2}
+  reactionsDescription: "\nFood: [char] throws the rat a food offering. \nweakness
+    to item blackberry for 10 damage.weakness to item crabMeat for 10 damage.weakness
+    to item food for 10 damage.weakness to item saffron for 10 damage.weakness to
+    item spirits for 10 damage.weakness to item turmeric for 10 damage.weakness to
+    item vanillaBean for 10 damage.weakness to item_wheat for 10 damage.\n[char] attempts
+    to remove [haz] as it runs up their leg...\nDefense against Endurance: [0.5 -
+    2] \n\n pass: no loc\n fail: no loc\n[char] attempts to mimic [haz]'s motions
+    to confuse it...\nDefense against Intelligence: [0.5 - 2] \n\n pass: no loc\n
+    fail: no loc\n[char] finds a pipe with holes in it and attempts to trap [haz]\nDefense
+    against Perception: [0.5 - 2] \n\n pass: no loc\n fail: no loc\n[char] uses a
+    discarded piece of lumber to swing at [haz]...\nDefense against Strength: [0.5
+    - 2] \n\n pass: no loc\n fail: no loc"
+  introSound: Play_Hungry_Rat_INTRO
+  hitSound: Play_Hungry_Rat_HIT
+  missSound: Play_Hungry_Rat_MISS

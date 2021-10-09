@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2147c636f952b34c873c5fdf4b7a8c3, type: 3}
+  m_Name: thief curious rat
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  testLevel: 4
+  previewHp: 3
+  previewDanger: 28
+  displayName: Crafty Rat
+  minMaxLevel: {x: 2, y: 8}
+  baseDanger: 6
+  firstTurn: 2
+  turnInterval: 3
+  minMaxHp: {x: 2, y: 6}
+  sprite: {fileID: 21300002, guid: 69fda1af55cbd08459f4f58585776d1e, type: 3}
+  reward: {fileID: 11400000, guid: 897a1b9957d631c41858f36d22cd31ce, type: 2}
+  attackSubjectOnly: 0
+  onNewSubject: 
+  introduction: "A large [haz] is very keen on the contents of your party's loot sack.
+    it seems attracted to shiny objects...\r"
+  attack: The rat, attracted by the rattling of loot, runs up their leg to search
+    for gold...
+  attackAction: {fileID: 11400000, guid: a032dc8b6e26b6c47bf1d4936a6d200c, type: 2}
+  defeat: "[haz] longingly glances at the loot one last time before fleeing.\r"
+  reactions:
+  - {fileID: 11400000, guid: d5093fa388ad01c48836e8bda357220f, type: 2}
+  - {fileID: 11400000, guid: 6b0aa3dc698e05542b07e396b35c7bbb, type: 2}
+  - {fileID: 11400000, guid: e11cd56b728d078428f6a5ef2fd3724a, type: 2}
+  - {fileID: 11400000, guid: bb1cd64a6d1d8424cb06bbb43de20672, type: 2}
+  - {fileID: 11400000, guid: ea17d259797cb6d4f99cec89b36bcdb7, type: 2}
+  reactionsDescription: "\n[char] tries to dodge around [haz] as it grabs for their
+    bag...\nDefense against Endurance: [0.5 - 4] \n\n pass: no loc\n fail: no loc\n[char]
+    uses a discarded piece of lumber to swing at [haz]...\nDefense against Strength:
+    [0.5 - 4] \n\n pass: no loc\n fail: no loc\n[char] uses the reflection on a mirror
+    to distract [haz]!\nDefense against Intelligence: [0.5 - 4] \n\n pass: no loc\n
+    fail: no loc\n[char] sees a large box and tries to trap [haz] underneath it....\nDefense
+    against Perception: [0.5 - 4] \n\n pass: no loc\n fail: no loc\n[char] presents
+    a delicious offering for [haz]...\nweakness to item blackberry for 5 damage.weakness
+    to item crabMeat for 5 damage.weakness to item food for 5 damage.weakness to item
+    saffron for 5 damage.weakness to item spirits for 5 damage.weakness to item turmeric
+    for 5 damage.weakness to item vanillaBean for 5 damage.weakness to item_wheat
+    for 5 damage."
+  introSound: Play_Curious_Rat_INTRO
+  hitSound: Play_Curious_Rat_HIT
+  missSound: Play_Curious_Rat_MISS

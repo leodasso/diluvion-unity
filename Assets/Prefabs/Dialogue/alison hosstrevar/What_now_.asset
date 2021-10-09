@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: What_now_
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 11400000, guid: 38e2a12da5a2525459ef08df0cc44c80, type: 2}
+  triggeringQuestStatus: 0
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 1
+  chatterShowsOnce: 1
+  titleText: What now?
+  previewText: 'Chatter: What now?
+
+    Player: What''s on your mind?
+
+    Me: Well, what do we do now? @I am not sacrificing myself!Jay Treadwasser: Stop
+    getting worked up. We''ll head to the nearest dock and think about what we should
+    do from there. @Er... where is that?@ Anyone?Ivan Gregor: Allow me. @We can head
+    for <b>Crevasse Edge</b>, not far from here.'
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: What's on your mind?
+  speeches:
+  - locKey: dialog/alison hosstrevar_Female__What now?_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Well, what do we do now? @I am not sacrificing myself!
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/alison hosstrevar_Female__What now?_sp_1_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: Stop getting worked up. We'll head to the nearest dock and think about what
+      we should do from there. @Er... where is that?@ Anyone?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/alison hosstrevar_Female__What now?_sp_2_Ivan Gregor(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bc2d561c5fb0644fb19ff35e3b9b7d1, type: 2}
+    text: Allow me. @We can head for <b>Crevasse Edge</b>, not far from here.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/alison hosstrevar_Female__What now?

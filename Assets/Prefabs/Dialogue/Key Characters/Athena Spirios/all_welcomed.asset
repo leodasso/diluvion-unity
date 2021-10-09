@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: all_welcomed
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 1
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 11400000, guid: 160f43bfb8bac0a4a9809234eac4179e, type: 2}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: all welcomed
+  previewText: "Player: [Athena is giving a speech]\n\nMe: Contestants: you are welcomed,
+    one and all, to the Great House Spirios. I am Athena Spirios, the head administrator.
+    @Today, you undertake your next step in reaching new depths.\nJason Fleet: Thank
+    you, Athena, I\u2019ll take it from here. Leave it to a Spirios Royal to suck
+    the fun out of an adventure, am I right?\nMe: ...\nJason Fleet: When I started
+    out as a young captain taking part in this very competition, I knew I had everything
+    to gain.@ Of course, you all know that I was forced to give up my race to glory
+    to save the lives of my fellow competitors, but you all still have the chance
+    to go on and become the first to reach the Endless Corridor. @Oh, and don\u2019t
+    forget to visit my store in the shopping quarter \u2013 competition members get
+    5% off!\nMe:  If you're quite done with the sales talk...  @In order to build
+    up your reputation, it will be mandatory to complete at least four bounties before
+    you will be allowed to take part in the next qualifying round. @I will be based
+    in the <b>Adventurer's Guild</b> for the duration of this stage of the competition
+    should you have any questions."
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: '[Athena is giving a speech]'
+  speeches:
+  - locKey: dialog/Athena Spirios_Female__all welcomed_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: 'Contestants: you are welcomed, one and all, to the Great House Spirios.
+      I am Athena Spirios, the head administrator. @Today, you undertake your next
+      step in reaching new depths.'
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Athena Spirios_Female__all welcomed_sp_1_Jason Fleet(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: adc0cebc7d44fae45ac7dd57a611ca50, type: 2}
+    text: "Thank you, Athena, I\u2019ll take it from here. Leave it to a Spirios Royal
+      to suck the fun out of an adventure, am I right?"
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Athena Spirios_Female__all welcomed_sp_2
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: '...'
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Athena Spirios_Female__all welcomed_sp_3_Jason Fleet(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: adc0cebc7d44fae45ac7dd57a611ca50, type: 2}
+    text: "When I started out as a young captain taking part in this very competition,
+      I knew I had everything to gain.@ Of course, you all know that I was forced
+      to give up my race to glory to save the lives of my fellow competitors, but
+      you all still have the chance to go on and become the first to reach the Endless
+      Corridor. @Oh, and don\u2019t forget to visit my store in the shopping quarter
+      \u2013 competition members get 5% off!"
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Athena Spirios_Female__all welcomed_sp_4
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: ' If you''re quite done with the sales talk...  @In order to build up your
+      reputation, it will be mandatory to complete at least four bounties before you
+      will be allowed to take part in the next qualifying round. @I will be based
+      in the <b>Adventurer''s Guild</b> for the duration of this stage of the competition
+      should you have any questions.'
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions:
+  - {fileID: 11400000, guid: 4939ab497b2b9094cbd51c57de441b89, type: 2}
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Athena Spirios_Female__all welcomed

@@ -1,0 +1,208 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b624c9e0327790447b6e0c246081b78d, type: 3}
+  m_Name: items spoils thief
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  rollBool: 0
+  containedTypes:
+  - m_Name: DItem
+    m_AssemblyQualifiedName: Loot.DItem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - m_Name: DItemStatBuff
+    m_AssemblyQualifiedName: Loot.DItemStatBuff, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  lastRolledObject: {fileID: 11400000, guid: b7aaa3e754b608045a2b9f2a206ff403, type: 2}
+  entryToAdd: {fileID: 0}
+  tableEntries:
+  - {fileID: 11400000, guid: 6d3833b494142c34bbfe4991630cd457, type: 2}
+  - {fileID: 11400000, guid: c712aa62063b32142ac74941f3866764, type: 2}
+  - {fileID: 11400000, guid: 2a0b68ef4dad4b94d91d3a1ce44182fb, type: 2}
+  - {fileID: 11400000, guid: 34bb64dd51af31442924ebd3e3afc858, type: 2}
+  - {fileID: 11400000, guid: fb15aa187d20673449ccf940f44c312a, type: 2}
+  - {fileID: 11400000, guid: 86c5eddb8a3c53d49b1cb0e51fb69ab3, type: 2}
+  - {fileID: 11400000, guid: 3a4c3ecd2e56cd34d8cc41166cf186cd, type: 2}
+  - {fileID: 11400000, guid: b8e9c1ef1e3b1bf4e88c6b33f4e3ead9, type: 2}
+  - {fileID: 11400000, guid: 21e1bff25b67e1c4384b12832e48bc27, type: 2}
+  - {fileID: 11400000, guid: 347d7116b27c7414a97f5395fa95a8b8, type: 2}
+  - {fileID: 11400000, guid: b7aaa3e754b608045a2b9f2a206ff403, type: 2}
+  - {fileID: 11400000, guid: 84d15b76a12fbc24880d3999d516c438, type: 2}
+  - {fileID: 11400000, guid: 8fd568dde9db0454b8343615d3e0fc63, type: 2}
+  - {fileID: 11400000, guid: 69185809b5754a043a9649fb52a6b0a7, type: 2}
+  - {fileID: 11400000, guid: cff7e3973b718d447b97c36fdefb2850, type: 2}
+  - {fileID: 11400000, guid: 5376614784780ca459df33ea0a5c79c8, type: 2}
+  - {fileID: 11400000, guid: f71634a4bf50d6e4085ce70285ddd2ce, type: 2}
+  - {fileID: 11400000, guid: d1e5271038de8934e9923b1b26791186, type: 2}
+  - {fileID: 11400000, guid: a684c29195ce59a4b8cd4b0d5e8f8373, type: 2}
+  - {fileID: 11400000, guid: 98c1c2d019f1c3c4990b778498b7aca5, type: 2}
+  - {fileID: 11400000, guid: a74a416e7a288e345aa22d96240c7a5c, type: 2}
+  - {fileID: 11400000, guid: 54f79ebed9cd03e4e9f9987462e368f8, type: 2}
+  - {fileID: 11400000, guid: c9c2f7779532dd44680eedd33a45eaeb, type: 2}
+  rollTable:
+  - entry: {fileID: 11400000, guid: 6d3833b494142c34bbfe4991630cd457, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 11
+    totalResourcesSpent: 13200
+  - entry: {fileID: 11400000, guid: c712aa62063b32142ac74941f3866764, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 4
+    totalResourcesSpent: 8000
+  - entry: {fileID: 11400000, guid: 2a0b68ef4dad4b94d91d3a1ce44182fb, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 32
+    totalResourcesSpent: 960
+  - entry: {fileID: 11400000, guid: 34bb64dd51af31442924ebd3e3afc858, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 17
+    totalResourcesSpent: 25500
+  - entry: {fileID: 11400000, guid: b8e9c1ef1e3b1bf4e88c6b33f4e3ead9, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 45
+    totalResourcesSpent: 3825
+  - entry: {fileID: 11400000, guid: b7aaa3e754b608045a2b9f2a206ff403, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 36
+    totalResourcesSpent: 21600
+  - entry: {fileID: 11400000, guid: 84d15b76a12fbc24880d3999d516c438, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 46
+    totalResourcesSpent: 460
+  - entry: {fileID: 11400000, guid: 8fd568dde9db0454b8343615d3e0fc63, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 10
+    totalResourcesSpent: 20000
+  - entry: {fileID: 11400000, guid: 69185809b5754a043a9649fb52a6b0a7, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 4
+    totalResourcesSpent: 2664
+  - entry: {fileID: 11400000, guid: cff7e3973b718d447b97c36fdefb2850, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 43
+    totalResourcesSpent: 4300
+  - entry: {fileID: 11400000, guid: f71634a4bf50d6e4085ce70285ddd2ce, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 36
+    totalResourcesSpent: 540
+  - entry: {fileID: 11400000, guid: d1e5271038de8934e9923b1b26791186, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 45
+    totalResourcesSpent: 225
+  - entry: {fileID: 11400000, guid: a684c29195ce59a4b8cd4b0d5e8f8373, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 30
+    totalResourcesSpent: 3600
+  - entry: {fileID: 11400000, guid: 98c1c2d019f1c3c4990b778498b7aca5, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 14
+    totalResourcesSpent: 6986
+  - entry: {fileID: 11400000, guid: a74a416e7a288e345aa22d96240c7a5c, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 11
+    totalResourcesSpent: 5500
+  - entry: {fileID: 11400000, guid: c9c2f7779532dd44680eedd33a45eaeb, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 8
+    totalResourcesSpent: 12000
+  - entry: {fileID: 11400000, guid: fb15aa187d20673449ccf940f44c312a, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 15
+    totalResourcesSpent: 11250
+  - entry: {fileID: 11400000, guid: 86c5eddb8a3c53d49b1cb0e51fb69ab3, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 8
+    totalResourcesSpent: 1600
+  - entry: {fileID: 11400000, guid: 3a4c3ecd2e56cd34d8cc41166cf186cd, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 18
+    totalResourcesSpent: 90
+  - entry: {fileID: 11400000, guid: 21e1bff25b67e1c4384b12832e48bc27, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 7
+    totalResourcesSpent: 70
+  - entry: {fileID: 11400000, guid: 347d7116b27c7414a97f5395fa95a8b8, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 12
+    totalResourcesSpent: 3996
+  - entry: {fileID: 11400000, guid: 5376614784780ca459df33ea0a5c79c8, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 9
+    totalResourcesSpent: 27
+  - entry: {fileID: 11400000, guid: 54f79ebed9cd03e4e9f9987462e368f8, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 8
+    totalResourcesSpent: 96
+  _lastRoll: 113
+  _totalWeight: 418
+  _currentWeight: 113
+  minDanger: 0
+  minValue: 3
+  typeList:
+  - toggled: 0
+    type:
+      m_Name: DItem
+      m_AssemblyQualifiedName: Loot.DItem, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - toggled: 0
+    type:
+      m_Name: DItemStatBuff
+      m_AssemblyQualifiedName: Loot.DItemStatBuff, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

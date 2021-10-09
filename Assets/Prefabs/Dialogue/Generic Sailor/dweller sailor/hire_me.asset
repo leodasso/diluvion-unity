@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: hire_me
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 1
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries:
+  - {fileID: 11400000, guid: e81db8b5f6e697643aa190337ba20207, type: 2}
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: hire me
+  previewText: 'Player: Want to join up?
+
+    Me: You''re lookin'' t'' get t'' th'' Endless Corridor? I''d better come with
+    an'' make sure you don'' upset th'' Deep.'
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: Want to join up?
+  speeches:
+  - locKey: dialog/dweller sailor_Female__hire me_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: You're lookin' t' get t' th' Endless Corridor? I'd better come with an'
+      make sure you don' upset th' Deep.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions:
+  - {fileID: 11400000, guid: 9fb72bcd0887fcc44b4d052939e12482, type: 2}
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/dweller sailor_Female__hire me

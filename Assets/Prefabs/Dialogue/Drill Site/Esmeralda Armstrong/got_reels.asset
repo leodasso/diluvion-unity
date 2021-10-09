@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: got_reels
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 11400000, guid: e716e45f1c7dd7441ac5b25f8f93b8be, type: 2}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 11400000, guid: 0ec029713df16c942af7c68668816a88,
+    type: 2}
+  triggeringObjectiveStatus: 0
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: reelss
+  previewText: 'Player: We have the items you asked for.
+
+
+    Me: And not a moment too soon. You''re not bad, captain.
+
+    Me: And your payment, of course. Talk to me again if you''re still looking for
+    work.'
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: We have the items you asked for.
+  speeches:
+  - locKey: dialog/Esmeralda Armstrong_Female__reelss_sp_0
+    action: {fileID: 11400000, guid: d6fd9e36cc0eacf4b9d608deb6045795, type: 2}
+    speaker: {fileID: 0}
+    text: And not a moment too soon. You're not bad, captain.
+    animTool:
+      animationType: 0
+      animTag: 
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Esmeralda Armstrong_Female__reelss_sp_1
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: And your payment, of course. Talk to me again if you're still looking for
+      work.
+    animTool:
+      animationType: 0
+      animTag: 
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions:
+  - {fileID: 11400000, guid: d6bf89d663010df4f91ea40889e59982, type: 2}
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Esmeralda Armstrong_Female__reelss

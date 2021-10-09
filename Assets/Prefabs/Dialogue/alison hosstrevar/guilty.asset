@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: guilty
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 1
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst:
+  - {fileID: 11400000, guid: adab6cd9d60c7a141b484f7653f47367, type: 2}
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: guilty
+  previewText: "Player: Do you feel guilty about leaving Gregory behind?\nMe: Well,
+    I\u2026 @You have no idea what you\u2019re talking about. @Do you even have any
+    qualifications? @Last time I checked, ignorant drifters didn\u2019t get to be
+    captains, so I guess you\u2019re the exception that proves the rule."
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: Do you feel guilty about leaving Gregory behind?
+  speeches:
+  - locKey: dialog/alison hosstrevar_Female__guilty_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "Well, I\u2026 @You have no idea what you\u2019re talking about. @Do you
+      even have any qualifications? @Last time I checked, ignorant drifters didn\u2019t
+      get to be captains, so I guess you\u2019re the exception that proves the rule."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/alison hosstrevar_Female__guilty

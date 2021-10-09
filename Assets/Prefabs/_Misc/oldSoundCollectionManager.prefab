@@ -1,0 +1,175 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &169526
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 449598}
+  - component: {fileID: 11424910}
+  m_Layer: 0
+  m_Name: oldSoundCollectionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &449598
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 169526}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11424910
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 169526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a344cb33a0df9a488d226ed3f4f7f57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  masterVolume: 0.884
+  allCollections:
+  - collectionName: bubbleBurst
+    collectionClips:
+    - {fileID: 8300000, guid: 7ef46ef31d9d71b45ab82b13c6b7bbe1, type: 3}
+    - {fileID: 8300000, guid: 9aabb22d59e48d24e80123edbe6dde09, type: 3}
+    - {fileID: 8300000, guid: 192ec6b9b3576f14092a468c741617bd, type: 3}
+  - collectionName: explosion
+    collectionClips:
+    - {fileID: 8300000, guid: 02a051c6ba0f87c4a88f15b9daaccc40, type: 3}
+    - {fileID: 8300000, guid: b915f9fbc38f0954e9b8c0a8c2d7fd2e, type: 3}
+    - {fileID: 8300000, guid: 2c8e4f29848b7bd48972bd0ec90c671c, type: 3}
+  - collectionName: bubbleStream
+    collectionClips:
+    - {fileID: 8300000, guid: a97ccc8a7be3cbb4d9bb78478fdbfb1a, type: 3}
+    - {fileID: 8300000, guid: cce8ebb0df3d5e54e84252f639d9f150, type: 3}
+    - {fileID: 8300000, guid: 53bc2241c7cb9e44cb78a4b31c8a1583, type: 3}
+    - {fileID: 8300000, guid: 2c99c32577d6ca34e9c5e1414f575bb1, type: 3}
+    - {fileID: 8300000, guid: 42fdb8877f9026f4d822dd46ce07561f, type: 3}
+  - collectionName: clang
+    collectionClips:
+    - {fileID: 8300000, guid: c4785a5acde1edd4fba603b21c776d2b, type: 3}
+    - {fileID: 8300000, guid: 1bbac39b649eda444a05addb49d9539f, type: 3}
+    - {fileID: 8300000, guid: 86f1f278d33799f44b694fad7ac73e12, type: 3}
+    - {fileID: 8300000, guid: 19f7620ecb337cf439f69abf4891d7be, type: 3}
+    - {fileID: 8300000, guid: 585b865b3c05ccc4a87ca062489e4a51, type: 3}
+  - collectionName: swirl
+    collectionClips:
+    - {fileID: 8300000, guid: f0d493bf67362574e806acc46d17f0f0, type: 3}
+  - collectionName: hullExplosion
+    collectionClips:
+    - {fileID: 8300000, guid: af6dd74c59ef46e479087f0e9a05a3e8, type: 3}
+    - {fileID: 8300000, guid: f776860e1b3930e4994d2f40ccd9defd, type: 3}
+    - {fileID: 8300000, guid: a73e166a94358c04c96c05dc0328c1f7, type: 3}
+  - collectionName: swoosh
+    collectionClips:
+    - {fileID: 8300000, guid: fc03e297d46b0a24eb5d615893f5538e, type: 3}
+    - {fileID: 8300000, guid: ec814352c767ea043bc171ba45531d19, type: 3}
+    - {fileID: 8300000, guid: 2d196c3ff03315145a8fdc983cd7d451, type: 3}
+    - {fileID: 8300000, guid: 20c110fdca10dbd419fbb6ba3fa2fb6d, type: 3}
+    - {fileID: 8300000, guid: f0ab8b846d994fd468fb07dd5408a57c, type: 3}
+  - collectionName: spark
+    collectionClips:
+    - {fileID: 8300000, guid: f8da5f4bc39990a42a9ec1431d741109, type: 3}
+    - {fileID: 8300000, guid: 0980a772ea0091749af8ff28c36242a4, type: 3}
+    - {fileID: 8300000, guid: 0980a772ea0091749af8ff28c36242a4, type: 3}
+  - collectionName: pingIn
+    collectionClips:
+    - {fileID: 8300000, guid: 47a65454b66abf2479fa1d5ff14a64ba, type: 3}
+  - collectionName: pingOut
+    collectionClips:
+    - {fileID: 8300000, guid: 91290998eee861640ba66a2dd78ea4fc, type: 3}
+  - collectionName: bolt
+    collectionClips:
+    - {fileID: 8300000, guid: 356f4e0d53ffa2c428b73e4d0adb1019, type: 3}
+    - {fileID: 8300000, guid: 613666df96dbd6d45a576abfc3267ba8, type: 3}
+    - {fileID: 8300000, guid: cfd108b5aeeb21246a3c3b0b0a2fedd0, type: 3}
+  - collectionName: boom
+    collectionClips:
+    - {fileID: 8300000, guid: 22c928e254186e44295d285609849914, type: 3}
+    - {fileID: 8300000, guid: 8656a2da29357bd44a77e12a73903e49, type: 3}
+    - {fileID: 8300000, guid: 436e01637f5f365409957e23c7bbb27a, type: 3}
+  - collectionName: tickYes
+    collectionClips:
+    - {fileID: 8300000, guid: 3a0d33b92f0c3154fae1328bad7207fa, type: 3}
+    - {fileID: 8300000, guid: b71a4eb935f3a86469105bb965805062, type: 3}
+    - {fileID: 8300000, guid: 2741a19bf0fc5414da5cdd1b19cd6f86, type: 3}
+  - collectionName: tickNo
+    collectionClips:
+    - {fileID: 8300000, guid: f84d7a2fb4e2a7c418f911e37ed0c966, type: 3}
+    - {fileID: 8300000, guid: c22dc5d240a97e8458924eb3f99defa9, type: 3}
+    - {fileID: 8300000, guid: 25e26334a200d784f8d605db28d3f992, type: 3}
+  - collectionName: camIn
+    collectionClips:
+    - {fileID: 8300000, guid: f354ac92a3d17ce4998c91e3691e7cbb, type: 3}
+  - collectionName: camOut
+    collectionClips:
+    - {fileID: 8300000, guid: 44944024e8f56524a92d68dc0150772e, type: 3}
+  - collectionName: flak
+    collectionClips:
+    - {fileID: 8300000, guid: 7a1a02fa1ec967f40a91d6bce13ea5ac, type: 3}
+    - {fileID: 8300000, guid: 0b1321afe3898424fbcb447bf6f991af, type: 3}
+  - collectionName: creak
+    collectionClips:
+    - {fileID: 8300000, guid: bd7e390c551d2a945832388ae28c4dbd, type: 3}
+    - {fileID: 8300000, guid: 78d7dea2f1355cd44818fdfe073945c8, type: 3}
+    - {fileID: 8300000, guid: 7520d0e1773d18a4b98a6d4ebd8b9e44, type: 3}
+    - {fileID: 8300000, guid: 67d99e6c78dd7d141a45dbe0920f3ab0, type: 3}
+  - collectionName: hired
+    collectionClips:
+    - {fileID: 8300000, guid: 38730ce42fdd03c478a42733d608d527, type: 3}
+  - collectionName: Decline
+    collectionClips:
+    - {fileID: 8300000, guid: a9577ed3ee509b4489360e64cdbef43b, type: 3}
+  - collectionName: Upgrade
+    collectionClips:
+    - {fileID: 8300000, guid: 38730ce42fdd03c478a42733d608d527, type: 3}
+  - collectionName: Purchase
+    collectionClips:
+    - {fileID: 8300000, guid: faa58993c3abffc468014dd5827ae963, type: 3}
+  - collectionName: onHover
+    collectionClips:
+    - {fileID: 8300000, guid: 4f6bbf1388fe2c142820b9d821ee069c, type: 3}
+  - collectionName: onClick
+    collectionClips:
+    - {fileID: 8300000, guid: 07931403c15bdf445a41598ebf04208e, type: 3}
+  - collectionName: purchase
+    collectionClips:
+    - {fileID: 8300000, guid: 99e04207c3d62854490a108b5f2a7cfd, type: 3}
+  - collectionName: popup
+    collectionClips:
+    - {fileID: 8300000, guid: 0489aa9aa659c0343b84b8f417b81800, type: 3}
+  - collectionName: hoverTangible
+    collectionClips:
+    - {fileID: 8300000, guid: 0c2fad63563b92442b43e03e10750581, type: 3}
+  - collectionName: clickTangible
+    collectionClips:
+    - {fileID: 8300000, guid: 7415673f34aabd74aadf3969a6b4fdaf, type: 3}
+  - collectionName: onExit
+    collectionClips:
+    - {fileID: 8300000, guid: a657da5bf3924b8418540a452ff47555, type: 3}
+  playerShip: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 169526}
+  m_IsPrefabParent: 1

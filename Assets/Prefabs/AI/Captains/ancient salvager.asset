@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32aabd5c55471784e8604d81a7fa8f26, type: 3}
+  m_Name: ancient salvager
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  description: "I will wander from city to city while pinging for contacts until:
+    \nI find a  i will circle around target and attack until dead, \nI was hailed
+    by a player, Ancient,  i will , \nI Pinged, SOSplayer, Ancient,  i will , \n"
+  baseFactions: []
+  nonFactionRelations: []
+  patience: -6.73
+  bravery: 0
+  shipSteer: -8.7
+  weaponCrew: 0
+  defaultFight: {fileID: 11400000, guid: ffaf717fb9f4ef348b9f76091b498a05, type: 2}
+  defaultFlee: {fileID: 11400000, guid: 4dc2543695e993f4d9f99c5a5fcb8d3d, type: 2}
+  defaultMission: {fileID: 11400000, guid: 23f2374f776da464689105c9c92c57ae, type: 2}
+  reactions:
+  - targetContext: 1
+    reactionContext: 2
+    actionType: 3
+    overrideMission: {fileID: 0}
+    distanceImportance: 0
+    priorityMultiplier: 10
+    actions: []
+    responses: []
+  - targetContext: 6
+    reactionContext: 8
+    actionType: 2
+    overrideMission: {fileID: 11400000, guid: 5ee9db890e0160e44b139182620e0fbd, type: 2}
+    distanceImportance: 0
+    priorityMultiplier: 6
+    actions: []
+    responses: []
+  - targetContext: 6
+    reactionContext: 20
+    actionType: 2
+    overrideMission: {fileID: 11400000, guid: 4dc2543695e993f4d9f99c5a5fcb8d3d, type: 2}
+    distanceImportance: 0
+    priorityMultiplier: 3
+    actions: []
+    responses: []
+  designNotes: This is a captain

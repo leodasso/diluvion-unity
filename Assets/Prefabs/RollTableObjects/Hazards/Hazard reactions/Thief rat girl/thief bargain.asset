@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59b92b72f1081d143929d9eb9540ed64, type: 3}
+  m_Name: thief bargain
+  m_EditorClassIdentifier: 
+  reactionType: 1
+  items: []
+  stat: {fileID: 11400000, guid: 27074db8b6073e54e8a998414105432a, type: 2}
+  defense: 1
+  damage: 1
+  attempt: '[char] tries to bargain with [haz]...'
+  pass: '... [haz] looks like she''s listening to [char]''s words!'
+  fail: '... but [haz] ignores [char] and continues to grab for the bag!'

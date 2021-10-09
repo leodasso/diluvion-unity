@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b624c9e0327790447b6e0c246081b78d, type: 3}
+  m_Name: explorables pollen valley
+  m_EditorClassIdentifier: 
+  weight: 1
+  tags: []
+  rollBool: 0
+  containedTypes:
+  - m_Name: ExplorableEntry
+    m_AssemblyQualifiedName: Diluvion.Roll.ExplorableEntry, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  lastRolledObject: {fileID: 11400000, guid: 81fd649674e10f74cac2396716dc0b4a, type: 2}
+  entryToAdd: {fileID: 0}
+  tableEntries:
+  - {fileID: 11400000, guid: 6888339d34893564f83c6dbad150836d, type: 2}
+  - {fileID: 11400000, guid: 81fd649674e10f74cac2396716dc0b4a, type: 2}
+  - {fileID: 11400000, guid: b9eea8c0beb234547a1bcf381acc08a3, type: 2}
+  - {fileID: 11400000, guid: 3a8e3708c12d96b4cb8f30fb10c1b03a, type: 2}
+  - {fileID: 11400000, guid: 68930065390ed6649a2f70e46f75f68c, type: 2}
+  - {fileID: 11400000, guid: 86ec30a7533262946b051f82dc628db4, type: 2}
+  - {fileID: 11400000, guid: d7747e6cbab15ff46adba11e41c7a5aa, type: 2}
+  rollTable:
+  - entry: {fileID: 11400000, guid: 6888339d34893564f83c6dbad150836d, type: 2}
+    tableBonus: 20
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 49
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 81fd649674e10f74cac2396716dc0b4a, type: 2}
+    tableBonus: 30
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: b9eea8c0beb234547a1bcf381acc08a3, type: 2}
+    tableBonus: 30
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 3a8e3708c12d96b4cb8f30fb10c1b03a, type: 2}
+    tableBonus: 5
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 21
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 68930065390ed6649a2f70e46f75f68c, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 11
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 86ec30a7533262946b051f82dc628db4, type: 2}
+    tableBonus: 15
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 27
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: d7747e6cbab15ff46adba11e41c7a5aa, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  _lastRoll: 18
+  _totalWeight: 163
+  _currentWeight: 18
+  minDanger: 0
+  minValue: 0
+  typeList:
+  - toggled: 0
+    type:
+      m_Name: ExplorableEntry
+      m_AssemblyQualifiedName: Diluvion.Roll.ExplorableEntry, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

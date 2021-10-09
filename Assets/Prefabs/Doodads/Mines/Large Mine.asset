@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 698e8b7346fc48b4f9c3053de1e67491, type: 3}
+  m_Name: Large Mine
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags:
+  - {fileID: 11400000, guid: eb7d752002d322348aa84129c27fb5dc, type: 2}
+  - {fileID: 11400000, guid: bc47b89aa95e70a45b315f0ddf5fa34c, type: 2}
+  - {fileID: 11400000, guid: a19c3b1064458a74599d872073c4a5f0, type: 2}
+  - {fileID: 11400000, guid: 11165f88eca6a0a4a87f1eaf0d61388c, type: 2}
+  slotSize: 0.6
+  prefab: {fileID: 119194, guid: 5e1eeab3c4c514f47adfef201def70ee, type: 2}
+  resourceCost:
+    value: 0
+    danger: 50
+    hazardDanger: 0
+  ignoreSpawnerRotation: 1
+  positionSearches:
+  - {fileID: 11400000, guid: 467b40efa4959ec4e970d21ec6a4e81b, type: 2}

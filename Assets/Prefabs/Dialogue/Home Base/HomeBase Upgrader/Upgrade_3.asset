@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: Upgrade_3
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 1
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries:
+  - {fileID: 11400000, guid: 7a9c4637b7465604497149f651c718a9, type: 2}
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: Upgrade 3
+  previewText: 'Player: Anything new?
+
+
+    Me: If you''re willing to shell out some serious gold, there''s a few more modules
+    I''d like to add.'
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: Anything new?
+  speeches:
+  - locKey: dialog/HomeBase Upgrader_Male__Upgrade 3_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: If you're willing to shell out some serious gold, there's a few more modules
+      I'd like to add.
+    animTool:
+      animationType: 0
+      animTag: invisible
+      animTime: 0
+      setAsDefault: 1
+  questToStart: {fileID: 0}
+  postConvoActions:
+  - {fileID: 11400000, guid: a93ed8eaa39caf745b65419fceaf152a, type: 2}
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/HomeBase Upgrader_Male__Upgrade 3

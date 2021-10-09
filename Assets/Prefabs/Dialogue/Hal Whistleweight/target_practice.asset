@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: target_practice
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 11400000, guid: 7c0249fa405d2814b8636342be52e7ad, type: 2}
+  triggeringQuestStatus: 0
+  triggeringObjective: {fileID: 11400000, guid: ea85564f799480a4a971d8942afeb2c3,
+    type: 2}
+  triggeringObjectiveStatus: 0
+  priority: 1
+  readTheseFirst: []
+  conversationQueries:
+  - {fileID: 11400000, guid: 3944ac3f0585ef84e86d667d68eb582b, type: 2}
+  invertQueries: 0
+  showChatter: 1
+  chatterShowsOnce: 1
+  titleText: Come talk to me.
+  previewText: 'Chatter: Come talk to me.
+
+    Player: Welcome aboard.
+
+
+    Me: Yea, yea, enough chit chat. I want to get some practice with your ship''s
+    tubes.@ Head to the waypoint on your map. There''s some mines we can use as target
+    practice, and we can brush up on our torpedo skills.'
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: Welcome aboard.
+  speeches:
+  - locKey: dialog/Hal Whistleweight_Male__Come talk to me._sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Yea, yea, enough chit chat. I want to get some practice with your ship's
+      tubes.@ Head to the waypoint on your map. There's some mines we can use as target
+      practice, and we can brush up on our torpedo skills. @ Oh, and I almost forgot.
+      Here, consider this a loan.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 11400000, guid: af5e163fa42b3394ba6864fd06a1cf18, type: 2}
+  postConvoActions:
+  - {fileID: 11400000, guid: d938db2c1c4bb2b4c9844c11d331e236, type: 2}
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Hal Whistleweight_Male__Come talk to me.

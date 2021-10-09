@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2147c636f952b34c873c5fdf4b7a8c3, type: 3}
+  m_Name: tank big claw
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  testLevel: 5
+  previewHp: 6
+  previewDanger: 69
+  displayName: Angry Crab
+  minMaxLevel: {x: 5, y: 14}
+  baseDanger: 10
+  firstTurn: 4
+  turnInterval: 3
+  minMaxHp: {x: 6, y: 20}
+  sprite: {fileID: 21300004, guid: 69fda1af55cbd08459f4f58585776d1e, type: 3}
+  reward: {fileID: 11400000, guid: ea1bb17d249210946b7188585bbb9558, type: 2}
+  attackSubjectOnly: 0
+  onNewSubject: 
+  introduction: "[char] comes across a crab the size of a horse wandering, lost, down
+    the corridor. Noticing your party, it charges with [char] only just managing to
+    put the next door in between it and themselves...\r"
+  attack: "[haz] punches a hole though the door!\r"
+  attackAction: {fileID: 11400000, guid: 797f02f19fdbc2d4a8af86e3af6374ad, type: 2}
+  defeat: "[char] finally manages to close the door, leaving [haz] behind as they
+    continue to explore...\r"
+  reactions:
+  - {fileID: 11400000, guid: af904527d266db84a82e735905fcb229, type: 2}
+  - {fileID: 11400000, guid: 1c09e1fbb12b43645b887a8809d682a5, type: 2}
+  - {fileID: 11400000, guid: 4e11abebfdc4ff642a163bfbf95e19d8, type: 2}
+  - {fileID: 11400000, guid: 5db1d8d2ffabe8c47b8148cb63a8847c, type: 2}
+  reactionsDescription: "\n[char] tries to trap [haz]'s claw in the door...\nDefense
+    against Strength: [2.5 - 7] \n\n pass: [no loc]... and the shell on [haz]'s claw
+    cracks!\n fail: [no loc]... but [char] doesn't slam hard enough and [haz] is unhurt!\n[char]
+    attempts to ward off the crab by stabbing at its delicate eye stalks...\nDefense
+    against Intelligence: [2.5 - 7] \n\n pass: [no loc]... and [haz] recoils in pain!\n
+    fail: [no loc]... but [haz] is enraged and keeps attacking!\n[char] attempts to
+    force the door closed...\nDefense against Endurance: [2.5 - 7] \n\n pass: [no
+    loc]... and manages to slide it further towards [haz]!\n fail: [no loc]... but
+    [haz] is too strong and forces it back open!\n[char] sees a number of large nails
+    that could be wedged under the door...\nDefense against Perception: [2.5 - 7]
+    \n\n pass: [no loc]... and manages to secure one of the nails underneath the door!\n
+    fail: [no loc]... but [haz] pushes against the door and the nail slips!"
+  introSound: Play_Gargantuclaw_INTRO
+  hitSound: Play_Gargantuclaw_HIT
+  missSound: Play_Gargantuclaw_MISS

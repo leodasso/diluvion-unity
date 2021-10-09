@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: Damnit_
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 11400000, guid: 6ef24c25a1951e04ebefb1b6f5ecd3d9, type: 2}
+  triggeringQuestStatus: 0
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 1
+  chatterShowsOnce: 1
+  titleText: Damnit!
+  previewText: "Chatter: Dammit!\nPlayer: [Jay is angry]\n\nMe: Damnit, I was sure
+    the Morgen\u2019s Tear was going to pop up here!\nAlison Hosstrevar: What\u2019s
+    with you and this ship?\nMe: We have personal history. @She was the lead gunship
+    for the Morgensonne navy, and a powerful one at that. @'Used to serve on the Morning
+    Light myself; fought many battles together under the House flag.\nAlison Hosstrevar:
+    Great..."
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: '[Jay is angry]'
+  speeches:
+  - locKey: dialog/Jay Treadwasser_Male__Damnit!_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "Damnit, I was sure the Morgen\u2019s Tear was going to pop up here!"
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Jay Treadwasser_Male__Damnit!_sp_1_Alison Hosstrevar(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: f628dcfa9337af041809cf0563d0d73c, type: 2}
+    text: "What\u2019s with you and this ship?"
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Jay Treadwasser_Male__Damnit!_sp_2
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: We have personal history. @She was the lead gunship for the Morgensonne
+      navy, and a powerful one at that. @'Used to serve on the Morning Light myself;
+      fought many battles together under the House flag.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Jay Treadwasser_Male__Damnit!_sp_3_Alison Hosstrevar(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: f628dcfa9337af041809cf0563d0d73c, type: 2}
+    text: Great...
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Jay Treadwasser_Male__Damnit!

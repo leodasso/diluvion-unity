@@ -1,0 +1,190 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b624c9e0327790447b6e0c246081b78d, type: 3}
+  m_Name: explorables Tonnesfjord
+  m_EditorClassIdentifier: 
+  weight: 1
+  tags: []
+  rollBool: 0
+  containedTypes:
+  - m_Name: ExplorableEntry
+    m_AssemblyQualifiedName: Diluvion.Roll.ExplorableEntry, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - m_Name: ShipBuild
+    m_AssemblyQualifiedName: Diluvion.AI.ShipBuild, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - m_Name: ShipEncounter
+    m_AssemblyQualifiedName: Diluvion.Roll.ShipEncounter, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  lastRolledObject: {fileID: 11400000, guid: e98c0c7c9bc47774188c0cf37c891578, type: 2}
+  entryToAdd: {fileID: 0}
+  tableEntries:
+  - {fileID: 11400000, guid: 68930065390ed6649a2f70e46f75f68c, type: 2}
+  - {fileID: 11400000, guid: 3a8e3708c12d96b4cb8f30fb10c1b03a, type: 2}
+  - {fileID: 11400000, guid: e98c0c7c9bc47774188c0cf37c891578, type: 2}
+  - {fileID: 11400000, guid: 4834db63a7fcd1c429d68413353d1b3f, type: 2}
+  - {fileID: 11400000, guid: 3969bd5355100e3449237a7483362e19, type: 2}
+  - {fileID: 11400000, guid: b1be710d568d3d5449ae33760b4802ba, type: 2}
+  - {fileID: 11400000, guid: f650985564fd5f94fb03a16b388b13d0, type: 2}
+  - {fileID: 11400000, guid: bc2a66d97fa6edb468e82037216b6466, type: 2}
+  - {fileID: 11400000, guid: 95799f9364158a64c863b6a11c875ec2, type: 2}
+  - {fileID: 11400000, guid: 6b2bbb4832c1f9d4a970646bb7475ab5, type: 2}
+  - {fileID: 11400000, guid: c824c684616214c4b888911ac3f918b2, type: 2}
+  - {fileID: 11400000, guid: bc8b76c0930fbec429d800375f093101, type: 2}
+  - {fileID: 11400000, guid: b1d4c8f2dd9cecb4282a330795a0af26, type: 2}
+  - {fileID: 11400000, guid: a19d5886caa79f142b14c6374b0b791a, type: 2}
+  - {fileID: 11400000, guid: 86ec30a7533262946b051f82dc628db4, type: 2}
+  - {fileID: 11400000, guid: add6d41ec32e20a4ca1746b7d963647a, type: 2}
+  - {fileID: 11400000, guid: 7e3ff31978f255346ad3fad54a564022, type: 2}
+  - {fileID: 11400000, guid: b9eea8c0beb234547a1bcf381acc08a3, type: 2}
+  - {fileID: 11400000, guid: 95a5807629e2203438cd441904369c21, type: 2}
+  rollTable:
+  - entry: {fileID: 11400000, guid: 68930065390ed6649a2f70e46f75f68c, type: 2}
+    tableBonus: 5
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 28
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 3a8e3708c12d96b4cb8f30fb10c1b03a, type: 2}
+    tableBonus: 25
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 92
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: e98c0c7c9bc47774188c0cf37c891578, type: 2}
+    tableBonus: 5
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 29
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 4834db63a7fcd1c429d68413353d1b3f, type: 2}
+    tableBonus: 2
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 2
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 3969bd5355100e3449237a7483362e19, type: 2}
+    tableBonus: 4
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 2
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: b1be710d568d3d5449ae33760b4802ba, type: 2}
+    tableBonus: 5
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 4
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: f650985564fd5f94fb03a16b388b13d0, type: 2}
+    tableBonus: 6
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 46
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: bc2a66d97fa6edb468e82037216b6466, type: 2}
+    tableBonus: 5
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 95799f9364158a64c863b6a11c875ec2, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 6b2bbb4832c1f9d4a970646bb7475ab5, type: 2}
+    tableBonus: 1
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: c824c684616214c4b888911ac3f918b2, type: 2}
+    tableBonus: 1
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 1
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: bc8b76c0930fbec429d800375f093101, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 2
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: b1d4c8f2dd9cecb4282a330795a0af26, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 4
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: a19d5886caa79f142b14c6374b0b791a, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 1
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 86ec30a7533262946b051f82dc628db4, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: add6d41ec32e20a4ca1746b7d963647a, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 7e3ff31978f255346ad3fad54a564022, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: b9eea8c0beb234547a1bcf381acc08a3, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 95a5807629e2203438cd441904369c21, type: 2}
+    tableBonus: 2
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  _lastRoll: 52
+  _totalWeight: 202
+  _currentWeight: 53
+  minDanger: 0
+  minValue: 0
+  typeList:
+  - toggled: 0
+    type:
+      m_Name: ExplorableEntry
+      m_AssemblyQualifiedName: Diluvion.Roll.ExplorableEntry, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - toggled: 0
+    type:
+      m_Name: ShipBuild
+      m_AssemblyQualifiedName: Diluvion.AI.ShipBuild, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  - toggled: 0
+    type:
+      m_Name: ShipEncounter
+      m_AssemblyQualifiedName: Diluvion.Roll.ShipEncounter, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

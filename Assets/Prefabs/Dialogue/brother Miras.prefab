@@ -1,0 +1,794 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: brother Miras
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -119.531876, y: -366.96475, z: 26.911282}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5bc224e94d4bd743b48051ef9224ff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullPortrait: {fileID: 21300020, guid: 493729dc9c1098e48885d30a2ea75543, type: 3}
+  chatterPortrait: {fileID: 21300024, guid: 493729dc9c1098e48885d30a2ea75543, type: 3}
+  gender: 0
+  dialogues:
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: dialog/brother Miras_Male__Who are you pepople
+    titleText: Who are you pepople
+    question: Miras?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Who are you people? What are you doing on my ship?
+      locKey: dialog/brother Miras_Male__Who are you pepople_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11400000, guid: bd01cdc53652fa742882c9f125a57be8, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Are you Brother Miras? We were sent to rescue him.
+      locKey: dialog/brother Miras_Male__Who are you pepople_sp_1_Jay Treadwasser(Male)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Thank you, no rescue here please. I would like to continue my research
+        in peace.
+      locKey: dialog/brother Miras_Male__Who are you pepople_sp_2
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11430560, guid: ae100bcb18e4cb140a380e2a966792fc, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Brother, your crew is gone. If we leave you here, there may not be another
+        vessel along to help you.
+      locKey: dialog/brother Miras_Male__Who are you pepople_sp_3_Ivan Gregor(Male)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Lies! We may be stuck, but I was assured the crew is doing everything
+        they can to get us moving again. @The Deep will not be kind to those who mislead
+        the righteous!
+      locKey: dialog/brother Miras_Male__Who are you pepople_sp_4
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11430560, guid: ae100bcb18e4cb140a380e2a966792fc, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: All your lifepods are gone...
+      locKey: dialog/brother Miras_Male__Who are you pepople_sp_5_Ivan Gregor(Male)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "Really? @..... @Rescue, rescue please! Lun rewards those who act selflessly
+        and will redeem them in the Deep\u2019s eyes! @You will help carry my equipment,
+        yes?"
+      locKey: dialog/brother Miras_Male__Who are you pepople_sp_6
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11400000, guid: bd01cdc53652fa742882c9f125a57be8, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "I\u2019m starting to see why they left him behind..."
+      locKey: dialog/brother Miras_Male__Who are you pepople_sp_7_Jay Treadwasser(Male)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 1
+    showWhere: 0
+    urgent: 1
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 0
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 1
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: chapelOfDeep
+      questStatus: 2
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''chapelOfDeep'' must be NotStarted for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/brother Miras_Male__This is disappointing.
+    titleText: This is disappointing.
+    question: What's wrong?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: I was expecting a far grander ship would be sent to save me.
+      locKey: dialog/brother Miras_Male__This is disappointing._sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11400000, guid: 1e64e41284dcb1b4e90534cca122c233, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "Don\u2019t worry, we\u2019ll be kicking you off as soon as we get back
+        to <b>Crevasse Edge</b>."
+      locKey: dialog/brother Miras_Male__This is disappointing._sp_1_Kat Smith(Female)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: No, you will be taking me to the <b>Chapel of the Deep</b>. It is the
+        Monastery at the peak of Sea Mount. I need to return to the Father there to
+        debate the future of the <i>heretic Havelock Welsh</i>.
+      locKey: dialog/brother Miras_Male__This is disappointing._sp_2
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11400000, guid: bd01cdc53652fa742882c9f125a57be8, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Heretic?
+      locKey: dialog/brother Miras_Male__This is disappointing._sp_3_Jay Treadwasser(Male)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: I have said too much. Think nothing more on this topic.
+      locKey: dialog/brother Miras_Male__This is disappointing._sp_4
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 1
+    triggerOnly: 0
+    showChatter: 1
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 1
+    questLocKey: chapelOfDeep
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 1
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 1
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: dialog/brother Miras_Male__the heretic
+    titleText: the heretic
+    question: "You\u2019re looking for a heretic?"
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "<b>Havelock</b> thought it appropriate to study Lun\u2019s creatures...
+        to the point of capturing and torturing the poor things. @It is heresy! He
+        must be punished!"
+      locKey: dialog/brother Miras_Male__the heretic_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 1
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 2
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 1
+    dialoguePrereqs:
+    - questLocKey: chapelOfDeep
+      questStatus: 1
+      secondaryStatus: 0
+      questStatus2: 1
+      helpString: '''chapelOfDeep'' must be InProgress for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/brother Miras_Male__take us to havelock
+    titleText: take us to havelock
+    question: Can you take us to Havelock?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: The heretic? I want nothing to do with him. @Did I not say I wish to go
+        to the <b>Chapel of the Deep</b>? Why are we not moving?
+      locKey: dialog/brother Miras_Male__take us to havelock_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: chapelOfDeep
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 3
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: dialog/brother Miras_Male__how long
+    titleText: how long
+    question: How long have you been a priest?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Is that a trick question? I have always been devoted to my Gods and could
+        wish for no other life.
+      locKey: dialog/brother Miras_Male__how long_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 2
+    showWhere: 1
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 4
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: dialog/brother Miras_Male__have returned
+    titleText: have returned
+    question: This is the place, right?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Father, I have returned.
+      locKey: dialog/brother Miras_Male__have returned_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11489656, guid: 7c1a19b196271cb499672a666c5968b7, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: ' Yes brother. This is a small room with no alcoves. I have seen. @Why
+        do you bother me?'
+      locKey: dialog/brother Miras_Male__have returned_sp_1_Father Atus(Male)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: You summoned me, Father? @The Deep rewards those who arrive to their summons
+        in a prompt and timely manner.
+      locKey: dialog/brother Miras_Male__have returned_sp_2
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11489656, guid: 7c1a19b196271cb499672a666c5968b7, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Yes, yes. @The Deep also rewards the meek and those who do not bother
+        their superiors.
+      locKey: dialog/brother Miras_Male__have returned_sp_3_Father Atus(Male)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: '....'
+      locKey: dialog/brother Miras_Male__have returned_sp_4
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11430560, guid: ae100bcb18e4cb140a380e2a966792fc, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Excuse me, Father, but we are looking to seek the way to the Dark Waters
+        to redeem ourselves to the Deep. @ We hear that a former priest has information
+        that could help us?
+      locKey: dialog/brother Miras_Male__have returned_sp_5_Ivan Gregor(Male)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11489656, guid: 7c1a19b196271cb499672a666c5968b7, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: 'Some priests will tell you that science has no place in the modern world.
+        @However much we disagree with the methods in which knowledge is gained, we
+        would be foolish to ignore what is learned. @ Brother Miras, you will go with
+        these people and <b>introduce them Havelock Welsh</b>. @It would do you good
+        to see from new perspectives. '
+      locKey: dialog/brother Miras_Male__have returned_sp_6_Father Atus(Male)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11430560, guid: 4fdc07e15a4781842b86a82e86e4d4c9, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Of... of course, Father.
+      locKey: dialog/brother Miras_Male__have returned_sp_7_Brother Miras(Male)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11430560, guid: ae100bcb18e4cb140a380e2a966792fc, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: We are deeply grateful, father.
+      locKey: dialog/brother Miras_Male__have returned_sp_8_Ivan Gregor(Male)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: atChapel
+    showWhen: 2
+    showWhere: 2
+    urgent: 1
+    triggerOnly: 1
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 1
+    questLocKey: havelock
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 5
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: havelock
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''havelock'' must be Complete for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/brother Miras_Male__About Skalle...
+    titleText: About Skalle...
+    question: So what is Skalle?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "I warn you, I do not tell this lightly, and I do not recommend you proceed
+        after hearing this tale\u2026"
+      locKey: dialog/brother Miras_Male__About Skalle..._sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11417608, guid: 6ec1d2791d867d54fba7ca7f27e786ef, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: And the story is...?
+      locKey: dialog/brother Miras_Male__About Skalle..._sp_1_Alison Hosstrevar(Female)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "One of the Deep\u2019s scriptures tells that a race of creature bred
+        by Sul; <b>great leviathans</b> who swam through the world above water; fell
+        to the seas when the Deep wrapped the world in its waves. @In the world above,
+        these leviathans had been charged with carrying the damned souls of the dead
+        to their eternal torment. @However, with their demise, the Deep created <b>a
+        portal to hell within the skull of the largest leviathan</b>, and it is this
+        portal which draws the damned souls towards it so they can finally receive
+        punishment for their sins and wicked ways."
+      locKey: dialog/brother Miras_Male__About Skalle..._sp_2
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11400000, guid: 1e64e41284dcb1b4e90534cca122c233, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Seriously? A portal to hell?
+      locKey: dialog/brother Miras_Male__About Skalle..._sp_3_Kat Smith(Female)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11430560, guid: ae100bcb18e4cb140a380e2a966792fc, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: That is why most dwellers refuse to go anywhere near the <color=blue>Endless
+        Corridor</color>. @They believe that if they venture too close to Skalle,
+        their souls will be sucked from their bodies and they will be damned for eternity,
+        regardless of how righteous a life they have led.
+      locKey: dialog/brother Miras_Male__About Skalle..._sp_4_Ivan Gregor(Male)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11417608, guid: 6ec1d2791d867d54fba7ca7f27e786ef, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "You\u2019re not seriously thinking of going to find it, are you? We\u2019ll
+        never get past the creatures!"
+      locKey: dialog/brother Miras_Male__About Skalle..._sp_5_Alison Hosstrevar(Female)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 2
+    showWhere: 1
+    urgent: 1
+    triggerOnly: 0
+    showChatter: 1
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 1
+    questLocKey: skalle
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 6
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  conversations:
+  - {fileID: 11400000, guid: 4f1751e4f7cb43f4ea3259ce48012d79, type: 2}
+  - {fileID: 11400000, guid: 3d214de5a8dbb17488956137307c43d2, type: 2}
+  - {fileID: 11400000, guid: 691ca6a8ad86e8a4d83f8d3d39f44838, type: 2}
+  - {fileID: 11400000, guid: c526c9c05f8416d43acdb2b4a77c3714, type: 2}
+  - {fileID: 11400000, guid: 1c8c19ed61f407a4eb124e4be5597ed4, type: 2}
+  - {fileID: 11400000, guid: 6a8fba93dcf28ac43b8628a0aa69025c, type: 2}
+  - {fileID: 11400000, guid: d6c787c48392a0c4da31328093dfcd86, type: 2}
+  myCrew: {fileID: 0}
+  locKey: dialog/brother Miras_Male_
+  selectable: 0
+  omitFromLoc: 0
+  lockLocKeys: 1
+  validDialogues: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1

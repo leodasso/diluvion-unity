@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: Who_are_you_pepople
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: Who are you pepople
+  previewText: 
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: Miras?
+  speeches:
+  - locKey: dialog/brother Miras_Male__Who are you pepople_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Who are you people? What are you doing on my ship?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/brother Miras_Male__Who are you pepople_sp_1_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: Are you Brother Miras? We were sent to rescue him.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/brother Miras_Male__Who are you pepople_sp_2
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Thank you, no rescue here please. I would like to continue my research in
+      peace.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/brother Miras_Male__Who are you pepople_sp_3_Ivan Gregor(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bc2d561c5fb0644fb19ff35e3b9b7d1, type: 2}
+    text: Brother, your crew is gone. If we leave you here, there may not be another
+      vessel along to help you.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/brother Miras_Male__Who are you pepople_sp_4
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Lies! We may be stuck, but I was assured the crew is doing everything they
+      can to get us moving again. @The Deep will not be kind to those who mislead
+      the righteous!
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/brother Miras_Male__Who are you pepople_sp_5_Ivan Gregor(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bc2d561c5fb0644fb19ff35e3b9b7d1, type: 2}
+    text: All your lifepods are gone...
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/brother Miras_Male__Who are you pepople_sp_6
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "Really? @..... @Rescue, rescue please! Lun rewards those who act selflessly
+      and will redeem them in the Deep\u2019s eyes! @You will help carry my equipment,
+      yes?"
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/brother Miras_Male__Who are you pepople_sp_7_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: "I\u2019m starting to see why they left him behind..."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/brother Miras_Male__Who are you pepople

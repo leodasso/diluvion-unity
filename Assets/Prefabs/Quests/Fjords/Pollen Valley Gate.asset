@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a17f73243c12d7418fa26f028879ef8, type: 3}
+  m_Name: Pollen Valley Gate
+  m_EditorClassIdentifier: 
+  debug: 0
+  locKey: pollenValleyGate
+  sequential: 0
+  title: Pollen Valley Gate
+  description: The gate leading out of Pollen Valley has fallen into dis-repair. Fortunately,
+    the parts needed to fix it can be found in this area.
+  startAnotherQuest: 0
+  questToStart: {fileID: 0}
+  onQuestComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  prereqsToStart: []
+  objectiveCs:
+  - objective: {fileID: 11400000, guid: 908371c1959f59f45b499d75d43b311a, type: 2}
+    requirePrevious: 0
+    overrideName: 1
+    newName: Find a Rusty Gears
+  - objective: {fileID: 11400000, guid: c162017566db71449a3e1dec96a2b44c, type: 2}
+    requirePrevious: 0
+    overrideName: 1
+    newName: Find 5 pieces of Scrap Metal
+  - objective: {fileID: 11400000, guid: 52a3fcae0a704f84dad3f840ab66fc88, type: 2}
+    requirePrevious: 0
+    overrideName: 0
+    newName: a great objective.

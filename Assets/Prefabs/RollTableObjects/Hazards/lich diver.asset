@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2147c636f952b34c873c5fdf4b7a8c3, type: 3}
+  m_Name: lich diver
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags:
+  - {fileID: 11400000, guid: eb7d752002d322348aa84129c27fb5dc, type: 2}
+  - {fileID: 11400000, guid: c44fe841f21f92c468543f8eb9a079dd, type: 2}
+  testLevel: 20
+  previewHp: 5
+  previewDanger: 728
+  displayName: Shadowy Figure
+  minMaxLevel: {x: 8, y: 20}
+  baseDanger: 20
+  firstTurn: 1
+  turnInterval: 3
+  minMaxHp: {x: 1, y: 5}
+  sprite: {fileID: 21300034, guid: 69fda1af55cbd08459f4f58585776d1e, type: 3}
+  reward: {fileID: 11400000, guid: 76dc4912a92f6b94781a01428ae2bbc1, type: 2}
+  attackSubjectOnly: 1
+  onNewSubject: '[haz] now shifts its focus to [subject]!'
+  introduction: Your party comes across a skeleton inside an ancient tech diving suit.
+    The suit starts to move on its own; [subject], frozen in fear, is grasped by the
+    ghastly figure.
+  attack: '[haz] pulls [subject] in closer, howling horribly. [subject]''s very soul
+    is being pulled into [haz]''s deep stare.'
+  attackAction: {fileID: 11400000, guid: 45bf0f95472a2b84cb8275ff8a1652f0, type: 2}
+  defeat: "The suit collapses on the floor, finally out of power. \r"
+  reactions:
+  - {fileID: 11400000, guid: 50294cc5686ff6647a1279b2868464a8, type: 2}
+  - {fileID: 11400000, guid: 6452bbc3b25158447aa5b677fc050414, type: 2}
+  - {fileID: 11400000, guid: 84e7a007d7d0b49448b18d5f344c8808, type: 2}
+  - {fileID: 11400000, guid: c558f1439dce57f4aa10398674e499b8, type: 2}
+  reactionsDescription: "\n[char] swings at [haz] in blind panic...\nDefense against
+    Strength: [4 - 10] \n\n pass: no loc\n fail: no loc\n[char] attemps to pull away
+    from [haz]...\nDefense against Endurance: [4 - 10] \n\n pass: no loc\n fail: no
+    loc\n[char] notices the suit's arm is barely hanging on and tries to rip it off...\nDefense
+    against Perception: [4 - 10] \n\n pass: no loc\n fail: no loc\n[char] recognises
+    vital parts on the suit and attempts to  disable them...\nDefense against Intelligence:
+    [4 - 10] \n\n pass: no loc\n fail: no loc"
+  introSound: Play_Shadowy_Figure_INTRO
+  hitSound: Play_Shadowy_Figure_HIT
+  missSound: Play_Shadowy_Figure_MISS

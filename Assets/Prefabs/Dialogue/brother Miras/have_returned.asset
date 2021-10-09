@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: have_returned
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 1
+  textTriggers: atChapel
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: have returned
+  previewText: 
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: This is the place, right?
+  speeches:
+  - locKey: dialog/brother Miras_Male__have returned_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Father, I have returned.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/brother Miras_Male__have returned_sp_1_Father Atus(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: c407e947ffd61a94caab8574aa284590, type: 2}
+    text: ' Yes brother. This is a small room with no alcoves. I have seen. @Why do
+      you bother me?'
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/brother Miras_Male__have returned_sp_2
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: You summoned me, Father? @The Deep rewards those who arrive to their summons
+      in a prompt and timely manner.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/brother Miras_Male__have returned_sp_3_Father Atus(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: c407e947ffd61a94caab8574aa284590, type: 2}
+    text: Yes, yes. @The Deep also rewards the meek and those who do not bother their
+      superiors.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/brother Miras_Male__have returned_sp_4
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: '....'
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/brother Miras_Male__have returned_sp_5_Ivan Gregor(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bc2d561c5fb0644fb19ff35e3b9b7d1, type: 2}
+    text: Excuse me, Father, but we are looking to seek the way to the Dark Waters
+      to redeem ourselves to the Deep. @ We hear that a former priest has information
+      that could help us?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/brother Miras_Male__have returned_sp_6_Father Atus(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: c407e947ffd61a94caab8574aa284590, type: 2}
+    text: 'Some priests will tell you that science has no place in the modern world.
+      @However much we disagree with the methods in which knowledge is gained, we
+      would be foolish to ignore what is learned. @ Brother Miras, you will go with
+      these people and <b>introduce them Havelock Welsh</b>. @It would do you good
+      to see from new perspectives. '
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/brother Miras_Male__have returned_sp_7_Brother Miras(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 245ca5eb365f37e4d9225a06c747ad74, type: 2}
+    text: Of... of course, Father.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/brother Miras_Male__have returned_sp_8_Ivan Gregor(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bc2d561c5fb0644fb19ff35e3b9b7d1, type: 2}
+    text: We are deeply grateful, father.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/brother Miras_Male__have returned

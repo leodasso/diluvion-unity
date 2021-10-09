@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &112794
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 497400}
+  - 114: {fileID: 11445866}
+  - 114: {fileID: 11461154}
+  m_Layer: 0
+  m_Name: blowfish interior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &497400
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112794}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11445866
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9370a5cbb82aff146866cbebfef3ac33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitForCallback: 0
+  spriteTint: {r: 1, g: 1, b: 1, a: 1}
+  mask: {fileID: 0}
+  myBridge: {fileID: 0}
+  allSprites: []
+  musicTrack:
+    loop: 1
+    audioClip: {fileID: 0}
+    priority: 10
+    trackVolume: 1
+    fadeInSpeed: 1
+    source: {fileID: 0}
+  animatedTint: 0
+  allInhabitants: []
+  origin: {fileID: 0}
+  storyState: 0
+  calculateBoundsBool: 0
+  spriteBounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+--- !u!114 &11461154
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a887a1af9fa0d8541970690783734dc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitForCallback: 0
+  ship: {fileID: 0}
+  bridge: {fileID: 0}
+  linkedStation: {fileID: 0}
+  onLine: 0
+  myCrewInstances: []
+  restingCrew: []
+  shipStations: []
+  heartStation: {fileID: 0}
+  maxCrew: 0
+  hungry: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 112794}
+  m_IsPrefabParent: 1

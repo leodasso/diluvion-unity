@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: the_wreath_is_no_more
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 11400000, guid: 97972c837395e36438f45962357827ac, type: 2}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 11400000, guid: 4590d13681b8dad44b9bf26dc383f3fe,
+    type: 2}
+  triggeringObjectiveStatus: 0
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: the wreath is no more
+  previewText: "Player: ...\n\nMe: So it\u2019s true then... @Twilight\u2019s Wreath
+    is no more...\nIvan Gregor:  I\u2019m afraid so. Wreath fought admirably but we
+    were simply overpowered."
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: '...'
+  speeches:
+  - locKey: dialog/Chikyu Akagawa_Female__the wreath is no more_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "So it\u2019s true then... @Twilight\u2019s Wreath is no more..."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Chikyu Akagawa_Female__the wreath is no more_sp_1_Ivan Gregor(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bc2d561c5fb0644fb19ff35e3b9b7d1, type: 2}
+    text: " I\u2019m afraid so. Wreath fought admirably but we were simply overpowered."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: 
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: '... @ ...<i>sniff</i>... @ This is the life we''ve chosen, adventurers.
+      I know Scott wouldn''t have wanted to die any other way, but... @ It''s just
+      too soon. @ I was saving these as a gift for him, but you should have them.
+      Thank you.'
+    animTool:
+      animationType: 0
+      animTag: 
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions:
+  - {fileID: 11400000, guid: 0bc8f338036f3d74dabde409be875b6e, type: 2}
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 97972c837395e36438f45962357827ac, type: 2}
+        m_MethodName: CompleteQuest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Chikyu Akagawa_Female__the wreath is no more

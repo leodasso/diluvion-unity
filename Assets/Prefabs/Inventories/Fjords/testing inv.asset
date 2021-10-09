@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5941e9ff4f32cb4a8da7eec23b3e049, type: 3}
+  m_Name: testing inv
+  m_EditorClassIdentifier: 
+  merchant: 0
+  unlimitedSize: 0
+  saves: 0
+  playerShipInventory: 0
+  allowedItems: []
+  restrictedPurchase: 0
+  sellPercentage: 0.9
+  buyPercentage: 0.5
+  restockTime: 30
+  goldPerRestock: 100
+  maxGold: 5000
+  createRandomOnAwake: 0
+  possibleItems: []
+  goldValueOfGeneration: 500
+  maxSize: 50
+  minRarity: 0.2
+  maxRarity: 0.5
+  startingItems:
+  - item: {fileID: 11400000, guid: 152b365b55b9bda4f9d662f66877aba7, type: 2}
+    qty: 1
+  - item: {fileID: 11400000, guid: 23d6444389459a64bb5dd3d23ad79483, type: 2}
+    qty: 1
+  - item: {fileID: 11400000, guid: d1a69d6fde3862940b2989da47127fe7, type: 2}
+    qty: 1
+  - item: {fileID: 11400000, guid: 75d8d6436d83ca449b928fbb51f49d9d, type: 2}
+    qty: 1
+  - item: {fileID: 11400000, guid: 85920f2adb3bbab4a91184120de10ced, type: 2}
+    qty: 1
+  - item: {fileID: 11400000, guid: f7a42c06322df184aa741286b79620fe, type: 2}
+    qty: 1

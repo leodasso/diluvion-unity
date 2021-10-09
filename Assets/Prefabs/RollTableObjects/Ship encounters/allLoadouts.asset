@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b624c9e0327790447b6e0c246081b78d, type: 3}
+  m_Name: allLoadouts
+  m_EditorClassIdentifier: 
+  weight: 1
+  tags: []
+  rollBool: 0
+  containedTypes:
+  - m_Name: SubLoadout
+    m_AssemblyQualifiedName: Diluvion.SubLoadout, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  lastRolledObject: {fileID: 0}
+  entryToAdd: {fileID: 0}
+  tableEntries:
+  - {fileID: 11400000, guid: b0abd2fe8c6da9842abf391296b9cdac, type: 2}
+  - {fileID: 11400000, guid: ffe6e8f0f108e9b41a12fe27e3354d23, type: 2}
+  - {fileID: 11400000, guid: f7d7c15fb27b3c948bfad3b593eba5a5, type: 2}
+  - {fileID: 11400000, guid: 09f89581e84fcaa4997cfdfff336f0ca, type: 2}
+  - {fileID: 11400000, guid: 361e34f8a6258704c81d3af5649ef880, type: 2}
+  rollTable:
+  - entry: {fileID: 11400000, guid: b0abd2fe8c6da9842abf391296b9cdac, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 1
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: ffe6e8f0f108e9b41a12fe27e3354d23, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 1
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: f7d7c15fb27b3c948bfad3b593eba5a5, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 2
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 09f89581e84fcaa4997cfdfff336f0ca, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 361e34f8a6258704c81d3af5649ef880, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  _lastRoll: 0
+  _totalWeight: 50
+  _currentWeight: 0
+  minDanger: 35
+  minValue: 0
+  typeList:
+  - toggled: 0
+    type:
+      m_Name: SubLoadout
+      m_AssemblyQualifiedName: Diluvion.SubLoadout, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

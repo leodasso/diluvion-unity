@@ -1,0 +1,2231 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &135418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 403728}
+  - 114: {fileID: 11434552}
+  - 114: {fileID: 11423062}
+  - 114: {fileID: 11486106}
+  m_Layer: 0
+  m_Name: StageManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &403728
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135418}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -700.71423, y: -190.41963, z: -1.0182953}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11423062
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16e16f76714790c449da75d10883c8a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: ae8d9d44
+  useOtherObject: 0
+  valueGuid: 704636ced30caf4ba818cf5d3b674bf0
+  bankName: SFX
+  loadAsynchronous: 0
+  decodeBank: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 
+--- !u!114 &11434552
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4b801e8ad5a1524ba75f56d1f921588, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameState: 0
+  dontLoadScenes: 1
+  currentZone: 0
+  lbuiPrefab: {fileID: 0}
+  screenSpaceRoot: {fileID: 0}
+  loadDebugSave: 1
+  loadingFrom: {fileID: 102900000, guid: ddf07e5a1d487e440ac68e25149c4e8b, type: 3}
+  writingTo: {fileID: 0}
+  dsaveFileToLoad:
+    saveFileName: S Coast 2 fountain honor
+    playerName: 
+    savedCheckPoint: spirios socom
+    savedZones: 0100000000000000
+    homeBaseLevel: 0
+    crewSaveData:
+    - crewName: Jay Treadwasser
+      generatedName: []
+      stats:
+      - 2
+      - 1
+      - 1
+      - 3
+      gender: 0
+      voiceType: 0
+      perkName: 
+      stationName: st_helm
+      controllerName: jay controller
+      dialogueName: Jay Treadwasser
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 0
+    - crewName: Jack
+      generatedName: []
+      stats:
+      - 1
+      - 1
+      - 1
+      - 1
+      gender: 0
+      voiceType: 0
+      perkName: 
+      stationName: st_helm
+      controllerName: royal sailor
+      dialogueName: Jack
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 5
+    - crewName: Kat Smith
+      generatedName: []
+      stats:
+      - 2
+      - 1
+      - 3
+      - 1
+      gender: 1
+      voiceType: 0
+      perkName: 
+      stationName: st_bolt
+      controllerName: Kat controller
+      dialogueName: Kat
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 0
+    - crewName: Gregory Hudson
+      generatedName: []
+      stats:
+      - 1
+      - 2
+      - 3
+      - 1
+      gender: 0
+      voiceType: 0
+      perkName: 
+      stationName: st_sonar
+      controllerName: gregory controller
+      dialogueName: Gregory
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 0
+    - crewName: 
+      generatedName:
+      - Kelli
+      - Jenkins
+      stats:
+      - 1
+      - 1
+      - 2
+      - 1
+      gender: 1
+      voiceType: 0
+      perkName: 
+      stationName: st_sonar
+      controllerName: youngFemaleIcer animator
+      dialogueName: missionary sailor
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 551
+    - crewName: 
+      generatedName:
+      - Robert
+      - Kim
+      stats:
+      - 1
+      - 1
+      - 1
+      - 1
+      gender: 0
+      voiceType: 0
+      perkName: 
+      stationName: st_bolt
+      controllerName: Royal Jacob Male Controller
+      dialogueName: missionary sailor
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 620
+    - crewName: 
+      generatedName:
+      - Gil
+      - Zeitmacher
+      stats:
+      - 1
+      - 1
+      - 1
+      - 1
+      gender: 0
+      voiceType: 0
+      perkName: 
+      stationName: st_bolt
+      controllerName: Royal Jacob Male Controller
+      dialogueName: missionary sailor
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 559
+    - crewName: 
+      generatedName:
+      - Greg
+      - Zeitmacher
+      stats:
+      - 1
+      - 1
+      - 1
+      - 1
+      gender: 0
+      voiceType: 0
+      perkName: 
+      stationName: st_helm
+      controllerName: Male Icer animator
+      dialogueName: missionary sailor
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 642
+    - crewName: 
+      generatedName:
+      - Gil
+      - Dasso
+      stats:
+      - 1
+      - 1
+      - 1
+      - 1
+      gender: 0
+      voiceType: 0
+      perkName: 
+      stationName: st_helm
+      controllerName: Young Male Icer
+      dialogueName: missionary sailor
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 742
+    shipInventory:
+      locKey: Lionfish Inventory
+      invStrings:
+      - item air tank
+      - item air tank
+      - item air tank
+      - item air tank
+      - item air tank
+      - item air tank
+      - item air tank
+      - item air tank
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item map Fjords
+      - item air tank
+      - item crowbar
+      - item crowbar
+      - item serpent emblem
+      - item crowbar
+      - item crowbar
+      - item crowbar
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item crowbar
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item crowbar
+      - item reinforced plates
+      - item reinforced plates
+      - item crowbar
+      - item crowbar
+      - item food
+      - item food
+      - item food
+      - item crowbar
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item crowbar
+      - item key
+      - item crowbar
+      - item blackberry
+      - item blackberry
+      - item blackberry
+      - item crowbar
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item hassleys letter
+      - item_books
+      - item_seaChart
+      - item reel of wire
+      - item reel of wire
+      - item reel of wire
+      - item reel of wire
+      - item crowbar
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item_seaChart
+      - item_seaChart
+      - item_scrapMetal
+      - item_repair kit
+      - item key
+      - item_fishFossil
+      - item_fishFossil
+      - item_fishFossil
+      - item_fishFossil
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_fern
+      - item_repair kit
+      - item_seaChart
+      - item_books
+      - item_fishFossil
+      - item_fishFossil
+      - item_fishFossil
+      - item_fishFossil
+      - item_fishFossil
+      - item_fishFossil
+      - item_fern
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item passport
+      - item_seaChart
+      - item_seaChart
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_seaChart
+      - item air tank
+      - item air tank
+      - item captains charm
+      - item_str buff
+      - item lm spirios socom
+      gold: 8056
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    savedInventories:
+    - locKey: Hidden Safe
+      invStrings: []
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: Brass Chest
+      invStrings: []
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: Elegant Barrel
+      invStrings: []
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: Kuberi House Barrel
+      invStrings:
+      - item crowbar
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item lm house kuberi
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: kuberi house lm inv
+      invStrings:
+      - item captains charm
+      - item endur buff
+      - item lm house kuberi
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: sp shipyard barrel
+      invStrings: []
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: spirios shipyard lm inv
+      invStrings:
+      - item engine parts
+      - item engine parts
+      - item engine parts
+      - item engine parts
+      - item engine parts
+      - item reinforced plates
+      - item reinforced plates
+      - item reinforced plates
+      - item reinforced plates
+      - item reinforced plates
+      - item lm spirios shipyard
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: Clifftop Garden Barrel
+      invStrings:
+      - item lm clifftop gardens
+      - item captains charm
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: clifftop gardens lm inv
+      invStrings:
+      - item perc buff
+      - item_str buff
+      - item lm clifftop gardens
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: spirios socom lm inv
+      invStrings: []
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: house spirios lm inv
+      invStrings:
+      - item lm spirios house
+      - item house spirios emblem
+      - item captains charm
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: birchton lm inv
+      invStrings:
+      - item captains charm
+      - item_int buff
+      - item lm birchton
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: dark house lm inv
+      invStrings:
+      - item mystery emblem 2
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item lm dark tower
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: crescent pillar lm inv
+      invStrings:
+      - item reinforced plates
+      - item reinforced plates
+      - item reinforced plates
+      - item reinforced plates
+      - item reinforced plates
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item lm crescent pillar
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: fountain of honor lm inv
+      invStrings:
+      - item lm fountain honour
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: giants fossil lm inv
+      invStrings:
+      - item mystery emblem 3
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item lm giants fossil
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: twilight fields lm inv
+      invStrings:
+      - item endur buff
+      - item_int buff
+      - item lm twilight fields
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: ancient shipwreck lm inv
+      invStrings:
+      - item_repair kit
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item lm Ancient sub
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: morgensonne ruins lm inv
+      invStrings:
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item lm msonne ruins
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: banquet hall inv lm
+      invStrings:
+      - item lm spirios banquet
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: A beautiful inventory
+      invStrings: []
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: Twilight's Wreath Inventory
+      invStrings:
+      - item air tank
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: Levisson's Loot
+      invStrings:
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item blackNote
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: hollows peak lm inv
+      invStrings:
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item lm hollows peak
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: whirlpool lm inv
+      invStrings:
+      - item doodle emblem
+      - item_repair kit
+      - item_repair kit
+      - item lm whirlpool sewer
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: player storage
+      invStrings: []
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: Kosanza's Collection
+      invStrings:
+      - item lotus
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: Tour Guide
+      invStrings:
+      - item map Coast
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    savedInstanceIds: 
+    fovAdjust: 0
+    itemsAcquired:
+    - item captains charm
+    - item_str buff
+    - item lm spirios socom
+    savedQuests:
+    - locKey: letter of introduction
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: talkAlison
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: hireGreg
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: level2
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: dockToSocom
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: findDaybreak
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: iceCityPirate
+      complete: 0
+      hidden: 1
+      contitionStatus: 00
+    - locKey: hireKat
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: theDiveBar
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: aboutHassley
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: firstSailor
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: sos
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: getToTonnesburg
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: talkToHassley
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: items for hassley
+      complete: 1
+      hidden: 0
+      contitionStatus: 0000000000
+    - locKey: gettingPlates
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: morseRadio
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: engineParts
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: findingDrillSite
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: talkArmstrong
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: getCopperReels
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: theCollapse
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: regroup
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: talkToShadyRoyal
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: malcolmAtTburg
+      complete: 0
+      hidden: 1
+      contitionStatus: 00
+    - locKey: passport
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: theBlockade
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: talkToFarsteer
+      complete: 0
+      hidden: 1
+      contitionStatus: 00
+    - locKey: level3sub
+      complete: 0
+      hidden: 1
+      contitionStatus: 
+    - locKey: hireAlison
+      complete: 0
+      hidden: 1
+      contitionStatus: 00
+    - locKey: boardTear1
+      complete: 0
+      hidden: 1
+      contitionStatus: 00
+    - locKey: fountainUndock
+      complete: 0
+      hidden: 1
+      contitionStatus: 00
+    - locKey: tear2
+      complete: 0
+      hidden: 1
+      contitionStatus: 00
+    - locKey: tear3
+      complete: 0
+      hidden: 1
+      contitionStatus: 00
+    - locKey: fountainOfHonour
+      complete: 0
+      hidden: 0
+      contitionStatus: 00
+    unsavedQuests: []
+    displayedQuestLocKey: fountainOfHonour
+    indexOfShipBeingUsed: 0
+    savedShips:
+    - currentShipType: ship_lionfish
+      healthUpgrades: 0
+      depthUpgrades: 0
+      currentHealth: 25
+      appliedEmblemItem: item serpent emblem
+      testDepth: 0
+      knownLandmarks: []
+    - currentShipType: ship_beluga
+      healthUpgrades: 0
+      depthUpgrades: 0
+      currentHealth: 28
+      appliedEmblemItem: item serpent emblem
+      testDepth: 0
+      knownLandmarks: []
+    captainTimeUpgrades: 0
+    knownLandmarks:
+    - lm_tykkdam
+    - lm_tonnesburg
+    - lm_frozenGiant
+    - lm_giantsseat
+    - lm_reinfjord
+    - lm_stavKirke
+    - lm_glassielberg
+    - lm_socomFjords
+    - lm_dragonsTongue
+    - lm_daybreak
+    - lm_dancing_maren
+    - lm_icerDrill
+    - lm_iceCity
+    - lm_pillarCircle
+    - lm_fountain
+    - lm_spiriosBanquet
+    - lm_spiriosHouse
+    - lm_spiriosSocom
+    - lm_spiriosShipyard
+    - lm_houseKuberi
+    tutorialsDone: 0
+    tutorialSkipped: 1
+    tutorialsCompleted:
+    - skip
+    - throttleUp
+    - turning
+    - sideView
+    - talkTo
+    - toggleCompass
+    - docking
+    - dive
+    - fire
+    - ping
+    debugSave: 0
+    resourceItemNames:
+    - item_scrapMetal
+    - item_air tank
+    - item food
+    - item_Torpedo
+    - item air tank
+    timePlayed: 6434.898
+    deathTimes: 0
+    saveFileID: 
+    achievements: []
+    foundCharts: []
+    bakeToFile: 0
+  dsaveFileToSave:
+    saveFileName: DEMO Fjords Gamescom 2
+    playerName: Smith
+    savedCheckPoint: city of ice checkpoint
+    savedZones: 00000000
+    homeBaseLevel: 0
+    crewSaveData:
+    - crewName: Jay Treadwasser
+      generatedName: []
+      stats:
+      - 2
+      - 1
+      - 1
+      - 3
+      gender: 0
+      voiceType: 2
+      perkName: 
+      stationName: st_helm
+      controllerName: jay controller
+      dialogueName: Jay Treadwasser
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 0
+    - crewName: Jack
+      generatedName: []
+      stats:
+      - 1
+      - 1
+      - 1
+      - 1
+      gender: 0
+      voiceType: 2
+      perkName: 
+      stationName: st_helm
+      controllerName: royal sailor
+      dialogueName: Jack
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 5
+    - crewName: Kat Smith
+      generatedName: []
+      stats:
+      - 2
+      - 1
+      - 3
+      - 1
+      gender: 1
+      voiceType: 2
+      perkName: 
+      stationName: st_bolt
+      controllerName: Kat controller
+      dialogueName: Kat
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 0
+    - crewName: Gregory Hudson
+      generatedName: []
+      stats:
+      - 1
+      - 2
+      - 3
+      - 1
+      gender: 0
+      voiceType: 2
+      perkName: 
+      stationName: st_sonar
+      controllerName: gregory controller
+      dialogueName: Gregory
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 0
+    - crewName: 
+      generatedName:
+      - Kelli
+      - Jenkins
+      stats:
+      - 1
+      - 1
+      - 2
+      - 1
+      gender: 1
+      voiceType: 2
+      perkName: 
+      stationName: st_sonar
+      controllerName: youngFemaleIcer animator
+      dialogueName: generic_desperate_sailor
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 551
+    - crewName: 
+      generatedName:
+      - Robert
+      - Kim
+      stats:
+      - 1
+      - 1
+      - 1
+      - 1
+      gender: 0
+      voiceType: 2
+      perkName: 
+      stationName: st_helm
+      controllerName: Royal Jacob Male Controller
+      dialogueName: generic_Meek_Sailor
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 620
+    - crewName: 
+      generatedName:
+      - Gil
+      - Zeitmacher
+      stats:
+      - 1
+      - 1
+      - 1
+      - 1
+      gender: 0
+      voiceType: 2
+      perkName: 
+      stationName: st_bolt
+      controllerName: Royal Jacob Male Controller
+      dialogueName: generic_Meek_Sailor
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 559
+    - crewName: 
+      generatedName:
+      - Greg
+      - Zeitmacher
+      stats:
+      - 1
+      - 1
+      - 1
+      - 1
+      gender: 0
+      voiceType: 2
+      perkName: 
+      stationName: st_helm
+      controllerName: Male Icer animator
+      dialogueName: generic_Angry_Sailor
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 642
+    - crewName: Hal Whistleweight
+      generatedName: []
+      stats:
+      - 3
+      - 0
+      - 4
+      - 0
+      gender: 0
+      voiceType: 0
+      perkName: 
+      stationName: st_torpedo
+      controllerName: royal sailor
+      dialogueName: Hal Whistleweight
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 0
+    shipInventory:
+      locKey: Lionfish Inventory
+      invStrings:
+      - item air tank
+      - item air tank
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item map Fjords
+      - item reinforced plates
+      - item engine parts
+      - item engine parts
+      - item engine parts
+      - item engine parts
+      - item engine parts
+      - item_books
+      - item key
+      - item_fishFossil
+      - item_fishFossil
+      - item_fishFossil
+      - item_fishFossil
+      - item_fishFossil
+      - item_fishFossil
+      - item_Torpedo
+      - item food
+      - item food
+      - item food
+      - item_fern
+      - item_books
+      - item_fishFossil
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_Torpedo
+      - item_fishFossil
+      - item_fishFossil
+      - item_books
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item crowbar
+      - item_seaChart
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_fishFossil
+      - item_fishFossil
+      - item_fishFossil
+      - item_books
+      - item_fishFossil
+      - item_fishFossil
+      - item_fishFossil
+      - item crowbar
+      - item_seaChart
+      - item_seaChart
+      - item_Torpedo
+      - item_books
+      - item_books
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_seaChart
+      - item crowbar
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      gold: 353
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    savedInventories:
+    - locKey: Hidden Safe
+      invStrings: []
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: Elegant Barrel
+      invStrings: []
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: Brass Chest
+      invStrings: []
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    savedInstanceIds: 
+    fovAdjust: 0
+    itemsAcquired:
+    - item_books
+    - item key
+    - item_scrapMetal
+    - item_fishFossil
+    - item_Torpedo
+    - item food
+    - item_fern
+    - item crowbar
+    - item_royal_dinars
+    - item_seaChart
+    savedQuests:
+    - locKey: letter of introduction
+      complete: 0
+      hidden: 1
+      contitionStatus: 00
+    - locKey: talkAlison
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: hireGreg
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: level2
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: dockToSocom
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: findDaybreak
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: iceCityPirate
+      complete: 0
+      hidden: 1
+      contitionStatus: 00
+    - locKey: hireKat
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: theDiveBar
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: aboutHassley
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: firstSailor
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: sos
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: getToTonnesburg
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: talkToHassley
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: hireHal
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: demoUpgradeItems
+      complete: 1
+      hidden: 0
+      contitionStatus: 000000
+    - locKey: demoGetUpgrade
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: biggerBang
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: passport
+      complete: 0
+      hidden: 0
+      contitionStatus: 00
+    unsavedQuests: []
+    displayedQuestLocKey: 
+    indexOfShipBeingUsed: 0
+    savedShips:
+    - currentShipType: ship_lionfish
+      healthUpgrades: 0
+      depthUpgrades: 0
+      currentHealth: 25
+      appliedEmblemItem: item serpent emblem
+      testDepth: 0
+      knownLandmarks: []
+    captainTimeUpgrades: 0
+    knownLandmarks:
+    - lm_tonnesburg
+    - lm_tykkdam
+    - lm_iceCity
+    tutorialsDone: 0
+    tutorialSkipped: 0
+    tutorialsCompleted:
+    - throttleUp
+    - turning
+    - sideView
+    - ping
+    - fire
+    - fireTorpTut
+    debugSave: 0
+    resourceItemNames:
+    - item_scrapMetal
+    - item_air tank
+    - item food
+    - item air tank
+    - item_Torpedo
+    timePlayed: 0
+    deathTimes: 0
+    saveFileID: 
+    achievements: []
+    foundCharts: []
+    bakeToFile: 0
+  currentSave: 0
+  loadAsync: 1
+  loadingBarPrefab: {fileID: 109704, guid: 9bd7e92a13fab9b4f8c890ae09c0026f, type: 2}
+  loadingLevel: 0
+--- !u!114 &11486106
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16e16f76714790c449da75d10883c8a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: ae8d9d44
+  useOtherObject: 0
+  valueGuid: b07a7c7cdb52b8448fc4fe42a0fa4438
+  bankName: Music
+  loadAsynchronous: 0
+  decodeBank: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 135418}
+  m_IsPrefabParent: 1

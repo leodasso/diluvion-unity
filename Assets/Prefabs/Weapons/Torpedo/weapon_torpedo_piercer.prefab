@@ -1,0 +1,186 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 400000}
+  - component: {fileID: 11403336}
+  - component: {fileID: 11458938}
+  - component: {fileID: 114367378734590994}
+  - component: {fileID: 114135461369082248}
+  m_Layer: 0
+  m_Name: weapon_torpedo_piercer
+  m_TagString: NoOutline
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.42, y: -0.008, z: 0.063}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11403336
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c32fd9df29ca33f48a4d5114671fbad1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_positionOffsetData:
+    positionOffset: {x: 0, y: 0, z: 0}
+    KeepMe: 0
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_listeners:
+    initialListenerList: []
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!114 &11458938
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ceb77e6a8b04284b92a411724f0609c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: 4afb0717
+  useOtherObject: 0
+  valueGuid: a721e9476f5b1641b406e5dde4ca1e4e
+  eventID: -1304253854
+  soundEmitterObject: {fileID: 0}
+  enableActionOnEvent: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  transitionDuration: 0
+  m_callbackData: {fileID: 0}
+  playingId: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: myWeaponType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: niceName
+      value: Torpedo
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: ammo
+      value: 
+      objectReference: {fileID: 11436462, guid: dba2edb91a3cd644481e224e544a2e8a,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: ammoItem
+      value: 
+      objectReference: {fileID: 11400000, guid: 1a862605a0bdd28478e13d688ed1772f,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: noiseValue
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: stats.shotSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: torpedoInstability.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: torpedoInstability.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: torpedoInstability.z
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: fireParticle
+      value: 
+      objectReference: {fileID: 146122, guid: 473cb7205ac04914fa2a448fdbe8dd46, type: 2}
+    - target: {fileID: 0}
+      propertyPath: stats.damage
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: stats.cooldown
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: icon
+      value: 
+      objectReference: {fileID: 21300022, guid: 4aabcad5046ac4740a6f93064fc492c4,
+        type: 3}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+--- !u!114 &114135461369082248
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 987fc53e86992334b90596b3b111a650, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114367378734590994
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50af7eb5d4fc9044988c896604c117a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FireFX: {fileID: 146122, guid: 473cb7205ac04914fa2a448fdbe8dd46, type: 2}
+  ammoPrefab: {fileID: 128724, guid: 4abc647dac6fec14b8b82b66b89fd3d5, type: 2}
+  exitPoint: {x: 0, y: 0, z: 0}
+  exitVector: {x: 0, y: 0, z: 1}
+  damage: 12
+  maxRange: 150
+  cooldown: 10
+  shotSpeed: 8
+  critRate: 1
+  shotSpread: 5
+  munitionRadius: 0.15
+  spin: 100
+  recoil: 6
+  danger: 165
+  target: {fileID: 0}
+  armingTime: 1.2
+  triggerRange: 1
+  driveSpeed: 22
+  drivePower: 100
+  optimalSteeringSpeed: 25
+  steering: 3
+  forwardness: 125

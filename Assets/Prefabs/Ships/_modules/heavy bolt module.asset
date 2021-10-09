@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc1451bac0fd884429e65b77ff9e6195, type: 3}
+  m_Name: heavy bolt module
+  m_EditorClassIdentifier: 
+  moduleName: {fileID: 11400000, guid: 816ca45a2b56ca84bb0a6b36eebc5b71, type: 2}
+  stationPrefab: {fileID: 11451762, guid: 4ddbf557a94df044d8892aaa3a39d6e3, type: 2}
+  shipMods:
+  - {fileID: 11400000, guid: ee369db0f32218c4d870b380aaa62649, type: 2}
+  - {fileID: 11400000, guid: b42acee127d68294cbaf6bfb0c77b3b7, type: 2}
+  inputName: fire bolt
+  dangerValue: 10
+  UI: {fileID: 0}
+  allowedWeapons:
+  - {fileID: 11400000, guid: 85920f2adb3bbab4a91184120de10ced, type: 2}
+  - {fileID: 11400000, guid: 511e053d350b9364f880bc3b6ad42caf, type: 2}
+  - {fileID: 11400000, guid: c1cd058896c2e72438cdae3a5072d429, type: 2}
+  - {fileID: 11400000, guid: aac5d9bb27c04ae4cb72e6363fba5424, type: 2}
+  - {fileID: 11400000, guid: f5517408ba6f9a4488820b42460a43dc, type: 2}
+  ammo: {fileID: 11400000, guid: d1e5271038de8934e9923b1b26791186, type: 2}
+  aimCastRadius: 0.5
+  targetingLayers:
+    serializedVersion: 2
+    m_Bits: 2049
+  weaponIcon: {fileID: 0}
+  showLeadGUI: 1
+  attackPattern: {fileID: 0}

@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: Ivan
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -119.531876, y: -366.96475, z: 26.911282}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5bc224e94d4bd743b48051ef9224ff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullPortrait: {fileID: 21300034, guid: 8d40c07ce2a11834b9a467d5aa5dd95c, type: 3}
+  chatterPortrait: {fileID: 21300036, guid: 8d40c07ce2a11834b9a467d5aa5dd95c, type: 3}
+  gender: 0
+  conversations:
+  - {fileID: 11400000, guid: 7f6e728ecfcb7ed4da366d7083f84c53, type: 2}
+  - {fileID: 11400000, guid: e82ec3235cabd4241b671b8e8468e918, type: 2}
+  - {fileID: 11400000, guid: bf75b8ca53613384cb9b4a4314988342, type: 2}
+  - {fileID: 11400000, guid: 8c1a20aa4bc249546af13b5ce6ae3d1e, type: 2}
+  - {fileID: 11400000, guid: 6c5e00253e203c04e92a207adc82b4ec, type: 2}
+  - {fileID: 11400000, guid: 06f1ef53eb8d9384ebb61e6eda109cca, type: 2}
+  - {fileID: 11400000, guid: 40b062d25b5dbce48b172e40c390a0f5, type: 2}
+  - {fileID: 11400000, guid: 6dbf66aab4d78a34cb60e7b3216c9718, type: 2}
+  - {fileID: 11400000, guid: ae0a3a7291474c94e99ead5536ca30b1, type: 2}
+  - {fileID: 11400000, guid: cc48d747f7b94744bbd46e7375f38b0f, type: 2}
+  - {fileID: 11400000, guid: 0984f0cffa9c0794f8f9249a75070785, type: 2}
+  - {fileID: 11400000, guid: 41d2b70c3e5374047ba5e8bfa417c580, type: 2}
+  - {fileID: 11400000, guid: 202815a2d1d25d04e88b1d0e34df9340, type: 2}
+  - {fileID: 11400000, guid: f3548921b13130a40bbdafc7c19122a0, type: 2}
+  - {fileID: 11400000, guid: 22d12d29b16e29e4faea6b2c7d39258a, type: 2}
+  - {fileID: 11400000, guid: daba8ccc159770a42b001dfdf636b82b, type: 2}
+  - {fileID: 11400000, guid: 720aefe04b8ec284e8fa18f78a477b5a, type: 2}
+  - {fileID: 11400000, guid: eca459a6ac381e94f9054f40d8072240, type: 2}
+  - {fileID: 11400000, guid: 7fc253dd4a1d24d429a7ff80617ba512, type: 2}
+  - {fileID: 11400000, guid: 266836a7b74eab74f8abc73744267718, type: 2}
+  - {fileID: 11400000, guid: 788f9ad63bebacd4691c61590fd7ed25, type: 2}
+  - {fileID: 11400000, guid: 04d722dbcb0309742931d205d7f16edd, type: 2}
+  - {fileID: 11400000, guid: 7ee2ca22ec2f4f9409efc5e78fd2fd3f, type: 2}
+  validConversations: []
+  myCrew: {fileID: 0}
+  locKey: dialog/Ivan_Male_
+  selectable: 0
+  omitFromLoc: 0
+  lockLocKeys: 1
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1

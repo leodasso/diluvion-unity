@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a17f73243c12d7418fa26f028879ef8, type: 3}
+  m_Name: Prodding the Beast
+  m_EditorClassIdentifier: 
+  debug: 0
+  locKey: prodding_beast
+  sequential: 0
+  title: Prodding the Beast
+  description: The city-ship Naglfar is the only place in the Sunken Coast with enough
+    Blue Heatstone to get your ship into the Abyss safely. Looks like we have to do
+    some good old-fashioned pirating.
+  startAnotherQuest: 0
+  questToStart: {fileID: 0}
+  onQuestComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  prereqsToStart: []
+  objectiveCs:
+  - objective: {fileID: 11400000, guid: 9680dbaabd9d5bd4ca49ced11ef95975, type: 2}
+    requirePrevious: 0
+    overrideName: 1
+    newName: Steal the Blue Heatstone from the Naglfar's Reactor
+  - objective: {fileID: 11400000, guid: 6bde5c53544414d468aa5586f8f5a511, type: 2}
+    requirePrevious: 0
+    overrideName: 0
+    newName: a great objective.

@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32aabd5c55471784e8604d81a7fa8f26, type: 3}
+  m_Name: pro inOut salvager
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  description: "I will Wander between explorables until: \n \nI was attacked by a
+    Enemy, Friend, Interesting, UnInteresting i will make an attack run until i get
+    to close, then reposition for another attack, \n \nI found or, was attacked or,
+    heard an SOS or, was hailed or, heard a Ping by a Scary i will run away from my
+    opressor, \n \nI found or, was attacked or, heard an SOS or, was hailed or, heard
+    a Ping by a Enemy i will make an attack run until i get to close, then reposition
+    for another attack, \n \nI was hailed by a Friend, Interesting i will slow down
+    for trade., \n \nI heard an SOS by a Friend, Interesting i will investigate the
+    place   , \n \n"
+  baseFactions: []
+  nonFactionRelations: []
+  patience: -6.4
+  bravery: 1.33
+  shipSteer: 0
+  weaponCrew: 4.42
+  defaultFight: {fileID: 11400000, guid: ffaf717fb9f4ef348b9f76091b498a05, type: 2}
+  defaultFlee: {fileID: 11400000, guid: 6d4bced7345ee514d802e8e52c63cb29, type: 2}
+  defaultMission: {fileID: 11400000, guid: 972df179e33ef6140884b8669856dada, type: 2}
+  reactions:
+  - targetContext: 21
+    reactionContext: 1
+    actionType: 3
+    overrideMission: {fileID: 0}
+    distanceImportance: 0
+    priorityMultiplier: 12
+    actions: []
+    responses: []
+  - targetContext: 8
+    reactionContext: -225
+    actionType: 1
+    overrideMission: {fileID: 0}
+    distanceImportance: 0
+    priorityMultiplier: 11
+    actions: []
+    responses: []
+  - targetContext: -31
+    reactionContext: 30
+    actionType: 3
+    overrideMission: {fileID: 0}
+    distanceImportance: 0
+    priorityMultiplier: 10
+    actions: []
+    responses: []
+  - targetContext: 6
+    reactionContext: 8
+    actionType: 2
+    overrideMission: {fileID: 11400000, guid: 5ee9db890e0160e44b139182620e0fbd, type: 2}
+    distanceImportance: 0
+    priorityMultiplier: 4
+    actions: []
+    responses: []
+  - targetContext: 6
+    reactionContext: 16
+    actionType: 2
+    overrideMission: {fileID: 11400000, guid: 4dc2543695e993f4d9f99c5a5fcb8d3d, type: 2}
+    distanceImportance: 0
+    priorityMultiplier: 2
+    actions: []
+    responses: []
+  designNotes: Pro circleStrafer

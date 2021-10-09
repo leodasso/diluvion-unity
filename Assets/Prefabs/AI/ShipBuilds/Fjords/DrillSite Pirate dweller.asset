@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a4a8c24289c5ae468bc34d82bb5d11e, type: 3}
+  m_Name: DrillSite Pirate dweller
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags:
+  - {fileID: 11400000, guid: 1a3ae9573918ced4aa37a1a76305b581, type: 2}
+  - {fileID: 11400000, guid: 227dcec2530bf1042b3eb2558f25efa1, type: 2}
+  prefab: {fileID: 146310, guid: 70b8267ab618c8d419a573b5b7717092, type: 2}
+  resourceCost:
+    value: 0
+    danger: 0
+    hazardDanger: 0
+  positionSearches:
+  - {fileID: 11400000, guid: 467b40efa4959ec4e970d21ec6a4e81b, type: 2}
+  chassis: {fileID: 11400000, guid: 1d59093fd5939204f8680bb2bd25dbf1, type: 2}
+  shipBuildSettings:
+    overrideName: 0
+    newName: {fileID: 0}
+    dockable: 0
+    cull: 1
+    ignoreCurrents: 0
+    inventoryGenerator: {fileID: 11400000, guid: 1e3d991426002ae46a6d0c430ab1f441,
+      type: 2}
+    toSetAsChild:
+    - {fileID: 1510561148501002, guid: a9878b2ccbd775e49a45792ac0b479e2, type: 2}
+    newSignatures: []
+    crippledModels: []
+    destroyedObjects: []
+    loadout: {fileID: 11400000, guid: 4af18e3813b454c43a660cb5485280a8, type: 2}
+    personality: {fileID: 11400000, guid: 949873be598cde145b7630ecf519cce4, type: 2}
+    interior: {fileID: 0}
+    shipEmblem: {fileID: 11400000, guid: 079ba2f980a2ab74aa7be5be4eb29ca7, type: 2}
+    newFactions:
+    - {fileID: 11400000, guid: bf3ad23ba8e5e5d41bf9ce49eb6cc30c, type: 2}
+    newRelations: []
+    newReactions: []

@@ -1,0 +1,1407 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: icer sailor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -119.531876, y: -366.96475, z: 26.911282}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5bc224e94d4bd743b48051ef9224ff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullPortrait: {fileID: 0}
+  chatterPortrait: {fileID: 0}
+  gender: 1
+  dialogues:
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: dialog/icer sailor_Female__hire me
+    titleText: hire me
+    question: Want to join up?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Join your crew, you say? Will there be opportunities for study along the
+        way?
+      locKey: dialog/icer sailor_Female__hire me_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 1
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 1
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 0
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: dialog/icer sailor_Female__adventure
+    titleText: adventure
+    question: What's your deal?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: I believe in knowledge. With hard work and appropriate learning, we can
+        overcome any obstacle!
+      locKey: dialog/icer sailor_Female__adventure_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 1
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: dockToSocom
+      questStatus: 2
+      secondaryStatus: 1
+      questStatus2: 1
+      helpString: '''dockToSocom'' must be NotStarted or InProgress for this to be
+        available.'
+    dialogueTriggers: []
+    locKey: dialog/icer sailor_Female__excitement
+    titleText: excitement
+    question: '...?'
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: It never ceases to amaze me when I think about just how well humanity
+        has adapted to life in the ocean. @I wonder if the drill teams will ever break
+        through to the surface?
+      locKey: dialog/icer sailor_Female__excitement_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 2
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 1
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: level2
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''level2'' must be Complete for this to be available.'
+    - questLocKey: talkArmstrong
+      questStatus: 2
+      secondaryStatus: 1
+      questStatus2: 1
+      helpString: '''talkArmstrong'' must be NotStarted or InProgress for this to
+        be available.'
+    dialogueTriggers: []
+    locKey: dialog/icer sailor_Female__bigger better
+    titleText: bigger better
+    question: How about this new ship?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "How novel! I hadn\u2019t thought that a coolant system could be so efficient.
+        What did you say your mechanic\u2019s name was?"
+      locKey: dialog/icer sailor_Female__bigger better_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 3
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: theCollapse
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''theCollapse'' must be Complete for this to be available.'
+    - questLocKey: passport
+      questStatus: 2
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''passport'' must be NotStarted for this to be available.'
+    dialogueTriggers: []
+    locKey: "dialog/icer sailor_Female__I can\u2019t believe it. All that work...
+      and to end in failure yet again..."
+    titleText: "I can\u2019t believe it. All that work... and to end in failure yet
+      again..."
+    question: 
+    speeches: []
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 1
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 4
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: passport
+      questStatus: 1
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''passport'' must be InProgress for this to be available.'
+    dialogueTriggers: []
+    locKey: "dialog/icer sailor_Female__A competition? I hope this won\u2019t impact
+      negatively on our opportunities for learning."
+    titleText: "A competition? I hope this won\u2019t impact negatively on our opportunities
+      for learning."
+    question: 
+    speeches: []
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 5
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: passport
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''passport'' must be Complete for this to be available.'
+    - questLocKey: fountainOfHonour
+      questStatus: 2
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''fountainOfHonour'' must be NotStarted for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/icer sailor_Female__size of crab
+    titleText: size of crab
+    question: Quite a battle, eh?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "Did you see the size of that crab? I\u2019d love to know how it managed
+        to get to that large."
+      locKey: dialog/icer sailor_Female__size of crab_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 6
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: passport
+      questStatus: 1
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''passport'' must be InProgress for this to be available.'
+    dialogueTriggers: []
+    locKey: "dialog/icer sailor_Female__We\u2019re finally leaving the Fjords? Took
+      you long enough..."
+    titleText: "We\u2019re finally leaving the Fjords? Took you long enough..."
+    question: Ready for the Sunken Coast?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "I can\u2019t wait to go to the Sunken Coast \u2013 I hear they have a
+        magnificent freshwater fountain there!"
+      locKey: "dialog/icer sailor_Female__We\u2019re finally leaving the Fjords? Took
+        you long enough..._sp_0"
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 7
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: "dialog/icer sailor_Female__We\u2019re running away? Hey! We almost had
+      it cornered!"
+    titleText: "We\u2019re running away? Hey! We almost had it cornered!"
+    question: 
+    speeches: []
+    text: 
+    textTriggers: tear1Dead
+    showWhen: 2
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 1
+    showChatter: 1
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 8
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: newEars
+      questStatus: 1
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''newEars'' must be InProgress for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/icer sailor_Female__to the left
+    titleText: to the left
+    question: '...?'
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "Interestingly, if that wound had been a few inches to the left, it would
+        have avoided severing the major arteries in Gregory\u2019s chest and increased
+        his chance of survival by up to 40%."
+      locKey: dialog/icer sailor_Female__to the left_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 9
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: bounty1
+      questStatus: 1
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''bounty1'' must be InProgress for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/icer sailor_Female__It's about time.
+    titleText: It's about time.
+    question: Ready for some bounties?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "Interesting... have you considered that these bounties are just a distraction
+        technique so we won\u2019t pay too much attention to the conflict and poverty
+        in this area?"
+      locKey: dialog/icer sailor_Female__It's about time._sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 10
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 1
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: meetingCharles
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''meetingCharles'' must be Complete for this to be available.'
+    - questLocKey: level3sub
+      questStatus: 2
+      secondaryStatus: 1
+      questStatus2: 1
+      helpString: '''level3sub'' must be NotStarted or InProgress for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/icer sailor_Female__good riddance
+    titleText: good riddance
+    question: '...'
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "I suppose the competition\u2019s one less thing to worry about, then.
+        @Are you sure they\u2019re not going to come after us?"
+      locKey: dialog/icer sailor_Female__good riddance_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 11
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: crippleNaglfar
+      questStatus: 1
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''crippleNaglfar'' must be InProgress for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/icer sailor_Female__kuberi
+    titleText: kuberi
+    question: How was Kuberi?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "The unique Kuberi plant species are interesting, yes, but I\u2019m really
+        not interested in studying living things."
+      locKey: dialog/icer sailor_Female__kuberi_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 12
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: crippleNaglfar
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''crippleNaglfar'' must be Complete for this to be available.'
+    - questLocKey: level3sub
+      questStatus: 2
+      secondaryStatus: 1
+      questStatus2: 1
+      helpString: '''level3sub'' must be NotStarted or InProgress for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/icer sailor_Female__Good sailing
+    titleText: Good sailing
+    question: That was a close call.
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: The sheer size! The gleam on her hull! @The <i>Naglfar</i> may just be
+        the most glorious thing I have ever set eyes upon!
+      locKey: dialog/icer sailor_Female__Good sailing_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 13
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 1
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: level3sub
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''level3sub'' must be Complete for this to be available.'
+    - questLocKey: findSteelHammer
+      questStatus: 2
+      secondaryStatus: 1
+      questStatus2: 1
+      helpString: '''findSteelHammer'' must be NotStarted or InProgress for this to
+        be available.'
+    dialogueTriggers: []
+    locKey: dialog/icer sailor_Female__abyss
+    titleText: abyss
+    question: Ready for the Abyss?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: There are many Icer journeymen who come to the Abyss to learn specialities
+        such as mineral extraction and deep sea pressurisation. @It will be good to
+        talk with them.
+      locKey: dialog/icer sailor_Female__abyss_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 1
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 14
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: findCrevasseEdge
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''findCrevasseEdge'' must be Complete for this to be available.'
+    - questLocKey: findMiras
+      questStatus: 2
+      secondaryStatus: 1
+      questStatus2: 1
+      helpString: '''findMiras'' must be NotStarted or InProgress for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/icer sailor_Female__remarkable
+    titleText: remarkable
+    question: You like Crevasse Edge?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: It is impressive that any structure can withhold such great pressures
+        at these depths. @Crevasse Edge is truly a remarkable feat of engineering.
+      locKey: dialog/icer sailor_Female__remarkable_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 15
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: dialog/icer sailor_Female__Is no one else going to say anything about
+      that suspicious-looking cave?
+    titleText: Is no one else going to say anything about that suspicious-looking
+      cave?
+    question: 
+    speeches: []
+    text: 
+    textTriggers: strangeLure
+    showWhen: 2
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 1
+    showChatter: 1
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 16
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: findMiras
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''findMiras'' must be Complete for this to be available.'
+    - questLocKey: chapelOfDeep
+      questStatus: 2
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''chapelOfDeep'' must be NotStarted for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/icer sailor_Female__miras
+    titleText: miras
+    question: What do you think about Miras?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "That priest fellow doesn't half like the sound of his own voice. @We
+        have two choices \u2013 ear plugs or duct tape."
+      locKey: dialog/icer sailor_Female__miras_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 17
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: dialog/icer sailor_Female__Where's the structures? The libraries? Not
+      even a hint of gold?
+    titleText: Where's the structures? The libraries? Not even a hint of gold?
+    question: 
+    speeches: []
+    text: 
+    textTriggers: skalle
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 1
+    showChatter: 1
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 1
+    expired: 0
+    expireTime: 48
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 18
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: dialog/icer sailor_Female__There must be some logical explanation for
+      what we're seeing.... must be...
+    titleText: There must be some logical explanation for what we're seeing.... must
+      be...
+    question: 
+    speeches: []
+    text: 
+    textTriggers: ending
+    showWhen: 0
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 1
+    showChatter: 1
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 19
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  conversations:
+  - {fileID: 11400000, guid: 00a1d82360662884a80992b0814c06ed, type: 2}
+  - {fileID: 11400000, guid: f71623fc03b007241a4f791a9a42337f, type: 2}
+  - {fileID: 11400000, guid: 9910fc3b8b9757a46b7678a5edd08f78, type: 2}
+  - {fileID: 11400000, guid: 57e2edaf382d3a24d873d700faa4d768, type: 2}
+  - {fileID: 11400000, guid: bc44b420978a86547a18ec47191916ba, type: 2}
+  - {fileID: 11400000, guid: 6fb694adfe19b1a4880b009997e52cf7, type: 2}
+  - {fileID: 11400000, guid: 89d5b9a470db0d5438fbd4b26f3d58e4, type: 2}
+  - {fileID: 11400000, guid: 8dd6facc79ae3cd45b6dd1951fd7b7d0, type: 2}
+  - {fileID: 11400000, guid: a3bf9ee062dbf5743ade8d7652b0e6ed, type: 2}
+  - {fileID: 11400000, guid: 59b7f64c846d9084c843a24b4ada5a09, type: 2}
+  - {fileID: 11400000, guid: 83592152da567204a9e1b82139f5d3b5, type: 2}
+  - {fileID: 11400000, guid: dd9b6d2c78ed98541ad9659a1ee2a49d, type: 2}
+  - {fileID: 11400000, guid: 70383289e9ff56649ad4c80eb78e82d4, type: 2}
+  - {fileID: 11400000, guid: 12eec82f2ae48a04386cb64ffeb84209, type: 2}
+  - {fileID: 11400000, guid: f7c24ff8cd9bb6c40a348a8f53839ced, type: 2}
+  - {fileID: 11400000, guid: b2fa7f9924a4cc948bcab3bcbbbb93b2, type: 2}
+  - {fileID: 11400000, guid: d2f0604bc7bb9ed498a36dbe6943d2b6, type: 2}
+  - {fileID: 11400000, guid: 2be81742726eaa14abad223fc61830a1, type: 2}
+  - {fileID: 11400000, guid: 7d38953a27eb50142aae979b2e7380f0, type: 2}
+  - {fileID: 11400000, guid: d46fa4f23572af944b43e7fc0f53961b, type: 2}
+  myCrew: {fileID: 0}
+  locKey: dialog/icer sailor_Female_
+  selectable: 0
+  omitFromLoc: 0
+  lockLocKeys: 1
+  validDialogues: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1

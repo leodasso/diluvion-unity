@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: Victor's_alive___
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 11400000, guid: 7e32ae0ef55c24b4a82c1c9cadbfaee7, type: 2}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 1
+  chatterShowsOnce: 1
+  titleText: Victor's alive...
+  previewText: "Chatter: Victor's alive...\nPlayer: So, about Victor...\n\nMe: So...
+    @Victor\u2019s alive. Damnit, if I\u2019d known sooner we could have sorted this
+    mess back in the Sunken Coast!\nAlison Hosstrevar: Ugh, not this again\u2026 @You
+    know, I\u2019d like to actually learn something about the person who\u2019s been
+    gunning for us.\nMe: Victor was... is the captain of the <i>Morgen\u2019s Tear</i>.
+    @Damn good helmsman too \u2013 he served under me before I was promoted to Admiral.
+    @The wars weren\u2019t kind to him though.... @He became fixated on destroying
+    House Spirios, or anyone else who threatened Morgensonne...\nAlison Hosstrevar:
+    But you didn\u2019t know he was actually a woman? @You lot really need to get
+    your eyes tested. "
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: So, about Victor
+  speeches:
+  - locKey: dialog/Jay Treadwasser_Male__Victor's alive..._sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "So... @Victor\u2019s alive. Damnit, if I\u2019d known sooner we could have
+      sorted this mess back in the Sunken Coast!"
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Jay Treadwasser_Male__Victor's alive..._sp_1_Alison Hosstrevar(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: f628dcfa9337af041809cf0563d0d73c, type: 2}
+    text: "Ugh, not this again\u2026 @You know, I\u2019d like to actually learn something
+      about the person who\u2019s been gunning for us."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Jay Treadwasser_Male__Victor's alive..._sp_2
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "Victor was... is the captain of the <i>Morgen\u2019s Tear</i>. @Damn good
+      helmsman too \u2013 he served under me before I was promoted to Admiral. @The
+      wars weren\u2019t kind to him though.... @He became fixated on destroying House
+      Spirios, or anyone else who threatened Morgensonne..."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Jay Treadwasser_Male__Victor's alive..._sp_3_Alison Hosstrevar(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: f628dcfa9337af041809cf0563d0d73c, type: 2}
+    text: "But you didn\u2019t know he was actually a woman? @You lot really need
+      to get your eyes tested. "
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Jay Treadwasser_Male__Victor's alive...

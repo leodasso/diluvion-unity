@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32aabd5c55471784e8604d81a7fa8f26, type: 3}
+  m_Name: Trader Behaviour
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  description: "I will wander between towns until: \n \nI was attacked by a Enemy,
+    Friend, Interesting, UnInteresting i will circle around target and attack until
+    dead, \n \nI found or, was attacked or, heard an SOS or, was hailed or, heard
+    a Ping by a Scary i will run away from my opressor, \n \nI was hailed by a Friend,
+    Interesting i will slow down for trade., \n \n"
+  baseFactions: []
+  nonFactionRelations: []
+  patience: 5
+  bravery: -5
+  shipSteer: -7.7
+  weaponCrew: 5
+  defaultFight: {fileID: 11400000, guid: 4426c0704865b294c89780f19348ded0, type: 2}
+  defaultFlee: {fileID: 11400000, guid: 6d4bced7345ee514d802e8e52c63cb29, type: 2}
+  defaultMission: {fileID: 11400000, guid: 91c2ea79e2baaab439f1db8b54ecf28a, type: 2}
+  reactions:
+  - targetContext: 23
+    reactionContext: 1
+    actionType: 3
+    overrideMission: {fileID: 0}
+    distanceImportance: 0
+    priorityMultiplier: 12
+    actions: []
+    responses: []
+  - targetContext: 8
+    reactionContext: -1
+    actionType: 1
+    overrideMission: {fileID: 0}
+    distanceImportance: 0
+    priorityMultiplier: 11
+    actions: []
+    responses: []
+  - targetContext: 22
+    reactionContext: 8
+    actionType: 2
+    overrideMission: {fileID: 11400000, guid: 5ee9db890e0160e44b139182620e0fbd, type: 2}
+    distanceImportance: 0
+    priorityMultiplier: 10
+    actions: []
+    responses: []
+  designNotes: Trader Behaviour

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5941e9ff4f32cb4a8da7eec23b3e049, type: 3}
+  m_Name: fjords simple chest 1
+  m_EditorClassIdentifier: 
+  merchant: 0
+  unlimitedSize: 0
+  saves: 1
+  playerShipInventory: 0
+  allowedItems: []
+  restrictedPurchase: 0
+  sellPercentage: 0.9
+  buyPercentage: 0.5
+  restockTime: 30
+  goldPerRestock: 100
+  maxGold: 5000
+  createRandomOnAwake: 0
+  possibleItems: []
+  goldValueOfGeneration: 500
+  maxSize: 10
+  minRarity: 0.2
+  maxRarity: 0.5
+  startingItems:
+  - item: {fileID: 11400000, guid: d1e5271038de8934e9923b1b26791186, type: 2}
+    qty: 25
+  - item: {fileID: 11400000, guid: 6d3833b494142c34bbfe4991630cd457, type: 2}
+    qty: 1
+  - item: {fileID: 11400000, guid: b8e9c1ef1e3b1bf4e88c6b33f4e3ead9, type: 2}
+    qty: 5

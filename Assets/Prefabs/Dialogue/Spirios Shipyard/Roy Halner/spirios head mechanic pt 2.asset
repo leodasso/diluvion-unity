@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: spirios head mechanic pt 2
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst:
+  - {fileID: 11400000, guid: 07c72a23706c44d409dc80820a5b2b28, type: 2}
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 0
+  titleText: head mechanic pt2
+  previewText: "Player: ...So you can get a ship there?\n\nMe: Getting a ship to that
+    depth isn\u2019t really the problem. It\u2019s the Deep\u2019s Resentment.\nKat
+    Smith: The what now?\nMe: It\u2019s a hull-eating algae that emanates from the
+    Endless Corridor. It\u2019ll chew through any ship that dives beyond the Sunken
+    Coast.\nAlison Hosstrevar: So even with all the pressure resistance in the world,
+    we\u2019re still toast.\nKat Smith: But surely there\u2019s a way! I mean, Dwellers
+    live down there.\nMe: That there is. But we don\u2019t discuss that with every
+    scrappy crew that manages to get their bucket of bolts here. \r@\nMake your name
+    known with the household - come back to me with at least <b>four Spirios Amulets</b>,
+    then maybe we can talk.\r\n"
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: '...So you can get a ship there?'
+  speeches:
+  - locKey: dialog/Roy Halner_Male__head mechanic pt2_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "Getting a ship to that depth isn\u2019t really the problem. It\u2019s the
+      Deep\u2019s Resentment."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Roy Halner_Male__head mechanic pt2_sp_1_Kat Smith(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bb2d21ac0264df4b8249bcf945fc57f, type: 2}
+    text: The what now?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Roy Halner_Male__head mechanic pt2_sp_2
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "It\u2019s a hull-eating algae that emanates from the Endless Corridor.
+      It\u2019ll chew through any ship that dives beyond the Sunken Coast."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Roy Halner_Male__head mechanic pt2_sp_3_Alison Hosstrevar(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: f628dcfa9337af041809cf0563d0d73c, type: 2}
+    text: "So even with all the pressure resistance in the world, we\u2019re still
+      toast."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Roy Halner_Male__head mechanic pt2_sp_4_Kat Smith(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bb2d21ac0264df4b8249bcf945fc57f, type: 2}
+    text: "But surely there\u2019s a way! I mean, Dwellers live down there."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Roy Halner_Male__head mechanic pt2_sp_5
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "That there is. But we don\u2019t discuss that with every scrappy crew that
+      manages to get their bucket of bolts here. \r@\nMake your name known with the
+      household - come back to me with at least <b>four Spirios Amulets</b>, then
+      maybe we can talk.\r\n"
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: a3d8e4d6a0e6c7b46a62f94ea5356739, type: 2}
+        m_MethodName: ProgressObjective
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 5373069cca24d1540acf2ee07233763e,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: Quests.DQuest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Roy Halner_Male__head mechanic pt2

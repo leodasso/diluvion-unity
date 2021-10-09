@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: new Captain
+  m_EditorClassIdentifier: Assembly-CSharp:Diluvion.AI:Captain
+  weight: 10
+  tags: []
+  description: This is a captain
+  baseFactions: []
+  nonFactionRelations: []
+  patience: 0
+  bravery: 0
+  shipSteer: 0
+  weaponCrew: 0
+  defaultFight: {fileID: 0}
+  defaultFlee: {fileID: 0}
+  defaultMission: {fileID: 0}
+  reactions:
+  - targetContext: 1
+    reactionContext: 1
+    actionType: 0
+    overrideMission: {fileID: 0}
+    priorityMultiplier: 0
+    actions: []
+    responses: []
+  designNotes: This is a captain

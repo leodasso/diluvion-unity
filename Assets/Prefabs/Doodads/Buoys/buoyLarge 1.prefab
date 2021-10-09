@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &189652
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 478492}
+  - 33: {fileID: 3347128}
+  - 23: {fileID: 2307628}
+  - 136: {fileID: 13661752}
+  - 114: {fileID: 11443488}
+  - 114: {fileID: 11493826}
+  m_Layer: 0
+  m_Name: buoyLarge 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &478492
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189652}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -50.1, y: 8.88, z: -125.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!23 &2307628
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189652}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: bd417ecffce50d145ae8d16b267772c6, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &3347128
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189652}
+  m_Mesh: {fileID: 4300000, guid: 5e005eadb57672d44a990956116f05de, type: 3}
+--- !u!114 &11443488
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 041b6c2b544f1514eaf2a2adae5fb7a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitForCallback: 0
+  maxHealth: 500
+  currentHealth: 500
+  invincible: 0
+  useCrushDepth: 0
+  depthUpgrades: 0
+  baseTestDepth: -300
+  testDepth: -300
+  dyingTime: 5
+  collisionDamage: 1
+  stopCollisionEffect: 0
+  explodedModel: {fileID: 400010, guid: 55a5d208ac7b7ce42b00f2c5b05258c9, type: 2}
+  bridge: {fileID: 0}
+  damageParticle: {fileID: 100002, guid: c89748ea2cf0aa64a8dcd55906f5c684, type: 2}
+  sparksParticle: {fileID: 100000, guid: f6897560bb1ee8f42a9b69eceda5ca8c, type: 2}
+  showDamageLights: 1
+  lights: []
+--- !u!114 &11493826
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd134ad366ec7e94986066a2f805c959, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitForCallback: 0
+  info:
+    hidden1: 0
+    displayName: BOOY
+    flavorDescription:
+      _key: 
+    sonarSignalBonus: 1
+    objectTags: []
+  detected: 0
+  targetable: 1
+  playerIsMe: 0
+  velocitySamples: 1
+  myCaptain: {fileID: 0}
+--- !u!136 &13661752
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189652}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 2.47
+  m_Height: 10.036823
+  m_Direction: 1
+  m_Center: {x: -0.019535184, y: -4.7572107, z: -0.0037263632}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 189652}
+  m_IsPrefabParent: 1

@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2147c636f952b34c873c5fdf4b7a8c3, type: 3}
+  m_Name: royal checkpoint
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  testLevel: 1
+  previewHp: 2
+  previewDanger: 10
+  displayName: Royal Checkpoint
+  minMaxLevel: {x: 1, y: 16}
+  baseDanger: 10
+  firstTurn: 1
+  turnInterval: 3
+  minMaxHp: {x: 2, y: 6}
+  sprite: {fileID: 21300038, guid: 69fda1af55cbd08459f4f58585776d1e, type: 3}
+  reward: {fileID: 11400000, guid: 07f37b48b721aca4fbd51b95dc6282f6, type: 2}
+  attackSubjectOnly: 0
+  onNewSubject: 
+  introduction: "The way ahead is guarded by two Royal soldiers. If your party is
+    careful, they might be able to slip past without being spotted...\r"
+  attack: "[haz] hear [char]'s movements and call for backup. The nearest patrol ship
+    responds!\r"
+  attackAction: {fileID: 11400000, guid: 5889bcae00830f740816389f31175323, type: 2}
+  defeat: "Your party manages to make their way through to the next room!\r"
+  reactions:
+  - {fileID: 11400000, guid: ca407cf525ad1f74688bd02be6383ac4, type: 2}
+  - {fileID: 11400000, guid: 77cb6a0100c30394d9ba35968c478cc5, type: 2}
+  - {fileID: 11400000, guid: 91e2831efa9b73843aba2ccc5f47d6dc, type: 2}
+  - {fileID: 11400000, guid: 59c9120d7c55e0240b3168c569d6403a, type: 2}
+  reactionsDescription: "\n[char] tries to bluff their way past the patrolmen...\nDefense
+    against Intelligence: [0.5 - 8] \n\n pass: [no loc]... and it looks like the patrolmen
+    are buying it!\n fail: [no loc]... but [haz] just keep asking why [char] is in
+    the area!\n[char] attempts to knock one of the patrolmen out with a chair as they
+    pass...\nDefense against Strength: [0.5 - 8] \n\n pass: [no loc]... the patrolman
+    looks mildly concussed!\n fail: [no loc]... but the patrolman turns around and
+    [char] has to duck for cover!\n[char] observes that the soldiers patrol the immediate
+    corridor at regular intervals...\nDefense against Perception: [0.5 - 8] \n\n pass:
+    [no loc]... and [char] manages to slip past to the next hiding spot!\n fail: [no
+    loc]... but [char] isn't quick enough and is forced to run back!\n[char] attempts
+    to sneak past the patrol by crawling along the pipes on the ceiling...\nDefense
+    against Endurance: [0.5 - 8] \n\n pass: [no loc]... and the patrolmen don't notice!\n
+    fail: [no loc]... but the patrolmen hear the pipes groaning!"
+  introSound: Play_Royal_Patrolmen_INTRO
+  hitSound: Play_Royal_Patrolmen_HIT
+  missSound: Play_Royal_Patrolmen_MISS

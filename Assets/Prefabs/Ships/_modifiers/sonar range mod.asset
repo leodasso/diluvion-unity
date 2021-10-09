@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06f72e5173328394d8349beb4b1a20ba, type: 3}
+  m_Name: sonar range mod
+  m_EditorClassIdentifier: 
+  displayName: {fileID: 11400000, guid: fef22c7bed9324c458c315cf9b969864, type: 2}
+  affectingCrewStats:
+  - statBase: {fileID: 11400000, guid: 27074db8b6073e54e8a998414105432a, type: 2}
+    value: 1
+  requiredBonuses: []
+  baseValue: 0
+  valueFormat: 0%
+  descriptionPrefix: {fileID: 11400000, guid: 7c0c6792cfa336a4e8b4b6c92cb738fb, type: 2}
+  descriptionSuffix: {fileID: 11400000, guid: 68ff3c963699fcd418b28618fe1c5ede, type: 2}
+  useCurve: 1
+  curve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0.14201011
+      outSlope: 0.14201011
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 60.006676
+      value: 2.9901953
+      inSlope: 0.00073006126
+      outSlope: 0.00073006126
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0

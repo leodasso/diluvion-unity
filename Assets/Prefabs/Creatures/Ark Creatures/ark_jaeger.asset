@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 698e8b7346fc48b4f9c3053de1e67491, type: 3}
+  m_Name: ark_jaeger
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags:
+  - {fileID: 11400000, guid: eb7d752002d322348aa84129c27fb5dc, type: 2}
+  - {fileID: 11400000, guid: c44fe841f21f92c468543f8eb9a079dd, type: 2}
+  slotSize: 1
+  prefab: {fileID: 111694, guid: 2641d67fe5443cc42adbbaaf1d8d2d83, type: 2}
+  resourceCost:
+    value: 0
+    danger: 50
+    hazardDanger: 0
+  ignoreSpawnerRotation: 0
+  positionSearches:
+  - {fileID: 11400000, guid: 71e229b644f007942ab300c832bc2fef, type: 2}
+  - {fileID: 11400000, guid: 8ca95b7d6d46b4f479d7fa71cf907fa8, type: 2}

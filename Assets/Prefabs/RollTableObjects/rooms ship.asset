@@ -1,0 +1,191 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b624c9e0327790447b6e0c246081b78d, type: 3}
+  m_Name: rooms ship
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  rollBool: 0
+  containedTypes:
+  - m_Name: RoomEntry
+    m_AssemblyQualifiedName: RoomEntry, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  lastRolledObject: {fileID: 0}
+  entryToAdd: {fileID: 0}
+  tableEntries:
+  - {fileID: 11400000, guid: 8fd583b7a1fdfdf489dbd7fec1ed0cd2, type: 2}
+  - {fileID: 11400000, guid: 825f19deed2ec45439f121408de744b7, type: 2}
+  - {fileID: 11400000, guid: f0b449b782e8c8648aa23949ae01c492, type: 2}
+  - {fileID: 11400000, guid: bf9b4fab463906442b5a5c1a0a4602df, type: 2}
+  - {fileID: 11400000, guid: 558b8348350f3a84cade4ba0c091aa99, type: 2}
+  - {fileID: 11400000, guid: 8518dbea824abd44799265d8b61d25cb, type: 2}
+  - {fileID: 11400000, guid: e45ffdeeb92590a419777802941eaa31, type: 2}
+  - {fileID: 11400000, guid: 4df7f4721899fe0458aa714460f5e0b2, type: 2}
+  - {fileID: 11400000, guid: 9c2443fd2dae11b44af318d95a321110, type: 2}
+  - {fileID: 11400000, guid: 42d3456789985184abd55b58dd3ace54, type: 2}
+  - {fileID: 11400000, guid: aa889c26f846df446ab4daaa95920c45, type: 2}
+  - {fileID: 11400000, guid: 57f73fb09d8705a449b2587f80477878, type: 2}
+  - {fileID: 11400000, guid: 83b94ba37cd776e42b1bbcf7530815ee, type: 2}
+  - {fileID: 11400000, guid: f8353efd9f52f1e4d934de216c4bac99, type: 2}
+  - {fileID: 11400000, guid: 3ebc176b1584d614a88d989f27aa8bbe, type: 2}
+  - {fileID: 11400000, guid: 0035780b71ef77d4dacdbe8688ba1f09, type: 2}
+  - {fileID: 11400000, guid: 51a12637b2433b946b68d245f17ccd5d, type: 2}
+  - {fileID: 11400000, guid: 6b841db4f6009584fae657f1729d8152, type: 2}
+  - {fileID: 11400000, guid: 5f3cde1cb34c19b4690f4c9a89673b15, type: 2}
+  - {fileID: 11400000, guid: e3975bd36c6b6d64f8baf831e81da64c, type: 2}
+  - {fileID: 11400000, guid: 4623f43a56252104194e7f2e55025919, type: 2}
+  - {fileID: 11400000, guid: 7156905acb95df2448a3dea39252af77, type: 2}
+  rollTable:
+  - entry: {fileID: 11400000, guid: 8fd583b7a1fdfdf489dbd7fec1ed0cd2, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 40
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 825f19deed2ec45439f121408de744b7, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 41
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: f0b449b782e8c8648aa23949ae01c492, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 51
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: bf9b4fab463906442b5a5c1a0a4602df, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 109
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 558b8348350f3a84cade4ba0c091aa99, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 39
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 8518dbea824abd44799265d8b61d25cb, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 59
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: e45ffdeeb92590a419777802941eaa31, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 141
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 4df7f4721899fe0458aa714460f5e0b2, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 93
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 9c2443fd2dae11b44af318d95a321110, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 146
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 42d3456789985184abd55b58dd3ace54, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 156
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: aa889c26f846df446ab4daaa95920c45, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 171
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 57f73fb09d8705a449b2587f80477878, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 53
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 83b94ba37cd776e42b1bbcf7530815ee, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 48
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: f8353efd9f52f1e4d934de216c4bac99, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 52
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 3ebc176b1584d614a88d989f27aa8bbe, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 86
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 0035780b71ef77d4dacdbe8688ba1f09, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 99
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 51a12637b2433b946b68d245f17ccd5d, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 95
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 6b841db4f6009584fae657f1729d8152, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 27
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 5f3cde1cb34c19b4690f4c9a89673b15, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 47
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: e3975bd36c6b6d64f8baf831e81da64c, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 6
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 4623f43a56252104194e7f2e55025919, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 4
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 7156905acb95df2448a3dea39252af77, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 9
+    totalResourcesSpent: 0
+  _lastRoll: 69
+  _totalWeight: 70
+  _currentWeight: 70
+  minDanger: 0
+  minValue: 0
+  typeList:
+  - toggled: 0
+    type:
+      m_Name: RoomEntry
+      m_AssemblyQualifiedName: RoomEntry, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+        PublicKeyToken=null
+      m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

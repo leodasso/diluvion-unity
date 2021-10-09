@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2147c636f952b34c873c5fdf4b7a8c3, type: 3}
+  m_Name: thief giant mutant rat
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  testLevel: 12
+  previewHp: 6
+  previewDanger: 92
+  displayName: '[no loc] thief giant mutant rat'
+  minMaxLevel: {x: 12, y: 25}
+  baseDanger: 6
+  firstTurn: 3
+  turnInterval: 4
+  minMaxHp: {x: 6, y: 10}
+  sprite: {fileID: 21300014, guid: 69fda1af55cbd08459f4f58585776d1e, type: 3}
+  reward: {fileID: 11400000, guid: 897a1b9957d631c41858f36d22cd31ce, type: 2}
+  attackSubjectOnly: 0
+  onNewSubject: 
+  introduction: "As [char] enters the room, a hissing sound starts in the corner.
+    [char] raises their flashlight and sees a Monstrous Rat in the corner, jealously
+    guarding a pile of treasure.\r"
+  attack: "The gigantic rat sweeps its tail at [subject] and trips them. [subject]
+    drops [item] as they scramble to get away...\r"
+  attackAction: {fileID: 11400000, guid: c1698867ea5688e459001ea03e118a63, type: 2}
+  defeat: "[Haz] lies stunned on top of its pile of treasure. [char] snags a piece
+    as they escape!\r"
+  reactions:
+  - {fileID: 11400000, guid: 1650159142f82b145881ff3cb5fd7d30, type: 2}
+  - {fileID: 11400000, guid: b1cd2b82472f05d43bc3c031061327cb, type: 2}
+  - {fileID: 11400000, guid: 4952ddc5a1011fb4ba1416c740ad720b, type: 2}
+  - {fileID: 11400000, guid: 602e43f70e6fa3149b1375d11d74f5b2, type: 2}
+  reactionsDescription: "\n[char] throws coins from the pile of treasure to distract
+    [haz]...\nDefense against Intelligence: [6 - 12.5] \n\n pass: no loc\n fail: no
+    loc\n[char] attempts to duck under fallen debris where [haz] can't reach...\nDefense
+    against Endurance: [6 - 12.5] \n\n pass: no loc\n fail: no loc\n[char] notices
+    that [haz] won't go further than the edge of its pile of treasure, and attempts
+    to run around it...\nDefense against Perception: [6 - 12.5] \n\n pass: no loc\n
+    fail: no loc\n[char] picks up a scepter from the pile of treasure and tries to
+    use it to fend off [haz]...\nDefense against Strength: [6 - 12.5] \n\n pass: no
+    loc\n fail: no loc"
+  introSound: Play_Monstrous_Rat_INTRO
+  hitSound: Play_Monstrous_Rat_HIT
+  missSound: Play_Monstrous_Rat_MISS

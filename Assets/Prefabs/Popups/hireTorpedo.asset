@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eb97c2c482244d4aacbea8db78f287d, type: 3}
+  m_Name: hireTorpedo
+  m_EditorClassIdentifier: 
+  tag: hireTorpedo
+  popupType: 0
+  buttonSetup: 0
+  delay: 3
+  title: New Officer!
+  mainText: "You've just hired a <color=cyan>Torpedo Officer!</color> \n\nHover over
+    a target with a sonar signature and the torpedo reticule will acquire the target.
+    Once you have a lock, <b>press #</b> to launch a torpedo! <b>Hold #</b> to charge
+    a torpedo for greater damage, but be warned; the longer a torpedo is charged,
+    the more chance it has to fail!"
+  inputAction: fire torp
+  onlyShowIn3D: 1
+  showOnStart: 0
+  saves: 1
+  timesShown: 2

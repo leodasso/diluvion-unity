@@ -1,0 +1,264 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: Havelock Welsh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -119.531876, y: -366.96475, z: 26.911282}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5bc224e94d4bd743b48051ef9224ff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullPortrait: {fileID: 21300012, guid: 493729dc9c1098e48885d30a2ea75543, type: 3}
+  chatterPortrait: {fileID: 0}
+  gender: 0
+  dialogues:
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: havelock
+      questStatus: 1
+      secondaryStatus: 1
+      questStatus2: 0
+      helpString: '''havelock'' must be InProgress or Complete for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog/Havelock Welsh_Male__oh. Miras.
+    titleText: oh. Miras.
+    question: Havelock?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Yes... @oh. <i>Miras</i>.
+      locKey: dialog/Havelock Welsh_Male__oh. Miras._sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11430560, guid: 4fdc07e15a4781842b86a82e86e4d4c9, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: I'm not here because I want to be, <i>traitor</i>.
+      locKey: dialog/Havelock Welsh_Male__oh. Miras._sp_1_Brother Miras(Male)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Still the same old Miras, I see. @Do you want to know how I cut out chunks
+        of their brains, or pull apart those perfect wings to see how they were created?
+        @You had me cast out of the Order for seeking knowledge of our Gods. Well
+        now I've found even more, and you will not share in my successes. @Leave.
+      locKey: dialog/Havelock Welsh_Male__oh. Miras._sp_2
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11400000, guid: 1e64e41284dcb1b4e90534cca122c233, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "Oi! We\u2019re totally risking our necks here to get to the <color=blue>Endless
+        Corridor</color> because your lot say that whatever\u2019s down there can
+        actually help people. @You twats are going to shut it, make up, and tell us
+        how the hell we\u2019re meant to get what's down there."
+      locKey: dialog/Havelock Welsh_Male__oh. Miras._sp_3_Kat Smith(Female)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: '....'
+      locKey: dialog/Havelock Welsh_Male__oh. Miras._sp_4
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: '....'
+      locKey: dialog/Havelock Welsh_Male__oh. Miras._sp_5
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Very well. If you are really that determined to carry on, you might want
+        to ask Brother Miras about the one place everyone avoids... @ <i>Skalle</i>.
+      locKey: dialog/Havelock Welsh_Male__oh. Miras._sp_6
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 2
+    showWhere: 0
+    urgent: 1
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 0
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 1
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: dialog/Havelock Welsh_Male__creatures
+    titleText: creatures
+    question: What are the creatures in the Endless Corridor?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: They are a hive, of sorts. Each creature is linked, although I am not
+        sure by what means they communicate. @They could be reacting to a chemical
+        signal, but it is so hard to capture these creatures completely intact.
+      locKey: dialog/Havelock Welsh_Male__creatures_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 2
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 1
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  conversations:
+  - {fileID: 11400000, guid: f5e467e0d4f2e1f4baf9ad9e1bd5974a, type: 2}
+  - {fileID: 11400000, guid: 7803149112c2910479b491f52e6ce378, type: 2}
+  myCrew: {fileID: 0}
+  locKey: dialog/Havelock Welsh_Male_
+  selectable: 0
+  omitFromLoc: 0
+  lockLocKeys: 1
+  validDialogues: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1

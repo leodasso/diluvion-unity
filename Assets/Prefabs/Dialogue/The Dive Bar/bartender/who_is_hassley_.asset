@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: who_is_hassley_
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 11400000, guid: 372af26a37444734fb67bcedc41539a4, type: 2}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 11400000, guid: 65d8d2964b8e3c44fac77c6b6608746d,
+    type: 2}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: who is hassley?
+  previewText: 'Player: Who''s Hassley?
+
+
+    Me: He''s a loon with too much time on his hands. I don'' see any difference on
+    that sub, ''sides the name.
+
+    Daniel Eritan: Man, what would you know? You can''t even read! @Hassley''s a genius...
+    no, a <i>legendary mechanic</i>,...@ ...and the sub that he made is going to get
+    me all the way down to 1000 meters, no sweat.
+
+    Me: It''ll get you to 1000 meters alright, but not alive.'
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: Who's Hassley?
+  speeches:
+  - locKey: dialog/bartender_Male__who is hassley?_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: He's a loon with too much time on his hands. I don' see any difference on
+      that sub, 'sides the name.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/bartender_Male__who is hassley?_sp_1_Daniel Eritan(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 927a22a9243411a4eb7e18101b55142a, type: 2}
+    text: Man, what would you know? You can't even read! @Hassley's a genius... no,
+      a <i>legendary mechanic</i>,...@ ...and the sub that he made is going to get
+      me all the way down to 1000 meters, no sweat.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/bartender_Male__who is hassley?_sp_2
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: It'll get you to 1000 meters alright, but not alive.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/bartender_Male__who is hassley?

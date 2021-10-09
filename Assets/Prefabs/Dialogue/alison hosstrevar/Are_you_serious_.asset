@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: Are_you_serious_
+  m_EditorClassIdentifier: 
+  active: 0
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries:
+  - {fileID: 11400000, guid: 65e37a59803c4fc448efa331059899a9, type: 2}
+  invertQueries: 0
+  showChatter: 1
+  chatterShowsOnce: 1
+  titleText: Are you serious.
+  previewText: "Chatter: Are you serious.\nPlayer: You don\u2019t like Brother Miras.\nMe:
+    Tell me again why we keep picking up all these losers? @The more lunatic superstitions
+    I hear from the Dwellers, the more I appreciate being born near the ice."
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: "You don\u2019t like Brother Miras."
+  speeches:
+  - locKey: dialog/alison hosstrevar_Female__Are you serious._sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Tell me again why we keep picking up all these losers? @The more lunatic
+      superstitions I hear from the Dwellers, the more I appreciate being born near
+      the ice.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/alison hosstrevar_Female__Are you serious.

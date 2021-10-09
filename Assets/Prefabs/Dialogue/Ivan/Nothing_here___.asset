@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: Nothing_here___
+  m_EditorClassIdentifier: 
+  active: 0
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: noMiras
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 1
+  chatterShowsOnce: 1
+  titleText: Nothing here...
+  previewText: 'Chatter: Nothing here...
+
+    Player: What now?
+
+
+    Me: I don''t know, Captain. It''s hard to find anything in these waters.
+
+    Alison Hosstrevar: Wait... I''m getting something on sonar.  @  Some kind of small
+    cannister...?
+
+    Me: Cannister?  Alison, that''s not going to help us find the - wait! @ Cannister!  The
+    priests of Deep place a path of Deep''s Scent in cannisters to soothe Deep''s
+    creatures!  @ <b>Follow them and it will lead us to Miras</b>!
+
+    Alison Hosstrevar: You''re <i>welcome</i>.'
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: What now?
+  speeches:
+  - locKey: dialog/Ivan_Male__Nothing here..._sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: I don't know, Captain. It's hard to find anything in these waters.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Ivan_Male__Nothing here..._sp_1_Alison Hosstrevar(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: f628dcfa9337af041809cf0563d0d73c, type: 2}
+    text: Wait... I'm getting something on sonar.  @  Some kind of small cannister...?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Ivan_Male__Nothing here..._sp_2
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Cannister?  Alison, that's not going to help us find the- wait! @ Cannister!  The
+      priests of Deep place a path of Deep's Scent in cannisters to soothe Deep's
+      creatures!  @ <b>Follow them and it will lead us to Miras</b>!
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Ivan_Male__Nothing here..._sp_3_Alison Hosstrevar(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: f628dcfa9337af041809cf0563d0d73c, type: 2}
+    text: You're <i>welcome</i>.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Ivan_Male__Nothing here...

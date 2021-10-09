@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32aabd5c55471784e8604d81a7fa8f26, type: 3}
+  m_Name: icer guild
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  description: "I will wander between towns until: \n \nI was attacked by a -1 i will
+    circle around target and attack until dead, \n \n"
+  baseFactions:
+  - {fileID: 11400000, guid: f1f8e3b4a729ca6418037540a1f73be5, type: 2}
+  nonFactionRelations: []
+  patience: 1.68
+  bravery: 2.83
+  shipSteer: 0
+  weaponCrew: 1.18
+  defaultFight: {fileID: 11400000, guid: dfe1c537f6cead147b21f28fa62eb50d, type: 2}
+  defaultFlee: {fileID: 11400000, guid: 6d4bced7345ee514d802e8e52c63cb29, type: 2}
+  defaultMission: {fileID: 11400000, guid: c56b8d7c5a8a9614780c2bfa1f7d07eb, type: 2}
+  reactions:
+  - targetContext: -1
+    reactionContext: 1
+    actionType: 3
+    overrideMission: {fileID: 0}
+    distanceImportance: 0
+    priorityMultiplier: 1
+    actions: []
+    responses: []
+  designNotes: This is a captain

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d17bed92e10949840a700c21beca7b6c, type: 3}
+  m_Name: calibration mod
+  m_EditorClassIdentifier: 
+  displayName: {fileID: 11400000, guid: 773ee2074f7ea0d468009880848fb3a4, type: 2}
+  affectingCrewStats:
+  - statBase: {fileID: 11400000, guid: 27074db8b6073e54e8a998414105432a, type: 2}
+    value: 0.1
+  requiredBonuses: []
+  baseValue: 1
+  descriptionPrefix: {fileID: 11400000, guid: 7c0c6792cfa336a4e8b4b6c92cb738fb, type: 2}
+  descriptionSuffix: {fileID: 11400000, guid: 4fbab0e67176b284d971f01cb564a89d, type: 2}
+  useCurve: 0
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  affectedModules:
+  - {fileID: 11400000, guid: 105e190bff137e7438c878d874ee8652, type: 2}

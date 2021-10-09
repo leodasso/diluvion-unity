@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a17f73243c12d7418fa26f028879ef8, type: 3}
+  m_Name: A little Forging never hurt nobody
+  m_EditorClassIdentifier: 
+  locKey: forge quest
+  sequential: 0
+  title: A little Forging Never Hurt Nobody
+  description: Bring John Hassley the raw materials for another upgrade slot.
+  prereqsToStart: []
+  objectiveCs:
+  - objective: {fileID: 11400000, guid: 2c62814a34cd6de4f8ce38424ee72d18, type: 2}
+    overrideName: 1
+    newName: Hire the intern
+  - objective: {fileID: 11400000, guid: 74a1c2a311e765945b72bcb1242a8f18, type: 2}
+    overrideName: 0
+    newName: 

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e429dd3a6597177498969b3698a9271b, type: 3}
+  m_Name: torpedo module
+  m_EditorClassIdentifier: 
+  moduleName: {fileID: 11400000, guid: b28bba51386da274da833431cc2c444f, type: 2}
+  installsStation: 1
+  stationPrefab: {fileID: 11424604, guid: 8e3acf829a98ca44cbebd8fd843c0e61, type: 2}
+  shipMods:
+  - {fileID: 11400000, guid: 6621bc7aca4938e47a7f7c0d37bd997b, type: 2}
+  - {fileID: 11400000, guid: b9f0f9602b3c9294c8befdb851020e37, type: 2}
+  inputName: fire torp
+  dangerValue: 10
+  UI: {fileID: 114286123793759862, guid: 751296d798955f84fbf74c8c291dc5b1, type: 2}
+  allowedWeapons:
+  - {fileID: 11400000, guid: b32b16775ea276a47abce724c6e38359, type: 2}
+  - {fileID: 11400000, guid: 63c3a525cfdae894f8fe45cc0597f7b5, type: 2}
+  - {fileID: 11400000, guid: edbb4eb6d8e55ec43814bad7bb0608aa, type: 2}
+  - {fileID: 11400000, guid: 6bde9d18f3cd89a498dca0a082791e60, type: 2}
+  - {fileID: 11400000, guid: f6f9cdddcc55c0a4a81439854e96b6a2, type: 2}
+  - {fileID: 11400000, guid: d70fed8c4ba94774cb60000f7d9babca, type: 2}
+  ammo: {fileID: 11400000, guid: a74a416e7a288e345aa22d96240c7a5c, type: 2}
+  weaponSwapAxisName: torp change
+  aimCastRadius: 2
+  targetingLayers:
+    serializedVersion: 2
+    m_Bits: 2049
+  weaponIcon: {fileID: 0}
+  showLeadGUI: 0
+  attackPattern: {fileID: 0}
+  chargeTime: 2
+  reloadTime: 3

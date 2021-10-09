@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b624c9e0327790447b6e0c246081b78d, type: 3}
+  m_Name: all rewards
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  rollBool: 0
+  containedTypes:
+  - m_Name: InvGenerator
+    m_AssemblyQualifiedName: Diluvion.InvGenerator, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  lastRolledObject: {fileID: 11400000, guid: 2caf00f5ad495ad4187ebc295637a26b, type: 2}
+  entryToAdd: {fileID: 0}
+  tableEntries:
+  - {fileID: 11400000, guid: 39f25f716b99a6542a76e9f669e960cc, type: 2}
+  - {fileID: 11400000, guid: 1cbfb54b32dc3d14fa8eed3ab9ad430d, type: 2}
+  - {fileID: 11400000, guid: f2d078a939dd550488ee74f0939eac0b, type: 2}
+  - {fileID: 11400000, guid: 720ccceddd284b348adea58dbde9728a, type: 2}
+  - {fileID: 11400000, guid: 2caf00f5ad495ad4187ebc295637a26b, type: 2}
+  rollTable:
+  - entry: {fileID: 11400000, guid: 39f25f716b99a6542a76e9f669e960cc, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 18
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 1cbfb54b32dc3d14fa8eed3ab9ad430d, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 24
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: f2d078a939dd550488ee74f0939eac0b, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 26
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 720ccceddd284b348adea58dbde9728a, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 13
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 2caf00f5ad495ad4187ebc295637a26b, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 19
+    totalResourcesSpent: 0
+  lastRoll: 48
+  totalWeight: 43
+  currentWeight: 50
+  typeList:
+  - toggled: 0
+    type:
+      m_Name: InvGenerator
+      m_AssemblyQualifiedName: Diluvion.InvGenerator, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

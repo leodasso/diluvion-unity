@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: what_do_you_need
+  m_EditorClassIdentifier: 
+  active: 0
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: what do you need
+  previewText: "Player: What do you need to upgrade my sub?\nMe: Ok, so I'll be needing
+    <b>15 reinforced hull panels</b>,  @And <b>10 engine parts</b> from the ships
+    that fell round Fingerdal in the Battle of Singer\u2019s End - you know, the one
+    where the Sonnge House finally kicked it. @I\u2019ll also need <b>40 pieces of
+    scrap metal</b>...@ ...a <b>Morse radio</b>... @ ...and a some <b>blackberries</b>
+    - consider those payment for my services."
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: What do you need to upgrade my sub?
+  speeches:
+  - locKey: dialog/john hassley_Male__what do you need_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "Ok, so I'll be needing <b>15 reinforced hull panels</b>,  @And <b>10 engine
+      parts</b> from the ships that fell round Fingerdal in the Battle of Singer\u2019s
+      End - you know, the one where the Sonnge House finally kicked it. @I\u2019ll
+      also need <b>40 pieces of scrap metal</b>...@ ...a <b>Morse radio</b>... @ ...and
+      a some <b>blackberries</b> - consider those payment for my services."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/john hassley_Male__what do you need

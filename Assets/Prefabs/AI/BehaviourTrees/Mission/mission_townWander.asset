@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a686a47eee2fa44cb0a34b5d86e4d5e, type: 3}
+  m_Name: mission_townWander
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.6,"type":"NodeCanvas.BehaviourTrees.BehaviourTree","comments":"wander
+    between towns","translation":{"x":-4832.0,"y":-5134.0},"nodes":[{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":5327.0,"y":5253.0},"_comment":"WanderBehaviour","$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"2"},{"_position":{"x":4840.45,"y":5372.083},"$type":"NodeCanvas.BehaviourTrees.Optional","$id":"3"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":4840.449,"y":5414.788},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"4"},{"_nodeColor":{"r":0.7019608,"g":1.0,"b":0.4980392,"a":1.0},"_position":{"x":4713.077,"y":5494.696},"$type":"NodeCanvas.BehaviourTrees.Selector","$id":"5"},{"_condition":{"targetList":{"_name":"wanderTargets","_targetVariableID":"b89aa3c0-1edf-4228-934f-4ec84d117fdc"},"_invert":true,"$type":"NodeCanvas.Tasks.Conditions.ListIsEmpty"},"_position":{"x":4563.252,"y":5559.342},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"6"},{"_action":{"ignoreTerrain":true,"signaturesToLookFor":{"_value":[1]},"range":{"_value":99999.0},"foundSonars":{"_name":"wanderTargets","_targetVariableID":"b89aa3c0-1edf-4228-934f-4ec84d117fdc"},"$type":"Diluvion.AI.GetSonarWithTags"},"_position":{"x":4768.639,"y":5558.415},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"9"},{"_action":{"actions":[{"targetList":{"_name":"wanderTargets","_targetVariableID":"b89aa3c0-1edf-4228-934f-4ec84d117fdc"},"minTimesUntilRepick":{"_value":1},"currentList":[],"removedList":[],"selected":{"_name":"_wanderTarget"},"$type":"NodeCanvas.Tasks.Actions.SetRandomTargetFromList`1[[Diluvion.Sonar.SonarStats,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"inputComponent":{"_name":"_wanderTarget"},"output":{"_name":"wanderTrans"},"$type":"Diluvion.AI.GetComponentFromComponent`1[[UnityEngine.Transform,
+    UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"navTarget"},"valueB":{"_name":"wanderTrans"},"$type":"NodeCanvas.Tasks.Actions.SetVector3"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":4915.605,"y":5544.225},"_comment":"Pick
+    a random town to go to and get transform","$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"15"},{"_action":{"actions":[{"valueA":{"_name":"defaultThrottle","_targetVariableID":"e3d04e06-7b6b-4459-99c1-483f10a8fb89"},"valueB":{"_value":{}},"$type":"NodeCanvas.Tasks.Actions.SetVariable`1[[Diluvion.AI.ThrottleRequest,
+    Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},{"valueA":{"_name":"attackVector","_targetVariableID":"578407c6-bb41-4c16-8746-5ac2143e5a66"},"valueB":{},"$type":"NodeCanvas.Tasks.Actions.SetVector3"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5146.016,"y":5655.983},"_comment":"Set
+    Default Throttle to Full","$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"30"},{"_subTree":{"_value":2},"_position":{"x":5352.785,"y":5509.527},"_comment":"When
+    target is reached, return true.","$type":"NodeCanvas.BehaviourTrees.SubTree","$id":"40"},{"_action":{"actions":[{"thestat":{},"curve":{"_value":{"keys":[{"time":-10.0,"value":1.0,"tangentMode":0,"inTangent":0.2057593,"outTangent":0.2057593},{"time":10.0,"value":30.0,"tangentMode":0,"inTangent":3.827124,"outTangent":3.827124}],"preWrapMode":"ClampForever","postWrapMode":"ClampForever"}},"result":{"_value":6.446587,"_name":"_arrivedWait","_targetVariableID":"30672b4f-668a-4e28-af6c-d58e0716b392"},"captain":{"_name":"Captain","_targetVariableID":"b4de6586-7266-4ea3-840a-418733d3bc4a"},"$type":"Diluvion.AI.UseStat"},{"waitTime":{"_name":"_arrivedWait","_targetVariableID":"30672b4f-668a-4e28-af6c-d58e0716b392"},"$type":"NodeCanvas.Tasks.Actions.Wait"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5503.0,"y":5438.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"42"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"30"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"40"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"42"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"15"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"6"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"5"},"_targetNode":{"$ref":"9"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"primeNode":{"$ref":"2"},"canvasGroups":[{"name":"Pick
+    a town","rect":{"xMin":4555.657,"yMin":5319.274,"xMax":5285.975,"yMax":5640.953}}],"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
+  _objectReferences:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 754c1ff43d3893e45905cfdff5554d68, type: 2}
+  - {fileID: 11400000, guid: 5a1f33314aa195b498a6bede2993c986, type: 2}
+  _deserializationFailed: 0
+  repeat: 1
+  updateInterval: 0

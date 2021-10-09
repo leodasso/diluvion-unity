@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: pingedMat
+  m_Shader: {fileID: 4800000, guid: f3c515b82b42c4a4cbc85c36e7c2a828, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _permutation
+        second:
+          m_Texture: {fileID: 2800000, guid: eeb22d2fdc421594d8df868a08285043, type: 3}
+          m_Scale: {x: 4, y: 4}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _HighlightThresholdMax
+        second: 0.5
+      data:
+        first:
+          name: _HighlightThickness
+        second: 1.86
+      data:
+        first:
+          name: _Frequency
+        second: 0.1
+      data:
+        first:
+          name: _Lacunarity
+        second: 10
+      data:
+        first:
+          name: _Gain
+        second: 5
+      data:
+        first:
+          name: _Jitter
+        second: 0
+      data:
+        first:
+          name: _HighlightThreshold
+        second: 10
+      data:
+        first:
+          name: _HighlightCloseOffset
+        second: 0
+      data:
+        first:
+          name: _HighlightViewLimit
+        second: 1.7857143
+      data:
+        first:
+          name: _scale_x
+        second: 1
+      data:
+        first:
+          name: _scale_y
+        second: 1
+      data:
+        first:
+          name: _shift_x
+        second: 0
+      data:
+        first:
+          name: _shift_y
+        second: 0
+      data:
+        first:
+          name: _gain
+        second: 1
+      data:
+        first:
+          name: _setup
+        second: 0.5
+      data:
+        first:
+          name: _scale_z
+        second: 1
+      data:
+        first:
+          name: _shift_z
+        second: 0
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _RegularColor
+        second: {r: 1, g: 0.59999996, b: 0, a: 0}
+      data:
+        first:
+          name: _HighlightColor
+        second: {r: 0.6911765, g: 0, b: 0, a: 0.359}
+      data:
+        first:
+          name: _PingStartPosition
+        second: {r: 0, g: 0, b: 0, a: 0}

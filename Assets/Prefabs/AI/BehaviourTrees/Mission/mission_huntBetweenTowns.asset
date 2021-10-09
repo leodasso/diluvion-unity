@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a686a47eee2fa44cb0a34b5d86e4d5e, type: 3}
+  m_Name: mission_huntBetweenTowns
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.6,"type":"NodeCanvas.BehaviourTrees.BehaviourTree","comments":"wander
+    from town to town pinging for interesting stuff\n","translation":{"x":-4964.0,"y":-5151.0},"nodes":[{"policy":"FirstSuccess","dynamic":true,"_nodeColor":{"r":1.0,"g":0.3921569,"b":0.7960784,"a":1.0},"_position":{"x":5329.0,"y":5254.0},"$type":"NodeCanvas.BehaviourTrees.Parallel","$id":"2"},{"dynamic":true,"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":5132.0,"y":5443.0},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"3"},{"dynamic":true,"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":4998.0,"y":5536.0},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"4"},{"_action":{"thestat":{},"curve":{"_value":{"keys":[{"time":-9.957224,"value":9.89151,"tangentMode":0,"inTangent":5.979718,"outTangent":5.979718},{"time":-8.828004,"value":20.07818,"tangentMode":0,"inTangent":2.261336,"outTangent":2.261336},{"time":10.0,"value":60.35663,"tangentMode":0,"inTangent":7.268495,"outTangent":7.268495}],"preWrapMode":"ClampForever","postWrapMode":"ClampForever"}},"result":{"_value":27.99143,"_name":"_pingWait","_targetVariableID":"80def3d3-d58c-400e-a727-2b027f10ea09"},"captain":{"_name":"Captain","_targetVariableID":"b4de6586-7266-4ea3-840a-418733d3bc4a"},"$type":"Diluvion.AI.UseStat"},"_position":{"x":4710.734,"y":5655.246},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"5"},{"_condition":{"timeout":{"_value":1.0,"_name":"_pingWait"},"$type":"NodeCanvas.Tasks.Conditions.Timeout"},"_position":{"x":4948.965,"y":5647.434},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"12"},{"_action":{"actions":[{"charge":{"_value":0.8},"$type":"Diluvion.AI.AIPing"},{"log":{"_value":"Pinged!"},"$type":"NodeCanvas.Tasks.Actions.DebugLogText"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5148.266,"y":5657.469},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"15"},{"_action":{"actions":[{"thestat":{},"curve":{"_value":{"keys":[{"time":-9.957224,"value":9.89151,"tangentMode":0,"inTangent":3.784765,"outTangent":3.784765},{"time":10.0,"value":60.35663,"tangentMode":0,"inTangent":0.07713943,"outTangent":0.07713943}],"preWrapMode":"ClampForever","postWrapMode":"ClampForever"}},"result":{"_value":44.31279,"_name":"_pingPause","_targetVariableID":"80def3d3-d58c-400e-a727-2b027f10ea09"},"captain":{"_name":"Captain","_targetVariableID":"b4de6586-7266-4ea3-840a-418733d3bc4a"},"$type":"Diluvion.AI.UseStat"},{"waitTime":{"_value":5.0,"_name":"_pingPause"},"$type":"NodeCanvas.Tasks.Actions.Wait"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5230.0,"y":5540.0},"$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"22"},{"_position":{"x":5473.0,"y":5493.0},"$type":"NodeCanvas.BehaviourTrees.Optional","$id":"33"},{"_subTree":{"_value":1},"_position":{"x":5480.0,"y":5577.0},"_comment":"When
+    target is reached, return true.","$type":"NodeCanvas.BehaviourTrees.SubTree","$id":"34"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"33"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"22"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"5"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"12"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"4"},"_targetNode":{"$ref":"15"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"33"},"_targetNode":{"$ref":"34"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"primeNode":{"$ref":"2"},"canvasGroups":[],"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
+  _objectReferences:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 91c2ea79e2baaab439f1db8b54ecf28a, type: 2}
+  _deserializationFailed: 0
+  repeat: 1
+  updateInterval: 0

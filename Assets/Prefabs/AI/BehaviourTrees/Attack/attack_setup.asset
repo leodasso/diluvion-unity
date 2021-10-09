@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a686a47eee2fa44cb0a34b5d86e4d5e, type: 3}
+  m_Name: attack_setup
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.6,"type":"NodeCanvas.BehaviourTrees.BehaviourTree","translation":{"x":-3328.0,"y":-3641.0},"zoomFactor":0.7267332,"nodes":[{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":5600.464,"y":5189.341},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"2"},{"_action":{"target":{"_value":{"friends":[]},"_name":"TopTarget","_targetVariableID":"d1fe19bc-c8cf-4bd9-9908-d50c25811ddc"},"add":{"_value":true},"$type":"Diluvion.AI.AICombatMusic"},"_position":{"x":5359.604,"y":5288.048},"_comment":"Combat
+    music\n","$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"3"},{"_action":{"actions":[{"target":{"_name":"currentTopTarget","_targetVariableID":"d1fe19bc-c8cf-4bd9-9908-d50c25811ddc"},"targetPosition":{"_name":"targetTransform"},"chasePlayer":{},"$type":"Diluvion.AI.GetTargetFromContext"},{"targetTrans":{"_name":"targetTransform"},"myGunArrangement":{"_name":"myStrongVector"},"targetMovement":{},"verticalOffset":{"_name":"atackVerticalOffset"},"horizontalOffset":{"_name":"attackHorizontalOffset"},"getBehind":{"_name":"attackPassing"},"$type":"Diluvion.AI.FindGoodAngle"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5363.729,"y":5384.37},"_comment":"","$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"9"},{"_action":{"actions":[{"rangeToParse":{"_name":"optimalRange"},"type":{"_value":"Optimal"},"range":{"_name":"optimalAttackRange"},"dps":{"_name":"optimalAttackDPS"},"$type":"Diluvion.AI.ParseDamageRange"},{"rangeToParse":{"_name":"longRange"},"type":{},"range":{"_name":"longAttackRange"},"dps":{"_name":"longAttackDps"},"$type":"Diluvion.AI.ParseDamageRange"},{"rangeToParse":{"_name":"shortRange"},"type":{"_value":"Short"},"range":{"_name":"shortAttackRange"},"dps":{"_name":"shortAttackDps"},"$type":"Diluvion.AI.ParseDamageRange"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5465.798,"y":5468.4},"_comment":"Gets
+    the ranges and inputs them as their own variables\n","$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"23"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"9"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"23"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"primeNode":{"$ref":"2"},"canvasGroups":[],"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
+  _objectReferences: []
+  _deserializationFailed: 0
+  repeat: 1
+  updateInterval: 0

@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a4a8c24289c5ae468bc34d82bb5d11e, type: 3}
+  m_Name: naglfar escort huron
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  slotSize: 1
+  prefab: {fileID: 100000, guid: 6d5ee90f83623854a8b7b83e7b0fe87f, type: 2}
+  resourceCost:
+    value: 0
+    danger: 0
+    hazardDanger: 0
+  ignoreSpawnerRotation: 0
+  positionSearches: []
+  chassis: {fileID: 11400000, guid: a845181bf2e928f4a920573ac5a2fafc, type: 2}
+  shipBuildSettings:
+    overrideName: 0
+    newName: {fileID: 0}
+    dockable: 0
+    cull: 0
+    ignoreCurrents: 0
+    inventoryGenerator: {fileID: 11400000, guid: 1e3d991426002ae46a6d0c430ab1f441,
+      type: 2}
+    toSetAsChild: []
+    newSignatures: []
+    crippledModels: []
+    destroyedObjects: []
+    loadout: {fileID: 11400000, guid: 06d9f3ba376eaf6449852c1085d3f438, type: 2}
+    personality: {fileID: 11400000, guid: 3b6445ec27fa0284789149802ab2dc58, type: 2}
+    interior: {fileID: 0}
+    shipEmblem: {fileID: 0}
+    newFactions:
+    - {fileID: 11400000, guid: d6f77fba92a18014e94104d4e8869268, type: 2}
+    - {fileID: 11400000, guid: fe44593c82ab1c54d9538eaaaeb6f2df, type: 2}
+    newRelations:
+    - signature: {fileID: 11400000, guid: a52bb3c3035a121439e9a7030eff8a4a, type: 2}
+      sticky: 1
+      inverseDistance: 1
+      baseAttitude: 10
+    - signature: {fileID: 11400000, guid: d75d135e96f048b4687f3324ac8fd9c8, type: 2}
+      sticky: 0
+      inverseDistance: 0
+      baseAttitude: -5
+    newReactions:
+    - targetContext: 2
+      reactionContext: 30
+      actionType: 2
+      overrideMission: {fileID: 11400000, guid: 03f4dfa2e631fef4c95ad62ddbf6f804,
+        type: 2}
+      distanceImportance: 1
+      priorityMultiplier: 5
+      actions: []
+      responses: []

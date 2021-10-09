@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: Captain__Help_
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 1
+  textTriggers: tear1Dead
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 1
+  chatterShowsOnce: 1
+  titleText: Captain! Help!
+  previewText: "Chatter: Captain! Help!\nPlayer: [Kat appears very concerned]\n\nMe:
+    Captain, please! That ship... the last hit we took dislodged one of the beams...\nJay
+    Treadwasser: Do NOT move that beam. If you take it out, he\u2019ll bleed to death.\nMe:
+    But, Jay...\nGregory Hudson: Ugh... Do you think you could hurry up here?\nJay
+    Treadwasser: Kat, keep that beam steady. @There\u2019s a town called <b>Birchton</b>
+    nearby. Get us there as fast as you can.\nMe: What if we don\u2019t make it in
+    time?\nJay Treadwasser: Stay focussed sailor!"
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: '[Kat appears very concerned]'
+  speeches:
+  - locKey: dialog/Kat_Female__Captain! Help!_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Captain, please! That ship... the last hit we took dislodged one of the
+      beams...
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kat_Female__Captain! Help!_sp_1_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: "Do NOT move that beam. If you take it out, he\u2019ll bleed to death."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kat_Female__Captain! Help!_sp_2
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: But, Jay...
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kat_Female__Captain! Help!_sp_3_Gregory Hudson(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 9c2e496ffaecbb045a1aac3496f757d0, type: 2}
+    text: Ugh... Do you think you could hurry up here?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kat_Female__Captain! Help!_sp_4_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: "Kat, keep that beam steady. @There\u2019s a town called <b>Birchton</b>
+      nearby. Get us there as fast as you can."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kat_Female__Captain! Help!_sp_5
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "What if we don\u2019t make it in time?"
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kat_Female__Captain! Help!_sp_6_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: Stay focussed sailor!
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 11400000, guid: 021fde62a59713348ba9ed44a7074a31, type: 2}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Kat_Female__Captain! Help!

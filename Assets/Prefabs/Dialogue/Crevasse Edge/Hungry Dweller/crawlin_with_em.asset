@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: crawlin_with_em
+  m_EditorClassIdentifier: 
+  active: 0
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: crawlin with em
+  previewText: 
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: Crab?
+  speeches:
+  - locKey: dialog/Hungry Dweller_Male__crawlin with em_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "Th\u2019 smokers are crawlin\u2019 with \u2018em. Massive devils that\u2019ll
+      jam up everythin\u2019 they can get \u2018emselves into! @But ya know, ol\u2019
+      Foreman got hisself a special delivery a\u2019 food from th\u2019Royals themsels!
+      An\u2019 he say, if we put our backs in, he\u2019ll give us all a taste as a
+      bonus! @Can you \u2018magine that? It\u2019ll be like a miracle from Deep\u2019self!
+      Not crab!"
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Hungry Dweller_Male__crawlin with em

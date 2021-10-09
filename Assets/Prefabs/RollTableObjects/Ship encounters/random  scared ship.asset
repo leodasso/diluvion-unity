@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbe1909b1ffcea94496e6305d1420fd2, type: 3}
+  m_Name: random  scared ship
+  m_EditorClassIdentifier: 
+  weight: 1
+  tags: []
+  slotSize: 1
+  prefab: {fileID: 1790758818802522, guid: a1974e6f4e847dc4cb2f05fd298f1ce3, type: 2}
+  resourceCost:
+    value: 0
+    danger: 0
+    hazardDanger: 0
+  ignoreSpawnerRotation: 0
+  positionSearches:
+  - {fileID: 11400000, guid: 467b40efa4959ec4e970d21ec6a4e81b, type: 2}
+  chassis: {fileID: 11400000, guid: de56a08da6180f74abbed0d3f2dbc2db, type: 2}
+  loadOut: {fileID: 11400000, guid: 3f84cce2e22216a4b8d9f612eb1c8ee1, type: 2}
+  captain: {fileID: 11400000, guid: f1b3b496e4e52c54ea989f966b30510e, type: 2}
+  factions:
+  - {fileID: 11400000, guid: 74f0604cee43b5643bb0d2af8a25b034, type: 2}
+  relations:
+  - signature: {fileID: 11400000, guid: d75d135e96f048b4687f3324ac8fd9c8, type: 2}
+    sticky: 0
+    inverseDistance: 0
+    baseAttitude: -2.7
+  debug: 0
+  rolledChassis: {fileID: 0}
+  rolledLoadout: {fileID: 0}
+  rolledCaptain: {fileID: 11400000, guid: f1b3b496e4e52c54ea989f966b30510e, type: 2}
+  minimumDanger: 97
+  lastRolledDanger: 0

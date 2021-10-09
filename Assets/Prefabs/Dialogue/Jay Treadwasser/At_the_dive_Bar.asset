@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: At_the_dive_Bar
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 1
+  triggerOnly: 0
+  textTriggers: diveBarInside
+  triggeringQuest: {fileID: 11400000, guid: 372af26a37444734fb67bcedc41539a4, type: 2}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 0
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: At the dive Bar
+  previewText: "Player: What's the plan?\n\nMe: I\u2019ve been thinking it\u2019s
+    time to expand the crew. Don\u2019t get me wrong-\nDaniel Eritan: What do I have
+    to do to get a decent drink in this dump?\nBartender: Pay yer tab, you scrounger.\nDaniel
+    Eritan: Yeah, yeah, you know I'm good for it. \nBartender: Your scrap can's falling
+    apart, boy. There's wrecks on the sea floor that\u2019re more reliable than your
+    ship.\nDaniel Eritan: D'you not look out your portholes, man? I got me a brand
+    new sub, courtesy of <b>Hassley</b>."
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: What's the plan?
+  speeches:
+  - locKey: dialog/Jay Treadwasser_Male__At the dive Bar_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "I\u2019ve been thinking it\u2019s time to expand the crew. Don\u2019t get
+      me wrong-"
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Jay Treadwasser_Male__At the dive Bar_sp_1_Daniel Eritan(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 927a22a9243411a4eb7e18101b55142a, type: 2}
+    text: What do I have to do to get a decent drink in this dump?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Jay Treadwasser_Male__At the dive Bar_sp_2_Bartender(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 0694dcd7e714cf540852fc6be8510631, type: 2}
+    text: Pay yer tab, you scrounger.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Jay Treadwasser_Male__At the dive Bar_sp_3_Daniel Eritan(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 927a22a9243411a4eb7e18101b55142a, type: 2}
+    text: 'Yeah, yeah, you know I''m good for it. '
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Jay Treadwasser_Male__At the dive Bar_sp_4_Bartender(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 0694dcd7e714cf540852fc6be8510631, type: 2}
+    text: "Your scrap can's falling apart, boy. There's wrecks on the sea floor that\u2019re
+      more reliable than your ship."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Jay Treadwasser_Male__At the dive Bar_sp_5_Daniel Eritan(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 927a22a9243411a4eb7e18101b55142a, type: 2}
+    text: D'you not look out your portholes, man? I got me a brand new sub, courtesy
+      of <b>Hassley</b>.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Jay Treadwasser_Male__At the dive Bar

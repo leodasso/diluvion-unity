@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97586a76cfe8f644e9c0ed0de14fedf2, type: 3}
+  m_Name: Claritys Fall
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  prefab: {fileID: 100030, guid: 63f3f39d075ba3b41ad80117e3a2330f, type: 2}
+  resourceCost:
+    value: 0
+    danger: 0
+    hazardDanger: 0
+  positionSearches: []
+  shipIcon: {fileID: 21300300, guid: e043c51bfdc50fd42953c4b84b15bfc1, type: 3}
+  skin: {fileID: 11400000, guid: a8e83bfc352712f4081db729c3a0e2bc, type: 2}
+  avoidanceMask:
+    serializedVersion: 2
+    m_Bits: 2049
+  cost: {fileID: 0}
+  inherentModules:
+  - {fileID: 11400000, guid: bccc0ae13d4d865469972d28de2cceb9, type: 2}
+  - {fileID: 11400000, guid: 4187d6f7b86dbe342ab81f13124c31dd, type: 2}
+  - {fileID: 11400000, guid: a074d66614922f640b06e2721596918f, type: 2}
+  - {fileID: 11400000, guid: 105e190bff137e7438c878d874ee8652, type: 2}
+  DLC: 1
+  locName: {fileID: 11400000, guid: 149112d668afc674a9c8f840b7d3d7cb, type: 2}
+  locDetailedDescription: {fileID: 11400000, guid: 471925f9b6a16814d9f72947879292ae,
+    type: 2}
+  armaments:
+  - {fileID: 11400050, guid: 63f3f39d075ba3b41ad80117e3a2330f, type: 2}
+  - {fileID: 11400048, guid: 63f3f39d075ba3b41ad80117e3a2330f, type: 2}
+  - {fileID: 11400038, guid: 63f3f39d075ba3b41ad80117e3a2330f, type: 2}
+  - {fileID: 11400036, guid: 63f3f39d075ba3b41ad80117e3a2330f, type: 2}
+  shipLevel: 2
+  stationSlots: 4
+  bonusSlots: 12
+  chassisBonus: {fileID: 11400000, guid: 94b48a57ba58d2640a032fc2cc76653a, type: 2}
+  bonusMultiplier: 1.5
+  danger: 210
+  defaultBuild:
+    overrideName: 0
+    newName: {fileID: 0}
+    dockable: 0
+    cull: 1
+    ignoreCurrents: 0
+    inventoryGenerator: {fileID: 0}
+    toSetAsChild: []
+    newSignatures: []
+    crippledModels: []
+    destroyedObjects: []
+    loadout: {fileID: 11400000, guid: 7e517beee94c8e844848e922d4db28df, type: 2}
+    personality: {fileID: 0}
+    interior: {fileID: 0}
+    shipEmblem: {fileID: 0}
+    newFactions: []
+    newRelations: []
+    newReactions: []
+  hasUpgrade: 0
+  upgrade: {fileID: 0}
+  altNames:
+  - ship_glaciem_claritysFall

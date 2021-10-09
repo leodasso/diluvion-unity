@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a48205cadce95cd46850a70ee79da0bc, type: 3}
+  m_Name: royal ship summon
+  m_EditorClassIdentifier: 
+  testObject: {fileID: 0}
+  attempt: '[haz] tries to radio for backup...'
+  fail: '...but misses!'
+  minMaxChance: {x: 0.39884886, y: 0.9}
+  dangerFactor: 2
+  danger: 129.88489
+  warningString: Warning, signature approaching on Sonar!
+  shipToSpawn: {fileID: 11400000, guid: fd38783662c1f93418616e2614c2245c, type: 2}
+  summonTime: 3
+  spawnResources:
+    value: 0
+    danger: 300

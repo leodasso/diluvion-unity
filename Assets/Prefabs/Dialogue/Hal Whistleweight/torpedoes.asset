@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: torpedoes
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst:
+  - {fileID: 11400000, guid: 41eaf686d82bb39428d94a87666168c8, type: 2}
+  conversationQueries:
+  - {fileID: 11400000, guid: 3944ac3f0585ef84e86d667d68eb582b, type: 2}
+  - {fileID: 11400000, guid: d5889c5bbf6024544ac4cf46cf3bc599, type: 2}
+  invertQueries: 1
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: torpedoes
+  previewText: 'Player: I''m looking for a torpedo officer.
+
+
+    Me: Listen, mate, I''m fully aware of what type of ship you''re piloting, and
+    it''s not one that would lead you to require a torpedo officer, yeah?'
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: I'm looking for a torpedo officer.
+  speeches:
+  - locKey: dialog/Hal Whistleweight_Male__torpedoes_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Listen, mate, I'm fully aware of what type of ship you're piloting, and
+      it's not one that would lead you to require a torpedo officer, yeah?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Hal Whistleweight_Male__torpedoes

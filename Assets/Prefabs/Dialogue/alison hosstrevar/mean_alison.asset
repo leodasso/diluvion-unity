@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: mean_alison
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 1
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst:
+  - {fileID: 11400000, guid: 4a72da5db379abb42a9b95f2bcfa7f85, type: 2}
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: mean alison
+  previewText: "Player: You know Gregory?\nMe: Oh. Hudson, did you make my receiver
+    components yet?Gregory Hudson: I... no...Me: Look, I\u2019m feeling generous today,
+    so I won\u2019t flush you out the airlock just yet, but\u2013Kat Smith: Hey lady,
+    I ought to do you a favour and pull that stick outta your backside!Me:  ...And
+    what are you? His lame-ass sidekick?Kat Smith: I could smoke you where you sit!Me:
+    Whatever. @He didn\u2019t say no when I told him to do my work. @Why don't you
+    get your bony ass out of my guild before I slap that smug face of yours. Gregory
+    Hudson: Kat, let\u2019s just go... @it\u2019s not worth it."
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: You know Gregory?
+  speeches:
+  - locKey: dialog/alison hosstrevar_Female__mean alison_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Oh. Hudson, did you make my receiver components yet?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/alison hosstrevar_Female__mean alison_sp_1_Gregory Hudson(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 9c2e496ffaecbb045a1aac3496f757d0, type: 2}
+    text: I... no...
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/alison hosstrevar_Female__mean alison_sp_2
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "Look, I\u2019m feeling generous today, so I won\u2019t flush you out the
+      airlock just yet, but-"
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/alison hosstrevar_Female__mean alison_sp_3_Kat Smith(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bb2d21ac0264df4b8249bcf945fc57f, type: 2}
+    text: Hey lady, I ought to do you a favour and pull that stick outta your backside!
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/alison hosstrevar_Female__mean alison_sp_4
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: ' ...And what are you? His lame-ass sidekick?'
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/alison hosstrevar_Female__mean alison_sp_5_Kat Smith(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bb2d21ac0264df4b8249bcf945fc57f, type: 2}
+    text: I could smoke you where you sit!
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/alison hosstrevar_Female__mean alison_sp_6
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "Whatever. @He didn\u2019t say no when I told him to do my work. @Why don't
+      you get your bony ass out of my guild before I slap that smug face of yours. "
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/alison hosstrevar_Female__mean alison_sp_7_Gregory Hudson(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 9c2e496ffaecbb045a1aac3496f757d0, type: 2}
+    text: "Kat, let\u2019s just go... @it\u2019s not worth it."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/alison hosstrevar_Female__mean alison

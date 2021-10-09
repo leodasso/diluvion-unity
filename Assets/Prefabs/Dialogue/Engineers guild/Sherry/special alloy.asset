@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: special alloy
+  m_EditorClassIdentifier: 
+  active: 0
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 11400000, guid: 416bac5cb5b4b2b428cb2340a4e72bf7, type: 2}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries:
+  - {fileID: 11400000, guid: 3944ac3f0585ef84e86d667d68eb582b, type: 2}
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: special alloy boy
+  previewText: 'Player: Special Alloy?
+
+
+    Me: Oh! @ Oh...@ That''s the stuff we salvage from ancient technology. It''s WAY
+    stronger than anything we can make today. It''s also really rare so, finding it
+    will take a really long time. @ Don''t worry about it for now! There''s plenty
+    of other upgrades we can forge, and I''m sure you''ll come across it eventually!'
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: Special Alloy?
+  speeches:
+  - locKey: dialog/sherry the intern_Female__special alloy boy_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Oh! @ Oh...@ That's the stuff we salvage from ancient technology. It's WAY
+      stronger than anything we can make today. It's also really rare so, finding
+      it will take a really long time. @ Don't worry about it for now! There's plenty
+      of other upgrades we can forge, and I'm sure you'll come across it eventually!
+    animTool:
+      animationType: 0
+      animTag: 
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/sherry the intern_Female__special alloy boy

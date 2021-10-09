@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2147c636f952b34c873c5fdf4b7a8c3, type: 3}
+  m_Name: lich drone larvae
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  testLevel: 25
+  previewHp: 8
+  previewDanger: 952
+  displayName: Lich Ship
+  minMaxLevel: {x: 16, y: 25}
+  baseDanger: 20
+  firstTurn: 1
+  turnInterval: 3
+  minMaxHp: {x: 3, y: 8}
+  sprite: {fileID: 21300042, guid: 69fda1af55cbd08459f4f58585776d1e, type: 3}
+  reward: {fileID: 11400000, guid: 76dc4912a92f6b94781a01428ae2bbc1, type: 2}
+  attackSubjectOnly: 1
+  onNewSubject: The ancient creature is still belligerant; it now wraps its terrible
+    wires around [subject]
+  introduction: "An ancient tech ship is docked with the nearby airlock. As [subject]
+    looks around it, wires from the ship embed themselves in [subject]'s legs!\r"
+  attack: '[haz] injects a mysterious substance into [subject]''s body. Their eyes
+    and veins begin to glow an otherworldly blue, before they collapse on the floor.'
+  attackAction: {fileID: 11400000, guid: 45bf0f95472a2b84cb8275ff8a1652f0, type: 2}
+  defeat: "Free of the wires, [subject] continues to look around for items to salvage!\r"
+  reactions:
+  - {fileID: 11400000, guid: 9986cab49cdedc34983389295f1aefcc, type: 2}
+  - {fileID: 11400000, guid: a4d4b006c41f3c04b843740552908dcd, type: 2}
+  - {fileID: 11400000, guid: bc96292bff90fd54d96fa86b0956a331, type: 2}
+  - {fileID: 11400000, guid: 0d022abb0fe6b4944a9f9a266906c4b5, type: 2}
+  - {fileID: 11400000, guid: 875e7a02f7b8b8a4294ad23cedc5d7bd, type: 2}
+  reactionsDescription: "\n[char] attempts to decipher the ship controls to free [subject]...\nDefense
+    against Intelligence: [10 - 12.5] \n\n pass: no loc\n fail: no loc\n[char] waves
+    the 'magic wand'...\n\n[char] begins to hurl massive harpoons at [haz]...\nDefense
+    against Strength: [60 - 75] \n\n pass: no loc\n fail: no loc\n[char] sees what
+    looks like an ancient manual for the drone and starts frantically looking through
+    it...\nDefense against Perception: [10 - 12.5] \n\n pass: no loc\n fail: no loc\n[char]
+    frantically tries to slip free of the wires...\nDefense against Endurance: [10
+    - 12.5] \n\n pass: no loc\n fail: no loc"
+  introSound: Play_Drone_Larvae_INTRO
+  hitSound: Play_Drone_Larvae_HIT
+  missSound: Play_Drone_Larvae_MISS

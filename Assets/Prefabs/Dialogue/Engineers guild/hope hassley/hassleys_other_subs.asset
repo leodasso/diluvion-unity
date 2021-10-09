@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: hassleys_other_subs
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 1
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 11400000, guid: 416bac5cb5b4b2b428cb2340a4e72bf7, type: 2}
+  triggeringQuestStatus: 0
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst:
+  - {fileID: 11400000, guid: 230b7940d990ddb478d10adcd9b1c196, type: 2}
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: hassleys other subs
+  previewText: 'Player: Do you have other subs?
+
+
+    Me: Our current line of subs, the Glaciem series, are the fastest in the sea.'
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: Do you have other subs?
+  speeches:
+  - locKey: dialog/hope hassley_Female__hassleys other subs_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Our current line of subs, the Glaciem series, are the fastest in the sea.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions:
+  - {fileID: 11400000, guid: 79d859845a5b88f4c9480063c8618059, type: 2}
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/hope hassley_Female__hassleys other subs

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a686a47eee2fa44cb0a34b5d86e4d5e, type: 3}
+  m_Name: tactic_kite
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.6,"type":"NodeCanvas.BehaviourTrees.BehaviourTree","comments":"circle
+    around target and attack until dead","translation":{"x":-5571.0,"y":-5002.0},"nodes":[{"dynamic":true,"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":5763.0,"y":5258.0},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"2"},{"dynamic":true,"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":5647.0,"y":5342.0},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"3"},{"_condition":{"targetTrans":{"_name":"targetTransform"},"currentTopTarget":{"_value":{"friends":[]},"_name":"currentTopTarget","_targetVariableID":"603dbda1-66a0-4cea-a809-15ff7ec6d6d8"},"$type":"Diluvion.AI.ValidTarget"},"_position":{"x":5589.0,"y":5419.0},"$type":"NodeCanvas.BehaviourTrees.ConditionNode","$id":"4"},{"_action":{"target":{"_name":"currentTopTarget","_targetVariableID":"d1fe19bc-c8cf-4bd9-9908-d50c25811ddc"},"targetPosition":{"_name":"targetTransform"},"chasePlayer":{},"$type":"Diluvion.AI.GetTargetFromContext"},"_position":{"x":5706.0,"y":5420.092},"_comment":"","$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"10"},{"repeaterMode":"RepeatForever","repeatTimes":{"_value":1},"_position":{"x":5875.0,"y":5365.0},"$type":"NodeCanvas.BehaviourTrees.Repeater","$id":"15"},{"_subTree":{"_value":1},"_position":{"x":5875.342,"y":5448.348},"$type":"NodeCanvas.BehaviourTrees.SubTree","$id":"17"},{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":6126.0,"y":5408.0},"_comment":"Orphaned,
+    maybe for later","$type":"NodeCanvas.BehaviourTrees.StepIterator","$id":"19"},{"_subTree":{},"_position":{"x":6131.0,"y":5500.0},"$type":"NodeCanvas.BehaviourTrees.SubTree","$id":"20"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"15"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"4"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"3"},"_targetNode":{"$ref":"10"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"15"},"_targetNode":{"$ref":"17"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"19"},"_targetNode":{"$ref":"20"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"primeNode":{"$ref":"2"},"canvasGroups":[],"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
+  _objectReferences:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: 5d3d99216dee86d49bc93f044d70ec7d, type: 2}
+  _deserializationFailed: 0
+  repeat: 1
+  updateInterval: 0

@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32aabd5c55471784e8604d81a7fa8f26, type: 3}
+  m_Name: Chikyu Akegawa (Following Player)
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  description: "I will wander between towns until: \n \nI was attacked by a Enemy,
+    Interesting, UnInteresting i will make an attack run until i get to close, then
+    reposition for another attack, \n \nI found or, was attacked by a Scary i will
+    run away from my opressor, \n \nI found or, heard an SOS or, was hailed or, heard
+    a Ping by a Enemy i will make an attack run until i get to close, then reposition
+    for another attack, \n \n"
+  baseFactions: []
+  nonFactionRelations: []
+  patience: -1.46
+  bravery: 10
+  shipSteer: -1.7
+  weaponCrew: 1.38
+  defaultFight: {fileID: 11400000, guid: ffaf717fb9f4ef348b9f76091b498a05, type: 2}
+  defaultFlee: {fileID: 11400000, guid: 6d4bced7345ee514d802e8e52c63cb29, type: 2}
+  defaultMission: {fileID: 11400000, guid: 03ff0c2021e01d14395fdb13fb9746e2, type: 2}
+  reactions:
+  - targetContext: 21
+    reactionContext: 1
+    actionType: 3
+    overrideMission: {fileID: 0}
+    distanceImportance: 0
+    priorityMultiplier: 12
+    actions: []
+    responses: []
+  - targetContext: 8
+    reactionContext: 3
+    actionType: 1
+    overrideMission: {fileID: 0}
+    distanceImportance: 0
+    priorityMultiplier: 10
+    actions: []
+    responses: []
+  - targetContext: 1
+    reactionContext: 30
+    actionType: 3
+    overrideMission: {fileID: 0}
+    distanceImportance: 0
+    priorityMultiplier: 6
+    actions: []
+    responses: []
+  designNotes: 'Chikyu following the Player
+
+'

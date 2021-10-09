@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a17f73243c12d7418fa26f028879ef8, type: 3}
+  m_Name: Drillsite 2 - pirates
+  m_EditorClassIdentifier: 
+  locKey: drillsite_pirates
+  sequential: 1
+  title: Ice Pirates!
+  description: Pirates are harassing the drill site's supply convoys. Take them out!
+  startAnotherQuest: 0
+  questToStart: {fileID: 0}
+  onQuestComplete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 0848cdbbeac10ff4a8e7c4631573cdd6, type: 2}
+        m_MethodName: ProgressObjective
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 8b6237cdfa42f944abba5fdeae80b97d,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: Quests.DQuest, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  prereqsToStart: []
+  objectiveCs:
+  - objective: {fileID: 11400000, guid: f3fc4a0e7b062ed4c81e72333ae45eea, type: 2}
+    overrideName: 0
+    newName: 
+  - objective: {fileID: 11400000, guid: a3d8e4d6a0e6c7b46a62f94ea5356739, type: 2}
+    overrideName: 1
+    newName: Report to the Engineering Master

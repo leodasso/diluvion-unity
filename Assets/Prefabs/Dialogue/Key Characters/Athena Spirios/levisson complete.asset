@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: levisson complete
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 11400000, guid: 245d910f9185d81448a1431e16ed8bd6, type: 2}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 11400000, guid: 185cbe9a16fdd734d80a19b2c1428761,
+    type: 2}
+  triggeringObjectiveStatus: 0
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: levisson complete
+  previewText: 'Player: We found this at Levisson''s Tower.
+
+
+    Me: Hmpf. Some fool is just looking to stir up trouble. @ This type of thing would
+    be left by a Morgensonne who''s seeking a blood debt. @But as I''m sure you know,
+    our navy wiped out house Morgensonne ten years ago. @ Perhaps some remnants of
+    their house are trying to sabatoge our path to the Endless Corridor.'
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: We found this at Levisson's Tower.
+  speeches:
+  - locKey: 
+    action: {fileID: 11400000, guid: 2ef0f5eea8e181a44890b2ce772f4e5b, type: 2}
+    speaker: {fileID: 0}
+    text: Hmpf. Some fool is just looking to stir up trouble.
+    animTool:
+      animationType: 0
+      animTag: 
+      animTime: 0
+      setAsDefault: 0
+  - locKey: 
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: This type of thing would be left by a Morgensonne who's seeking a blood
+      debt. @But as I'm sure you know, our navy wiped out house Morgensonne ten years
+      ago. @ Perhaps some remnants of their house are trying to sabatoge our path
+      to the Endless Corridor.
+    animTool:
+      animationType: 0
+      animTag: 
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions:
+  - {fileID: 11400000, guid: 4a4a7e3293a25a446ba0abe84b713f6c, type: 2}
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 245d910f9185d81448a1431e16ed8bd6, type: 2}
+        m_MethodName: CompleteQuest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: 

@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: Wait,_the_torpedo_guy_
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 11400000, guid: 524e35630e97b124aa07cfa3c317c3ba, type: 2}
+  triggeringQuestStatus: 0
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries:
+  - {fileID: 11400000, guid: d5889c5bbf6024544ac4cf46cf3bc599, type: 2}
+  - {fileID: 11400000, guid: 3f84d341cfb466e42b11232f73caf963, type: 2}
+  invertQueries: 0
+  showChatter: 1
+  chatterShowsOnce: 1
+  titleText: Wait, the torpedo guy!
+  previewText: 'Chatter: Wait, the torpedo guy!
+
+    Player: What torpedo guy?
+
+
+    Me: Back at the Tonnesburg Courtyard, he said he was a <b>Torpedo Officer!</b>
+    @I mean, we do have this fancy ship with torpedo tubes, we might as well have
+    an officer to use them.
+
+    Jay Treadwasser: Torpedoes <i>will</i> give us a major advantage in combat. @
+    Just don''t dip into my drink budget buying them.'
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: What torpedo guy?
+  speeches:
+  - locKey: dialog/Kat_Female__Wait, the torpedo guy!_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Back at the Tonnesburg Courtyard, he said he was a <b>Torpedo Officer!</b>
+      @I mean, we do have this fancy ship with torpedo tubes, we might as well have
+      an officer to use them.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kat_Female__Wait, the torpedo guy!_sp_1_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: Torpedoes <i>will</i> give us a major advantage in combat. @ Just don't
+      dip into my drink budget buying them.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 11400000, guid: 7c0249fa405d2814b8636342be52e7ad, type: 2}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Kat_Female__Wait, the torpedo guy!

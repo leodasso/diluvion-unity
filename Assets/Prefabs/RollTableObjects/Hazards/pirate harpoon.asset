@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2147c636f952b34c873c5fdf4b7a8c3, type: 3}
+  m_Name: pirate harpoon
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  testLevel: 10
+  previewHp: 6
+  previewDanger: 101
+  displayName: Pirate Spearman
+  minMaxLevel: {x: 8, y: 17}
+  baseDanger: 8
+  firstTurn: 1
+  turnInterval: 3
+  minMaxHp: {x: 6, y: 13}
+  sprite: {fileID: 21300008, guid: 69fda1af55cbd08459f4f58585776d1e, type: 3}
+  reward: {fileID: 11400000, guid: 26ef9f39f3550e144960b70c65054fdd, type: 2}
+  attackSubjectOnly: 0
+  onNewSubject: 
+  introduction: "[char] comes across a pirate practicing with a spear. [haz] challenges
+    [char] to a duel!\r"
+  attack: The pirate slashes [char] with the spear!
+  attackAction: {fileID: 11400000, guid: 7d454dee276138245ba93ac421628cdd, type: 2}
+  defeat: "[haz] finally accepts defeat and allows your party to continue on their
+    way!\r\n\r\n"
+  reactions:
+  - {fileID: 11400000, guid: ff2b8d537bec9b14b82e9558d2d1abfe, type: 2}
+  - {fileID: 11400000, guid: 0550945f52398ab44a59ef4461eaecbe, type: 2}
+  - {fileID: 11400000, guid: 43facf718cfda814c8321770e86bee66, type: 2}
+  - {fileID: 11400000, guid: dda72518e5b7b0046abb8c423b3e536f, type: 2}
+  reactionsDescription: "\n[char] attempts to distract [haz] with a feint...\nDefense
+    against Intelligence: [5 - 11] \n\n pass: [no loc]... the trick works and [char]
+    catches [haz] off guard with a blow to the chest!\n fail: [no loc]... but [haz]
+    isn't fooled, and keeps attacking!\n[char] attempts to punch [haz] right in the
+    nose\nDefense against Strength: [5 - 11] \n\n pass: [no loc]... and [haz] stumbles
+    back in surprise, clutching his face!\n fail: [no loc]... but [haz] just laughs
+    and thrusts his spear at [char]\n[char] observes the pattern of [haz]'s attack...\nDefense
+    against Perception: [5 - 11] \n\n pass: [no loc]... and manages to parry [haz]'s
+    swing!\n fail: [no loc]... but mistimes their step and is hurt by the [haz]'s
+    blow!\n[char] attempts to dodge an incoming strike from [haz]'s spear...\nDefense
+    against Endurance: [5 - 11] \n\n pass: [no loc]... and neatly dodges the thrust,
+    leaving the [haz] staggered and wide open!\n fail: [no loc]... but [haz] laughs
+    as he clips [char]'s arm!"
+  introSound: Play_Pirate_Spearman_INTRO
+  hitSound: Play_Pirate_Spearman_HIT
+  missSound: Play_Pirate_Spearman_MISS

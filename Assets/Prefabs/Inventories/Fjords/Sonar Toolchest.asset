@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5941e9ff4f32cb4a8da7eec23b3e049, type: 3}
+  m_Name: Sonar Toolchest
+  m_EditorClassIdentifier: 
+  merchant: 0
+  unlimitedSize: 0
+  saves: 1
+  playerShipInventory: 0
+  allowedItems: []
+  restrictedPurchase: 0
+  sellPercentage: 0.9
+  buyPercentage: 0.5
+  restockTime: 30
+  goldPerRestock: 100
+  maxGold: 5000
+  createRandomOnAwake: 0
+  possibleItems: []
+  goldValueOfGeneration: 500
+  maxSize: 10
+  minRarity: 0.2
+  maxRarity: 0.5
+  startingItems:
+  - item: {fileID: 11400000, guid: 7c2bca525240e4b49a27797b608be36b, type: 2}
+    qty: 1
+  - item: {fileID: 11400000, guid: f71634a4bf50d6e4085ce70285ddd2ce, type: 2}
+    qty: 50
+  - item: {fileID: 11400000, guid: 6d3833b494142c34bbfe4991630cd457, type: 2}
+    qty: 1

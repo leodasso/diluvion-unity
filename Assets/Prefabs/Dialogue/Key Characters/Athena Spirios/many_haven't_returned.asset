@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: many_haven't_returned
+  m_EditorClassIdentifier: 
+  active: 0
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 11400000, guid: c4faba953b95f674bad7d5d91491c1a6, type: 2}
+  triggeringQuestStatus: 0
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: many haven't returned
+  previewText: "Player: I\u2019m ready for your next request.\n\nMe: Thank you, Captain.
+    I must say, His Lordship Charles Spirios is very interested in your progress.
+    @As this is the last bounty that your crew must complete before you can progress
+    with the competition, we are sending you on a matter of some urgency. @This is
+    a bounty that has attracted many crews, and each one that has attempted the task
+    has not yet returned. "
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: "I\u2019m ready for your next request."
+  speeches:
+  - locKey: dialog/Athena Spirios_Female__many haven't returned_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: 'Thank you, Captain. I must say, His Lordship Charles Spirios is very interested
+      in your progress. @As this is the last bounty that your crew must complete before
+      you can progress with the competition, we are sending you on a matter of some
+      urgency. @This is a bounty that has attracted many crews, and each one that
+      has attempted the task has not yet returned. '
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Athena Spirios_Female__many haven't returned

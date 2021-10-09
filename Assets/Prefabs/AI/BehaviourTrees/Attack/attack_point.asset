@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a686a47eee2fa44cb0a34b5d86e4d5e, type: 3}
+  m_Name: attack_point
+  m_EditorClassIdentifier: 
+  _serializedGraph: '{"version":2.6,"type":"NodeCanvas.BehaviourTrees.BehaviourTree","translation":{"x":-3044.0,"y":-3490.0},"zoomFactor":0.7267332,"nodes":[{"_nodeColor":{"r":0.7490196,"g":0.4980392,"b":1.0,"a":1.0},"_position":{"x":5661.009,"y":5146.684},"$type":"NodeCanvas.BehaviourTrees.Sequencer","$id":"2"},{"_action":{"actions":[{"valueA":{"_name":"attackHorizontalOffset"},"valueB":{},"$type":"NodeCanvas.Tasks.Actions.SetFloat"},{"valueA":{"_name":"atackVerticalOffset"},"valueB":{},"$type":"NodeCanvas.Tasks.Actions.SetFloat"},{"boolVariable":{"_name":"attackPassing"},"setTo":"False","$type":"NodeCanvas.Tasks.Actions.SetBoolean"}],"$type":"NodeCanvas.Framework.ActionList"},"_position":{"x":5241.679,"y":5327.681},"_comment":"offsetMovement
+    values","$type":"NodeCanvas.BehaviourTrees.ActionNode","$id":"3"},{"_subTree":{"_value":1},"_position":{"x":5721.342,"y":5325.348},"$type":"NodeCanvas.BehaviourTrees.SubTree","$id":"14"}],"connections":[{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"3"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"},{"_sourceNode":{"$ref":"2"},"_targetNode":{"$ref":"14"},"$type":"NodeCanvas.BehaviourTrees.BTConnection"}],"primeNode":{"$ref":"2"},"canvasGroups":[{"name":"Stat
+    Setup","rect":{"xMin":5156.016,"yMin":5234.683,"xMax":5674.676,"yMax":5482.68}}],"localBlackboard":{"_name":"Local
+    Blackboard","_variables":{}},"derivedData":{"repeat":true,"$type":"NodeCanvas.BehaviourTrees.BehaviourTree+DerivedSerializationData"}}'
+  _objectReferences:
+  - {fileID: 0}
+  - {fileID: 11400000, guid: f308ec40d7976984fba4bde93eafbee8, type: 2}
+  _deserializationFailed: 0
+  repeat: 1
+  updateInterval: 0

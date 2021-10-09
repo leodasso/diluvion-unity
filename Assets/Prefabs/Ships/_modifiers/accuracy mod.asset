@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23afc5dde4fb8f04fae5adae33b5bc7b, type: 3}
+  m_Name: accuracy mod
+  m_EditorClassIdentifier: 
+  displayName: {fileID: 11400000, guid: f32e17e63f2158c4fa5f16381875dfe8, type: 2}
+  affectingCrewStats:
+  - statBase: {fileID: 11400000, guid: 27074db8b6073e54e8a998414105432a, type: 2}
+    value: 0.2
+  requiredBonuses: []
+  baseValue: 1
+  valueFormat: 0.0
+  descriptionPrefix: {fileID: 11400000, guid: 7c0c6792cfa336a4e8b4b6c92cb738fb, type: 2}
+  descriptionSuffix: {fileID: 11400000, guid: d979ff31eee4c3049941c9368b84d74b, type: 2}
+  useCurve: 0
+  curve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  affectedModules:
+  - {fileID: 11400000, guid: bccc0ae13d4d865469972d28de2cceb9, type: 2}
+  - {fileID: 11400000, guid: 71ed635133fe4e34b83e81c4088df858, type: 2}

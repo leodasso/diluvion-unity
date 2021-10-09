@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5941e9ff4f32cb4a8da7eec23b3e049, type: 3}
+  m_Name: fjords arms mobile trader
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  merchant: 1
+  goldPerSecond: 3
+  unlimitedSize: 0
+  unlimitedGoldValue: 0
+  saves: 0
+  playerShipInventory: 0
+  restrictedPurchase: 0
+  overrideAppearance: 0
+  overrideItemTable: 0
+  itemTable: {fileID: 0}
+  allowedItems: []
+  sellPercentage: 1
+  buyPercentage: 0.5
+  maxGold: 15000
+  spriteSet: {fileID: 0}
+  createRandomOnAwake: 0
+  goldPool: 500
+  rollingTags: []
+  maxSize: 25
+  startingItems:
+  - item: {fileID: 11400000, guid: 09d6524da70d5e04690a1f89d9bbd62c, type: 2}
+    qty: 200
+  - item: {fileID: 11400000, guid: d1e5271038de8934e9923b1b26791186, type: 2}
+    qty: 50
+  - item: {fileID: 11400000, guid: a74a416e7a288e345aa22d96240c7a5c, type: 2}
+    qty: 50
+  - item: {fileID: 11400000, guid: 067612d810dcac84c9c447f94e923236, type: 2}
+    qty: 3
+  - item: {fileID: 11400000, guid: d384da040de0eeb4c9be63636b1841a8, type: 2}
+    qty: 3

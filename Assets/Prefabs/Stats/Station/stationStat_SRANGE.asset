@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53936af38854b3847981e036eeae2be8, type: 3}
+  m_Name: stationStat_SRANGE
+  m_EditorClassIdentifier: 
+  statName: SonarRange
+  statIcon: {fileID: 0}
+  localizedName: Range
+  description: Determines sonar max range
+  statColor: {r: 0, g: 0, b: 0.66176474, a: 1}
+  affectedBy:
+  - statBase: {fileID: 11400000, guid: 3c6697a9ff3765c42a7eac69a887b090, type: 2}
+    multiplier: 0.2
+    totalStats: 0
+    totalStatBonus: 0

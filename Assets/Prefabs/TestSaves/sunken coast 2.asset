@@ -1,0 +1,653 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f04696a747881544af249b08b4318cf, type: 3}
+  m_Name: sunken coast 2
+  m_EditorClassIdentifier: 
+  importInventory: {fileID: 0}
+  importCrew: {fileID: 0}
+  importBridges: []
+  importButton: 0
+  saveD:
+    saveFileName: sunken coast 2
+    playerName: Ludas
+    savedCheckPoint: playerSpawn forgottenFjords
+    savedZones: 0100000000000000
+    homeBaseLevel: 0
+    crewSaveData:
+    - crewName: Jay Treadwasser
+      generatedName: []
+      stats: []
+      gender: 0
+      voiceType: 2
+      perkName: 
+      stationName: 
+      controllerName: 
+      dialogueName: Jay Treadwasser
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 0
+    - crewName: Jack
+      generatedName: []
+      stats: []
+      gender: 0
+      voiceType: 2
+      perkName: 
+      stationName: st_bolt
+      controllerName: 
+      dialogueName: Jack
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 5
+    - crewName: Gregory Hudson
+      generatedName: []
+      stats: []
+      gender: 0
+      voiceType: 2
+      perkName: 
+      stationName: 
+      controllerName: 
+      dialogueName: Gregory
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 0
+    - crewName: Kat Smith
+      generatedName: []
+      stats: []
+      gender: 1
+      voiceType: 2
+      perkName: perk proximity
+      stationName: 
+      controllerName: 
+      dialogueName: Kat
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 0
+    - crewName: 
+      generatedName:
+      - Alex
+      - McKinsley
+      stats: []
+      gender: 0
+      voiceType: 2
+      perkName: 
+      stationName: st_bolt
+      controllerName: royal sailor
+      dialogueName: generic_desperate_sailor
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 754
+    - crewName: 
+      generatedName:
+      - Katarina
+      - Avidan
+      stats: []
+      gender: 1
+      voiceType: 2
+      perkName: 
+      stationName: st_helm
+      controllerName: female privateer controller
+      dialogueName: generic_Meek_Sailor
+      currentlyOnShip: 1
+      guest: 0
+      spriteObj: 
+      cost: 643
+    savedPopups: []
+    shipInventory:
+      locKey: Lionfish Inventory
+      invStrings:
+      - item crowbar
+      - item cat emblem
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item crowbar
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item air tank
+      - item air tank
+      - item_fishFossil
+      - item_fishFossil
+      - item_fishFossil
+      - item_fishFossil
+      - item_fishFossil
+      - item_fishFossil
+      - item_fishFossil
+      - item_fishFossil
+      - item_fishFossil
+      - item_seaChart
+      - item_seaChart
+      - item_seaChart
+      - item_fishFossil
+      - item_fishFossil
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item air tank
+      - item passport
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      - item_royal_dinars
+      gold: 2733
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    savedInventories:
+    - locKey: Twilight's Wreath Inventory
+      invStrings:
+      - item air tank
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: Levisson's Loot
+      invStrings:
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_Torpedo
+      - item_scrapMetal
+      - item_scrapMetal
+      - item serpent emblem
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item_scrapMetal
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item food
+      - item blackNote
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: Tour Guide
+      invStrings:
+      - item map Coast
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    - locKey: Kosanza's Collection
+      invStrings:
+      - item lotus
+      gold: 0
+      netWorth: 0
+      lastUsedBolt: 
+      lastUsedTorpedo: 
+    savedInstanceIds: 
+    fovAdjust: 0
+    itemsAcquired: []
+    savedQuests:
+    - locKey: letter of introduction
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: dockToSocom
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: talkAlison
+      complete: 0
+      hidden: 1
+      contitionStatus: 00
+    - locKey: findDaybreak
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: hireKat
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: hireGreg
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: theDiveBar
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: aboutHassley
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: firstSailor
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: sos
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: getToTonnesburg
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: talkToHassley
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: items for hassley
+      complete: 1
+      hidden: 0
+      contitionStatus: 0000000000
+    - locKey: gettingPlates
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: morseRadio
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: engineParts
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: blackberriesQuest
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: level2
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: findingDrillSite
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: talkArmstrong
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: getCopperReels
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: theCollapse
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: regroup
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: talkToShadyRoyal
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: malcolmAtTburg
+      complete: 0
+      hidden: 1
+      contitionStatus: 00
+    unsavedQuests:
+    - locKey: letter of introduction
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: dockToSocom
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: talkAlison
+      complete: 0
+      hidden: 1
+      contitionStatus: 00
+    - locKey: findDaybreak
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: hireKat
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: hireGreg
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: theDiveBar
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: aboutHassley
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: firstSailor
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: sos
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: getToTonnesburg
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: talkToHassley
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: items for hassley
+      complete: 1
+      hidden: 0
+      contitionStatus: 0000000000
+    - locKey: gettingPlates
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: morseRadio
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: engineParts
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: blackberriesQuest
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: level2
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: findingDrillSite
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: talkArmstrong
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: getCopperReels
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: theCollapse
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: regroup
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: talkToShadyRoyal
+      complete: 1
+      hidden: 1
+      contitionStatus: 00
+    - locKey: malcolmAtTburg
+      complete: 0
+      hidden: 1
+      contitionStatus: 00
+    - locKey: passport
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: theBlockade
+      complete: 1
+      hidden: 0
+      contitionStatus: 00
+    - locKey: hireAlison
+      complete: 0
+      hidden: 1
+      contitionStatus: 00
+    - locKey: boardTear1
+      complete: 0
+      hidden: 1
+      contitionStatus: 00
+    - locKey: talkToFarsteer
+      complete: 0
+      hidden: 1
+      contitionStatus: 00
+    - locKey: level3sub
+      complete: 0
+      hidden: 1
+      contitionStatus: 
+    - locKey: fountainUndock
+      complete: 0
+      hidden: 1
+      contitionStatus: 00
+    - locKey: tear2
+      complete: 0
+      hidden: 1
+      contitionStatus: 00
+    - locKey: tear3
+      complete: 0
+      hidden: 1
+      contitionStatus: 00
+    displayedQuestLocKey: theBlockade
+    indexOfShipBeingUsed: 0
+    savedShips:
+    - currentShipType: ship_lionfish
+      healthUpgrades: 0
+      depthUpgrades: 0
+      currentHealth: 25
+      appliedEmblemItem: item cat emblem
+      testDepth: -500
+      knownLandmarks: []
+    captainTimeUpgrades: 0
+    knownLandmarks:
+    - lm_tonnesburg
+    - lm_giantsseat
+    - lm_stavKirke
+    - lm_glassielberg
+    - lm_socomFjords
+    - lm_dragonsTongue
+    - lm_daybreak
+    - lm_iceCity
+    - lm_icerDrill
+    tutorialsDone: 12
+    tutorialSkipped: 0
+    tutorialsCompleted:
+    - skip
+    - throttleUp
+    - turning
+    - sideView
+    - talkTo
+    - return
+    - docking
+    - dive
+    - toggleCompass
+    - ascend
+    - ping
+    - ping2
+    - fire
+    - fire2
+    - fire3
+    debugSave: 0
+    resourceItemNames:
+    - item_scrapMetal
+    - item air tank
+    - item food
+    - item_Torpedo
+    timePlayed: 0
+    deathTimes: 0
+    saveFileID: 
+    achievements: []
+    foundCharts: []
+    bakeToFile: 0
+  readOnly: 0

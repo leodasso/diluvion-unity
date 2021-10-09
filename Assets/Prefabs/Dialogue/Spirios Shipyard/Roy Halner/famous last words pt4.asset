@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: famous last words pt4
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst:
+  - {fileID: 11400000, guid: 09cca3588910ceb4199c169e4fbce0b4, type: 2}
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 0
+  titleText: famous last words pt4
+  previewText: "Player: The Naglfar?\n\nMe: You\u2019ve probably seen it out there.
+    The city-ship, <i>Naglfar</i>. A renegade crew stole it from House Kuberi, and
+    no sane captain would dare challenge it.\nKat Smith: I bet we could take it on!\nAlison
+    Hosstrevar: You\u2019re right, I\u2019m sure we\u2019ll have no problem against
+    the fleet-eater. @The city. @Sized. @Submarine.\nJay Treadwasser: Kat may be an
+    idiot, but she\u2019s on to something. @We don\u2019t need to battle the Naglfar;
+    we just have to dock to its underbelly, sneak into the reactor, and take what
+    we need. A bit of helming finesse will go a long way."
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: The Naglfar?
+  speeches:
+  - locKey: dialog/Roy Halner_Male__famous last words pt4_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "You\u2019ve probably seen it out there. The city-ship, <i>Naglfar</i>.
+      A renegade crew stole it from House Kuberi, and no sane captain would dare challenge
+      it."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Roy Halner_Male__famous last words pt4_sp_1_Kat Smith(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bb2d21ac0264df4b8249bcf945fc57f, type: 2}
+    text: I bet we could take it on!
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Roy Halner_Male__famous last words pt4_sp_2_Alison Hosstrevar(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: f628dcfa9337af041809cf0563d0d73c, type: 2}
+    text: "You\u2019re right, I\u2019m sure we\u2019ll have no problem against the
+      fleet-eater. @The city. @Sized. @Submarine."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Roy Halner_Male__famous last words pt4_sp_3_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: "Kat may be an idiot, but she\u2019s on to something. @We don\u2019t need
+      to battle the Naglfar; we just have to dock to its underbelly, sneak into the
+      reactor, and take what we need. A bit of helming finesse will go a long way."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 11400000, guid: a845893395f42a54a9ed4a3257401ee7, type: 2}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Roy Halner_Male__famous last words pt4

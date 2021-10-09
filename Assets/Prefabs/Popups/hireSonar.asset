@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eb97c2c482244d4aacbea8db78f287d, type: 3}
+  m_Name: hireSonar
+  m_EditorClassIdentifier: 
+  tag: hireSonar
+  popupType: 0
+  buttonSetup: 0
+  delay: 4
+  title: New Officer!
+  mainText: "You've just hired a <color=cyan>Sonar Officer!</color>  Officers each
+    control a vital part of your ship.  \n\nNow that you have a sonar officer, you
+    can  <color=yellow>Hold and release # </color> to ping.  Your officer will mark
+    any signatures that come up."
+  inputAction: ping
+  onlyShowIn3D: 1
+  showOnStart: 0
+  saves: 1
+  timesShown: 1

@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2147c636f952b34c873c5fdf4b7a8c3, type: 3}
+  m_Name: tank crabtank
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  testLevel: 14
+  previewHp: 12
+  previewDanger: 237
+  displayName: Angry Crab
+  minMaxLevel: {x: 14, y: 23}
+  baseDanger: 10
+  firstTurn: 4
+  turnInterval: 3
+  minMaxHp: {x: 12, y: 30}
+  sprite: {fileID: 21300036, guid: 69fda1af55cbd08459f4f58585776d1e, type: 3}
+  reward: {fileID: 11400000, guid: ea1bb17d249210946b7188585bbb9558, type: 2}
+  attackSubjectOnly: 0
+  onNewSubject: 
+  introduction: "[char] comes across an Icer experiment - part machine, part crab,
+    tearing up wall panels to repair itself. [haz] sees [char] and attacks!\r"
+  attack: "[haz] tears a panel off the wall and throws it at [rand]!\r The vessel
+    groans as it's torn apart"
+  attackAction: {fileID: 11400000, guid: 797f02f19fdbc2d4a8af86e3af6374ad, type: 2}
+  defeat: "[haz] decides that killing your party isn't worth dying for, and scuttles
+    away...\r"
+  reactions:
+  - {fileID: 11400000, guid: fee2b6234ef60db4d92a10ac9609e0e1, type: 2}
+  - {fileID: 11400000, guid: 7d6104eeddd352c44a31435de9634ed6, type: 2}
+  - {fileID: 11400000, guid: dc5a5ac266206704e90b723358a5db4d, type: 2}
+  - {fileID: 11400000, guid: 486b27034c75aae40a3191a2b37fe6fb, type: 2}
+  reactionsDescription: "\n[char] attempts to rewire the eletronics to electrocute
+    the [haz]...\n\n[char] notices some exposed wiring on [haz]'s back and tries to
+    mount [haz] to tear it out...\nDefense against Perception: [7 - 11.5] \n\n pass:
+    no loc\n fail: no loc\n[char] attempts to dodge falling pipes to get past [haz]...\nDefense
+    against Endurance: [7 - 11.5] \n\n pass: no loc\n fail: no loc\n[char] lunges
+    at [haz] with a wrench...\nDefense against Strength: [7 - 11.5] \n\n pass: no
+    loc\n fail: no loc"
+  introSound: Play_Canon_Crab_INTRO
+  hitSound: Play_Canon_Crab_HIT
+  missSound: Play_Canon_Crab_MISS

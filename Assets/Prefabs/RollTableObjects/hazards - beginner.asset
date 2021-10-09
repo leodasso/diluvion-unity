@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b624c9e0327790447b6e0c246081b78d, type: 3}
+  m_Name: hazards - beginner
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  rollBool: 0
+  containedTypes:
+  - m_Name: Hazard
+    m_AssemblyQualifiedName: Diluvion.Hazard, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+    m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  lastRolledObject: {fileID: 11400000, guid: 585e2c95a3b1d32449df52ed53f850d0, type: 2}
+  entryToAdd: {fileID: 0}
+  tableEntries:
+  - {fileID: 11400000, guid: 585e2c95a3b1d32449df52ed53f850d0, type: 2}
+  - {fileID: 11400000, guid: 865d85415c89f7d41a8825d447878557, type: 2}
+  - {fileID: 11400000, guid: 74a9824ea71496746955880b2bd754b2, type: 2}
+  - {fileID: 11400000, guid: 9fe77a38cbedbd44eac5ac9b95822bbd, type: 2}
+  rollTable:
+  - entry: {fileID: 11400000, guid: 585e2c95a3b1d32449df52ed53f850d0, type: 2}
+    tableBonus: 15
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 865d85415c89f7d41a8825d447878557, type: 2}
+    tableBonus: 15
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 74a9824ea71496746955880b2bd754b2, type: 2}
+    tableBonus: 10
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  - entry: {fileID: 11400000, guid: 9fe77a38cbedbd44eac5ac9b95822bbd, type: 2}
+    tableBonus: 0
+    guaranteeBonus: 0
+    guaranteeDrop: 0
+    dropTimes: 0
+    totalResourcesSpent: 0
+  _lastRoll: 41
+  _totalWeight: 80
+  _currentWeight: 60
+  minDanger: 0
+  minValue: 6
+  typeList:
+  - toggled: 0
+    type:
+      m_Name: Hazard
+      m_AssemblyQualifiedName: Diluvion.Hazard, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      m_AssemblyName: Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null

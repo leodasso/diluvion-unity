@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5941e9ff4f32cb4a8da7eec23b3e049, type: 3}
+  m_Name: antique shop
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  merchant: 1
+  goldPerSecond: 15
+  unlimitedSize: 0
+  unlimitedGoldValue: 0
+  saves: 1
+  playerShipInventory: 0
+  restrictedPurchase: 1
+  overrideAppearance: 0
+  overrideItemTable: 0
+  itemTable: {fileID: 0}
+  allowedItems:
+  - {fileID: 11400000, guid: fb15aa187d20673449ccf940f44c312a, type: 2}
+  - {fileID: 11400000, guid: 86c5eddb8a3c53d49b1cb0e51fb69ab3, type: 2}
+  - {fileID: 11400000, guid: 3a4c3ecd2e56cd34d8cc41166cf186cd, type: 2}
+  - {fileID: 11400000, guid: 21e1bff25b67e1c4384b12832e48bc27, type: 2}
+  - {fileID: 11400000, guid: a277238e8f566694697c585aaa43cc13, type: 2}
+  - {fileID: 11400000, guid: 347d7116b27c7414a97f5395fa95a8b8, type: 2}
+  - {fileID: 11400000, guid: 221a5704d5c0851489edcfa8a36a9e94, type: 2}
+  - {fileID: 11400000, guid: db5c488c06e07eb4da0932d88f2a67e7, type: 2}
+  - {fileID: 11400000, guid: 54f79ebed9cd03e4e9f9987462e368f8, type: 2}
+  - {fileID: 11400000, guid: b8e9c1ef1e3b1bf4e88c6b33f4e3ead9, type: 2}
+  sellPercentage: 1.5
+  buyPercentage: 1
+  maxGold: 25000
+  spriteSet: {fileID: 0}
+  createRandomOnAwake: 0
+  goldPool: 500
+  rollingTags: []
+  maxSize: 25
+  startingItems:
+  - item: {fileID: 11400000, guid: fb15aa187d20673449ccf940f44c312a, type: 2}
+    qty: 1
+  - item: {fileID: 11400000, guid: 86c5eddb8a3c53d49b1cb0e51fb69ab3, type: 2}
+    qty: 1
+  - item: {fileID: 11400000, guid: 3a4c3ecd2e56cd34d8cc41166cf186cd, type: 2}
+    qty: 1
+  - item: {fileID: 11400000, guid: 21e1bff25b67e1c4384b12832e48bc27, type: 2}
+    qty: 1
+  - item: {fileID: 11400000, guid: a277238e8f566694697c585aaa43cc13, type: 2}
+    qty: 1
+  - item: {fileID: 11400000, guid: 347d7116b27c7414a97f5395fa95a8b8, type: 2}
+    qty: 1
+  - item: {fileID: 11400000, guid: 221a5704d5c0851489edcfa8a36a9e94, type: 2}
+    qty: 1
+  - item: {fileID: 11400000, guid: db5c488c06e07eb4da0932d88f2a67e7, type: 2}
+    qty: 5
+  - item: {fileID: 11400000, guid: b8e9c1ef1e3b1bf4e88c6b33f4e3ead9, type: 2}
+    qty: 1
+  - item: {fileID: 11400000, guid: 54f79ebed9cd03e4e9f9987462e368f8, type: 2}
+    qty: 1

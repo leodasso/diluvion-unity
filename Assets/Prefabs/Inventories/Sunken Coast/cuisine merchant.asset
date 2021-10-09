@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5941e9ff4f32cb4a8da7eec23b3e049, type: 3}
+  m_Name: cuisine merchant
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  merchant: 1
+  goldPerSecond: 2
+  unlimitedSize: 0
+  unlimitedGoldValue: 0
+  saves: 1
+  playerShipInventory: 0
+  restrictedPurchase: 1
+  overrideAppearance: 0
+  overrideItemTable: 0
+  itemTable: {fileID: 0}
+  allowedItems:
+  - {fileID: 11400000, guid: 053fe3c6a9ca086479a7fdafb1fa7765, type: 2}
+  - {fileID: 11400000, guid: 2a0b68ef4dad4b94d91d3a1ce44182fb, type: 2}
+  - {fileID: 11400000, guid: 192d48ae7b3025d4e9d15fafbb44c1b3, type: 2}
+  - {fileID: 11400000, guid: 839a42c8559ccf343bdbcfd053aaaed7, type: 2}
+  - {fileID: 11400000, guid: c0aa38a729499d34c9951419a39aa9ac, type: 2}
+  - {fileID: 11400000, guid: 34bb64dd51af31442924ebd3e3afc858, type: 2}
+  - {fileID: 11400000, guid: c9c2f7779532dd44680eedd33a45eaeb, type: 2}
+  - {fileID: 11400000, guid: daaad57d822f0d84cac93b1bc4d8d4c2, type: 2}
+  sellPercentage: 1.5
+  buyPercentage: 1
+  maxGold: 15000
+  spriteSet: {fileID: 0}
+  createRandomOnAwake: 0
+  goldPool: 500
+  rollingTags: []
+  maxSize: 10
+  startingItems:
+  - item: {fileID: 11400000, guid: 2a0b68ef4dad4b94d91d3a1ce44182fb, type: 2}
+    qty: 15
+  - item: {fileID: 11400000, guid: 192d48ae7b3025d4e9d15fafbb44c1b3, type: 2}
+    qty: 2
+  - item: {fileID: 11400000, guid: 839a42c8559ccf343bdbcfd053aaaed7, type: 2}
+    qty: 2
+  - item: {fileID: 11400000, guid: c0aa38a729499d34c9951419a39aa9ac, type: 2}
+    qty: 2
+  - item: {fileID: 11400000, guid: 34bb64dd51af31442924ebd3e3afc858, type: 2}
+    qty: 5
+  - item: {fileID: 11400000, guid: c9c2f7779532dd44680eedd33a45eaeb, type: 2}
+    qty: 5

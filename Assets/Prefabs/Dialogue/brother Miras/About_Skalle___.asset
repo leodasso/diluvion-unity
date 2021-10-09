@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: About_Skalle___
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 1
+  chatterShowsOnce: 1
+  titleText: About Skalle...
+  previewText: 
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: So what is Skalle?
+  speeches:
+  - locKey: dialog/brother Miras_Male__About Skalle..._sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "I warn you, I do not tell this lightly, and I do not recommend you proceed
+      after hearing this tale\u2026"
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/brother Miras_Male__About Skalle..._sp_1_Alison Hosstrevar(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: f628dcfa9337af041809cf0563d0d73c, type: 2}
+    text: And the story is...?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/brother Miras_Male__About Skalle..._sp_2
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "One of the Deep\u2019s scriptures tells that a race of creature bred by
+      Sul; <b>great leviathans</b> who swam through the world above water; fell to
+      the seas when the Deep wrapped the world in its waves. @In the world above,
+      these leviathans had been charged with carrying the damned souls of the dead
+      to their eternal torment. @However, with their demise, the Deep created <b>a
+      portal to hell within the skull of the largest leviathan</b>, and it is this
+      portal which draws the damned souls towards it so they can finally receive punishment
+      for their sins and wicked ways."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/brother Miras_Male__About Skalle..._sp_3_Kat Smith(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bb2d21ac0264df4b8249bcf945fc57f, type: 2}
+    text: Seriously? A portal to hell?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/brother Miras_Male__About Skalle..._sp_4_Ivan Gregor(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bc2d561c5fb0644fb19ff35e3b9b7d1, type: 2}
+    text: That is why most dwellers refuse to go anywhere near the <color=blue>Endless
+      Corridor</color>. @They believe that if they venture too close to Skalle, their
+      souls will be sucked from their bodies and they will be damned for eternity,
+      regardless of how righteous a life they have led.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/brother Miras_Male__About Skalle..._sp_5_Alison Hosstrevar(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: f628dcfa9337af041809cf0563d0d73c, type: 2}
+    text: "You\u2019re not seriously thinking of going to find it, are you? We\u2019ll
+      never get past the creatures!"
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/brother Miras_Male__About Skalle...

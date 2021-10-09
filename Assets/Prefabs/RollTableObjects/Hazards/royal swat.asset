@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2147c636f952b34c873c5fdf4b7a8c3, type: 3}
+  m_Name: royal swat
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  testLevel: 14
+  previewHp: 6
+  previewDanger: 0
+  displayName: Royal Guards
+  minMaxLevel: {x: 14, y: 25}
+  baseDanger: 10
+  firstTurn: 1
+  turnInterval: 3
+  minMaxHp: {x: 6, y: 10}
+  sprite: {fileID: 21300012, guid: 69fda1af55cbd08459f4f58585776d1e, type: 3}
+  reward: {fileID: 11400000, guid: 07f37b48b721aca4fbd51b95dc6282f6, type: 2}
+  attackSubjectOnly: 0
+  onNewSubject: 
+  introduction: "[char] accidentally walks into a room where a group of [haz] are
+    holding a poker session, but the guards haven't noticed [char] yet...\r"
+  attack: "[haz] notice something is wrong and call a patrol ship, which will arrive
+    shortly!\r"
+  attackAction: {fileID: 11400000, guid: 5889bcae00830f740816389f31175323, type: 2}
+  defeat: "Your party manages to get past [haz] and through to the next room!\r"
+  reactions:
+  - {fileID: 11400000, guid: 4688685350a441b45b95788e9d905937, type: 2}
+  - {fileID: 11400000, guid: a7b7921a4e6e7c248a0f8a465bed37cc, type: 2}
+  - {fileID: 11400000, guid: c2e0b19289d9d5c4797d2bb1a229b783, type: 2}
+  reactionsDescription: "\n[char] attempts to knock one of the guards unconscious
+    when they go for a bathroom break...\nDefense against Strength: [7 - 12.5] \n\n
+    pass: [no loc]... and [char] renders the soldier unconscious!\n fail: [no loc]but
+    the soldier almost sees [char] and they are forced back into cover!\n[char] manages
+    to get in on the card game and starts counting cards...\nDefense against Intelligence:
+    [7 - 12.5] \n\n pass: [no loc]... and confounds the guards with their cold, remorseless
+    logic!\n fail: [no loc]... but forgets how numbers work!\n[char] sees that the
+    guards are too engrossed in their game during dealing to notice anything else...\nDefense
+    against Perception: [7 - 12.5] \n\n pass: [no loc]... and uses their distraction
+    to sneak part way around the room!\n fail: [no loc]... but [char] misses their
+    chance and is forced to wait!"
+  introSound: Play_Elite_Squad_INTRO
+  hitSound: Play_Elite_Squad_HIT
+  missSound: Play_Elite_Squad_MISS

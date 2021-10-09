@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2147c636f952b34c873c5fdf4b7a8c3, type: 3}
+  m_Name: thief scavenger
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  testLevel: 4
+  previewHp: 2
+  previewDanger: 0
+  displayName: Scavenger Thief
+  minMaxLevel: {x: 4, y: 11}
+  baseDanger: 6
+  firstTurn: 2
+  turnInterval: 2
+  minMaxHp: {x: 2, y: 6}
+  sprite: {fileID: 21300018, guid: 69fda1af55cbd08459f4f58585776d1e, type: 3}
+  reward: {fileID: 11400000, guid: 897a1b9957d631c41858f36d22cd31ce, type: 2}
+  attackSubjectOnly: 0
+  onNewSubject: 
+  introduction: "A lady dressed as a rat drops down from the ceiling pipes. \"Hand
+    over your valuables, and you walk away in one piece!\"\r"
+  attack: "[haz], unhappy at being ignored, snags an [item] from your party!\r"
+  attackAction: {fileID: 11400000, guid: c1698867ea5688e459001ea03e118a63, type: 2}
+  defeat: "[haz] runs away and vanishes back into the maze of pipes!\r"
+  reactions:
+  - {fileID: 11400000, guid: f87801e96218f704793cda3fabab602b, type: 2}
+  - {fileID: 11400000, guid: cf1147c7f1c891741aeb5b348a5f49f1, type: 2}
+  - {fileID: 11400000, guid: ea17d259797cb6d4f99cec89b36bcdb7, type: 2}
+  - {fileID: 11400000, guid: d5093fa388ad01c48836e8bda357220f, type: 2}
+  - {fileID: 11400000, guid: 354d2de4f06805d45b12301cfd999cc4, type: 2}
+  reactionsDescription: "\n[char] tries to bargain with [haz]...\nDefense against
+    Intelligence: [2 - 9] \n\n pass: no loc\n fail: no loc\n[char] tries to force
+    [haz] aside by ramming her into the wall...\nDefense against Strength: [2 - 9]
+    \n\n pass: no loc\n fail: no loc\n[char] presents a delicious offering for [haz]...\nweakness
+    to item blackberry for 5 damage.weakness to item crabMeat for 5 damage.weakness
+    to item food for 5 damage.weakness to item saffron for 5 damage.weakness to item
+    spirits for 5 damage.weakness to item turmeric for 5 damage.weakness to item vanillaBean
+    for 5 damage.weakness to item_wheat for 5 damage.\n[char] tries to dodge around
+    [haz] as it grabs for their bag...\nDefense against Endurance: [2 - 9] \n\n pass:
+    no loc\n fail: no loc\n[char] sees [haz] is limping from an old injury and tries
+    to damage it again...\nDefense against Perception: [2 - 9] \n\n pass: no loc\n
+    fail: no loc"
+  introSound: 
+  hitSound: 
+  missSound: 

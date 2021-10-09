@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2147c636f952b34c873c5fdf4b7a8c3, type: 3}
+  m_Name: pirate angry
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  testLevel: 4
+  previewHp: 2
+  previewDanger: 37
+  displayName: Angry Pirate
+  minMaxLevel: {x: 3, y: 6}
+  baseDanger: 8
+  firstTurn: 1
+  turnInterval: 3
+  minMaxHp: {x: 2, y: 6}
+  sprite: {fileID: 21300006, guid: 69fda1af55cbd08459f4f58585776d1e, type: 3}
+  reward: {fileID: 11400000, guid: 26ef9f39f3550e144960b70c65054fdd, type: 2}
+  attackSubjectOnly: 0
+  onNewSubject: 
+  introduction: "A pirate is rummaging through the debris. Whatever she's looking
+    for, it seems she's not happy you've interrupted...\r"
+  attack: "[haz] stabs at [char] with her knife!\r"
+  attackAction: {fileID: 11400000, guid: 7d454dee276138245ba93ac421628cdd, type: 2}
+  defeat: Looks like the pirate won't be a further problem...
+  reactions:
+  - {fileID: 11400000, guid: cab5957c71047b24f94814142695cafc, type: 2}
+  - {fileID: 11400000, guid: 183fbd1093cdbd4468ad5bfbd25e5a63, type: 2}
+  - {fileID: 11400000, guid: efa225ca4a007cb44a7f347ee2779e31, type: 2}
+  - {fileID: 11400000, guid: 49a20999e8830704fae4f07743b98c54, type: 2}
+  reactionsDescription: "\n[char] attempts to throw a couch at the pirate...\nDefense
+    against Strength: [0.5 - 5] \n\n pass: no loc\n fail: no loc\n[char] notices the
+    pirate is limping and\_tries to kick her bad leg...\nDefense against Perception:
+    [0.5 - 5] \n\n pass: no loc\n fail: no loc\n[char] notices the pirate appears
+    overwhelmed by your party and tries to negociate with her...\nDefense against
+    Intelligence: [0.5 - 5] \n\n pass: no loc\n fail: no loc\n[char] attempts to run
+    away from the [haz]...\nDefense against Endurance: [0.5 - 5] \n\n pass: no loc\n
+    fail: no loc"
+  introSound: Play_Pirate_Cutlass_INTRO
+  hitSound: Play_Pirate_Cutlass_HIT
+  missSound: Play_Pirate_Cutlass_MISS

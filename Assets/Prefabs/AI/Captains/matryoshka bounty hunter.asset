@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32aabd5c55471784e8604d81a7fa8f26, type: 3}
+  m_Name: matryoshka bounty hunter
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  description: "I will wander from town to town pinging for interesting stuff\n until:
+    \nI -1Enemy i will circle around target and attack until dead, \n"
+  baseFactions:
+  - {fileID: 11400000, guid: 1665e359e15e79d428897e9fefaf5a64, type: 2}
+  nonFactionRelations: []
+  patience: -5
+  bravery: 0.73
+  shipSteer: -10
+  weaponCrew: -9.05
+  defaultFight: {fileID: 11400000, guid: ffaf717fb9f4ef348b9f76091b498a05, type: 2}
+  defaultFlee: {fileID: 11400000, guid: 6d4bced7345ee514d802e8e52c63cb29, type: 2}
+  defaultMission: {fileID: 11400000, guid: abeed71d9dc0d124ea7c0a1ce6f3c0ae, type: 2}
+  reactions:
+  - targetContext: 1
+    reactionContext: -1
+    actionType: 3
+    overrideMission: {fileID: 0}
+    distanceImportance: 0
+    priorityMultiplier: 10
+    actions: []
+    responses: []
+  designNotes: 'First Matryoshka bounty captain
+
+'

@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: drunk_kat
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 1
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 11400000, guid: 1506f824eff2edb4a8395af5cc0e45da, type: 2}
+  triggeringQuestStatus: 0
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: drunk kat
+  previewText: "Player: [Kat is drunk]\n\nMe: This\u2018s all\u2026 all... my fault...
+    I pushed him into staying on the ship. @He was only there because I told him to\u2026
+    *hic*... to stay.\nJay Treadwasser: He was his own person, Kat.\nMe: But I...\nJay
+    Treadwasser: The only\u2026 only thing you should be blaming for this is that
+    goddamn Morgen's Tear. @Which makes this my fault...\nMe: Morgen's tear? @I don't
+    understand... @Jay...?"
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: '[Kat is drunk]'
+  speeches:
+  - locKey: dialog/Kat_Female__drunk kat_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "This\u2018s all\u2026 all... my fault... I pushed him into staying on the
+      ship. @He was only there because I told him to\u2026 *hic*... to stay."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kat_Female__drunk kat_sp_1_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: He was his own person, Kat.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kat_Female__drunk kat_sp_2
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: But I...
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kat_Female__drunk kat_sp_3_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: "The only\u2026 only thing you should be blaming for this is that goddamn
+      Morgen's Tear. @Which makes this my fault..."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kat_Female__drunk kat_sp_4
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Morgen's tear? @I don't understand... @Jay...?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Kat_Female__drunk kat

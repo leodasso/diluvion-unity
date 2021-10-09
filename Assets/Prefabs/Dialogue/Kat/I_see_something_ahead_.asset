@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: I_see_something_ahead_
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 1
+  textTriggers: strangeLure
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 1
+  chatterShowsOnce: 1
+  titleText: I see something ahead!
+  previewText: "Chatter: I see something ahead!\nPlayer: What is that?\n\nMe: It's
+    a big glowy thingy!\nJay Treadwasser: That\u2019s weird... didn\u2019t Ivan say
+    <b>Crevasse Edge</b> was the only town in the Abyss?\nIvan Gregor: It is...\nAlison
+    Hosstrevar: I\u2019m seeing a few downed ships in this area. No distress signals,
+    but you might want to check them out anyway.\nMe: I want to check out the light
+    thingy!"
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: What is that?
+  speeches:
+  - locKey: dialog/Kat_Female__I see something ahead!_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: It's a big glowy thingy!
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kat_Female__I see something ahead!_sp_1_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: "That\u2019s weird... didn\u2019t Ivan say <b>Crevasse Edge</b> was the
+      only town in the Abyss?"
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kat_Female__I see something ahead!_sp_2_Ivan Gregor(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bc2d561c5fb0644fb19ff35e3b9b7d1, type: 2}
+    text: It is...
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kat_Female__I see something ahead!_sp_3_Alison Hosstrevar(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: f628dcfa9337af041809cf0563d0d73c, type: 2}
+    text: "I\u2019m seeing a few downed ships in this area. No distress signals, but
+      you might want to check them out anyway."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kat_Female__I see something ahead!_sp_4
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: I want to check out the light thingy!
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Kat_Female__I see something ahead!

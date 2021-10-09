@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97586a76cfe8f644e9c0ed0de14fedf2, type: 3}
+  m_Name: manta
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  prefab: {fileID: 100000, guid: 6d5ee90f83623854a8b7b83e7b0fe87f, type: 2}
+  resourceCost:
+    value: 0
+    danger: 0
+    hazardDanger: 0
+  positionSearches: []
+  shipIcon: {fileID: 21300310, guid: e043c51bfdc50fd42953c4b84b15bfc1, type: 3}
+  skin: {fileID: 11400000, guid: 6cdb2193d74e6894197912daa66ab4b6, type: 2}
+  avoidanceMask:
+    serializedVersion: 2
+    m_Bits: 2049
+  cost: {fileID: 11400000, guid: c5c82678bdfc6c14cbb77642b01f4c77, type: 2}
+  inherentModules:
+  - {fileID: 11400000, guid: bccc0ae13d4d865469972d28de2cceb9, type: 2}
+  - {fileID: 11400000, guid: 4187d6f7b86dbe342ab81f13124c31dd, type: 2}
+  - {fileID: 11400000, guid: a074d66614922f640b06e2721596918f, type: 2}
+  - {fileID: 11400000, guid: 105e190bff137e7438c878d874ee8652, type: 2}
+  DLC: 1
+  locName: {fileID: 11400000, guid: 1f0098151cb5c8e4997008ecfd5b4311, type: 2}
+  locDetailedDescription: {fileID: 11400000, guid: e8ae97dbabd616742a351a27c6de43fd,
+    type: 2}
+  armaments:
+  - {fileID: 11400074, guid: 6d5ee90f83623854a8b7b83e7b0fe87f, type: 2}
+  - {fileID: 114304434350960056, guid: 6d5ee90f83623854a8b7b83e7b0fe87f, type: 2}
+  - {fileID: 114550232725648348, guid: 6d5ee90f83623854a8b7b83e7b0fe87f, type: 2}
+  - {fileID: 11400052, guid: 6d5ee90f83623854a8b7b83e7b0fe87f, type: 2}
+  - {fileID: 11400068, guid: 6d5ee90f83623854a8b7b83e7b0fe87f, type: 2}
+  - {fileID: 11400084, guid: 6d5ee90f83623854a8b7b83e7b0fe87f, type: 2}
+  - {fileID: 11400082, guid: 6d5ee90f83623854a8b7b83e7b0fe87f, type: 2}
+  shipLevel: 3
+  stationSlots: 5
+  bonusSlots: 16
+  chassisBonus: {fileID: 11400000, guid: b926229827cb4ae4a9fd0cacb131586c, type: 2}
+  bonusMultiplier: 1.5
+  danger: 290
+  defaultBuild:
+    overrideName: 0
+    newName: {fileID: 0}
+    dockable: 0
+    cull: 1
+    ignoreCurrents: 0
+    inventoryGenerator: {fileID: 0}
+    toSetAsChild: []
+    newSignatures: []
+    crippledModels: []
+    destroyedObjects: []
+    loadout: {fileID: 11400000, guid: 5c3aec1aaa78530489470e879c952b05, type: 2}
+    personality: {fileID: 0}
+    interior: {fileID: 0}
+    shipEmblem: {fileID: 0}
+    newFactions: []
+    newRelations: []
+    newReactions: []
+  hasUpgrade: 0
+  upgrade: {fileID: 0}
+  altNames:
+  - ship_manta

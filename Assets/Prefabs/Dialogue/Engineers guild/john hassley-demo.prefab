@@ -1,0 +1,613 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: john hassley-demo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -119.531876, y: -366.96475, z: 26.911282}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5bc224e94d4bd743b48051ef9224ff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullPortrait: {fileID: 21300048, guid: 8d40c07ce2a11834b9a467d5aa5dd95c, type: 3}
+  chatterPortrait: {fileID: 0}
+  gender: 0
+  dialogues:
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: talkToHassley
+      questStatus: 1
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''talkToHassley'' must be InProgress for this to be available.'
+    - questLocKey: items for hassley
+      questStatus: 2
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''items for hassley'' must be NotStarted for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog_john hassley-demo__looking for hassley
+    titleText: looking for hassley
+    question: I'm looking for John Hassley.
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Yup, that'd be me! So you're a friend of Dan's, eh? Awesome! There's a
+        couple of things I'll need you to bring me, but I'll make you the best ship
+        you ever laid eyes on!
+      locKey: dialog_john hassley-demo__looking for hassley_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 2
+    showWhere: 0
+    urgent: 1
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 0
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: talkToHassley
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''talkToHassley'' must be Complete for this to be available.'
+    - questLocKey: items for hassley
+      questStatus: 2
+      secondaryStatus: 1
+      questStatus2: 1
+      helpString: '''items for hassley'' must be NotStarted or InProgress for this
+        to be available.'
+    dialogueTriggers: []
+    locKey: dialog_john hassley-demo__what do you need
+    titleText: what do you need
+    question: What do you need to upgrade my sub?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "Ok, so I'll be needing <b>15 reinforced hull panels</b> from the Reinfjord
+        minefields - there are a lot of wrecks out there.  @And <b>10 engine parts</b>
+        from the ships that fell round Fingerdal in the Battle of Singer\u2019s End
+        - you know, the one where the Sonnge House finally kicked it. @I\u2019ll also
+        need <b>40 pieces of scrap metal</b>...@ ...a <b>Morse radio</b> from Sonar
+        and Communications...@ ...and a some <b>blackberries</b> - consider those
+        payment for my services."
+      locKey: dialog_john hassley-demo__what do you need_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 2
+    showWhere: 0
+    urgent: 1
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 1
+    questLocKey: items for hassley
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 1
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: dialog_john hassley-demo__Demo upgrade
+    titleText: Demo upgrade
+    question: Can you upgrade my ship?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Like nobody else.  Just wait, you'll be praising my work in no time.
+      locKey: dialog_john hassley-demo__Demo upgrade_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 2
+    showWhere: 0
+    urgent: 1
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 1
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 2
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: dialog_john hassley-demo__the real deal
+    titleText: the real deal
+    question: So you're really the legendary mechanic?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Hell yeah! @I'm going to change the face of sea travel forever, but for
+        now I'm doing sailors like you favours to show the guild exactly what I can
+        do.
+      locKey: dialog_john hassley-demo__the real deal_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 2
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 3
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 1
+    dialoguePrereqs:
+    - questLocKey: talkToHassley
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''talkToHassley'' must be Complete for this to be available.'
+    - questLocKey: items for hassley
+      questStatus: 2
+      secondaryStatus: 1
+      questStatus2: 1
+      helpString: '''items for hassley'' must be NotStarted or InProgress for this
+        to be available.'
+    dialogueTriggers: []
+    locKey: dialog_john hassley-demo__why this job
+    titleText: why this job
+    question: If you're a legendary mechanic, why do you need this work?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Er... hey, you going to shoot a gift fish or what?@ Dan never gave me
+        this kind of grief for souping up his generic sub and giving him a masterpiece!
+      locKey: dialog_john hassley-demo__why this job_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 2
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 1
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 4
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: level2
+      questStatus: 2
+      secondaryStatus: 1
+      questStatus2: 1
+      helpString: '''level2'' must be NotStarted or InProgress for this to be available.'
+    - questLocKey: items for hassley
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''items for hassley'' must be Complete for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog_john hassley-demo__mamma no
+    titleText: mamma no
+    question: Umm...?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: But gran... I was just trying to...
+      locKey: dialog_john hassley-demo__mamma no_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11488396, guid: f036c9f856abe914eb88319692294ebd, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "That\u2019s Grand  Foreman Hassley, Jonathan. What pack of lies have
+        you been feeding this poor captain? Did you even consider that your actions
+        could get this crew killed? @And all because you led them to believe the vessel
+        you built can withstand more than it's actually capable of!"
+      locKey: dialog_john hassley-demo__mamma no_sp_1
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: I... I can get them down there!
+      locKey: dialog_john hassley-demo__mamma no_sp_2
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11488396, guid: f036c9f856abe914eb88319692294ebd, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: With time and training, yes, but for now you're on cleaning duty until
+        I say you can go back to using the workshop machinery. @If I find out you've
+        been working on anything I haven't authorised, you don't graduate. Understood?
+      locKey: dialog_john hassley-demo__mamma no_sp_3
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Ugh....
+      locKey: dialog_john hassley-demo__mamma no_sp_4
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11488396, guid: f036c9f856abe914eb88319692294ebd, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: 'Now, captain, I apologise for my grandson''s behaviour, but we simply
+        do not have the resources to get you down to 1000 meters. @While Jonathan
+        is very skilled, his designs will simply not go beyond 500 meters. @Regardless,
+        a deal is a deal, so he''s still going to upgrade your ship. '
+      locKey: dialog_john hassley-demo__mamma no_sp_5
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 2
+    showWhere: 0
+    urgent: 1
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 1
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 5
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  - subject: {fileID: 0}
+    active: 0
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs:
+    - questLocKey: level2
+      questStatus: 0
+      secondaryStatus: 0
+      questStatus2: 0
+      helpString: '''level2'' must be Complete for this to be available.'
+    dialogueTriggers: []
+    locKey: dialog_john hassley-demo__an apprentice
+    titleText: an apprentice
+    question: So you're just an apprentice?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Just you wait. One day you'll be preaching my name just the same as Daniel.
+      locKey: dialog_john hassley-demo__an apprentice_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 2
+    showWhere: 0
+    urgent: 0
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 6
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  myCrew: {fileID: 0}
+  locKey: dialog_john hassley-demo_
+  selectable: 0
+  omitFromLoc: 1
+  lockLocKeys: 1
+  validDialogues: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1

@@ -1,0 +1,237 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: Take_this___
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 1
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: Take this...
+  previewText: "Player: [Eavesdrop]\n\nMe: Here, take this...\nThankful Dweller: Deep
+    praise your kindness, Angel.\nJay Treadwasser: Those are Morgensonne apples, aren\u2019t
+    they?\nMe: ...\nJay Treadwasser: I\u2019d be grateful for any information on how
+    the Morgensonne settlements are faring. \nMe: How <i>dare</i> you speak to me
+    like you care about them, traitor. @Do you <i>really</i> think that everyone hasn\u2019t
+    heard of your latest treachery? \nJay Treadwasser: I...\nMe: I watched you run
+    when our navy was ambushed by House Spirios, and now you reveal you were working
+    with them this entire time? @How can you face any of your house knowing you\u2019re
+    the one who destroyed their lives?\nJay Treadwasser: ...\nMe: ANSWER ME!\nKat
+    Smith: Did we meet that woman before? The one with the apples? She looks kinda
+    familiar...\nAlison Hosstrevar: No idea, but she\u2019s <i>really</i> yelling
+    at Jay. \nIvan Gregor: Oooh, look at that slap. He'll be feeling that tomorrow.\nAlison
+    Hosstrevar: So should we help him?\nIvan Gregor: The Deep rewards those who look
+    after themselves.\nAlison Hosstrevar: So that\u2019s a no, then.\nIvan Gregor:
+    Why don\u2019t we invite her to join our crew? @We can never have enough beautiful,
+    fiery women!\nAlison Hosstrevar: ...\nKat Smith: ..."
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: '[Eavesdrop]'
+  speeches:
+  - locKey: dialog/Lady with Apples_Female__Take this..._sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Here, take this...
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Lady with Apples_Female__Take this..._sp_1_Thankful Dweller(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: ce8f7ee4288b00840a21be58fd0bb28c, type: 2}
+    text: Deep praise your kindness, Angel.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Lady with Apples_Female__Take this..._sp_2_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: "Those are Morgensonne apples, aren\u2019t they?"
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Lady with Apples_Female__Take this..._sp_3
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: '...'
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Lady with Apples_Female__Take this..._sp_4_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: "I\u2019d be grateful for any information on how the Morgensonne settlements
+      are faring. "
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Lady with Apples_Female__Take this..._sp_5
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "How <i>dare</i> you speak to me like you care about them, traitor. @Do
+      you <i>really</i> think that everyone hasn\u2019t heard of your latest treachery? "
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Lady with Apples_Female__Take this..._sp_6_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: I...
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Lady with Apples_Female__Take this..._sp_7
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "I watched you run when our navy was ambushed by House Spirios, and now
+      you reveal you were working with them this entire time? @How can you face any
+      of your house knowing you\u2019re the one who destroyed their lives?"
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Lady with Apples_Female__Take this..._sp_8_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: '...'
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Lady with Apples_Female__Take this..._sp_9
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: ANSWER ME!
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Lady with Apples_Female__Take this..._sp_10_Kat Smith(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bb2d21ac0264df4b8249bcf945fc57f, type: 2}
+    text: Did we meet that woman before? The one with the apples? She looks kinda
+      familiar...
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Lady with Apples_Female__Take this..._sp_11_Alison Hosstrevar(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: f628dcfa9337af041809cf0563d0d73c, type: 2}
+    text: "No idea, but she\u2019s <i>really</i> yelling at Jay. "
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Lady with Apples_Female__Take this..._sp_12_Ivan Gregor(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bc2d561c5fb0644fb19ff35e3b9b7d1, type: 2}
+    text: Oooh, look at that slap. He'll be feeling that tomorrow.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Lady with Apples_Female__Take this..._sp_13_Alison Hosstrevar(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: f628dcfa9337af041809cf0563d0d73c, type: 2}
+    text: So should we help him?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Lady with Apples_Female__Take this..._sp_14_Ivan Gregor(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bc2d561c5fb0644fb19ff35e3b9b7d1, type: 2}
+    text: The Deep rewards those who look after themselves.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Lady with Apples_Female__Take this..._sp_15_Alison Hosstrevar(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: f628dcfa9337af041809cf0563d0d73c, type: 2}
+    text: "So that\u2019s a no, then."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Lady with Apples_Female__Take this..._sp_16_Ivan Gregor(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bc2d561c5fb0644fb19ff35e3b9b7d1, type: 2}
+    text: "Why don\u2019t we invite her to join our crew? @We can never have enough
+      beautiful, fiery women!"
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Lady with Apples_Female__Take this..._sp_17_Alison Hosstrevar(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: f628dcfa9337af041809cf0563d0d73c, type: 2}
+    text: '...'
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Lady with Apples_Female__Take this..._sp_18_Kat Smith(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bb2d21ac0264df4b8249bcf945fc57f, type: 2}
+    text: '...'
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Lady with Apples_Female__Take this...

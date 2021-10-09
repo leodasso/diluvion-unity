@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: made_it_out
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 11400000, guid: 8b6237cdfa42f944abba5fdeae80b97d, type: 2}
+  triggeringQuestStatus: 0
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: made it out
+  previewText: "Player: I see you made it out of the ice fall.\n\nMe: What can I say?
+    I always prefer to leave a sinking ship to the rats.\nGregory Hudson: But... those
+    people...\nMe: They all knew what they were signing up for.  @We drill through
+    the ice, it collapses. @ We detonate the ice, it collapses on someone else. @
+    You\u2019re lucky you weren\u2019t around for the massacre that happened 40 years
+    ago, kid.\nGregory Hudson: But you knew it was going to collapse and you still
+    left them there! \nMe: Everything I did at that drill site, I did it knowing it
+    was worthless. No technology in this ocean will get us through.  @The sooner you
+    learn to stop dreaming, the better off you\u2019ll be, kid. Meanwhile, the guilds
+    are going to keep sacrificing children like they\u2019re kelp, so long as it makes
+    them look like they\u2019re trying something.  @They\u2019re just peddling another
+    fake religion based on stories of an unknown surface world."
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: I see you made it out of the ice fall.
+  speeches:
+  - locKey: dialog/Malcolm Hosstrevar_Male__made it out_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: What can I say? I always prefer to leave a sinking ship to the rats.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Malcolm Hosstrevar_Male__made it out_sp_1_Gregory Hudson(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 9c2e496ffaecbb045a1aac3496f757d0, type: 2}
+    text: But... those people...
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Malcolm Hosstrevar_Male__made it out_sp_2
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "They all knew what they were signing up for.  @We drill through the ice,
+      it collapses. @ We detonate the ice, it collapses on someone else. @ You\u2019re
+      lucky you weren\u2019t around for the massacre that happened 40 years ago, kid."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Malcolm Hosstrevar_Male__made it out_sp_3_Gregory Hudson(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 9c2e496ffaecbb045a1aac3496f757d0, type: 2}
+    text: 'But you knew it was going to collapse and you still left them there! '
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Malcolm Hosstrevar_Male__made it out_sp_4
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "Everything I did at that drill site, I did it knowing it was worthless.
+      No technology in this ocean that\u2019s going to get us through that surface
+      ice.  @The sooner you learn to stop dreaming, the better off you\u2019ll be,
+      kid. Meanwhile, the guilds are going to keep sacrificing children like they\u2019re
+      fast-growing kelp, so long as it makes them look like they\u2019re trying something.
+      \ @They\u2019re just peddling another fake religion based on stories of an unknown
+      surface world."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Malcolm Hosstrevar_Male__made it out

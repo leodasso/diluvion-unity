@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a17f73243c12d7418fa26f028879ef8, type: 3}
+  m_Name: The Dive Bar
+  m_EditorClassIdentifier: 
+  locKey: theDiveBar
+  sequential: 1
+  title: The Dive Bar
+  description: After a long day of salvaging, the Dive Bar seems like a perfect place
+    to get some rest, chat with the locals, and down some grog.
+  startAnotherQuest: 1
+  questToStart: {fileID: 11400000, guid: 524e35630e97b124aa07cfa3c317c3ba, type: 2}
+  prereqsToStart: []
+  objectiveCs:
+  - objective: {fileID: 11400000, guid: 9ec582a511708fb4c959705caa311afc, type: 2}
+    overrideName: 1
+    newName: Dock with The Dive Bar
+  - objective: {fileID: 11400000, guid: 8c52d21cf63c72443afcf27f54abcae8, type: 2}
+    overrideName: 0
+    newName: a great objective.
+  - objective: {fileID: 11400000, guid: 65d8d2964b8e3c44fac77c6b6608746d, type: 2}
+    overrideName: 1
+    newName: Find out more about this 'Hassley'
+  - objective: {fileID: 11400000, guid: b92db1bad11d9aa488413573f023f4bf, type: 2}
+    overrideName: 1
+    newName: Hire a sailor

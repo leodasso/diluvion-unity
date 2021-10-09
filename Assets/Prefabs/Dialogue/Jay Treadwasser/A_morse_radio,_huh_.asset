@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: A_morse_radio,_huh_
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 11400000, guid: 0346cc1d2b9787044a21a237b3a293c7, type: 2}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 11400000, guid: 70bb3c2d37a6c5b419564ec12b8b53b1,
+    type: 2}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 1
+  chatterShowsOnce: 1
+  titleText: A morse radio, huh?
+  previewText: 'Chatter: A morse radio, huh?
+
+    Player: How about the Morse Radio?
+
+
+    Me: Those things aren''t cheap... And they''re too fragile to survive a battle.
+
+    Gregory Hudson: Oh... I think...@  I think you''ll be able to find one over in
+    the Sonar and Communications guild, in Tommaldal.'
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: How about the Morse Radio?
+  speeches:
+  - locKey: dialog/Jay Treadwasser_Male__A morse radio, huh?_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Those things aren't cheap... And they're too fragile to survive a battle.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Jay Treadwasser_Male__A morse radio, huh?_sp_1_Gregory Hudson(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 9c2e496ffaecbb045a1aac3496f757d0, type: 2}
+    text: Oh... I think...@  I think you'll be able to find one over in the Sonar
+      and Communications guild, in Tommaldal.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Jay Treadwasser_Male__A morse radio, huh?

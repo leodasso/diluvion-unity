@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: Hello__Are_you_rich_
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 1
+  dontLogUntilHired: 0
+  manualAdd: 1
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries:
+  - {fileID: 11400000, guid: 9d38fb80138aa2347aaa19496b3aadf2, type: 2}
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 0
+  titleText: Hello! Are you rich?
+  previewText: 'Player: What''s this place?
+
+
+    Me: It''s a special place! A place that could be your very own base of operations.
+    @I''m waiting for a captain to serve, and if you got enough cash, that captain
+    could be you.'
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: What's this place?
+  speeches:
+  - locKey: dialog/HomeBase Upgrader_Male__Hello! Are you rich?_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: It's a special place! A place that could be your very own base of operations.
+      @I'm waiting for a captain to serve, and if you got enough cash, that captain
+      could be you. @ What do you say? Fund my operation?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions:
+  - {fileID: 11400000, guid: a93ed8eaa39caf745b65419fceaf152a, type: 2}
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/HomeBase Upgrader_Male__Hello! Are you rich?

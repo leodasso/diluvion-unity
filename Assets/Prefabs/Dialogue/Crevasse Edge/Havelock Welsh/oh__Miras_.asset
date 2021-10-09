@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: oh__Miras_
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: oh. Miras.
+  previewText: 
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: Havelock?
+  speeches:
+  - locKey: dialog/Havelock Welsh_Male__oh. Miras._sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Yes... @oh. <i>Miras</i>.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Havelock Welsh_Male__oh. Miras._sp_1_Brother Miras(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 245ca5eb365f37e4d9225a06c747ad74, type: 2}
+    text: I'm not here because I want to be, <i>traitor</i>.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Havelock Welsh_Male__oh. Miras._sp_2
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Still the same old Miras, I see. @Do you want to know how I cut out chunks
+      of their brains, or pull apart those perfect wings to see how they were created?
+      @You had me cast out of the Order for seeking knowledge of our Gods. Well now
+      I've found even more, and you will not share in my successes. @Leave.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Havelock Welsh_Male__oh. Miras._sp_3_Kat Smith(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bb2d21ac0264df4b8249bcf945fc57f, type: 2}
+    text: "Oi! We\u2019re totally risking our necks here to get to the <color=blue>Endless
+      Corridor</color> because your lot say that whatever\u2019s down there can actually
+      help people. @You twats are going to shut it, make up, and tell us how the hell
+      we\u2019re meant to get what's down there."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Havelock Welsh_Male__oh. Miras._sp_4
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: '....'
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Havelock Welsh_Male__oh. Miras._sp_5
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: '....'
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Havelock Welsh_Male__oh. Miras._sp_6
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Very well. If you are really that determined to carry on, you might want
+      to ask Brother Miras about the one place everyone avoids... @ <i>Skalle</i>.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Havelock Welsh_Male__oh. Miras.

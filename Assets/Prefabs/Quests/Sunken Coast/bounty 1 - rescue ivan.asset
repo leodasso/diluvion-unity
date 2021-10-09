@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a17f73243c12d7418fa26f028879ef8, type: 3}
+  m_Name: bounty 1 - rescue ivan
+  m_EditorClassIdentifier: 
+  locKey: bounty1
+  sequential: 1
+  title: The Missing Crew
+  description: Find Scott Wreath's Ship!
+  startAnotherQuest: 0
+  questToStart: {fileID: 0}
+  onQuestComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  prereqsToStart: []
+  objectiveCs:
+  - objective: {fileID: 11400000, guid: 2caf8334f6033454dbf4ff6d03dad6fd, type: 2}
+    overrideName: 0
+    newName: a great objective.
+  - objective: {fileID: 11400000, guid: 4590d13681b8dad44b9bf26dc383f3fe, type: 2}
+    overrideName: 1
+    newName: Rescue the remaining crew
+  - objective: {fileID: 11400000, guid: d9a5c789ca7eb1442b3f69eadc51f12f, type: 2}
+    overrideName: 1
+    newName: Defeat the Morgen's Tear!
+  - objective: {fileID: 11400000, guid: a3d8e4d6a0e6c7b46a62f94ea5356739, type: 2}
+    overrideName: 1
+    newName: Report to Chikyu at the Adventurer's Guild

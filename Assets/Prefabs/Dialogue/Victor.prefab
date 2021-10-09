@@ -1,0 +1,254 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: Victor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -119.531876, y: -366.96475, z: 26.911282}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5bc224e94d4bd743b48051ef9224ff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fullPortrait: {fileID: 21300004, guid: 493729dc9c1098e48885d30a2ea75543, type: 3}
+  chatterPortrait: {fileID: 0}
+  gender: 1
+  dialogues:
+  - subject: {fileID: 0}
+    active: 1
+    omitFromLoc: 0
+    valid: 0
+    showsOnlyOnce: 0
+    hideUntilPrevRead: 0
+    dialoguePrereqs: []
+    dialogueTriggers: []
+    locKey: dialog/Victor_Female__traitor
+    titleText: traitor
+    question: You the captain?
+    speeches:
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: 'How <i>dare</i> you set foot on this ship, traitor? '
+      locKey: dialog/Victor_Female__traitor_sp_0
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11400000, guid: bd01cdc53652fa742882c9f125a57be8, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "You\u2019re one to talk! You\u2019ve been so wrapped up in getting your
+        vengeance that you hurt innocent bystanders doing it. "
+      locKey: dialog/Victor_Female__traitor_sp_1_Jay Treadwasser(Male)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "Collaborators, the lot of them. They\u2019d lie their way into the Spirios
+        bed sooner than help anyone else!"
+      locKey: dialog/Victor_Female__traitor_sp_2
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11400000, guid: bd01cdc53652fa742882c9f125a57be8, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Like you lied about your identity?
+      locKey: dialog/Victor_Female__traitor_sp_3_Jay Treadwasser(Male)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: That is not the same thing at all!
+      locKey: dialog/Victor_Female__traitor_sp_4
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11400000, guid: bd01cdc53652fa742882c9f125a57be8, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "Just... tell me why you\u2019re still chasing us. "
+      locKey: dialog/Victor_Female__traitor_sp_5_Jay Treadwasser(Male)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: I hated you. @For everything that happened.
+      locKey: dialog/Victor_Female__traitor_sp_6
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11400000, guid: bd01cdc53652fa742882c9f125a57be8, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "Well, you\u2019re not the only one."
+      locKey: dialog/Victor_Female__traitor_sp_7_Jay Treadwasser(Male)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: ' Is it true, what your crewman said? That House Spirios is targeting
+        you.'
+      locKey: dialog/Victor_Female__traitor_sp_8
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11400000, guid: bd01cdc53652fa742882c9f125a57be8, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Not much has changed, has is?
+      locKey: dialog/Victor_Female__traitor_sp_9_Jay Treadwasser(Male)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: "No, it hasn\u2019t. And thanks to your crew, it looks like it won\u2019t
+        for us. @We\u2019re too damaged to run away from these creatures once they
+        notice us... hell. If you really believe whatever's down there can help, take
+        the weapon over in our inventory. @ Just promise me you won\u2019t let anyone
+        forget our name."
+      locKey: dialog/Victor_Female__traitor_sp_10
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 11400000, guid: bd01cdc53652fa742882c9f125a57be8, type: 2}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: I promise. I hope you find peace in whatever comes next.
+      locKey: dialog/Victor_Female__traitor_sp_11_Jay Treadwasser(Male)
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    - subject: {fileID: 0}
+      useOverrideName: 0
+      overrideName: anonymous stranger
+      text: Yeah, yeah. @Get the hell off my ship...@ Admiral.
+      locKey: dialog/Victor_Female__traitor_sp_12
+      animTool:
+        animationType: 0
+        animTag: none
+        animTime: 0
+        setAsDefault: 0
+    text: 
+    textTriggers: 
+    showWhen: 2
+    showWhere: 0
+    urgent: 1
+    triggerOnly: 0
+    showChatter: 0
+    read: 0
+    dialogueInstance: {fileID: 0}
+    available: 1
+    cooldown: 10
+    expires: 0
+    expired: 0
+    expireTime: 10
+    opensShop: 0
+    opensHire: 0
+    opensHireMandatory: 0
+    opensShipTrade: 0
+    startsQuest: 0
+    questLocKey: 
+    startsTutorial: 0
+    tutorialTag: 
+    opensPopup: 0
+    popupTag: 
+    timeAdded: 0
+    index: 0
+    sendMessageUpwards: 0
+    functionName: '----'
+    requireState: 0
+    requiredState: 0
+    addGuestOnShip: 0
+    completesQuest: 0
+    completeQuestKey: 
+    reqHomeBaseLevel: 0
+    upgradeHomeBase: 0
+    homeBaseInfo:
+      question: 
+      conditionMet: 0
+      condtionNotMetText: 
+    homeBaseLevel: 0
+  conversations:
+  - {fileID: 11400000, guid: fc2eb014a045eef4a9a4ff0af7f87bb9, type: 2}
+  myCrew: {fileID: 0}
+  locKey: dialog/Victor_Female_
+  selectable: 0
+  omitFromLoc: 0
+  lockLocKeys: 1
+  validDialogues: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1

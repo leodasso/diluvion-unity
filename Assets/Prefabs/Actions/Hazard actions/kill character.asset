@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df22687cf95e05d48a78b07a0e466068, type: 3}
+  m_Name: kill character
+  m_EditorClassIdentifier: 
+  testObject: {fileID: 0}
+  attempt: '[haz] begins to glow eerily...'
+  fail: '...but misses!'
+  minMaxChance: {x: 0.1, y: 0.50695634}
+  deathText: {fileID: 11400000, guid: 1fd84abc76522724a8df962f9bbdc211, type: 2}
+  warningText: {fileID: 11400000, guid: a18239631c23b024f9e7ab1f2a2b2e84, type: 2}
+  deathTime: 2

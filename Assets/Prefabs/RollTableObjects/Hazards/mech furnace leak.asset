@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2147c636f952b34c873c5fdf4b7a8c3, type: 3}
+  m_Name: mech furnace leak
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags:
+  - {fileID: 11400000, guid: bc47b89aa95e70a45b315f0ddf5fa34c, type: 2}
+  - {fileID: 11400000, guid: b5ad4f66c2687e2478b2e52ebf243235, type: 2}
+  testLevel: 7
+  previewHp: 7
+  previewDanger: 207
+  displayName: Leaking Furnace
+  minMaxLevel: {x: 1, y: 7}
+  baseDanger: 10
+  firstTurn: 1
+  turnInterval: 3
+  minMaxHp: {x: 2, y: 7}
+  sprite: {fileID: 21300000, guid: 69fda1af55cbd08459f4f58585776d1e, type: 3}
+  reward: {fileID: 11400000, guid: 14991222760ac534c9d48b80a8c59f48, type: 2}
+  attackSubjectOnly: 0
+  onNewSubject: 
+  introduction: While crawling through a maintenance tunnel, your party encounters
+    an old furnace, leaking noxious fumes. Any impacts on this thing would be bad
+    news.
+  attack: Noxious gas pours from the leaking furnace.
+  attackAction: {fileID: 11400000, guid: 767aeab63e7c1f74cbe53beb453f8b28, type: 2}
+  defeat: The furnace sputters to a stop.
+  reactions:
+  - {fileID: 11400000, guid: eacd12cbdeeb77a4aa80e78c04be47b9, type: 2}
+  - {fileID: 11400000, guid: 402490fb1a950234aba90235750992b7, type: 2}
+  - {fileID: 11400000, guid: fbdbe52ac386887409d30661fe639fbd, type: 2}
+  - {fileID: 11400000, guid: bed3e85b0ecd3014c8991339ca1bdf8c, type: 2}
+  reactionsDescription: "WEAKNESS \n\n[char] attempts to hold their breath to get
+    past the furnace...\nDefense against Endurance: [4 - 32] \n\n pass: ...and, in
+    an amazing feat of endurance, makes it!\n fail: ...but couldn't hold it long enough!\n[char],
+    fed up with this furnace, smacks it hard with a nearby brick...\nDefense against
+    Strength: [2.5 - 20] \n\n pass: ...and it helped (somehow)!\n fail: ...and as
+    expected, it spews out more fumes.\nThere appears to be a valve on the furnace.
+    [char] turns the valve...\nDefense against Perception: [0 - 0] \n\n pass: ...and
+    the fumes lessen!\n fail: ...but it breaks, spewing out more fumes!\n[char], having
+    some idea of how furnaces work, attempts to patch it up with nearby materials.\nDefense
+    against Intelligence: [3.5 - 28] \n\n pass: ...and it helped!\n fail: ...but couldn't
+    find a way to patch it with the crap in this room!"
+  introSound: Play_Leaky_Furnace_INTRO
+  hitSound: Play_Leaky_Furnace_HIT
+  missSound: Play_Leaky_Furnace_MISS

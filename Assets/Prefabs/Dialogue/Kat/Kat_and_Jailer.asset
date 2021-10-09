@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: Kat_and_Jailer
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 1
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: Kat and Jailer
+  previewText: "Player: What are you in for?\n\nMe: Hey, there's been just a teensy
+    mix up and what do you know, they shove me in this cage. Could you help me out
+    here?\nJailer: No talking to the prisoner! \nMe: Look, you gotta help me! They've
+    got me in here on false charges and now they want to execute me!\nJay Treadwasser:
+    Damn woman is trouble.\nMe: WHAT? Oh, you did not just say that. I am absolutely
+    gonna show you what I'm made of... @ when you hire me as your gunner! I've been
+    blowing stuff up since I was three years old!\nJailer: I mean it, no talking!\nMe:
+    Oh look, what d'you know - I picked the lock while you distracted the guard. Thanks
+    for the cover, <i>Captain</i>.\nNervous Bounty Hunter: Hey, she's escaping!\nMe:
+    What are you waiting for? Run! \nJailer: She's getting away! Stop them!!"
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: What are you in for?
+  speeches:
+  - locKey: dialog/Kat_Female__Kat and Jailer_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Hey, there's been just a teensy mix up and what do you know, they shove
+      me in this cage. Could you help me out here?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kat_Female__Kat and Jailer_sp_1_Jailer(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: d8b8361f6dea4534e932af466d26a0c6, type: 2}
+    text: 'No talking to the prisoner! '
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kat_Female__Kat and Jailer_sp_2
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Look, you gotta help me! They've got me in here on false charges and now
+      they want to execute me!
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kat_Female__Kat and Jailer_sp_3_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: Damn woman is trouble.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kat_Female__Kat and Jailer_sp_4
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: WHAT? Oh, you did not just say that. I am absolutely gonna show you what
+      I'm made of... @ when you hire me as your gunner! I've been blowing stuff up
+      since I was three years old!
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kat_Female__Kat and Jailer_sp_5_Jailer(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: d8b8361f6dea4534e932af466d26a0c6, type: 2}
+    text: I mean it, no talking!
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kat_Female__Kat and Jailer_sp_6
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Oh look, what d'you know - I picked the lock while you distracted the guard.
+      Thanks for the cover, <i>Captain</i>.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kat_Female__Kat and Jailer_sp_7_Nervous Bounty Hunter(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: b0440551c7c6a354f8afc99c8ca4fcb1, type: 2}
+    text: Hey, she's escaping!
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kat_Female__Kat and Jailer_sp_8
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: 'What are you waiting for? Run! '
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Kat_Female__Kat and Jailer_sp_9_Jailer(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: d8b8361f6dea4534e932af466d26a0c6, type: 2}
+    text: She's getting away! Stop them!!
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions:
+  - {fileID: 11400000, guid: b10d2d0065b9e6047a4d2a6c870582d7, type: 2}
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Kat_Female__Kat and Jailer

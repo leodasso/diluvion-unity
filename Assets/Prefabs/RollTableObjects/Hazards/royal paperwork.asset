@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2147c636f952b34c873c5fdf4b7a8c3, type: 3}
+  m_Name: royal paperwork
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  testLevel: 1
+  previewHp: 0
+  previewDanger: 0
+  displayName: Documents Check
+  minMaxLevel: {x: 1, y: 6}
+  baseDanger: 10
+  firstTurn: 1
+  turnInterval: 3
+  minMaxHp: {x: 2, y: 4}
+  sprite: {fileID: 21300040, guid: 69fda1af55cbd08459f4f58585776d1e, type: 3}
+  reward: {fileID: 11400000, guid: 07f37b48b721aca4fbd51b95dc6282f6, type: 2}
+  attackSubjectOnly: 0
+  onNewSubject: 
+  introduction: "Royal Guards are checking the documents of everyone who passes to
+    make sure only cleared personnel get by. Your party can either try to bluff their
+    way past, or sneak by...\r"
+  attack: "The guards grow suspicious as [char] makes too much noise. They summon
+    a patrol ship to investigate!\r"
+  attackAction: {fileID: 11400000, guid: 5889bcae00830f740816389f31175323, type: 2}
+  defeat: "Your party passes through the security check and keeps salvaging!\r"
+  reactions:
+  - {fileID: 11400000, guid: 1de7afd3f957b1a4fbb7a53c40742ce4, type: 2}
+  - {fileID: 11400000, guid: 360c28f4efdbc0d4299cf8edf61917b8, type: 2}
+  - {fileID: 11400000, guid: 6957bba80cae21c44b947122baff7936, type: 2}
+  - {fileID: 11400000, guid: 0297b4eb562ef604bafe8fc18805cd0a, type: 2}
+  reactionsDescription: "\n[char] can't be bothered to wait for the guards to move
+    and goes in to knock them out...\nDefense against Strength: [0.5 - 3] \n\n pass:
+    [no loc]... and so far is managing to successfully fight them!\n fail: [no loc]...
+    but the guards are better trained at combat!\n[char] attempts to pursuade the
+    guards that they have been given access to the area...\nDefense against Intelligence:
+    [0.5 - 3] \n\n pass: [no loc]... and it seems like [char] is succeeding!\n fail:
+    [no loc]... but [haz] finds that [char]'s name is not on the list.\n[char] sees
+    some rubble on the floor and throws a rock to distract the guards...\nDefense
+    against Perception: [0.5 - 3] \n\n pass: [no loc]... and the guards start moving
+    to investigate the noise!\n fail: [no loc]... but the guards ignore it!\n[char]
+    attempts to bypass the guards by crawling past in a ventilation shaft...\nDefense
+    against Endurance: [0.5 - 3] \n\n pass: [no loc]... and shuffles a bit further
+    forward!\n fail: [no loc]... but makes too much noise and has to stop as the guards
+    grow suspicious!"
+  introSound: Play_Documents_Check_INTRO
+  hitSound: Play_Documents_Check_HIT
+  missSound: Play_Documents_Check_MISS

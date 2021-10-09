@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97586a76cfe8f644e9c0ed0de14fedf2, type: 3}
+  m_Name: mariana
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  slotSize: 1
+  prefab: {fileID: 135852, guid: 6b9083f59125e044bb56e88a6bc6acb7, type: 2}
+  resourceCost:
+    value: 0
+    danger: 0
+    hazardDanger: 0
+  ignoreSpawnerRotation: 0
+  positionSearches: []
+  shipIcon: {fileID: 21300304, guid: e043c51bfdc50fd42953c4b84b15bfc1, type: 3}
+  skin: {fileID: 11400000, guid: daec28a4f49a5ca45a2937d0921384ad, type: 2}
+  additionalChildren: []
+  avoidanceMask:
+    serializedVersion: 2
+    m_Bits: 2049
+  cost: {fileID: 11400000, guid: 9f084473a66365447967dc858a3e3caa, type: 2}
+  inherentModules:
+  - {fileID: 11400000, guid: bccc0ae13d4d865469972d28de2cceb9, type: 2}
+  - {fileID: 11400000, guid: 4187d6f7b86dbe342ab81f13124c31dd, type: 2}
+  - {fileID: 11400000, guid: a074d66614922f640b06e2721596918f, type: 2}
+  - {fileID: 11400000, guid: 105e190bff137e7438c878d874ee8652, type: 2}
+  DLC: 0
+  locName: {fileID: 11400000, guid: 20fd2e02ec6ded74080e930139ec15ac, type: 2}
+  locDetailedDescription: {fileID: 11400000, guid: 480ffeb053ddad941ba903e8446fbc5b,
+    type: 2}
+  armaments:
+  - {fileID: 11432696, guid: 6b9083f59125e044bb56e88a6bc6acb7, type: 2}
+  - {fileID: 11493212, guid: 6b9083f59125e044bb56e88a6bc6acb7, type: 2}
+  - {fileID: 11460990, guid: 6b9083f59125e044bb56e88a6bc6acb7, type: 2}
+  shipLevel: 1
+  stationSlots: 4
+  bonusSlots: 4
+  chassisBonus: {fileID: 11400000, guid: b926229827cb4ae4a9fd0cacb131586c, type: 2}
+  bonusMultiplier: 1.5
+  danger: 130
+  defaultBuild:
+    overrideName: 0
+    newName: {fileID: 0}
+    dockable: 0
+    cull: 1
+    ignoreCurrents: 0
+    inventoryGenerator: {fileID: 11400000, guid: aa18a861ac1480d48ba3a70e59f4b01d,
+      type: 2}
+    toSetAsChild: []
+    newSignatures: []
+    crippledModels: []
+    destroyedObjects: []
+    loadout: {fileID: 11400000, guid: 5067cc8291aaad84a94d3e5f4a2d84d3, type: 2}
+    personality: {fileID: 0}
+    interior: {fileID: 0}
+    shipEmblem: {fileID: 0}
+    newFactions: []
+    newRelations: []
+    newReactions: []
+  hasUpgrade: 1
+  upgrade: {fileID: 11400000, guid: bfe06047d0a46854293885405365a351, type: 2}
+  altNames: []

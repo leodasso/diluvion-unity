@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: torp_question_2
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 11400000, guid: af5e163fa42b3394ba6864fd06a1cf18, type: 2}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst:
+  - {fileID: 11400000, guid: 8b8d8ceeb39ac1b4bb510c3f0ddbd7dd, type: 2}
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: torpedos 2
+  previewText: 'Player: Why are my torpedoes missing?
+
+
+    Me: And I thought your gunner was dense... @ When you''re targeting, you see that
+    circle on your HUD? That''s the torpedo''s <b>calibration</b>. The more calibrated
+    it is, the better it will be able to aim at its target.'
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: Why are my torpedoes missing?
+  speeches:
+  - locKey: 
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: And I thought your gunner was dense.... @ When you're targeting, you see
+      that circle on your HUD? That's the torpedo's <b>calibration</b>. The more calibrated
+      it is, the better it will be able to aim at its target.
+    animTool:
+      animationType: 0
+      animTag: 
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: 

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: The_new_recruits___
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries:
+  - {fileID: 11400000, guid: 828f1b8c96bf54b4584f5b5d13adffc6, type: 2}
+  - {fileID: 11400000, guid: 59b2b8a164cbc9f48b5950090088439a, type: 2}
+  invertQueries: 0
+  showChatter: 1
+  chatterShowsOnce: 1
+  titleText: The new recruits...
+  previewText: 'Chatter: The new recruits...
+
+    Player: How are you finding the new recruits?
+
+
+    Me: The boy never says anything except to apologise, the girl never shuts up,
+    and the rest of the crew don''t more than a mumble. @If we make it to the <color=blue>Endless
+    Corridor</color>, it''ll be a miracle.'
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: How are you finding the new recruits?
+  speeches:
+  - locKey: dialog/Jay Treadwasser_Male__The new recruits..._sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: The boy never says anything except to apologise, the girl never shuts up,
+      and the rest of the crew don't more than a mumble. @If we make it to the <color=blue>Endless
+      Corridor</color>, it'll be a miracle.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Jay Treadwasser_Male__The new recruits...

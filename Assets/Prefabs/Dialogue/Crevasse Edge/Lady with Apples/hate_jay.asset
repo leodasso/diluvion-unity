@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: hate_jay
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 1
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: hate jay
+  previewText: "Player: [Eavesdrop]\n\nKat Smith: Hey, you\u2019re the lady we saw
+    at <b>Crevasse Edge</b> earlier... you really hate Jay, don\u2019t you?\nMe: He
+    has no business parading around the abyss talking about helping people after what
+    he did.\nKat Smith: Hey, you\u2019re being really unfair! Jay\u2019s one of the
+    best people I\u2019ve ever sailed with! @ He joined the Captain to get to the
+    Endless Corridor so he could help everyone, and he\u2019s always beating himself
+    up over what happened to the Morgensonne people! \nMe: Why should I believe you?\nKat
+    Smith: Why would you believe what the Spirios hate machine is spewing? @Like,
+    we got kicked out of the competition they were running, so we\u2019re not going
+    back to their city any time soon. @So why would they tell everyone Jay\u2019s
+    been helping the Spirios side unless it\u2019s to isolate him from everyone else?\nMe:
+    I can\u2019t say I thought about that...\nKat Smith: Exactly! So really, you should
+    be hating Spirios for turning on you during an alliance instead of hating on Jay!\nMe:
+    You have... given me a lot to think about. @My name is <b>Victoria Morgensonne</b>.
+    I\u2019m sure I\u2019ll see you again."
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: '[Eavesdrop]'
+  speeches:
+  - locKey: dialog/Lady with Apples_Female__hate jay_sp_0_Kat Smith(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bb2d21ac0264df4b8249bcf945fc57f, type: 2}
+    text: "Hey, you\u2019re the lady we saw at <b>Crevasse Edge</b> earlier... you
+      really hate Jay, don\u2019t you?"
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Lady with Apples_Female__hate jay_sp_1
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: He has no business parading around the abyss talking about helping people
+      after what he did.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Lady with Apples_Female__hate jay_sp_2_Kat Smith(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bb2d21ac0264df4b8249bcf945fc57f, type: 2}
+    text: "Hey, you\u2019re being really unfair! Jay\u2019s one of the best people
+      I\u2019ve ever sailed with! @ He joined the Captain to get to the Endless Corridor
+      so he could help everyone, and he\u2019s always beating himself up over what
+      happened to the Morgensonne people! "
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Lady with Apples_Female__hate jay_sp_3
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Why should I believe you?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Lady with Apples_Female__hate jay_sp_4_Kat Smith(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bb2d21ac0264df4b8249bcf945fc57f, type: 2}
+    text: "Why would you believe what the Spirios hate machine is spewing? @Like,
+      we got kicked out of the competition they were running, so we\u2019re not going
+      back to their city any time soon. @So why would they tell everyone Jay\u2019s
+      been helping the Spirios side unless it\u2019s to isolate him from everyone
+      else?"
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Lady with Apples_Female__hate jay_sp_5
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "I can\u2019t say I thought about that..."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Lady with Apples_Female__hate jay_sp_6_Kat Smith(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bb2d21ac0264df4b8249bcf945fc57f, type: 2}
+    text: Exactly! So really, you should be hating Spirios for turning on you during
+      an alliance instead of hating on Jay!
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Lady with Apples_Female__hate jay_sp_7
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "You have... given me a lot to think about. @My name is <b>Victoria Morgensonne</b>.
+      I\u2019m sure I\u2019ll see you again."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Lady with Apples_Female__hate jay

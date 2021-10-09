@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2147c636f952b34c873c5fdf4b7a8c3, type: 3}
+  m_Name: pirate sleeper
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags:
+  - {fileID: 11400000, guid: 11165f88eca6a0a4a87f1eaf0d61388c, type: 2}
+  testLevel: 3
+  previewHp: 3
+  previewDanger: 27
+  displayName: Sleeping Pirate
+  minMaxLevel: {x: 1, y: 4}
+  baseDanger: 8
+  firstTurn: 1
+  turnInterval: 3
+  minMaxHp: {x: 2, y: 4}
+  sprite: {fileID: 21300030, guid: 69fda1af55cbd08459f4f58585776d1e, type: 3}
+  reward: {fileID: 11400000, guid: 26ef9f39f3550e144960b70c65054fdd, type: 2}
+  attackSubjectOnly: 0
+  onNewSubject: 
+  introduction: "It appears that a drunk pirate has fallen asleep in the corridor.
+    [char] wakes him up as they attempt to sneak past, and [haz] accuses them of trying
+    to steal his money bag!\r"
+  attack: "The pirate\_throws his empty bottle at [char]!\r"
+  attackAction: {fileID: 11400000, guid: 7d454dee276138245ba93ac421628cdd, type: 2}
+  defeat: "Your party manages to get past [haz] to continue exploring!\r"
+  reactions:
+  - {fileID: 11400000, guid: 9fe3dcd25e8c7d54587b3a56cdf07ab4, type: 2}
+  - {fileID: 11400000, guid: 007ef932efa71294399f2b7e9db01c7a, type: 2}
+  - {fileID: 11400000, guid: 492e661133711d44ead1f2db68c41419, type: 2}
+  - {fileID: 11400000, guid: 3fd202f9412c7bf49bac1933f3ccbcbc, type: 2}
+  reactionsDescription: "\nUsing the nearest blunt object, [char] takes a swing at
+    [haz]...\nDefense against Strength: [0.5 - 4] \n\n pass: [no loc]... and [haz]
+    staggers backwards as the blow connects!\n fail: [no loc]... but [haz] is too
+    drunk and barely feels the hit!\n[haz] drunkenly lunges at [char], who readies
+    to evade the attack...\nDefense against Endurance: [0.5 - 4] \n\n pass: [no loc]...and
+    successfully slips under the pirate's drunken swing!\n fail: [no loc]... but mistimes
+    and is hit by the pirate!\n[char] attempts to reason with [haz]...\nDefense against
+    Intelligence: [0.5 - 4] \n\n pass: [no loc]... and the pirate seems less angry!\n
+    fail: [no loc]... but the pirate isn't listening!\n[char] notices the the pirate
+    is very unsteady on his feet and tries to trip him...\nDefense against Perception:
+    [0.5 - 4] \n\n pass: [no loc]... and the pirate falls to the floor in a drunken
+    heap!\n fail: [no loc]... but the pirate steps over [char]'s kick!"
+  introSound: Play_Sleeping_Pirate_INTRO
+  hitSound: Play_Sleeping_Pirate_HIT
+  missSound: Play_Sleeping_Pirate_MISS

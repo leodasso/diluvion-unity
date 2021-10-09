@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a4a8c24289c5ae468bc34d82bb5d11e, type: 3}
+  m_Name: first matryoshka bounty Hunter
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags:
+  - {fileID: 11400000, guid: 11165f88eca6a0a4a87f1eaf0d61388c, type: 2}
+  - {fileID: 11400000, guid: 1a3ae9573918ced4aa37a1a76305b581, type: 2}
+  prefab: {fileID: 146310, guid: 70b8267ab618c8d419a573b5b7717092, type: 2}
+  resourceCost:
+    techCost: 0
+    value: 0
+    danger: 0
+  positionSearches: []
+  chassis: {fileID: 11400000, guid: 3714b03dbdc17eb47bd25306a5b1638b, type: 2}
+  shipBuildSettings:
+    sonarName: Bounty Hunter Joe
+    dockable: 0
+    cull: 1
+    ignoreCurrents: 0
+    inventory: {fileID: 0}
+    toSetAsChild: []
+    newSignatures: []
+    crippledModels: []
+    destroyedObjects: []
+    loadout: {fileID: 11400000, guid: 361e34f8a6258704c81d3af5649ef880, type: 2}
+    personality: {fileID: 11400000, guid: 874bd6182dcb27c4a94b7c5e1f3b0b60, type: 2}
+    interior: {fileID: 0}
+    shipEmblem: {fileID: 0}
+    newFactions: []
+    newRelations:
+    - signature: {fileID: 11400000, guid: d75d135e96f048b4687f3324ac8fd9c8, type: 2}
+      baseAttitude: -2

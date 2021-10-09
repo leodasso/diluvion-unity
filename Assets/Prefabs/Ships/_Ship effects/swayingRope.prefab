@@ -1,0 +1,361 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &128030
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 434284}
+  m_Layer: 0
+  m_Name: swayingRope
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &162730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 459230}
+  - 114: {fileID: 11430358}
+  - 23: {fileID: 2311526}
+  - 33: {fileID: 3348002}
+  m_Layer: 0
+  m_Name: ropeShape
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &434284
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128030}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 459230}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &459230
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162730}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.7366343, y: -0.9795151, z: 3.489}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 434284}
+  m_RootOrder: 0
+--- !u!23 &2311526
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162730}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 7ac9af4b2d24188498d87fa17ea7f494, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &3348002
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162730}
+  m_Mesh: {fileID: 0}
+--- !u!114 &11430358
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 162730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f057afd556b7154cafece57efcddee9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axis: 1
+  col1: {r: 1, g: 1, b: 1, a: 1}
+  col2: {r: 0, g: 0, b: 0, a: 1}
+  KnotCol: {r: 0, g: 1, b: 0, a: 1}
+  HandleCol: {r: 1, g: 0, b: 0, a: 1}
+  VecCol: {r: 0.1, g: 0.1, b: 0.2, a: 0.5}
+  KnotSize: 2
+  stepdist: 0.5
+  normalizedInterp: 1
+  drawHandles: 1
+  drawKnots: 1
+  drawspline: 1
+  drawTwist: 0
+  lockhandles: 1
+  showorigin: 1
+  usesnap: 0
+  usesnaphandles: 0
+  snap: {x: 1, y: 1, z: 1}
+  handleType: 0
+  CursorPos: 0
+  splines:
+  - length: 3.019617
+    closed: 0
+    knots:
+    - p: {x: 0, y: 0.20264219, z: 1.3626535}
+      invec: {x: 0, y: 0.77627015, z: 1.3864877}
+      outvec: {x: 0, y: -0.37098575, z: 1.3388193}
+      seglength: 1.5359584
+      length: 1.5359584
+      notlocked: 0
+      twist: 0
+      id: 0
+      lengths:
+      - 0
+      - 0.16851103
+      - 0.33187824
+      - 0.49203354
+      - 0.6499041
+      - 0.8056257
+      - 0.9588037
+      - 1.1087936
+      - 1.2549987
+      - 1.3972034
+      - 1.5359584
+      points:
+      - {x: 0, y: 0.20264219, z: 1.3626535}
+      - {x: 0.0009189596, y: 0.035556402, z: 1.3408026}
+      - {x: 0.0034132788, y: -0.12029842, z: 1.2918955}
+      - {x: 0.0070891175, y: -0.26308367, z: 1.2194484}
+      - {x: 0.011552636, y: -0.39096078, z: 1.1269789}
+      - {x: 0.016409993, y: -0.5020911, z: 1.0180033}
+      - {x: 0.02126735, y: -0.594636, z: 0.8960388}
+      - {x: 0.02573087, y: -0.66675705, z: 0.76460207}
+      - {x: 0.02940671, y: -0.7166154, z: 0.62721}
+      - {x: 0.031901028, y: -0.7423725, z: 0.4873796}
+      - {x: 0.032819986, y: -0.7421899, z: 0.3486278}
+    - p: {x: 0.032819986, y: -0.7421899, z: 0.3486278}
+      invec: {x: 0.032819986, y: -0.7880746, z: 0.8054292}
+      outvec: {x: 0.032819986, y: -0.6963115, z: -0.10817361}
+      seglength: 1.4836586
+      length: 3.019617
+      notlocked: 0
+      twist: 0
+      id: 0
+      lengths:
+      - 1.5359584
+      - 1.6765337
+      - 1.8216258
+      - 1.9692987
+      - 2.117842
+      - 2.265983
+      - 2.4131355
+      - 2.559686
+      - 2.7072906
+      - 2.8590782
+      - 3.019617
+      points:
+      - {x: 0.032819986, y: -0.7421899, z: 0.3486278}
+      - {x: 0.031901024, y: -0.7203609, z: 0.20976076}
+      - {x: 0.02940671, y: -0.68251663, z: 0.06971322}
+      - {x: 0.025730869, y: -0.6288298, z: -0.067805886}
+      - {x: 0.021267353, y: -0.5594736, z: -0.19908753}
+      - {x: 0.016409993, y: -0.47462076, z: -0.3204227}
+      - {x: 0.011552635, y: -0.37444445, z: -0.42810246}
+      - {x: 0.007089115, y: -0.25911766, z: -0.5184178}
+      - {x: 0.0034132763, y: -0.12881336, z: -0.58765966}
+      - {x: 0.0009189579, y: 0.016295468, z: -0.63211906}
+      - {x: 0, y: 0.17603566, z: -0.648087}
+    - p: {x: 0, y: 0.17603566, z: -0.648087}
+      invec: {x: 0, y: -0.38062578, z: -0.6464672}
+      outvec: {x: 0, y: 0.73269707, z: -0.6497069}
+      seglength: 0
+      length: 0
+      notlocked: 0
+      twist: 0
+      id: 0
+      lengths: []
+      points: []
+    animations: []
+    offset: {x: 0, y: 0, z: 0}
+    rotate: {x: 0, y: 0, z: 0}
+    scale: {x: 1, y: 1, z: 1}
+    reverse: 0
+    outlineSpline: -1
+    outline: 0
+    constantSpeed: 0
+    subdivs: 10
+    twistmode: 0
+    splineanim:
+      Enabled: 0
+      knots: []
+  showanimations: 0
+  keytime: 0
+  updateondrag: 1
+  angleError: 0.08
+  areaError: 0.15
+  hardAngle: 88
+  packMargin: 0.0039
+  defRadius: 1
+  testtime: 0
+  time: 0
+  animate: 0
+  speed: 1
+  selcurve: 0
+  imported: 0
+  CursorPercent: 27.67692
+  MaxTime: 1
+  LoopMode: 0
+  dolateupdate: 0
+  makeMesh: 1
+  meshType: 1
+  DoubleSided: 1
+  CalcTangents: 0
+  GenUV: 1
+  PhysUV: 0
+  Height: 0
+  HeightSegs: 1
+  Sides: 4
+  TubeStep: 0.1
+  Start: 0
+  End: 100
+  Rotate: 0
+  Pivot: {x: 0, y: 0, z: 0}
+  UVOffset: {x: 0, y: 0}
+  UVRotate: {x: 0, y: 0}
+  UVScale: {x: 1, y: 1}
+  UVOffset1: {x: 0, y: 0}
+  UVRotate1: {x: 0, y: 0}
+  UVScale1: {x: 1, y: 1}
+  UVOffset2: {x: 0, y: 0}
+  UVRotate3: {x: 0, y: 0}
+  UVScale3: {x: 1, y: 1}
+  autosmooth: 0
+  smoothness: 0.75
+  flipNormals: 0
+  mat1: {fileID: 2100000, guid: 7ac9af4b2d24188498d87fa17ea7f494, type: 2}
+  mat2: {fileID: 0}
+  mat3: {fileID: 0}
+  UseHeightCurve: 0
+  heightCrv:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  heightOff: 0
+  shapemesh: {fileID: 0}
+  tsides: 5
+  crossType: 0
+  Twist: 0
+  strands: 1
+  tradius: 0.03
+  offset: 0
+  uvtilex: 1
+  uvtiley: 1
+  uvtwist: 0
+  TubeLength: 1
+  TubeStart: 0
+  SegsPerUnit: 20
+  TwistPerUnit: 0
+  strandRadius: 0
+  startAng: 0
+  rotate: 0
+  cap: 0
+  RopeUp: 0
+  scaleX:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scaleY:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  unlinkScale: 0
+  boxwidth: 0.2
+  boxheight: 0.2
+  raxis: 0
+  ribsegs: 1
+  conform: 0
+  target: {fileID: 0}
+  conformCollider: {fileID: 0}
+  offsets: []
+  last: []
+  conformAmount: 1
+  raystartoff: 0
+  raydist: 10
+  conformOffset: 0
+  conformWeight: 1
+  points: 2
+  length: 1
+  dir: 0
+  end: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 128030}
+  m_IsPrefabParent: 1

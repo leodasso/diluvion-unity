@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: damn vain royals
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 11400000, guid: 5373069cca24d1540acf2ee07233763e, type: 2}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 11400000, guid: a3d8e4d6a0e6c7b46a62f94ea5356739,
+    type: 2}
+  triggeringObjectiveStatus: 0
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 1
+  chatterShowsOnce: 0
+  titleText: "Spirios Amulets\u2026"
+  previewText: "Chatter: Spirios Amulets\u2026\nPlayer: Know anything about these
+    Amulets?\n\nMe: Hmmph. Goddamned vain Royals and their trinkets. \nAlison Hosstrevar:
+    Well, <i>someone</i> woke up on the wrong side of the boat.\nMe: In House Spirios,
+    status is everything-and the Amulets are indicators of status. If we want to move
+    on, we\u2019ll need to play their game. @Let\u2019s make an appearance at the
+    Banquet Hall. At least our position in the competition will give us a head start."
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: Know anything about these Amulets?
+  speeches:
+  - locKey: "dialog/Jay Treadwasser_Male__Spirios Amulets\u2026_sp_0"
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: 'Hmmph. Goddamned vain Royals and their trinkets. '
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: "dialog/Jay Treadwasser_Male__Spirios Amulets\u2026_sp_1_Alison Hosstrevar(Female)"
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: f628dcfa9337af041809cf0563d0d73c, type: 2}
+    text: Well, <i>someone</i> woke up on the wrong side of the boat.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: "dialog/Jay Treadwasser_Male__Spirios Amulets\u2026_sp_2"
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "In House Spirios, status is everything-and the Amulets are indicators of
+      status. If we want to move on, we\u2019ll need to play their game. @Let\u2019s
+      make an appearance at the Banquet Hall. At least our position in the competition
+      will give us a head start."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 11400000, guid: 160f43bfb8bac0a4a9809234eac4179e, type: 2}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: "dialog/Jay Treadwasser_Male__Spirios Amulets\u2026"

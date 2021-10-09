@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: we_need_help
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 1
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: we need help
+  previewText: 'Player: Let''s find help!
+
+
+    Me: Need some help here!
+
+    Panicked Citizen:  I''m not a doctor... hey, that looks bad...
+
+    Kat Smith: I don''t care what you are! Show us your doctors now or I''ll arrest
+    you for breach of the hypocritical oath!
+
+    Panicked Citizen: You what?
+
+    Morgensonne Doctor: What is all this noise? Oh, my goodness! @Jay? @What happened?
+    You there, help me get this boy upstairs.
+
+    Panicked Citizen: Yes, ma''am.
+
+    Me: Rosie, tell me you can help him.
+
+    Morgensonne Doctor: I can''t promise anything, but we''ll do our best.'
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: Let's find help!
+  speeches:
+  - locKey: dialog/Jay Treadwasser_Male__we need help_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Need some help here!
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Jay Treadwasser_Male__we need help_sp_1_Panicked Citizen(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: fe4792a3b6c28634bbabc320de36f8c1, type: 2}
+    text: ' I''m not a doctor... hey, that looks bad...'
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Jay Treadwasser_Male__we need help_sp_2_Kat Smith(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bb2d21ac0264df4b8249bcf945fc57f, type: 2}
+    text: I don't care what you are! Show us your doctors now or I'll arrest you for
+      breach of the hypocritical oath!
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Jay Treadwasser_Male__we need help_sp_3_Panicked Citizen(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: fe4792a3b6c28634bbabc320de36f8c1, type: 2}
+    text: You what?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Jay Treadwasser_Male__we need help_sp_4_Morgensonne Doctor(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 015a789a1439aaf4793d26c371afb99f, type: 2}
+    text: What is all this noise? Oh, my goodness! @Jay? @What happened? You there,
+      help me get this boy upstairs.
+    animTool:
+      animationType: 1
+      animTag: stand
+      animTime: 0
+      setAsDefault: 1
+  - locKey: dialog/Jay Treadwasser_Male__we need help_sp_5_Panicked Citizen(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: fe4792a3b6c28634bbabc320de36f8c1, type: 2}
+    text: Yes, ma'am.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Jay Treadwasser_Male__we need help_sp_6
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Rosie, tell me you can help him.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Jay Treadwasser_Male__we need help_sp_7_Morgensonne Doctor(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 015a789a1439aaf4793d26c371afb99f, type: 2}
+    text: I can't promise anything, but we'll do our best.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions:
+  - {fileID: 11400000, guid: 183fbd0e960088f46b6efe43ba572640, type: 2}
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Jay Treadwasser_Male__we need help

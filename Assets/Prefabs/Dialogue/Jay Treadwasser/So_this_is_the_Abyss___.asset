@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: So_this_is_the_Abyss___
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 1
+  textTriggers: abyssEntry
+  triggeringQuest: {fileID: 0}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 1
+  chatterShowsOnce: 1
+  titleText: So this is the Abyss...
+  previewText: 'Chatter: So this is the Abyss...
+
+    Player: How do we navigate this?
+
+
+    Me: Look sharp, everyone. ''Sailing blind here...
+
+    Kat Smith: So this is the Abyss? It''s so... dark
+
+    Alison Hosstrevar: You don''t say... @ Look, I can see everything around us on
+    the sonar, so I''ll point and you shoot, ok?
+
+    Kat Smith: Thanks, Alison. We''ve got to stick together if we''re going to find
+    the treasure, yeah?
+
+    Me: Ivan?
+
+    Ivan Gregor: Hmm? Oh, leave it to me. @I am not fond of coming back to this area,
+    but I can at least be useful as your guide.'
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: How do we navigate this?
+  speeches:
+  - locKey: dialog/Jay Treadwasser_Male__So this is the Abyss..._sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Look sharp, everyone. 'Sailing blind here...
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Jay Treadwasser_Male__So this is the Abyss..._sp_1_Kat Smith(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bb2d21ac0264df4b8249bcf945fc57f, type: 2}
+    text: So this is the Abyss? It's so... dark
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Jay Treadwasser_Male__So this is the Abyss..._sp_2_Alison Hosstrevar(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: f628dcfa9337af041809cf0563d0d73c, type: 2}
+    text: You don't say... @ Look, I can see everything around us on the sonar, so
+      I'll point and you shoot, ok?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Jay Treadwasser_Male__So this is the Abyss..._sp_3_Kat Smith(Female)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bb2d21ac0264df4b8249bcf945fc57f, type: 2}
+    text: Thanks, Alison. We've got to stick together if we're going to find the treasure,
+      yeah?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Jay Treadwasser_Male__So this is the Abyss..._sp_4
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Ivan?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Jay Treadwasser_Male__So this is the Abyss..._sp_5_Ivan Gregor(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: 8bc2d561c5fb0644fb19ff35e3b9b7d1, type: 2}
+    text: Hmm? Oh, leave it to me. @I am not fond of coming back to this area, but
+      I can at least be useful as your guide.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Jay Treadwasser_Male__So this is the Abyss...

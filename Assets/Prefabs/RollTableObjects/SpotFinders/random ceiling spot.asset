@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63e73171ece082c45ab413e512982366, type: 3}
+  m_Name: random ceiling spot
+  m_EditorClassIdentifier: 
+  dimensionMultiplier: {x: 2.5, y: 2.5, z: 5}
+  maxTryCount: 15
+  checks:
+  - {fileID: 11400000, guid: c7bc13d97b3b4e44581e20b73a5c38a7, type: 2}
+  - {fileID: 11400000, guid: bf951ac00e4403341a45715f6b1e970c, type: 2}
+  conditions: 0

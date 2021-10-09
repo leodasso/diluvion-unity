@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2147c636f952b34c873c5fdf4b7a8c3, type: 3}
+  m_Name: pirate anchor
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags:
+  - {fileID: 11400000, guid: 11165f88eca6a0a4a87f1eaf0d61388c, type: 2}
+  testLevel: 21
+  previewHp: 10
+  previewDanger: 0
+  displayName: Brawler Pirate
+  minMaxLevel: {x: 16, y: 25}
+  baseDanger: 8
+  firstTurn: 1
+  turnInterval: 3
+  minMaxHp: {x: 3, y: 15}
+  sprite: {fileID: 21300010, guid: 69fda1af55cbd08459f4f58585776d1e, type: 3}
+  reward: {fileID: 11400000, guid: 26ef9f39f3550e144960b70c65054fdd, type: 2}
+  attackSubjectOnly: 0
+  onNewSubject: 
+  introduction: "[char] opens the door to a monstrous figure meditating in the middle
+    of the floor. \"Why do you disturb me?\", [haz] asks, obviously displeased at
+    being interrupted.\r"
+  attack: "[haz] slams his anchor against [char]'s side and sends them flying!\r"
+  attackAction: {fileID: 11400000, guid: 7d454dee276138245ba93ac421628cdd, type: 2}
+  defeat: "Finally, [haz] stops, and acknowledging your crew's strength, allows them
+    to pass. [haz] once again assumes the seated pose and continues meditating.\r"
+  reactions:
+  - {fileID: 11400000, guid: 039b45eabf8f5d041aaf4d344618da27, type: 2}
+  - {fileID: 11400000, guid: 3bbaac4ac3ce5dd48b5c7e1eaa8cfd30, type: 2}
+  - {fileID: 11400000, guid: e77b238169b5f3f4ba2caf8f47de6c0e, type: 2}
+  - {fileID: 11400000, guid: 52cbf184d659a1a43b1c88c867c885c3, type: 2}
+  reactionsDescription: "\n[char] attempts to duck under the anchor as it comes flying
+    towards them...\nDefense against Endurance: [8 - 12.5] \n\n pass: no loc\n fail:
+    no loc\n[char] tries to confuse [haz] by throwing dust in his face...\nDefense
+    against Intelligence: [8 - 12.5] \n\n pass: no loc\n fail: no loc\n[char] memorises
+    the time in between [haz]'s swings and ducks underneath the anchor...\nDefense
+    against Perception: [8 - 12.5] \n\n pass: no loc\n fail: no loc\n[char] runs at
+    [haz] in an attempted tackle...\n"
+  introSound: Play_Brawler_Pirate_INTRO
+  hitSound: Play_Brawler_Pirate_HIT
+  missSound: Play_Brawler_Pirate_MISS

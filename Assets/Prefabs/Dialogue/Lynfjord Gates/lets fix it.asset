@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: lets fix it
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 0
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 11400000, guid: b6f5e00255495a64e8ac7a1f6feb0690, type: 2}
+  triggeringQuestStatus: 1
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries:
+  - {fileID: 11400000, guid: 3c05ddc34729776429277ce96937dae2, type: 2}
+  - {fileID: 11400000, guid: 46110bede44be7848b45d0f290155523, type: 2}
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: fix it
+  previewText: 'Player: I have the parts you need.
+
+    Me: Oh...that''s too bad. Maybe later we can fix it....@ Wait!@ You got them?
+    Oh...that''s great! I''ll get to work right away. @Head through that door to get
+    to the manual activation switch.'
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: I have the parts you need.
+  speeches:
+  - locKey: dialog/Jenny the outcast_Female__fix it_sp_0
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: Oh...that's too bad. Maybe later we can fix it....@ Wait!@ You got them?
+      Oh...that's great! I'll get to work right away. @Head through that door to get
+      to the manual activation switch.
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions:
+  - {fileID: 11400000, guid: 8a71f9e7f3397464eb5b81f08fca0374, type: 2}
+  - {fileID: 11400000, guid: 84812c673ac827f4ebf8cb09c1a9b052, type: 2}
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Jenny the outcast_Female__fix it

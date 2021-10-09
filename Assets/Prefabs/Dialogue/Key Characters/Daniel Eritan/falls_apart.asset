@@ -1,0 +1,142 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 934b9866a43230040916957d489f0ef4, type: 3}
+  m_Name: falls_apart
+  m_EditorClassIdentifier: 
+  active: 1
+  dontLog: 0
+  dontLogUntilHired: 0
+  manualAdd: 1
+  triggerOnly: 0
+  textTriggers: 
+  triggeringQuest: {fileID: 11400000, guid: 38e2a12da5a2525459ef08df0cc44c80, type: 2}
+  triggeringQuestStatus: 0
+  triggeringObjective: {fileID: 0}
+  triggeringObjectiveStatus: 1
+  priority: 1
+  readTheseFirst: []
+  conversationQueries: []
+  invertQueries: 0
+  showChatter: 0
+  chatterShowsOnce: 1
+  titleText: falls apart
+  previewText: "Player: [Jay and Daniel]\n\nJay Treadwasser: I see you made it past
+    the second competition stage. How are you?\nMe: Oh, you\u2019re here. @Funny how
+    your lot always seems to turn up just when things start to fall apart.\nJay Treadwasser:
+    Sorry?\nMe: I don\u2019t suppose you saw the <i>Steel Hammer</i>?\nJay Treadwasser:
+    We did. She\u2019s gone back to the Sunken Coast.\nMe: That\u2019s something,
+    at least.@ You see the damage to her hull? She got that trying to protect us.
+    @Had a clear run back out the way she came, but still responded to the distress
+    call we sent out.\nJay Treadwasser: What exactly is going on out there?\nMe: Those
+    monsters are swarming anything man-made that goes anywhere near \u2018em.@ The
+    treasure is a lie, the houses are probably just using us against the other. @I
+    have to stop anyone else goin\u2019 down there...\nJay Treadwasser: ..."
+  omitFromLoc: 0
+  showFullConvoInRadio: 0
+  chatterEveryTime: 0
+  interval: 300
+  question: '[Jay and Daniel]'
+  speeches:
+  - locKey: dialog/Daniel Eritan_Male__falls apart_sp_0_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: I see you made it past the second competition stage. How are you?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Daniel Eritan_Male__falls apart_sp_1
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "Oh, you\u2019re here. @Funny how your lot always seems to turn up just
+      when things start to fall apart."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Daniel Eritan_Male__falls apart_sp_2_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: Sorry?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Daniel Eritan_Male__falls apart_sp_3
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "I don\u2019t suppose you saw the <i>Steel Hammer</i>?"
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Daniel Eritan_Male__falls apart_sp_4_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: "We did. She\u2019s gone back to the Sunken Coast."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Daniel Eritan_Male__falls apart_sp_5
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "That\u2019s something, at least.@ You see the damage to her hull? She got
+      that trying to protect us. @Had a clear run back out the way she came, but still
+      responded to the distress call we sent out."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Daniel Eritan_Male__falls apart_sp_6_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: What exactly is going on out there?
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Daniel Eritan_Male__falls apart_sp_7
+    action: {fileID: 0}
+    speaker: {fileID: 0}
+    text: "Those monsters are swarming anything man-made that goes anywhere near \u2018em.@
+      And yet adventurers are still being encouraged to head to the <color=blue>Endless
+      Corridor</color> for some flat out lie of a treasure that don\u2019t exist and
+      a certain death. @I have to stop anyone else goin\u2019 down there..."
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  - locKey: dialog/Daniel Eritan_Male__falls apart_sp_8_Jay Treadwasser(Male)
+    action: {fileID: 0}
+    speaker: {fileID: 11400000, guid: dd54838b762eae241a4b20f3cc7955ea, type: 2}
+    text: '...'
+    animTool:
+      animationType: 0
+      animTag: none
+      animTime: 0
+      setAsDefault: 0
+  questToStart: {fileID: 0}
+  postConvoActions: []
+  onConvoComplete:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  locKey: dialog/Daniel Eritan_Male__falls apart

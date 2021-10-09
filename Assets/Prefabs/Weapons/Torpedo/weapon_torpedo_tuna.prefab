@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &123938
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 484224}
+  - 114: {fileID: 11460434}
+  - 114: {fileID: 11407040}
+  - 114: {fileID: 11481512}
+  m_Layer: 0
+  m_Name: weapon_torpedo_tuna
+  m_TagString: NoOutline
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &484224
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 123938}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.744696, y: -34.155, z: 19.567894}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11407040
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 123938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c32fd9df29ca33f48a4d5114671fbad1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_positionOffsetData:
+    positionOffset: {x: 0, y: 0, z: 0}
+    KeepMe: 0
+  isEnvironmentAware: 1
+  listenerMask: 1
+  isStaticObject: 0
+  m_posOffsetData: {fileID: 0}
+--- !u!114 &11460434
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 123938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf8f0fdf7914f1445928eb9cf175fa8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitForCallback: 0
+  niceName: Torpedo
+  setAmmoStats: 0
+  stats:
+    damage: 3
+    burstSize: 1
+    shotSpeed: 10
+    shotSpread: 1
+    range: 300
+    sfx: Play_Low_Bubble_Burst
+    volume: 1
+    dangerRating: 1
+    cooldown: 3
+  ammo: {fileID: 11430572, guid: 1c118257e2e725d4885aead2688f5c95, type: 2}
+  ammoItem: {fileID: 11400000, guid: 1a862605a0bdd28478e13d688ed1772f, type: 2}
+  dontShootOwnShip: 0
+  myWeaponType: 0
+  shakeAmt: 0.1
+  recoilForce: 5
+  fireParticle: {fileID: 146122, guid: 473cb7205ac04914fa2a448fdbe8dd46, type: 2}
+  noiseValue: 0.5
+  ignoreInheritedForce: 0
+  torpedoInstability: {x: 100, y: 100, z: 500}
+  item: {fileID: 11481658, guid: d3ba86b6e3f111a4abff39a699220687, type: 2}
+--- !u!114 &11481512
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 123938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ceb77e6a8b04284b92a411724f0609c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: 4afb0717
+  useOtherObject: 0
+  valueGuid: a721e9476f5b1641b406e5dde4ca1e4e
+  eventID: -1304253854
+  soundEmitterObject: {fileID: 0}
+  enableActionOnEvent: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  transitionDuration: 0
+  m_callbackData: {fileID: 0}
+  playingId: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 123938}
+  m_IsPrefabParent: 1

@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2147c636f952b34c873c5fdf4b7a8c3, type: 3}
+  m_Name: royal fencer
+  m_EditorClassIdentifier: 
+  weight: 10
+  tags: []
+  testLevel: 1
+  previewHp: 0
+  previewDanger: 0
+  displayName: Royal Fencer
+  minMaxLevel: {x: 13, y: 18}
+  baseDanger: 10
+  firstTurn: 1
+  turnInterval: 3
+  minMaxHp: {x: 8, y: 16}
+  sprite: {fileID: 21300020, guid: 69fda1af55cbd08459f4f58585776d1e, type: 3}
+  reward: {fileID: 11400000, guid: 07f37b48b721aca4fbd51b95dc6282f6, type: 2}
+  attackSubjectOnly: 0
+  onNewSubject: 
+  introduction: "Your party runs across a patrolling [haz] as they explore a restricted
+    area...\r"
+  attack: "[haz] senses something is wrong and calls for backup... a patrol ship is
+    on its way!\r"
+  attackAction: {fileID: 11400000, guid: 5889bcae00830f740816389f31175323, type: 2}
+  defeat: "Your party manages to evade the scout and continue with the salvage!\r"
+  reactions:
+  - {fileID: 11400000, guid: 0d877bd3e101a8a4da33478694bc0297, type: 2}
+  - {fileID: 11400000, guid: 7ced5fa6efe0bfb408b9913c12fa915d, type: 2}
+  - {fileID: 11400000, guid: fd2666507a8086b4a97a49dc95ad3a86, type: 2}
+  - {fileID: 11400000, guid: 119db3335f6474941bfd73de8b41ca21, type: 2}
+  reactionsDescription: "\n[char] observes [haz]'s patrol route and attempts to sneak
+    past...\nDefense against Perception: [6.5 - 9] \n\n pass: [no loc]... and makes
+    it to the next alcove!\n fail: [no loc]... but stumbles and has to dash back to
+    their last hiding place!\n[char] attempts to sneak past in a cardboard box...\nDefense
+    against Endurance: [6.5 - 9] \n\n pass: [no loc]... and [haz] hasn't noticed!\n
+    fail: [no loc]... but [haz] is familiar with infiltration tactics!\n[char] shows
+    incredible subtlety and punches [haz] in the neck...\nDefense against Strength:
+    [6.5 - 9] \n\n pass: [no loc]... and [haz] is dazed!\n fail: [no loc]... but [haz]
+    dodges the blow!\n[char] tries to convince [haz] they are an undercover Royal
+    agent...\nDefense against Intelligence: [6.5 - 9] \n\n pass: [no loc]... [it seems
+    like [char] is starting to convince the  [haz]!\n fail: [no loc]... but [haz]
+    is not convinced!"
+  introSound: Play_Royal_Fencer_INTRO
+  hitSound: Play_Royal_Fencer_HIT
+  missSound: Play_Royal_Fencer_MISS

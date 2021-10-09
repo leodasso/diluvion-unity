@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63e73171ece082c45ab413e512982366, type: 3}
+  m_Name: random ground spot
+  m_EditorClassIdentifier: 
+  dimensionMultiplier: {x: 0.5, y: 0.5, z: 1}
+  maxTryCount: 5
+  checks:
+  - {fileID: 11400000, guid: aeb646db48f05734ab629a82eba8d744, type: 2}
+  - {fileID: 11400000, guid: bf951ac00e4403341a45715f6b1e970c, type: 2}
+  conditions: 0
