@@ -101,15 +101,16 @@ children.ForEach(child => Object.DestroyImmediate(child));
             LanguageSource source = Resources.Load<LanguageSource>("I2Languages");
 
             // Set the correct language index 
-            int langIndex = source.GetLanguageIndex("English (United States)");
+			// TODO fix this all
+            //int langIndex = source.GetLanguageIndex("English (United States)");
 
             // Create a new term data labeled by the given loc key
-            TermData termData = source.AddTerm(newLocKey, eTermType.Text);
+            //TermData termData = source.AddTerm(newLocKey, eTermType.Text);
 
             // Apply the text to the english index of the term
-            termData.Languages [langIndex] = keyText;
+            //termData.Languages [langIndex] = keyText;
 
-            return termData;
+            return null; // termData;
         }
 
         /// <summary>
@@ -136,20 +137,24 @@ children.ForEach(child => Object.DestroyImmediate(child));
             // Grab the language source from resource
             LanguageSource source = Resources.Load<LanguageSource>("I2Languages");
 
-            source.RemoveTerm(termKey);
+			// TODO fix this too
+            // source.RemoveTerm(termKey);
         }
 
         public static string GetFromLocLibrary (string locKey, string originalName, bool showWarning = true)
         {
-            string newNiceName = ScriptLocalization.Get(locKey);
+			// TODO fix this too
+            // string newNiceName = ScriptLocalization.Get(locKey);
+
+			return "please fix me!";
             
-            if (!string.IsNullOrEmpty(newNiceName)) return newNiceName;
+            //if (!string.IsNullOrEmpty(newNiceName)) return "newNiceName";
 
 #if !UNITY_EDITOR
 			Debug.Log("Localized text for " + locKey + " was not found in the library for the current language.");
 #else
             if (showWarning)
-                Debug.LogWarning("Localized text for " + locKey + " returned invalid result: " + newNiceName + " for current language(" + I2.Loc.LocalizationManager.CurrentLanguage + ")");
+                Debug.LogWarning("Localized text for " + locKey + " returned invalid result: " + "fix me" + " for current language(" + I2.Loc.LocalizationManager.CurrentLanguage + ")");
 #endif
 
             return originalName;

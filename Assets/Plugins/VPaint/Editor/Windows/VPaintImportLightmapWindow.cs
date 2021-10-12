@@ -44,7 +44,7 @@ public class VPaintImportLightmapWindow : VPaintImportTextureWindowAbstract
 	}
 	public override bool IsValid (VPaintObject vc)
 	{
-		return GameObjectUtility.AreStaticEditorFlagsSet(vc.gameObject, StaticEditorFlags.LightmapStatic);
+		return GameObjectUtility.AreStaticEditorFlagsSet(vc.gameObject, StaticEditorFlags.ContributeGI);
 	}
 	public override Texture2D GetTexture (VPaintObject vc)
 	{

@@ -175,10 +175,10 @@ public class Avoider : MonoBehaviour
         if (!debug) return;
         #if UNITY_EDITOR
         Handles.color = new Color(0, 1, 0, 0.2f);
-        Handles.SphereCap(0, lastSuccessfulCastPoint, Quaternion.identity, width * 2);
-        Handles.SphereCap(0, lastSuccessfulCastPoint + castDir.normalized * distanceToCheck, Quaternion.identity, width*2);
+        Handles.SphereHandleCap(0, lastSuccessfulCastPoint, Quaternion.identity, width * 2, EventType.Repaint);
+        Handles.SphereHandleCap(0, lastSuccessfulCastPoint + castDir.normalized * distanceToCheck, Quaternion.identity, width*2, EventType.Repaint);
         Handles.color = new Color(1, 0, 0, 0.2f);
-        Handles.SphereCap(0, lastSuccessfulCastPoint+ castDir.normalized * collisionDistance, Quaternion.identity, width*2);  
+        Handles.SphereHandleCap(0, lastSuccessfulCastPoint+ castDir.normalized * collisionDistance, Quaternion.identity, width*2, EventType.Repaint);  
         #endif
     }
 

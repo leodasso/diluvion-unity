@@ -507,7 +507,7 @@ public class PathMono : MonoBehaviour
         splithandleUp = true;
         Handles.color = new Color(0, 1, 0, .1f);
         Vector3 location = transform.position + (p.transform.position - transform.position) * 0.5f + Vector3.up * 2;
-        return Handles.Button(location, Quaternion.LookRotation(Vector3.up), 2, 2, Handles.SphereCap);
+        return Handles.Button(location, Quaternion.LookRotation(Vector3.up), 2, 2, Handles.SphereHandleCap);
     }
 
     bool removeHandleUp = false;
@@ -516,7 +516,7 @@ public class PathMono : MonoBehaviour
         removeHandleUp = true;
         Handles.color = Color.red;
         Vector3 location = transform.position + ((p.transform.position - transform.position) * 0.5f) - Vector3.up * 2;
-        return Handles.Button(location, Quaternion.LookRotation(-Vector3.up), 2,2, Handles.SphereCap);
+        return Handles.Button(location, Quaternion.LookRotation(-Vector3.up), 2,2, Handles.SphereHandleCap);
 
     }
 

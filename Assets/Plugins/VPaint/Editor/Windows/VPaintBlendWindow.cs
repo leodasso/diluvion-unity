@@ -370,7 +370,7 @@ public class VPaintBlendWindow : VPaintWindowBase
 			
 			Action<Vector3, Vector3, float> scaleHandle = (offset, direction, sign)=>{
 				var v1 = Settings.position + offset;
-				var v2 = Handles.Slider(v1, direction, 0.05f, Handles.DotCap, 0f);
+				var v2 = Handles.Slider(v1, direction, 0.05f, Handles.DotHandleCap, 0f);
 				size += (v2-v1)/2*sign;
 			};
 			

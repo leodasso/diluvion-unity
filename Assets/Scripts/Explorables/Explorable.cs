@@ -55,7 +55,7 @@ public class Explorable : Spawnable //, ICullable
             Vector3 upVector = BoundingCenter() + transform.up * Dir() * height;
             Gizmos.DrawLine(BoundingCenter(), upVector);
             Gizmos.color = Color.blue;
-            Handles.CircleCap(0, Root(), Quaternion.LookRotation(transform.up * Dir()), width);
+            Handles.CircleHandleCap(0, Root(), Quaternion.LookRotation(transform.up * Dir()), width, EventType.Repaint);
         }
     }
 
