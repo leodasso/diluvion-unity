@@ -34,15 +34,15 @@ public class CannonInspector : Editor {
         float size1 = HandleUtility.GetHandleSize(c.exitPoint);
 
         EditorGUI.BeginChangeCheck();
-        Vector3 pos = Handles.FreeMoveHandle(c.exitPoint, Quaternion.identity, .1f * size1, new Vector3(.2f, .2f, .02f), Handles.CubeCap); 
+        Vector3 pos = Handles.FreeMoveHandle(c.exitPoint, Quaternion.identity, .1f * size1, new Vector3(.2f, .2f, .02f), Handles.CubeHandleCap); 
         if (EditorGUI.EndChangeCheck())
         {
             exitPoint.vector3Value = pos;
         }
 
         EditorGUI.BeginChangeCheck();
-        Vector3 dir = Handles.FreeMoveHandle(c.exitVector * size1 + pos, Quaternion.identity, .2f * size1, new Vector3(.1f, .1f, .1f), Handles.CircleCap);
-        Handles.ConeCap(1, dir, Quaternion.LookRotation(dir - pos), .1f * size1);
+        Vector3 dir = Handles.FreeMoveHandle(c.exitVector * size1 + pos, Quaternion.identity, .2f * size1, new Vector3(.1f, .1f, .1f), Handles.CircleHandleCap);
+        Handles.ConeHandleCap(1, dir, Quaternion.LookRotation(dir - pos), .1f * size1, EventType.Repaint);
         Vector3 relDir = dir - pos;
 
         if (EditorGUI.EndChangeCheck())

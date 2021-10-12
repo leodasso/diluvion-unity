@@ -73,7 +73,7 @@ namespace DUI
 		    }
 
 		    // show action button text based on the purpose of this comparison
-		    actionButtonText.text = I2.Loc.ScriptLocalization.Get("GUI/" + mode);
+		    actionButtonText.text = "sample text"; // TODO fix me I2.Loc.ScriptLocalization.Get("GUI/" + mode);
 
 		    ship1 = newShip1;
 		    ship2 = newShip2;

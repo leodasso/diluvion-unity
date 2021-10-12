@@ -217,7 +217,7 @@ public class PathToolsWindow : EditorWindow
         Handles.DrawDottedLine(ray.origin,dottedPoint2, 0.2f);
 
         Handles.color = Color.cyan;
-        Handles.SphereCap(0,centerPoint, Quaternion.identity, 2f);
+        Handles.SphereHandleCap(0,centerPoint, Quaternion.identity, 2f, EventType.Repaint);
     }
 
     
@@ -235,7 +235,7 @@ public class PathToolsWindow : EditorWindow
         Handles.DrawDottedLine(hit.point, hit.point+ hit.normal * distanceFromCam, 0.2f);
 
         Handles.color = Color.cyan;
-        Handles.SphereCap(0, hit.point + hit.normal * distanceFromCam, Quaternion.identity, 2f);
+        Handles.SphereHandleCap(0, hit.point + hit.normal * distanceFromCam, Quaternion.identity, 2f, EventType.Repaint);
     }
 
     static bool _setValue1=true;

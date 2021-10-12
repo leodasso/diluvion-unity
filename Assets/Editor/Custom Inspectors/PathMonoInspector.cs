@@ -132,7 +132,7 @@ public class PathMonoInspector : Editor
     bool NewHandle()
     {
         Handles.color = Color.green;
-        return Handles.Button(pw.transform.position + new Vector3(5, 0, 5), Quaternion.LookRotation(Vector3.up),1, 1, Handles.CircleCap);
+        return Handles.Button(pw.transform.position + new Vector3(5, 0, 5), Quaternion.LookRotation(Vector3.up),1, 1, Handles.CircleHandleCap);
 
     }
 
@@ -140,7 +140,7 @@ public class PathMonoInspector : Editor
     {
         Handles.color = Color.green;
         Vector3 location = pw.transform.position + (p.transform.position - pw.transform.position)* distance+ Vector3.up * 2;
-        return Handles.Button(location, Quaternion.LookRotation(Vector3.up), 2,2, Handles.SphereCap);
+        return Handles.Button(location, Quaternion.LookRotation(Vector3.up), 2,2, Handles.SphereHandleCap);
 
     }
 
@@ -149,7 +149,7 @@ public class PathMonoInspector : Editor
     {
         Handles.color = Color.red;
         Vector3 location = pw.transform.position + ((p.transform.position - pw.transform.position) * distance) - Vector3.up*2;
-        return Handles.Button(location, Quaternion.LookRotation(Vector3.up), 2, 2, Handles.SphereCap);
+        return Handles.Button(location, Quaternion.LookRotation(Vector3.up), 2, 2, Handles.SphereHandleCap);
 
     }
 
