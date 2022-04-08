@@ -25,8 +25,8 @@ namespace RootMotion.Demos {
 			
 			Vector3 bonePosition = script.limbIK.solver.bone2.transform.position;
 			Handles.DrawLine(script.transform.position, bonePosition);
-			Handles.SphereCap(0, script.transform.position, Quaternion.identity, 0.05f);
-			Handles.SphereCap(0, bonePosition, Quaternion.identity, 0.025f);
+			Inspector.SphereCap(0, script.transform.position, Quaternion.identity, 0.05f);
+			Inspector.SphereCap(0, bonePosition, Quaternion.identity, 0.025f);
 			
 			Handles.color = Color.white;
 		}

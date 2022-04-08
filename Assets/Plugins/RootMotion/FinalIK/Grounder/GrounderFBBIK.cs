@@ -19,7 +19,7 @@ namespace RootMotion.FinalIK {
 		// Open the User Manual URL
 		[ContextMenu("User Manual")]
 		protected override void OpenUserManual() {
-			Application.OpenURL("http://www.root-motion.com/finalikdox/html/page11.html");
+			Application.OpenURL("http://www.root-motion.com/finalikdox/html/page9.html");
 		}
 		
 		// Open the Script Reference URL
@@ -50,6 +50,20 @@ namespace RootMotion.FinalIK {
 			/// </summary>
 			[Tooltip("The vertical bend offset weight.")]
 			public float verticalWeight;
+
+			public SpineEffector() {}
+
+			/// <summary>
+			/// Initializes a new instance of the <see cref="RootMotion.FinalIK.GrounderFBBIK+SpineEffector"/> class.
+			/// </summary>
+			/// <param name="effectorType">Effector type.</param>
+			/// <param name="horizontalWeight">Horizontal weight.</param>
+			/// <param name="verticalWeight">Vertical weight.</param>
+			public SpineEffector(FullBodyBipedEffector effectorType, float horizontalWeight, float verticalWeight) {
+				this.effectorType = effectorType;
+				this.horizontalWeight = horizontalWeight;
+				this.verticalWeight = verticalWeight;
+			}
 		}
 
 		/// <summary>
@@ -74,7 +88,7 @@ namespace RootMotion.FinalIK {
 
 		#endregion Main Interface
 
-		public override void Reset() {
+		public override void ResetPosition() {
 			solver.Reset();
 			spineOffset = Vector3.zero;
 		}

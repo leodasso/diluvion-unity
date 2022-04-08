@@ -6,19 +6,23 @@ namespace RootMotion.Demos {
 	/// <summary>
 	/// The base abstract class for all character controllers, provides common functionality.
 	/// </summary>
-	[RequireComponent(typeof(Rigidbody))]
-	[RequireComponent(typeof(CapsuleCollider))]
 	public abstract class CharacterBase: MonoBehaviour {
 
 		[Header("Base Parameters")]
-		[Range(1f, 4f)] [SerializeField] protected float gravityMultiplier = 2f;	// gravity modifier - often higher than natural gravity feels right for game characters
-		[SerializeField] protected float airborneThreshold = 0.6f; // Height from ground after which the character is considered airborne
-		[SerializeField] float slopeStartAngle = 50f; // The start angle of velocity dampering on slopes
-		[SerializeField] float slopeEndAngle = 85f; // The end angle of velocity dampering on slopes
-		[SerializeField] float spherecastRadius = 0.1f; // The radius of sperecasting
-		[SerializeField] LayerMask groundLayers; // The walkable layers
 
-		private PhysicMaterial zeroFrictionMaterial;
+        [Tooltip("If specified, will use the direction from the character to this Transform as the gravity vector instead of Physics.gravity. Physics.gravity.magnitude will be used as the magnitude of the gravity vector.")]
+        public Transform gravityTarget;
+
+        [Tooltip("Multiplies gravity applied to the character even if 'Individual Gravity' is unchecked.")]
+        public float gravityMultiplier = 2f; // gravity modifier - often higher than natural gravity feels right for game characters
+
+        public float airborneThreshold = 0.6f; // Height from ground after which the character is considered airborne
+        public float slopeStartAngle = 50f; // The start angle of velocity dampering on slopes
+        public float slopeEndAngle = 85f; // The end angle of velocity dampering on slopes
+        public float spherecastRadius = 0.1f; // The radius of sperecasting
+        public LayerMask groundLayers; // The walkable layers
+
+        private PhysicMaterial zeroFrictionMaterial;
 		private PhysicMaterial highFrictionMaterial;
 		protected Rigidbody r;
 		protected const float half = 0.5f;
@@ -27,6 +31,14 @@ namespace RootMotion.Demos {
 		protected CapsuleCollider capsule;
 
 		public abstract void Move(Vector3 deltaPosition, Quaternion deltaRotation);
+
+		protected Vector3 GetGravity() {
+			if (gravityTarget != null) {
+				return (gravityTarget.position - transform.position).normalized * Physics.gravity.magnitude;
+			}
+
+			return Physics.gravity;
+		}
 
 		protected virtual void Start() {
 			capsule = GetComponent<Collider>() as CapsuleCollider;
@@ -55,7 +67,9 @@ namespace RootMotion.Demos {
 			Vector3 up = transform.up;
 			Ray ray = new Ray (r.position + up * airborneThreshold, -up);
 			RaycastHit h = new RaycastHit();
-			
+			h.point = transform.position - transform.transform.up * airborneThreshold;
+			h.normal = transform.up;
+
 			Physics.SphereCast(ray, spherecastRadius, out h, airborneThreshold * 2f, groundLayers);
 			return h;
 		}

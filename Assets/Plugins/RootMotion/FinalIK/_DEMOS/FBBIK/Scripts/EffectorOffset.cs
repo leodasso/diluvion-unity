@@ -22,15 +22,15 @@ namespace RootMotion.Demos {
 			ik.solver.rightHandEffector.maintainRelativePositionWeight = handsMaintainRelativePositionWeight;
 
 			// Apply position offsets relative to this GameObject's rotation.
-			ik.solver.bodyEffector.positionOffset += transform.rotation * bodyOffset;
-			ik.solver.leftShoulderEffector.positionOffset += transform.rotation * leftShoulderOffset;
-			ik.solver.rightShoulderEffector.positionOffset += transform.rotation * rightShoulderOffset;
-			ik.solver.leftThighEffector.positionOffset += transform.rotation * leftThighOffset;
-			ik.solver.rightThighEffector.positionOffset += transform.rotation * rightThighOffset;
-			ik.solver.leftHandEffector.positionOffset += transform.rotation * leftHandOffset;
-			ik.solver.rightHandEffector.positionOffset += transform.rotation * rightHandOffset;
-			ik.solver.leftFootEffector.positionOffset += transform.rotation * leftFootOffset;
-			ik.solver.rightFootEffector.positionOffset += transform.rotation * rightFootOffset;
+			ik.solver.bodyEffector.positionOffset += transform.rotation * bodyOffset * weight;
+			ik.solver.leftShoulderEffector.positionOffset += transform.rotation * leftShoulderOffset * weight;
+			ik.solver.rightShoulderEffector.positionOffset += transform.rotation * rightShoulderOffset * weight;
+			ik.solver.leftThighEffector.positionOffset += transform.rotation * leftThighOffset * weight;
+			ik.solver.rightThighEffector.positionOffset += transform.rotation * rightThighOffset * weight;
+			ik.solver.leftHandEffector.positionOffset += transform.rotation * leftHandOffset * weight;
+			ik.solver.rightHandEffector.positionOffset += transform.rotation * rightHandOffset * weight;
+			ik.solver.leftFootEffector.positionOffset += transform.rotation * leftFootOffset * weight;
+			ik.solver.rightFootEffector.positionOffset += transform.rotation * rightFootOffset * weight;
 
 			// NB! effector position offsets are reset to Vector3.zero after FBBIK update is complete. 
 			// This enables to have more than one script modifying the position offset of effectors.

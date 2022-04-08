@@ -9,14 +9,14 @@ namespace RootMotion.Demos {
 	/// </summary>
 	public class UserControlInteractions : UserControlThirdPerson {
 
-		[SerializeField] CharacterThirdPerson character;
-		[SerializeField] InteractionSystem interactionSystem; // Reference to the InteractionSystem of the character
-		[SerializeField] bool disableInputInInteraction = true; // If true, will keep the character stopped while an interaction is in progress
+		public CharacterThirdPerson character;
+        public InteractionSystem interactionSystem; // Reference to the InteractionSystem of the character
+        public bool disableInputInInteraction = true; // If true, will keep the character stopped while an interaction is in progress
 		public float enableInputAtProgress = 0.8f; // The normalized interaction progress after which the character is able to move again
 
 		protected override void Update() {
-			// Disable input when in interaction
-			if (disableInputInInteraction && interactionSystem != null && (interactionSystem.inInteraction || interactionSystem.IsPaused())) {
+            // Disable input when in interaction
+            if (disableInputInInteraction && interactionSystem != null && (interactionSystem.inInteraction || interactionSystem.IsPaused())) {
 
 				// Get the least interaction progress
 				float progress = interactionSystem.GetMinActiveProgress();
@@ -33,8 +33,8 @@ namespace RootMotion.Demos {
 			base.Update();
 		}
 
-		// Triggering the interactions
-		void OnGUI() {
+        // Triggering the interactions
+        void OnGUI() {
 			// If jumping or falling, do nothing
 			if (!character.onGround) return;
 

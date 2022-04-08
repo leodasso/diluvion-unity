@@ -8,30 +8,36 @@ namespace RootMotion.Demos {
 	/// Demo script that shows how BipedIK performs compared to the built-in Animator IK
 	/// </summary>
 	public class BipedIKvsAnimatorIK: MonoBehaviour {
-		
+
+		[LargeHeader("References")]
 		public Animator animator;
 		public BipedIK bipedIK;
 
 		// Look At
-		public Transform lookAtTargetBiped, lookAtTargetAnimator;
-		
-		public float lookAtWeight = 1f;
-		public float lookAtBodyWeight = 1f;
-		public float lookAtHeadWeight = 1f;
-		public float lookAtEyesWeight = 1f;
-		public float lookAtClampWeight = 0.5f;
-		public float lookAtClampWeightHead = 0.5f;
-		public float lookAtClampWeightEyes = 0.5f;
+		[LargeHeader("Look At")]
+		public Transform lookAtTargetBiped;
+		public Transform lookAtTargetAnimator;
+		[Range(0f, 1f)] public float lookAtWeight = 1f;
+		[Range(0f, 1f)] public float lookAtBodyWeight = 1f;
+		[Range(0f, 1f)] public float lookAtHeadWeight = 1f;
+		[Range(0f, 1f)] public float lookAtEyesWeight = 1f;
+		[Range(0f, 1f)] public float lookAtClampWeight = 0.5f;
+		[Range(0f, 1f)] public float lookAtClampWeightHead = 0.5f;
+		[Range(0f, 1f)] public float lookAtClampWeightEyes = 0.5f;
 
 		// Foot
-		public Transform footTargetBiped, footTargetAnimator;
-		public float footPositionWeight = 0f;
-		public float footRotationWeight = 0f;
+		[LargeHeader("Foot")]
+		public Transform footTargetBiped;
+		public Transform footTargetAnimator;
+		[Range(0f, 1f)] public float footPositionWeight = 0f;
+		[Range(0f, 1f)] public float footRotationWeight = 0f;
 
 		// Hand
-		public Transform handTargetBiped, handTargetAnimator;
-		public float handPositionWeight = 0f;
-		public float handRotationWeight = 0f;
+		[LargeHeader("Hand")]
+		public Transform handTargetBiped;
+		public Transform handTargetAnimator;
+		[Range(0f, 1f)] public float handPositionWeight = 0f;
+		[Range(0f, 1f)] public float handRotationWeight = 0f;
 
 		void OnAnimatorIK(int layer) {
 			animator.transform.rotation = bipedIK.transform.rotation;
@@ -39,7 +45,7 @@ namespace RootMotion.Demos {
 
 			// Look At
 			lookAtTargetAnimator.position = lookAtTargetBiped.position + offset;
-			
+
 			bipedIK.SetLookAtPosition(lookAtTargetBiped.position);
 			bipedIK.SetLookAtWeight(lookAtWeight, lookAtBodyWeight, lookAtHeadWeight, lookAtEyesWeight, lookAtClampWeight, lookAtClampWeightHead, lookAtClampWeightEyes);
 			

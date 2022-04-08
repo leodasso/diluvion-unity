@@ -59,6 +59,8 @@ namespace RootMotion.FinalIK {
 
 		[Tooltip("Reference to the AimIK component. Optional, only used to getting the aiming direction.")]
 		public AimIK aimIK;
+		[Tooltip("Set this true if you are using IKExecutionOrder.cs or a custom script to force AimIK solve after FBBIK.")]
+		public bool aimIKSolvedLast;
 		[Tooltip("Which hand is holding the weapon?")]
 		public Handedness handedness;
 		[Tooltip("Check for 2-handed weapons.")]
@@ -78,7 +80,9 @@ namespace RootMotion.FinalIK {
 
 		[Tooltip("FBBIK effector position offsets for the recoil (in aiming direction space).")]
 		public RecoilOffset[] offsets;
-		
+
+		[HideInInspector] public Quaternion rotationOffset = Quaternion.identity;
+
 		private float magnitudeMlp = 1f;
 		private float endTime = -1f;
 		private Quaternion handRotation, secondaryHandRelativeRotation, randomRotation;
@@ -86,6 +90,34 @@ namespace RootMotion.FinalIK {
 		private bool initiated;
 		private float blendWeight;
 		private float w;
+		private Quaternion primaryHandRotation = Quaternion.identity;
+		//private Quaternion secondaryHandRotation = Quaternion.identity;
+		private bool handRotationsSet;
+		private Vector3 aimIKAxis;
+
+		/// <summary>
+		/// Returns true if recoil has finished or has not been called at all.
+		/// </summary>
+		public bool isFinished {
+			get {
+				return Time.time > endTime;
+			}
+		}
+
+		/// <summary>
+		/// Sets the starting rotations for the hands for 1 frame. Use this if the final rotation of the hands will not be the same as before FBBIK solves.
+		/// </summary>
+		public void SetHandRotations(Quaternion leftHandRotation, Quaternion rightHandRotation) {
+			if (handedness == Handedness.Left) {
+				primaryHandRotation = leftHandRotation;
+				//secondaryHandRotation = rightHandRotation;
+			} else {
+				primaryHandRotation = rightHandRotation;
+				//secondaryHandRotation = leftHandRotation;
+			}
+
+			handRotationsSet = true;
+		}
 
 		/// <summary>
 		/// Starts the recoil procedure.
@@ -109,11 +141,17 @@ namespace RootMotion.FinalIK {
 		}
 
 		protected override void OnModifyOffset() {
-			if (Time.time >= endTime) return;
+			if (aimIK != null) aimIKAxis = aimIK.solver.axis;
+
+			if (Time.time >= endTime) {
+				rotationOffset = Quaternion.identity;
+				return;
+			}
 
 			if (!initiated && ik != null) {
 				initiated = true;
 				ik.solver.OnPostUpdate += AfterFBBIK;
+				if (aimIK != null) aimIK.solver.OnPostUpdate += AfterAimIK;
 			}
 
 			blendTime = Mathf.Max(blendTime, 0f);
@@ -125,7 +163,7 @@ namespace RootMotion.FinalIK {
 			w = Mathf.Lerp(w, wTarget, blendWeight);
 
 			// Find the rotation space of the recoil
-			Quaternion lookRotation = aimIK != null? Quaternion.LookRotation(aimIK.solver.IKPosition - aimIK.solver.transform.position, ik.references.root.up): ik.references.root.rotation;
+			Quaternion lookRotation = aimIK != null && aimIK.solver.transform != null && !aimIKSolvedLast? Quaternion.LookRotation(aimIK.solver.IKPosition - aimIK.solver.transform.position, ik.references.root.up): ik.references.root.rotation;
 			lookRotation = randomRotation * lookRotation;
 
 			// Apply FBBIK effector positionOffsets
@@ -133,27 +171,40 @@ namespace RootMotion.FinalIK {
 				offset.Apply(ik.solver, lookRotation, w, length, endTime - Time.time);
 			}
 
+			if (!handRotationsSet) {
+				primaryHandRotation = primaryHand.rotation;
+				//if (twoHanded) secondaryHandRotation = secondaryHand.rotation;
+			}
+			handRotationsSet = false;
+
 			// Rotation offset of the primary hand
-			Quaternion rotationOffset = Quaternion.Lerp(Quaternion.identity, Quaternion.Euler(randomRotation * primaryHand.rotation * handRotationOffset), w);
-			handRotation = rotationOffset * primaryHand.rotation;
+			rotationOffset = Quaternion.Lerp(Quaternion.identity, Quaternion.Euler(randomRotation * primaryHandRotation * handRotationOffset), w);
+			handRotation = rotationOffset * primaryHandRotation;
 				
 			// Fix the secondary hand relative to the primary hand
 			if (twoHanded) {
-				Vector3 secondaryHandRelativePosition = primaryHand.InverseTransformPoint(secondaryHand.position);
+				Vector3 secondaryHandRelativePosition = Quaternion.Inverse(primaryHand.rotation) * (secondaryHand.position - primaryHand.position);
 				secondaryHandRelativeRotation = Quaternion.Inverse(primaryHand.rotation) * secondaryHand.rotation;
 
 				Vector3 primaryHandPosition = primaryHand.position + primaryHandEffector.positionOffset;
 				Vector3 secondaryHandPosition = primaryHandPosition + handRotation * secondaryHandRelativePosition;
+
 				secondaryHandEffector.positionOffset += secondaryHandPosition - (secondaryHand.position + secondaryHandEffector.positionOffset);
 			}
+
+			if (aimIK != null && aimIKSolvedLast) aimIK.solver.axis = Quaternion.Inverse(ik.references.root.rotation) * Quaternion.Inverse(rotationOffset) * aimIKAxis;
 		}
-		
+
 		private void AfterFBBIK() {
 			if (Time.time >= endTime) return;
 
 			// Rotate the hand bones
 			primaryHand.rotation = handRotation;
 			if (twoHanded) secondaryHand.rotation = primaryHand.rotation * secondaryHandRelativeRotation;
+		}
+
+		private void AfterAimIK() {
+			if (aimIKSolvedLast) aimIK.solver.axis = aimIKAxis;
 		}
 
 		// Shortcuts
@@ -187,6 +238,7 @@ namespace RootMotion.FinalIK {
 			base.OnDestroy();
 			if (ik != null && initiated) {
 				ik.solver.OnPostUpdate -= AfterFBBIK;
+				if (aimIK != null) aimIK.solver.OnPostUpdate -= AfterAimIK;
 			}
 		}
 		

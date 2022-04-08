@@ -12,8 +12,22 @@ namespace RootMotion.FinalIK {
 	[AddComponentMenu("Scripts/RootMotion.FinalIK/Interaction System/Interaction System")]
 	public class InteractionSystem : MonoBehaviour {
 
-		// Open a video tutorial video
-		[ContextMenu("TUTORIAL VIDEO (PART 1: BASICS)")]
+        // Open the User Manual URL
+        [ContextMenu("User Manual")]
+        void OpenUserManual()
+        {
+            Application.OpenURL("http://www.root-motion.com/finalikdox/html/page10.html");
+        }
+
+        // Open the Script Reference URL
+        [ContextMenu("Scrpt Reference")]
+        void OpenScriptReference()
+        {
+            Application.OpenURL("http://www.root-motion.com/finalikdox/html/class_root_motion_1_1_final_i_k_1_1_interaction_system.html");
+        }
+
+        // Open a video tutorial video
+        [ContextMenu("TUTORIAL VIDEO (PART 1: BASICS)")]
 		void OpenTutorial1() {
 			Application.OpenURL("https://www.youtube.com/watch?v=r5jiZnsDH3M");
 		}
@@ -37,7 +51,7 @@ namespace RootMotion.FinalIK {
 		}
 
 		// Link to the Final IK Google Group
-		[ContextMenu("Support Group")]
+		[ContextMenu("Support")]
 		void SupportGroup() {
 			Application.OpenURL("https://groups.google.com/forum/#!forum/final-ik");
 		}
@@ -321,6 +335,120 @@ namespace RootMotion.FinalIK {
 		}
 
 		/// <summary>
+		/// Triggers all interactions of an InteractionTrigger. Returns false if unsuccessful (maybe out of range).
+		/// </summary>
+		public bool TriggerInteraction(int index, bool interrupt, out InteractionObject interactionObject) {
+			interactionObject = null;
+			if (!IsValid(true)) return false;
+			
+			if (!TriggerIndexIsValid(index)) return false;
+			
+			bool all = true;
+			
+			var range = triggersInRange[index].ranges[bestRangeIndexes[index]];
+			
+			for (int i = 0; i < range.interactions.Length; i++) {
+				for (int e = 0; e < range.interactions[i].effectors.Length; e++) {
+					interactionObject = range.interactions[i].interactionObject;
+					bool s = StartInteraction(range.interactions[i].effectors[e], interactionObject, interrupt);
+					if (!s) all = false;
+				}
+			}
+			
+			return all;
+		}
+
+		/// <summary>
+		/// Triggers all interactions of an InteractionTrigger. Returns false if unsuccessful (maybe out of range).
+		/// </summary>
+		public bool TriggerInteraction(int index, bool interrupt, out InteractionTarget interactionTarget) {
+			interactionTarget = null;
+			if (!IsValid(true)) return false;
+			
+			if (!TriggerIndexIsValid(index)) return false;
+			
+			bool all = true;
+			
+			var range = triggersInRange[index].ranges[bestRangeIndexes[index]];
+			
+			for (int i = 0; i < range.interactions.Length; i++) {
+				for (int e = 0; e < range.interactions[i].effectors.Length; e++) {
+					var interactionObject = range.interactions[i].interactionObject;
+					var t = interactionObject.GetTarget(range.interactions[i].effectors[e], tag);
+					if (t != null) interactionTarget = t.GetComponent<InteractionTarget>();
+					bool s = StartInteraction(range.interactions[i].effectors[e], interactionObject, interrupt);
+					if (!s) all = false;
+				}
+			}
+			
+			return all;
+		}
+
+		/// <summary>
+		/// Gets the closest InteractionTrigger Range.
+		/// </summary>
+		public InteractionTrigger.Range GetClosestInteractionRange() {
+			if (!IsValid(true)) return null;
+
+			int index = GetClosestTriggerIndex();
+			if (index < 0 || index >= triggersInRange.Count) return null;
+			
+			return triggersInRange[index].ranges[bestRangeIndexes[index]];
+		}
+
+		/// <summary>
+		/// Gets the closest InteractionObject in range.
+		/// </summary>
+		public InteractionObject GetClosestInteractionObjectInRange() {
+			var range = GetClosestInteractionRange();
+			if (range == null) return null;
+			return range.interactions[0].interactionObject;
+		}
+
+		/// <summary>
+		/// Gets the closest InteractionTarget in range.
+		/// </summary>
+		public InteractionTarget GetClosestInteractionTargetInRange() {
+			var range = GetClosestInteractionRange();
+			if (range == null) return null;
+			return range.interactions[0].interactionObject.GetTarget(range.interactions[0].effectors[0], this);
+		}
+
+		/// <summary>
+		/// Gets the closest InteractionObjects in range.
+		/// </summary>
+		public InteractionObject[] GetClosestInteractionObjectsInRange() {
+			var range = GetClosestInteractionRange();
+			if (range == null) return new InteractionObject[0];
+
+			InteractionObject[] objects = new InteractionObject[range.interactions.Length];
+
+			for (int i = 0; i < range.interactions.Length; i++) {
+				objects[i] = range.interactions[i].interactionObject;
+			}
+
+			return objects;
+		}
+
+		/// <summary>
+		/// Gets the closest InteractionTargets in range.
+		/// </summary>
+		public InteractionTarget[] GetClosestInteractionTargetsInRange() {
+			var range = GetClosestInteractionRange();
+			if (range == null) return new InteractionTarget[0];
+
+			List<InteractionTarget> targets = new List<InteractionTarget>();
+
+			foreach (InteractionTrigger.Range.Interaction interaction in range.interactions) {
+				foreach (FullBodyBipedEffector effectorType in interaction.effectors) {
+					targets.Add (interaction.interactionObject.GetTarget(effectorType, this));
+				}
+			}
+
+			return (InteractionTarget[])targets.ToArray();
+		}
+
+		/// <summary>
 		/// Returns true if all effectors of a trigger are either not in interaction or paused
 		/// </summary>
 		public bool TriggerEffectorsReady(int index) {
@@ -398,6 +526,9 @@ namespace RootMotion.FinalIK {
 			get {
 				return fullBody;
 			}
+			set {
+				fullBody = value;
+			}
 		}
 
 		/// <summary>
@@ -473,12 +604,13 @@ namespace RootMotion.FinalIK {
 			new InteractionEffector(FullBodyBipedEffector.RightThigh)
 		};
 
-		private bool initiated;
+		public bool initiated { get; private set; }
 		private Collider lastCollider, c;
 
 		// Initiate
-		protected virtual void Start() {
+		public void Start() {
 			if (fullBody == null) fullBody = GetComponent<FullBodyBipedIK>();
+			//Debug.Log(fullBody);
 			if (fullBody == null) {
 				Warning.Log("InteractionSystem can not find a FullBodyBipedIK component", transform);
 				return;
@@ -487,6 +619,7 @@ namespace RootMotion.FinalIK {
 			// Add to the FBBIK OnPostUpdate delegate to get a call when it has finished updating
 			fullBody.solver.OnPreUpdate += OnPreFBBIK;
 			fullBody.solver.OnPostUpdate += OnPostFBBIK;
+			fullBody.solver.OnFixTransforms += OnFixTransforms;
 			OnInteractionStart += LookAtInteraction;
 			OnInteractionPause += InteractionPause;
 			OnInteractionResume += InteractionResume;
@@ -524,7 +657,8 @@ namespace RootMotion.FinalIK {
 			if (fullBody == null) return;
 
 			var trigger = c.GetComponent<InteractionTrigger>();
-			
+
+			if (trigger == null) return;
 			if (inContact.Contains(trigger)) return;
 			
 			inContact.Add(trigger);
@@ -534,6 +668,7 @@ namespace RootMotion.FinalIK {
 			if (fullBody == null) return;
 
 			var trigger = c.GetComponent<InteractionTrigger>();
+			if (trigger == null) return;
 			
 			inContact.Remove(trigger);
 		}
@@ -568,7 +703,7 @@ namespace RootMotion.FinalIK {
 			if (characterCollider == null) characterCollider = GetComponent<Collider>();
 		}
 		
-		void Update() {
+		public void Update() {
 			if (fullBody == null) return;
 			
 			UpdateTriggerEventBroadcasting();
@@ -582,7 +717,7 @@ namespace RootMotion.FinalIK {
 			for (int i = 0; i < inContact.Count; i++) {
 				int bestRangeIndex = -1;
 
-				if (inContact[i] != null && inContact[i].gameObject.activeInHierarchy && inContact[i].enabled && ContactIsInRange(i, out bestRangeIndex)) {
+				if (inContact[i] != null && inContact[i].gameObject.activeInHierarchy && ContactIsInRange(i, out bestRangeIndex)) {
 					triggersInRange.Add(inContact[i]);
 					bestRangeIndexes.Add(bestRangeIndex);
 				}
@@ -622,7 +757,7 @@ namespace RootMotion.FinalIK {
 		}
 		
 		// Update the interaction
-		void LateUpdate() {
+		void UpdateEffectors() {
 			if (fullBody == null) return;
 
 			for (int i = 0; i < interactionEffectors.Length; i++) interactionEffectors[i].Update(transform, speed);
@@ -633,15 +768,17 @@ namespace RootMotion.FinalIK {
 
 		// Used for using LookAtIK to rotate the spine
 		private void OnPreFBBIK() {
-			if (!enabled) return;
+			//if (!enabled) return;
 			if (fullBody == null) return;
-			
+
 			lookAt.SolveSpine();
+
+			UpdateEffectors();
 		}
 
 		// Used for rotating the hands after FBBIK has finished
 		private void OnPostFBBIK() {
-			if (!enabled) return;
+			//if (!enabled) return;
 			if (fullBody == null) return;
 
 			for (int i = 0; i < interactionEffectors.Length; i++) interactionEffectors[i].OnPostFBBIK();
@@ -650,11 +787,16 @@ namespace RootMotion.FinalIK {
 			lookAt.SolveHead();
 		}
 
+		void OnFixTransforms() {
+			lookAt.OnFixTransforms();
+		}
+
 		// Remove the delegates
 		void OnDestroy() {
 			if (fullBody == null) return;
 			fullBody.solver.OnPreUpdate -= OnPreFBBIK;
 			fullBody.solver.OnPostUpdate -= OnPostFBBIK;
+			fullBody.solver.OnFixTransforms -= OnFixTransforms;
 
 			OnInteractionStart -= LookAtInteraction;
 			OnInteractionPause -= InteractionPause;
@@ -688,18 +830,6 @@ namespace RootMotion.FinalIK {
 			}
 			
 			return true;
-		}
-
-		// Open the User Manual URL
-		[ContextMenu("User Manual")]
-		private void OpenUserManual() {
-			Application.OpenURL("http://www.root-motion.com/finalikdox/html/page10.html");
-		}
-		
-		// Open the Script Reference URL
-		[ContextMenu("Scrpt Reference")]
-		private void OpenScriptReference() {
-			Application.OpenURL("http://www.root-motion.com/finalikdox/html/class_root_motion_1_1_final_i_k_1_1_interaction_system.html");
 		}
 	}
 }

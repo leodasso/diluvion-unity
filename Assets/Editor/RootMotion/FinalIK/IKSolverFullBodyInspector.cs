@@ -2,7 +2,6 @@
 using UnityEditor;
 using System.Collections;
 using System;
-#pragma warning disable 618
 
 namespace RootMotion.FinalIK {
 
@@ -17,7 +16,7 @@ namespace RootMotion.FinalIK {
 		 * Draws the custom inspector for IKSolverFullBody
 		 * */
 		public static void AddInspector(SerializedProperty prop, bool editWeights) {
-			EditorGUILayout.PropertyField(prop.FindPropertyRelative("IKPositionWeight"), new GUIContent("Weight", "Solver weight for smooth blending."));
+			EditorGUILayout.PropertyField(prop.FindPropertyRelative("IKPositionWeight"), new GUIContent("Weight", "Solver weight for smooth blending (ik.solver.IKPositionWeight)."));
 			EditorGUILayout.PropertyField(prop.FindPropertyRelative("iterations"), new GUIContent("Iterations", "Solver iterations per frame."));
 		}
 
@@ -36,14 +35,14 @@ namespace RootMotion.FinalIK {
 				
 				if (weight > 0 && selectedEffector != i) {
 					Handles.color = color;
-					
+
 					if (rotate) {
-						if (Handles.Button(solver.effectors[i].position, solver.effectors[i].rotation, size * 0.5f, size * 0.5f, Handles.DotCap)) {
+						if (Inspector.DotButton(solver.effectors[i].position, solver.effectors[i].rotation, size * 0.5f, size * 0.5f)) {
 							selectedEffector = i;
 							return;
 						}
 					} else {
-						if (Handles.Button(solver.effectors[i].position, solver.effectors[i].rotation, size, size, Handles.SphereCap)) {
+						if (Inspector.SphereButton(solver.effectors[i].position, solver.effectors[i].rotation, size, size)) {
 							selectedEffector = i;
 							return;
 						}
@@ -63,10 +62,10 @@ namespace RootMotion.FinalIK {
 			
 			for (int i = 0; i < chain[index].nodes.Length - 1; i++) {
 				Handles.DrawLine(GetNodePosition(chain[index].nodes[i]), GetNodePosition(chain[index].nodes[i + 1]));
-				Handles.SphereCap(0, GetNodePosition(chain[index].nodes[i]), Quaternion.identity, size);
+				Inspector.SphereCap(0, GetNodePosition(chain[index].nodes[i]), Quaternion.identity, size);
 			}
 			
-			Handles.SphereCap(0, GetNodePosition(chain[index].nodes[chain[index].nodes.Length - 1]), Quaternion.identity, size);
+			Inspector.SphereCap(0, GetNodePosition(chain[index].nodes[chain[index].nodes.Length - 1]), Quaternion.identity, size);
 
 			for (int i = 0; i < chain[index].children.Length; i++) {
 				Handles.DrawLine(GetNodePosition(chain[index].nodes[chain[index].nodes.Length - 1]), GetNodePosition(chain[chain[index].children[i]].nodes[0]));

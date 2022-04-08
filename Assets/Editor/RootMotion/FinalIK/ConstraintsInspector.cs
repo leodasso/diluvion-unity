@@ -18,6 +18,7 @@ namespace RootMotion.FinalIK {
 			if (!prop.isExpanded) return;
 			
 			// Main properties
+			EditorGUILayout.PropertyField(prop.FindPropertyRelative("target"), new GUIContent("Target", "Target transform for the pelvis (optional). If assigned, will overwrite pelvis.position in each update."));
 			EditorGUILayout.PropertyField(prop.FindPropertyRelative("positionOffset"), new GUIContent("Pos Offset", "Pelvis offset from animation. If there is no animation playing and Fix Transforms is unchecked, it will make the character fly away."));
 			EditorGUILayout.PropertyField(prop.FindPropertyRelative("positionWeight"), new GUIContent("Pos Weight", "The weight of lerping the pelvis to bipedIK.solvers.pelvis.position."));
 			EditorGUILayout.PropertyField(prop.FindPropertyRelative("rotationOffset"), new GUIContent("Rot Offset", "Pelvis rotation offset from animation. If there is no animation playing and Fix Transforms is unchecked, it will make the character spin."));
@@ -36,15 +37,15 @@ namespace RootMotion.FinalIK {
 			GUI.color = color;
 			
 			// Transform
-			Handles.SphereCap(0, constraints.transform.position, Quaternion.identity, GetHandleSize(constraints.transform.position));
-			
+			Inspector.SphereCap(0, constraints.transform.position, Quaternion.identity, GetHandleSize(constraints.transform.position));
+
 			// Target
 			Handles.color = new Color(color.r, color.g, color.b, color.a * constraints.positionWeight);
 			Handles.DrawLine(constraints.transform.position, constraints.position);
 			Handles.color = color;
 			
 			if (Application.isPlaying && modifiable && (constraints.positionWeight > 0 || constraints.rotationWeight > 0)) {
-				Handles.CubeCap(0, constraints.position, Quaternion.Euler(constraints.rotation), GetHandleSize(constraints.transform.position));
+				Inspector.CubeCap(0, constraints.position, Quaternion.Euler(constraints.rotation), GetHandleSize(constraints.transform.position));
 					
 				// Manipulating position and rotation
 				switch(Tools.current) {

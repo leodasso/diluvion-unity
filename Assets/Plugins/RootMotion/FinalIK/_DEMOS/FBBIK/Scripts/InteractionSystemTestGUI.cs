@@ -7,13 +7,12 @@ namespace RootMotion.Demos {
 	/// <summary>
 	/// Simple GUI for quickly testing out interactions.
 	/// </summary>
-	[RequireComponent(typeof(InteractionSystem))]
 	public class InteractionSystemTestGUI : MonoBehaviour {
 
 		[Tooltip("The object to interact to")]
-		[SerializeField] InteractionObject interactionObject;
+		public InteractionObject interactionObject;
 		[Tooltip("The effectors to interact with")]
-		[SerializeField] FullBodyBipedEffector[] effectors;
+        public FullBodyBipedEffector[] effectors;
 
 		private InteractionSystem interactionSystem;
 		

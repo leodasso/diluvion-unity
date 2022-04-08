@@ -133,7 +133,7 @@ namespace RootMotion.FinalIK {
 		/// Gets the head IK mapping.
 		/// </summary>
 		public IKMappingBone headMapping { get { return boneMappings[0]; }}
-		
+
 		/// <summary>
 		/// Sets chain weights for the specified chain.
 		/// </summary>
@@ -459,6 +459,9 @@ namespace RootMotion.FinalIK {
 
 		#endregion Main Interface
 
+		// Offset applied to the body effector by PullBody
+		public Vector3 pullBodyOffset { get; private set; }
+
 		/*
 		 * Sets the bend direction of a limb to the local axes specified by the LimbOrientation.
 		 * */
@@ -516,7 +519,8 @@ namespace RootMotion.FinalIK {
 			if (pullBodyVertical != 0f || pullBodyHorizontal != 0f) {
 				Vector3 offset = GetBodyOffset();
 
-				bodyEffector.positionOffset += V3Tools.ExtractVertical(offset, root.up, pullBodyVertical) + V3Tools.ExtractHorizontal(offset, root.up, pullBodyHorizontal);
+				pullBodyOffset = V3Tools.ExtractVertical(offset, root.up, pullBodyVertical) + V3Tools.ExtractHorizontal(offset, root.up, pullBodyHorizontal);
+				bodyEffector.positionOffset += pullBodyOffset;
 			}
 		}
 

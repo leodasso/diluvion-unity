@@ -77,15 +77,18 @@ LightmapSettings:
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
-    m_PVRFiltering: 0
-    m_PVRFilteringMode: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVRFilteringMode: 0
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
     m_PVRFilteringGaussRadiusAO: 2
-    m_PVRFilteringAtrousColorSigma: 1
-    m_PVRFilteringAtrousNormalSigma: 1
-    m_PVRFilteringAtrousPositionSigma: 1
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 0
 --- !u!196 &5
@@ -107,6 +110,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    debug:
+      m_Flags: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &1651027
 GameObject:
@@ -590,6 +595,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
@@ -605,6 +611,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -723,9 +730,11 @@ MonoBehaviour:
   multipliers: []
   interactionSpeedMlp: 1
   pivot: {fileID: 64256979}
+  rotationMode: 0
   twistAxis: {x: 1, y: 0, z: 0}
   twistWeight: 0.3
   swingWeight: 0
+  threeDOFWeight: 1
   rotateOnce: 1
 --- !u!1 &93272631
 GameObject:
@@ -863,9 +872,11 @@ MonoBehaviour:
   multipliers: []
   interactionSpeedMlp: 1
   pivot: {fileID: 1078117432}
+  rotationMode: 0
   twistAxis: {x: 0, y: 1, z: 0}
   twistWeight: 1
   swingWeight: 1
+  threeDOFWeight: 1
   rotateOnce: 1
 --- !u!1 &104592408
 GameObject:
@@ -1079,6 +1090,7 @@ SkinnedMeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
@@ -1095,6 +1107,7 @@ SkinnedMeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1276,6 +1289,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
@@ -1291,6 +1305,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1585,6 +1600,11 @@ MonoBehaviour:
     messages:
     - function: OnPickUp
       recipient: {fileID: 271790088}
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1 &200525070
 GameObject:
   m_ObjectHideFlags: 0
@@ -1745,9 +1765,11 @@ MonoBehaviour:
   multipliers: []
   interactionSpeedMlp: 1
   pivot: {fileID: 0}
+  rotationMode: 0
   twistAxis: {x: 0, y: 1, z: 0}
   twistWeight: 1
   swingWeight: 0
+  threeDOFWeight: 1
   rotateOnce: 1
 --- !u!1 &226124984
 GameObject:
@@ -1778,6 +1800,48 @@ Transform:
   m_Father: {fileID: 190408030}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &246829632
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 5bfa9baba3ddb4460990c4c924f97919, type: 2}
+  m_PrefabInternal: {fileID: 1808925865}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 246829633}
+  - component: {fileID: 246829634}
+  m_Layer: 9
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &246829633
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 5bfa9baba3ddb4460990c4c924f97919, type: 2}
+  m_PrefabInternal: {fileID: 1808925865}
+  m_GameObject: {fileID: 246829632}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.00037145615, y: 0.21583903, z: 0.10364925}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 427759014}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &246829634
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500000, guid: 5bfa9baba3ddb4460990c4c924f97919,
+    type: 2}
+  m_PrefabInternal: {fileID: 1808925865}
+  m_GameObject: {fileID: 246829632}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04, y: 0.1, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &258034314
 GameObject:
   m_ObjectHideFlags: 0
@@ -1951,6 +2015,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
@@ -1966,6 +2031,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2056,9 +2122,11 @@ MonoBehaviour:
   multipliers: []
   interactionSpeedMlp: 1
   pivot: {fileID: 0}
+  rotationMode: 0
   twistAxis: {x: 0, y: 1, z: 0}
   twistWeight: 1
   swingWeight: 0
+  threeDOFWeight: 1
   rotateOnce: 1
 --- !u!1 &279593241
 GameObject:
@@ -2109,9 +2177,11 @@ MonoBehaviour:
   multipliers: []
   interactionSpeedMlp: 1
   pivot: {fileID: 2095088965}
+  rotationMode: 0
   twistAxis: {x: 0, y: 1, z: 0}
   twistWeight: 1
   swingWeight: 1
+  threeDOFWeight: 1
   rotateOnce: 0
 --- !u!1 &280586403
 GameObject:
@@ -2190,6 +2260,11 @@ MonoBehaviour:
     pickUp: 0
     animations: []
     messages: []
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1 &287003256
 GameObject:
   m_ObjectHideFlags: 0
@@ -2569,6 +2644,11 @@ MonoBehaviour:
     messages:
     - function: OnPickUp
       recipient: {fileID: 427759013}
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1 &347630750
 GameObject:
   m_ObjectHideFlags: 0
@@ -2618,10 +2698,54 @@ MonoBehaviour:
   multipliers: []
   interactionSpeedMlp: 1
   pivot: {fileID: 0}
+  rotationMode: 0
   twistAxis: {x: 0, y: 1, z: 0}
   twistWeight: 1
   swingWeight: 0
+  threeDOFWeight: 1
   rotateOnce: 1
+--- !u!1 &359548371
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100004, guid: 5bfa9baba3ddb4460990c4c924f97919, type: 2}
+  m_PrefabInternal: {fileID: 1808925865}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 359548372}
+  - component: {fileID: 359548373}
+  m_Layer: 9
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &359548372
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: 5bfa9baba3ddb4460990c4c924f97919, type: 2}
+  m_PrefabInternal: {fileID: 1808925865}
+  m_GameObject: {fileID: 359548371}
+  m_LocalRotation: {x: -0.09664155, y: 0, z: 0, w: 0.99531925}
+  m_LocalPosition: {x: 0.00037193298, y: -0.013925493, z: 0.1829455}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 427759014}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &359548373
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500004, guid: 5bfa9baba3ddb4460990c4c924f97919,
+    type: 2}
+  m_PrefabInternal: {fileID: 1808925865}
+  m_GameObject: {fileID: 359548371}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04, y: 0.22, z: 0.08}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &360429097
 GameObject:
   m_ObjectHideFlags: 0
@@ -2936,6 +3060,11 @@ MonoBehaviour:
       layer: 0
       resetNormalizedTime: 0
     messages: []
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!95 &378159701
 Animator:
   serializedVersion: 3
@@ -2996,6 +3125,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
@@ -3011,6 +3141,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3127,11 +3258,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a98c3501ec8dc43c8a64321bd55c3f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fixTransforms: 1
   poseRoot: {fileID: 0}
   weight: 1
   localRotationWeight: 1
   localPositionWeight: 0
-  fixTransforms: 1
 --- !u!1 &390129524
 GameObject:
   m_ObjectHideFlags: 0
@@ -3362,14 +3493,119 @@ Transform:
   m_Father: {fileID: 803511897}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &427759013 stripped
+--- !u!1 &427759013
 GameObject:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 100010, guid: 5bfa9baba3ddb4460990c4c924f97919, type: 2}
   m_PrefabInternal: {fileID: 1808925865}
---- !u!4 &427759014 stripped
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 427759014}
+  - component: {fileID: 427759018}
+  - component: {fileID: 427759017}
+  - component: {fileID: 427759016}
+  - component: {fileID: 427759015}
+  - component: {fileID: 427759020}
+  m_Layer: 9
+  m_Name: M4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &427759014
 Transform:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400010, guid: 5bfa9baba3ddb4460990c4c924f97919, type: 2}
   m_PrefabInternal: {fileID: 1808925865}
+  m_GameObject: {fileID: 427759013}
+  m_LocalRotation: {x: 0.5000001, y: 0.5, z: 0.5, w: 0.49999994}
+  m_LocalPosition: {x: 5.1185303, y: 0.057934523, z: -0.8678142}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2069711221}
+  - {fileID: 1625849425}
+  - {fileID: 359548372}
+  - {fileID: 708215212}
+  - {fileID: 246829633}
+  - {fileID: 337860213}
+  - {fileID: 569350114}
+  - {fileID: 1148648900}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &427759015
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 5bfa9baba3ddb4460990c4c924f97919,
+    type: 2}
+  m_PrefabInternal: {fileID: 1808925865}
+  m_GameObject: {fileID: 427759013}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!65 &427759016
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500010, guid: 5bfa9baba3ddb4460990c4c924f97919,
+    type: 2}
+  m_PrefabInternal: {fileID: 1808925865}
+  m_GameObject: {fileID: 427759013}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05, y: 0.15, z: 1.0731211}
+  m_Center: {x: 0, y: 0.1, z: 0.2695085}
+--- !u!23 &427759017
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 5bfa9baba3ddb4460990c4c924f97919,
+    type: 2}
+  m_PrefabInternal: {fileID: 1808925865}
+  m_GameObject: {fileID: 427759013}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 77e89506ce5a642a19e38f3580d9be66, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &427759018
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 5bfa9baba3ddb4460990c4c924f97919,
+    type: 2}
+  m_PrefabInternal: {fileID: 1808925865}
+  m_GameObject: {fileID: 427759013}
+  m_Mesh: {fileID: 4300000, guid: 7350c439920074a58a63ca710c013777, type: 3}
 --- !u!114 &427759020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3716,9 +3952,11 @@ MonoBehaviour:
   multipliers: []
   interactionSpeedMlp: 1
   pivot: {fileID: 0}
+  rotationMode: 0
   twistAxis: {x: 0, y: 1, z: 0}
   twistWeight: 1
   swingWeight: 0
+  threeDOFWeight: 1
   rotateOnce: 1
 --- !u!1 &515612645
 GameObject:
@@ -3854,9 +4092,11 @@ MonoBehaviour:
   multipliers: []
   interactionSpeedMlp: 1
   pivot: {fileID: 0}
+  rotationMode: 0
   twistAxis: {x: 0, y: 1, z: 0}
   twistWeight: 1
   swingWeight: 0
+  threeDOFWeight: 1
   rotateOnce: 1
 --- !u!1 &535244663
 GameObject:
@@ -4108,9 +4348,11 @@ MonoBehaviour:
   multipliers: []
   interactionSpeedMlp: 1
   pivot: {fileID: 1078117432}
+  rotationMode: 0
   twistAxis: {x: 0, y: 1, z: 0}
   twistWeight: 1
   swingWeight: 1
+  threeDOFWeight: 1
   rotateOnce: 1
 --- !u!1 &598326503
 GameObject:
@@ -4299,6 +4541,11 @@ MonoBehaviour:
       layer: 0
       resetNormalizedTime: 0
     messages: []
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1 &604231611
 GameObject:
   m_ObjectHideFlags: 0
@@ -4516,7 +4763,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a70e525c82ce9413fa4d940ad7fcf1db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeStep: 0
   fixTransforms: 0
   references:
     root: {fileID: 646273073}
@@ -4539,6 +4785,7 @@ MonoBehaviour:
     - {fileID: 1741494567}
     eyes: []
   solver:
+    executedInEditor: 0
     IKPosition: {x: 0, y: 0, z: 0}
     IKPositionWeight: 1
     root: {fileID: 646273073}
@@ -4958,6 +5205,7 @@ MonoBehaviour:
       bone3: {fileID: 2044480750}
       maintainRotationWeight: 1
       weight: 1
+    FABRIKPass: 1
     rootNode: {fileID: 186703743}
     spineStiffness: 1
     pullBodyVertical: 0.6
@@ -4992,9 +5240,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 776adaaacdc5c4e8ab0395120a6e972b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeStep: 0
   fixTransforms: 1
   solver:
+    executedInEditor: 0
     IKPosition: {x: 1.5382406, y: 1.3507421, z: 2.7443202}
     IKPositionWeight: 0
     root: {fileID: 646273073}
@@ -5008,7 +5256,9 @@ MonoBehaviour:
       defaultLocalRotation: {x: -7.1054274e-15, y: -2.3700041e-14, z: 1.4210855e-14,
         w: 1}
       length: 0
+      sqrMag: 0
       axis: {x: 0, y: 1, z: 0.00000011920929}
+      baseForwardOffsetEuler: {x: 0, y: 0, z: 0}
     - transform: {fileID: 1741494567}
       weight: 0
       solverPosition: {x: 0, y: 0, z: 0}
@@ -5016,7 +5266,9 @@ MonoBehaviour:
       defaultLocalPosition: {x: -0.20237976, y: 0.0000000011920929, z: -9.521272e-15}
       defaultLocalRotation: {x: 0, y: -2.3700043e-14, z: -0, w: 1}
       length: 0
+      sqrMag: 0
       axis: {x: 0, y: 1, z: 0.00000011920929}
+      baseForwardOffsetEuler: {x: 0, y: 0, z: 0}
     head:
       transform: {fileID: 1390845448}
       weight: 1
@@ -5026,7 +5278,9 @@ MonoBehaviour:
       defaultLocalRotation: {x: -1.4210837e-14, y: -7.121494e-15, z: 1.4210855e-14,
         w: 1}
       length: 0
+      sqrMag: 0
       axis: {x: 0, y: 1.0000001, z: 0.00000023841858}
+      baseForwardOffsetEuler: {x: 0, y: 0, z: 0}
     eyes: []
     bodyWeight: 0.15
     headWeight: 0.7
@@ -5053,6 +5307,7 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
+    spineTargetOffset: {x: 0, y: 0, z: 0}
 --- !u!95 &646273078
 Animator:
   serializedVersion: 3
@@ -5156,6 +5411,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
@@ -5171,6 +5427,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -5297,6 +5554,48 @@ Transform:
   m_Father: {fileID: 2044480750}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &708215211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: 5bfa9baba3ddb4460990c4c924f97919, type: 2}
+  m_PrefabInternal: {fileID: 1808925865}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 708215212}
+  - component: {fileID: 708215213}
+  m_Layer: 9
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &708215212
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: 5bfa9baba3ddb4460990c4c924f97919, type: 2}
+  m_PrefabInternal: {fileID: 1808925865}
+  m_GameObject: {fileID: 708215211}
+  m_LocalRotation: {x: 0.27605757, y: 0, z: 0, w: 0.96114117}
+  m_LocalPosition: {x: 0.00037145615, y: 0.024455428, z: 0.011724309}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 427759014}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &708215213
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500002, guid: 5bfa9baba3ddb4460990c4c924f97919,
+    type: 2}
+  m_PrefabInternal: {fileID: 1808925865}
+  m_GameObject: {fileID: 708215211}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04, y: 0.19, z: 0.05}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &725505235
 GameObject:
   m_ObjectHideFlags: 0
@@ -5830,6 +6129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8f8cb876d2c742a9a5d9bfa03990ada, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gravityTarget: {fileID: 0}
   gravityMultiplier: 2
   airborneThreshold: 0.6
   slopeStartAngle: 50
@@ -5852,10 +6152,13 @@ MonoBehaviour:
   lookInCameraDirection: 0
   turnSpeed: 5
   stationaryTurnSpeedMlp: 1
+  smoothJump: 1
   airSpeed: 6
   airControl: 3
   jumpPower: 6.5
   jumpRepeatDelayTime: 0
+  doubleJumpEnabled: 0
+  doubleJumpPowerMlp: 1
   wallRunLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -6213,11 +6516,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a98c3501ec8dc43c8a64321bd55c3f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fixTransforms: 1
   poseRoot: {fileID: 0}
   weight: 1
   localRotationWeight: 1
   localPositionWeight: 0
-  fixTransforms: 1
 --- !u!1 &984550460
 GameObject:
   m_ObjectHideFlags: 0
@@ -6287,6 +6590,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
@@ -6302,6 +6606,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -6510,9 +6815,11 @@ MonoBehaviour:
   multipliers: []
   interactionSpeedMlp: 1
   pivot: {fileID: 64256979}
+  rotationMode: 0
   twistAxis: {x: 1, y: 0, z: 0}
   twistWeight: 0.3
   swingWeight: 0
+  threeDOFWeight: 1
   rotateOnce: 1
 --- !u!1 &1078117431
 GameObject:
@@ -6704,9 +7011,11 @@ MonoBehaviour:
   multipliers: []
   interactionSpeedMlp: 1
   pivot: {fileID: 0}
+  rotationMode: 0
   twistAxis: {x: 0, y: 1, z: 0}
   twistWeight: 1
   swingWeight: 0
+  threeDOFWeight: 1
   rotateOnce: 1
 --- !u!1 &1131201671
 GameObject:
@@ -6753,9 +7062,11 @@ MonoBehaviour:
   multipliers: []
   interactionSpeedMlp: 1
   pivot: {fileID: 1189079057}
+  rotationMode: 0
   twistAxis: {x: 0, y: 1, z: 0}
   twistWeight: 1
   swingWeight: 0
+  threeDOFWeight: 1
   rotateOnce: 1
 --- !u!1 &1131424071
 GameObject:
@@ -6986,6 +7297,11 @@ MonoBehaviour:
       layer: 0
       resetNormalizedTime: 0
     messages: []
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!95 &1132830443
 Animator:
   serializedVersion: 3
@@ -7242,9 +7558,11 @@ MonoBehaviour:
   multipliers: []
   interactionSpeedMlp: 1
   pivot: {fileID: 0}
+  rotationMode: 0
   twistAxis: {x: 0, y: 1, z: 0}
   twistWeight: 1
   swingWeight: 0
+  threeDOFWeight: 1
   rotateOnce: 1
 --- !u!1 &1185343154
 GameObject:
@@ -7287,6 +7605,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
@@ -7302,6 +7621,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -7440,9 +7760,11 @@ MonoBehaviour:
   multipliers: []
   interactionSpeedMlp: 1
   pivot: {fileID: 0}
+  rotationMode: 0
   twistAxis: {x: 0, y: 1, z: 0}
   twistWeight: 1
   swingWeight: 0
+  threeDOFWeight: 1
   rotateOnce: 1
 --- !u!1 &1200454425
 GameObject:
@@ -7484,6 +7806,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
@@ -7499,6 +7822,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -7515,6 +7839,35 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1200454425}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1204103070
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100006, guid: 5bfa9baba3ddb4460990c4c924f97919, type: 2}
+  m_PrefabInternal: {fileID: 1808925865}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1625849425}
+  - component: {fileID: 1204103071}
+  m_Layer: 9
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1204103071
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500006, guid: 5bfa9baba3ddb4460990c4c924f97919,
+    type: 2}
+  m_PrefabInternal: {fileID: 1808925865}
+  m_GameObject: {fileID: 1204103070}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.04, y: 0.07, z: 0.08}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1206772982
 GameObject:
   m_ObjectHideFlags: 0
@@ -7699,6 +8052,7 @@ SkinnedMeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
@@ -7715,6 +8069,7 @@ SkinnedMeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -8096,6 +8451,11 @@ MonoBehaviour:
     pickUp: 0
     animations: []
     messages: []
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1 &1351861323
 GameObject:
   m_ObjectHideFlags: 0
@@ -8194,6 +8554,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
@@ -8209,6 +8570,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -8713,6 +9075,11 @@ MonoBehaviour:
     pickUp: 0
     animations: []
     messages: []
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1 &1428968485
 GameObject:
   m_ObjectHideFlags: 0
@@ -9027,6 +9394,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
@@ -9042,6 +9410,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -9160,6 +9529,7 @@ MonoBehaviour:
     heightOffset: 0
     footSpeed: 2.5
     footRadius: 0.15
+    footCenterOffset: 0
     prediction: 0.05
     footRotationWeight: 1
     footRotationSpeed: 7
@@ -9170,6 +9540,7 @@ MonoBehaviour:
     lowerPelvisWeight: 1
     liftPelvisWeight: 0
     rootSphereCastRadius: 0.1
+    overstepFallsDown: 1
     quality: 2
   ik: {fileID: 646273074}
   spineBend: 2
@@ -9396,6 +9767,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
@@ -9411,6 +9783,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -9699,9 +10072,11 @@ MonoBehaviour:
   multipliers: []
   interactionSpeedMlp: 1
   pivot: {fileID: 0}
+  rotationMode: 0
   twistAxis: {x: 0, y: 1, z: 0}
   twistWeight: 1
   swingWeight: 0
+  threeDOFWeight: 1
   rotateOnce: 1
 --- !u!1 &1599341041
 GameObject:
@@ -9772,6 +10147,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
@@ -9787,6 +10163,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -9889,10 +10266,19 @@ Transform:
   m_Father: {fileID: 404115076}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1625849425 stripped
+--- !u!4 &1625849425
 Transform:
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 400006, guid: 5bfa9baba3ddb4460990c4c924f97919, type: 2}
   m_PrefabInternal: {fileID: 1808925865}
+  m_GameObject: {fileID: 1204103070}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0009841919, y: 0.19661719, z: 0.54365766}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 427759014}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1630359563
 GameObject:
   m_ObjectHideFlags: 0
@@ -10226,11 +10612,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a98c3501ec8dc43c8a64321bd55c3f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fixTransforms: 1
   poseRoot: {fileID: 0}
   weight: 1
   localRotationWeight: 1
   localPositionWeight: 0
-  fixTransforms: 1
 --- !u!1 &1708228020
 GameObject:
   m_ObjectHideFlags: 0
@@ -10534,6 +10920,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
@@ -10549,6 +10936,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -10605,6 +10993,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
@@ -10620,6 +11009,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -10823,6 +11213,7 @@ Prefab:
     m_RemovedComponents:
     - {fileID: 11100000, guid: 5bfa9baba3ddb4460990c4c924f97919, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 5bfa9baba3ddb4460990c4c924f97919, type: 2}
+  m_RootGameObject: {fileID: 427759013}
   m_IsPrefabParent: 0
 --- !u!1 &1814914894
 GameObject:
@@ -10897,9 +11288,11 @@ MonoBehaviour:
   multipliers: []
   interactionSpeedMlp: 1
   pivot: {fileID: 1189079057}
+  rotationMode: 0
   twistAxis: {x: 0, y: 1, z: 0}
   twistWeight: 1
   swingWeight: 0
+  threeDOFWeight: 1
   rotateOnce: 1
 --- !u!1 &1854169769
 GameObject:
@@ -11035,9 +11428,11 @@ MonoBehaviour:
   multipliers: []
   interactionSpeedMlp: 1
   pivot: {fileID: 1686281093}
+  rotationMode: 0
   twistAxis: {x: 0, y: 1, z: 0}
   twistWeight: 1
   swingWeight: 1
+  threeDOFWeight: 1
   rotateOnce: 0
 --- !u!1 &1860001900
 GameObject:
@@ -11273,9 +11668,11 @@ MonoBehaviour:
   multipliers: []
   interactionSpeedMlp: 1
   pivot: {fileID: 0}
+  rotationMode: 0
   twistAxis: {x: 0, y: 1, z: 0}
   twistWeight: 1
   swingWeight: 0
+  threeDOFWeight: 1
   rotateOnce: 1
 --- !u!1 &1907574736
 GameObject:
@@ -11695,7 +12092,6 @@ GameObject:
   - component: {fileID: 2025734582}
   - component: {fileID: 2025734587}
   - component: {fileID: 2025734586}
-  - component: {fileID: 2025734585}
   - component: {fileID: 2025734584}
   - component: {fileID: 2025734583}
   m_Layer: 9
@@ -11731,35 +12127,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 598326504}
+  rotationSpace: {fileID: 0}
   updateMode: 2
   lockCursor: 0
   smoothFollow: 1
+  offset: {x: 0.3, y: 0.35, z: 0.5}
   followSpeed: 15
+  rotationSensitivity: 3.5
+  yMinLimit: -80
+  yMaxLimit: 80
+  rotateAlways: 1
+  rotateOnLeftButton: 0
+  rotateOnRightButton: 0
+  rotateOnMiddleButton: 0
   distance: 3
   minDistance: 1.5
   maxDistance: 10
   zoomSpeed: 10
   zoomSensitivity: 1
-  rotationSensitivity: 3.5
-  yMinLimit: -80
-  yMaxLimit: 80
-  offset: {x: 0.3, y: 0.35, z: 0.5}
-  rotateAlways: 1
-  rotateOnLeftButton: 0
-  rotateOnRightButton: 0
-  rotateOnMiddleButton: 0
+  blockingLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  blockingRadius: 1
+  blockingSmoothTime: 0.1
+  blockingOriginOffset: 0
+  blockedOffset: 0.5
 --- !u!81 &2025734584
 AudioListener:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 8100000, guid: 1444211a2a1574863ad7774996af09c2,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2025734581}
-  m_Enabled: 1
---- !u!92 &2025734585
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 9200000, guid: 1444211a2a1574863ad7774996af09c2,
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2025734581}
@@ -11804,11 +12200,11 @@ Camera:
   m_TargetEye: 3
   m_HDR: 0
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
-  m_StereoMirrorMode: 0
 --- !u!1 &2028090907
 GameObject:
   m_ObjectHideFlags: 0
@@ -12050,6 +12446,11 @@ MonoBehaviour:
     messages:
     - function: OnPickUp
       recipient: {fileID: 271790088}
+    unityEvent:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
 --- !u!1 &2040155536
 GameObject:
   m_ObjectHideFlags: 0
@@ -12148,11 +12549,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a98c3501ec8dc43c8a64321bd55c3f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fixTransforms: 1
   poseRoot: {fileID: 0}
   weight: 1
   localRotationWeight: 1
   localPositionWeight: 0
-  fixTransforms: 1
 --- !u!1 &2052881016
 GameObject:
   m_ObjectHideFlags: 0
@@ -12203,6 +12604,48 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!1 &2069711220
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100008, guid: 5bfa9baba3ddb4460990c4c924f97919, type: 2}
+  m_PrefabInternal: {fileID: 1808925865}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2069711221}
+  - component: {fileID: 2069711222}
+  m_Layer: 9
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2069711221
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400008, guid: 5bfa9baba3ddb4460990c4c924f97919, type: 2}
+  m_PrefabInternal: {fileID: 1808925865}
+  m_GameObject: {fileID: 2069711220}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 427759014}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2069711222
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6500008, guid: 5bfa9baba3ddb4460990c4c924f97919,
+    type: 2}
+  m_PrefabInternal: {fileID: 1808925865}
+  m_GameObject: {fileID: 2069711220}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05, y: 0.15, z: 1.0731211}
+  m_Center: {x: 0, y: 0.1, z: 0.2695085}
 --- !u!1 &2071396299
 GameObject:
   m_ObjectHideFlags: 0
@@ -12286,6 +12729,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
@@ -12301,6 +12745,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5

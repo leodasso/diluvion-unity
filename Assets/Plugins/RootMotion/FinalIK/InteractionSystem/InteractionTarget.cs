@@ -11,8 +11,29 @@ namespace RootMotion.FinalIK {
 	[AddComponentMenu("Scripts/RootMotion.FinalIK/Interaction System/Interaction Target")]
 	public class InteractionTarget : MonoBehaviour {
 
-		// Open a video tutorial video
-		[ContextMenu("TUTORIAL VIDEO (PART 1: BASICS)")]
+        [System.Serializable]
+        public enum RotationMode
+        {
+            TwoDOF = 0,
+            ThreeDOF = 1
+        }
+
+        // Open the User Manual URL
+        [ContextMenu("User Manual")]
+        void OpenUserManual()
+        {
+            Application.OpenURL("http://www.root-motion.com/finalikdox/html/page10.html");
+        }
+
+        // Open the Script Reference URL
+        [ContextMenu("Scrpt Reference")]
+        void OpenScriptReference()
+        {
+            Application.OpenURL("http://www.root-motion.com/finalikdox/html/class_root_motion_1_1_final_i_k_1_1_interaction_target.html");
+        }
+
+        // Open a video tutorial video
+        [ContextMenu("TUTORIAL VIDEO (PART 1: BASICS)")]
 		void OpenTutorial1() {
 			Application.OpenURL("https://www.youtube.com/watch?v=r5jiZnsDH3M");
 		}
@@ -84,6 +105,11 @@ namespace RootMotion.FinalIK {
 		/// </summary>
 		[Tooltip("The pivot to twist/swing this interaction target about. For symmetric objects that can be interacted with from a certain angular range.")]
 		public Transform pivot;
+        /// <summary>
+        /// 2 or 3 degrees of freedom to match this InteractionTarget's rotation to the effector bone rotation.
+        /// </summary>
+        [Tooltip("2 or 3 degrees of freedom to match this InteractionTarget's rotation to the effector bone rotation.")]
+        public RotationMode rotationMode;
 		/// <summary>
 		/// The axis of twisting the interaction target.
 		/// </summary>
@@ -99,13 +125,18 @@ namespace RootMotion.FinalIK {
 		/// </summary>
 		[Tooltip("The weight of swinging the interaction target towards the effector bone in the start of the interaction. Swing is defined as a 3-DOF rotation around any axis, while twist is only around the twist axis.")]
 		public float swingWeight;
+        /// <summary>
+        /// The weight of rotating this InteractionTarget to the effector bone in the start of the interaction (and during if 'Rotate Once' is disabled
+        /// </summary>
+        [Tooltip("The weight of rotating this InteractionTarget to the effector bone in the start of the interaction (and during if 'Rotate Once' is disabled")]
+        [Range(0f, 1f)] public float threeDOFWeight = 1f;
 		/// <summary>
 		/// If true, will twist/swing around the pivot only once at the start of the interaction. If false, will continue rotating throuout the whole interaction.
 		/// </summary>
 		[Tooltip("If true, will twist/swing around the pivot only once at the start of the interaction. If false, will continue rotating throuout the whole interaction.")]
 		public bool rotateOnce = true;
 
-		private Quaternion defaultLocalRotation;
+        private Quaternion defaultLocalRotation;
 		private Transform lastPivot;
 
 		// Should a curve of the Type be ignored for this effector?
@@ -114,55 +145,62 @@ namespace RootMotion.FinalIK {
 			return 1f;
 		}
 
-		// Reset the twist and swing rotation of the target
-		public void ResetRotation() {
+        // Reset the twist and swing rotation of the target
+        public void ResetRotation() {
 			if (pivot != null) pivot.localRotation = defaultLocalRotation;
 		}
 
-		// Rotate this target towards a position
-		public void RotateTo(Vector3 position) {
-			if (pivot == null) return;
+        // Rotate this target towards a position
+        public void RotateTo(Transform bone) {
+            if (pivot == null) return;
 
-			if (pivot != lastPivot) {
-				defaultLocalRotation = pivot.localRotation;
-				lastPivot = pivot;
-			}
+            if (pivot != lastPivot) {
+                defaultLocalRotation = pivot.localRotation;
+                lastPivot = pivot;
+            }
 
-			// Rotate to the default local rotation
-			pivot.localRotation = defaultLocalRotation;
+            // Rotate to the default local rotation
+            pivot.localRotation = defaultLocalRotation;
 
-			// Twisting around the twist axis
-			if (twistWeight > 0f) {
-				Vector3 targetTangent = transform.position - pivot.position;
-				Vector3 n = pivot.rotation * twistAxis;
-				Vector3 normal = n;
-				Vector3.OrthoNormalize(ref normal, ref targetTangent);
+            switch (rotationMode)
+            {
+                case RotationMode.TwoDOF:
+                    // Twisting around the twist axis
+                    if (twistWeight > 0f)
+                    {
+                        Vector3 targetTangent = transform.position - pivot.position;
+                        Vector3 n = pivot.rotation * twistAxis;
+                        Vector3 normal = n;
+                        Vector3.OrthoNormalize(ref normal, ref targetTangent);
 
-				normal = n;
-				Vector3 direction = position - pivot.position;
-				Vector3.OrthoNormalize(ref normal, ref direction);
+                        normal = n;
+                        Vector3 direction = bone.position - pivot.position;
+                        Vector3.OrthoNormalize(ref normal, ref direction);
 
-				Quaternion q = QuaTools.FromToAroundAxis(targetTangent, direction, n);
-				pivot.rotation = Quaternion.Lerp(Quaternion.identity, q, twistWeight) * pivot.rotation;
-			}
+                        Quaternion q = QuaTools.FromToAroundAxis(targetTangent, direction, n);
+                        pivot.rotation = Quaternion.Lerp(Quaternion.identity, q, twistWeight) * pivot.rotation;
+                    }
 
-			// Swinging freely
-			if (swingWeight > 0f) {
-				Quaternion s = Quaternion.FromToRotation(transform.position - pivot.position, position - pivot.position);
-				pivot.rotation = Quaternion.Lerp(Quaternion.identity, s, swingWeight) * pivot.rotation;
-			}
-		}
-
-		// Open the User Manual URL
-		[ContextMenu("User Manual")]
-		private void OpenUserManual() {
-			Application.OpenURL("http://www.root-motion.com/finalikdox/html/page10.html");
-		}
-		
-		// Open the Script Reference URL
-		[ContextMenu("Scrpt Reference")]
-		private void OpenScriptReference() {
-			Application.OpenURL("http://www.root-motion.com/finalikdox/html/class_root_motion_1_1_final_i_k_1_1_interaction_target.html");
-		}
-	}
+                    // Swinging freely
+                    if (swingWeight > 0f)
+                    {
+                        Quaternion s = Quaternion.FromToRotation(transform.position - pivot.position, bone.position - pivot.position);
+                        pivot.rotation = Quaternion.Lerp(Quaternion.identity, s, swingWeight) * pivot.rotation;
+                    }
+                    break;
+                case RotationMode.ThreeDOF:
+                    // Free rotation around all axes
+                    if (threeDOFWeight <= 0f) break;
+                    Quaternion fromTo = QuaTools.FromToRotation(transform.rotation, bone.rotation);
+                    if (threeDOFWeight >= 1f)
+                    {
+                        pivot.rotation = fromTo * pivot.rotation;
+                    } else
+                    {
+                        pivot.rotation = Quaternion.Slerp(Quaternion.identity, fromTo, threeDOFWeight) * pivot.rotation;
+                    }
+                    break;
+            }
+        }
+    }
 }

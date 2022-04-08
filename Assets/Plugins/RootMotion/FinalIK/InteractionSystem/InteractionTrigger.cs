@@ -13,9 +13,23 @@ namespace RootMotion.FinalIK {
 	[HelpURL("https://www.youtube.com/watch?v=-TDZpNjt2mk&index=15&list=PLVxSIA1OaTOu8Nos3CalXbJ2DrKnntMv6")]
 	[AddComponentMenu("Scripts/RootMotion.FinalIK/Interaction System/Interaction Trigger")]
 	public class InteractionTrigger: MonoBehaviour {
-	
-		// Open a video tutorial video
-		[ContextMenu("TUTORIAL VIDEO")]
+
+        // Open the User Manual URL
+        [ContextMenu("User Manual")]
+        void OpenUserManual()
+        {
+            Application.OpenURL("http://www.root-motion.com/finalikdox/html/page10.html");
+        }
+
+        // Open the Script Reference URL
+        [ContextMenu("Scrpt Reference")]
+        void OpenScriptReference()
+        {
+            Application.OpenURL("http://www.root-motion.com/finalikdox/html/class_root_motion_1_1_final_i_k_1_1_interaction_trigger.html");
+        }
+
+        // Open a video tutorial video
+        [ContextMenu("TUTORIAL VIDEO")]
 		void OpenTutorial4() {
 			Application.OpenURL("https://www.youtube.com/watch?v=-TDZpNjt2mk&index=15&list=PLVxSIA1OaTOu8Nos3CalXbJ2DrKnntMv6");
 		}
@@ -149,7 +163,7 @@ namespace RootMotion.FinalIK {
 			/// <summary>
 			/// What the camera should be looking at to trigger the interaction?
 			/// </summary>
-			[Tooltip("What the camera should be looking at to trigger the interaction?")]
+			[Tooltip("What the camera should be looking at to trigger the interaction? If null, this camera position will not be used.")]
 			public Collider lookAtTarget;
 			/// <summary>
 			/// The direction from the lookAtTarget towards the camera (in lookAtTarget's space).
@@ -213,8 +227,8 @@ namespace RootMotion.FinalIK {
 		[System.Serializable]
 		public class Range {
 		
-			[HideInInspector][SerializeField] public string name; // Name is composed automatically by InteractionTriggerInspector.cs. Editor only.
-			[HideInInspector][SerializeField] public bool show = true; // Show this range in the Scene view? Editor only.
+			[HideInInspector] public string name; // Name is composed automatically by InteractionTriggerInspector.cs. Editor only.
+			[HideInInspector] public bool show = true; // Show this range in the Scene view? Editor only.
 			
 			/// <summary>
 			/// Defines the interaction object and effectors that will be triggered when calling InteractionSystem.TriggerInteraction().
@@ -265,9 +279,6 @@ namespace RootMotion.FinalIK {
 			}
 		}
 
-		// Just to see the enabled box in the Editor
-		void Start() {}
-		
 		/// <summary>
 		/// The valid ranges of the character's and/or it's camera's position for triggering interaction when the character is in contact with the collider of this trigger.
 		/// </summary>

@@ -16,16 +16,20 @@ namespace RootMotion.Demos {
 		[Range(0f, 1f)] public float aimWeight = 1f; // The weight of aiming the gun towards camera forward
 		[Range(0f, 1f)] public float sightWeight = 1f; // the weight of aiming down the sight (multiplied by aimWeight)
 		[Range(0f, 180f)] public float maxAngle = 80f; // The maximum angular offset of the aiming direction from the character forward. Character will be rotated to comply.
+		public Vector3 aimOffset; // Can be used to adjust the aiming angle
 
-		[SerializeField] bool animatePhysics; // Is Animate Physiscs turned on for the character?
-		[SerializeField] Transform gun; // The gun that the character is holding
-		[SerializeField] Transform gunTarget; // The copy of the gun that has been parented to the camera
-		[SerializeField] FullBodyBipedIK ik; // Reference to the FBBIK component
-		[SerializeField] AimIK gunAim; // Reference to the AimIK component
-		[SerializeField] CameraControllerFPS cam; // Reference to the FPS camera
+        public bool animatePhysics; // Is Animate Physiscs turned on for the character?
+        public Transform gun; // The gun that the character is holding
+        public Transform gunTarget; // The copy of the gun that has been parented to the camera
+        public FullBodyBipedIK ik; // Reference to the FBBIK component
+        public AimIK gunAim; // Reference to the AimIK component
+        public AimIK headAim; // AimIK solver used for look-at when aimWeight < 1
+        public CameraControllerFPS cam; // Reference to the FPS camera
+        public Recoil recoil; // The recoil component (optional)
+        [Range(0f, 1f)] public float cameraRecoilWeight = 0.5f; // How much of the recoil motion is added to the camera?
 
-		private Vector3 gunTargetDefaultLocalPosition;
-		private Quaternion gunTargetDefaultLocalRotation;
+        private Vector3 gunTargetDefaultLocalPosition;
+		private Vector3 gunTargetDefaultLocalRotation;
 		private Vector3 camDefaultLocalPosition;
 		private Vector3 camRelativeToGunTarget;
 		private bool updateFrame;
@@ -33,20 +37,24 @@ namespace RootMotion.Demos {
 		void Start() {
 			// Remember some default local positions
 			gunTargetDefaultLocalPosition = gunTarget.localPosition;
-			gunTargetDefaultLocalRotation = gunTarget.localRotation;
+			gunTargetDefaultLocalRotation = gunTarget.localEulerAngles;
 			camDefaultLocalPosition = cam.transform.localPosition;
 
 			// Disable the camera and IK components so we can handle their execution order
 			cam.enabled = false;
 			gunAim.enabled = false;
+            if (headAim != null) headAim.enabled = false;
 			ik.enabled = false;
+
+			if (recoil != null && ik.solver.iterations == 0) Debug.LogWarning("FPSAiming with Recoil needs FBBIK solver iteration count to be at least 1 to maintain accuracy.");
 		}
 
 		void FixedUpdate() {
 			// Making sure this works with Animate Physics
 			updateFrame = true;
 		}
-		
+
+
 		void LateUpdate() {
 			// Making sure this works with Animate Physics
 			if (!animatePhysics) updateFrame = true;
@@ -65,34 +73,38 @@ namespace RootMotion.Demos {
 			// Rotating the root of the character if it is past maxAngle from the camera forward
 			RotateCharacter();
 
-			// Set FBBIK positionWeight for the hands
-			ik.solver.leftHandEffector.positionWeight = aimWeight > 0 && sightWeight > 0? aimWeight * sightWeight: 0f;
-			ik.solver.rightHandEffector.positionWeight = ik.solver.leftHandEffector.positionWeight;
-			
 			Aiming();
+
 			LookDownTheSight();
 		}
 
-		private void Aiming() {
-			if (aimWeight <= 0f) return;
-			
-			// Remember the rotation of the camera because we need to reset it later so the IK would not interfere with the rotating of the camera
-			Quaternion camRotation = cam.transform.rotation;
+        private void Aiming()
+        {
+            if (headAim == null && aimWeight <= 0f) return;
 
-			// Aim the gun towards camera forward
-			gunAim.solver.IKPosition = cam.transform.position + cam.transform.forward * 10f;
-			gunAim.solver.IKPositionWeight = aimWeight;
-			gunAim.solver.Update();
-			cam.transform.rotation = camRotation;
-		}
+            // Remember the rotation of the camera because we need to reset it later so the IK would not interfere with the rotating of the camera
+            Quaternion camRotation = cam.transform.rotation;
 
-		private void LookDownTheSight() {
+            // Aim head towards camera forward
+            headAim.solver.IKPosition = cam.transform.position + cam.transform.forward * 10f;
+            headAim.solver.IKPositionWeight = 1f - aimWeight;
+            headAim.solver.Update();
+
+            // Aim the gun towards camera forward
+            gunAim.solver.IKPosition = cam.transform.position + cam.transform.forward * 10f + cam.transform.rotation * aimOffset;
+            gunAim.solver.IKPositionWeight = aimWeight;
+            gunAim.solver.Update();
+            
+            cam.transform.rotation = camRotation;
+        }
+
+        private void LookDownTheSight() {
 			float sW = aimWeight * sightWeight;
-			if (sW <= 0f) return;
+			//if (sW <= 0f && recoil == null) return;
 
 			// Interpolate the gunTarget from the current animated position of the gun to the position fixed to the camera
 			gunTarget.position = Vector3.Lerp(gun.position, gunTarget.parent.TransformPoint(gunTargetDefaultLocalPosition), sW);
-			gunTarget.rotation = Quaternion.Lerp(gun.rotation, gunTarget.parent.rotation * gunTargetDefaultLocalRotation, sW);
+			gunTarget.rotation = Quaternion.Lerp(gun.rotation, gunTarget.parent.rotation * Quaternion.Euler(gunTargetDefaultLocalRotation), sW);
 
 			// Get the current positions of the hands relative to the gun
 			Vector3 leftHandRelativePosition = gun.InverseTransformPoint(ik.solver.leftHandEffector.bone.position);
@@ -102,22 +114,31 @@ namespace RootMotion.Demos {
 			Quaternion leftHandRelativeRotation = Quaternion.Inverse(gun.rotation) * ik.solver.leftHandEffector.bone.rotation;
 			Quaternion rightHandRelativeRotation = Quaternion.Inverse(gun.rotation) * ik.solver.rightHandEffector.bone.rotation;
 
-			// Position the hands to the gun target the same way they are positioned on the gun
-			ik.solver.leftHandEffector.position = gunTarget.TransformPoint(leftHandRelativePosition);
-			ik.solver.rightHandEffector.position = gunTarget.TransformPoint(rightHandRelativePosition);
+			//float handWeight = aimWeight > 0 && sightWeight > 0? aimWeight * sightWeight: 0f;
+			float handWeight = 1f;//aimWeight * sightWeight;
+
+			ik.solver.leftHandEffector.positionOffset += (gunTarget.TransformPoint(leftHandRelativePosition) - (ik.solver.leftHandEffector.bone.position + ik.solver.leftHandEffector.positionOffset)) * handWeight;
+			ik.solver.rightHandEffector.positionOffset += (gunTarget.TransformPoint(rightHandRelativePosition) - (ik.solver.rightHandEffector.bone.position + ik.solver.rightHandEffector.positionOffset)) * handWeight;
 
 			// Make sure the head does not rotate
 			ik.solver.headMapping.maintainRotationWeight = 1f;
+
+			if (recoil != null) recoil.SetHandRotations(gunTarget.rotation * leftHandRelativeRotation, gunTarget.rotation * rightHandRelativeRotation);
 
 			// Update FBBIK
 			ik.solver.Update();
 
 			// Rotate the hand bones relative to the gun target the same way they are rotated relative to the gun
-			ik.references.leftHand.rotation = gunTarget.rotation * leftHandRelativeRotation;
-			ik.references.rightHand.rotation = gunTarget.rotation * rightHandRelativeRotation;
+			if (recoil != null) {
+				ik.references.leftHand.rotation = recoil.rotationOffset * (gunTarget.rotation * leftHandRelativeRotation);
+				ik.references.rightHand.rotation = recoil.rotationOffset * (gunTarget.rotation * rightHandRelativeRotation);
+			} else {
+				ik.references.leftHand.rotation = gunTarget.rotation * leftHandRelativeRotation;
+				ik.references.rightHand.rotation = gunTarget.rotation * rightHandRelativeRotation;
+			}
 
 			// Position the camera to where it was before FBBIK relative to the gun
-			cam.transform.position = Vector3.Lerp(cam.transform.position, gun.transform.TransformPoint(camRelativeToGunTarget), sW);
+			cam.transform.position = Vector3.Lerp(cam.transform.position, Vector3.Lerp(gunTarget.TransformPoint(camRelativeToGunTarget), gun.transform.TransformPoint(camRelativeToGunTarget), cameraRecoilWeight), sW);
 		}
 
 		// Rotating the root of the character if it is past maxAngle from the camera forward
@@ -144,4 +165,5 @@ namespace RootMotion.Demos {
 			}
 		}
 	}
+
 }

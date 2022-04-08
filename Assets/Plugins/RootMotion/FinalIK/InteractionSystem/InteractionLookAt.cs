@@ -41,6 +41,11 @@ namespace RootMotion.FinalIK {
 		private float weight; // Current weight
 		private bool firstFBBIKSolve; // Has the FBBIK already solved for this frame? In case it is solved more than once, for example when using the ShoulderRotator
 
+		public void OnFixTransforms() {
+			if (ik == null) return;
+			if (ik.fixTransforms) ik.solver.FixTransforms();
+		}
+
 		public void Update() {
 			if (ik == null) return;
 			if (ik.enabled) ik.enabled = false;

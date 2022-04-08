@@ -75,15 +75,33 @@ namespace RootMotion.FinalIK {
 			StoreDefaultState();
 		}
 
-		public override void StoreDefaultState() {
-			for (int i = 0; i < maps.Length; i++) {
-				maps[i].StoreDefaultState();
-			}
+		protected override void InitiatePoser() {
+			StoreDefaultState();
 		}
+
+		protected override void UpdatePoser() {
+			if (weight <= 0f) return;
+			if (localPositionWeight <= 0f && localRotationWeight <= 0f) return;
+			if (poseRoot == null) return;
+			
+			// Calculate weights
+			float rW = localRotationWeight * weight;
+			float pW = localPositionWeight * weight;
+			
+			// Lerping the localRotation and the localPosition
+			for (int i = 0; i < maps.Length; i++) maps[i].Update(rW, pW);
+		}
+
 		
-		public override void FixTransforms() {
+		protected override void FixPoserTransforms() {
 			for (int i = 0; i < maps.Length; i++) {
 				maps[i].FixTransform();
+			}
+		}
+
+		private void StoreDefaultState() {
+			for (int i = 0; i < maps.Length; i++) {
+				maps[i].StoreDefaultState();
 			}
 		}
 
@@ -95,17 +113,6 @@ namespace RootMotion.FinalIK {
 			return null;
 		}
 
-		void LateUpdate() {
-			if (weight <= 0f) return;
-			if (localPositionWeight <= 0f && localRotationWeight <= 0f) return;
-			if (poseRoot == null) return;
 
-			// Calculate weights
-			float rW = localRotationWeight * weight;
-			float pW = localPositionWeight * weight;
-
-			// Lerping the localRotation and the localPosition
-			for (int i = 0; i < maps.Length; i++) maps[i].Update(rW, pW);
-		}
 	}
 }

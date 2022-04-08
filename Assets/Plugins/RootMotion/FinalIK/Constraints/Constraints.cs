@@ -16,6 +16,10 @@ namespace RootMotion.FinalIK {
 		/// </summary>
 		public Transform transform;
 		/// <summary>
+		/// The target.
+		/// </summary>
+		public Transform target;
+		/// <summary>
 		/// The position offset.
 		/// </summary>
 		public Vector3 positionOffset;
@@ -65,10 +69,12 @@ namespace RootMotion.FinalIK {
 			if (!IsValid()) return;
 
 			// Position
+			if (target != null) position = target.position;
 			transform.position += positionOffset;
 			if (positionWeight > 0f) transform.position = Vector3.Lerp(transform.position, position, positionWeight);
 
 			// Rotation
+			if (target != null) rotation = target.eulerAngles;
 			transform.rotation = Quaternion.Euler(rotationOffset) * transform.rotation;
 			if (rotationWeight > 0f) transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(rotation), rotationWeight);
 		}

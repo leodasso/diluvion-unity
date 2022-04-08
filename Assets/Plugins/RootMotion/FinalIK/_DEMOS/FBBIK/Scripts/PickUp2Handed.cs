@@ -11,7 +11,7 @@ namespace RootMotion.Demos {
 	public abstract class PickUp2Handed : MonoBehaviour {
 		
 		// GUI for testing
-		[SerializeField] int GUIspace;
+		public int GUIspace;
 
 		void OnGUI() {
 			GUILayout.BeginHorizontal();
@@ -25,10 +25,25 @@ namespace RootMotion.Demos {
 				}
 				
 			} else {
-				
+                GUILayout.BeginVertical();
+                if (holdingRight)
+                {
+                    if (GUILayout.Button("Release Right"))
+                    {
+                        interactionSystem.ResumeInteraction(FullBodyBipedEffector.RightHand);
+                    }
+                }
+                if (holdingLeft)
+                {
+                    if (GUILayout.Button("Release Left"))
+                    {
+                        interactionSystem.ResumeInteraction(FullBodyBipedEffector.LeftHand);
+                    }
+                }
 				if (GUILayout.Button("Drop " + obj.name)) {
-					interactionSystem.ResumeAll();
-				}
+                    interactionSystem.ResumeAll();
+                }
+                GUILayout.EndVertical();
 			}
 
 			GUILayout.EndHorizontal();
@@ -76,8 +91,8 @@ namespace RootMotion.Demos {
 		private void OnStart(FullBodyBipedEffector effectorType, InteractionObject interactionObject) {
 			if (effectorType != FullBodyBipedEffector.LeftHand) return;
 			if (interactionObject != obj) return;
-			
-			// Rotate the pivot of the hand targets
+
+            // Rotate the pivot of the hand targets
 			RotatePivot();
 
 			// Rotate the hold point so it matches the current rotation of the object
@@ -86,10 +101,10 @@ namespace RootMotion.Demos {
 		
 		// Called by the InteractionSystem when an interaction is resumed from being paused
 		private void OnDrop(FullBodyBipedEffector effectorType, InteractionObject interactionObject) {
-			if (effectorType != FullBodyBipedEffector.LeftHand) return;
-			if (interactionObject != obj) return;
-			
-			// Make the object independent of the character
+            if (holding) return;
+            if (interactionObject != obj) return;
+
+            // Make the object independent of the character
 			obj.transform.parent = null;
 			
 			// Turn on physics for the object
@@ -110,12 +125,30 @@ namespace RootMotion.Demos {
 		// Are we currently holding the object?
 		private bool holding {
 			get {
-				return interactionSystem.IsPaused(FullBodyBipedEffector.LeftHand);
+				return holdingLeft || holdingRight;
 			}
 		}
 
-		// Clean up delegates
-		void OnDestroy() {
+        // Are we currently holding the object with left hand?
+        private bool holdingLeft
+        {
+            get
+            {
+                return interactionSystem.IsPaused(FullBodyBipedEffector.LeftHand) && interactionSystem.GetInteractionObject(FullBodyBipedEffector.LeftHand) == obj;
+            }
+        }
+
+        // Are we currently holding the object with right hand?
+        private bool holdingRight
+        {
+            get
+            {
+                return interactionSystem.IsPaused(FullBodyBipedEffector.RightHand) && interactionSystem.GetInteractionObject(FullBodyBipedEffector.RightHand) == obj;
+            }
+        }
+
+        // Clean up delegates
+        void OnDestroy() {
 			if (interactionSystem == null) return;
 
 			interactionSystem.OnInteractionStart -= OnStart;

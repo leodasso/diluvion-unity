@@ -83,7 +83,7 @@ namespace RootMotion.FinalIK {
 			
 			// Direction and label
 			Handles.DrawLine(position, position + direction);
-			Handles.ConeCap(0, position + direction, Quaternion.LookRotation(direction), 0.05f);
+			Inspector.ConeCap(0, position + direction, Quaternion.LookRotation(direction), 0.05f);
 			Handles.Label(position + direction.normalized * 1.1f, pose.name);
 
 			if (pose.yaw >= 180f && pose.pitch >= 180f) {

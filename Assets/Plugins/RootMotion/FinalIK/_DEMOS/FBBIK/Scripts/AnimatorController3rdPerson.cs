@@ -7,7 +7,6 @@ namespace RootMotion.Demos {
 	/// <summary>
 	/// Basic Mecanim Animator controller for 3rd person view.
 	/// </summary>
-	[RequireComponent(typeof(Animator))]
 	public class AnimatorController3rdPerson : MonoBehaviour {
 
 		public float rotateSpeed = 7f; // Speed of rotating the character

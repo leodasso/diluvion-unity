@@ -6,14 +6,14 @@ namespace RootMotion.FinalIK {
 	/// <summary>
 	/// Grounding for BipedIK characters.
 	/// </summary>
-	[HelpURL("http://www.root-motion.com/finalikdox/html/page11.html")]
+	[HelpURL("http://www.root-motion.com/finalikdox/html/page9.html")]
 	[AddComponentMenu("Scripts/RootMotion.FinalIK/Grounder/Grounder Biped")]
 	public class GrounderBipedIK: Grounder {
 
 		// Open the User Manual URL
 		[ContextMenu("User Manual")]
 		protected override void OpenUserManual() {
-			Application.OpenURL("http://www.root-motion.com/finalikdox/html/page11.html");
+			Application.OpenURL("http://www.root-motion.com/finalikdox/html/page9.html");
 		}
 		
 		// Open the Script Reference URL
@@ -42,7 +42,7 @@ namespace RootMotion.FinalIK {
 
 		#endregion Main Interface
 
-		public override void Reset() {
+		public override void ResetPosition() {
 			solver.Reset();
 			spineOffset = Vector3.zero;
 		}
@@ -154,6 +154,8 @@ namespace RootMotion.FinalIK {
 				// Revert the upper arms
 				ik.references.leftUpperArm.rotation = leftArmRotation;
 				ik.references.rightUpperArm.rotation = rightArmRotation;
+
+                ik.solvers.lookAt.SetDirty();
 			}
 
 			if (OnPostGrounder != null) OnPostGrounder();

@@ -45,19 +45,20 @@ namespace RootMotion.Demos {
 			mainHand.position = (mainHand.bone.position + mainHand.positionOffset) + (handsCenterWithOffset - handsCenter);
 			mainHand.positionWeight = 1f;
 
-			// Main hand rotation
-			Quaternion rotationOffset = Quaternion.FromToRotation(toOtherHand, toOtherHandWithOffset);
-			mainHand.rotation = rotationOffset * mainHand.bone.rotation;
-			mainHand.rotationWeight = 1f;
+            // Main hand rotation
+            Quaternion rotationOffset = Quaternion.FromToRotation(toOtherHand, toOtherHandWithOffset);
+            mainHand.bone.rotation = rotationOffset * mainHand.bone.rotation;
+           
+            // Other hand position
+            otherHand.position = mainHand.position + mainHand.bone.rotation * otherHandRelativeDirection;
+            otherHand.positionWeight = 1f;
 
-			// Other hand position
-			otherHand.position = mainHand.position + mainHand.rotation * otherHandRelativeDirection;
-			otherHand.positionWeight = 1f;
-
-			// Other hand rotation
-			otherHand.rotation = mainHand.rotation * otherHandRelativeRotation;
-			otherHand.rotationWeight = 1f;
-		}
+            // Other hand rotation
+            otherHand.bone.rotation = mainHand.bone.rotation * otherHandRelativeRotation;
+            
+            ik.solver.leftArmMapping.maintainRotationWeight = 1f;
+            ik.solver.rightArmMapping.maintainRotationWeight = 1f;
+        }
 
 		// Clean up delegates
 		void OnDestroy() {

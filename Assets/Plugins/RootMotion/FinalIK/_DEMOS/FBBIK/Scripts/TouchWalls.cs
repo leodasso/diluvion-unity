@@ -20,6 +20,7 @@ namespace RootMotion.Demos {
 			public Transform spherecastFrom; // The bone to start the sperecast from
 			public float spherecastRadius = 0.1f; // The radius of sperecasting
 			public float minDistance = 0.3f; // The minimum spherecast radius to touch
+            public float distanceMlp = 1f; // Multiplies the distance of the spherecast
 			public LayerMask touchLayers; // The layers to touch
 			public float lerpSpeed = 10f; // The speed of lerping the interaction object
 			public float minSwitchTime = 0.2f; // The minimum time to switch between touching
@@ -59,7 +60,7 @@ namespace RootMotion.Demos {
 			// Spherecasting to find the walls
 			private bool FindWalls(Vector3 direction) {
 				if (!enabled) return false;
-				bool found = Physics.SphereCast(spherecastFrom.position, spherecastRadius, direction, out hit, raycastDistance, touchLayers);
+				bool found = Physics.SphereCast(spherecastFrom.position, spherecastRadius, direction, out hit, raycastDistance * distanceMlp, touchLayers);
 
 				if (hit.distance < minDistance) found = false;
 				return found;

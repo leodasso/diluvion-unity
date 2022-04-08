@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System;
 
-	namespace RootMotion.FinalIK {
+namespace RootMotion.FinalIK {
 
 	/// <summary>
 	/// Analytic %IK solver based on the Law of Cosines.
@@ -24,7 +24,7 @@ using System;
 		/// <summary>
 		/// The %IK rotation target.
 		/// </summary>
-		public Quaternion IKRotation;
+		public Quaternion IKRotation = Quaternion.identity;
 		/// <summary>
 		/// The bend plane normal.
 		/// </summary>
@@ -119,6 +119,8 @@ using System;
 		}
 		
 		public override void FixTransforms() {
+			if (!initiated) return;
+
 			bone1.FixTransform();
 			bone2.FixTransform();
 			bone3.FixTransform();
@@ -153,8 +155,6 @@ using System;
 		/// </summary>
 		[System.Serializable]
 		public class TrigonometricBone: IKSolver.Bone {
-			
-			public float sqrMag; // Square magnitude to the next bone
 			
 			private Quaternion targetToLocalSpace;
 			private Vector3 defaultLocalBendNormal;
@@ -207,6 +207,55 @@ using System;
 		}
 		
 		#endregion Main Interface
+
+		#region Class Methods
+
+		/// <summary>
+		/// Solve the bone chain.
+		/// </summary>
+		public static void Solve(Transform bone1, Transform bone2, Transform bone3, Vector3 targetPosition, Vector3 bendNormal, float weight) {
+			if (weight <= 0f) return;
+
+			// Direction of the limb in solver
+			targetPosition = Vector3.Lerp(bone3.position, targetPosition, weight);
+			
+			Vector3 dir = targetPosition - bone1.position;
+			
+			// Distance between the first and the last node solver positions
+			float length = dir.magnitude;
+			if (length == 0f) return;
+			
+			float sqrMag1 = (bone2.position - bone1.position).sqrMagnitude;
+			float sqrMag2 = (bone3.position - bone2.position).sqrMagnitude;
+			
+			// Get the general world space bending direction
+			Vector3 bendDir = Vector3.Cross(dir, bendNormal);
+			
+			// Get the direction to the trigonometrically solved position of the second node
+			Vector3 toBendPoint = GetDirectionToBendPoint(dir, length, bendDir, sqrMag1, sqrMag2);
+			
+			// Position the second node
+			Quaternion q1 = Quaternion.FromToRotation(bone2.position - bone1.position, toBendPoint);
+			if (weight < 1f) q1 = Quaternion.Lerp(Quaternion.identity, q1, weight);
+
+			bone1.rotation = q1 * bone1.rotation;
+
+			Quaternion q2 = Quaternion.FromToRotation(bone3.position - bone2.position, targetPosition - bone2.position);
+			if (weight < 1f) q2 = Quaternion.Lerp(Quaternion.identity, q2, weight);
+
+			bone2.rotation = q2 * bone2.rotation;
+		}
+
+		//Calculates the bend direction based on the law of cosines. NB! Magnitude of the returned vector does not equal to the length of the first bone!
+		private static Vector3 GetDirectionToBendPoint(Vector3 direction, float directionMag, Vector3 bendDirection, float sqrMag1, float sqrMag2) {
+			float x = ((directionMag * directionMag) + (sqrMag1 - sqrMag2)) / 2f / directionMag;
+			float y = (float)Math.Sqrt(Mathf.Clamp(sqrMag1 - x * x, 0, Mathf.Infinity));
+			
+			if (direction == Vector3.zero) return Vector3.zero;
+			return Quaternion.LookRotation(direction, bendDirection) * new Vector3(0f, y, x);
+		}
+
+		#endregion Class Methods
 		
 		protected override void OnInitiate() {
 			if (bendNormal == Vector3.zero) bendNormal = Vector3.right;
@@ -306,7 +355,7 @@ using System;
 			float x = (directionSqrMag + bone1.sqrMag - bone2.sqrMag) / 2f / directionMagnitude;
 			float y = (float)Math.Sqrt(Mathf.Clamp(bone1.sqrMag - x * x, 0, Mathf.Infinity));
 			
-			Vector3 yDirection = Vector3.Cross(direction, bendNormal);
+			Vector3 yDirection = Vector3.Cross(direction / directionMagnitude, bendNormal);
 			return Quaternion.LookRotation(direction, yDirection) * new Vector3(0f, y, x);
 		}
 	}

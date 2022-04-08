@@ -11,11 +11,6 @@ namespace RootMotion {
 		#region Main Interface
 		
 		/// <summary>
-		/// If zero, will update the solver in every LateUpdate(). Use this for chains that are animated. If > 0, will be used as updating frequency so that the solver will reach its target in the same time on all machines.
-		/// </summary>
-		[Tooltip("If zero, will update the solver in every LateUpdate(). Use this for chains that are animated. If > 0, will be used as updating frequency so that the solver will reach its target in the same time on all machines.")]
-		public float timeStep;
-		/// <summary>
 		/// If true, will fix all the Transforms used by the solver to their initial state in each Update. This prevents potential problems with unanimated bones and animator culling with a small cost of performance. Not recommended for CCD and FABRIK solvers.
 		/// </summary>
 		[Tooltip("If true, will fix all the Transforms used by the solver to their initial state in each Update. This prevents potential problems with unanimated bones and animator culling with a small cost of performance. Not recommended for CCD and FABRIK solvers.")]
@@ -36,7 +31,6 @@ namespace RootMotion {
 		protected virtual void UpdateSolver() {}
 		protected virtual void FixTransforms() {}
 		
-		private float lastTime;
 		private Animator animator;
 		private Animation legacy;
 		private bool updateFrame;
@@ -59,9 +53,9 @@ namespace RootMotion {
 			}
 		}
 
-		public void Initiate() {
+		private void Initiate() {
 			if (componentInitiated) return;
-			
+
 			FindAnimatorRecursive(transform, true);
 			
 			InitiateSolver();
@@ -107,7 +101,7 @@ namespace RootMotion {
 			if (animatePhysics && fixTransforms) FixTransforms();
 		}
 
-		// Updating by timeStep
+		// Updating
 		void LateUpdate() {
 			if (skipSolverUpdate) return;
 
@@ -116,13 +110,7 @@ namespace RootMotion {
 			if (!updateFrame) return;
 			updateFrame = false;
 
-			if (timeStep == 0) UpdateSolver();
-			else {
-				if (Time.time >= lastTime + timeStep) {
-					UpdateSolver();
-					lastTime = Time.time;
-				}
-			}
+			UpdateSolver();
 		}
 
 		// This enables other scripts to update the Animator on in FixedUpdate and the solvers with it
@@ -133,13 +121,7 @@ namespace RootMotion {
 
 			skipSolverUpdate = true;
 			
-			if (timeStep == 0) UpdateSolver();
-			else {
-				if (Time.time >= lastTime + timeStep) {
-					UpdateSolver();
-					lastTime = Time.time;
-				}
-			}
+			UpdateSolver();
 		}
 	}
 }

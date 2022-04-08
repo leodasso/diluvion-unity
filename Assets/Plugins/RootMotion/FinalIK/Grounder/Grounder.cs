@@ -37,11 +37,11 @@ namespace RootMotion.FinalIK {
 		/// <summary>
 		/// Resets this Grounder so characters can be teleported instananeously.
 		/// </summary>
-		public abstract void Reset();
+		public abstract void ResetPosition();
 		
 		#endregion Main Interface
 
-		protected bool initiated;
+		public bool initiated { get; protected set; }
 
 		// Gets the spine bend direction
 		protected Vector3 GetSpineOffsetTarget() {

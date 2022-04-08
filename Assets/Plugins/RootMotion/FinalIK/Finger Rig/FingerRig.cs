@@ -11,15 +11,40 @@ namespace RootMotion.FinalIK {
 	[System.Serializable]
 	public class Finger {
 
+		[System.Serializable]
+		public enum DOF {
+			One,
+			Three
+		}
+
 		/// <summary>
 		/// Master Weight for the finger.
 		/// </summary>
 		[Tooltip("Master Weight for the finger.")]
 		[Range(0f, 1f)] public float weight = 1f;
 		/// <summary>
-		/// The first bone of the finger.
+		/// The weight of rotating the finger tip and bending the finger to the target.
 		/// </summary>
-		[Tooltip("The first bone of the finger.")]
+		[Tooltip("The weight of rotating the finger tip and bending the finger to the target.")]
+		[Range(0f, 1f)] 
+		public float rotationWeight = 1f;
+
+		[Tooltip("Rotational degrees of freedom. When set to 'One' the fingers will be able to be rotated only around a single axis. When 3, all 3 axes are free to rotate around.")]
+		/// <summary>
+		/// Rotational degrees of freedom. When set to 'One' the fingers will be able to be rotated only around a single axis. When 3, all 3 axes are free to rotate around.
+		/// </summary>
+		public DOF rotationDOF;
+
+        [Tooltip("If enabled, keeps bone1 twist angle fixed relative to bone2.")]
+        /// <summary>
+        /// If enabled, keeps bone1 twist angle fixed relative to bone2.
+        /// </summary>
+        public bool fixBone1Twist;
+
+        /// <summary>
+        /// The first bone of the finger.
+        /// </summary>
+        [Tooltip("The first bone of the finger.")]
 		public Transform bone1;
 		/// <summary>
 		/// The second bone of the finger.
@@ -87,6 +112,10 @@ namespace RootMotion.FinalIK {
 		private Quaternion bone3RelativeToTarget;
 		private Vector3 bone3DefaultLocalPosition;
 		private Quaternion bone3DefaultLocalRotation;
+		private Vector3 bone1Axis;
+		private Vector3 tipAxis;
+        private Vector3 bone1TwistAxis;
+        private Vector3 defaultBendNormal;
 
 		// Initiates the LimbIK solver
 		public void Initiate(Transform hand, int index) {
@@ -103,8 +132,19 @@ namespace RootMotion.FinalIK {
 			solver.IKPositionWeight = weight;
 			solver.bendModifier = IKSolverLimb.BendModifier.Target;
 			solver.bendModifierWeight = 1f;
+            defaultBendNormal = -Vector3.Cross(tip.position - bone1.position, bone2.position - bone1.position).normalized;
+            solver.bendNormal = defaultBendNormal;
 
-			IKPosition = tip.position;
+            Vector3 axisWorld = Vector3.Cross(bone2.position - bone1.position, tip.position - bone1.position);
+			bone1Axis = Quaternion.Inverse(bone1.rotation) * axisWorld;
+			tipAxis = Quaternion.Inverse(tip.rotation) * axisWorld;
+
+            Vector3 normal = bone2.position - bone1.position;
+            Vector3 tangent = -Vector3.Cross(tip.position - bone1.position, bone2.position - bone1.position);
+            Vector3.OrthoNormalize(ref normal, ref tangent);
+            bone1TwistAxis = Quaternion.Inverse(bone1.rotation) * tangent;
+
+            IKPosition = tip.position;
 			IKRotation = tip.rotation;
 
 			if (bone3 != null) {
@@ -122,12 +162,25 @@ namespace RootMotion.FinalIK {
 		// Fix bones to their initial local position and rotation
 		public void FixTransforms() {
 			if (!initiated) return;
+            if (weight <= 0f) return;
 
 			solver.FixTransforms();
 
 			if (bone3 != null) {
 				bone3.localPosition = bone3DefaultLocalPosition;
 				bone3.localRotation = bone3DefaultLocalRotation;
+			}
+		}
+
+		// Stores the default localPosition/Rotation of the finger bones used by FixTransforms()
+		public void StoreDefaultLocalState() {
+			if (!initiated) return;
+
+			solver.StoreDefaultLocalState();
+
+			if (bone3 != null) {
+				bone3DefaultLocalPosition = bone3.localPosition;
+				bone3DefaultLocalRotation = bone3.localRotation;
 			}
 		}
 
@@ -144,20 +197,35 @@ namespace RootMotion.FinalIK {
 				IKRotation = target.rotation;
 			}
 
+			if (rotationDOF == DOF.One) {
+				Quaternion q = Quaternion.FromToRotation(IKRotation * tipAxis, bone1.rotation * bone1Axis);
+				IKRotation = q * IKRotation;
+			}
+
 			// Rotate the 3rd bone
 			if (bone3 != null) {
-				if (w >= 1f) {
+				if (w * rotationWeight >= 1f) {
 					bone3.rotation = IKRotation * bone3RelativeToTarget;
 				} else {
-					bone3.rotation = Quaternion.Lerp(bone3.rotation, IKRotation * bone3RelativeToTarget, w);
+					bone3.rotation = Quaternion.Lerp(bone3.rotation, IKRotation * bone3RelativeToTarget, w * rotationWeight);
 				}
 			}
 
-			// Update the LimbIK solver
-			solver.IKPositionWeight = w;
-			solver.Update();
-		}
-	}
+            solver.IKPositionWeight = w;
+			solver.IKRotationWeight = rotationWeight;
+            solver.Update();
+
+            if (fixBone1Twist)
+            {
+                Quaternion bone2Rotation = bone2.rotation;
+                Quaternion space = Quaternion.LookRotation(bone1.rotation * bone1TwistAxis, bone2.position - bone1.position);
+                Vector3 bone1Twist = Quaternion.Inverse(space) * solver.bendNormal;
+                float angle = Mathf.Atan2(bone1Twist.x, bone1Twist.z) * Mathf.Rad2Deg;
+                bone1.rotation = Quaternion.AngleAxis(angle, bone2.position - bone1.position) * bone1.rotation;
+                bone2.rotation = bone2Rotation;
+            }
+        }
+    }
 
 	/// <summary>
 	/// Handles IK for a number of Fingers with 3-4 joints.
@@ -287,24 +355,32 @@ namespace RootMotion.FinalIK {
 		}
 
 		public void UpdateFingerSolvers() {
-			if (weight <= 0f) return;
-
 			foreach (Finger finger in fingers) {
 				finger.Update(weight);
 			}
 		}
 
 		public void FixFingerTransforms() {
+            if (weight <= 0f) return;
+
 			foreach (Finger finger in fingers) {
 				finger.FixTransforms();
 			}
 		}
+
+		public void StoreDefaultLocalState() {
+			foreach (Finger finger in fingers) {
+				finger.StoreDefaultLocalState();
+			}
+		}       
 
 		protected override void UpdateSolver() {
 			UpdateFingerSolvers();
 		}
 
 		protected override void FixTransforms() {
+            if (weight <= 0f) return;
+
 			FixFingerTransforms();
 		}
 	}

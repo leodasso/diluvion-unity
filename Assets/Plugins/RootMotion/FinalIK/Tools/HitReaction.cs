@@ -21,6 +21,8 @@ namespace RootMotion.FinalIK {
 			[Tooltip("Only used if this hit point gets hit when already processing another hit")]
 			[SerializeField] float crossFadeTime = 0.1f;
 
+			public bool inProgress { get { return timer < length; } }
+
 			protected float crossFader { get; private set; }
 			protected float timer { get; private set; }
 			protected Vector3 force { get; private set; }
@@ -206,6 +208,21 @@ namespace RootMotion.FinalIK {
 		public HitPointEffector[] effectorHitPoints;
 		[Tooltip(" Hit points for bones without an effector, such as the head")]
 		public HitPointBone[] boneHitPoints;
+
+		/// <summary>
+		/// Returns true if any of the hits are being processed.
+		/// </summary>
+		public bool inProgress {
+			get {
+				foreach (HitPointEffector h in effectorHitPoints) {
+					if (h.inProgress) return true;
+				}
+				foreach (HitPointBone h in boneHitPoints) {
+					if (h.inProgress) return true;
+				}
+				return false;
+			}
+		}
 
 		// Called by IKSolverFullBody before updating
 		protected override void OnModifyOffset() {

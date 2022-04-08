@@ -6,7 +6,7 @@ namespace RootMotion.FinalIK {
 	/// <summary>
 	/// The base abstract class for all class that are translating a hierarchy of bones to match the translation of bones in another hierarchy.
 	/// </summary>
-	public abstract class Poser: MonoBehaviour {
+	public abstract class Poser: SolverManager {
 
 		/// <summary>
 		/// Reference to the other Transform (should be identical to this one)
@@ -24,25 +24,46 @@ namespace RootMotion.FinalIK {
 		/// Weight of localPosition matching
 		/// </summary>
 		[Range(0f, 1f)] public float localPositionWeight;
-		/// <summary>
-		/// If true, bones will be fixed to their default local positions and rotations in each Update. This is useful if you don't have animation overwriting the bone Transforms.
-		/// </summary>
-		public bool fixTransforms = true;
 
 		/// <summary>
 		/// Map this instance to the poseRoot.
 		/// </summary>
 		public abstract void AutoMapping();
-		public abstract void StoreDefaultState();
-		public abstract void FixTransforms();
 
-		protected virtual void Start() {
-			StoreDefaultState();
+		/// <summary>
+		/// For manual update of the poser.
+		/// </summary>
+		public void UpdateManual() {
+			UpdatePoser();
 		}
 
-		protected virtual void Update() {
-			if (fixTransforms) FixTransforms();
-		}
+		private bool initiated;
+		protected abstract void InitiatePoser();
+		protected abstract void UpdatePoser();
+		protected abstract void FixPoserTransforms();
 
+		/*
+		 * Updates the solver. If you need full control of the execution order of your IK solvers, disable this script and call UpdateSolver() instead.
+		 * */
+		protected override void UpdateSolver() {
+			if (!initiated) InitiateSolver();
+			if (!initiated) return;
+			
+			UpdatePoser();
+		}
+		
+		/*
+		 * Initiates the %IK solver
+		 * */
+		protected override void InitiateSolver() {
+			if (initiated) return;
+			InitiatePoser();
+			initiated = true;
+		}
+		
+		protected override void FixTransforms() {
+			if (!initiated) return;
+ 			FixPoserTransforms();
+		}
 	}
 }

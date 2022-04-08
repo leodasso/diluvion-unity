@@ -9,13 +9,13 @@ namespace RootMotion.Demos {
 	/// </summary>
 	public class HitReactionTrigger: MonoBehaviour {
 
-		[SerializeField] HitReaction hitReaction;
-		[SerializeField] float hitForce = 1f;
+        public HitReaction hitReaction;
+        public float hitForce = 1f;
 
-		private string colliderName;
+        private string colliderName;
 
 		void Update() {
-			// On left mouse button...
+            // On left mouse button...
 			if (Input.GetMouseButtonDown(0)) {
 				Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 

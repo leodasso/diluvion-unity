@@ -35,7 +35,7 @@ namespace RootMotion.FinalIK {
 		}
 
 		public static void AddBones(SerializedProperty prop, bool editHierarchy, bool editWeights) {
-			EditorGUILayout.PropertyField(prop.FindPropertyRelative("useRotationLimits"), new GUIContent("Use Rotation Limits", "If true, rotation limits (if excisting) will be applied on each iteration."));
+			EditorGUILayout.PropertyField(prop.FindPropertyRelative("useRotationLimits"), new GUIContent("Use Rotation Limits", "If true, rotation limits (if existing) will be applied on each iteration."));
 			EditorGUILayout.PropertyField(prop.FindPropertyRelative("XY"), new GUIContent("2D", "If true, will solve only in the XY plane."));
 
 			EditorGUILayout.Space();
@@ -62,13 +62,13 @@ namespace RootMotion.FinalIK {
 				IKSolver.Bone bone = solver.bones[i];
 
 				if (i < solver.bones.Length - 1) Handles.DrawLine(bone.transform.position, solver.bones[i + 1].transform.position);
-				Handles.SphereCap(0, solver.bones[i].transform.position, Quaternion.identity, GetHandleSize(solver.bones[i].transform.position));
+				Inspector.SphereCap(0, solver.bones[i].transform.position, Quaternion.identity, GetHandleSize(solver.bones[i].transform.position));
 			}
 			
 			// Selecting joint and manipulating IKPosition
 			if (Application.isPlaying && solver.IKPositionWeight > 0) {
 				if (modifiable) {
-					Handles.CubeCap(0, solver.IKPosition, solver.GetRoot().rotation, GetHandleSize(solver.IKPosition));
+					Inspector.CubeCap(0, solver.IKPosition, solver.GetRoot().rotation, GetHandleSize(solver.IKPosition));
 						
 					// Manipulating position
 					if (solver.target == null) solver.IKPosition = Handles.PositionHandle(solver.IKPosition, Quaternion.identity);

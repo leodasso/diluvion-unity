@@ -8,6 +8,95 @@ namespace RootMotion {
 	/// </summary>
 	public static class QuaTools {
 
+        /// <summary>
+        /// Returns yaw angle (-180 - 180) of 'forward' vector relative to rotation space defined by spaceForward and spaceUp axes.
+        /// </summary>
+        public static float GetYaw(Quaternion space, Vector3 forward)
+        {
+            Vector3 dirLocal = Quaternion.Inverse(space) * forward;
+            return Mathf.Atan2(dirLocal.x, dirLocal.z) * Mathf.Rad2Deg;
+        }
+
+        /// <summary>
+        /// Returns pitch angle (-90 - 90) of 'forward' vector relative to rotation space defined by spaceForward and spaceUp axes.
+        /// </summary>
+        public static float GetPitch(Quaternion space, Vector3 forward)
+        {
+            forward = forward.normalized;
+            Vector3 dirLocal = Quaternion.Inverse(space) * forward;
+            return -Mathf.Asin(dirLocal.y) * Mathf.Rad2Deg;
+        }
+
+        /// <summary>
+        /// Returns bank angle (-180 - 180) of 'forward' and 'up' vectors relative to rotation space defined by spaceForward and spaceUp axes.
+        /// </summary>
+        public static float GetBank(Quaternion space, Vector3 forward, Vector3 up)
+        {
+            Vector3 spaceUp = space * Vector3.up;
+
+            Quaternion invSpace = Quaternion.Inverse(space);
+            forward = invSpace * forward;
+            up = invSpace * up;
+
+            Quaternion q = Quaternion.Inverse(Quaternion.LookRotation(spaceUp, forward));
+            up = q * up;
+            return Mathf.Atan2(up.x, up.z) * Mathf.Rad2Deg;
+        }
+
+        /// <summary>
+        /// Returns yaw angle (-180 - 180) of 'forward' vector relative to rotation space defined by spaceForward and spaceUp axes.
+        /// </summary>
+        public static float GetYaw(Quaternion space, Quaternion rotation)
+        {
+            Vector3 dirLocal = Quaternion.Inverse(space) * (rotation * Vector3.forward);
+            return Mathf.Atan2(dirLocal.x, dirLocal.z) * Mathf.Rad2Deg;
+        }
+
+        /// <summary>
+        /// Returns pitch angle (-90 - 90) of 'forward' vector relative to rotation space defined by spaceForward and spaceUp axes.
+        /// </summary>
+        public static float GetPitch(Quaternion space, Quaternion rotation)
+        {
+            Vector3 dirLocal = Quaternion.Inverse(space) * (rotation * Vector3.forward);
+            return -Mathf.Asin(dirLocal.y) * Mathf.Rad2Deg;
+        }
+
+        /// <summary>
+        /// Returns bank angle (-180 - 180) of 'forward' and 'up' vectors relative to rotation space defined by spaceForward and spaceUp axes.
+        /// </summary>
+        public static float GetBank(Quaternion space, Quaternion rotation)
+        {
+            Vector3 spaceUp = space * Vector3.up;
+            
+            Quaternion invSpace = Quaternion.Inverse(space);
+            Vector3 forward = invSpace * (rotation * Vector3.forward);
+            Vector3 up = invSpace * (rotation * Vector3.up);
+
+            Quaternion q = Quaternion.Inverse(Quaternion.LookRotation(spaceUp, forward));
+            up = q * up;
+            return Mathf.Atan2(up.x, up.z) * Mathf.Rad2Deg;
+        }
+
+        /// <summary>
+        /// Optimized Quaternion.Lerp
+        /// </summary>
+        public static Quaternion Lerp(Quaternion fromRotation, Quaternion toRotation, float weight) {
+			if (weight <= 0f) return fromRotation;
+			if (weight >= 1f) return toRotation;
+
+			return Quaternion.Lerp(fromRotation, toRotation, weight);
+		}
+
+		/// <summary>
+		/// Optimized Quaternion.Slerp
+		/// </summary>
+		public static Quaternion Slerp(Quaternion fromRotation, Quaternion toRotation, float weight) {
+			if (weight <= 0f) return fromRotation;
+			if (weight >= 1f) return toRotation;
+
+			return Quaternion.Slerp(fromRotation, toRotation, weight);
+		}
+
 		/// <summary>
 		/// Returns the rotation from identity Quaternion to "q", interpolated linearily by "weight".
 		/// </summary>
@@ -101,5 +190,76 @@ namespace RootMotion {
 			if (neg) closest = -closest;
 			return closest;
  		}
-	}
+
+		/// <summary>
+		/// Clamps the rotation similar to V3Tools.ClampDirection.
+		/// </summary>
+		public static Quaternion ClampRotation(Quaternion rotation, float clampWeight, int clampSmoothing) {
+			if (clampWeight >= 1f) return Quaternion.identity;
+			if (clampWeight <= 0f) return rotation;
+
+			float angle = Quaternion.Angle(Quaternion.identity, rotation);
+			float dot = 1f - (angle / 180f);
+			float targetClampMlp = Mathf.Clamp(1f - ((clampWeight - dot) / (1f - dot)), 0f, 1f);
+			float clampMlp = Mathf.Clamp(dot / clampWeight, 0f, 1f);
+			
+			// Sine smoothing iterations
+			for (int i = 0; i < clampSmoothing; i++) {
+				float sinF = clampMlp * Mathf.PI * 0.5f;
+				clampMlp = Mathf.Sin(sinF);
+			}
+			
+			return Quaternion.Slerp(Quaternion.identity, rotation, clampMlp * targetClampMlp);
+		}
+
+		/// <summary>
+		/// Clamps an angular value.
+		/// </summary>
+		public static float ClampAngle(float angle, float clampWeight, int clampSmoothing) {
+			if (clampWeight >= 1f) return 0f;
+			if (clampWeight <= 0f) return angle;
+			
+			float dot = 1f - (Mathf.Abs(angle) / 180f);
+			float targetClampMlp = Mathf.Clamp(1f - ((clampWeight - dot) / (1f - dot)), 0f, 1f);
+			float clampMlp = Mathf.Clamp(dot / clampWeight, 0f, 1f);
+			
+			// Sine smoothing iterations
+			for (int i = 0; i < clampSmoothing; i++) {
+				float sinF = clampMlp * Mathf.PI * 0.5f;
+				clampMlp = Mathf.Sin(sinF);
+			}
+			
+			return Mathf.Lerp(0f, angle, clampMlp * targetClampMlp);
+		}
+
+		/// <summary>
+		/// Used for matching the rotations of objects that have different orientations.
+		/// </summary>
+		public static Quaternion MatchRotation(Quaternion targetRotation, Vector3 targetforwardAxis, Vector3 targetUpAxis, Vector3 forwardAxis, Vector3 upAxis) {
+			Quaternion f = Quaternion.LookRotation(forwardAxis, upAxis);
+			Quaternion fTarget = Quaternion.LookRotation(targetforwardAxis, targetUpAxis);
+
+			Quaternion d = targetRotation * fTarget;
+			return d * Quaternion.Inverse(f);
+		}
+
+        /// <summary>
+        /// Converts an Euler rotation from 0 to 360 representation to -180 to 180.
+        /// </summary>
+        public static Vector3 ToBiPolar(Vector3 euler)
+        {
+            return new Vector3(ToBiPolar(euler.x), ToBiPolar(euler.y), ToBiPolar(euler.z));
+        }
+
+        /// <summary>
+        /// Converts an angular value from 0 to 360 representation to -180 to 180.
+        /// </summary>
+        public static float ToBiPolar(float angle)
+        {
+            angle = angle % 360f;
+            if (angle >= 180f) return angle - 360f;
+            if (angle <= -180f) return angle + 360f;
+            return angle;
+        }
+    }
 }

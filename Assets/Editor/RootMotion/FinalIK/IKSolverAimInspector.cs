@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEditor;
 using System.Collections;
 using System;
-#pragma warning disable 618
 
 	namespace RootMotion.FinalIK {
 
@@ -58,15 +57,15 @@ using System;
 				IKSolver.Bone bone = solver.bones[i];
 
 				if (i < solver.bones.Length - 1) Handles.DrawLine(bone.transform.position, solver.bones[i + 1].transform.position);
-				Handles.SphereCap(0, solver.bones[i].transform.position, Quaternion.identity, GetHandleSize(solver.bones[i].transform.position));
+				Inspector.SphereCap(0, solver.bones[i].transform.position, Quaternion.identity, GetHandleSize(solver.bones[i].transform.position));
 			}
 			
-			if (solver.axis != Vector3.zero) Handles.ConeCap(0, solver.transform.position, Quaternion.LookRotation(solver.transform.rotation * solver.axis), GetHandleSize(solver.transform.position) * 2f);
+			if (solver.axis != Vector3.zero) Inspector.ConeCap(0, solver.transform.position, Quaternion.LookRotation(solver.transform.rotation * solver.axis), GetHandleSize(solver.transform.position) * 2f);
 			
 			// Selecting joint and manipulating IKPosition
 			if (Application.isPlaying && solver.IKPositionWeight > 0) {
 				if (modifiable) {
-					Handles.SphereCap(0, solver.IKPosition, Quaternion.identity, GetHandleSize(solver.IKPosition));
+					Inspector.SphereCap(0, solver.IKPosition, Quaternion.identity, GetHandleSize(solver.IKPosition));
 						
 					// Manipulating position
 					solver.IKPosition = Handles.PositionHandle(solver.IKPosition, Quaternion.identity);
@@ -83,7 +82,7 @@ using System;
 			// Pole
 			if (Application.isPlaying && solver.poleWeight > 0f) {
 				if (modifiable) {
-					Handles.SphereCap(0, solver.polePosition, Quaternion.identity, GetHandleSize(solver.IKPosition) * 0.5f);
+					Inspector.SphereCap(0, solver.polePosition, Quaternion.identity, GetHandleSize(solver.IKPosition) * 0.5f);
 					
 					// Manipulating position
 					solver.polePosition = Handles.PositionHandle(solver.polePosition, Quaternion.identity);

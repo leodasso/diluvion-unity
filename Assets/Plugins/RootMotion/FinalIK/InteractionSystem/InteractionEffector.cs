@@ -24,8 +24,8 @@ namespace RootMotion.FinalIK {
 		// Internal values
 		private Poser poser;
 		private IKEffector effector;
-		private float timer, length, weight, fadeInSpeed, defaultPositionWeight, defaultRotationWeight, defaultPull, defaultReach, defaultPush, defaultPushParent, resetTimer;
-		private bool positionWeightUsed, rotationWeightUsed, pullUsed, reachUsed, pushUsed, pushParentUsed;
+		private float timer, length, weight, fadeInSpeed, defaultPositionWeight, defaultRotationWeight, defaultPull, defaultReach, defaultPush, defaultPushParent, defaultBendGoalWeight, resetTimer;
+		private bool positionWeightUsed, rotationWeightUsed, pullUsed, reachUsed, pushUsed, pushParentUsed, bendGoalWeightUsed;
 		private bool pickedUp, defaults, pickUpOnPostFBBIK;
 		private Vector3 pickUpPosition, pausePositionRelative;
 		private Quaternion pickUpRotation, pauseRotationRelative;
@@ -45,10 +45,8 @@ namespace RootMotion.FinalIK {
 			this.interactionSystem = interactionSystem;
 
 			// Find the effector if we haven't already
-			if (effector == null) {
-				effector = interactionSystem.ik.solver.GetEffector(effectorType);
-				poser = effector.bone.GetComponent<Poser>();
-			}
+			effector = interactionSystem.ik.solver.GetEffector(effectorType);
+			poser = effector.bone.GetComponent<Poser>();
 
 			StoreDefaults();
 		}
@@ -61,6 +59,7 @@ namespace RootMotion.FinalIK {
 			defaultReach = interactionSystem.ik.solver.GetChain(effectorType).reach;
 			defaultPush = interactionSystem.ik.solver.GetChain(effectorType).push;
 			defaultPushParent = interactionSystem.ik.solver.GetChain(effectorType).pushParent;
+            defaultBendGoalWeight = interactionSystem.ik.solver.GetChain(effectorType).bendConstraint.weight;
 		}
 
 		// Interpolate to default values when currently not in interaction
@@ -69,7 +68,7 @@ namespace RootMotion.FinalIK {
 			if (isPaused) return false;
 			if (defaults) return false; 
 
-			resetTimer = Mathf.Clamp(resetTimer -= Time.deltaTime * speed, 0f, 1f);
+			resetTimer = Mathf.MoveTowards(resetTimer, 0f, Time.deltaTime * speed);
 
 			// Pull and Reach
 			if (effector.isEndEffector) {
@@ -77,7 +76,8 @@ namespace RootMotion.FinalIK {
 				if (reachUsed) interactionSystem.ik.solver.GetChain(effectorType).reach = Mathf.Lerp(defaultReach, interactionSystem.ik.solver.GetChain(effectorType).reach, resetTimer);
 				if (pushUsed) interactionSystem.ik.solver.GetChain(effectorType).push = Mathf.Lerp(defaultPush, interactionSystem.ik.solver.GetChain(effectorType).push, resetTimer);
 				if (pushParentUsed) interactionSystem.ik.solver.GetChain(effectorType).pushParent = Mathf.Lerp(defaultPushParent, interactionSystem.ik.solver.GetChain(effectorType).pushParent, resetTimer);
-			}
+                if (bendGoalWeightUsed) interactionSystem.ik.solver.GetChain(effectorType).bendConstraint.weight = Mathf.Lerp(defaultBendGoalWeight, interactionSystem.ik.solver.GetChain(effectorType).bendConstraint.weight, resetTimer);
+            }
 
 			// Effector weights
 			if (positionWeightUsed) effector.positionWeight = Mathf.Lerp(defaultPositionWeight, effector.positionWeight, resetTimer);
@@ -90,6 +90,7 @@ namespace RootMotion.FinalIK {
 				pushParentUsed = false;
 				positionWeightUsed = false;
 				rotationWeightUsed = false;
+                bendGoalWeightUsed = false;
 				//poserUsed = false;
 
 				defaults = true;
@@ -131,6 +132,7 @@ namespace RootMotion.FinalIK {
 				effector.rotation = effector.bone.rotation;;
 			} else {
 				if (!interrupt) return false;
+				else defaults = false;
 			}
 
 			// Get the InteractionTarget
@@ -161,17 +163,17 @@ namespace RootMotion.FinalIK {
 			}
 
 			// See which InteractionObject.WeightCurve.Types are used
-			//private bool positionWeightUsed, rotationWeightUsed, pullUsed, reachUsed, pushUsed, pushParentUsed, poserUsed;
 			positionWeightUsed = interactionObject.CurveUsed(InteractionObject.WeightCurve.Type.PositionWeight);
 			rotationWeightUsed = interactionObject.CurveUsed(InteractionObject.WeightCurve.Type.RotationWeight);
 			pullUsed = interactionObject.CurveUsed(InteractionObject.WeightCurve.Type.Pull);
 			reachUsed = interactionObject.CurveUsed(InteractionObject.WeightCurve.Type.Reach);
 			pushUsed = interactionObject.CurveUsed(InteractionObject.WeightCurve.Type.Push);
 			pushParentUsed = interactionObject.CurveUsed(InteractionObject.WeightCurve.Type.PushParent);
+            bendGoalWeightUsed = interactionObject.CurveUsed(InteractionObject.WeightCurve.Type.BendGoalWeight);
 			//poserUsed = interactionObject.CurveUsed(InteractionObject.WeightCurve.Type.PoserWeight);
-			StoreDefaults();
+			if (defaults) StoreDefaults();
 
-			// Reset internal values
+            // Reset internal values
 			timer = 0f;
 			weight = 0f;
 			fadeInSpeed = fadeInTime > 0f? 1f / fadeInTime: 1000f;
@@ -182,7 +184,7 @@ namespace RootMotion.FinalIK {
 			pickUpPosition = Vector3.zero;
 			pickUpRotation = Quaternion.identity;
 
-			if (interactionTarget != null) interactionTarget.RotateTo(effector.bone.position);
+			if (interactionTarget != null) interactionTarget.RotateTo(effector.bone);
 
 			started = true;
 
@@ -204,7 +206,7 @@ namespace RootMotion.FinalIK {
 			}
 
 			// Rotate target
-			if (interactionTarget != null && !interactionTarget.rotateOnce) interactionTarget.RotateTo(effector.bone.position);
+			if (interactionTarget != null && !interactionTarget.rotateOnce) interactionTarget.RotateTo(effector.bone);
 
 			if (isPaused) {
 				effector.position = target.TransformPoint(pausePositionRelative);
@@ -226,8 +228,8 @@ namespace RootMotion.FinalIK {
 			TriggerUntriggeredEvents(true, out pickUp, out pause);
 
 			// Effector target positions and rotations
-			Vector3 targetPosition = pickedUp? pickUpPosition: target.position;
-			Quaternion targetRotation = pickedUp? pickUpRotation: target.rotation;
+			Vector3 targetPosition = pickedUp? interactionSystem.transform.TransformPoint(pickUpPosition): target.position;
+			Quaternion targetRotation = pickedUp? interactionSystem.transform.rotation * pickUpRotation: target.rotation;
 
 			// Interpolate effector position and rotation
 			effector.position = Vector3.Lerp(effector.bone.position, targetPosition, weight);
@@ -302,8 +304,8 @@ namespace RootMotion.FinalIK {
 		// Trigger the interaction object
 		private void PickUp(Transform root) {
 			// Picking up the object
-			pickUpPosition = effector.position;
-			pickUpRotation = effector.rotation;
+			pickUpPosition = root.InverseTransformPoint(effector.position);
+			pickUpRotation = Quaternion.Inverse(interactionSystem.transform.rotation) * effector.rotation;
 				
 			pickUpOnPostFBBIK = true;
 
@@ -316,12 +318,14 @@ namespace RootMotion.FinalIK {
 					rigidbody.isKinematic = true;
 				}
 
-				// Ignore collisions between the character and the colliders of the interaction object
-				if (root.GetComponent<Collider>() != null) {
+                // Ignore collisions between the character and the colliders of the interaction object
+                var rootCollider = root.GetComponent<Collider>();
+
+				if (rootCollider != null) {
 					var colliders = interactionObject.targetsRoot.GetComponentsInChildren<Collider>();
 
 					foreach (Collider collider in colliders) {
-						if (!collider.isTrigger) Physics.IgnoreCollision(root.GetComponent<Collider>(), collider);
+						if (!collider.isTrigger && collider.enabled) Physics.IgnoreCollision(rootCollider, collider);
 					}
 				}
 			}
@@ -366,7 +370,7 @@ namespace RootMotion.FinalIK {
 			float rotateBoneWeight = interactionObject.GetValue(InteractionObject.WeightCurve.Type.RotateBoneWeight, interactionTarget, timer) * weight;
 
 			if (rotateBoneWeight > 0f) {
-				Quaternion r = pickedUp? pickUpRotation: effector.rotation;
+				Quaternion r = pickedUp? interactionSystem.transform.rotation * pickUpRotation: effector.rotation;
 
 				Quaternion targetRotation = Quaternion.Slerp(effector.bone.rotation, r, rotateBoneWeight * rotateBoneWeight);
 				effector.bone.localRotation = Quaternion.Inverse(effector.bone.parent.rotation) * targetRotation;
@@ -375,7 +379,7 @@ namespace RootMotion.FinalIK {
 			// Positioning the interaction object to the effector (not the bone, because it is still at it's animated translation)
 			if (pickUpOnPostFBBIK) {
 				Vector3 bonePosition = effector.bone.position;
-				effector.bone.position = pickUpPosition;
+				effector.bone.position = interactionSystem.transform.TransformPoint(pickUpPosition);
 
 				interactionObject.targetsRoot.parent = effector.bone;
 				

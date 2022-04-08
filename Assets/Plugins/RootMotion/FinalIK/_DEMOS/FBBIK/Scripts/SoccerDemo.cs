@@ -3,7 +3,6 @@ using System.Collections;
 
 namespace RootMotion.Demos {
 
-	[RequireComponent(typeof(Animator))]
 	public class SoccerDemo : MonoBehaviour {
 
 		private Animator animator;

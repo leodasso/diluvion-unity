@@ -47,6 +47,11 @@ namespace RootMotion.FinalIK {
 		[Tooltip("CapsuleCast radius. Should match approximately with the size of the feet.")]
 		public float footRadius = 0.15f;
 		/// <summary>
+		/// Offset of the foot center along character forward axis.
+		/// </summary>
+		[Tooltip("Offset of the foot center along character forward axis.")]
+		[HideInInspector] public float footCenterOffset; // TODO make visible in inspector if Grounder Visualization is finished.
+		/// <summary>
 		/// Amount of velocity based prediction of the foot positions.
 		/// </summary>
 		[Tooltip("Amount of velocity based prediction of the foot positions.")]
@@ -100,6 +105,11 @@ namespace RootMotion.FinalIK {
 		/// </summary>
 		[Tooltip("The radius of the spherecast from the root that determines whether the character root is grounded.")]
 		public float rootSphereCastRadius = 0.1f;
+        /// <summary>
+        /// If false, keeps the foot that is over a ledge at the root level. If true, lowers the overstepping foot and body by the 'Max Step' value.
+        /// </summary>
+        [Tooltip("If false, keeps the foot that is over a ledge at the root level. If true, lowers the overstepping foot and body by the 'Max Step' value.")]
+        public bool overstepFallsDown = true;
 		/// <summary>
 		/// The raycasting quality. Fastest is a single raycast per foot, Simple is three raycasts, Best is one raycast and a capsule cast per foot.
 		/// </summary>
@@ -141,18 +151,22 @@ namespace RootMotion.FinalIK {
 		public RaycastHit GetRootHit(float maxDistanceMlp = 10f) {
 			RaycastHit h = new RaycastHit();
 			Vector3 _up = up;
-			h.point = root.position - _up * maxStep * 10f;
+			
+			Vector3 legsCenter = Vector3.zero;
+			foreach (Leg leg in legs) legsCenter += leg.transform.position;
+			legsCenter /= (float)legs.Length;
+			
+			h.point = legsCenter - _up * maxStep * 10f;
 			float distMlp = maxDistanceMlp + 1;
 			h.distance = maxStep * distMlp;
 			
 			if (maxStep <= 0f) return h;
 			
-			if (quality != Quality.Best) Physics.Raycast(root.position + _up * maxStep, -_up, out h, maxStep * distMlp, layers);
-			else Physics.SphereCast(root.position + _up * maxStep, rootSphereCastRadius, -up, out h, maxStep * distMlp, layers);
+			if (quality != Quality.Best) Physics.Raycast(legsCenter + _up * maxStep, -_up, out h, maxStep * distMlp, layers, QueryTriggerInteraction.Ignore);
+			else Physics.SphereCast(legsCenter + _up * maxStep, rootSphereCastRadius, -up, out h, maxStep * distMlp, layers, QueryTriggerInteraction.Ignore);
 			
 			return h;
 		}
-
 
 		/// <summary>
 		/// Gets a value indicating whether this <see cref="Grounding"/> is valid.
@@ -242,33 +256,35 @@ namespace RootMotion.FinalIK {
 
 				if (leg.isGrounded) isGrounded = true;
 			}
-			
-			// Precess pelvis
-			pelvis.Process(-lowestOffset * lowerPelvisWeight, -highestOffset * liftPelvisWeight, isGrounded);
+
+            // Precess pelvis
+            lowestOffset = Mathf.Max(lowestOffset, 0f);
+            highestOffset = Mathf.Min(highestOffset, 0f);
+            pelvis.Process(-lowestOffset * lowerPelvisWeight, -highestOffset * liftPelvisWeight, isGrounded);
 		}
 
 		// Calculate the normal of the plane defined by leg positions, so we know how to rotate the body
 		public Vector3 GetLegsPlaneNormal() {
 			if (!initiated) return Vector3.up;
 
-			Vector3 _up = up;
-			Vector3 normal = _up;
-			
+            Vector3 _up = up;
+            Vector3 normal = _up;
+
 			// Go through all the legs, rotate the normal by it's offset
 			for (int i = 0; i < legs.Length; i++) {
 				// Direction from the root to the leg
-				Vector3 legDirection = legs[i].IKPosition - root.position; 
-				
-				// Find the tangent
+				Vector3 legDirection = legs[i].IKPosition - root.position;
+
+                // Find the tangent
 				Vector3 legNormal = _up;
 				Vector3 legTangent = legDirection;
 				Vector3.OrthoNormalize(ref legNormal, ref legTangent);
 				
-				// Find the rotation offset from the tangent to the direction
-				Quaternion fromTo = Quaternion.FromToRotation(legTangent, legDirection);
-
-				// Rotate the normal
-				normal = fromTo * normal;
+                // Find the rotation offset from the tangent to the direction
+                Quaternion fromTo = Quaternion.FromToRotation(legTangent, legDirection);
+                
+                // Rotate the normal
+                normal = fromTo * normal;
 			}
 			
 			return normal;
@@ -327,6 +343,10 @@ namespace RootMotion.FinalIK {
 				if (root.up == Vector3.up) return false;
 				return true;
 			}
+		}
+
+		public Vector3 GetFootCenterOffset() {
+			return root.forward * footRadius + root.forward * footCenterOffset;
 		}
 	}
 }

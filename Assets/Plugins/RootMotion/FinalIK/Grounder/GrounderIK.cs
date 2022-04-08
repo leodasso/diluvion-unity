@@ -6,14 +6,14 @@ namespace RootMotion.FinalIK {
 	/// <summary>
 	/// Grounding for LimbIK, CCD and/or FABRIK solvers.
 	/// </summary>
-	[HelpURL("http://www.root-motion.com/finalikdox/html/page11.html")]
+	[HelpURL("http://www.root-motion.com/finalikdox/html/page9.html")]
 	[AddComponentMenu("Scripts/RootMotion.FinalIK/Grounder/Grounder IK")]
 	public class GrounderIK: Grounder {
 
 		// Open the User Manual URL
 		[ContextMenu("User Manual")]
 		protected override void OpenUserManual() {
-			Application.OpenURL("http://www.root-motion.com/finalikdox/html/page11.html");
+			Application.OpenURL("http://www.root-motion.com/finalikdox/html/page9.html");
 		}
 		
 		// Open the Script Reference URL
@@ -57,7 +57,7 @@ namespace RootMotion.FinalIK {
 		
 		#endregion Main Interface
 
-		public override void Reset() {
+		public override void ResetPosition() {
 			solver.Reset();
 		}
 
@@ -67,6 +67,7 @@ namespace RootMotion.FinalIK {
 		private int solvedFeet;
 		private bool solved;
 		private float lastWeight;
+		private Rigidbody characterRootRigidbody;
 
 		// Can we initiate the Grounding?
 		private bool IsReadyToInitiate() {
@@ -117,10 +118,10 @@ namespace RootMotion.FinalIK {
 				rootRotationWeight = Mathf.Clamp(rootRotationWeight, 0f, 1f);
 				rootRotationSpeed = Mathf.Clamp(rootRotationSpeed, 0f, rootRotationSpeed);
 
-				// Root rotation
-				if (characterRoot != null && rootRotationSpeed > 0f && rootRotationWeight > 0f) {
+                // Root rotation
+				if (characterRoot != null && rootRotationSpeed > 0f && rootRotationWeight > 0f && solver.isGrounded) {
 					Vector3 normal = solver.GetLegsPlaneNormal();
-
+                    
 					// Root rotation weight
 					if (rootRotationWeight < 1f) {
 						normal = Vector3.Slerp(Vector3.up, normal, rootRotationWeight);
@@ -131,7 +132,11 @@ namespace RootMotion.FinalIK {
 					Quaternion rotationTarget = Quaternion.RotateTowards(upRotation, Quaternion.FromToRotation(transform.up, normal) * characterRoot.rotation, maxRootRotationAngle);
 
 					// Rotate the root
-					characterRoot.rotation = Quaternion.Lerp(characterRoot.rotation, rotationTarget, Time.deltaTime * rootRotationSpeed);
+					if (characterRootRigidbody == null) {
+						characterRoot.rotation = Quaternion.Lerp(characterRoot.rotation, rotationTarget, Time.deltaTime * rootRotationSpeed);
+					} else {
+						characterRootRigidbody.MoveRotation(Quaternion.Lerp(characterRoot.rotation, rotationTarget, Time.deltaTime * rootRotationSpeed));
+					}
 				}
 
 				return;
@@ -152,6 +157,7 @@ namespace RootMotion.FinalIK {
 			// Gathering the last bones of the IK solvers as feet
 			for (int i = 0; i < legs.Length; i++) {
 				IKSolver.Point[] points = legs[i].GetIKSolver().GetPoints();
+
 				feet[i] = points[points.Length - 1].transform;
 
 				// Add to the update delegates of each ik solver
@@ -164,6 +170,14 @@ namespace RootMotion.FinalIK {
 
 			// Initiate the Grounding
 			solver.Initiate(transform, feet);
+
+			for (int i = 0; i < legs.Length; i++) {
+				if (legs [i] is LegIK) {
+					solver.legs[i].invertFootCenter = true;
+				}
+			}
+
+			characterRootRigidbody = characterRoot.GetComponent<Rigidbody>();
 			
 			initiated = true;
 		}
@@ -209,6 +223,11 @@ namespace RootMotion.FinalIK {
 		private void SetLegIK(int index) {
 			footRotations[index] = feet[index].rotation;
 
+			if (legs [index] is LegIK) {
+				(legs[index].GetIKSolver() as IKSolverLeg).IKRotation = Quaternion.Slerp(Quaternion.identity, solver.legs[index].rotationOffset, weight) * footRotations[index];
+				(legs[index].GetIKSolver() as IKSolverLeg).IKRotationWeight = 1f;
+			}
+
 			legs[index].GetIKSolver().IKPosition = solver.legs[index].IKPosition;
 			legs[index].GetIKSolver().IKPositionWeight = weight;
 		}
@@ -221,6 +240,7 @@ namespace RootMotion.FinalIK {
 			// Only do this after the last IK solver has finished
 			solvedFeet ++;
 			if (solvedFeet < feet.Length) return;
+            solved = false;
 
 			for (int i = 0; i < feet.Length; i++) {
 				feet[i].rotation = Quaternion.Slerp(Quaternion.identity, solver.legs[i].rotationOffset, weight) * footRotations[i];

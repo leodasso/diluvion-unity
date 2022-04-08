@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.Events;
 
 namespace RootMotion.FinalIK {
 
@@ -10,8 +11,22 @@ namespace RootMotion.FinalIK {
 	[AddComponentMenu("Scripts/RootMotion.FinalIK/Interaction System/Interaction Object")]
 	public class InteractionObject : MonoBehaviour {
 
-		// Open a video tutorial video
-		[ContextMenu("TUTORIAL VIDEO (PART 1: BASICS)")]
+        // Open the User Manual URL
+        [ContextMenu("User Manual")]
+        void OpenUserManual()
+        {
+            Application.OpenURL("http://www.root-motion.com/finalikdox/html/page10.html");
+        }
+
+        // Open the Script Reference URL
+        [ContextMenu("Scrpt Reference")]
+        void OpenScriptReference()
+        {
+            Application.OpenURL("http://www.root-motion.com/finalikdox/html/class_root_motion_1_1_final_i_k_1_1_interaction_object.html");
+        }
+
+        // Open a video tutorial video
+        [ContextMenu("TUTORIAL VIDEO (PART 1: BASICS)")]
 		void OpenTutorial1() {
 			Application.OpenURL("https://www.youtube.com/watch?v=r5jiZnsDH3M");
 		}
@@ -81,8 +96,15 @@ namespace RootMotion.FinalIK {
 			[Tooltip("The messages sent on this event using GameObject.SendMessage().")]
 			public Message[] messages;
 
+			[TooltipAttribute("The UnityEvent to invoke on this event.")]
+			/// <summary>
+			/// The UnityEvent to invoke on this event.
+			/// </summary>
+			public UnityEvent unityEvent;
+
 			// Activates this event
 			public void Activate(Transform t) {
+				unityEvent.Invoke();
 				foreach (AnimatorEvent e in animations) e.Activate(pickUp);
 				foreach (Message m in messages) m.Send(t);
 			}
@@ -206,7 +228,8 @@ namespace RootMotion.FinalIK {
 				RotateBoneWeight, // Rotating the bone after FBBIK is finished
 				Push, // FBIKChain.push
 				PushParent, // FBIKChain.pushParent
-				PoserWeight // Weight of hand/generic Poser
+				PoserWeight, // Weight of hand/generic Poser
+                BendGoalWeight // Weight of the bend goal
 			}
 			
 			/// <summary>
@@ -321,6 +344,25 @@ namespace RootMotion.FinalIK {
 			}
 		}
 
+		/// <summary>
+		/// Gets the InteractionTarget of the specified effector type and InteractionSystem tag.
+		/// </summary>
+		public InteractionTarget GetTarget(FullBodyBipedEffector effectorType, InteractionSystem interactionSystem) {
+			if (interactionSystem.CompareTag(string.Empty) || interactionSystem.CompareTag("")) {
+				foreach (InteractionTarget target in targets) {
+					if (target.effectorType == effectorType) return target;
+				}
+
+				return null;
+			}
+
+			foreach (InteractionTarget target in targets) {
+				if (target.effectorType == effectorType && target.CompareTag(interactionSystem.tag)) return target;
+			}
+			
+			return null;
+		}
+
 		#endregion Main Interface
 
 		// Returns true if the specified WeightCurve.Type is used by this InteractionObject
@@ -344,12 +386,12 @@ namespace RootMotion.FinalIK {
 			if (tag == string.Empty || tag == "") return GetTarget(effectorType);
 			
 			for (int i = 0; i < targets.Length; i++) {
-				if (targets[i].effectorType == effectorType && targets[i].tag == tag) return targets[i].transform;
+				if (targets[i].effectorType == effectorType && targets[i].CompareTag(tag)) return targets[i].transform;
 			}
 
 			return transform;
 		}
-		
+
 		// Called when interaction is started with this InteractionObject
 		public void OnStartInteraction(InteractionSystem interactionSystem) {
 			this.lastUsedInteractionSystem = interactionSystem;
@@ -417,7 +459,7 @@ namespace RootMotion.FinalIK {
 		private InteractionTarget[] targets = new InteractionTarget[0];
 
 		// Initiate this Interaction Object
-		void Awake() {
+		void Start() {
 			Initiate();
 		}
 
@@ -451,7 +493,10 @@ namespace RootMotion.FinalIK {
 			case WeightCurve.Type.PushParent:
 				solver.GetChain(effector).pushParent = Mathf.Lerp(solver.GetChain(effector).pushParent, value, weight);
 				return;
-			}
+            case WeightCurve.Type.BendGoalWeight:
+                solver.GetChain(effector).bendConstraint.weight = Mathf.Lerp(solver.GetChain(effector).bendConstraint.weight, value, weight);
+                return;
+            }
 		}
 
 		// Gets the interaction target Transform
@@ -476,18 +521,6 @@ namespace RootMotion.FinalIK {
 				if (multipliers[i].result == weightCurveType) return i;
 			}
 			return -1;
-		}
-
-		// Open the User Manual URL
-		[ContextMenu("User Manual")]
-		private void OpenUserManual() {
-			Application.OpenURL("http://www.root-motion.com/finalikdox/html/page10.html");
-		}
-		
-		// Open the Script Reference URL
-		[ContextMenu("Scrpt Reference")]
-		private void OpenScriptReference() {
-			Application.OpenURL("http://www.root-motion.com/finalikdox/html/class_root_motion_1_1_final_i_k_1_1_interaction_object.html");
 		}
 	}
 }

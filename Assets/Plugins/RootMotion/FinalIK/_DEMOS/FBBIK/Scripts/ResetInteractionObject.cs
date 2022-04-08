@@ -35,7 +35,7 @@ namespace RootMotion.Demos {
 		private IEnumerator ResetObject(float resetTime) {
 			while (Time.time < resetTime) yield return null;
 
-			var poser = transform.parent.GetComponent<Poser>();
+            var poser = transform.parent.GetComponent<Poser>();
 			if (poser != null) {
 				poser.poseRoot = null;
 				poser.weight = 0f;

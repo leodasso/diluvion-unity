@@ -70,10 +70,10 @@ using System.Collections;
 		#endregion Main Interface
 
 		public Vector3 defaultLocalDirection, defaultChildDirection;
-		[System.NonSerializedAttribute] public float clampF = 0.505f;
-
-		//private IKSolver.Node node1, node2, node3;
-		private int chainIndex1;
+        [System.NonSerializedAttribute] public float clampF = 0.505f;
+        
+        //private IKSolver.Node node1, node2, node3;
+        private int chainIndex1;
 		private int nodeIndex1;
 		private int chainIndex2;
 		private int nodeIndex2;
@@ -81,6 +81,7 @@ using System.Collections;
 		private int nodeIndex3;
 
 		public bool initiated { get; private set; }
+		private bool limbOrientationsSet;
 
 		public IKConstraintBend() {}
 		
@@ -105,14 +106,16 @@ using System.Collections;
 			// Find the default bend direction orthogonal to the chain direction
 			direction = OrthoToBone1(solver, OrthoToLimb(solver, bone2.position - bone1.position));
 
-			// Default bend direction relative to the first node
-			defaultLocalDirection = Quaternion.Inverse(bone1.rotation) * direction;
+			if (!limbOrientationsSet) {
+				// Default bend direction relative to the first node
+				defaultLocalDirection = Quaternion.Inverse(bone1.rotation) * direction;
 
-			// Default plane normal
-			Vector3 defaultNormal = Vector3.Cross((bone3.position - bone1.position).normalized, direction);
-			
-			// Default plane normal relative to the third node
-			defaultChildDirection = Quaternion.Inverse(bone3.rotation) * defaultNormal;
+				// Default plane normal
+				Vector3 defaultNormal = Vector3.Cross((bone3.position - bone1.position).normalized, direction);
+				
+				// Default plane normal relative to the third node
+				defaultChildDirection = Quaternion.Inverse(bone3.rotation) * defaultNormal;
+			}
 
 			initiated = true;
 		}
@@ -128,6 +131,8 @@ using System.Collections;
 			// Default bend direction relative to the first node
 			defaultLocalDirection = upper.normalized;
 			defaultChildDirection = last.normalized;
+
+			limbOrientationsSet = true;
 		}
 
 		/*

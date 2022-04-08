@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEditor;
-#pragma warning disable 618
 
 namespace RootMotion.FinalIK {
 
@@ -41,18 +40,18 @@ namespace RootMotion.FinalIK {
 			if (!Application.isPlaying) {
 				for (int i = 0; i < script.fingers.Length; i++) {
 					Handles.DrawLine(script.fingers[i].bone1.position, script.fingers[i].bone2.position);
-					Handles.SphereCap(0, script.fingers[i].bone1.position, Quaternion.identity, IKSolverInspector.GetHandleSize(script.fingers[i].bone1.position) * 0.5f);
-					Handles.SphereCap(0, script.fingers[i].bone2.position, Quaternion.identity, IKSolverInspector.GetHandleSize(script.fingers[i].bone2.position) * 0.5f);
+					Inspector.SphereCap(0, script.fingers[i].bone1.position, Quaternion.identity, IKSolverInspector.GetHandleSize(script.fingers[i].bone1.position) * 0.5f);
+					Inspector.SphereCap(0, script.fingers[i].bone2.position, Quaternion.identity, IKSolverInspector.GetHandleSize(script.fingers[i].bone2.position) * 0.5f);
 
 					if (script.fingers[i].bone3 != null) {
 						Handles.DrawLine(script.fingers[i].bone2.position, script.fingers[i].bone3.position);
 						Handles.DrawLine(script.fingers[i].bone3.position, script.fingers[i].tip.position);
-						Handles.SphereCap(0, script.fingers[i].bone3.position, Quaternion.identity, IKSolverInspector.GetHandleSize(script.fingers[i].bone3.position) * 0.5f);
+						Inspector.SphereCap(0, script.fingers[i].bone3.position, Quaternion.identity, IKSolverInspector.GetHandleSize(script.fingers[i].bone3.position) * 0.5f);
 					} else {
 						Handles.DrawLine(script.fingers[i].bone2.position, script.fingers[i].tip.position);
 					}
 
-					Handles.SphereCap(0, script.fingers[i].tip.position, Quaternion.identity, IKSolverInspector.GetHandleSize(script.fingers[i].tip.position) * 0.5f);
+					Inspector.SphereCap(0, script.fingers[i].tip.position, Quaternion.identity, IKSolverInspector.GetHandleSize(script.fingers[i].tip.position) * 0.5f);
 				}
 			}
 
@@ -65,7 +64,7 @@ namespace RootMotion.FinalIK {
 
 						float size = IKSolverInspector.GetHandleSize(script.fingers[selected].IKPosition);
 
-						Handles.CubeCap(0, script.fingers[selected].IKPosition, script.fingers[selected].IKRotation, size);
+						Inspector.CubeCap(0, script.fingers[selected].IKPosition, script.fingers[selected].IKRotation, size);
 
 						if (script.fingers[selected].target == null) {
 							switch(Tools.current) {
@@ -87,10 +86,8 @@ namespace RootMotion.FinalIK {
 
 					if (script.fingers[i].weight > 0 && selected != i && script.fingers[i].initiated) {
 						float size = IKSolverInspector.GetHandleSize(script.fingers[i].IKPosition) * 0.5f;
-						
-						if (Handles.Button(script.fingers[i].IKPosition, Quaternion.identity, size, size, Handles.DotCap)) {
-							selected = i;
-						}
+
+						if (Inspector.DotButton(script.fingers[i].IKPosition, Quaternion.identity, size, size)) selected = i;
 					}
 				}
 			}

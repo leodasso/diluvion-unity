@@ -13,7 +13,6 @@ namespace RootMotion.FinalIK {
 		protected abstract MonoBehaviour GetMonoBehaviour(out int executionOrder);
 
 		protected SerializedProperty solver;
-		protected SerializedContent timeStep;
 		protected SerializedContent fixTransforms;
 		protected SerializedContent[] content;
 		protected virtual void OnApplyModifiedProperties() {}
@@ -33,7 +32,6 @@ namespace RootMotion.FinalIK {
 			}
 
 			solver = serializedObject.FindProperty("solver");
-			timeStep = new SerializedContent(serializedObject.FindProperty("timeStep"), new GUIContent("Time Step", "If zero, will update the solver in every LateUpdate(). Use this for chains that are animated. If > 0, will be used as updating frequency so that the solver will reach its target in the same time on all machines."));
 			fixTransforms = new SerializedContent(serializedObject.FindProperty("fixTransforms"), new GUIContent("Fix Transforms", "If true, will fix all the Transforms used by the solver to their initial state in each Update. This prevents potential problems with unanimated bones and animator culling with a small cost of performance. Not recommended for CCD and FABRIK solvers."));
 
 			OnEnableVirtual();
@@ -55,7 +53,6 @@ namespace RootMotion.FinalIK {
 
 			serializedObject.Update();
 			
-			Inspector.AddClampedFloat(timeStep, 0f, Mathf.Infinity);
 			Inspector.AddContent(fixTransforms);
 			
 			AddInspector();

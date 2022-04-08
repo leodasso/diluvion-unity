@@ -36,6 +36,10 @@ namespace RootMotion.FinalIK {
 		/// Mapping 3 segment limbs to the solver
 		/// </summary>
 		public IKMappingLimb[] limbMappings = new IKMappingLimb[0];
+		/// <summary>
+		/// If false, will not solve a FABRIK pass and the arms/legs will not be able to pull the body.
+		/// </summary>
+		public bool FABRIKPass = true;
 		
 		/// <summary>
 		/// Gets the effector of the specified Transform.
@@ -84,6 +88,7 @@ namespace RootMotion.FinalIK {
 			for (int i = 0; i < chain.Length; i++) {
 				for (int n = 0; n < chain[i].nodes.Length; n++) {
 					pointArray[added] = chain[i].nodes[n] as IKSolver.Node;
+                    added++;
 				}
 			}
 
@@ -165,6 +170,7 @@ namespace RootMotion.FinalIK {
 		}
 		
 		public override void FixTransforms() {
+			if (!initiated) return;
 			if (IKPositionWeight <= 0f) return;
 
 			spineMapping.FixTransforms();
@@ -247,33 +253,36 @@ namespace RootMotion.FinalIK {
 		protected virtual void Solve() {
 			// Iterate solver
 			if(iterations > 0) {
-				for (int i = 0; i < iterations; i++) {
+				for (int i = 0; i < (FABRIKPass? iterations: 1); i++) {
 					if (OnPreIteration != null) OnPreIteration(i);
 					
 					// Apply end-effectors
 					for (int e = 0; e < effectors.Length; e++) if (effectors[e].isEndEffector) effectors[e].Update(this);
 				
-					// Reaching
-					//for (int c = 0; c < chain.Length; c++) chain[c].Push();
-					chain[0].Push(this);
+					if (FABRIKPass) {
+						// Reaching
+						chain[0].Push(this);
 
-					// Reaching
-					chain[0].Reach(this);
-
-					// Apply non end-effectors
-					for (int e = 0; e < effectors.Length; e++) if (!effectors[e].isEndEffector) effectors[e].Update(this);
+						// Reaching
+						if (FABRIKPass) chain[0].Reach(this);
+					
+						// Apply non end-effectors
+						for (int e = 0; e < effectors.Length; e++) if (!effectors[e].isEndEffector) effectors[e].Update(this);
+					}
 
 					// Trigonometric pass to release push tension from the solver
 					chain[0].SolveTrigonometric(this);
 
-					// Solving FABRIK forward
-					chain[0].Stage1(this);
+					if (FABRIKPass) {
+						// Solving FABRIK forward
+						chain[0].Stage1(this);
 
-					// Apply non end-effectors again
-					for (int e = 0; e < effectors.Length; e++) if (!effectors[e].isEndEffector) effectors[e].Update(this);
+						// Apply non end-effectors again
+						for (int e = 0; e < effectors.Length; e++) if (!effectors[e].isEndEffector) effectors[e].Update(this);
 
-					// Solving FABRIK backwards
-					chain[0].Stage2(this, chain[0].nodes[0].solverPosition);
+						// Solving FABRIK backwards
+						chain[0].Stage2(this, chain[0].nodes[0].solverPosition);
+					}
 
 					if (OnPostIteration != null) OnPostIteration(i);
 				}

@@ -91,6 +91,7 @@ namespace RootMotion.FinalIK {
 
 		// Reset all Bodies
 		public void ResetBodies() {
+			lastTime = Time.time;
 			foreach (Body body in bodies) body.Reset();
 		}
 

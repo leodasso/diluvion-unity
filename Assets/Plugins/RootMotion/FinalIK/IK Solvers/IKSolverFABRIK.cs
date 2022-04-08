@@ -118,11 +118,11 @@ using System;
 		 * Check if bones have moved from last solved positions
 		 * */
 		private void OnPreSolve() {
+			chainLength = 0;
+
 			for (int i = 0; i < bones.Length; i++) {
 				bones[i].solverPosition = bones[i].transform.position;
 				bones[i].solverRotation = bones[i].transform.rotation;
-
-				chainLength = 0;
 
 				if (i < bones.Length - 1) {
 					bones[i].length = (bones[i].transform.position - bones[i + 1].transform.position).magnitude;
@@ -349,8 +349,9 @@ using System;
 		 * Rotate bones to match the solver positions when using Rotation Limits
 		 * */
 		private void MapToSolverPositionsLimited() {
+            bones[0].transform.position = bones[0].solverPosition;
+
 			for (int i = 0; i < bones.Length; i++) {
-				bones[i].transform.position = bones[i].solverPosition;
 				if (i < bones.Length - 1) bones[i].transform.rotation = bones[i].solverRotation;
 			}
 		}

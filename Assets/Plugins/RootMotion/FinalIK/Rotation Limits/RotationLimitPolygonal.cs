@@ -12,14 +12,14 @@ namespace RootMotion.FinalIK {
 	/// http://users.soe.ucsc.edu/~avg/Papers/jtl.pdf
 	/// 
 	/// </summary>
-	[HelpURL("http://www.root-motion.com/finalikdox/html/page12.html")]
+	[HelpURL("http://www.root-motion.com/finalikdox/html/page14.html")]
 	[AddComponentMenu("Scripts/RootMotion.FinalIK/Rotation Limits/Rotation Limit Polygonal")]
 	public class RotationLimitPolygonal : RotationLimit {
 
 		// Open the User Manual URL
 		[ContextMenu("User Manual")]
 		private void OpenUserManual() {
-			Application.OpenURL("http://www.root-motion.com/finalikdox/html/page12.html");
+			Application.OpenURL("http://www.root-motion.com/finalikdox/html/page14.html");
 		}
 		
 		// Open the Script Reference URL
@@ -132,9 +132,9 @@ namespace RootMotion.FinalIK {
 			}
 		}
 		
-		[SerializeField][HideInInspector] public LimitPoint[] points;
-		[SerializeField][HideInInspector] public Vector3[] P;
-		[SerializeField][HideInInspector] public ReachCone[] reachCones = new ReachCone[0];
+		[HideInInspector] public LimitPoint[] points;
+		[HideInInspector] public Vector3[] P;
+		[HideInInspector] public ReachCone[] reachCones = new ReachCone[0];
 		
 		void Start() {
 			if (points.Length < 3) ResetToDefault();

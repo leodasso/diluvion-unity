@@ -18,9 +18,9 @@ namespace RootMotion.Demos {
 
 		private bool isSitting;
 
-		// GUI for calling the interactions
-		void OnGUI() {
-			interrupt = GUILayout.Toggle(interrupt, "Interrupt");
+        // GUI for calling the interactions
+        void OnGUI() {
+            interrupt = GUILayout.Toggle(interrupt, "Interrupt");
 
 			// While seated
 			if (isSitting) {

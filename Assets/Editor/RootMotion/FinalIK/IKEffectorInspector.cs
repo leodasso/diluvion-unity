@@ -73,7 +73,7 @@ namespace RootMotion.FinalIK {
 					Handles.color = new Color(color.r, color.g, color.b, weight);
 
 					Handles.DrawLine(e.position, e.bone.position);
-					Handles.SphereCap(0, e.bone.position, Quaternion.identity, size * 0.5f);
+					Inspector.SphereCap(0, e.bone.position, Quaternion.identity, size * 0.5f);
 
 					// Manipulating position and rotation
 					if (e.target == null) {
@@ -87,8 +87,8 @@ namespace RootMotion.FinalIK {
 						}
 					}
 					
-					if (rotate) Handles.CubeCap(0, e.position, e.rotation, size);
-					else Handles.SphereCap(0, e.position, Quaternion.identity, size);
+					if (rotate) Inspector.CubeCap(0, e.position, e.rotation, size);
+					else Inspector.SphereCap(0, e.position, Quaternion.identity, size);
 				//}
 			}
 		}

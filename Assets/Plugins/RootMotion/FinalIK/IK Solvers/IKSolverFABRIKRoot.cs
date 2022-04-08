@@ -98,6 +98,8 @@ namespace RootMotion.FinalIK {
 		}
 
 		public override void FixTransforms() {
+			if (!initiated) return;
+
 			root.localPosition = rootDefaultPosition;
 			for (int i = 0; i < chains.Length; i++) chains[i].ik.solver.FixTransforms();
 		}

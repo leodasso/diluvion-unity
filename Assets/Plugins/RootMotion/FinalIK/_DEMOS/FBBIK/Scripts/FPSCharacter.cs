@@ -6,8 +6,6 @@ namespace RootMotion.Demos {
 	/// <summary>
 	/// Demo character controller for the Full Body FPS scene.
 	/// </summary>
-	[RequireComponent(typeof(FPSAiming))]
-	[RequireComponent(typeof(Animator))]
 	public class FPSCharacter: MonoBehaviour {
 
 		[Range(0f, 1f)] public float walkSpeed = 0.5f;

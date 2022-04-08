@@ -6,14 +6,14 @@ namespace RootMotion.FinalIK {
 	/// <summary>
 	/// Grounding for LimbIK, CCD and/or FABRIK solvers.
 	/// </summary>
-	[HelpURL("http://www.root-motion.com/finalikdox/html/page11.html")]
+	[HelpURL("http://www.root-motion.com/finalikdox/html/page9.html")]
 	[AddComponentMenu("Scripts/RootMotion.FinalIK/Grounder/Grounder Quadruped")]
 	public class GrounderQuadruped: Grounder {
 
 		// Open the User Manual URL
 		[ContextMenu("User Manual")]
 		protected override void OpenUserManual() {
-			Application.OpenURL("http://www.root-motion.com/finalikdox/html/page11.html");
+			Application.OpenURL("http://www.root-motion.com/finalikdox/html/page9.html");
 		}
 		
 		// Open the Script Reference URL
@@ -96,10 +96,14 @@ namespace RootMotion.FinalIK {
 		/// %IK components for the forelegs. Can be any type of IK components.
 		/// </summary>
 		public IK[] forelegs;
+		/// <summary>
+		/// When using GrounderQuadruped on a spherical object, update this vector to always point towards the center of that object.
+		/// </summary>
+		[HideInInspector] public Vector3 gravity = Vector3.down;
 		
 		#endregion Main Interface
 
-		public override void Reset() {
+		public override void ResetPosition() {
 			solver.Reset();
 			forelegSolver.Reset();
 		}
@@ -133,6 +137,7 @@ namespace RootMotion.FinalIK {
 		private Transform forefeetRoot;
 		private Quaternion headRotation;
 		private float lastWeight;
+		private Rigidbody characterRootRigidbody;
 		
 		// Can we initiate the Grounding?
 		private bool IsReadyToInitiate() {
@@ -220,7 +225,9 @@ namespace RootMotion.FinalIK {
 			
 			for (int i = 0; i < footBones.Length; i++) feet[i].leg = solver.legs[i];
 			for (int i = 0; i < forefootBones.Length; i++) feet[i + legs.Length].leg = forelegSolver.legs[i];
-			
+
+			characterRootRigidbody = characterRoot.GetComponent<Rigidbody>();
+
 			initiated = true;
 		}
 		
@@ -257,7 +264,7 @@ namespace RootMotion.FinalIK {
 			// Rotate the character root
 			RootRotation();
 		}
-		
+
 		// Rotate the character along with the terrain
 		private void RootRotation() {
 			if (rootRotationWeight <= 0f) return;
@@ -268,22 +275,27 @@ namespace RootMotion.FinalIK {
 			
 			// Get the horizontal rotation of the character
 			Vector3 tangent = characterRoot.forward;
-			tangent.y = 0f;
-			Quaternion horizontalRotation = Quaternion.LookRotation(tangent);
-			
+
+			Vector3 normal = -gravity;
+			Vector3.OrthoNormalize(ref normal, ref tangent);
+			Quaternion horizontalRotation = Quaternion.LookRotation(tangent, -gravity);
+
 			// Get the direction from root hit to forelegs root hit in the space of the horizontal character rotation
 			Vector3 hitDirection = forelegSolver.rootHit.point - solver.rootHit.point;
 			Vector3 hitDirectionLocal = Quaternion.Inverse(horizontalRotation) * hitDirection;
-			
+
 			// Get the angle between the horizontal and hit directions
 			float angleTarget = Mathf.Atan2(hitDirectionLocal.y, hitDirectionLocal.z) * Mathf.Rad2Deg;
 			angleTarget = Mathf.Clamp(angleTarget * rootRotationWeight, minRootRotation, maxRootRotation);
 			
 			// Interpolate the angle
 			angle = Mathf.Lerp(angle, angleTarget, Time.deltaTime * rootRotationSpeed);
-			
-			// Rotate the character
-			characterRoot.rotation = Quaternion.Slerp(characterRoot.rotation, Quaternion.AngleAxis(-angle, characterRoot.right) * horizontalRotation, weight);
+
+            if (characterRootRigidbody == null) {
+                characterRoot.rotation = Quaternion.Slerp(characterRoot.rotation, Quaternion.AngleAxis(-angle, characterRoot.right) * horizontalRotation, weight);
+            } else {
+                characterRootRigidbody.MoveRotation(Quaternion.Slerp(characterRoot.rotation, Quaternion.AngleAxis(-angle, characterRoot.right) * horizontalRotation, weight));
+			}
 		}
 		
 		// Called before updating the first IK solver

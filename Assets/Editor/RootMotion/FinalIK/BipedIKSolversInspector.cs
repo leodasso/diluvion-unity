@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEditor;
 using System.Collections;
-#pragma warning disable 618
 
 namespace RootMotion.FinalIK {
 
@@ -75,13 +74,13 @@ namespace RootMotion.FinalIK {
 				for (int i = 0; i < solvers.ikSolvers.Length; i++) {
 					Handles.color = GetSolverColor(i);
 					if (solvers.ikSolvers[i].GetIKPositionWeight() > 0 && selected != i && solvers.ikSolvers[i].initiated) {
-						if (Handles.Button(solvers.ikSolvers[i].GetIKPosition(), Quaternion.identity, GetHandleSize(solvers.ikSolvers[i].GetIKPosition()), GetHandleSize(solvers.ikSolvers[i].GetIKPosition()), Handles.DotCap)) selected = i;
+						if (Inspector.DotButton(solvers.ikSolvers[i].GetIKPosition(), Quaternion.identity, GetHandleSize(solvers.ikSolvers[i].GetIKPosition()), GetHandleSize(solvers.ikSolvers[i].GetIKPosition()))) selected = i;
 					}
 				}
 				
 				if ((solvers.pelvis.positionWeight > 0 || solvers.pelvis.rotationWeight > 0) && selected != solvers.ikSolvers.Length) {
 					Handles.color = GetSolverColor(7);
-					if (Handles.Button(solvers.pelvis.position, Quaternion.identity, GetHandleSize(solvers.pelvis.position),  GetHandleSize(solvers.pelvis.position), Handles.DotCap)) selected = solvers.ikSolvers.Length;
+					if (Inspector.DotButton(solvers.pelvis.position, Quaternion.identity, GetHandleSize(solvers.pelvis.position),  GetHandleSize(solvers.pelvis.position))) selected = solvers.ikSolvers.Length;
 				}
 			}
 		}

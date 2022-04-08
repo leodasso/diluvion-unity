@@ -51,7 +51,7 @@ using System.Collections;
 			Handles.color = new Color(Mathf.Lerp(1f, color.r, solver.rootPin), Mathf.Lerp(1f, color.g, solver.rootPin), Mathf.Lerp(1f, color.b, solver.rootPin), Mathf.Lerp(0.5f, 1f, solver.rootPin));
 			if (solver.GetRoot() != null) {
 				Handles.DrawLine(solver.chains[0].ik.solver.bones[0].transform.position, solver.GetRoot().position);
-				Handles.CubeCap(0, solver.GetRoot().position, Quaternion.identity, GetHandleSize(solver.GetRoot().position));
+				Inspector.CubeCap(0, solver.GetRoot().position, Quaternion.identity, GetHandleSize(solver.GetRoot().position));
 			}
 		}
 		
@@ -63,7 +63,8 @@ using System.Collections;
 			foreach (FABRIKChain c in chain) {
 				if (c.ik.solver.IKPositionWeight > 0 && selected != c) {
 					Handles.color = GetChainColor(c, color);
-					if (Handles.Button(c.ik.solver.GetIKPosition(), Quaternion.identity, GetHandleSize(c.ik.solver.GetIKPosition()), GetHandleSize(c.ik.solver.GetIKPosition()), Handles.DotCap)) {
+
+					if (Inspector.DotButton(c.ik.solver.GetIKPosition(), Quaternion.identity, GetHandleSize(c.ik.solver.GetIKPosition()), GetHandleSize(c.ik.solver.GetIKPosition()))) {
 						selected = c;
 						return;
 					}

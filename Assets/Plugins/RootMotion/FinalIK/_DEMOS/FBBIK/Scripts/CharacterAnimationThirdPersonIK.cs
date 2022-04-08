@@ -7,7 +7,6 @@ namespace RootMotion.Demos {
 	/// <summary>
 	/// Contols animation for a third person person controller.
 	/// </summary>
-	[RequireComponent(typeof(FullBodyBipedIK))]
 	public class CharacterAnimationThirdPersonIK: CharacterAnimationThirdPerson {
 		
 		private FullBodyBipedIK ik;

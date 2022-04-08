@@ -23,6 +23,7 @@ namespace RootMotion.Demos {
 			public bool onGround; // is the character grounded
 			public bool isStrafing; // should the character always rotate to face the move direction or strafe?
 			public float yVelocity; // y velocity of the character
+			public bool doubleJump;
 		}
 
 		[Header("References")]
@@ -43,17 +44,20 @@ namespace RootMotion.Demos {
 		[Header("Rotation")]
 		public bool lookInCameraDirection; // should the character be looking in the same direction that the camera is facing
 		public float turnSpeed = 5f;					// additional turn speed added when the player is moving (added to animation root rotation)
-		public float stationaryTurnSpeedMlp = 1f;			// additional turn speed added when the player is stationary (added to animation root rotation)
+		public float stationaryTurnSpeedMlp = 1f;           // additional turn speed added when the player is stationary (added to animation root rotation)
 
-		[Header("Jumping and Falling")]
+        [Header("Jumping and Falling")]
+        public bool smoothJump = true; // If true, adds jump force over a few fixed time steps, not in a single step
 		public float airSpeed = 6f; // determines the max speed of the character while airborne
 		public float airControl = 2f; // determines the response speed of controlling the character while airborne
 		public float jumpPower = 12f; // determines the jump force applied when jumping (and therefore the jump height)
 		public float jumpRepeatDelayTime = 0f;			// amount of time that must elapse between landing and being able to jump again
+		public bool doubleJumpEnabled;
+		public float doubleJumpPowerMlp = 1f;
 
 		[Header("Wall Running")]
 
-		[SerializeField] LayerMask wallRunLayers; // walkable vertical surfaces
+		public LayerMask wallRunLayers; // walkable vertical surfaces
 		public float wallRunMaxLength = 1f;					// max duration of a wallrun
 		public float wallRunMinMoveMag = 0.6f;				// the minumum magnitude of the user control input move vector
 		public float wallRunMinVelocityY = -1f;				// the minimum vertical velocity of doing a wall run
@@ -76,10 +80,16 @@ namespace RootMotion.Demos {
 		private Vector3 moveDirectionVelocity;
 		private float wallRunWeight;
 		private float lastWallRunWeight;
+        private float fixedDeltaTime;
 		private Vector3 fixedDeltaPosition;
-		private Quaternion fixedDeltaRotation;
+		private Quaternion fixedDeltaRotation = Quaternion.identity;
 		private bool fixedFrame;
 		private float wallRunEndTime;
+		private Vector3 gravity;
+		private Vector3 verticalVelocity;
+		private float velocityY;
+		private bool doubleJumped;
+		private bool jumpReleased;
 
 		// Use this for initialization
 		protected override void Start () {
@@ -88,7 +98,7 @@ namespace RootMotion.Demos {
 			animator = GetComponent<Animator>();
 			if (animator == null) animator = characterAnimation.GetComponent<Animator>();
 
-			wallNormal = Vector3.up;
+			wallNormal = -gravity.normalized;
 			onGround = true;
 			animState.onGround = true;
 
@@ -101,26 +111,37 @@ namespace RootMotion.Demos {
 
 		// When the Animator moves
 		public override void Move(Vector3 deltaPosition, Quaternion deltaRotation) {
-			// Accumulate delta position, update in FixedUpdate to maintain consitency
+            // Accumulate delta position, update in FixedUpdate to maintain consitency
+            fixedDeltaTime += Time.deltaTime;
 			fixedDeltaPosition += deltaPosition;
 			fixedDeltaRotation *= deltaRotation;
 		}
 
 		void FixedUpdate() {
+            gravity = GetGravity();
+
+			verticalVelocity = V3Tools.ExtractVertical(r.velocity, gravity, 1f);
+			velocityY = verticalVelocity.magnitude;
+			if (Vector3.Dot(verticalVelocity, gravity) > 0f) velocityY = -velocityY;
+
+			/*
 			if (animator != null && animator.updateMode == AnimatorUpdateMode.AnimatePhysics) {
 				smoothPhysics = false;
 				characterAnimation.smoothFollow = false;
 			}
+			*/
 
 			// Smoothing out the fixed time step
 			r.interpolation = smoothPhysics? RigidbodyInterpolation.Interpolate: RigidbodyInterpolation.None;
 			characterAnimation.smoothFollow = smoothPhysics;
 
-			// Move
+            // Move
 			MoveFixed(fixedDeltaPosition);
+
+            fixedDeltaTime = 0f;
 			fixedDeltaPosition = Vector3.zero;
 
-			transform.rotation *= fixedDeltaRotation;
+			r.MoveRotation(transform.rotation * fixedDeltaRotation);
 			fixedDeltaRotation = Quaternion.identity;
 
 			Rotate();
@@ -130,29 +151,52 @@ namespace RootMotion.Demos {
 			// Friction
 			if (userControl.state.move == Vector3.zero && groundDistance < airborneThreshold * 0.5f) HighFriction();
 			else ZeroFriction();
-			
+
+			bool stopSlide = onGround && userControl.state.move == Vector3.zero && r.velocity.magnitude < 0.5f && groundDistance < airborneThreshold * 0.5f;
+
+			// Individual gravity
+			if (gravityTarget != null) {
+				r.useGravity = false;
+
+				if (!stopSlide) r.AddForce(gravity);
+			}
+
+			if (stopSlide) {
+				r.useGravity = false;
+				r.velocity = Vector3.zero;
+			} else if (gravityTarget == null) r.useGravity = true;
+
 			if (onGround) {
 				// Jumping
 				animState.jump = Jump();
+				jumpReleased = false;
+				doubleJumped = false;
 			} else {
-				
-				// Additional gravity
-				r.AddForce((Physics.gravity * gravityMultiplier) - Physics.gravity);
+				if (!userControl.state.jump) jumpReleased = true;
+
+				//r.AddForce(gravity * gravityMultiplier);
+				if (jumpReleased && userControl.state.jump && !doubleJumped && doubleJumpEnabled) {
+					jumpEndTime = Time.time + 0.1f;
+					animState.doubleJump = true;
+
+					Vector3 jumpVelocity = userControl.state.move * airSpeed;
+					r.velocity = jumpVelocity;
+					r.velocity += transform.up * jumpPower * doubleJumpPowerMlp;
+					doubleJumped = true;
+				}
 			}
-			
+
 			// Scale the capsule colllider while crouching
 			ScaleCapsule(userControl.state.crouch? crouchCapsuleScaleMlp: 1f);
-			
 
 			fixedFrame = true;
+        }
 
-		}
-
-		protected virtual void Update() {
+        protected virtual void Update() {
 			// Fill in animState
 			animState.onGround = onGround;
 			animState.moveDirection = GetMoveDirection();
-			animState.yVelocity = Mathf.Lerp(animState.yVelocity, r.velocity.y, Time.deltaTime * 10f);
+			animState.yVelocity = Mathf.Lerp(animState.yVelocity, velocityY, Time.deltaTime * 10f);
 			animState.crouch = userControl.state.crouch;
 			animState.isStrafing = moveMode == MoveMode.Strafe;
 		}
@@ -171,13 +215,13 @@ namespace RootMotion.Demos {
 		}
 
 		private void MoveFixed(Vector3 deltaPosition) {
-			// Process horizontal wall-running
-			WallRun();
-			
-			Vector3 velocity = deltaPosition / Time.deltaTime;
+            // Process horizontal wall-running
+            WallRun();
+
+            Vector3 velocity = fixedDeltaTime > 0f? deltaPosition / fixedDeltaTime: Vector3.zero;
 			
 			// Add velocity of the rigidbody the character is standing on
-			velocity += new Vector3(platformVelocity.x, 0f, platformVelocity.z);
+			velocity += V3Tools.ExtractHorizontal(platformVelocity, gravity, 1f);
 			
 			if (onGround) {
 				// Rotate velocity to ground tangent
@@ -187,22 +231,31 @@ namespace RootMotion.Demos {
 				}
 			} else {
 				// Air move
-				Vector3 airMove = new Vector3 (userControl.state.move.x * airSpeed, 0f, userControl.state.move.z * airSpeed);
+				//Vector3 airMove = new Vector3 (userControl.state.move.x * airSpeed, 0f, userControl.state.move.z * airSpeed);
+				Vector3 airMove = V3Tools.ExtractHorizontal(userControl.state.move * airSpeed, gravity, 1f);
 				velocity = Vector3.Lerp(r.velocity, airMove, Time.deltaTime * airControl);
 			}
-			
+
 			if (onGround && Time.time > jumpEndTime) {
 				r.velocity = r.velocity - transform.up * stickyForce * Time.deltaTime;
 			}
 			
 			// Vertical velocity
-			velocity.y = Mathf.Clamp(r.velocity.y, r.velocity.y, onGround? maxVerticalVelocityOnGround: r.velocity.y);
-			
-			r.velocity = velocity;
-			
-			// Dampering forward speed on the slopes
-			float slopeDamper = !onGround? 1f: GetSlopeDamper(-deltaPosition / Time.deltaTime, normal);
-			forwardMlp = Mathf.Lerp(forwardMlp, slopeDamper, Time.deltaTime * 5f);
+			Vector3 verticalVelocity = V3Tools.ExtractVertical(r.velocity, gravity, 1f);
+			Vector3 horizontalVelocity = V3Tools.ExtractHorizontal(velocity, gravity, 1f);
+
+			if (onGround) {
+				if (Vector3.Dot(verticalVelocity, gravity) < 0f) {
+					verticalVelocity = Vector3.ClampMagnitude(verticalVelocity, maxVerticalVelocityOnGround);
+				}
+			}
+
+			r.velocity = horizontalVelocity + verticalVelocity;
+
+            // Dampering forward speed on the slopes (Not working since Unity 2017.2)
+            //float slopeDamper = !onGround? 1f: GetSlopeDamper(-deltaPosition / Time.deltaTime, normal);
+            //forwardMlp = Mathf.Lerp(forwardMlp, slopeDamper, Time.deltaTime * 5f);
+            forwardMlp = 1f;
 		}
 
 		// Processing horizontal wall running
@@ -218,48 +271,48 @@ namespace RootMotion.Demos {
 			if (wallRunWeight <= 0f) {
 				// Reset
 				if (lastWallRunWeight > 0f) {
-					transform.rotation = Quaternion.LookRotation(new Vector3(transform.forward.x, 0f, transform.forward.z), Vector3.up);
-					wallNormal = Vector3.up;
+					Vector3 frw = V3Tools.ExtractHorizontal(transform.forward, gravity, 1f);
+					transform.rotation = Quaternion.LookRotation(frw, -gravity);
+					wallNormal = -gravity.normalized;
 				}
 			}
+
 			lastWallRunWeight = wallRunWeight;
 			
 			if (wallRunWeight <= 0f) return;
-			
+
 			// Make sure the character won't fall down
-			if (onGround && r.velocity.y < 0f) r.velocity = new Vector3(r.velocity.x, 0f, r.velocity.z);
+			if (onGround && velocityY < 0f) r.velocity = V3Tools.ExtractHorizontal(r.velocity, gravity, 1f);
 			
 			// transform.forward flattened
-			Vector3 f = transform.forward;
-			f.y = 0f;
-			
+			Vector3 f = V3Tools.ExtractHorizontal(transform.forward, gravity, 1f);
+
 			// Raycasting to find a walkable wall
 			RaycastHit velocityHit = new RaycastHit();
-			velocityHit.normal = Vector3.up;
+			velocityHit.normal = -gravity.normalized;
 			Physics.Raycast(onGround? transform.position: capsule.bounds.center, f, out velocityHit, 3f, wallRunLayers);
 			
 			// Finding the normal to rotate to
 			wallNormal = Vector3.Lerp(wallNormal, velocityHit.normal, Time.deltaTime * wallRunRotationSpeed);
-			
+
 			// Clamping wall normal to max rotation angle
-			wallNormal = Vector3.RotateTowards(Vector3.up, wallNormal, wallRunMaxRotationAngle * Mathf.Deg2Rad, 0f);
-			
+			wallNormal = Vector3.RotateTowards(-gravity.normalized, wallNormal, wallRunMaxRotationAngle * Mathf.Deg2Rad, 0f);
+
 			// Get transform.forward ortho-normalized to the wall normal
 			Vector3 fW = transform.forward;
 			Vector3 nW = wallNormal;
 			Vector3.OrthoNormalize(ref nW, ref fW);
-			
+
 			// Rotate from upright to wall normal
-			transform.rotation = Quaternion.Slerp(Quaternion.LookRotation(f, Vector3.up), Quaternion.LookRotation(fW, wallNormal), wallRunWeight);
+			transform.rotation = Quaternion.Slerp(Quaternion.LookRotation(f, -gravity), Quaternion.LookRotation(fW, wallNormal), wallRunWeight);
 		}
 
 		// Should the character be enabled to do a wall run?
 		private bool CanWallRun() {
 			if (Time.time < jumpEndTime - 0.1f) return false;
 			if (Time.time > jumpEndTime - 0.1f + wallRunMaxLength) return false;
-			if (r.velocity.y < wallRunMinVelocityY) return false;
+			if (velocityY < wallRunMinVelocityY) return false;
 			if (userControl.state.move.magnitude < wallRunMinMoveMag) return false;
-			
 			return true;
 		}
 
@@ -281,14 +334,16 @@ namespace RootMotion.Demos {
 
 		// Rotate the character
 		protected virtual void Rotate() {
-			if (platformAngularVelocity != Vector3.zero) transform.rotation = Quaternion.Euler(platformAngularVelocity) * transform.rotation;
-		
+			if (gravityTarget != null) r.MoveRotation (Quaternion.FromToRotation(transform.up, transform.position - gravityTarget.position) * transform.rotation);
+			if (platformAngularVelocity != Vector3.zero) r.MoveRotation (Quaternion.Euler(platformAngularVelocity) * transform.rotation);
+
 			float angle = GetAngleFromForward(GetForwardDirection());
 			
 			if (userControl.state.move == Vector3.zero) angle *= (1.01f - (Mathf.Abs(angle) / 180f)) * stationaryTurnSpeedMlp;
 
 			// Rotating the character
-			RigidbodyRotateAround(characterAnimation.GetPivotPoint(), transform.up, angle * Time.deltaTime * turnSpeed);
+			//RigidbodyRotateAround(characterAnimation.GetPivotPoint(), transform.up, angle * Time.deltaTime * turnSpeed);
+			r.MoveRotation(Quaternion.AngleAxis(angle * Time.deltaTime * turnSpeed, transform.up) * r.rotation);
 		}
 
 		// Which way to look at?
@@ -318,12 +373,33 @@ namespace RootMotion.Demos {
 			onGround = false;
 			jumpEndTime = Time.time + 0.1f;
 
-			Vector3 jumpVelocity = userControl.state.move * airSpeed;
-			r.velocity = jumpVelocity;
-			r.velocity += transform.up * jumpPower;
+            Vector3 jumpVelocity = userControl.state.move * airSpeed;
+            jumpVelocity += transform.up * jumpPower;
 
-			return true;
+            if (smoothJump)
+            {
+                StopAllCoroutines();
+                StartCoroutine(JumpSmooth(jumpVelocity - r.velocity));
+            } else
+            {
+                r.velocity = jumpVelocity;
+            }
+
+            return true;
 		}
+
+        // Add jump velocity smoothly to avoid puppets launching to space when unpinned during jump acceleration
+        private IEnumerator JumpSmooth(Vector3 jumpVelocity)
+        {
+            int steps = 0;
+            int stepsToTake = 3;
+            while (steps < stepsToTake)
+            {
+                r.AddForce((jumpVelocity) / stepsToTake, ForceMode.VelocityChange);
+                steps++;
+                yield return new WaitForFixedUpdate();
+            }
+        }
 
 		// Is the character grounded?
 		private void GroundCheck () {
@@ -336,10 +412,11 @@ namespace RootMotion.Demos {
 
 			//normal = hit.normal;
 			normal = transform.up;
-			groundDistance = r.position.y - hit.point.y;
+			//groundDistance = r.position.y - hit.point.y;
+			groundDistance = Vector3.Project(r.position - hit.point, transform.up).magnitude;
 
 			// if not jumping...
-			bool findGround = Time.time > jumpEndTime && r.velocity.y < jumpPower * 0.5f;
+			bool findGround = Time.time > jumpEndTime && velocityY < jumpPower * 0.5f;
 
 			if (findGround) {
 				bool g = onGround;
@@ -348,9 +425,9 @@ namespace RootMotion.Demos {
 				// The distance of considering the character grounded
 				float groundHeight = !g? airborneThreshold * 0.5f: airborneThreshold;
 
-				Vector3 horizontalVelocity = r.velocity;
-				horizontalVelocity.y = 0f;
-				
+				//Vector3 horizontalVelocity = r.velocity;
+				Vector3 horizontalVelocity = V3Tools.ExtractHorizontal(r.velocity, gravity, 1f);
+
 				float velocityF = horizontalVelocity.magnitude;
 
 				if (groundDistance < groundHeight) {

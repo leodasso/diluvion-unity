@@ -7,14 +7,14 @@ namespace RootMotion.FinalIK {
 	/// Using a spline to limit the range of rotation on universal and ball-and-socket joints. 
 	/// Reachable area is defined by an AnimationCurve orthogonally mapped onto a sphere.
 	/// </summary>
-	[HelpURL("http://www.root-motion.com/finalikdox/html/page12.html")]
+	[HelpURL("http://www.root-motion.com/finalikdox/html/page14.html")]
 	[AddComponentMenu("Scripts/RootMotion.FinalIK/Rotation Limits/Rotation Limit Spline")]
 	public class RotationLimitSpline : RotationLimit {
 
 		// Open the User Manual URL
 		[ContextMenu("User Manual")]
 		private void OpenUserManual() {
-			Application.OpenURL("http://www.root-motion.com/finalikdox/html/page12.html");
+			Application.OpenURL("http://www.root-motion.com/finalikdox/html/page14.html");
 		}
 		
 		// Open the Script Reference URL
@@ -51,18 +51,18 @@ namespace RootMotion.FinalIK {
 		public void SetSpline(Keyframe[] keyframes) {
 			spline.keys = keyframes;
 		}
-		
-		/*
+
+        /*
 		 * The AnimationCurve orthogonally mapped onto a sphere that defines the swing limits
 		 * */
-		[SerializeField][HideInInspector] public AnimationCurve spline;
-		
-		#endregion Main Interface
-		
-		/*
+        [HideInInspector] public AnimationCurve spline;
+
+        #endregion Main Interface
+
+        /*
 		 * Limits the rotation in the local space of this instance's Transform.
 		 * */
-		protected override Quaternion LimitRotation(Quaternion rotation) {		
+        protected override Quaternion LimitRotation(Quaternion rotation) {		
 			// Subtracting off-limits swing
 			Quaternion swing = LimitSwing(rotation);
 			

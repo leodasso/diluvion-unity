@@ -84,7 +84,7 @@ namespace RootMotion {
 		/// <summary>
 		/// Check for null references.
 		/// </summary>
-		public bool isFilled {
+		public virtual bool isFilled {
 			get {
 				if (root == null) return false;
 				if (pelvis == null) return false;
@@ -111,7 +111,7 @@ namespace RootMotion {
 		/// <summary>
 		/// Gets a value indicating whether this <see cref="BipedReferences"/> is empty. If includeRoot is false, returns true(is empty) even if root Transform has been assigned.
 		/// </summary>
-		public bool IsEmpty(bool includeRoot) {
+		public virtual bool IsEmpty(bool includeRoot) {
 			if (includeRoot && root != null) return false;
 			if (pelvis != null || head != null) return false;
 			if (leftThigh != null || leftCalf != null || leftFoot != null) return false;
@@ -127,7 +127,7 @@ namespace RootMotion {
 		/// <summary>
 		/// Returns true if the References contain the specified Transform
 		/// </summary>
-		public bool Contains(Transform t, bool ignoreRoot = false) {
+		public virtual bool Contains(Transform t, bool ignoreRoot = false) {
 			if (!ignoreRoot && root == t) return true;
 			if (pelvis == t) return true;
 			if (leftThigh == t) return true;

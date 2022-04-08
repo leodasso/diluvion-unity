@@ -64,13 +64,13 @@ namespace RootMotion.FinalIK {
 		public float weight = 1f;
 
 		[Tooltip("Reference to the FBBIK component")]
-		[SerializeField] protected FullBodyBipedIK ik;
+		public FullBodyBipedIK ik;
 
 		// not using Time.deltaTime or Time.fixedDeltaTime here, because we don't know if animatePhysics is true or not on the character, so we have to keep track of time ourselves.
 		protected float deltaTime { get { return Time.time - lastTime; }}
 		protected abstract void OnModifyOffset();
 
-		private float lastTime;
+		protected float lastTime;
 
 		protected virtual void Start() {
 			StartCoroutine(Initiate());

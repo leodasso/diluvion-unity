@@ -11,7 +11,7 @@ namespace RootMotion.FinalIK {
 		[Tooltip("Reference to the FBBIK component.")]
 		public FullBodyBipedIK ik;
 		
-		[Header("Position")]
+		[LargeHeader("Position")]
 		[Tooltip("Master weight for positioning the head.")]
 		[Range(0f, 1f)] public float positionWeight = 1f;
 
@@ -20,10 +20,19 @@ namespace RootMotion.FinalIK {
 
 		[Tooltip("The weight of moving the thighs along with the head")]
 		[Range(0f, 1f)] public float thighWeight = 0.8f;
+
+		[Tooltip("If false, hands will not pull the head away if they are too far. Disabling this will improve performance significantly.")]
+		public bool handsPullBody = true;
 		
-		[Header("Rotation")]
+		[LargeHeader("Rotation")]
 		[Tooltip("The weight of rotating the head bone after solving")]
 		[Range(0f, 1f)] public float rotationWeight = 0f;
+
+		[Tooltip("Clamping the rotation of the body")]
+		[Range(0f, 1f)] public float bodyClampWeight = 0.5f;
+
+		[Tooltip("Clamping the rotation of the head")]
+		[Range(0f, 1f)] public float headClampWeight = 0.5f;
 		
 		[Tooltip("The master weight of bending/twisting the spine to the rotation of the head effector. This is similar to CCD, but uses the rotation of the head effector not the position.")]
 		[Range(0f, 1f)] public float bendWeight = 1f;
@@ -58,7 +67,7 @@ namespace RootMotion.FinalIK {
 			}
 		}
 
-		[Header("CCD")]
+		[LargeHeader("CCD")]
 		[Tooltip("Optional. The master weight of the CCD (Cyclic Coordinate Descent) IK effect that bends the spine towards the head effector before FBBIK solves.")] 
 		[Range(0f, 1f)] public float CCDWeight = 1f;
 
@@ -71,9 +80,10 @@ namespace RootMotion.FinalIK {
 		[Tooltip("Bones to use for the CCD pass. Assign spine and/or neck bones.")]
 		public Transform[] CCDBones = new Transform[0];
 
-		[Header("Stretching")]
+		[LargeHeader("Stretching")]
 		[Tooltip("Stretching the spine/neck to help reach the target. This is useful for making sure the head stays locked relative to the VR headset. NB! Stretching is done after FBBIK has solved so if you have the hand effectors pinned and spine bones included in the 'Stretch Bones', the hands might become offset from their target positions.")]
-		[Range(0f, 1f)] public float stretchWeight = 1f;
+		[Range(0f, 1f)] public float postStretchWeight = 1f;
+
 		[Tooltip("Stretch magnitude limit.")]
 		public float maxStretch = 0.1f;
 		[Tooltip("If > 0, dampers the stretching effect.")]
@@ -82,6 +92,13 @@ namespace RootMotion.FinalIK {
 		public bool fixHead;
 		[Tooltip("Bones to use for stretching. The more bones you add, the less noticable the effect.")]
 		public Transform[] stretchBones = new Transform[0];
+
+		[LargeHeader("Chest Direction")]
+		public Vector3 chestDirection = Vector3.forward;
+		[Range(0f, 1f)] public float chestDirectionWeight = 1f;
+		public Transform[] chestBones = new Transform[0];
+
+		public IKSolver.UpdateDelegate OnPostHeadEffectorFK;
 
 		private Vector3 offset, headToBody, shoulderCenterToHead, headToLeftThigh, headToRightThigh, leftShoulderPos, rightShoulderPos;
 		private float shoulderDist, leftShoulderDist, rightShoulderDist;
@@ -92,9 +109,12 @@ namespace RootMotion.FinalIK {
 		private Quaternion headLocalRotation;
 		private Vector3[] stretchLocalPositions = new Vector3[0];
 		private Quaternion[] stretchLocalRotations = new Quaternion[0];
+		private Vector3[] chestLocalPositions = new Vector3[0];
+		private Quaternion[] chestLocalRotations = new Quaternion[0];
 		private int bendBonesCount;
 		private int ccdBonesCount;
 		private int stretchBonesCount;
+		private int chestBonesCount;
 
 		// Register to get messages from the FBBIK
 		void Start() {
@@ -103,6 +123,8 @@ namespace RootMotion.FinalIK {
 			ik.solver.OnPostUpdate += OnPostUpdate;
 			ik.solver.OnStoreDefaultLocalState += OnStoreDefaultLocalState;
 			ik.solver.OnFixTransforms += OnFixTransforms;
+
+			OnStoreDefaultLocalState();
 
 			headRotationRelativeToRoot = Quaternion.Inverse(ik.references.root.rotation) * ik.references.head.rotation;
 		}
@@ -130,13 +152,25 @@ namespace RootMotion.FinalIK {
 				}
 			}
 
+			chestLocalPositions = new Vector3[chestBones.Length];
+			chestLocalRotations = new Quaternion[chestBones.Length];
+			for (int i = 0; i < chestBones.Length; i++) {
+				if (chestBones[i] != null) {
+					chestLocalPositions[i] = chestBones[i].localPosition;
+					chestLocalRotations[i] = chestBones[i].localRotation;
+				}
+			}
+
 			bendBonesCount = bendBones.Length;
 			ccdBonesCount = CCDBones.Length;
 			stretchBonesCount = stretchBones.Length;
+			chestBonesCount = chestBones.Length;
 		}
 
 		// Fix the bones used by this head effector to their default local state
 		private void OnFixTransforms() {
+			if (!enabled) return;
+
 			foreach (BendBone bendBone in bendBones) {
 				if (bendBone != null) bendBone.FixTransforms();
 			}
@@ -154,6 +188,13 @@ namespace RootMotion.FinalIK {
 					stretchBones[i].localRotation = stretchLocalRotations[i];
 				}
 			}
+
+			for (int i = 0; i < chestBones.Length; i++) {
+				if (chestBones[i] != null) {
+					chestBones[i].localPosition = chestLocalPositions[i];
+					chestBones[i].localRotation = chestLocalRotations[i];
+				}
+			}
 		}
 
 		// Called by the FBBIK each time before it reads the pose
@@ -163,7 +204,12 @@ namespace RootMotion.FinalIK {
 
 			if (ik.solver.iterations == 0) return;
 
-			if (bendBonesCount != bendBones.Length || ccdBonesCount != CCDBones.Length || stretchBonesCount != stretchBones.Length) OnStoreDefaultLocalState();
+			ik.solver.FABRIKPass = handsPullBody;
+
+			if (bendBonesCount != bendBones.Length || ccdBonesCount != CCDBones.Length || stretchBonesCount != stretchBones.Length || chestBonesCount != chestBones.Length) OnStoreDefaultLocalState();
+
+			// Chest direction
+			ChestDirection();
 
 			// Spine Bend
 			SpineBend ();
@@ -186,6 +232,8 @@ namespace RootMotion.FinalIK {
 			rightShoulderPos = ik.references.rightUpperArm.position + offset * bodyWeight;
 
 			chestRotation = Quaternion.LookRotation(ik.references.head.position - ik.references.leftUpperArm.position, ik.references.rightUpperArm.position - ik.references.leftUpperArm.position);
+
+			if (OnPostHeadEffectorFK != null) OnPostHeadEffectorFK ();
 		}
 
 		// Bending the spine to the head effector
@@ -196,7 +244,8 @@ namespace RootMotion.FinalIK {
 			if (bendBones.Length == 0) return;
 
 			Quaternion rotation = transform.rotation * Quaternion.Inverse(ik.references.root.rotation * headRotationRelativeToRoot);
-			
+			rotation = QuaTools.ClampRotation(rotation, bodyClampWeight, 2);
+
 			float step = 1f / bendBones.Length;
 
 			for (int i = 0; i < bendBones.Length; i++) {
@@ -223,6 +272,8 @@ namespace RootMotion.FinalIK {
 			}
 		}
 
+		//private float leftArmLength;
+
 		// Called by the FBBIK before each solver iteration
 		private void Iterate(int iteration) {
 			if (!enabled) return;
@@ -236,15 +287,15 @@ namespace RootMotion.FinalIK {
 
 			Solve (ref leftShoulderPos, ref rightShoulderPos, shoulderDist);
 
-			LerpSolverPosition(ik.solver.leftShoulderEffector, leftShoulderPos, positionWeight * ik.solver.IKPositionWeight);
-			LerpSolverPosition(ik.solver.rightShoulderEffector, rightShoulderPos, positionWeight * ik.solver.IKPositionWeight);
+			LerpSolverPosition(ik.solver.leftShoulderEffector, leftShoulderPos, positionWeight * ik.solver.IKPositionWeight, ik.solver.leftShoulderEffector.positionOffset);
+			LerpSolverPosition(ik.solver.rightShoulderEffector, rightShoulderPos, positionWeight * ik.solver.IKPositionWeight, ik.solver.rightShoulderEffector.positionOffset);
 
 			// Body
 			Quaternion chestRotationSolved = Quaternion.LookRotation(transform.position - leftShoulderPos, rightShoulderPos - leftShoulderPos);
 			Quaternion rBody = QuaTools.FromToRotation(chestRotation, chestRotationSolved);
 
 			Vector3 headToBodySolved = rBody * headToBody;
-			LerpSolverPosition(ik.solver.bodyEffector, transform.position + headToBodySolved, positionWeight * ik.solver.IKPositionWeight);
+			LerpSolverPosition(ik.solver.bodyEffector, transform.position + headToBodySolved, positionWeight * ik.solver.IKPositionWeight, ik.solver.bodyEffector.positionOffset - ik.solver.pullBodyOffset);
 
 			// Thighs
 			Quaternion rThighs = Quaternion.Lerp(Quaternion.identity, rBody, thighWeight);
@@ -252,43 +303,64 @@ namespace RootMotion.FinalIK {
 			Vector3 headToLeftThighSolved = rThighs * headToLeftThigh;
 			Vector3 headToRightThighSolved = rThighs * headToRightThigh;
 
-			LerpSolverPosition(ik.solver.leftThighEffector, transform.position + headToLeftThighSolved, positionWeight * ik.solver.IKPositionWeight);
-			LerpSolverPosition(ik.solver.rightThighEffector, transform.position + headToRightThighSolved, positionWeight * ik.solver.IKPositionWeight);
-		}
 
+			LerpSolverPosition(ik.solver.leftThighEffector, transform.position + headToLeftThighSolved, positionWeight * ik.solver.IKPositionWeight, (ik.solver.bodyEffector.positionOffset - ik.solver.pullBodyOffset) + ik.solver.leftThighEffector.positionOffset);
+			LerpSolverPosition(ik.solver.rightThighEffector, transform.position + headToRightThighSolved, positionWeight * ik.solver.IKPositionWeight, (ik.solver.bodyEffector.positionOffset - ik.solver.pullBodyOffset) + ik.solver.rightThighEffector.positionOffset);
+		}
+		
 		// Called by the FBBIK each time it is finished updating
 		private void OnPostUpdate() {
 			if (!enabled) return;
 			if (!gameObject.activeInHierarchy) return;
 
 			// Stretching the spine and neck
-			Stretching ();
+			PostStretching ();
 
 			// Rotate the head bone
-			ik.references.head.rotation = Quaternion.Lerp(ik.references.head.rotation, transform.rotation, rotationWeight * ik.solver.IKPositionWeight);
+			Quaternion headRotation = QuaTools.FromToRotation(ik.references.head.rotation, transform.rotation);
+			headRotation = QuaTools.ClampRotation(headRotation, headClampWeight, 2);
+
+			ik.references.head.rotation = Quaternion.Lerp(Quaternion.identity, headRotation, rotationWeight * ik.solver.IKPositionWeight) * ik.references.head.rotation;
+		}
+
+		private void ChestDirection() {
+			float w = chestDirectionWeight * ik.solver.IKPositionWeight;
+			if (w <= 0f) return;
+
+			bool changed = false;
+			chestDirection = RootMotion.V3Tools.ClampDirection(chestDirection, ik.references.root.forward, 0.45f, 2, out changed);
+
+			if (chestDirection == Vector3.zero) return;
+
+			Quaternion q = Quaternion.FromToRotation (ik.references.root.forward, chestDirection);
+			q = Quaternion.Lerp (Quaternion.identity, q, w * (1f / chestBones.Length));
+
+			foreach (Transform bone in chestBones) {
+				bone.rotation = q * bone.rotation;
+			}
 		}
 
 		// Stretching the spine/neck to help reach the target. This is most useful for making sure the head stays locked relative to the VR controller
-		private void Stretching() {
-			float w = stretchWeight * ik.solver.IKPositionWeight;
-			if (w <= 0f) return;
+		private void PostStretching() {
+			float w = postStretchWeight * ik.solver.IKPositionWeight;
 
-			Vector3 stretch = Vector3.ClampMagnitude(transform.position - ik.references.head.position, maxStretch);
-			stretch *= w;
+			if (w > 0f) {
+				Vector3 stretch = Vector3.ClampMagnitude(transform.position - ik.references.head.position, maxStretch);
+				stretch *= w;
 
-			stretchDamper = Mathf.Max (stretchDamper, 0f);
-			if (stretchDamper > 0f) stretch /= (1f + stretch.magnitude) * (1f + stretchDamper);
-			
-			for (int i = 0; i < stretchBones.Length; i++) {
-				if (stretchBones[i] != null) stretchBones[i].position += stretch / stretchBones.Length;
+				stretchDamper = Mathf.Max (stretchDamper, 0f);
+				if (stretchDamper > 0f) stretch /= (1f + stretch.magnitude) * (1f + stretchDamper);
+				
+				for (int i = 0; i < stretchBones.Length; i++) {
+					if (stretchBones[i] != null) stretchBones[i].position += stretch / stretchBones.Length;
+				}
 			}
-			
 			if (fixHead && ik.solver.IKPositionWeight > 0f) ik.references.head.position = transform.position;
 		}
 
 		// Interpolate the solver position of the effector
-		private void LerpSolverPosition(IKEffector effector, Vector3 position, float weight) {
-			effector.GetNode(ik.solver).solverPosition = Vector3.Lerp(effector.GetNode(ik.solver).solverPosition, position, weight);
+		private void LerpSolverPosition(IKEffector effector, Vector3 position, float weight, Vector3 offset) {
+			effector.GetNode(ik.solver).solverPosition = Vector3.Lerp(effector.GetNode(ik.solver).solverPosition, position + offset, weight);
 		}
 
 		// Solve a simple linear constraint

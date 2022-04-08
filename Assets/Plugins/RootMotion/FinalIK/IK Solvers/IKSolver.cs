@@ -8,8 +8,10 @@ namespace RootMotion.FinalIK {
 	/// </summary>
 	[System.Serializable]
 	public abstract class IKSolver {
-		
-		#region Main Interface
+
+        #region Main Interface
+
+        [HideInInspector] public bool executedInEditor;
 
 		/// <summary>
 		/// Determines whether this instance is valid or not.
@@ -28,6 +30,7 @@ namespace RootMotion.FinalIK {
 		/// Initiate the solver with specified root Transform. Use only if this %IKSolver is not a member of an %IK component.
 		/// </summary>
 		public void Initiate(Transform root) {
+            if (executedInEditor) return;
 			if (OnPreInitiate != null) OnPreInitiate();
 
 			if (root == null) Debug.LogError("Initiating IKSolver with null root Transform.");
@@ -67,9 +70,10 @@ namespace RootMotion.FinalIK {
 		/// The %IK position.
 		/// </summary>
 		[HideInInspector] public Vector3 IKPosition;
-		
+
+		[Tooltip("The positional or the master weight of the solver.")]
 		/// <summary>
-		/// The %IK position weight.
+		/// The %IK position weight or the master weight of the solver.
 		/// </summary>
 		[Range(0f, 1f)]
 		public float IKPositionWeight = 1f;
@@ -108,11 +112,11 @@ namespace RootMotion.FinalIK {
 		public Transform GetRoot() {
 			return root;
 		}
-		
-		/// <summary>
-		/// Gets a value indicating whether this <see cref="IKSolver"/> has successfully initiated.
-		/// </summary>
-		public bool initiated { get; private set; }
+
+        /// <summary>
+        /// Gets a value indicating whether this <see cref="IKSolver"/> has successfully initiated.
+        /// </summary>
+        public bool initiated { get; private set; }
 
 		/// <summary>
 		/// Gets all the points used by the solver.
@@ -181,6 +185,36 @@ namespace RootMotion.FinalIK {
 				if (transform.localPosition != defaultLocalPosition) transform.localPosition = defaultLocalPosition;
 				if (transform.localRotation != defaultLocalRotation) transform.localRotation = defaultLocalRotation;
 			}
+
+			/// <summary>
+			/// Updates the solverPosition (in world space).
+			/// </summary>
+			public void UpdateSolverPosition() {
+				solverPosition = transform.position;
+			}
+
+			/// <summary>
+			/// Updates the solverPosition (in local space).
+			/// </summary>
+			public void UpdateSolverLocalPosition() {
+				solverPosition = transform.localPosition;
+			}
+
+			/// <summary>
+			/// Updates the solverPosition/Rotation (in world space).
+			/// </summary>
+			public void UpdateSolverState() {
+				solverPosition = transform.position;
+				solverRotation = transform.rotation;
+			}
+
+			/// <summary>
+			/// Updates the solverPosition/Rotation (in local space).
+			/// </summary>
+			public void UpdateSolverLocalState() {
+				solverPosition = transform.localPosition;
+				solverRotation = transform.localRotation;
+			}
 		}
 		
 		/// <summary>
@@ -193,6 +227,10 @@ namespace RootMotion.FinalIK {
 			/// The length of the bone.
 			/// </summary>
 			public float length;
+			/// <summary>
+			/// The sqr mag of the bone.
+			/// </summary>
+			public float sqrMag;
 			/// <summary>
 			/// Local axis to target/child bone.
 			/// </summary>
@@ -230,6 +268,23 @@ namespace RootMotion.FinalIK {
 				transform.rotation = Quaternion.Lerp(Quaternion.identity, r, weight) * transform.rotation;
 			}
 
+			public static void SolverSwing(Bone[] bones, int index, Vector3 swingTarget, float weight = 1f) {
+				if (weight <= 0f) return;
+				
+				Quaternion r = Quaternion.FromToRotation(bones[index].solverRotation * bones[index].axis, swingTarget - bones[index].solverPosition);
+				
+				if (weight >= 1f) {
+					for (int i = index; i < bones.Length; i++) {
+						bones[i].solverRotation = r * bones[i].solverRotation;
+					}
+					return;
+				}
+				
+				for (int i = index; i < bones.Length; i++) {
+					bones[i].solverRotation = Quaternion.Lerp(Quaternion.identity, r, weight) * bones[i].solverRotation;
+				}
+			}
+
 			/*
 			 * Swings the Transform's axis towards the swing target on the XY plane only
 			 * */
@@ -243,19 +298,6 @@ namespace RootMotion.FinalIK {
 				float angleTo = Mathf.Atan2(to.x, to.y) * Mathf.Rad2Deg;
 
 				transform.rotation = Quaternion.AngleAxis(Mathf.DeltaAngle(angleFrom, angleTo) * weight, Vector3.back) * transform.rotation;
-			}
-
-			/*
-			 * Swings the Transform's axis towards the swing target
-			 * */
-			public Quaternion GetSolverSwing(Vector3 swingTarget, float weight = 1f) {
-				if (weight <= 0f) return Quaternion.identity;
-				
-				Quaternion r = Quaternion.FromToRotation(solverRotation * axis, swingTarget - solverPosition);
-				
-				if (weight >= 1f) return r;
-				
-				return Quaternion.Lerp(Quaternion.identity, r, weight);
 			}
 			
 			/*
@@ -347,7 +389,7 @@ namespace RootMotion.FinalIK {
 		protected abstract void OnUpdate();
 
 		protected bool firstInitiation = true;
-		[SerializeField] protected Transform root;
+		[SerializeField][HideInInspector] protected Transform root;
 		
 		protected void LogWarning(string message) {
 			Warning.Log(message, root, true);
@@ -378,6 +420,31 @@ namespace RootMotion.FinalIK {
 				}
 			}
 			return true;
+		}
+
+		// Calculates bone lengths and axes, returns the length of the entire chain
+		protected static float PreSolveBones(ref Bone[] bones) {
+			float length = 0;
+			
+			for (int i = 0; i < bones.Length; i++) {
+				bones[i].solverPosition = bones[i].transform.position;
+				bones[i].solverRotation = bones[i].transform.rotation;
+			}
+			
+			for (int i = 0; i < bones.Length; i++) {
+				if (i < bones.Length - 1) {
+					bones[i].sqrMag = (bones[i + 1].solverPosition - bones[i].solverPosition).sqrMagnitude;
+					bones[i].length = Mathf.Sqrt(bones[i].sqrMag);
+					length += bones[i].length;
+					
+					bones[i].axis = Quaternion.Inverse(bones[i].solverRotation) * (bones[i + 1].solverPosition - bones[i].solverPosition);
+				} else {
+					bones[i].sqrMag = 0f;
+					bones[i].length = 0f;
+				}
+			}
+			
+			return length;
 		}
 
 		#endregion Class Methods

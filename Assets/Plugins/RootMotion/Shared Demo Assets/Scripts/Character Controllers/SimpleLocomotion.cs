@@ -4,7 +4,6 @@ using System.Collections;
 namespace RootMotion.Demos {
 
 	// The simplest multi-purpose locomotion controller for demo purposes. Can use root motion, simple procedural motion or the CharacterController
-	[RequireComponent(typeof(Animator))]
 	public class SimpleLocomotion : MonoBehaviour {
 
 		// The character rotation mode
@@ -14,26 +13,26 @@ namespace RootMotion.Demos {
 			Linear
 		}
 
-		[Tooltip("The component that updates the camera.")]
-		[SerializeField] CameraController cameraController;
+        [Tooltip("The component that updates the camera.")]
+        public CameraController cameraController;
 
-		[Tooltip("Acceleration of movement.")]
-		[SerializeField] float accelerationTime = 0.2f;
+        [Tooltip("Acceleration of movement.")]
+        public float accelerationTime = 0.2f;
 
-		[Tooltip("Turning speed.")]
-		[SerializeField] float turnTime = 0.2f; 
+        [Tooltip("Turning speed.")]
+        public float turnTime = 0.2f;
 
-		[Tooltip("If true, will run on left shift, if not will walk on left shift.")]
-		[SerializeField] bool walkByDefault = true;
+        [Tooltip("If true, will run on left shift, if not will walk on left shift.")]
+        public bool walkByDefault = true;
 
-		[Tooltip("Smooth or linear rotation.")]
-		[SerializeField] RotationMode rotationMode;
+        [Tooltip("Smooth or linear rotation.")]
+        public RotationMode rotationMode;
 
-		[Tooltip("Procedural motion speed (if not using root motion).")]
-		[SerializeField] float moveSpeed = 3f;
+        [Tooltip("Procedural motion speed (if not using root motion).")]
+        public float moveSpeed = 3f;
 
-		// Is the character grounded (using very simple y < something here for simplicity's sake)?
-		public bool isGrounded { get; private set; }
+        // Is the character grounded (using very simple y < something here for simplicity's sake)?
+        public bool isGrounded { get; private set; }
 
 		private Animator animator;
 		private float speed;

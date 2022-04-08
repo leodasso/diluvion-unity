@@ -62,7 +62,7 @@ namespace RootMotion.FinalIK {
 				
 				// Interpolating the offset
 				heightOffset = Mathf.Lerp(heightOffset, offsetTarget, deltaTime * grounding.pelvisSpeed);
-				
+
 				// Damper
 				Vector3 rootDelta = (grounding.root.position - lastRootPosition);
 				lastRootPosition = grounding.root.position;

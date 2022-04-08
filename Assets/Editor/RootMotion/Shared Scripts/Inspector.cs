@@ -243,5 +243,81 @@ namespace RootMotion {
 		}
 		
 		#endregion SceneGUI tools
+
+		#region Platform dependent
+
+		public static void SphereCap(int controlID, Vector3 position, Quaternion rotation, float size) {
+			#if UNITY_5_6_OR_NEWER
+			Handles.SphereHandleCap(controlID, position, rotation, size, EventType.Repaint);
+			#else
+			Handles.SphereCap(controlID, position, rotation, size);
+			#endif
+		}
+
+		public static void CubeCap(int controlID, Vector3 position, Quaternion rotation, float size) {
+			#if UNITY_5_6_OR_NEWER
+			Handles.CubeHandleCap(controlID, position, rotation, size, EventType.Repaint);
+			#else
+			Handles.CubeCap(controlID, position, rotation, size);
+			#endif
+		}
+
+		public static void ConeCap(int controlID, Vector3 position, Quaternion rotation, float size) {
+			#if UNITY_5_6_OR_NEWER
+			Handles.ConeHandleCap(controlID, position, rotation, size, EventType.Repaint);
+			#else
+			Handles.ConeCap(controlID, position, rotation, size);
+			#endif
+		}
+
+		public static void ArrowCap(int controlID, Vector3 position, Quaternion rotation, float size) {
+			#if UNITY_5_6_OR_NEWER
+			Handles.ArrowHandleCap(controlID, position, rotation, size, EventType.Repaint);
+			#else
+			Handles.ArrowCap(controlID, position, rotation, size);
+			#endif
+		}
+
+		public static void CircleCap(int controlID, Vector3 position, Quaternion rotation, float size) {
+			#if UNITY_5_6_OR_NEWER
+			Handles.CircleHandleCap(controlID, position, rotation, size, EventType.Repaint);
+			#else
+			Handles.CircleCap(controlID, position, rotation, size);
+			#endif
+		}
+
+		public static void DotCap(int controlID, Vector3 position, Quaternion rotation, float size) {
+			#if UNITY_5_6_OR_NEWER
+			Handles.DotHandleCap(controlID, position, rotation, size, EventType.Repaint);
+			#else
+			Handles.DotCap(controlID, position, rotation, size);
+			#endif
+		}
+
+		public static bool DotButton(Vector3 position, Quaternion direction, float size, float pickSize) {
+			#if UNITY_5_6_OR_NEWER
+			return Handles.Button(position, direction, size, pickSize, Handles.DotHandleCap);
+			#else
+			return Handles.Button(position, direction, size, pickSize, Handles.DotCap);
+			#endif
+		}
+
+		public static bool SphereButton(Vector3 position, Quaternion direction, float size, float pickSize) {
+			#if UNITY_5_6_OR_NEWER
+			return Handles.Button(position, direction, size, pickSize, Handles.SphereHandleCap);
+			#else
+			return Handles.Button(position, direction, size, pickSize, Handles.SphereCap);
+			#endif
+		}
+
+		public static float ScaleValueHandleSphere(float value, Vector3 position, Quaternion rotation, float size, float snap) {
+			#if UNITY_5_6_OR_NEWER
+			return Handles.ScaleValueHandle(value, position, rotation, size, Handles.SphereHandleCap, snap);
+			#else
+			return Handles.ScaleValueHandle(value, position, rotation, size, Handles.SphereCap, snap);
+			#endif
+		}
+
+		#endregion Platform dependent
 	}
 }

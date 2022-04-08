@@ -25,7 +25,7 @@ namespace RootMotion.FinalIK {
 		/// </summary>
 		public int maxIterations = 4;
 		/// <summary>
-		/// If true, rotation limits (if excisting) will be applied on each iteration.
+		/// If true, rotation limits (if existing) will be applied on each iteration.
 		/// </summary>
 		public bool useRotationLimits = true;
 		/// <summary>
@@ -74,6 +74,7 @@ namespace RootMotion.FinalIK {
 		}
 
 		public override void FixTransforms() {
+			if (!initiated) return;
 			if (IKPositionWeight <= 0f) return;
 
 			for (int i = 0; i < bones.Length; i++) bones[i].FixTransform();

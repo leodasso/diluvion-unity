@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using UnityEditor;
 using System.Collections;
-#pragma warning disable 618
 
 namespace RootMotion.FinalIK {
 
@@ -30,7 +29,7 @@ namespace RootMotion.FinalIK {
 			
 			Handles.BeginGUI();	
 			int h = script.ranges.Length * 18;
-			GUILayout.BeginArea(new Rect(10, Screen.height - (h + 75), 200, h + 25), "InteractionTrigger Visualization", "Window");
+			GUILayout.BeginArea(new Rect(10, 10, 200, h + 25), "InteractionTrigger Visualization", "Window");
 			
 			// Rotating display
 			for (int i = 0; i < script.ranges.Length; i++) {
@@ -131,7 +130,7 @@ namespace RootMotion.FinalIK {
 				
 			if (direction != Vector3.zero && range.characterPosition.maxAngle < 180f) {
 				Handles.DrawLine(position, position + x);
-				Handles.DotCap(0, position + x, Quaternion.identity, range.characterPosition.radius * 0.01f);
+				Inspector.DotCap(0, position + x, Quaternion.identity, range.characterPosition.radius * 0.01f);
 			}
 				
 			Handles.Label(position - Vector3.up * index * 0.05f, "Character Position for Range " + index.ToString() + ": " + range.name);
@@ -171,7 +170,7 @@ namespace RootMotion.FinalIK {
 			direction = direction.normalized * range.cameraPosition.maxDistance;
 			
 			Handles.DrawLine(position, position + direction);
-			Handles.DotCap(0, position + direction, Quaternion.identity, 0.005f);
+			Inspector.DotCap(0, position + direction, Quaternion.identity, 0.005f);
 			
 			Handles.Label(position + direction * 1.1f, "Camera Position for Range " + index.ToString() + ": " + range.name);
 			
@@ -182,7 +181,7 @@ namespace RootMotion.FinalIK {
 			
 			Quaternion rotation = targetRotation * Quaternion.LookRotation(range.cameraPosition.direction);
 			
-			Handles.CircleCap(0, position + direction.normalized * d, rotation, r);
+			Inspector.CircleCap(0, position + direction.normalized * d, rotation, r);
 			
 			if (SceneView.lastActiveSceneView != null && SceneView.lastActiveSceneView.camera != null) {
 				//Vector3 c = Vector3.Cross(direction, SceneView.lastActiveSceneView.camera.transform.forward);
