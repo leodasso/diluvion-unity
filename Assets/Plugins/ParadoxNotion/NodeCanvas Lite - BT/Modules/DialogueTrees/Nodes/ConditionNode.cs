@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace NodeCanvas.DialogueTrees{
 
-	[Icon("Condition", IconAttribute.Mode.AppendToTitle)]
+	[ParadoxNotion.Design.Icon("Condition", ParadoxNotion.Design.IconAttribute.Mode.AppendToTitle)]
 	[Name("Task Condition")]
 	[Category("Branch")]
 	[Description("Execute the first child node if a Condition is true, or the second one if that Condition is false. The Actor selected is used for the Condition check")]

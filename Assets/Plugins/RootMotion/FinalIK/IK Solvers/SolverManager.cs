@@ -27,7 +27,7 @@ namespace RootMotion {
 
 		#endregion Main
 
-		protected virtual void InitiateSolver() {}
+		public virtual void InitiateSolver() {}
 		protected virtual void UpdateSolver() {}
 		protected virtual void FixTransforms() {}
 		

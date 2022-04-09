@@ -55,7 +55,7 @@ namespace RootMotion.FinalIK {
 		/*
 		 * Initiates the %IK solver
 		 * */
-		protected override void InitiateSolver() {
+		public override void InitiateSolver() {
 			if (initiated) return;
 			InitiatePoser();
 			initiated = true;

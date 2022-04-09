@@ -12,7 +12,7 @@ namespace NodeCanvas.BehaviourTrees{
 	[Name("FSM")]
 	[Category("Nested")]
 	[Description("NestedFSM can be assigned an entire FSM. This node will return Running for as long as the FSM is Running. If a Success or Failure State is selected, then it will return Success or Failure as soon as the Nested FSM enters that state at which point the FSM will also be stoped. If the Nested FSM ends otherwise, this node will return Success.")]
-	[Icon("FSM")]
+	[ParadoxNotion.Design.Icon("FSM")]
 	public class NestedFSM : BTNode, IGraphAssignable{
 
 		[SerializeField]

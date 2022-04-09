@@ -8,7 +8,7 @@ namespace NodeCanvas.BehaviourTrees{
 	[Name("Override Agent")]
 	[Category("Decorators")]
 	[Description("Set another Agent for the rest of the Tree dynamicaly from this point and on. All nodes under this will be executed for the new agent")]
-	[Icon("Set")]
+	[ParadoxNotion.Design.Icon("Set")]
 	public class Setter : BTDecorator{
 
 		public BBParameter<GameObject> newAgent;

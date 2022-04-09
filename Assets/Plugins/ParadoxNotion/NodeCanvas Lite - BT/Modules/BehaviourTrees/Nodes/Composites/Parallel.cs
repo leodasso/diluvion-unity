@@ -9,7 +9,7 @@ namespace NodeCanvas.BehaviourTrees{
 
 	[Category("Composites")]
 	[Description("Execute all child nodes once but simultaneously and return Success or Failure depending on the selected ParallelPolicy.\nIf set to Dynamic, child nodes are repeated until the Policy set is met, or until all children have had a chance to complete at least once.")]
-	[Icon("Parallel")]
+	[ParadoxNotion.Design.Icon("Parallel")]
 	[Color("ff64cb")]
 	public class Parallel : BTComposite{
 

@@ -8,7 +8,7 @@ namespace NodeCanvas.BehaviourTrees{
 	[Name("Step Sequencer")]
 	[Category("Composites")]
 	[Description("Executes AND immediately returns children node status ONE-BY-ONE. Step Sequencer always moves forward by one and loops it's index")]
-	[Icon("StepIterator")]
+	[ParadoxNotion.Design.Icon("StepIterator")]
 	[Color("bf7fff")]
 	public class StepIterator : BTComposite {
 

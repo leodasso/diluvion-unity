@@ -7,7 +7,7 @@ namespace NodeCanvas.BehaviourTrees{
 
 	[Category("Decorators")]
 	[Description("Returns Running until the assigned condition becomes true")]
-	[Icon("Halt")]
+	[ParadoxNotion.Design.Icon("Halt")]
 	public class WaitUntil : BTDecorator, ITaskAssignable<ConditionTask> {
 
 		[SerializeField]

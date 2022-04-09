@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace NodeCanvas.DialogueTrees{
 
-	[Icon("Action", IconAttribute.Mode.AppendToTitle)]
+	[ParadoxNotion.Design.Icon("Action", ParadoxNotion.Design.IconAttribute.Mode.AppendToTitle)]
 	[Name("Task Action")]
 	[Description("Execute an Action Task for the Dialogue Actor selected.")]
 	public class ActionNode : DTNode, ITaskAssignable<ActionTask>{

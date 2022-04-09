@@ -33,7 +33,7 @@ namespace NodeCanvas.Framework{
 
 		private Texture2D _icon;
 		private bool iconLoaded{get;set;}
-		private IconAttribute.Mode iconMode{get;set;}
+		private ParadoxNotion.Design.IconAttribute.Mode iconMode{get;set;}
 
 		private Vector2 size = minSize;
 		private string hexColor{get;set;}
@@ -140,7 +140,7 @@ namespace NodeCanvas.Framework{
 					_icon = assignable.task != null? assignable.task.icon : null;
 				}
 				if (_icon == null){
-					var iconAtt = this.GetType().RTGetAttribute<IconAttribute>(true);
+					var iconAtt = this.GetType().RTGetAttribute<ParadoxNotion.Design.IconAttribute>(true);
 					if (iconAtt != null){
 						_icon = (Texture2D)Resources.Load(iconAtt.iconName);
 						iconMode = iconAtt.mode;
@@ -321,7 +321,7 @@ namespace NodeCanvas.Framework{
 		//The title name or icon of the node
 		void ShowHeader(){
 
-			if (!showIcon || iconMode == IconAttribute.Mode.AppendToTitle){
+			if (!showIcon || iconMode == ParadoxNotion.Design.IconAttribute.Mode.AppendToTitle){
 				if (name != null){
 					if (!EditorGUIUtility.isProSkin){ //fix light coloring by adding a dark background
 						GUI.color = new Color(1,1,1,0.75f);
@@ -339,13 +339,13 @@ namespace NodeCanvas.Framework{
 				GUI.color = nodeColor.a > 0.2f? nodeColor : Color.white;
 				if (!EditorGUIUtility.isProSkin){
 					var assignable = this as ITaskAssignable;
-					IconAttribute att = null;
+					ParadoxNotion.Design.IconAttribute att = null;
 					if (assignable != null && assignable.task != null){
-						att = assignable.task.GetType().RTGetAttribute<IconAttribute>(true);
+						att = assignable.task.GetType().RTGetAttribute<ParadoxNotion.Design.IconAttribute>(true);
 					}
 
 					if (att == null){
-						att = this.GetType().RTGetAttribute<IconAttribute>(true);
+						att = this.GetType().RTGetAttribute<ParadoxNotion.Design.IconAttribute>(true);
 					}
 
 					if (att != null){

@@ -33,7 +33,8 @@ public class VelocityInspector : Editor
    
         if (velo.magnitude <= 0) return;
         
-        Handles.ArrowCap(0, positionVelo, Quaternion.LookRotation(velo.normalized), size * .5f);
+		Handles.ArrowHandleCap(0, positionVelo, Quaternion.LookRotation(velo.normalized), size * .5f, EventType.MouseDown);
+        // Handles.ArrowCap(0, positionVelo, Quaternion.LookRotation(velo.normalized), size * .5f);
         Handles.DrawDottedLine(v.transform.position, positionVelo, 2);
         Handles.Label(positionVelo, new GUIContent("Velocity: " + velo));
     }

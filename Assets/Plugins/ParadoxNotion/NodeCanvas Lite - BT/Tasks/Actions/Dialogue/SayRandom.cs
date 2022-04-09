@@ -7,7 +7,7 @@ using NodeCanvas.DialogueTrees;
 namespace NodeCanvas.Tasks.Actions{
 
 	[Category("Dialogue")]
-	[Icon("Dialogue")]
+	[ParadoxNotion.Design.Icon("Dialogue")]
 	[Description("A random statement will be chosen each time for the actor to say")]
 	[AgentType(typeof(IDialogueActor))]
 	public class SayRandom : ActionTask {

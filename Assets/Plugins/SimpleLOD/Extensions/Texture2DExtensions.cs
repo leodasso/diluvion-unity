@@ -58,7 +58,7 @@ namespace OrbCreationExtensions
 			if(width<=0 || height<=0 || (width==tex.width && height==tex.height)) return;
 			MakeFormatWritable(tex);
 			Color[] newPixels = ScaledPixels(tex.GetPixels(0), tex.width, tex.height, width, height);
-			if(tex.Resize(width, height, tex.format, tex.mipmapCount>1)) {
+			if(tex.Reinitialize(width, height, tex.format, tex.mipmapCount>1)) {
 				tex.SetPixels(newPixels,0);
 				tex.Apply((tex.mipmapCount > 1), false);
 			}
@@ -69,7 +69,7 @@ namespace OrbCreationExtensions
 			TextureFormat newFormat = GetWritableFormat(tex.format);
 			if(newFormat != oldFormat) {
 				Color[] pixels = tex.GetPixels(0);
-				tex.Resize(tex.width, tex.height, newFormat, tex.mipmapCount>1);
+				tex.Reinitialize(tex.width, tex.height, newFormat, tex.mipmapCount>1);
 				tex.SetPixels(pixels,0);
 				tex.Apply((tex.mipmapCount > 1), false);
 			}

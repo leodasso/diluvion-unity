@@ -26,11 +26,11 @@ namespace RootMotion.FinalIK {
 
 			GetIKSolver().Update();
 		}
-		
+
 		/*
 		 * Initiates the %IK solver
 		 * */
-		protected override void InitiateSolver() {
+		public override void InitiateSolver() {
 			if (GetIKSolver().initiated) return;
 			
 			GetIKSolver().Initiate(transform);

@@ -268,7 +268,7 @@ namespace RootMotion.FinalIK {
 		/*
 		 * Initiates the %IK solver
 		 * */
-		protected override void InitiateSolver() {
+		public override void InitiateSolver() {
 			string message = "";
 			if (BipedReferences.SetupError(references, ref message)) {
 				Warning.Log(message, references.root, false);

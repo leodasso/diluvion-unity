@@ -240,7 +240,7 @@ namespace RootMotion.FinalIK {
 			return solver as IKSolver;
 		}
 
-		protected override void InitiateSolver() {
+		public override void InitiateSolver() {
 			if (references.isEmpty) AutoDetectReferences();
 			if (references.isFilled) solver.SetToReferences(references);
 

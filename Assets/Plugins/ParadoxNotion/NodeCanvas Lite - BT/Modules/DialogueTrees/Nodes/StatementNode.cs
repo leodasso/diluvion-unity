@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace NodeCanvas.DialogueTrees{
 
-	[Icon("Dialogue", IconAttribute.Mode.AppendToTitle)]
+	[ParadoxNotion.Design.Icon("Dialogue", ParadoxNotion.Design.IconAttribute.Mode.AppendToTitle)]
 	[Name("Say")]
 	[Description("Make the selected Dialogue Actor talk. You can make the text more dynamic by using variable names in square brackets\ne.g. [myVarName] or [Global/myVarName]")]
 	public class StatementNode : DTNode{

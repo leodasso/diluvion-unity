@@ -8,7 +8,7 @@ namespace NodeCanvas.BehaviourTrees{
 	[Name("Conditional")]
 	[Category("Decorators")]
 	[Description("Execute and return the child node status if the condition is true, otherwise return Failure. The condition is evaluated only once in the first Tick and when the node is not already Running unless it is set as 'Dynamic' in which case it will revaluate even while running")]
-	[Icon("Accessor")]
+	[ParadoxNotion.Design.Icon("Accessor")]
 	public class ConditionalEvaluator : BTDecorator, ITaskAssignable<ConditionTask> {
 
 		public bool isDynamic;

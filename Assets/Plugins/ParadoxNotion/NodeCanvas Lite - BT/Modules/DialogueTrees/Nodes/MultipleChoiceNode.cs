@@ -8,7 +8,7 @@ using UnityEngine;
 
 namespace NodeCanvas.DialogueTrees{
 
-	[Icon("List", IconAttribute.Mode.AppendToTitle)]
+	[ParadoxNotion.Design.Icon("List", ParadoxNotion.Design.IconAttribute.Mode.AppendToTitle)]
 	[Name("Multiple Choice")]
 	[Category("Branch")]
 	[Description("Prompt a Dialogue Multiple Choice. A choice will be available if the connection's condition is true or there is no condition on that connection. The Actor selected is used for the Condition checks as well as will Say the selection if the option is checked.")]

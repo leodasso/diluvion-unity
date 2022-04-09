@@ -118,7 +118,8 @@ public class NewBehaviourScript : Editor {
         {
             gridColor = Color.red;
             Handles.color = new Color(1, 0, 0, .2f);
-            Handles.CubeCap(0, pos, Quaternion.LookRotation(Vector3.forward), InteriorGrid.cellSize );
+			Handles.CubeHandleCap(0, pos, Quaternion.LookRotation(Vector3.forward), InteriorGrid.cellSize, EventType.ContextClick);
+            //Handles.CubeCap(0, pos, Quaternion.LookRotation(Vector3.forward), InteriorGrid.cellSize );
         }
 
         Handles.color = gridColor;

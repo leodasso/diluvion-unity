@@ -8,7 +8,7 @@ namespace NodeCanvas.BehaviourTrees{
 
 	[Name("Guard")]
 	[Category("Decorators")]
-	[Icon("Shield")]
+	[ParadoxNotion.Design.Icon("Shield")]
 	[Description("Protect the decorated child from running if another Guard with the same token is already guarding (Running) that token.\nGuarding is global for all of the agent's Behaviour Trees.")]
 	public class Guard : BTDecorator {
 

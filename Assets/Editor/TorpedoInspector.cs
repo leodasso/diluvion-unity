@@ -22,7 +22,8 @@ public class TorpedoInspector : Editor {
         if (t.target)
         {
             float tSize = HandleUtility.GetHandleSize(t.target.position);
-            Handles.CircleCap(0, t.target.position, Quaternion.identity, tSize);
+            // Handles.CircleCap(0, t.target.position, Quaternion.identity, tSize);
+			Handles.CircleHandleCap(0, t.target.position, Quaternion.identity, tSize, EventType.MouseDown);
         }
         string details = "Turn ability: " + t.TurningPower() + " / 1\n";
         details += "Velocity: " + t.ForwardVelocity() + " / " + t.driveSpeed + "\n";

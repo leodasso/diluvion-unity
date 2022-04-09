@@ -9,7 +9,7 @@ namespace NodeCanvas.BehaviourTrees
 
     [Category("Composites")]
     [Description("Execute the child nodes in order or randomly and return Success if all children return Success, else return Failure.\nAll the children are executed, regardless of their return status.")]
-    [Icon("StepIterator")]
+    [ParadoxNotion.Design.Icon("StepIterator")]
     [Color("bf7fff")]
     public class Serial : BTComposite
     {

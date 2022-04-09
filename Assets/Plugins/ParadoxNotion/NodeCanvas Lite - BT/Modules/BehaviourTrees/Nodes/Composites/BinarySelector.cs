@@ -8,7 +8,7 @@ namespace NodeCanvas.BehaviourTrees{
 
 	[Category("Composites")]
 	[Description("Quick way to execute the left, or the right child node based on a Condition Task evaluation.")]
-	[Icon("Condition")]
+	[ParadoxNotion.Design.Icon("Condition")]
 	[Color("b3ff7f")]
 	public class BinarySelector : BTNode, ITaskAssignable<ConditionTask> {
 

@@ -29,8 +29,9 @@ public class WeaponSystemInspector : Editor {
 
         Vector3 aimDir = ws.CleanAimPosition() - ws.transform.position;
 
-        Vector3 aimPos = Handles.FreeMoveHandle(aimDir * size, Quaternion.identity, size * .3f, Vector3.one * .1f, Handles.CircleCap);
-        Handles.ArrowCap(0, aimPos, Quaternion.LookRotation(aimPos), size);
+        Vector3 aimPos = Handles.FreeMoveHandle(aimDir * size, Quaternion.identity, size * .3f, Vector3.one * .1f, Handles.CircleHandleCap);
+        // Handles.ArrowCap(0, aimPos, Quaternion.LookRotation(aimPos), size);
+		Handles.ArrowHandleCap(0, aimPos, Quaternion.LookRotation(aimPos), size, EventType.MouseDown);
         //ws.aim = aimPos.normalized;
 
         Handles.color = Color.white;

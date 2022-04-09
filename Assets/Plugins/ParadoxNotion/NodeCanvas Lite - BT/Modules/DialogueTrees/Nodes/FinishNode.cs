@@ -9,7 +9,7 @@ namespace NodeCanvas.DialogueTrees{
 	[Name("FINISH")]
 	[Category("Control")]
 	[Description("End the dialogue in Success or Failure.\nNote: A Dialogue will anyway End in Succcess if it has reached a node without child connections. Thus this node is mostly useful if you want to end a Dialogue in Failure.")]
-	[Icon("Halt", IconAttribute.Mode.AppendToTitle)]
+	[ParadoxNotion.Design.Icon("Halt", ParadoxNotion.Design.IconAttribute.Mode.AppendToTitle)]
 	[Color("00b9e8")]
 	public class FinishNode : DTNode {
 

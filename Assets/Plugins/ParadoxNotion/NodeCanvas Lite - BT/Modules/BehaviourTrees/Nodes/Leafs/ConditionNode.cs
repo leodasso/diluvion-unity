@@ -7,7 +7,7 @@ namespace NodeCanvas.BehaviourTrees{
 
 	[Name("Condition")]
 	[Description("Check a condition and return Success or Failure")]
-	[Icon("Condition")]
+	[ParadoxNotion.Design.Icon("Condition")]
 	public class ConditionNode : BTNode, ITaskAssignable<ConditionTask>{
 
 		[SerializeField]

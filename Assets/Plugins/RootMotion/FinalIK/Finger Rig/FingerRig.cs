@@ -345,7 +345,7 @@ namespace RootMotion.FinalIK {
 			AddChildrenRecursive(parent.GetChild(0), ref array);
 		}
 
-		protected override void InitiateSolver() {
+		public override void InitiateSolver() {
 			initiated = true;
 
 			for (int i = 0; i < fingers.Length; i++) {

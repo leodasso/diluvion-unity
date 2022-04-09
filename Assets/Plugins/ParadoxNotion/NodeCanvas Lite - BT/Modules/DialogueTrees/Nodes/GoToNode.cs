@@ -8,7 +8,7 @@ namespace NodeCanvas.DialogueTrees{
 	[Name("GO TO")]
 	[Category("Control")]
 	[Description("Jump to another Dialogue node. Usefull if that other node is far away to connect, but otherwise it's exactly the same.\n\nPlease enable 'Show Node IDs' in Editor Prefs for convenience")]
-	[Icon("Set", IconAttribute.Mode.AppendToTitle)]
+	[ParadoxNotion.Design.Icon("Set", ParadoxNotion.Design.IconAttribute.Mode.AppendToTitle)]
 	[Color("00b9e8")]
 	[System.Obsolete("Use Jumpers instead")]
 	public class GoToNode : DTNode {

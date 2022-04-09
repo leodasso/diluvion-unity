@@ -11,7 +11,7 @@ namespace NodeCanvas.BehaviourTrees{
 	[Name("SubTree")]
 	[Category("Nested")]
 	[Description("SubTree Node can be assigned an entire Sub BehaviorTree. The root node of that behaviour will be considered child node of this node and will return whatever it returns.\nThe target SubTree can also be set by using a Blackboard variable as normal.")]
-	[Icon("BT")]
+	[ParadoxNotion.Design.Icon("BT")]
 	public class SubTree : BTNode, IGraphAssignable{
 
 		[SerializeField]

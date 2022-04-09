@@ -21,7 +21,7 @@ namespace NodeCanvas.Framework{
 			get
 			{
 				if (_icon == null){
-					var iconAtt = this.GetType().RTGetAttribute<IconAttribute>(true);
+					var iconAtt = this.GetType().RTGetAttribute<ParadoxNotion.Design.IconAttribute>(true);
 					if (iconAtt != null) _icon = (Texture2D)Resources.Load(iconAtt.iconName);
 				}
 				return _icon;

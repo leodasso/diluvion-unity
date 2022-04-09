@@ -283,7 +283,8 @@ public class TileTool2D : EditorWindow
 				pos.x = Round(pos.x, t.tileSize) + t.tileSize * 0.5f;
 				pos.y = Round(pos.y, t.tileSize) + t.tileSize * 0.5f;
 				Handles.color = handlesColorRed;
-				Handles.CubeCap(1, pos, Quaternion.identity, t.tileSize);
+				Handles.CubeHandleCap(1, pos, Quaternion.identity, t.tileSize, EventType.MouseDown);
+				//Handles.CubeCap(1, pos, Quaternion.identity, t.tileSize);
 				startPos = (Vector2)HandleUtility.GUIPointToWorldRay(e.mousePosition).origin;
 			}
 
@@ -321,7 +322,8 @@ public class TileTool2D : EditorWindow
 					Handles.color = handlesColorRed;
 					for (int n = 0; n < height + 1; n++) {
 						Vector3 pos = new Vector3(Round(startPos.x, t.tileSize) + t.tileSize * 0.5f + (i * t.tileSize *dx), Round(startPos.y, t.tileSize) + t.tileSize * 0.5f + (n * t.tileSize *dy), 0.0f);
-						Handles.CubeCap(1, pos, Quaternion.identity, t.tileSize);
+						//Handles.CubeCap(1, pos, Quaternion.identity, t.tileSize);
+						Handles.CubeHandleCap(1, pos, Quaternion.identity, t.tileSize, EventType.MouseDown);
 					}
 				}
 				Handles.Label(startPos, " " + (int)(width + 1.5) + " x " + (int)(height + 1.5));
@@ -343,7 +345,8 @@ public class TileTool2D : EditorWindow
 				pos.x = Round(pos.x, t.tileSize) + t.tileSize * 0.5f;
 				pos.y = Round(pos.y, t.tileSize) + t.tileSize * 0.5f;
 				Handles.color = handlesColorWhite;
-				Handles.CubeCap(1, pos, Quaternion.identity, t.tileSize);
+				// Handles.CubeCap(1, pos, Quaternion.identity, t.tileSize);
+				Handles.CubeHandleCap(1, pos, Quaternion.identity, t.tileSize, EventType.MouseDown);
 				startPos = (Vector2)HandleUtility.GUIPointToWorldRay(e.mousePosition).origin;
 			}
 
@@ -382,7 +385,8 @@ public class TileTool2D : EditorWindow
 					Handles.color = handlesColorWhite;
 					for (int n = 0; n < height + 1; n++) {
 						Vector3 pos = new Vector3(Round(startPos.x, t.tileSize) + t.tileSize * 0.5f + (i * t.tileSize *dx), Round(startPos.y, t.tileSize) + t.tileSize * 0.5f + (n * t.tileSize *dy), 0.0f);
-						Handles.CubeCap(1, pos, Quaternion.identity, t.tileSize);
+						// Handles.CubeCap(1, pos, Quaternion.identity, t.tileSize);
+						Handles.CubeHandleCap(1, pos, Quaternion.identity, t.tileSize, EventType.MouseDown);
 					}
 				}
 				Handles.Label(startPos, " " + (int)(width + 1.5) + " x " + (int)(height + 1.5));
@@ -426,7 +430,8 @@ public class TileTool2D : EditorWindow
 			Vector2 d;
 			d.x = Round(hit.point.x, t.tileSize);
 			d.y = Round(hit.point.y, t.tileSize);
-			Handles.CubeCap(1, new Vector3(d.x + t.tileSize * 0.5f, d.y + t.tileSize * 0.5f, 0.0f), Quaternion.identity, t.tileSize);
+			//Handles.CubeCap(1, new Vector3(d.x + t.tileSize * 0.5f, d.y + t.tileSize * 0.5f, 0.0f), Quaternion.identity, t.tileSize);
+			Handles.CubeHandleCap(1, new Vector3(d.x + t.tileSize * 0.5f, d.y + t.tileSize * 0.5f, 0.0f), Quaternion.identity, t.tileSize, EventType.MouseDown);
 		}
 	}
 

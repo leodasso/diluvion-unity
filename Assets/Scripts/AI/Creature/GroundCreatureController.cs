@@ -283,7 +283,8 @@ namespace Diluvion
             {
                 /* if (ik.isActiveAndEnabled)
                      ik.enabled = false;*/
-                ik.Initiate();
+                //ik.Initiate();
+				ik.InitiateSolver();
             }
         }
 

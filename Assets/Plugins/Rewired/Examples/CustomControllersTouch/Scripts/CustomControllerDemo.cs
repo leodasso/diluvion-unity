@@ -38,8 +38,8 @@ namespace Rewired.Demos {
         private bool initialized;
 
         private void Awake() {
-            if(SystemInfo.deviceType == DeviceType.Handheld && Screen.orientation != ScreenOrientation.Landscape) { // set screen to landscape mode
-                Screen.orientation = ScreenOrientation.Landscape;
+            if(SystemInfo.deviceType == DeviceType.Handheld && Screen.orientation != ScreenOrientation.LandscapeLeft) { // set screen to landscape mode
+                Screen.orientation = ScreenOrientation.LandscapeLeft;
             }
             Initialize();
         }

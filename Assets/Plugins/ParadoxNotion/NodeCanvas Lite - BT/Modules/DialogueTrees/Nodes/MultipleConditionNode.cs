@@ -5,7 +5,7 @@ using ParadoxNotion.Design;
 
 namespace NodeCanvas.DialogueTrees{
 
-	[Icon("Selector", IconAttribute.Mode.AppendToTitle)]
+	[ParadoxNotion.Design.Icon("Selector", ParadoxNotion.Design.IconAttribute.Mode.AppendToTitle)]
 	[Name("Multiple Task Condition")]
 	[Category("Branch")]
 	[Description("Will continue with the first child node which condition returns true. The Dialogue Actor selected will be used for the checks")]

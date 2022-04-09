@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using RootMotion.FinalIK;
+using RootMotion.Demos;
 
 
 /// <summary>
